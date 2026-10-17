@@ -1,0 +1,9 @@
+# B1 · Фільтр + OPTIONAL: перевантажені підстанції (≥ 85 %) і диспетчер (GraphDB)
+PREFIX : <http://www.semanticweb.org/energy-forecasting#>
+SELECT ?substation ?ratio ?dispatcher WHERE {
+  ?s a :Substation ; :currentLoad ?l ; :nominalCapacity ?c .
+  FILTER (?l >= 0.85 * ?c)
+  OPTIONAL { ?s :managedByDispatcher ?d . BIND (STRAFTER(STR(?d), "#") AS ?dispatcher) }
+  BIND (?l / ?c AS ?ratio)
+  BIND (STRAFTER(STR(?s), "#") AS ?substation)
+} ORDER BY ?substation

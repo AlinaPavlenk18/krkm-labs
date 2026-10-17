@@ -1,0 +1,7 @@
+# B4 · Транзитивний обхід: зона впливу аварії на кореневій ПС №1 і споживачі в ній (GraphDB)
+PREFIX : <http://www.semanticweb.org/energy-forecasting#>
+SELECT ?substation (COUNT(?c) AS ?consumers) WHERE {
+  :Substation_1 :upstreamOf* ?s .
+  OPTIONAL { ?c :connectedToSubstation ?s }
+  BIND (STRAFTER(STR(?s), "#") AS ?substation)
+} GROUP BY ?substation ORDER BY ?substation

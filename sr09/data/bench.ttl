@@ -1,0 +1,3964 @@
+@prefix : <http://www.semanticweb.org/energy-forecasting#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Substation_1 a :Substation .
+:Substation_1 skos:prefLabel "Підстанція №1" .
+:Substation_1 :nominalCapacity "400.0"^^xsd:double .
+:Substation_1 :currentLoad "146.2"^^xsd:double .
+:Substation_1 :region "Львівська область" .
+:Substation_2 a :Substation .
+:Substation_2 skos:prefLabel "Підстанція №2" .
+:Substation_2 :nominalCapacity "800.0"^^xsd:double .
+:Substation_2 :currentLoad "401.5"^^xsd:double .
+:Substation_2 :region "Волинська область" .
+:Substation_3 a :Substation .
+:Substation_3 skos:prefLabel "Підстанція №3" .
+:Substation_3 :nominalCapacity "500.0"^^xsd:double .
+:Substation_3 :currentLoad "403.3"^^xsd:double .
+:Substation_3 :region "Закарпатська область" .
+:Substation_4 a :Substation .
+:Substation_4 skos:prefLabel "Підстанція №4" .
+:Substation_4 :nominalCapacity "400.0"^^xsd:double .
+:Substation_4 :currentLoad "286.4"^^xsd:double .
+:Substation_4 :region "Тернопільська область" .
+:Substation_5 a :Substation .
+:Substation_5 skos:prefLabel "Підстанція №5" .
+:Substation_5 :nominalCapacity "250.0"^^xsd:double .
+:Substation_5 :currentLoad "92.1"^^xsd:double .
+:Substation_5 :region "Рівненська область" .
+:Substation_6 a :Substation .
+:Substation_6 skos:prefLabel "Підстанція №6" .
+:Substation_6 :nominalCapacity "630.0"^^xsd:double .
+:Substation_6 :currentLoad "311.4"^^xsd:double .
+:Substation_6 :region "Івано-Франківська область" .
+:Substation_7 a :Substation .
+:Substation_7 skos:prefLabel "Підстанція №7" .
+:Substation_7 :nominalCapacity "250.0"^^xsd:double .
+:Substation_7 :currentLoad "174.5"^^xsd:double .
+:Substation_7 :region "Львівська область" .
+:Substation_8 a :Substation .
+:Substation_8 skos:prefLabel "Підстанція №8" .
+:Substation_8 :nominalCapacity "1600.0"^^xsd:double .
+:Substation_8 :currentLoad "778.7"^^xsd:double .
+:Substation_8 :region "Волинська область" .
+:Substation_9 a :Substation .
+:Substation_9 skos:prefLabel "Підстанція №9" .
+:Substation_9 :nominalCapacity "800.0"^^xsd:double .
+:Substation_9 :currentLoad "681.5"^^xsd:double .
+:Substation_9 :region "Закарпатська область" .
+:Substation_10 a :Substation .
+:Substation_10 skos:prefLabel "Підстанція №10" .
+:Substation_10 :nominalCapacity "250.0"^^xsd:double .
+:Substation_10 :currentLoad "205.1"^^xsd:double .
+:Substation_10 :region "Тернопільська область" .
+:Substation_11 a :Substation .
+:Substation_11 skos:prefLabel "Підстанція №11" .
+:Substation_11 :nominalCapacity "500.0"^^xsd:double .
+:Substation_11 :currentLoad "391.4"^^xsd:double .
+:Substation_11 :region "Рівненська область" .
+:Substation_12 a :Substation .
+:Substation_12 skos:prefLabel "Підстанція №12" .
+:Substation_12 :nominalCapacity "1000.0"^^xsd:double .
+:Substation_12 :currentLoad "522.3"^^xsd:double .
+:Substation_12 :region "Івано-Франківська область" .
+:Substation_13 a :Substation .
+:Substation_13 skos:prefLabel "Підстанція №13" .
+:Substation_13 :nominalCapacity "630.0"^^xsd:double .
+:Substation_13 :currentLoad "594.4"^^xsd:double .
+:Substation_13 :region "Львівська область" .
+:Substation_14 a :Substation .
+:Substation_14 skos:prefLabel "Підстанція №14" .
+:Substation_14 :nominalCapacity "1000.0"^^xsd:double .
+:Substation_14 :currentLoad "413.4"^^xsd:double .
+:Substation_14 :region "Волинська область" .
+:Substation_15 a :Substation .
+:Substation_15 skos:prefLabel "Підстанція №15" .
+:Substation_15 :nominalCapacity "1600.0"^^xsd:double .
+:Substation_15 :currentLoad "655.9"^^xsd:double .
+:Substation_15 :region "Закарпатська область" .
+:Substation_16 a :Substation .
+:Substation_16 skos:prefLabel "Підстанція №16" .
+:Substation_16 :nominalCapacity "1000.0"^^xsd:double .
+:Substation_16 :currentLoad "724.3"^^xsd:double .
+:Substation_16 :region "Тернопільська область" .
+:Substation_17 a :Substation .
+:Substation_17 skos:prefLabel "Підстанція №17" .
+:Substation_17 :nominalCapacity "250.0"^^xsd:double .
+:Substation_17 :currentLoad "200.6"^^xsd:double .
+:Substation_17 :region "Рівненська область" .
+:Substation_18 a :Substation .
+:Substation_18 skos:prefLabel "Підстанція №18" .
+:Substation_18 :nominalCapacity "400.0"^^xsd:double .
+:Substation_18 :currentLoad "381.3"^^xsd:double .
+:Substation_18 :region "Івано-Франківська область" .
+:Substation_19 a :Substation .
+:Substation_19 skos:prefLabel "Підстанція №19" .
+:Substation_19 :nominalCapacity "1600.0"^^xsd:double .
+:Substation_19 :currentLoad "638.2"^^xsd:double .
+:Substation_19 :region "Львівська область" .
+:Substation_20 a :Substation .
+:Substation_20 skos:prefLabel "Підстанція №20" .
+:Substation_20 :nominalCapacity "800.0"^^xsd:double .
+:Substation_20 :currentLoad "691.4"^^xsd:double .
+:Substation_20 :region "Волинська область" .
+:Substation_21 a :Substation .
+:Substation_21 skos:prefLabel "Підстанція №21" .
+:Substation_21 :nominalCapacity "1000.0"^^xsd:double .
+:Substation_21 :currentLoad "708.0"^^xsd:double .
+:Substation_21 :region "Закарпатська область" .
+:Substation_22 a :Substation .
+:Substation_22 skos:prefLabel "Підстанція №22" .
+:Substation_22 :nominalCapacity "400.0"^^xsd:double .
+:Substation_22 :currentLoad "151.4"^^xsd:double .
+:Substation_22 :region "Тернопільська область" .
+:Substation_23 a :Substation .
+:Substation_23 skos:prefLabel "Підстанція №23" .
+:Substation_23 :nominalCapacity "630.0"^^xsd:double .
+:Substation_23 :currentLoad "522.5"^^xsd:double .
+:Substation_23 :region "Рівненська область" .
+:Substation_24 a :Substation .
+:Substation_24 skos:prefLabel "Підстанція №24" .
+:Substation_24 :nominalCapacity "400.0"^^xsd:double .
+:Substation_24 :currentLoad "352.1"^^xsd:double .
+:Substation_24 :region "Івано-Франківська область" .
+:Substation_25 a :Substation .
+:Substation_25 skos:prefLabel "Підстанція №25" .
+:Substation_25 :nominalCapacity "400.0"^^xsd:double .
+:Substation_25 :currentLoad "234.3"^^xsd:double .
+:Substation_25 :region "Львівська область" .
+:Substation_26 a :Substation .
+:Substation_26 skos:prefLabel "Підстанція №26" .
+:Substation_26 :nominalCapacity "2500.0"^^xsd:double .
+:Substation_26 :currentLoad "1860.3"^^xsd:double .
+:Substation_26 :region "Волинська область" .
+:Substation_27 a :Substation .
+:Substation_27 skos:prefLabel "Підстанція №27" .
+:Substation_27 :nominalCapacity "1000.0"^^xsd:double .
+:Substation_27 :currentLoad "450.8"^^xsd:double .
+:Substation_27 :region "Закарпатська область" .
+:Substation_28 a :Substation .
+:Substation_28 skos:prefLabel "Підстанція №28" .
+:Substation_28 :nominalCapacity "1000.0"^^xsd:double .
+:Substation_28 :currentLoad "479.9"^^xsd:double .
+:Substation_28 :region "Тернопільська область" .
+:Substation_29 a :Substation .
+:Substation_29 skos:prefLabel "Підстанція №29" .
+:Substation_29 :nominalCapacity "800.0"^^xsd:double .
+:Substation_29 :currentLoad "628.1"^^xsd:double .
+:Substation_29 :region "Рівненська область" .
+:Substation_30 a :Substation .
+:Substation_30 skos:prefLabel "Підстанція №30" .
+:Substation_30 :nominalCapacity "400.0"^^xsd:double .
+:Substation_30 :currentLoad "291.1"^^xsd:double .
+:Substation_30 :region "Івано-Франківська область" .
+:Dispatcher_1 a :Dispatcher .
+:Dispatcher_1 skos:prefLabel "Диспетчер №1" .
+:Dispatcher_1 :qualification "молодший" .
+:Dispatcher_1 :shift "вечірня" .
+:Dispatcher_2 a :Dispatcher .
+:Dispatcher_2 skos:prefLabel "Диспетчер №2" .
+:Dispatcher_2 :qualification "провідний" .
+:Dispatcher_2 :shift "нічна" .
+:Dispatcher_3 a :Dispatcher .
+:Dispatcher_3 skos:prefLabel "Диспетчер №3" .
+:Dispatcher_3 :qualification "провідний" .
+:Dispatcher_3 :shift "ранкова" .
+:Dispatcher_4 a :Dispatcher .
+:Dispatcher_4 skos:prefLabel "Диспетчер №4" .
+:Dispatcher_4 :qualification "провідний" .
+:Dispatcher_4 :shift "вечірня" .
+:Dispatcher_5 a :Dispatcher .
+:Dispatcher_5 skos:prefLabel "Диспетчер №5" .
+:Dispatcher_5 :qualification "старший" .
+:Dispatcher_5 :shift "нічна" .
+:Dispatcher_6 a :Dispatcher .
+:Dispatcher_6 skos:prefLabel "Диспетчер №6" .
+:Dispatcher_6 :qualification "провідний" .
+:Dispatcher_6 :shift "ранкова" .
+:Dispatcher_7 a :Dispatcher .
+:Dispatcher_7 skos:prefLabel "Диспетчер №7" .
+:Dispatcher_7 :qualification "провідний" .
+:Dispatcher_7 :shift "вечірня" .
+:Dispatcher_8 a :Dispatcher .
+:Dispatcher_8 skos:prefLabel "Диспетчер №8" .
+:Dispatcher_8 :qualification "старший" .
+:Dispatcher_8 :shift "нічна" .
+:Dispatcher_9 a :Dispatcher .
+:Dispatcher_9 skos:prefLabel "Диспетчер №9" .
+:Dispatcher_9 :qualification "провідний" .
+:Dispatcher_9 :shift "ранкова" .
+:Dispatcher_10 a :Dispatcher .
+:Dispatcher_10 skos:prefLabel "Диспетчер №10" .
+:Dispatcher_10 :qualification "старший" .
+:Dispatcher_10 :shift "вечірня" .
+:Consumer_0001 a :Consumer, :ResidentialConsumer .
+:Consumer_0001 skos:prefLabel "Споживач №1" .
+:Consumer_0001 :consumerCategory "побутовий" .
+:Consumer_0001 :contractLimit "7.2"^^xsd:double .
+:Consumer_0002 a :Consumer, :CommercialConsumer .
+:Consumer_0002 skos:prefLabel "Споживач №2" .
+:Consumer_0002 :consumerCategory "комерційний" .
+:Consumer_0002 :contractLimit "135.4"^^xsd:double .
+:Consumer_0003 a :Consumer, :ResidentialConsumer .
+:Consumer_0003 skos:prefLabel "Споживач №3" .
+:Consumer_0003 :consumerCategory "побутовий" .
+:Consumer_0003 :contractLimit "11.8"^^xsd:double .
+:Consumer_0004 a :Consumer, :CommercialConsumer .
+:Consumer_0004 skos:prefLabel "Споживач №4" .
+:Consumer_0004 :consumerCategory "комерційний" .
+:Consumer_0004 :contractLimit "40.5"^^xsd:double .
+:Consumer_0005 a :Consumer, :ResidentialConsumer .
+:Consumer_0005 skos:prefLabel "Споживач №5" .
+:Consumer_0005 :consumerCategory "побутовий" .
+:Consumer_0005 :contractLimit "13.4"^^xsd:double .
+:Consumer_0006 a :Consumer, :CommercialConsumer .
+:Consumer_0006 skos:prefLabel "Споживач №6" .
+:Consumer_0006 :consumerCategory "комерційний" .
+:Consumer_0006 :contractLimit "187.0"^^xsd:double .
+:Consumer_0007 a :Consumer, :ResidentialConsumer .
+:Consumer_0007 skos:prefLabel "Споживач №7" .
+:Consumer_0007 :consumerCategory "побутовий" .
+:Consumer_0007 :contractLimit "7.4"^^xsd:double .
+:Consumer_0008 a :Consumer, :CommercialConsumer .
+:Consumer_0008 skos:prefLabel "Споживач №8" .
+:Consumer_0008 :consumerCategory "комерційний" .
+:Consumer_0008 :contractLimit "162.5"^^xsd:double .
+:Consumer_0009 a :Consumer, :ResidentialConsumer .
+:Consumer_0009 skos:prefLabel "Споживач №9" .
+:Consumer_0009 :consumerCategory "побутовий" .
+:Consumer_0009 :contractLimit "14.3"^^xsd:double .
+:Consumer_0010 a :Consumer, :CommercialConsumer .
+:Consumer_0010 skos:prefLabel "Споживач №10" .
+:Consumer_0010 :consumerCategory "комерційний" .
+:Consumer_0010 :contractLimit "112.2"^^xsd:double .
+:Consumer_0011 a :Consumer, :ResidentialConsumer .
+:Consumer_0011 skos:prefLabel "Споживач №11" .
+:Consumer_0011 :consumerCategory "побутовий" .
+:Consumer_0011 :contractLimit "5.1"^^xsd:double .
+:Consumer_0012 a :Consumer, :ResidentialConsumer .
+:Consumer_0012 skos:prefLabel "Споживач №12" .
+:Consumer_0012 :consumerCategory "побутовий" .
+:Consumer_0012 :contractLimit "14.1"^^xsd:double .
+:Consumer_0013 a :Consumer, :ResidentialConsumer .
+:Consumer_0013 skos:prefLabel "Споживач №13" .
+:Consumer_0013 :consumerCategory "побутовий" .
+:Consumer_0013 :contractLimit "7.8"^^xsd:double .
+:Consumer_0014 a :Consumer, :IndustrialConsumer .
+:Consumer_0014 skos:prefLabel "Споживач №14" .
+:Consumer_0014 :consumerCategory "промисловий" .
+:Consumer_0014 :contractLimit "624.5"^^xsd:double .
+:Consumer_0015 a :Consumer, :ResidentialConsumer .
+:Consumer_0015 skos:prefLabel "Споживач №15" .
+:Consumer_0015 :consumerCategory "побутовий" .
+:Consumer_0015 :contractLimit "11.6"^^xsd:double .
+:Consumer_0016 a :Consumer, :ResidentialConsumer .
+:Consumer_0016 skos:prefLabel "Споживач №16" .
+:Consumer_0016 :consumerCategory "побутовий" .
+:Consumer_0016 :contractLimit "11.7"^^xsd:double .
+:Consumer_0017 a :Consumer, :ResidentialConsumer .
+:Consumer_0017 skos:prefLabel "Споживач №17" .
+:Consumer_0017 :consumerCategory "побутовий" .
+:Consumer_0017 :contractLimit "13.0"^^xsd:double .
+:Consumer_0018 a :Consumer, :ResidentialConsumer .
+:Consumer_0018 skos:prefLabel "Споживач №18" .
+:Consumer_0018 :consumerCategory "побутовий" .
+:Consumer_0018 :contractLimit "9.2"^^xsd:double .
+:Consumer_0019 a :Consumer, :CommercialConsumer .
+:Consumer_0019 skos:prefLabel "Споживач №19" .
+:Consumer_0019 :consumerCategory "комерційний" .
+:Consumer_0019 :contractLimit "169.3"^^xsd:double .
+:Consumer_0020 a :Consumer, :CommercialConsumer .
+:Consumer_0020 skos:prefLabel "Споживач №20" .
+:Consumer_0020 :consumerCategory "комерційний" .
+:Consumer_0020 :contractLimit "173.8"^^xsd:double .
+:Consumer_0021 a :Consumer, :ResidentialConsumer .
+:Consumer_0021 skos:prefLabel "Споживач №21" .
+:Consumer_0021 :consumerCategory "побутовий" .
+:Consumer_0021 :contractLimit "13.6"^^xsd:double .
+:Consumer_0022 a :Consumer, :CommercialConsumer .
+:Consumer_0022 skos:prefLabel "Споживач №22" .
+:Consumer_0022 :consumerCategory "комерційний" .
+:Consumer_0022 :contractLimit "82.4"^^xsd:double .
+:Consumer_0023 a :Consumer, :CommercialConsumer .
+:Consumer_0023 skos:prefLabel "Споживач №23" .
+:Consumer_0023 :consumerCategory "комерційний" .
+:Consumer_0023 :contractLimit "145.9"^^xsd:double .
+:Consumer_0024 a :Consumer, :ResidentialConsumer .
+:Consumer_0024 skos:prefLabel "Споживач №24" .
+:Consumer_0024 :consumerCategory "побутовий" .
+:Consumer_0024 :contractLimit "10.8"^^xsd:double .
+:Consumer_0025 a :Consumer, :IndustrialConsumer .
+:Consumer_0025 skos:prefLabel "Споживач №25" .
+:Consumer_0025 :consumerCategory "промисловий" .
+:Consumer_0025 :contractLimit "559.9"^^xsd:double .
+:Consumer_0026 a :Consumer, :ResidentialConsumer .
+:Consumer_0026 skos:prefLabel "Споживач №26" .
+:Consumer_0026 :consumerCategory "побутовий" .
+:Consumer_0026 :contractLimit "13.5"^^xsd:double .
+:Consumer_0027 a :Consumer, :ResidentialConsumer .
+:Consumer_0027 skos:prefLabel "Споживач №27" .
+:Consumer_0027 :consumerCategory "побутовий" .
+:Consumer_0027 :contractLimit "9.0"^^xsd:double .
+:Consumer_0028 a :Consumer, :IndustrialConsumer .
+:Consumer_0028 skos:prefLabel "Споживач №28" .
+:Consumer_0028 :consumerCategory "промисловий" .
+:Consumer_0028 :contractLimit "303.3"^^xsd:double .
+:Consumer_0029 a :Consumer, :ResidentialConsumer .
+:Consumer_0029 skos:prefLabel "Споживач №29" .
+:Consumer_0029 :consumerCategory "побутовий" .
+:Consumer_0029 :contractLimit "7.0"^^xsd:double .
+:Consumer_0030 a :Consumer, :ResidentialConsumer .
+:Consumer_0030 skos:prefLabel "Споживач №30" .
+:Consumer_0030 :consumerCategory "побутовий" .
+:Consumer_0030 :contractLimit "9.6"^^xsd:double .
+:Consumer_0031 a :Consumer, :IndustrialConsumer .
+:Consumer_0031 skos:prefLabel "Споживач №31" .
+:Consumer_0031 :consumerCategory "промисловий" .
+:Consumer_0031 :contractLimit "899.0"^^xsd:double .
+:Consumer_0032 a :Consumer, :ResidentialConsumer .
+:Consumer_0032 skos:prefLabel "Споживач №32" .
+:Consumer_0032 :consumerCategory "побутовий" .
+:Consumer_0032 :contractLimit "14.3"^^xsd:double .
+:Consumer_0033 a :Consumer, :ResidentialConsumer .
+:Consumer_0033 skos:prefLabel "Споживач №33" .
+:Consumer_0033 :consumerCategory "побутовий" .
+:Consumer_0033 :contractLimit "9.4"^^xsd:double .
+:Consumer_0034 a :Consumer, :CommercialConsumer .
+:Consumer_0034 skos:prefLabel "Споживач №34" .
+:Consumer_0034 :consumerCategory "комерційний" .
+:Consumer_0034 :contractLimit "41.3"^^xsd:double .
+:Consumer_0035 a :Consumer, :ResidentialConsumer .
+:Consumer_0035 skos:prefLabel "Споживач №35" .
+:Consumer_0035 :consumerCategory "побутовий" .
+:Consumer_0035 :contractLimit "7.6"^^xsd:double .
+:Consumer_0036 a :Consumer, :ResidentialConsumer .
+:Consumer_0036 skos:prefLabel "Споживач №36" .
+:Consumer_0036 :consumerCategory "побутовий" .
+:Consumer_0036 :contractLimit "11.0"^^xsd:double .
+:Consumer_0037 a :Consumer, :ResidentialConsumer .
+:Consumer_0037 skos:prefLabel "Споживач №37" .
+:Consumer_0037 :consumerCategory "побутовий" .
+:Consumer_0037 :contractLimit "10.1"^^xsd:double .
+:Consumer_0038 a :Consumer, :ResidentialConsumer .
+:Consumer_0038 skos:prefLabel "Споживач №38" .
+:Consumer_0038 :consumerCategory "побутовий" .
+:Consumer_0038 :contractLimit "5.4"^^xsd:double .
+:Consumer_0039 a :Consumer, :CommercialConsumer .
+:Consumer_0039 skos:prefLabel "Споживач №39" .
+:Consumer_0039 :consumerCategory "комерційний" .
+:Consumer_0039 :contractLimit "128.3"^^xsd:double .
+:Consumer_0040 a :Consumer, :ResidentialConsumer .
+:Consumer_0040 skos:prefLabel "Споживач №40" .
+:Consumer_0040 :consumerCategory "побутовий" .
+:Consumer_0040 :contractLimit "14.5"^^xsd:double .
+:Consumer_0041 a :Consumer, :IndustrialConsumer .
+:Consumer_0041 skos:prefLabel "Споживач №41" .
+:Consumer_0041 :consumerCategory "промисловий" .
+:Consumer_0041 :contractLimit "609.1"^^xsd:double .
+:Consumer_0042 a :Consumer, :ResidentialConsumer .
+:Consumer_0042 skos:prefLabel "Споживач №42" .
+:Consumer_0042 :consumerCategory "побутовий" .
+:Consumer_0042 :contractLimit "14.0"^^xsd:double .
+:Consumer_0043 a :Consumer, :ResidentialConsumer .
+:Consumer_0043 skos:prefLabel "Споживач №43" .
+:Consumer_0043 :consumerCategory "побутовий" .
+:Consumer_0043 :contractLimit "11.7"^^xsd:double .
+:Consumer_0044 a :Consumer, :IndustrialConsumer .
+:Consumer_0044 skos:prefLabel "Споживач №44" .
+:Consumer_0044 :consumerCategory "промисловий" .
+:Consumer_0044 :contractLimit "737.2"^^xsd:double .
+:Consumer_0045 a :Consumer, :ResidentialConsumer .
+:Consumer_0045 skos:prefLabel "Споживач №45" .
+:Consumer_0045 :consumerCategory "побутовий" .
+:Consumer_0045 :contractLimit "13.8"^^xsd:double .
+:Consumer_0046 a :Consumer, :CommercialConsumer .
+:Consumer_0046 skos:prefLabel "Споживач №46" .
+:Consumer_0046 :consumerCategory "комерційний" .
+:Consumer_0046 :contractLimit "168.4"^^xsd:double .
+:Consumer_0047 a :Consumer, :ResidentialConsumer .
+:Consumer_0047 skos:prefLabel "Споживач №47" .
+:Consumer_0047 :consumerCategory "побутовий" .
+:Consumer_0047 :contractLimit "8.8"^^xsd:double .
+:Consumer_0048 a :Consumer, :CommercialConsumer .
+:Consumer_0048 skos:prefLabel "Споживач №48" .
+:Consumer_0048 :consumerCategory "комерційний" .
+:Consumer_0048 :contractLimit "95.9"^^xsd:double .
+:Consumer_0049 a :Consumer, :CommercialConsumer .
+:Consumer_0049 skos:prefLabel "Споживач №49" .
+:Consumer_0049 :consumerCategory "комерційний" .
+:Consumer_0049 :contractLimit "92.5"^^xsd:double .
+:Consumer_0050 a :Consumer, :CommercialConsumer .
+:Consumer_0050 skos:prefLabel "Споживач №50" .
+:Consumer_0050 :consumerCategory "комерційний" .
+:Consumer_0050 :contractLimit "103.9"^^xsd:double .
+:Consumer_0051 a :Consumer, :ResidentialConsumer .
+:Consumer_0051 skos:prefLabel "Споживач №51" .
+:Consumer_0051 :consumerCategory "побутовий" .
+:Consumer_0051 :contractLimit "6.8"^^xsd:double .
+:Consumer_0052 a :Consumer, :ResidentialConsumer .
+:Consumer_0052 skos:prefLabel "Споживач №52" .
+:Consumer_0052 :consumerCategory "побутовий" .
+:Consumer_0052 :contractLimit "9.4"^^xsd:double .
+:Consumer_0053 a :Consumer, :ResidentialConsumer .
+:Consumer_0053 skos:prefLabel "Споживач №53" .
+:Consumer_0053 :consumerCategory "побутовий" .
+:Consumer_0053 :contractLimit "5.4"^^xsd:double .
+:Consumer_0054 a :Consumer, :ResidentialConsumer .
+:Consumer_0054 skos:prefLabel "Споживач №54" .
+:Consumer_0054 :consumerCategory "побутовий" .
+:Consumer_0054 :contractLimit "8.6"^^xsd:double .
+:Consumer_0055 a :Consumer, :ResidentialConsumer .
+:Consumer_0055 skos:prefLabel "Споживач №55" .
+:Consumer_0055 :consumerCategory "побутовий" .
+:Consumer_0055 :contractLimit "12.2"^^xsd:double .
+:Consumer_0056 a :Consumer, :CommercialConsumer .
+:Consumer_0056 skos:prefLabel "Споживач №56" .
+:Consumer_0056 :consumerCategory "комерційний" .
+:Consumer_0056 :contractLimit "151.6"^^xsd:double .
+:Consumer_0057 a :Consumer, :CommercialConsumer .
+:Consumer_0057 skos:prefLabel "Споживач №57" .
+:Consumer_0057 :consumerCategory "комерційний" .
+:Consumer_0057 :contractLimit "148.4"^^xsd:double .
+:Consumer_0058 a :Consumer, :CommercialConsumer .
+:Consumer_0058 skos:prefLabel "Споживач №58" .
+:Consumer_0058 :consumerCategory "комерційний" .
+:Consumer_0058 :contractLimit "173.4"^^xsd:double .
+:Consumer_0059 a :Consumer, :IndustrialConsumer .
+:Consumer_0059 skos:prefLabel "Споживач №59" .
+:Consumer_0059 :consumerCategory "промисловий" .
+:Consumer_0059 :contractLimit "675.6"^^xsd:double .
+:Consumer_0060 a :Consumer, :CommercialConsumer .
+:Consumer_0060 skos:prefLabel "Споживач №60" .
+:Consumer_0060 :consumerCategory "комерційний" .
+:Consumer_0060 :contractLimit "167.0"^^xsd:double .
+:Consumer_0061 a :Consumer, :IndustrialConsumer .
+:Consumer_0061 skos:prefLabel "Споживач №61" .
+:Consumer_0061 :consumerCategory "промисловий" .
+:Consumer_0061 :contractLimit "467.9"^^xsd:double .
+:Consumer_0062 a :Consumer, :ResidentialConsumer .
+:Consumer_0062 skos:prefLabel "Споживач №62" .
+:Consumer_0062 :consumerCategory "побутовий" .
+:Consumer_0062 :contractLimit "6.5"^^xsd:double .
+:Consumer_0063 a :Consumer, :ResidentialConsumer .
+:Consumer_0063 skos:prefLabel "Споживач №63" .
+:Consumer_0063 :consumerCategory "побутовий" .
+:Consumer_0063 :contractLimit "9.6"^^xsd:double .
+:Consumer_0064 a :Consumer, :CommercialConsumer .
+:Consumer_0064 skos:prefLabel "Споживач №64" .
+:Consumer_0064 :consumerCategory "комерційний" .
+:Consumer_0064 :contractLimit "119.1"^^xsd:double .
+:Consumer_0065 a :Consumer, :ResidentialConsumer .
+:Consumer_0065 skos:prefLabel "Споживач №65" .
+:Consumer_0065 :consumerCategory "побутовий" .
+:Consumer_0065 :contractLimit "12.8"^^xsd:double .
+:Consumer_0066 a :Consumer, :CommercialConsumer .
+:Consumer_0066 skos:prefLabel "Споживач №66" .
+:Consumer_0066 :consumerCategory "комерційний" .
+:Consumer_0066 :contractLimit "48.0"^^xsd:double .
+:Consumer_0067 a :Consumer, :CommercialConsumer .
+:Consumer_0067 skos:prefLabel "Споживач №67" .
+:Consumer_0067 :consumerCategory "комерційний" .
+:Consumer_0067 :contractLimit "198.1"^^xsd:double .
+:Consumer_0068 a :Consumer, :IndustrialConsumer .
+:Consumer_0068 skos:prefLabel "Споживач №68" .
+:Consumer_0068 :consumerCategory "промисловий" .
+:Consumer_0068 :contractLimit "779.8"^^xsd:double .
+:Consumer_0069 a :Consumer, :CommercialConsumer .
+:Consumer_0069 skos:prefLabel "Споживач №69" .
+:Consumer_0069 :consumerCategory "комерційний" .
+:Consumer_0069 :contractLimit "183.6"^^xsd:double .
+:Consumer_0070 a :Consumer, :ResidentialConsumer .
+:Consumer_0070 skos:prefLabel "Споживач №70" .
+:Consumer_0070 :consumerCategory "побутовий" .
+:Consumer_0070 :contractLimit "12.7"^^xsd:double .
+:Consumer_0071 a :Consumer, :ResidentialConsumer .
+:Consumer_0071 skos:prefLabel "Споживач №71" .
+:Consumer_0071 :consumerCategory "побутовий" .
+:Consumer_0071 :contractLimit "12.1"^^xsd:double .
+:Consumer_0072 a :Consumer, :ResidentialConsumer .
+:Consumer_0072 skos:prefLabel "Споживач №72" .
+:Consumer_0072 :consumerCategory "побутовий" .
+:Consumer_0072 :contractLimit "6.4"^^xsd:double .
+:Consumer_0073 a :Consumer, :ResidentialConsumer .
+:Consumer_0073 skos:prefLabel "Споживач №73" .
+:Consumer_0073 :consumerCategory "побутовий" .
+:Consumer_0073 :contractLimit "9.1"^^xsd:double .
+:Consumer_0074 a :Consumer, :CommercialConsumer .
+:Consumer_0074 skos:prefLabel "Споживач №74" .
+:Consumer_0074 :consumerCategory "комерційний" .
+:Consumer_0074 :contractLimit "102.3"^^xsd:double .
+:Consumer_0075 a :Consumer, :IndustrialConsumer .
+:Consumer_0075 skos:prefLabel "Споживач №75" .
+:Consumer_0075 :consumerCategory "промисловий" .
+:Consumer_0075 :contractLimit "497.2"^^xsd:double .
+:Consumer_0076 a :Consumer, :CommercialConsumer .
+:Consumer_0076 skos:prefLabel "Споживач №76" .
+:Consumer_0076 :consumerCategory "комерційний" .
+:Consumer_0076 :contractLimit "126.1"^^xsd:double .
+:Consumer_0077 a :Consumer, :CommercialConsumer .
+:Consumer_0077 skos:prefLabel "Споживач №77" .
+:Consumer_0077 :consumerCategory "комерційний" .
+:Consumer_0077 :contractLimit "75.1"^^xsd:double .
+:Consumer_0078 a :Consumer, :ResidentialConsumer .
+:Consumer_0078 skos:prefLabel "Споживач №78" .
+:Consumer_0078 :consumerCategory "побутовий" .
+:Consumer_0078 :contractLimit "11.7"^^xsd:double .
+:Consumer_0079 a :Consumer, :ResidentialConsumer .
+:Consumer_0079 skos:prefLabel "Споживач №79" .
+:Consumer_0079 :consumerCategory "побутовий" .
+:Consumer_0079 :contractLimit "14.8"^^xsd:double .
+:Consumer_0080 a :Consumer, :ResidentialConsumer .
+:Consumer_0080 skos:prefLabel "Споживач №80" .
+:Consumer_0080 :consumerCategory "побутовий" .
+:Consumer_0080 :contractLimit "5.8"^^xsd:double .
+:Consumer_0081 a :Consumer, :ResidentialConsumer .
+:Consumer_0081 skos:prefLabel "Споживач №81" .
+:Consumer_0081 :consumerCategory "побутовий" .
+:Consumer_0081 :contractLimit "8.8"^^xsd:double .
+:Consumer_0082 a :Consumer, :CommercialConsumer .
+:Consumer_0082 skos:prefLabel "Споживач №82" .
+:Consumer_0082 :consumerCategory "комерційний" .
+:Consumer_0082 :contractLimit "84.5"^^xsd:double .
+:Consumer_0083 a :Consumer, :ResidentialConsumer .
+:Consumer_0083 skos:prefLabel "Споживач №83" .
+:Consumer_0083 :consumerCategory "побутовий" .
+:Consumer_0083 :contractLimit "12.5"^^xsd:double .
+:Consumer_0084 a :Consumer, :ResidentialConsumer .
+:Consumer_0084 skos:prefLabel "Споживач №84" .
+:Consumer_0084 :consumerCategory "побутовий" .
+:Consumer_0084 :contractLimit "12.5"^^xsd:double .
+:Consumer_0085 a :Consumer, :ResidentialConsumer .
+:Consumer_0085 skos:prefLabel "Споживач №85" .
+:Consumer_0085 :consumerCategory "побутовий" .
+:Consumer_0085 :contractLimit "6.3"^^xsd:double .
+:Consumer_0086 a :Consumer, :ResidentialConsumer .
+:Consumer_0086 skos:prefLabel "Споживач №86" .
+:Consumer_0086 :consumerCategory "побутовий" .
+:Consumer_0086 :contractLimit "12.7"^^xsd:double .
+:Consumer_0087 a :Consumer, :ResidentialConsumer .
+:Consumer_0087 skos:prefLabel "Споживач №87" .
+:Consumer_0087 :consumerCategory "побутовий" .
+:Consumer_0087 :contractLimit "12.8"^^xsd:double .
+:Consumer_0088 a :Consumer, :ResidentialConsumer .
+:Consumer_0088 skos:prefLabel "Споживач №88" .
+:Consumer_0088 :consumerCategory "побутовий" .
+:Consumer_0088 :contractLimit "10.8"^^xsd:double .
+:Consumer_0089 a :Consumer, :ResidentialConsumer .
+:Consumer_0089 skos:prefLabel "Споживач №89" .
+:Consumer_0089 :consumerCategory "побутовий" .
+:Consumer_0089 :contractLimit "10.9"^^xsd:double .
+:Consumer_0090 a :Consumer, :ResidentialConsumer .
+:Consumer_0090 skos:prefLabel "Споживач №90" .
+:Consumer_0090 :consumerCategory "побутовий" .
+:Consumer_0090 :contractLimit "13.5"^^xsd:double .
+:Consumer_0091 a :Consumer, :ResidentialConsumer .
+:Consumer_0091 skos:prefLabel "Споживач №91" .
+:Consumer_0091 :consumerCategory "побутовий" .
+:Consumer_0091 :contractLimit "8.5"^^xsd:double .
+:Consumer_0092 a :Consumer, :ResidentialConsumer .
+:Consumer_0092 skos:prefLabel "Споживач №92" .
+:Consumer_0092 :consumerCategory "побутовий" .
+:Consumer_0092 :contractLimit "5.1"^^xsd:double .
+:Consumer_0093 a :Consumer, :CommercialConsumer .
+:Consumer_0093 skos:prefLabel "Споживач №93" .
+:Consumer_0093 :consumerCategory "комерційний" .
+:Consumer_0093 :contractLimit "153.2"^^xsd:double .
+:Consumer_0094 a :Consumer, :ResidentialConsumer .
+:Consumer_0094 skos:prefLabel "Споживач №94" .
+:Consumer_0094 :consumerCategory "побутовий" .
+:Consumer_0094 :contractLimit "11.2"^^xsd:double .
+:Consumer_0095 a :Consumer, :IndustrialConsumer .
+:Consumer_0095 skos:prefLabel "Споживач №95" .
+:Consumer_0095 :consumerCategory "промисловий" .
+:Consumer_0095 :contractLimit "424.5"^^xsd:double .
+:Consumer_0096 a :Consumer, :CommercialConsumer .
+:Consumer_0096 skos:prefLabel "Споживач №96" .
+:Consumer_0096 :consumerCategory "комерційний" .
+:Consumer_0096 :contractLimit "79.0"^^xsd:double .
+:Consumer_0097 a :Consumer, :ResidentialConsumer .
+:Consumer_0097 skos:prefLabel "Споживач №97" .
+:Consumer_0097 :consumerCategory "побутовий" .
+:Consumer_0097 :contractLimit "9.9"^^xsd:double .
+:Consumer_0098 a :Consumer, :ResidentialConsumer .
+:Consumer_0098 skos:prefLabel "Споживач №98" .
+:Consumer_0098 :consumerCategory "побутовий" .
+:Consumer_0098 :contractLimit "8.4"^^xsd:double .
+:Consumer_0099 a :Consumer, :ResidentialConsumer .
+:Consumer_0099 skos:prefLabel "Споживач №99" .
+:Consumer_0099 :consumerCategory "побутовий" .
+:Consumer_0099 :contractLimit "10.2"^^xsd:double .
+:Consumer_0100 a :Consumer, :CommercialConsumer .
+:Consumer_0100 skos:prefLabel "Споживач №100" .
+:Consumer_0100 :consumerCategory "комерційний" .
+:Consumer_0100 :contractLimit "161.3"^^xsd:double .
+:Consumer_0101 a :Consumer, :ResidentialConsumer .
+:Consumer_0101 skos:prefLabel "Споживач №101" .
+:Consumer_0101 :consumerCategory "побутовий" .
+:Consumer_0101 :contractLimit "5.9"^^xsd:double .
+:Consumer_0102 a :Consumer, :IndustrialConsumer .
+:Consumer_0102 skos:prefLabel "Споживач №102" .
+:Consumer_0102 :consumerCategory "промисловий" .
+:Consumer_0102 :contractLimit "489.9"^^xsd:double .
+:Consumer_0103 a :Consumer, :CommercialConsumer .
+:Consumer_0103 skos:prefLabel "Споживач №103" .
+:Consumer_0103 :consumerCategory "комерційний" .
+:Consumer_0103 :contractLimit "92.9"^^xsd:double .
+:Consumer_0104 a :Consumer, :ResidentialConsumer .
+:Consumer_0104 skos:prefLabel "Споживач №104" .
+:Consumer_0104 :consumerCategory "побутовий" .
+:Consumer_0104 :contractLimit "12.2"^^xsd:double .
+:Consumer_0105 a :Consumer, :ResidentialConsumer .
+:Consumer_0105 skos:prefLabel "Споживач №105" .
+:Consumer_0105 :consumerCategory "побутовий" .
+:Consumer_0105 :contractLimit "6.9"^^xsd:double .
+:Consumer_0106 a :Consumer, :CommercialConsumer .
+:Consumer_0106 skos:prefLabel "Споживач №106" .
+:Consumer_0106 :consumerCategory "комерційний" .
+:Consumer_0106 :contractLimit "135.5"^^xsd:double .
+:Consumer_0107 a :Consumer, :ResidentialConsumer .
+:Consumer_0107 skos:prefLabel "Споживач №107" .
+:Consumer_0107 :consumerCategory "побутовий" .
+:Consumer_0107 :contractLimit "5.1"^^xsd:double .
+:Consumer_0108 a :Consumer, :CommercialConsumer .
+:Consumer_0108 skos:prefLabel "Споживач №108" .
+:Consumer_0108 :consumerCategory "комерційний" .
+:Consumer_0108 :contractLimit "86.7"^^xsd:double .
+:Consumer_0109 a :Consumer, :ResidentialConsumer .
+:Consumer_0109 skos:prefLabel "Споживач №109" .
+:Consumer_0109 :consumerCategory "побутовий" .
+:Consumer_0109 :contractLimit "10.7"^^xsd:double .
+:Consumer_0110 a :Consumer, :ResidentialConsumer .
+:Consumer_0110 skos:prefLabel "Споживач №110" .
+:Consumer_0110 :consumerCategory "побутовий" .
+:Consumer_0110 :contractLimit "7.5"^^xsd:double .
+:Consumer_0111 a :Consumer, :CommercialConsumer .
+:Consumer_0111 skos:prefLabel "Споживач №111" .
+:Consumer_0111 :consumerCategory "комерційний" .
+:Consumer_0111 :contractLimit "51.9"^^xsd:double .
+:Consumer_0112 a :Consumer, :ResidentialConsumer .
+:Consumer_0112 skos:prefLabel "Споживач №112" .
+:Consumer_0112 :consumerCategory "побутовий" .
+:Consumer_0112 :contractLimit "5.9"^^xsd:double .
+:Consumer_0113 a :Consumer, :IndustrialConsumer .
+:Consumer_0113 skos:prefLabel "Споживач №113" .
+:Consumer_0113 :consumerCategory "промисловий" .
+:Consumer_0113 :contractLimit "764.0"^^xsd:double .
+:Consumer_0114 a :Consumer, :ResidentialConsumer .
+:Consumer_0114 skos:prefLabel "Споживач №114" .
+:Consumer_0114 :consumerCategory "побутовий" .
+:Consumer_0114 :contractLimit "13.6"^^xsd:double .
+:Consumer_0115 a :Consumer, :ResidentialConsumer .
+:Consumer_0115 skos:prefLabel "Споживач №115" .
+:Consumer_0115 :consumerCategory "побутовий" .
+:Consumer_0115 :contractLimit "14.5"^^xsd:double .
+:Consumer_0116 a :Consumer, :ResidentialConsumer .
+:Consumer_0116 skos:prefLabel "Споживач №116" .
+:Consumer_0116 :consumerCategory "побутовий" .
+:Consumer_0116 :contractLimit "7.4"^^xsd:double .
+:Consumer_0117 a :Consumer, :IndustrialConsumer .
+:Consumer_0117 skos:prefLabel "Споживач №117" .
+:Consumer_0117 :consumerCategory "промисловий" .
+:Consumer_0117 :contractLimit "555.4"^^xsd:double .
+:Consumer_0118 a :Consumer, :CommercialConsumer .
+:Consumer_0118 skos:prefLabel "Споживач №118" .
+:Consumer_0118 :consumerCategory "комерційний" .
+:Consumer_0118 :contractLimit "51.4"^^xsd:double .
+:Consumer_0119 a :Consumer, :ResidentialConsumer .
+:Consumer_0119 skos:prefLabel "Споживач №119" .
+:Consumer_0119 :consumerCategory "побутовий" .
+:Consumer_0119 :contractLimit "9.3"^^xsd:double .
+:Consumer_0120 a :Consumer, :ResidentialConsumer .
+:Consumer_0120 skos:prefLabel "Споживач №120" .
+:Consumer_0120 :consumerCategory "побутовий" .
+:Consumer_0120 :contractLimit "5.7"^^xsd:double .
+:Consumer_0121 a :Consumer, :ResidentialConsumer .
+:Consumer_0121 skos:prefLabel "Споживач №121" .
+:Consumer_0121 :consumerCategory "побутовий" .
+:Consumer_0121 :contractLimit "9.4"^^xsd:double .
+:Consumer_0122 a :Consumer, :CommercialConsumer .
+:Consumer_0122 skos:prefLabel "Споживач №122" .
+:Consumer_0122 :consumerCategory "комерційний" .
+:Consumer_0122 :contractLimit "126.4"^^xsd:double .
+:Consumer_0123 a :Consumer, :ResidentialConsumer .
+:Consumer_0123 skos:prefLabel "Споживач №123" .
+:Consumer_0123 :consumerCategory "побутовий" .
+:Consumer_0123 :contractLimit "11.0"^^xsd:double .
+:Consumer_0124 a :Consumer, :IndustrialConsumer .
+:Consumer_0124 skos:prefLabel "Споживач №124" .
+:Consumer_0124 :consumerCategory "промисловий" .
+:Consumer_0124 :contractLimit "631.6"^^xsd:double .
+:Consumer_0125 a :Consumer, :ResidentialConsumer .
+:Consumer_0125 skos:prefLabel "Споживач №125" .
+:Consumer_0125 :consumerCategory "побутовий" .
+:Consumer_0125 :contractLimit "9.7"^^xsd:double .
+:Consumer_0126 a :Consumer, :IndustrialConsumer .
+:Consumer_0126 skos:prefLabel "Споживач №126" .
+:Consumer_0126 :consumerCategory "промисловий" .
+:Consumer_0126 :contractLimit "533.3"^^xsd:double .
+:Consumer_0127 a :Consumer, :CommercialConsumer .
+:Consumer_0127 skos:prefLabel "Споживач №127" .
+:Consumer_0127 :consumerCategory "комерційний" .
+:Consumer_0127 :contractLimit "93.3"^^xsd:double .
+:Consumer_0128 a :Consumer, :CommercialConsumer .
+:Consumer_0128 skos:prefLabel "Споживач №128" .
+:Consumer_0128 :consumerCategory "комерційний" .
+:Consumer_0128 :contractLimit "86.1"^^xsd:double .
+:Consumer_0129 a :Consumer, :ResidentialConsumer .
+:Consumer_0129 skos:prefLabel "Споживач №129" .
+:Consumer_0129 :consumerCategory "побутовий" .
+:Consumer_0129 :contractLimit "8.1"^^xsd:double .
+:Consumer_0130 a :Consumer, :CommercialConsumer .
+:Consumer_0130 skos:prefLabel "Споживач №130" .
+:Consumer_0130 :consumerCategory "комерційний" .
+:Consumer_0130 :contractLimit "172.0"^^xsd:double .
+:Consumer_0131 a :Consumer, :ResidentialConsumer .
+:Consumer_0131 skos:prefLabel "Споживач №131" .
+:Consumer_0131 :consumerCategory "побутовий" .
+:Consumer_0131 :contractLimit "6.9"^^xsd:double .
+:Consumer_0132 a :Consumer, :ResidentialConsumer .
+:Consumer_0132 skos:prefLabel "Споживач №132" .
+:Consumer_0132 :consumerCategory "побутовий" .
+:Consumer_0132 :contractLimit "7.0"^^xsd:double .
+:Consumer_0133 a :Consumer, :CommercialConsumer .
+:Consumer_0133 skos:prefLabel "Споживач №133" .
+:Consumer_0133 :consumerCategory "комерційний" .
+:Consumer_0133 :contractLimit "59.4"^^xsd:double .
+:Consumer_0134 a :Consumer, :ResidentialConsumer .
+:Consumer_0134 skos:prefLabel "Споживач №134" .
+:Consumer_0134 :consumerCategory "побутовий" .
+:Consumer_0134 :contractLimit "10.5"^^xsd:double .
+:Consumer_0135 a :Consumer, :ResidentialConsumer .
+:Consumer_0135 skos:prefLabel "Споживач №135" .
+:Consumer_0135 :consumerCategory "побутовий" .
+:Consumer_0135 :contractLimit "9.6"^^xsd:double .
+:Consumer_0136 a :Consumer, :ResidentialConsumer .
+:Consumer_0136 skos:prefLabel "Споживач №136" .
+:Consumer_0136 :consumerCategory "побутовий" .
+:Consumer_0136 :contractLimit "10.1"^^xsd:double .
+:Consumer_0137 a :Consumer, :ResidentialConsumer .
+:Consumer_0137 skos:prefLabel "Споживач №137" .
+:Consumer_0137 :consumerCategory "побутовий" .
+:Consumer_0137 :contractLimit "9.6"^^xsd:double .
+:Consumer_0138 a :Consumer, :ResidentialConsumer .
+:Consumer_0138 skos:prefLabel "Споживач №138" .
+:Consumer_0138 :consumerCategory "побутовий" .
+:Consumer_0138 :contractLimit "13.6"^^xsd:double .
+:Consumer_0139 a :Consumer, :ResidentialConsumer .
+:Consumer_0139 skos:prefLabel "Споживач №139" .
+:Consumer_0139 :consumerCategory "побутовий" .
+:Consumer_0139 :contractLimit "13.2"^^xsd:double .
+:Consumer_0140 a :Consumer, :CommercialConsumer .
+:Consumer_0140 skos:prefLabel "Споживач №140" .
+:Consumer_0140 :consumerCategory "комерційний" .
+:Consumer_0140 :contractLimit "178.4"^^xsd:double .
+:Consumer_0141 a :Consumer, :CommercialConsumer .
+:Consumer_0141 skos:prefLabel "Споживач №141" .
+:Consumer_0141 :consumerCategory "комерційний" .
+:Consumer_0141 :contractLimit "100.4"^^xsd:double .
+:Consumer_0142 a :Consumer, :ResidentialConsumer .
+:Consumer_0142 skos:prefLabel "Споживач №142" .
+:Consumer_0142 :consumerCategory "побутовий" .
+:Consumer_0142 :contractLimit "10.7"^^xsd:double .
+:Consumer_0143 a :Consumer, :CommercialConsumer .
+:Consumer_0143 skos:prefLabel "Споживач №143" .
+:Consumer_0143 :consumerCategory "комерційний" .
+:Consumer_0143 :contractLimit "152.8"^^xsd:double .
+:Consumer_0144 a :Consumer, :ResidentialConsumer .
+:Consumer_0144 skos:prefLabel "Споживач №144" .
+:Consumer_0144 :consumerCategory "побутовий" .
+:Consumer_0144 :contractLimit "10.0"^^xsd:double .
+:Consumer_0145 a :Consumer, :ResidentialConsumer .
+:Consumer_0145 skos:prefLabel "Споживач №145" .
+:Consumer_0145 :consumerCategory "побутовий" .
+:Consumer_0145 :contractLimit "13.7"^^xsd:double .
+:Consumer_0146 a :Consumer, :ResidentialConsumer .
+:Consumer_0146 skos:prefLabel "Споживач №146" .
+:Consumer_0146 :consumerCategory "побутовий" .
+:Consumer_0146 :contractLimit "9.1"^^xsd:double .
+:Consumer_0147 a :Consumer, :ResidentialConsumer .
+:Consumer_0147 skos:prefLabel "Споживач №147" .
+:Consumer_0147 :consumerCategory "побутовий" .
+:Consumer_0147 :contractLimit "8.4"^^xsd:double .
+:Consumer_0148 a :Consumer, :CommercialConsumer .
+:Consumer_0148 skos:prefLabel "Споживач №148" .
+:Consumer_0148 :consumerCategory "комерційний" .
+:Consumer_0148 :contractLimit "100.8"^^xsd:double .
+:Consumer_0149 a :Consumer, :CommercialConsumer .
+:Consumer_0149 skos:prefLabel "Споживач №149" .
+:Consumer_0149 :consumerCategory "комерційний" .
+:Consumer_0149 :contractLimit "45.7"^^xsd:double .
+:Consumer_0150 a :Consumer, :ResidentialConsumer .
+:Consumer_0150 skos:prefLabel "Споживач №150" .
+:Consumer_0150 :consumerCategory "побутовий" .
+:Consumer_0150 :contractLimit "12.5"^^xsd:double .
+:Consumer_0151 a :Consumer, :ResidentialConsumer .
+:Consumer_0151 skos:prefLabel "Споживач №151" .
+:Consumer_0151 :consumerCategory "побутовий" .
+:Consumer_0151 :contractLimit "9.4"^^xsd:double .
+:Consumer_0152 a :Consumer, :ResidentialConsumer .
+:Consumer_0152 skos:prefLabel "Споживач №152" .
+:Consumer_0152 :consumerCategory "побутовий" .
+:Consumer_0152 :contractLimit "7.9"^^xsd:double .
+:Consumer_0153 a :Consumer, :IndustrialConsumer .
+:Consumer_0153 skos:prefLabel "Споживач №153" .
+:Consumer_0153 :consumerCategory "промисловий" .
+:Consumer_0153 :contractLimit "693.2"^^xsd:double .
+:Consumer_0154 a :Consumer, :CommercialConsumer .
+:Consumer_0154 skos:prefLabel "Споживач №154" .
+:Consumer_0154 :consumerCategory "комерційний" .
+:Consumer_0154 :contractLimit "139.2"^^xsd:double .
+:Consumer_0155 a :Consumer, :CommercialConsumer .
+:Consumer_0155 skos:prefLabel "Споживач №155" .
+:Consumer_0155 :consumerCategory "комерційний" .
+:Consumer_0155 :contractLimit "142.1"^^xsd:double .
+:Consumer_0156 a :Consumer, :CommercialConsumer .
+:Consumer_0156 skos:prefLabel "Споживач №156" .
+:Consumer_0156 :consumerCategory "комерційний" .
+:Consumer_0156 :contractLimit "184.2"^^xsd:double .
+:Consumer_0157 a :Consumer, :ResidentialConsumer .
+:Consumer_0157 skos:prefLabel "Споживач №157" .
+:Consumer_0157 :consumerCategory "побутовий" .
+:Consumer_0157 :contractLimit "14.9"^^xsd:double .
+:Consumer_0158 a :Consumer, :CommercialConsumer .
+:Consumer_0158 skos:prefLabel "Споживач №158" .
+:Consumer_0158 :consumerCategory "комерційний" .
+:Consumer_0158 :contractLimit "175.2"^^xsd:double .
+:Consumer_0159 a :Consumer, :CommercialConsumer .
+:Consumer_0159 skos:prefLabel "Споживач №159" .
+:Consumer_0159 :consumerCategory "комерційний" .
+:Consumer_0159 :contractLimit "131.5"^^xsd:double .
+:Consumer_0160 a :Consumer, :CommercialConsumer .
+:Consumer_0160 skos:prefLabel "Споживач №160" .
+:Consumer_0160 :consumerCategory "комерційний" .
+:Consumer_0160 :contractLimit "83.9"^^xsd:double .
+:Meter_AMI10076 a :Meter .
+:Meter_AMI10076 skos:prefLabel "Лічильник AMI-10076" .
+:Meter_AMI10076 :meterStatus "активний" .
+:Meter_AMI10076 :meterType "однофазний" .
+:Meter_AMI10101 a :Meter .
+:Meter_AMI10101 skos:prefLabel "Лічильник AMI-10101" .
+:Meter_AMI10101 :meterStatus "активний" .
+:Meter_AMI10101 :meterType "однофазний" .
+:Meter_AMI10160 a :Meter .
+:Meter_AMI10160 skos:prefLabel "Лічильник AMI-10160" .
+:Meter_AMI10160 :meterStatus "активний" .
+:Meter_AMI10160 :meterType "трифазний" .
+:Meter_AMI10203 a :Meter .
+:Meter_AMI10203 skos:prefLabel "Лічильник AMI-10203" .
+:Meter_AMI10203 :meterStatus "активний" .
+:Meter_AMI10203 :meterType "трифазний" .
+:Meter_AMI10282 a :Meter .
+:Meter_AMI10282 skos:prefLabel "Лічильник AMI-10282" .
+:Meter_AMI10282 :meterStatus "активний" .
+:Meter_AMI10282 :meterType "однофазний" .
+:Meter_AMI10336 a :Meter .
+:Meter_AMI10336 skos:prefLabel "Лічильник AMI-10336" .
+:Meter_AMI10336 :meterStatus "активний" .
+:Meter_AMI10336 :meterType "однофазний" .
+:Meter_AMI10380 a :Meter .
+:Meter_AMI10380 skos:prefLabel "Лічильник AMI-10380" .
+:Meter_AMI10380 :meterStatus "активний" .
+:Meter_AMI10380 :meterType "трифазний" .
+:Meter_AMI10455 a :Meter .
+:Meter_AMI10455 skos:prefLabel "Лічильник AMI-10455" .
+:Meter_AMI10455 :meterStatus "активний" .
+:Meter_AMI10455 :meterType "трифазний" .
+:Meter_AMI10543 a :Meter .
+:Meter_AMI10543 skos:prefLabel "Лічильник AMI-10543" .
+:Meter_AMI10543 :meterStatus "активний" .
+:Meter_AMI10543 :meterType "однофазний" .
+:Meter_AMI10574 a :Meter .
+:Meter_AMI10574 skos:prefLabel "Лічильник AMI-10574" .
+:Meter_AMI10574 :meterStatus "активний" .
+:Meter_AMI10574 :meterType "однофазний" .
+:Meter_AMI10626 a :Meter .
+:Meter_AMI10626 skos:prefLabel "Лічильник AMI-10626" .
+:Meter_AMI10626 :meterStatus "активний" .
+:Meter_AMI10626 :meterType "трифазний" .
+:Meter_AMI10683 a :Meter .
+:Meter_AMI10683 skos:prefLabel "Лічильник AMI-10683" .
+:Meter_AMI10683 :meterStatus "активний" .
+:Meter_AMI10683 :meterType "трифазний" .
+:Meter_AMI10766 a :Meter .
+:Meter_AMI10766 skos:prefLabel "Лічильник AMI-10766" .
+:Meter_AMI10766 :meterStatus "активний" .
+:Meter_AMI10766 :meterType "однофазний" .
+:Meter_AMI10839 a :Meter .
+:Meter_AMI10839 skos:prefLabel "Лічильник AMI-10839" .
+:Meter_AMI10839 :meterStatus "активний" .
+:Meter_AMI10839 :meterType "однофазний" .
+:Meter_AMI10934 a :Meter .
+:Meter_AMI10934 skos:prefLabel "Лічильник AMI-10934" .
+:Meter_AMI10934 :meterStatus "активний" .
+:Meter_AMI10934 :meterType "трифазний" .
+:Meter_AMI10978 a :Meter .
+:Meter_AMI10978 skos:prefLabel "Лічильник AMI-10978" .
+:Meter_AMI10978 :meterStatus "активний" .
+:Meter_AMI10978 :meterType "трифазний" .
+:Meter_AMI11014 a :Meter .
+:Meter_AMI11014 skos:prefLabel "Лічильник AMI-11014" .
+:Meter_AMI11014 :meterStatus "активний" .
+:Meter_AMI11014 :meterType "однофазний" .
+:Meter_AMI11110 a :Meter .
+:Meter_AMI11110 skos:prefLabel "Лічильник AMI-11110" .
+:Meter_AMI11110 :meterStatus "активний" .
+:Meter_AMI11110 :meterType "однофазний" .
+:Meter_AMI11149 a :Meter .
+:Meter_AMI11149 skos:prefLabel "Лічильник AMI-11149" .
+:Meter_AMI11149 :meterStatus "несправний" .
+:Meter_AMI11149 :meterType "трифазний" .
+:Meter_AMI11162 a :Meter .
+:Meter_AMI11162 skos:prefLabel "Лічильник AMI-11162" .
+:Meter_AMI11162 :meterStatus "активний" .
+:Meter_AMI11162 :meterType "трифазний" .
+:Meter_AMI11253 a :Meter .
+:Meter_AMI11253 skos:prefLabel "Лічильник AMI-11253" .
+:Meter_AMI11253 :meterStatus "несправний" .
+:Meter_AMI11253 :meterType "однофазний" .
+:Meter_AMI11306 a :Meter .
+:Meter_AMI11306 skos:prefLabel "Лічильник AMI-11306" .
+:Meter_AMI11306 :meterStatus "несправний" .
+:Meter_AMI11306 :meterType "однофазний" .
+:Meter_AMI11344 a :Meter .
+:Meter_AMI11344 skos:prefLabel "Лічильник AMI-11344" .
+:Meter_AMI11344 :meterStatus "активний" .
+:Meter_AMI11344 :meterType "однофазний" .
+:Meter_AMI11415 a :Meter .
+:Meter_AMI11415 skos:prefLabel "Лічильник AMI-11415" .
+:Meter_AMI11415 :meterStatus "активний" .
+:Meter_AMI11415 :meterType "трифазний" .
+:Meter_AMI11480 a :Meter .
+:Meter_AMI11480 skos:prefLabel "Лічильник AMI-11480" .
+:Meter_AMI11480 :meterStatus "активний" .
+:Meter_AMI11480 :meterType "однофазний" .
+:Meter_AMI11503 a :Meter .
+:Meter_AMI11503 skos:prefLabel "Лічильник AMI-11503" .
+:Meter_AMI11503 :meterStatus "несправний" .
+:Meter_AMI11503 :meterType "однофазний" .
+:Meter_AMI11545 a :Meter .
+:Meter_AMI11545 skos:prefLabel "Лічильник AMI-11545" .
+:Meter_AMI11545 :meterStatus "активний" .
+:Meter_AMI11545 :meterType "однофазний" .
+:Meter_AMI11615 a :Meter .
+:Meter_AMI11615 skos:prefLabel "Лічильник AMI-11615" .
+:Meter_AMI11615 :meterStatus "активний" .
+:Meter_AMI11615 :meterType "однофазний" .
+:Meter_AMI11696 a :Meter .
+:Meter_AMI11696 skos:prefLabel "Лічильник AMI-11696" .
+:Meter_AMI11696 :meterStatus "активний" .
+:Meter_AMI11696 :meterType "трифазний" .
+:Meter_AMI11737 a :Meter .
+:Meter_AMI11737 skos:prefLabel "Лічильник AMI-11737" .
+:Meter_AMI11737 :meterStatus "активний" .
+:Meter_AMI11737 :meterType "трифазний" .
+:Meter_AMI11755 a :Meter .
+:Meter_AMI11755 skos:prefLabel "Лічильник AMI-11755" .
+:Meter_AMI11755 :meterStatus "на повірці" .
+:Meter_AMI11755 :meterType "однофазний" .
+:Meter_AMI11824 a :Meter .
+:Meter_AMI11824 skos:prefLabel "Лічильник AMI-11824" .
+:Meter_AMI11824 :meterStatus "активний" .
+:Meter_AMI11824 :meterType "трифазний" .
+:Meter_AMI11854 a :Meter .
+:Meter_AMI11854 skos:prefLabel "Лічильник AMI-11854" .
+:Meter_AMI11854 :meterStatus "активний" .
+:Meter_AMI11854 :meterType "трифазний" .
+:Meter_AMI11872 a :Meter .
+:Meter_AMI11872 skos:prefLabel "Лічильник AMI-11872" .
+:Meter_AMI11872 :meterStatus "активний" .
+:Meter_AMI11872 :meterType "однофазний" .
+:Meter_AMI11950 a :Meter .
+:Meter_AMI11950 skos:prefLabel "Лічильник AMI-11950" .
+:Meter_AMI11950 :meterStatus "активний" .
+:Meter_AMI11950 :meterType "трифазний" .
+:Meter_AMI12037 a :Meter .
+:Meter_AMI12037 skos:prefLabel "Лічильник AMI-12037" .
+:Meter_AMI12037 :meterStatus "несправний" .
+:Meter_AMI12037 :meterType "однофазний" .
+:Meter_AMI12120 a :Meter .
+:Meter_AMI12120 skos:prefLabel "Лічильник AMI-12120" .
+:Meter_AMI12120 :meterStatus "активний" .
+:Meter_AMI12120 :meterType "однофазний" .
+:Meter_AMI12205 a :Meter .
+:Meter_AMI12205 skos:prefLabel "Лічильник AMI-12205" .
+:Meter_AMI12205 :meterStatus "активний" .
+:Meter_AMI12205 :meterType "трифазний" .
+:Meter_AMI12256 a :Meter .
+:Meter_AMI12256 skos:prefLabel "Лічильник AMI-12256" .
+:Meter_AMI12256 :meterStatus "активний" .
+:Meter_AMI12256 :meterType "однофазний" .
+:Meter_AMI12276 a :Meter .
+:Meter_AMI12276 skos:prefLabel "Лічильник AMI-12276" .
+:Meter_AMI12276 :meterStatus "несправний" .
+:Meter_AMI12276 :meterType "однофазний" .
+:Meter_AMI12296 a :Meter .
+:Meter_AMI12296 skos:prefLabel "Лічильник AMI-12296" .
+:Meter_AMI12296 :meterStatus "активний" .
+:Meter_AMI12296 :meterType "трифазний" .
+:Meter_AMI12315 a :Meter .
+:Meter_AMI12315 skos:prefLabel "Лічильник AMI-12315" .
+:Meter_AMI12315 :meterStatus "активний" .
+:Meter_AMI12315 :meterType "однофазний" .
+:Meter_AMI12364 a :Meter .
+:Meter_AMI12364 skos:prefLabel "Лічильник AMI-12364" .
+:Meter_AMI12364 :meterStatus "активний" .
+:Meter_AMI12364 :meterType "однофазний" .
+:Meter_AMI12445 a :Meter .
+:Meter_AMI12445 skos:prefLabel "Лічильник AMI-12445" .
+:Meter_AMI12445 :meterStatus "активний" .
+:Meter_AMI12445 :meterType "трифазний" .
+:Meter_AMI12469 a :Meter .
+:Meter_AMI12469 skos:prefLabel "Лічильник AMI-12469" .
+:Meter_AMI12469 :meterStatus "активний" .
+:Meter_AMI12469 :meterType "однофазний" .
+:Meter_AMI12523 a :Meter .
+:Meter_AMI12523 skos:prefLabel "Лічильник AMI-12523" .
+:Meter_AMI12523 :meterStatus "активний" .
+:Meter_AMI12523 :meterType "однофазний" .
+:Meter_AMI12540 a :Meter .
+:Meter_AMI12540 skos:prefLabel "Лічильник AMI-12540" .
+:Meter_AMI12540 :meterStatus "активний" .
+:Meter_AMI12540 :meterType "однофазний" .
+:Meter_AMI12567 a :Meter .
+:Meter_AMI12567 skos:prefLabel "Лічильник AMI-12567" .
+:Meter_AMI12567 :meterStatus "активний" .
+:Meter_AMI12567 :meterType "однофазний" .
+:Meter_AMI12649 a :Meter .
+:Meter_AMI12649 skos:prefLabel "Лічильник AMI-12649" .
+:Meter_AMI12649 :meterStatus "несправний" .
+:Meter_AMI12649 :meterType "трифазний" .
+:Meter_AMI12679 a :Meter .
+:Meter_AMI12679 skos:prefLabel "Лічильник AMI-12679" .
+:Meter_AMI12679 :meterStatus "активний" .
+:Meter_AMI12679 :meterType "однофазний" .
+:Meter_AMI12706 a :Meter .
+:Meter_AMI12706 skos:prefLabel "Лічильник AMI-12706" .
+:Meter_AMI12706 :meterStatus "несправний" .
+:Meter_AMI12706 :meterType "трифазний" .
+:Meter_AMI12722 a :Meter .
+:Meter_AMI12722 skos:prefLabel "Лічильник AMI-12722" .
+:Meter_AMI12722 :meterStatus "активний" .
+:Meter_AMI12722 :meterType "однофазний" .
+:Meter_AMI12804 a :Meter .
+:Meter_AMI12804 skos:prefLabel "Лічильник AMI-12804" .
+:Meter_AMI12804 :meterStatus "активний" .
+:Meter_AMI12804 :meterType "однофазний" .
+:Meter_AMI12845 a :Meter .
+:Meter_AMI12845 skos:prefLabel "Лічильник AMI-12845" .
+:Meter_AMI12845 :meterStatus "активний" .
+:Meter_AMI12845 :meterType "трифазний" .
+:Meter_AMI12878 a :Meter .
+:Meter_AMI12878 skos:prefLabel "Лічильник AMI-12878" .
+:Meter_AMI12878 :meterStatus "активний" .
+:Meter_AMI12878 :meterType "однофазний" .
+:Meter_AMI12920 a :Meter .
+:Meter_AMI12920 skos:prefLabel "Лічильник AMI-12920" .
+:Meter_AMI12920 :meterStatus "активний" .
+:Meter_AMI12920 :meterType "трифазний" .
+:Meter_AMI12991 a :Meter .
+:Meter_AMI12991 skos:prefLabel "Лічильник AMI-12991" .
+:Meter_AMI12991 :meterStatus "активний" .
+:Meter_AMI12991 :meterType "однофазний" .
+:Meter_AMI13031 a :Meter .
+:Meter_AMI13031 skos:prefLabel "Лічильник AMI-13031" .
+:Meter_AMI13031 :meterStatus "активний" .
+:Meter_AMI13031 :meterType "трифазний" .
+:Meter_AMI13050 a :Meter .
+:Meter_AMI13050 skos:prefLabel "Лічильник AMI-13050" .
+:Meter_AMI13050 :meterStatus "активний" .
+:Meter_AMI13050 :meterType "трифазний" .
+:Meter_AMI13129 a :Meter .
+:Meter_AMI13129 skos:prefLabel "Лічильник AMI-13129" .
+:Meter_AMI13129 :meterStatus "на повірці" .
+:Meter_AMI13129 :meterType "трифазний" .
+:Meter_AMI13144 a :Meter .
+:Meter_AMI13144 skos:prefLabel "Лічильник AMI-13144" .
+:Meter_AMI13144 :meterStatus "активний" .
+:Meter_AMI13144 :meterType "однофазний" .
+:Meter_AMI13169 a :Meter .
+:Meter_AMI13169 skos:prefLabel "Лічильник AMI-13169" .
+:Meter_AMI13169 :meterStatus "активний" .
+:Meter_AMI13169 :meterType "однофазний" .
+:Meter_AMI13180 a :Meter .
+:Meter_AMI13180 skos:prefLabel "Лічильник AMI-13180" .
+:Meter_AMI13180 :meterStatus "активний" .
+:Meter_AMI13180 :meterType "однофазний" .
+:Meter_AMI13276 a :Meter .
+:Meter_AMI13276 skos:prefLabel "Лічильник AMI-13276" .
+:Meter_AMI13276 :meterStatus "активний" .
+:Meter_AMI13276 :meterType "однофазний" .
+:Meter_AMI13351 a :Meter .
+:Meter_AMI13351 skos:prefLabel "Лічильник AMI-13351" .
+:Meter_AMI13351 :meterStatus "активний" .
+:Meter_AMI13351 :meterType "однофазний" .
+:Meter_AMI13378 a :Meter .
+:Meter_AMI13378 skos:prefLabel "Лічильник AMI-13378" .
+:Meter_AMI13378 :meterStatus "активний" .
+:Meter_AMI13378 :meterType "трифазний" .
+:Meter_AMI13411 a :Meter .
+:Meter_AMI13411 skos:prefLabel "Лічильник AMI-13411" .
+:Meter_AMI13411 :meterStatus "активний" .
+:Meter_AMI13411 :meterType "трифазний" .
+:Meter_AMI13458 a :Meter .
+:Meter_AMI13458 skos:prefLabel "Лічильник AMI-13458" .
+:Meter_AMI13458 :meterStatus "активний" .
+:Meter_AMI13458 :meterType "трифазний" .
+:Meter_AMI13525 a :Meter .
+:Meter_AMI13525 skos:prefLabel "Лічильник AMI-13525" .
+:Meter_AMI13525 :meterStatus "активний" .
+:Meter_AMI13525 :meterType "трифазний" .
+:Meter_AMI13557 a :Meter .
+:Meter_AMI13557 skos:prefLabel "Лічильник AMI-13557" .
+:Meter_AMI13557 :meterStatus "активний" .
+:Meter_AMI13557 :meterType "трифазний" .
+:Meter_AMI13598 a :Meter .
+:Meter_AMI13598 skos:prefLabel "Лічильник AMI-13598" .
+:Meter_AMI13598 :meterStatus "активний" .
+:Meter_AMI13598 :meterType "трифазний" .
+:Meter_AMI13640 a :Meter .
+:Meter_AMI13640 skos:prefLabel "Лічильник AMI-13640" .
+:Meter_AMI13640 :meterStatus "активний" .
+:Meter_AMI13640 :meterType "однофазний" .
+:Meter_AMI13731 a :Meter .
+:Meter_AMI13731 skos:prefLabel "Лічильник AMI-13731" .
+:Meter_AMI13731 :meterStatus "активний" .
+:Meter_AMI13731 :meterType "однофазний" .
+:Meter_AMI13760 a :Meter .
+:Meter_AMI13760 skos:prefLabel "Лічильник AMI-13760" .
+:Meter_AMI13760 :meterStatus "на повірці" .
+:Meter_AMI13760 :meterType "трифазний" .
+:Meter_AMI13793 a :Meter .
+:Meter_AMI13793 skos:prefLabel "Лічильник AMI-13793" .
+:Meter_AMI13793 :meterStatus "активний" .
+:Meter_AMI13793 :meterType "однофазний" .
+:Meter_AMI13819 a :Meter .
+:Meter_AMI13819 skos:prefLabel "Лічильник AMI-13819" .
+:Meter_AMI13819 :meterStatus "активний" .
+:Meter_AMI13819 :meterType "трифазний" .
+:Meter_AMI13870 a :Meter .
+:Meter_AMI13870 skos:prefLabel "Лічильник AMI-13870" .
+:Meter_AMI13870 :meterStatus "активний" .
+:Meter_AMI13870 :meterType "трифазний" .
+:Meter_AMI13945 a :Meter .
+:Meter_AMI13945 skos:prefLabel "Лічильник AMI-13945" .
+:Meter_AMI13945 :meterStatus "активний" .
+:Meter_AMI13945 :meterType "трифазний" .
+:Meter_AMI14016 a :Meter .
+:Meter_AMI14016 skos:prefLabel "Лічильник AMI-14016" .
+:Meter_AMI14016 :meterStatus "активний" .
+:Meter_AMI14016 :meterType "трифазний" .
+:Meter_AMI14089 a :Meter .
+:Meter_AMI14089 skos:prefLabel "Лічильник AMI-14089" .
+:Meter_AMI14089 :meterStatus "активний" .
+:Meter_AMI14089 :meterType "однофазний" .
+:Meter_AMI14134 a :Meter .
+:Meter_AMI14134 skos:prefLabel "Лічильник AMI-14134" .
+:Meter_AMI14134 :meterStatus "активний" .
+:Meter_AMI14134 :meterType "однофазний" .
+:Meter_AMI14194 a :Meter .
+:Meter_AMI14194 skos:prefLabel "Лічильник AMI-14194" .
+:Meter_AMI14194 :meterStatus "активний" .
+:Meter_AMI14194 :meterType "однофазний" .
+:Meter_AMI14274 a :Meter .
+:Meter_AMI14274 skos:prefLabel "Лічильник AMI-14274" .
+:Meter_AMI14274 :meterStatus "активний" .
+:Meter_AMI14274 :meterType "однофазний" .
+:Meter_AMI14359 a :Meter .
+:Meter_AMI14359 skos:prefLabel "Лічильник AMI-14359" .
+:Meter_AMI14359 :meterStatus "на повірці" .
+:Meter_AMI14359 :meterType "трифазний" .
+:Meter_AMI14415 a :Meter .
+:Meter_AMI14415 skos:prefLabel "Лічильник AMI-14415" .
+:Meter_AMI14415 :meterStatus "активний" .
+:Meter_AMI14415 :meterType "трифазний" .
+:Meter_AMI14495 a :Meter .
+:Meter_AMI14495 skos:prefLabel "Лічильник AMI-14495" .
+:Meter_AMI14495 :meterStatus "активний" .
+:Meter_AMI14495 :meterType "трифазний" .
+:Meter_AMI14568 a :Meter .
+:Meter_AMI14568 skos:prefLabel "Лічильник AMI-14568" .
+:Meter_AMI14568 :meterStatus "несправний" .
+:Meter_AMI14568 :meterType "трифазний" .
+:Meter_AMI14630 a :Meter .
+:Meter_AMI14630 skos:prefLabel "Лічильник AMI-14630" .
+:Meter_AMI14630 :meterStatus "активний" .
+:Meter_AMI14630 :meterType "однофазний" .
+:Meter_AMI14644 a :Meter .
+:Meter_AMI14644 skos:prefLabel "Лічильник AMI-14644" .
+:Meter_AMI14644 :meterStatus "активний" .
+:Meter_AMI14644 :meterType "однофазний" .
+:Meter_AMI14672 a :Meter .
+:Meter_AMI14672 skos:prefLabel "Лічильник AMI-14672" .
+:Meter_AMI14672 :meterStatus "активний" .
+:Meter_AMI14672 :meterType "однофазний" .
+:Meter_AMI14741 a :Meter .
+:Meter_AMI14741 skos:prefLabel "Лічильник AMI-14741" .
+:Meter_AMI14741 :meterStatus "активний" .
+:Meter_AMI14741 :meterType "однофазний" .
+:Meter_AMI14805 a :Meter .
+:Meter_AMI14805 skos:prefLabel "Лічильник AMI-14805" .
+:Meter_AMI14805 :meterStatus "активний" .
+:Meter_AMI14805 :meterType "трифазний" .
+:Meter_AMI14860 a :Meter .
+:Meter_AMI14860 skos:prefLabel "Лічильник AMI-14860" .
+:Meter_AMI14860 :meterStatus "активний" .
+:Meter_AMI14860 :meterType "однофазний" .
+:Meter_AMI14896 a :Meter .
+:Meter_AMI14896 skos:prefLabel "Лічильник AMI-14896" .
+:Meter_AMI14896 :meterStatus "активний" .
+:Meter_AMI14896 :meterType "однофазний" .
+:Meter_AMI14921 a :Meter .
+:Meter_AMI14921 skos:prefLabel "Лічильник AMI-14921" .
+:Meter_AMI14921 :meterStatus "активний" .
+:Meter_AMI14921 :meterType "однофазний" .
+:Meter_AMI15009 a :Meter .
+:Meter_AMI15009 skos:prefLabel "Лічильник AMI-15009" .
+:Meter_AMI15009 :meterStatus "активний" .
+:Meter_AMI15009 :meterType "однофазний" .
+:Meter_AMI15059 a :Meter .
+:Meter_AMI15059 skos:prefLabel "Лічильник AMI-15059" .
+:Meter_AMI15059 :meterStatus "на повірці" .
+:Meter_AMI15059 :meterType "однофазний" .
+:Meter_AMI15118 a :Meter .
+:Meter_AMI15118 skos:prefLabel "Лічильник AMI-15118" .
+:Meter_AMI15118 :meterStatus "активний" .
+:Meter_AMI15118 :meterType "однофазний" .
+:Meter_AMI15209 a :Meter .
+:Meter_AMI15209 skos:prefLabel "Лічильник AMI-15209" .
+:Meter_AMI15209 :meterStatus "активний" .
+:Meter_AMI15209 :meterType "однофазний" .
+:Meter_AMI15235 a :Meter .
+:Meter_AMI15235 skos:prefLabel "Лічильник AMI-15235" .
+:Meter_AMI15235 :meterStatus "активний" .
+:Meter_AMI15235 :meterType "однофазний" .
+:Meter_AMI15330 a :Meter .
+:Meter_AMI15330 skos:prefLabel "Лічильник AMI-15330" .
+:Meter_AMI15330 :meterStatus "активний" .
+:Meter_AMI15330 :meterType "однофазний" .
+:Meter_AMI15403 a :Meter .
+:Meter_AMI15403 skos:prefLabel "Лічильник AMI-15403" .
+:Meter_AMI15403 :meterStatus "активний" .
+:Meter_AMI15403 :meterType "однофазний" .
+:Meter_AMI15436 a :Meter .
+:Meter_AMI15436 skos:prefLabel "Лічильник AMI-15436" .
+:Meter_AMI15436 :meterStatus "активний" .
+:Meter_AMI15436 :meterType "трифазний" .
+:Meter_AMI15515 a :Meter .
+:Meter_AMI15515 skos:prefLabel "Лічильник AMI-15515" .
+:Meter_AMI15515 :meterStatus "активний" .
+:Meter_AMI15515 :meterType "однофазний" .
+:Meter_AMI15557 a :Meter .
+:Meter_AMI15557 skos:prefLabel "Лічильник AMI-15557" .
+:Meter_AMI15557 :meterStatus "активний" .
+:Meter_AMI15557 :meterType "трифазний" .
+:Meter_AMI15640 a :Meter .
+:Meter_AMI15640 skos:prefLabel "Лічильник AMI-15640" .
+:Meter_AMI15640 :meterStatus "активний" .
+:Meter_AMI15640 :meterType "трифазний" .
+:Meter_AMI15674 a :Meter .
+:Meter_AMI15674 skos:prefLabel "Лічильник AMI-15674" .
+:Meter_AMI15674 :meterStatus "активний" .
+:Meter_AMI15674 :meterType "однофазний" .
+:Meter_AMI15761 a :Meter .
+:Meter_AMI15761 skos:prefLabel "Лічильник AMI-15761" .
+:Meter_AMI15761 :meterStatus "активний" .
+:Meter_AMI15761 :meterType "однофазний" .
+:Meter_AMI15782 a :Meter .
+:Meter_AMI15782 skos:prefLabel "Лічильник AMI-15782" .
+:Meter_AMI15782 :meterStatus "активний" .
+:Meter_AMI15782 :meterType "однофазний" .
+:Meter_AMI15853 a :Meter .
+:Meter_AMI15853 skos:prefLabel "Лічильник AMI-15853" .
+:Meter_AMI15853 :meterStatus "активний" .
+:Meter_AMI15853 :meterType "трифазний" .
+:Meter_AMI15915 a :Meter .
+:Meter_AMI15915 skos:prefLabel "Лічильник AMI-15915" .
+:Meter_AMI15915 :meterStatus "активний" .
+:Meter_AMI15915 :meterType "однофазний" .
+:Meter_AMI15993 a :Meter .
+:Meter_AMI15993 skos:prefLabel "Лічильник AMI-15993" .
+:Meter_AMI15993 :meterStatus "активний" .
+:Meter_AMI15993 :meterType "трифазний" .
+:Meter_AMI16062 a :Meter .
+:Meter_AMI16062 skos:prefLabel "Лічильник AMI-16062" .
+:Meter_AMI16062 :meterStatus "активний" .
+:Meter_AMI16062 :meterType "трифазний" .
+:Meter_AMI16088 a :Meter .
+:Meter_AMI16088 skos:prefLabel "Лічильник AMI-16088" .
+:Meter_AMI16088 :meterStatus "активний" .
+:Meter_AMI16088 :meterType "однофазний" .
+:Meter_AMI16160 a :Meter .
+:Meter_AMI16160 skos:prefLabel "Лічильник AMI-16160" .
+:Meter_AMI16160 :meterStatus "активний" .
+:Meter_AMI16160 :meterType "однофазний" .
+:Meter_AMI16195 a :Meter .
+:Meter_AMI16195 skos:prefLabel "Лічильник AMI-16195" .
+:Meter_AMI16195 :meterStatus "активний" .
+:Meter_AMI16195 :meterType "трифазний" .
+:Meter_AMI16222 a :Meter .
+:Meter_AMI16222 skos:prefLabel "Лічильник AMI-16222" .
+:Meter_AMI16222 :meterStatus "активний" .
+:Meter_AMI16222 :meterType "однофазний" .
+:Meter_AMI16314 a :Meter .
+:Meter_AMI16314 skos:prefLabel "Лічильник AMI-16314" .
+:Meter_AMI16314 :meterStatus "активний" .
+:Meter_AMI16314 :meterType "трифазний" .
+:Meter_AMI16386 a :Meter .
+:Meter_AMI16386 skos:prefLabel "Лічильник AMI-16386" .
+:Meter_AMI16386 :meterStatus "активний" .
+:Meter_AMI16386 :meterType "однофазний" .
+:Meter_AMI16458 a :Meter .
+:Meter_AMI16458 skos:prefLabel "Лічильник AMI-16458" .
+:Meter_AMI16458 :meterStatus "активний" .
+:Meter_AMI16458 :meterType "однофазний" .
+:Meter_AMI16475 a :Meter .
+:Meter_AMI16475 skos:prefLabel "Лічильник AMI-16475" .
+:Meter_AMI16475 :meterStatus "активний" .
+:Meter_AMI16475 :meterType "трифазний" .
+:Meter_AMI16501 a :Meter .
+:Meter_AMI16501 skos:prefLabel "Лічильник AMI-16501" .
+:Meter_AMI16501 :meterStatus "активний" .
+:Meter_AMI16501 :meterType "однофазний" .
+:Meter_AMI16578 a :Meter .
+:Meter_AMI16578 skos:prefLabel "Лічильник AMI-16578" .
+:Meter_AMI16578 :meterStatus "активний" .
+:Meter_AMI16578 :meterType "трифазний" .
+:Meter_AMI16628 a :Meter .
+:Meter_AMI16628 skos:prefLabel "Лічильник AMI-16628" .
+:Meter_AMI16628 :meterStatus "активний" .
+:Meter_AMI16628 :meterType "однофазний" .
+:Meter_AMI16719 a :Meter .
+:Meter_AMI16719 skos:prefLabel "Лічильник AMI-16719" .
+:Meter_AMI16719 :meterStatus "активний" .
+:Meter_AMI16719 :meterType "однофазний" .
+:Meter_AMI16739 a :Meter .
+:Meter_AMI16739 skos:prefLabel "Лічильник AMI-16739" .
+:Meter_AMI16739 :meterStatus "активний" .
+:Meter_AMI16739 :meterType "однофазний" .
+:Meter_AMI16779 a :Meter .
+:Meter_AMI16779 skos:prefLabel "Лічильник AMI-16779" .
+:Meter_AMI16779 :meterStatus "активний" .
+:Meter_AMI16779 :meterType "трифазний" .
+:Meter_AMI16823 a :Meter .
+:Meter_AMI16823 skos:prefLabel "Лічильник AMI-16823" .
+:Meter_AMI16823 :meterStatus "активний" .
+:Meter_AMI16823 :meterType "трифазний" .
+:Meter_AMI16862 a :Meter .
+:Meter_AMI16862 skos:prefLabel "Лічильник AMI-16862" .
+:Meter_AMI16862 :meterStatus "активний" .
+:Meter_AMI16862 :meterType "однофазний" .
+:Meter_AMI16912 a :Meter .
+:Meter_AMI16912 skos:prefLabel "Лічильник AMI-16912" .
+:Meter_AMI16912 :meterStatus "активний" .
+:Meter_AMI16912 :meterType "однофазний" .
+:Meter_AMI16961 a :Meter .
+:Meter_AMI16961 skos:prefLabel "Лічильник AMI-16961" .
+:Meter_AMI16961 :meterStatus "активний" .
+:Meter_AMI16961 :meterType "однофазний" .
+:Meter_AMI16982 a :Meter .
+:Meter_AMI16982 skos:prefLabel "Лічильник AMI-16982" .
+:Meter_AMI16982 :meterStatus "активний" .
+:Meter_AMI16982 :meterType "трифазний" .
+:Meter_AMI17004 a :Meter .
+:Meter_AMI17004 skos:prefLabel "Лічильник AMI-17004" .
+:Meter_AMI17004 :meterStatus "активний" .
+:Meter_AMI17004 :meterType "однофазний" .
+:Meter_AMI17101 a :Meter .
+:Meter_AMI17101 skos:prefLabel "Лічильник AMI-17101" .
+:Meter_AMI17101 :meterStatus "активний" .
+:Meter_AMI17101 :meterType "трифазний" .
+:Meter_AMI17168 a :Meter .
+:Meter_AMI17168 skos:prefLabel "Лічильник AMI-17168" .
+:Meter_AMI17168 :meterStatus "активний" .
+:Meter_AMI17168 :meterType "однофазний" .
+:Meter_AMI17241 a :Meter .
+:Meter_AMI17241 skos:prefLabel "Лічильник AMI-17241" .
+:Meter_AMI17241 :meterStatus "активний" .
+:Meter_AMI17241 :meterType "трифазний" .
+:Meter_AMI17265 a :Meter .
+:Meter_AMI17265 skos:prefLabel "Лічильник AMI-17265" .
+:Meter_AMI17265 :meterStatus "активний" .
+:Meter_AMI17265 :meterType "трифазний" .
+:Meter_AMI17346 a :Meter .
+:Meter_AMI17346 skos:prefLabel "Лічильник AMI-17346" .
+:Meter_AMI17346 :meterStatus "несправний" .
+:Meter_AMI17346 :meterType "трифазний" .
+:Meter_AMI17371 a :Meter .
+:Meter_AMI17371 skos:prefLabel "Лічильник AMI-17371" .
+:Meter_AMI17371 :meterStatus "активний" .
+:Meter_AMI17371 :meterType "однофазний" .
+:Meter_AMI17466 a :Meter .
+:Meter_AMI17466 skos:prefLabel "Лічильник AMI-17466" .
+:Meter_AMI17466 :meterStatus "активний" .
+:Meter_AMI17466 :meterType "трифазний" .
+:Meter_AMI17556 a :Meter .
+:Meter_AMI17556 skos:prefLabel "Лічильник AMI-17556" .
+:Meter_AMI17556 :meterStatus "активний" .
+:Meter_AMI17556 :meterType "однофазний" .
+:Meter_AMI17583 a :Meter .
+:Meter_AMI17583 skos:prefLabel "Лічильник AMI-17583" .
+:Meter_AMI17583 :meterStatus "активний" .
+:Meter_AMI17583 :meterType "однофазний" .
+:Meter_AMI17671 a :Meter .
+:Meter_AMI17671 skos:prefLabel "Лічильник AMI-17671" .
+:Meter_AMI17671 :meterStatus "активний" .
+:Meter_AMI17671 :meterType "трифазний" .
+:Meter_AMI17734 a :Meter .
+:Meter_AMI17734 skos:prefLabel "Лічильник AMI-17734" .
+:Meter_AMI17734 :meterStatus "активний" .
+:Meter_AMI17734 :meterType "однофазний" .
+:Meter_AMI17827 a :Meter .
+:Meter_AMI17827 skos:prefLabel "Лічильник AMI-17827" .
+:Meter_AMI17827 :meterStatus "активний" .
+:Meter_AMI17827 :meterType "однофазний" .
+:Meter_AMI17891 a :Meter .
+:Meter_AMI17891 skos:prefLabel "Лічильник AMI-17891" .
+:Meter_AMI17891 :meterStatus "активний" .
+:Meter_AMI17891 :meterType "однофазний" .
+:Meter_AMI17951 a :Meter .
+:Meter_AMI17951 skos:prefLabel "Лічильник AMI-17951" .
+:Meter_AMI17951 :meterStatus "активний" .
+:Meter_AMI17951 :meterType "однофазний" .
+:Meter_AMI18015 a :Meter .
+:Meter_AMI18015 skos:prefLabel "Лічильник AMI-18015" .
+:Meter_AMI18015 :meterStatus "активний" .
+:Meter_AMI18015 :meterType "однофазний" .
+:Meter_AMI18064 a :Meter .
+:Meter_AMI18064 skos:prefLabel "Лічильник AMI-18064" .
+:Meter_AMI18064 :meterStatus "активний" .
+:Meter_AMI18064 :meterType "однофазний" .
+:Meter_AMI18143 a :Meter .
+:Meter_AMI18143 skos:prefLabel "Лічильник AMI-18143" .
+:Meter_AMI18143 :meterStatus "активний" .
+:Meter_AMI18143 :meterType "трифазний" .
+:Meter_AMI18195 a :Meter .
+:Meter_AMI18195 skos:prefLabel "Лічильник AMI-18195" .
+:Meter_AMI18195 :meterStatus "активний" .
+:Meter_AMI18195 :meterType "трифазний" .
+:Meter_AMI18258 a :Meter .
+:Meter_AMI18258 skos:prefLabel "Лічильник AMI-18258" .
+:Meter_AMI18258 :meterStatus "несправний" .
+:Meter_AMI18258 :meterType "однофазний" .
+:Meter_AMI18317 a :Meter .
+:Meter_AMI18317 skos:prefLabel "Лічильник AMI-18317" .
+:Meter_AMI18317 :meterStatus "активний" .
+:Meter_AMI18317 :meterType "трифазний" .
+:Meter_AMI18344 a :Meter .
+:Meter_AMI18344 skos:prefLabel "Лічильник AMI-18344" .
+:Meter_AMI18344 :meterStatus "активний" .
+:Meter_AMI18344 :meterType "однофазний" .
+:Meter_AMI18367 a :Meter .
+:Meter_AMI18367 skos:prefLabel "Лічильник AMI-18367" .
+:Meter_AMI18367 :meterStatus "активний" .
+:Meter_AMI18367 :meterType "однофазний" .
+:Meter_AMI18397 a :Meter .
+:Meter_AMI18397 skos:prefLabel "Лічильник AMI-18397" .
+:Meter_AMI18397 :meterStatus "несправний" .
+:Meter_AMI18397 :meterType "однофазний" .
+:Meter_AMI18458 a :Meter .
+:Meter_AMI18458 skos:prefLabel "Лічильник AMI-18458" .
+:Meter_AMI18458 :meterStatus "активний" .
+:Meter_AMI18458 :meterType "однофазний" .
+:Meter_AMI18549 a :Meter .
+:Meter_AMI18549 skos:prefLabel "Лічильник AMI-18549" .
+:Meter_AMI18549 :meterStatus "активний" .
+:Meter_AMI18549 :meterType "трифазний" .
+:Meter_AMI18590 a :Meter .
+:Meter_AMI18590 skos:prefLabel "Лічильник AMI-18590" .
+:Meter_AMI18590 :meterStatus "активний" .
+:Meter_AMI18590 :meterType "трифазний" .
+:Meter_AMI18613 a :Meter .
+:Meter_AMI18613 skos:prefLabel "Лічильник AMI-18613" .
+:Meter_AMI18613 :meterStatus "активний" .
+:Meter_AMI18613 :meterType "однофазний" .
+:Meter_AMI18662 a :Meter .
+:Meter_AMI18662 skos:prefLabel "Лічильник AMI-18662" .
+:Meter_AMI18662 :meterStatus "активний" .
+:Meter_AMI18662 :meterType "однофазний" .
+:Meter_AMI18728 a :Meter .
+:Meter_AMI18728 skos:prefLabel "Лічильник AMI-18728" .
+:Meter_AMI18728 :meterStatus "активний" .
+:Meter_AMI18728 :meterType "однофазний" .
+:Meter_AMI18760 a :Meter .
+:Meter_AMI18760 skos:prefLabel "Лічильник AMI-18760" .
+:Meter_AMI18760 :meterStatus "активний" .
+:Meter_AMI18760 :meterType "трифазний" .
+:Meter_AMI18834 a :Meter .
+:Meter_AMI18834 skos:prefLabel "Лічильник AMI-18834" .
+:Meter_AMI18834 :meterStatus "активний" .
+:Meter_AMI18834 :meterType "трифазний" .
+:Meter_AMI18877 a :Meter .
+:Meter_AMI18877 skos:prefLabel "Лічильник AMI-18877" .
+:Meter_AMI18877 :meterStatus "активний" .
+:Meter_AMI18877 :meterType "трифазний" .
+:Meter_AMI18957 a :Meter .
+:Meter_AMI18957 skos:prefLabel "Лічильник AMI-18957" .
+:Meter_AMI18957 :meterStatus "активний" .
+:Meter_AMI18957 :meterType "трифазний" .
+:Meter_AMI19049 a :Meter .
+:Meter_AMI19049 skos:prefLabel "Лічильник AMI-19049" .
+:Meter_AMI19049 :meterStatus "активний" .
+:Meter_AMI19049 :meterType "однофазний" .
+:Meter_AMI19109 a :Meter .
+:Meter_AMI19109 skos:prefLabel "Лічильник AMI-19109" .
+:Meter_AMI19109 :meterStatus "активний" .
+:Meter_AMI19109 :meterType "трифазний" .
+:Meter_AMI19157 a :Meter .
+:Meter_AMI19157 skos:prefLabel "Лічильник AMI-19157" .
+:Meter_AMI19157 :meterStatus "активний" .
+:Meter_AMI19157 :meterType "трифазний" .
+:Meter_AMI19174 a :Meter .
+:Meter_AMI19174 skos:prefLabel "Лічильник AMI-19174" .
+:Meter_AMI19174 :meterStatus "активний" .
+:Meter_AMI19174 :meterType "трифазний" .
+:WeatherCondition_20260911 a :WeatherCondition .
+:WeatherCondition_20260911 skos:prefLabel "Погода 2026-09-11" .
+:WeatherCondition_20260911 :temperature "14.7"^^xsd:double .
+:WeatherCondition_20260911 :cloudCover "мінлива" .
+:WeatherCondition_20260912 a :WeatherCondition .
+:WeatherCondition_20260912 skos:prefLabel "Погода 2026-09-12" .
+:WeatherCondition_20260912 :temperature "13.5"^^xsd:double .
+:WeatherCondition_20260912 :cloudCover "ясно" .
+:WeatherCondition_20260913 a :WeatherCondition .
+:WeatherCondition_20260913 skos:prefLabel "Погода 2026-09-13" .
+:WeatherCondition_20260913 :temperature "10.1"^^xsd:double .
+:WeatherCondition_20260913 :cloudCover "мінлива" .
+:WeatherCondition_20260914 a :WeatherCondition .
+:WeatherCondition_20260914 skos:prefLabel "Погода 2026-09-14" .
+:WeatherCondition_20260914 :temperature "2.4"^^xsd:double .
+:WeatherCondition_20260914 :cloudCover "ясно" .
+:WeatherCondition_20260915 a :WeatherCondition .
+:WeatherCondition_20260915 skos:prefLabel "Погода 2026-09-15" .
+:WeatherCondition_20260915 :temperature "10.4"^^xsd:double .
+:WeatherCondition_20260915 :cloudCover "суцільна" .
+:WeatherCondition_20260916 a :WeatherCondition .
+:WeatherCondition_20260916 skos:prefLabel "Погода 2026-09-16" .
+:WeatherCondition_20260916 :temperature "13.1"^^xsd:double .
+:WeatherCondition_20260916 :cloudCover "суцільна" .
+:WeatherCondition_20260917 a :WeatherCondition .
+:WeatherCondition_20260917 skos:prefLabel "Погода 2026-09-17" .
+:WeatherCondition_20260917 :temperature "11.6"^^xsd:double .
+:WeatherCondition_20260917 :cloudCover "ясно" .
+:WeatherCondition_20260918 a :WeatherCondition .
+:WeatherCondition_20260918 skos:prefLabel "Погода 2026-09-18" .
+:WeatherCondition_20260918 :temperature "10.6"^^xsd:double .
+:WeatherCondition_20260918 :cloudCover "суцільна" .
+:WeatherCondition_20260919 a :WeatherCondition .
+:WeatherCondition_20260919 skos:prefLabel "Погода 2026-09-19" .
+:WeatherCondition_20260919 :temperature "10.9"^^xsd:double .
+:WeatherCondition_20260919 :cloudCover "мінлива" .
+:WeatherCondition_20260920 a :WeatherCondition .
+:WeatherCondition_20260920 skos:prefLabel "Погода 2026-09-20" .
+:WeatherCondition_20260920 :temperature "13.8"^^xsd:double .
+:WeatherCondition_20260920 :cloudCover "ясно" .
+:WeatherCondition_20260921 a :WeatherCondition .
+:WeatherCondition_20260921 skos:prefLabel "Погода 2026-09-21" .
+:WeatherCondition_20260921 :temperature "9.6"^^xsd:double .
+:WeatherCondition_20260921 :cloudCover "суцільна" .
+:WeatherCondition_20260922 a :WeatherCondition .
+:WeatherCondition_20260922 skos:prefLabel "Погода 2026-09-22" .
+:WeatherCondition_20260922 :temperature "0.6"^^xsd:double .
+:WeatherCondition_20260922 :cloudCover "мінлива" .
+:WeatherCondition_20260923 a :WeatherCondition .
+:WeatherCondition_20260923 skos:prefLabel "Погода 2026-09-23" .
+:WeatherCondition_20260923 :temperature "4.5"^^xsd:double .
+:WeatherCondition_20260923 :cloudCover "мінлива" .
+:WeatherCondition_20260924 a :WeatherCondition .
+:WeatherCondition_20260924 skos:prefLabel "Погода 2026-09-24" .
+:WeatherCondition_20260924 :temperature "1.5"^^xsd:double .
+:WeatherCondition_20260924 :cloudCover "ясно" .
+:WeatherCondition_20260925 a :WeatherCondition .
+:WeatherCondition_20260925 skos:prefLabel "Погода 2026-09-25" .
+:WeatherCondition_20260925 :temperature "13.7"^^xsd:double .
+:WeatherCondition_20260925 :cloudCover "мінлива" .
+:WeatherCondition_20260926 a :WeatherCondition .
+:WeatherCondition_20260926 skos:prefLabel "Погода 2026-09-26" .
+:WeatherCondition_20260926 :temperature "8.6"^^xsd:double .
+:WeatherCondition_20260926 :cloudCover "мінлива" .
+:WeatherCondition_20260927 a :WeatherCondition .
+:WeatherCondition_20260927 skos:prefLabel "Погода 2026-09-27" .
+:WeatherCondition_20260927 :temperature "14.6"^^xsd:double .
+:WeatherCondition_20260927 :cloudCover "мінлива" .
+:WeatherCondition_20260928 a :WeatherCondition .
+:WeatherCondition_20260928 skos:prefLabel "Погода 2026-09-28" .
+:WeatherCondition_20260928 :temperature "16.3"^^xsd:double .
+:WeatherCondition_20260928 :cloudCover "мінлива" .
+:WeatherCondition_20260929 a :WeatherCondition .
+:WeatherCondition_20260929 skos:prefLabel "Погода 2026-09-29" .
+:WeatherCondition_20260929 :temperature "17.3"^^xsd:double .
+:WeatherCondition_20260929 :cloudCover "мінлива" .
+:WeatherCondition_20260930 a :WeatherCondition .
+:WeatherCondition_20260930 skos:prefLabel "Погода 2026-09-30" .
+:WeatherCondition_20260930 :temperature "12.9"^^xsd:double .
+:WeatherCondition_20260930 :cloudCover "мінлива" .
+:Measurement_0001 a :Measurement .
+:Measurement_0001 skos:prefLabel "Вимірювання №1" .
+:Measurement_0001 :consumptionValue "241.5"^^xsd:double .
+:Measurement_0001 :voltage "216.9"^^xsd:double .
+:Measurement_0001 :timestamp "2026-09-12T08:00:00" .
+:Measurement_0002 a :Measurement .
+:Measurement_0002 skos:prefLabel "Вимірювання №2" .
+:Measurement_0002 :consumptionValue "43.1"^^xsd:double .
+:Measurement_0002 :voltage "234.8"^^xsd:double .
+:Measurement_0002 :timestamp "2026-09-13T18:00:00" .
+:Measurement_0003 a :Measurement .
+:Measurement_0003 skos:prefLabel "Вимірювання №3" .
+:Measurement_0003 :consumptionValue "217.5"^^xsd:double .
+:Measurement_0003 :voltage "235.3"^^xsd:double .
+:Measurement_0003 :timestamp "2026-09-14T18:00:00" .
+:Measurement_0004 a :Measurement .
+:Measurement_0004 skos:prefLabel "Вимірювання №4" .
+:Measurement_0004 :consumptionValue "110.4"^^xsd:double .
+:Measurement_0004 :voltage "228.5"^^xsd:double .
+:Measurement_0004 :timestamp "2026-09-15T08:00:00" .
+:Measurement_0005 a :Measurement .
+:Measurement_0005 skos:prefLabel "Вимірювання №5" .
+:Measurement_0005 :consumptionValue "80.1"^^xsd:double .
+:Measurement_0005 :voltage "204.4"^^xsd:double .
+:Measurement_0005 :timestamp "2026-09-16T12:00:00" .
+:Measurement_0006 a :Measurement .
+:Measurement_0006 skos:prefLabel "Вимірювання №6" .
+:Measurement_0006 :consumptionValue "202.2"^^xsd:double .
+:Measurement_0006 :voltage "224.2"^^xsd:double .
+:Measurement_0006 :timestamp "2026-09-17T18:00:00" .
+:Measurement_0007 a :Measurement .
+:Measurement_0007 skos:prefLabel "Вимірювання №7" .
+:Measurement_0007 :consumptionValue "114.9"^^xsd:double .
+:Measurement_0007 :voltage "223.0"^^xsd:double .
+:Measurement_0007 :timestamp "2026-09-18T12:00:00" .
+:Measurement_0008 a :Measurement .
+:Measurement_0008 skos:prefLabel "Вимірювання №8" .
+:Measurement_0008 :consumptionValue "33.4"^^xsd:double .
+:Measurement_0008 :voltage "208.4"^^xsd:double .
+:Measurement_0008 :timestamp "2026-09-19T08:00:00" .
+:Measurement_0009 a :Measurement .
+:Measurement_0009 skos:prefLabel "Вимірювання №9" .
+:Measurement_0009 :consumptionValue "186.2"^^xsd:double .
+:Measurement_0009 :voltage "234.0"^^xsd:double .
+:Measurement_0009 :timestamp "2026-09-20T12:00:00" .
+:Measurement_0010 a :Measurement .
+:Measurement_0010 skos:prefLabel "Вимірювання №10" .
+:Measurement_0010 :consumptionValue "274.7"^^xsd:double .
+:Measurement_0010 :voltage "208.0"^^xsd:double .
+:Measurement_0010 :timestamp "2026-09-21T08:00:00" .
+:Measurement_0011 a :Measurement .
+:Measurement_0011 skos:prefLabel "Вимірювання №11" .
+:Measurement_0011 :consumptionValue "191.0"^^xsd:double .
+:Measurement_0011 :voltage "216.7"^^xsd:double .
+:Measurement_0011 :timestamp "2026-09-22T18:00:00" .
+:Measurement_0012 a :Measurement .
+:Measurement_0012 skos:prefLabel "Вимірювання №12" .
+:Measurement_0012 :consumptionValue "91.4"^^xsd:double .
+:Measurement_0012 :voltage "214.7"^^xsd:double .
+:Measurement_0012 :timestamp "2026-09-23T08:00:00" .
+:Measurement_0013 a :Measurement .
+:Measurement_0013 skos:prefLabel "Вимірювання №13" .
+:Measurement_0013 :consumptionValue "14.6"^^xsd:double .
+:Measurement_0013 :voltage "201.3"^^xsd:double .
+:Measurement_0013 :timestamp "2026-09-24T12:00:00" .
+:Measurement_0014 a :Measurement .
+:Measurement_0014 skos:prefLabel "Вимірювання №14" .
+:Measurement_0014 :consumptionValue "35.7"^^xsd:double .
+:Measurement_0014 :voltage "208.5"^^xsd:double .
+:Measurement_0014 :timestamp "2026-09-25T18:00:00" .
+:Measurement_0015 a :Measurement .
+:Measurement_0015 skos:prefLabel "Вимірювання №15" .
+:Measurement_0015 :consumptionValue "41.6"^^xsd:double .
+:Measurement_0015 :voltage "216.3"^^xsd:double .
+:Measurement_0015 :timestamp "2026-09-26T18:00:00" .
+:Measurement_0016 a :Measurement .
+:Measurement_0016 skos:prefLabel "Вимірювання №16" .
+:Measurement_0016 :consumptionValue "284.9"^^xsd:double .
+:Measurement_0016 :voltage "225.1"^^xsd:double .
+:Measurement_0016 :timestamp "2026-09-27T18:00:00" .
+:Measurement_0017 a :Measurement .
+:Measurement_0017 skos:prefLabel "Вимірювання №17" .
+:Measurement_0017 :consumptionValue "126.3"^^xsd:double .
+:Measurement_0017 :voltage "226.7"^^xsd:double .
+:Measurement_0017 :timestamp "2026-09-28T08:00:00" .
+:Measurement_0018 a :Measurement .
+:Measurement_0018 skos:prefLabel "Вимірювання №18" .
+:Measurement_0018 :consumptionValue "265.7"^^xsd:double .
+:Measurement_0018 :voltage "223.6"^^xsd:double .
+:Measurement_0018 :timestamp "2026-09-29T12:00:00" .
+:Measurement_0019 a :Measurement .
+:Measurement_0019 skos:prefLabel "Вимірювання №19" .
+:Measurement_0019 :consumptionValue "185.1"^^xsd:double .
+:Measurement_0019 :voltage "233.8"^^xsd:double .
+:Measurement_0019 :timestamp "2026-09-30T12:00:00" .
+:Measurement_0020 a :Measurement .
+:Measurement_0020 skos:prefLabel "Вимірювання №20" .
+:Measurement_0020 :consumptionValue "10.8"^^xsd:double .
+:Measurement_0020 :voltage "213.3"^^xsd:double .
+:Measurement_0020 :timestamp "2026-09-11T12:00:00" .
+:Measurement_0021 a :Measurement .
+:Measurement_0021 skos:prefLabel "Вимірювання №21" .
+:Measurement_0021 :consumptionValue "134.0"^^xsd:double .
+:Measurement_0021 :voltage "208.5"^^xsd:double .
+:Measurement_0021 :timestamp "2026-09-12T12:00:00" .
+:Measurement_0022 a :Measurement .
+:Measurement_0022 skos:prefLabel "Вимірювання №22" .
+:Measurement_0022 :consumptionValue "30.7"^^xsd:double .
+:Measurement_0022 :voltage "224.7"^^xsd:double .
+:Measurement_0022 :timestamp "2026-09-13T18:00:00" .
+:Measurement_0023 a :Measurement .
+:Measurement_0023 skos:prefLabel "Вимірювання №23" .
+:Measurement_0023 :consumptionValue "270.6"^^xsd:double .
+:Measurement_0023 :voltage "223.2"^^xsd:double .
+:Measurement_0023 :timestamp "2026-09-14T08:00:00" .
+:Measurement_0024 a :Measurement .
+:Measurement_0024 skos:prefLabel "Вимірювання №24" .
+:Measurement_0024 :consumptionValue "120.0"^^xsd:double .
+:Measurement_0024 :voltage "206.8"^^xsd:double .
+:Measurement_0024 :timestamp "2026-09-15T08:00:00" .
+:Measurement_0025 a :Measurement .
+:Measurement_0025 skos:prefLabel "Вимірювання №25" .
+:Measurement_0025 :consumptionValue "284.8"^^xsd:double .
+:Measurement_0025 :voltage "229.7"^^xsd:double .
+:Measurement_0025 :timestamp "2026-09-16T08:00:00" .
+:Measurement_0026 a :Measurement .
+:Measurement_0026 skos:prefLabel "Вимірювання №26" .
+:Measurement_0026 :consumptionValue "199.2"^^xsd:double .
+:Measurement_0026 :voltage "223.1"^^xsd:double .
+:Measurement_0026 :timestamp "2026-09-17T18:00:00" .
+:Measurement_0027 a :Measurement .
+:Measurement_0027 skos:prefLabel "Вимірювання №27" .
+:Measurement_0027 :consumptionValue "291.4"^^xsd:double .
+:Measurement_0027 :voltage "201.8"^^xsd:double .
+:Measurement_0027 :timestamp "2026-09-18T12:00:00" .
+:Measurement_0028 a :Measurement .
+:Measurement_0028 skos:prefLabel "Вимірювання №28" .
+:Measurement_0028 :consumptionValue "73.8"^^xsd:double .
+:Measurement_0028 :voltage "204.5"^^xsd:double .
+:Measurement_0028 :timestamp "2026-09-19T18:00:00" .
+:Measurement_0029 a :Measurement .
+:Measurement_0029 skos:prefLabel "Вимірювання №29" .
+:Measurement_0029 :consumptionValue "62.4"^^xsd:double .
+:Measurement_0029 :voltage "229.9"^^xsd:double .
+:Measurement_0029 :timestamp "2026-09-20T18:00:00" .
+:Measurement_0030 a :Measurement .
+:Measurement_0030 skos:prefLabel "Вимірювання №30" .
+:Measurement_0030 :consumptionValue "62.9"^^xsd:double .
+:Measurement_0030 :voltage "207.8"^^xsd:double .
+:Measurement_0030 :timestamp "2026-09-21T08:00:00" .
+:Measurement_0031 a :Measurement .
+:Measurement_0031 skos:prefLabel "Вимірювання №31" .
+:Measurement_0031 :consumptionValue "99.2"^^xsd:double .
+:Measurement_0031 :voltage "205.3"^^xsd:double .
+:Measurement_0031 :timestamp "2026-09-22T18:00:00" .
+:Measurement_0032 a :Measurement .
+:Measurement_0032 skos:prefLabel "Вимірювання №32" .
+:Measurement_0032 :consumptionValue "1.8"^^xsd:double .
+:Measurement_0032 :voltage "230.9"^^xsd:double .
+:Measurement_0032 :timestamp "2026-09-23T08:00:00" .
+:Measurement_0033 a :Measurement .
+:Measurement_0033 skos:prefLabel "Вимірювання №33" .
+:Measurement_0033 :consumptionValue "296.3"^^xsd:double .
+:Measurement_0033 :voltage "219.4"^^xsd:double .
+:Measurement_0033 :timestamp "2026-09-24T08:00:00" .
+:Measurement_0034 a :Measurement .
+:Measurement_0034 skos:prefLabel "Вимірювання №34" .
+:Measurement_0034 :consumptionValue "33.9"^^xsd:double .
+:Measurement_0034 :voltage "231.2"^^xsd:double .
+:Measurement_0034 :timestamp "2026-09-25T08:00:00" .
+:Measurement_0035 a :Measurement .
+:Measurement_0035 skos:prefLabel "Вимірювання №35" .
+:Measurement_0035 :consumptionValue "5.4"^^xsd:double .
+:Measurement_0035 :voltage "228.4"^^xsd:double .
+:Measurement_0035 :timestamp "2026-09-26T08:00:00" .
+:Measurement_0036 a :Measurement .
+:Measurement_0036 skos:prefLabel "Вимірювання №36" .
+:Measurement_0036 :consumptionValue "177.1"^^xsd:double .
+:Measurement_0036 :voltage "200.6"^^xsd:double .
+:Measurement_0036 :timestamp "2026-09-27T12:00:00" .
+:Measurement_0037 a :Measurement .
+:Measurement_0037 skos:prefLabel "Вимірювання №37" .
+:Measurement_0037 :consumptionValue "16.7"^^xsd:double .
+:Measurement_0037 :voltage "226.7"^^xsd:double .
+:Measurement_0037 :timestamp "2026-09-28T18:00:00" .
+:Measurement_0038 a :Measurement .
+:Measurement_0038 skos:prefLabel "Вимірювання №38" .
+:Measurement_0038 :consumptionValue "35.0"^^xsd:double .
+:Measurement_0038 :voltage "202.3"^^xsd:double .
+:Measurement_0038 :timestamp "2026-09-29T12:00:00" .
+:Measurement_0039 a :Measurement .
+:Measurement_0039 skos:prefLabel "Вимірювання №39" .
+:Measurement_0039 :consumptionValue "233.6"^^xsd:double .
+:Measurement_0039 :voltage "218.5"^^xsd:double .
+:Measurement_0039 :timestamp "2026-09-30T08:00:00" .
+:Measurement_0040 a :Measurement .
+:Measurement_0040 skos:prefLabel "Вимірювання №40" .
+:Measurement_0040 :consumptionValue "136.1"^^xsd:double .
+:Measurement_0040 :voltage "208.0"^^xsd:double .
+:Measurement_0040 :timestamp "2026-09-11T18:00:00" .
+:Measurement_0041 a :Measurement .
+:Measurement_0041 skos:prefLabel "Вимірювання №41" .
+:Measurement_0041 :consumptionValue "14.0"^^xsd:double .
+:Measurement_0041 :voltage "228.2"^^xsd:double .
+:Measurement_0041 :timestamp "2026-09-12T18:00:00" .
+:Measurement_0042 a :Measurement .
+:Measurement_0042 skos:prefLabel "Вимірювання №42" .
+:Measurement_0042 :consumptionValue "156.9"^^xsd:double .
+:Measurement_0042 :voltage "216.5"^^xsd:double .
+:Measurement_0042 :timestamp "2026-09-13T08:00:00" .
+:Measurement_0043 a :Measurement .
+:Measurement_0043 skos:prefLabel "Вимірювання №43" .
+:Measurement_0043 :consumptionValue "19.2"^^xsd:double .
+:Measurement_0043 :voltage "217.2"^^xsd:double .
+:Measurement_0043 :timestamp "2026-09-14T12:00:00" .
+:Measurement_0044 a :Measurement .
+:Measurement_0044 skos:prefLabel "Вимірювання №44" .
+:Measurement_0044 :consumptionValue "128.5"^^xsd:double .
+:Measurement_0044 :voltage "203.9"^^xsd:double .
+:Measurement_0044 :timestamp "2026-09-15T18:00:00" .
+:Measurement_0045 a :Measurement .
+:Measurement_0045 skos:prefLabel "Вимірювання №45" .
+:Measurement_0045 :consumptionValue "273.0"^^xsd:double .
+:Measurement_0045 :voltage "202.6"^^xsd:double .
+:Measurement_0045 :timestamp "2026-09-16T08:00:00" .
+:Measurement_0046 a :Measurement .
+:Measurement_0046 skos:prefLabel "Вимірювання №46" .
+:Measurement_0046 :consumptionValue "97.3"^^xsd:double .
+:Measurement_0046 :voltage "205.3"^^xsd:double .
+:Measurement_0046 :timestamp "2026-09-17T08:00:00" .
+:Measurement_0047 a :Measurement .
+:Measurement_0047 skos:prefLabel "Вимірювання №47" .
+:Measurement_0047 :consumptionValue "83.2"^^xsd:double .
+:Measurement_0047 :voltage "222.8"^^xsd:double .
+:Measurement_0047 :timestamp "2026-09-18T18:00:00" .
+:Measurement_0048 a :Measurement .
+:Measurement_0048 skos:prefLabel "Вимірювання №48" .
+:Measurement_0048 :consumptionValue "213.9"^^xsd:double .
+:Measurement_0048 :voltage "213.7"^^xsd:double .
+:Measurement_0048 :timestamp "2026-09-19T18:00:00" .
+:Measurement_0049 a :Measurement .
+:Measurement_0049 skos:prefLabel "Вимірювання №49" .
+:Measurement_0049 :consumptionValue "159.6"^^xsd:double .
+:Measurement_0049 :voltage "216.3"^^xsd:double .
+:Measurement_0049 :timestamp "2026-09-20T18:00:00" .
+:Measurement_0050 a :Measurement .
+:Measurement_0050 skos:prefLabel "Вимірювання №50" .
+:Measurement_0050 :consumptionValue "129.6"^^xsd:double .
+:Measurement_0050 :voltage "228.6"^^xsd:double .
+:Measurement_0050 :timestamp "2026-09-21T08:00:00" .
+:Measurement_0051 a :Measurement .
+:Measurement_0051 skos:prefLabel "Вимірювання №51" .
+:Measurement_0051 :consumptionValue "256.0"^^xsd:double .
+:Measurement_0051 :voltage "223.4"^^xsd:double .
+:Measurement_0051 :timestamp "2026-09-22T18:00:00" .
+:Measurement_0052 a :Measurement .
+:Measurement_0052 skos:prefLabel "Вимірювання №52" .
+:Measurement_0052 :consumptionValue "216.5"^^xsd:double .
+:Measurement_0052 :voltage "207.7"^^xsd:double .
+:Measurement_0052 :timestamp "2026-09-23T12:00:00" .
+:Measurement_0053 a :Measurement .
+:Measurement_0053 skos:prefLabel "Вимірювання №53" .
+:Measurement_0053 :consumptionValue "266.5"^^xsd:double .
+:Measurement_0053 :voltage "214.9"^^xsd:double .
+:Measurement_0053 :timestamp "2026-09-24T12:00:00" .
+:Measurement_0054 a :Measurement .
+:Measurement_0054 skos:prefLabel "Вимірювання №54" .
+:Measurement_0054 :consumptionValue "120.2"^^xsd:double .
+:Measurement_0054 :voltage "226.3"^^xsd:double .
+:Measurement_0054 :timestamp "2026-09-25T12:00:00" .
+:Measurement_0055 a :Measurement .
+:Measurement_0055 skos:prefLabel "Вимірювання №55" .
+:Measurement_0055 :consumptionValue "128.6"^^xsd:double .
+:Measurement_0055 :voltage "223.9"^^xsd:double .
+:Measurement_0055 :timestamp "2026-09-26T12:00:00" .
+:Measurement_0056 a :Measurement .
+:Measurement_0056 skos:prefLabel "Вимірювання №56" .
+:Measurement_0056 :consumptionValue "286.1"^^xsd:double .
+:Measurement_0056 :voltage "224.7"^^xsd:double .
+:Measurement_0056 :timestamp "2026-09-27T12:00:00" .
+:Measurement_0057 a :Measurement .
+:Measurement_0057 skos:prefLabel "Вимірювання №57" .
+:Measurement_0057 :consumptionValue "21.1"^^xsd:double .
+:Measurement_0057 :voltage "229.9"^^xsd:double .
+:Measurement_0057 :timestamp "2026-09-28T08:00:00" .
+:Measurement_0058 a :Measurement .
+:Measurement_0058 skos:prefLabel "Вимірювання №58" .
+:Measurement_0058 :consumptionValue "130.1"^^xsd:double .
+:Measurement_0058 :voltage "226.8"^^xsd:double .
+:Measurement_0058 :timestamp "2026-09-29T12:00:00" .
+:Measurement_0059 a :Measurement .
+:Measurement_0059 skos:prefLabel "Вимірювання №59" .
+:Measurement_0059 :consumptionValue "243.7"^^xsd:double .
+:Measurement_0059 :voltage "220.0"^^xsd:double .
+:Measurement_0059 :timestamp "2026-09-30T18:00:00" .
+:Measurement_0060 a :Measurement .
+:Measurement_0060 skos:prefLabel "Вимірювання №60" .
+:Measurement_0060 :consumptionValue "287.0"^^xsd:double .
+:Measurement_0060 :voltage "220.2"^^xsd:double .
+:Measurement_0060 :timestamp "2026-09-11T18:00:00" .
+:Measurement_0061 a :Measurement .
+:Measurement_0061 skos:prefLabel "Вимірювання №61" .
+:Measurement_0061 :consumptionValue "37.5"^^xsd:double .
+:Measurement_0061 :voltage "212.7"^^xsd:double .
+:Measurement_0061 :timestamp "2026-09-12T18:00:00" .
+:Measurement_0062 a :Measurement .
+:Measurement_0062 skos:prefLabel "Вимірювання №62" .
+:Measurement_0062 :consumptionValue "282.4"^^xsd:double .
+:Measurement_0062 :voltage "215.2"^^xsd:double .
+:Measurement_0062 :timestamp "2026-09-13T18:00:00" .
+:Measurement_0063 a :Measurement .
+:Measurement_0063 skos:prefLabel "Вимірювання №63" .
+:Measurement_0063 :consumptionValue "16.4"^^xsd:double .
+:Measurement_0063 :voltage "210.4"^^xsd:double .
+:Measurement_0063 :timestamp "2026-09-14T12:00:00" .
+:Measurement_0064 a :Measurement .
+:Measurement_0064 skos:prefLabel "Вимірювання №64" .
+:Measurement_0064 :consumptionValue "106.1"^^xsd:double .
+:Measurement_0064 :voltage "220.8"^^xsd:double .
+:Measurement_0064 :timestamp "2026-09-15T08:00:00" .
+:Measurement_0065 a :Measurement .
+:Measurement_0065 skos:prefLabel "Вимірювання №65" .
+:Measurement_0065 :consumptionValue "47.3"^^xsd:double .
+:Measurement_0065 :voltage "217.4"^^xsd:double .
+:Measurement_0065 :timestamp "2026-09-16T08:00:00" .
+:Measurement_0066 a :Measurement .
+:Measurement_0066 skos:prefLabel "Вимірювання №66" .
+:Measurement_0066 :consumptionValue "105.7"^^xsd:double .
+:Measurement_0066 :voltage "220.0"^^xsd:double .
+:Measurement_0066 :timestamp "2026-09-17T08:00:00" .
+:Measurement_0067 a :Measurement .
+:Measurement_0067 skos:prefLabel "Вимірювання №67" .
+:Measurement_0067 :consumptionValue "229.0"^^xsd:double .
+:Measurement_0067 :voltage "220.7"^^xsd:double .
+:Measurement_0067 :timestamp "2026-09-18T12:00:00" .
+:Measurement_0068 a :Measurement .
+:Measurement_0068 skos:prefLabel "Вимірювання №68" .
+:Measurement_0068 :consumptionValue "253.7"^^xsd:double .
+:Measurement_0068 :voltage "235.1"^^xsd:double .
+:Measurement_0068 :timestamp "2026-09-19T18:00:00" .
+:Measurement_0069 a :Measurement .
+:Measurement_0069 skos:prefLabel "Вимірювання №69" .
+:Measurement_0069 :consumptionValue "184.5"^^xsd:double .
+:Measurement_0069 :voltage "223.1"^^xsd:double .
+:Measurement_0069 :timestamp "2026-09-20T08:00:00" .
+:Measurement_0070 a :Measurement .
+:Measurement_0070 skos:prefLabel "Вимірювання №70" .
+:Measurement_0070 :consumptionValue "183.1"^^xsd:double .
+:Measurement_0070 :voltage "223.7"^^xsd:double .
+:Measurement_0070 :timestamp "2026-09-21T18:00:00" .
+:Measurement_0071 a :Measurement .
+:Measurement_0071 skos:prefLabel "Вимірювання №71" .
+:Measurement_0071 :consumptionValue "81.0"^^xsd:double .
+:Measurement_0071 :voltage "206.5"^^xsd:double .
+:Measurement_0071 :timestamp "2026-09-22T18:00:00" .
+:Measurement_0072 a :Measurement .
+:Measurement_0072 skos:prefLabel "Вимірювання №72" .
+:Measurement_0072 :consumptionValue "229.0"^^xsd:double .
+:Measurement_0072 :voltage "233.2"^^xsd:double .
+:Measurement_0072 :timestamp "2026-09-23T12:00:00" .
+:Measurement_0073 a :Measurement .
+:Measurement_0073 skos:prefLabel "Вимірювання №73" .
+:Measurement_0073 :consumptionValue "2.8"^^xsd:double .
+:Measurement_0073 :voltage "231.3"^^xsd:double .
+:Measurement_0073 :timestamp "2026-09-24T18:00:00" .
+:Measurement_0074 a :Measurement .
+:Measurement_0074 skos:prefLabel "Вимірювання №74" .
+:Measurement_0074 :consumptionValue "197.5"^^xsd:double .
+:Measurement_0074 :voltage "202.5"^^xsd:double .
+:Measurement_0074 :timestamp "2026-09-25T18:00:00" .
+:Measurement_0075 a :Measurement .
+:Measurement_0075 skos:prefLabel "Вимірювання №75" .
+:Measurement_0075 :consumptionValue "190.3"^^xsd:double .
+:Measurement_0075 :voltage "201.1"^^xsd:double .
+:Measurement_0075 :timestamp "2026-09-26T18:00:00" .
+:Measurement_0076 a :Measurement .
+:Measurement_0076 skos:prefLabel "Вимірювання №76" .
+:Measurement_0076 :consumptionValue "159.6"^^xsd:double .
+:Measurement_0076 :voltage "213.5"^^xsd:double .
+:Measurement_0076 :timestamp "2026-09-27T12:00:00" .
+:Measurement_0077 a :Measurement .
+:Measurement_0077 skos:prefLabel "Вимірювання №77" .
+:Measurement_0077 :consumptionValue "102.9"^^xsd:double .
+:Measurement_0077 :voltage "213.3"^^xsd:double .
+:Measurement_0077 :timestamp "2026-09-28T18:00:00" .
+:Measurement_0078 a :Measurement .
+:Measurement_0078 skos:prefLabel "Вимірювання №78" .
+:Measurement_0078 :consumptionValue "98.0"^^xsd:double .
+:Measurement_0078 :voltage "233.9"^^xsd:double .
+:Measurement_0078 :timestamp "2026-09-29T18:00:00" .
+:Measurement_0079 a :Measurement .
+:Measurement_0079 skos:prefLabel "Вимірювання №79" .
+:Measurement_0079 :consumptionValue "26.4"^^xsd:double .
+:Measurement_0079 :voltage "201.9"^^xsd:double .
+:Measurement_0079 :timestamp "2026-09-30T08:00:00" .
+:Measurement_0080 a :Measurement .
+:Measurement_0080 skos:prefLabel "Вимірювання №80" .
+:Measurement_0080 :consumptionValue "226.6"^^xsd:double .
+:Measurement_0080 :voltage "201.8"^^xsd:double .
+:Measurement_0080 :timestamp "2026-09-11T08:00:00" .
+:Measurement_0081 a :Measurement .
+:Measurement_0081 skos:prefLabel "Вимірювання №81" .
+:Measurement_0081 :consumptionValue "82.4"^^xsd:double .
+:Measurement_0081 :voltage "223.8"^^xsd:double .
+:Measurement_0081 :timestamp "2026-09-12T12:00:00" .
+:Measurement_0082 a :Measurement .
+:Measurement_0082 skos:prefLabel "Вимірювання №82" .
+:Measurement_0082 :consumptionValue "182.5"^^xsd:double .
+:Measurement_0082 :voltage "214.9"^^xsd:double .
+:Measurement_0082 :timestamp "2026-09-13T08:00:00" .
+:Measurement_0083 a :Measurement .
+:Measurement_0083 skos:prefLabel "Вимірювання №83" .
+:Measurement_0083 :consumptionValue "226.7"^^xsd:double .
+:Measurement_0083 :voltage "204.1"^^xsd:double .
+:Measurement_0083 :timestamp "2026-09-14T12:00:00" .
+:Measurement_0084 a :Measurement .
+:Measurement_0084 skos:prefLabel "Вимірювання №84" .
+:Measurement_0084 :consumptionValue "34.2"^^xsd:double .
+:Measurement_0084 :voltage "224.4"^^xsd:double .
+:Measurement_0084 :timestamp "2026-09-15T18:00:00" .
+:Measurement_0085 a :Measurement .
+:Measurement_0085 skos:prefLabel "Вимірювання №85" .
+:Measurement_0085 :consumptionValue "146.5"^^xsd:double .
+:Measurement_0085 :voltage "224.0"^^xsd:double .
+:Measurement_0085 :timestamp "2026-09-16T08:00:00" .
+:Measurement_0086 a :Measurement .
+:Measurement_0086 skos:prefLabel "Вимірювання №86" .
+:Measurement_0086 :consumptionValue "66.9"^^xsd:double .
+:Measurement_0086 :voltage "235.4"^^xsd:double .
+:Measurement_0086 :timestamp "2026-09-17T08:00:00" .
+:Measurement_0087 a :Measurement .
+:Measurement_0087 skos:prefLabel "Вимірювання №87" .
+:Measurement_0087 :consumptionValue "3.3"^^xsd:double .
+:Measurement_0087 :voltage "210.9"^^xsd:double .
+:Measurement_0087 :timestamp "2026-09-18T08:00:00" .
+:Measurement_0088 a :Measurement .
+:Measurement_0088 skos:prefLabel "Вимірювання №88" .
+:Measurement_0088 :consumptionValue "230.4"^^xsd:double .
+:Measurement_0088 :voltage "227.5"^^xsd:double .
+:Measurement_0088 :timestamp "2026-09-19T12:00:00" .
+:Measurement_0089 a :Measurement .
+:Measurement_0089 skos:prefLabel "Вимірювання №89" .
+:Measurement_0089 :consumptionValue "99.1"^^xsd:double .
+:Measurement_0089 :voltage "200.3"^^xsd:double .
+:Measurement_0089 :timestamp "2026-09-20T18:00:00" .
+:Measurement_0090 a :Measurement .
+:Measurement_0090 skos:prefLabel "Вимірювання №90" .
+:Measurement_0090 :consumptionValue "129.8"^^xsd:double .
+:Measurement_0090 :voltage "204.7"^^xsd:double .
+:Measurement_0090 :timestamp "2026-09-21T18:00:00" .
+:Measurement_0091 a :Measurement .
+:Measurement_0091 skos:prefLabel "Вимірювання №91" .
+:Measurement_0091 :consumptionValue "211.4"^^xsd:double .
+:Measurement_0091 :voltage "218.0"^^xsd:double .
+:Measurement_0091 :timestamp "2026-09-22T18:00:00" .
+:Measurement_0092 a :Measurement .
+:Measurement_0092 skos:prefLabel "Вимірювання №92" .
+:Measurement_0092 :consumptionValue "242.1"^^xsd:double .
+:Measurement_0092 :voltage "202.6"^^xsd:double .
+:Measurement_0092 :timestamp "2026-09-23T18:00:00" .
+:Measurement_0093 a :Measurement .
+:Measurement_0093 skos:prefLabel "Вимірювання №93" .
+:Measurement_0093 :consumptionValue "13.6"^^xsd:double .
+:Measurement_0093 :voltage "200.7"^^xsd:double .
+:Measurement_0093 :timestamp "2026-09-24T08:00:00" .
+:Measurement_0094 a :Measurement .
+:Measurement_0094 skos:prefLabel "Вимірювання №94" .
+:Measurement_0094 :consumptionValue "258.8"^^xsd:double .
+:Measurement_0094 :voltage "220.7"^^xsd:double .
+:Measurement_0094 :timestamp "2026-09-25T18:00:00" .
+:Measurement_0095 a :Measurement .
+:Measurement_0095 skos:prefLabel "Вимірювання №95" .
+:Measurement_0095 :consumptionValue "121.9"^^xsd:double .
+:Measurement_0095 :voltage "223.0"^^xsd:double .
+:Measurement_0095 :timestamp "2026-09-26T12:00:00" .
+:Measurement_0096 a :Measurement .
+:Measurement_0096 skos:prefLabel "Вимірювання №96" .
+:Measurement_0096 :consumptionValue "35.4"^^xsd:double .
+:Measurement_0096 :voltage "200.8"^^xsd:double .
+:Measurement_0096 :timestamp "2026-09-27T12:00:00" .
+:Measurement_0097 a :Measurement .
+:Measurement_0097 skos:prefLabel "Вимірювання №97" .
+:Measurement_0097 :consumptionValue "52.4"^^xsd:double .
+:Measurement_0097 :voltage "234.1"^^xsd:double .
+:Measurement_0097 :timestamp "2026-09-28T12:00:00" .
+:Measurement_0098 a :Measurement .
+:Measurement_0098 skos:prefLabel "Вимірювання №98" .
+:Measurement_0098 :consumptionValue "249.8"^^xsd:double .
+:Measurement_0098 :voltage "233.1"^^xsd:double .
+:Measurement_0098 :timestamp "2026-09-29T08:00:00" .
+:Measurement_0099 a :Measurement .
+:Measurement_0099 skos:prefLabel "Вимірювання №99" .
+:Measurement_0099 :consumptionValue "131.6"^^xsd:double .
+:Measurement_0099 :voltage "203.8"^^xsd:double .
+:Measurement_0099 :timestamp "2026-09-30T12:00:00" .
+:Measurement_0100 a :Measurement .
+:Measurement_0100 skos:prefLabel "Вимірювання №100" .
+:Measurement_0100 :consumptionValue "177.1"^^xsd:double .
+:Measurement_0100 :voltage "218.9"^^xsd:double .
+:Measurement_0100 :timestamp "2026-09-11T12:00:00" .
+:Measurement_0101 a :Measurement .
+:Measurement_0101 skos:prefLabel "Вимірювання №101" .
+:Measurement_0101 :consumptionValue "261.3"^^xsd:double .
+:Measurement_0101 :voltage "226.8"^^xsd:double .
+:Measurement_0101 :timestamp "2026-09-12T08:00:00" .
+:Measurement_0102 a :Measurement .
+:Measurement_0102 skos:prefLabel "Вимірювання №102" .
+:Measurement_0102 :consumptionValue "100.6"^^xsd:double .
+:Measurement_0102 :voltage "206.1"^^xsd:double .
+:Measurement_0102 :timestamp "2026-09-13T18:00:00" .
+:Measurement_0103 a :Measurement .
+:Measurement_0103 skos:prefLabel "Вимірювання №103" .
+:Measurement_0103 :consumptionValue "190.3"^^xsd:double .
+:Measurement_0103 :voltage "219.1"^^xsd:double .
+:Measurement_0103 :timestamp "2026-09-14T08:00:00" .
+:Measurement_0104 a :Measurement .
+:Measurement_0104 skos:prefLabel "Вимірювання №104" .
+:Measurement_0104 :consumptionValue "271.9"^^xsd:double .
+:Measurement_0104 :voltage "212.6"^^xsd:double .
+:Measurement_0104 :timestamp "2026-09-15T18:00:00" .
+:Measurement_0105 a :Measurement .
+:Measurement_0105 skos:prefLabel "Вимірювання №105" .
+:Measurement_0105 :consumptionValue "287.5"^^xsd:double .
+:Measurement_0105 :voltage "223.2"^^xsd:double .
+:Measurement_0105 :timestamp "2026-09-16T08:00:00" .
+:Measurement_0106 a :Measurement .
+:Measurement_0106 skos:prefLabel "Вимірювання №106" .
+:Measurement_0106 :consumptionValue "71.6"^^xsd:double .
+:Measurement_0106 :voltage "205.3"^^xsd:double .
+:Measurement_0106 :timestamp "2026-09-17T08:00:00" .
+:Measurement_0107 a :Measurement .
+:Measurement_0107 skos:prefLabel "Вимірювання №107" .
+:Measurement_0107 :consumptionValue "52.9"^^xsd:double .
+:Measurement_0107 :voltage "205.5"^^xsd:double .
+:Measurement_0107 :timestamp "2026-09-18T18:00:00" .
+:Measurement_0108 a :Measurement .
+:Measurement_0108 skos:prefLabel "Вимірювання №108" .
+:Measurement_0108 :consumptionValue "23.5"^^xsd:double .
+:Measurement_0108 :voltage "234.2"^^xsd:double .
+:Measurement_0108 :timestamp "2026-09-19T18:00:00" .
+:Measurement_0109 a :Measurement .
+:Measurement_0109 skos:prefLabel "Вимірювання №109" .
+:Measurement_0109 :consumptionValue "148.7"^^xsd:double .
+:Measurement_0109 :voltage "227.2"^^xsd:double .
+:Measurement_0109 :timestamp "2026-09-20T18:00:00" .
+:Measurement_0110 a :Measurement .
+:Measurement_0110 skos:prefLabel "Вимірювання №110" .
+:Measurement_0110 :consumptionValue "135.2"^^xsd:double .
+:Measurement_0110 :voltage "233.3"^^xsd:double .
+:Measurement_0110 :timestamp "2026-09-21T18:00:00" .
+:Measurement_0111 a :Measurement .
+:Measurement_0111 skos:prefLabel "Вимірювання №111" .
+:Measurement_0111 :consumptionValue "193.3"^^xsd:double .
+:Measurement_0111 :voltage "235.5"^^xsd:double .
+:Measurement_0111 :timestamp "2026-09-22T12:00:00" .
+:Measurement_0112 a :Measurement .
+:Measurement_0112 skos:prefLabel "Вимірювання №112" .
+:Measurement_0112 :consumptionValue "259.4"^^xsd:double .
+:Measurement_0112 :voltage "222.6"^^xsd:double .
+:Measurement_0112 :timestamp "2026-09-23T08:00:00" .
+:Measurement_0113 a :Measurement .
+:Measurement_0113 skos:prefLabel "Вимірювання №113" .
+:Measurement_0113 :consumptionValue "132.5"^^xsd:double .
+:Measurement_0113 :voltage "216.9"^^xsd:double .
+:Measurement_0113 :timestamp "2026-09-24T18:00:00" .
+:Measurement_0114 a :Measurement .
+:Measurement_0114 skos:prefLabel "Вимірювання №114" .
+:Measurement_0114 :consumptionValue "91.5"^^xsd:double .
+:Measurement_0114 :voltage "209.9"^^xsd:double .
+:Measurement_0114 :timestamp "2026-09-25T08:00:00" .
+:Measurement_0115 a :Measurement .
+:Measurement_0115 skos:prefLabel "Вимірювання №115" .
+:Measurement_0115 :consumptionValue "106.2"^^xsd:double .
+:Measurement_0115 :voltage "202.7"^^xsd:double .
+:Measurement_0115 :timestamp "2026-09-26T12:00:00" .
+:Measurement_0116 a :Measurement .
+:Measurement_0116 skos:prefLabel "Вимірювання №116" .
+:Measurement_0116 :consumptionValue "136.1"^^xsd:double .
+:Measurement_0116 :voltage "202.0"^^xsd:double .
+:Measurement_0116 :timestamp "2026-09-27T12:00:00" .
+:Measurement_0117 a :Measurement .
+:Measurement_0117 skos:prefLabel "Вимірювання №117" .
+:Measurement_0117 :consumptionValue "23.9"^^xsd:double .
+:Measurement_0117 :voltage "231.1"^^xsd:double .
+:Measurement_0117 :timestamp "2026-09-28T08:00:00" .
+:Measurement_0118 a :Measurement .
+:Measurement_0118 skos:prefLabel "Вимірювання №118" .
+:Measurement_0118 :consumptionValue "184.9"^^xsd:double .
+:Measurement_0118 :voltage "218.3"^^xsd:double .
+:Measurement_0118 :timestamp "2026-09-29T12:00:00" .
+:Measurement_0119 a :Measurement .
+:Measurement_0119 skos:prefLabel "Вимірювання №119" .
+:Measurement_0119 :consumptionValue "174.5"^^xsd:double .
+:Measurement_0119 :voltage "234.4"^^xsd:double .
+:Measurement_0119 :timestamp "2026-09-30T18:00:00" .
+:Measurement_0120 a :Measurement .
+:Measurement_0120 skos:prefLabel "Вимірювання №120" .
+:Measurement_0120 :consumptionValue "268.9"^^xsd:double .
+:Measurement_0120 :voltage "216.2"^^xsd:double .
+:Measurement_0120 :timestamp "2026-09-11T18:00:00" .
+:Measurement_0121 a :Measurement .
+:Measurement_0121 skos:prefLabel "Вимірювання №121" .
+:Measurement_0121 :consumptionValue "195.9"^^xsd:double .
+:Measurement_0121 :voltage "211.6"^^xsd:double .
+:Measurement_0121 :timestamp "2026-09-12T12:00:00" .
+:Measurement_0122 a :Measurement .
+:Measurement_0122 skos:prefLabel "Вимірювання №122" .
+:Measurement_0122 :consumptionValue "150.9"^^xsd:double .
+:Measurement_0122 :voltage "234.5"^^xsd:double .
+:Measurement_0122 :timestamp "2026-09-13T12:00:00" .
+:Measurement_0123 a :Measurement .
+:Measurement_0123 skos:prefLabel "Вимірювання №123" .
+:Measurement_0123 :consumptionValue "31.9"^^xsd:double .
+:Measurement_0123 :voltage "232.4"^^xsd:double .
+:Measurement_0123 :timestamp "2026-09-14T12:00:00" .
+:Measurement_0124 a :Measurement .
+:Measurement_0124 skos:prefLabel "Вимірювання №124" .
+:Measurement_0124 :consumptionValue "294.7"^^xsd:double .
+:Measurement_0124 :voltage "203.0"^^xsd:double .
+:Measurement_0124 :timestamp "2026-09-15T18:00:00" .
+:Measurement_0125 a :Measurement .
+:Measurement_0125 skos:prefLabel "Вимірювання №125" .
+:Measurement_0125 :consumptionValue "52.6"^^xsd:double .
+:Measurement_0125 :voltage "208.9"^^xsd:double .
+:Measurement_0125 :timestamp "2026-09-16T12:00:00" .
+:Measurement_0126 a :Measurement .
+:Measurement_0126 skos:prefLabel "Вимірювання №126" .
+:Measurement_0126 :consumptionValue "297.3"^^xsd:double .
+:Measurement_0126 :voltage "218.9"^^xsd:double .
+:Measurement_0126 :timestamp "2026-09-17T18:00:00" .
+:Measurement_0127 a :Measurement .
+:Measurement_0127 skos:prefLabel "Вимірювання №127" .
+:Measurement_0127 :consumptionValue "48.5"^^xsd:double .
+:Measurement_0127 :voltage "213.4"^^xsd:double .
+:Measurement_0127 :timestamp "2026-09-18T12:00:00" .
+:Measurement_0128 a :Measurement .
+:Measurement_0128 skos:prefLabel "Вимірювання №128" .
+:Measurement_0128 :consumptionValue "116.8"^^xsd:double .
+:Measurement_0128 :voltage "227.9"^^xsd:double .
+:Measurement_0128 :timestamp "2026-09-19T18:00:00" .
+:Measurement_0129 a :Measurement .
+:Measurement_0129 skos:prefLabel "Вимірювання №129" .
+:Measurement_0129 :consumptionValue "179.8"^^xsd:double .
+:Measurement_0129 :voltage "228.4"^^xsd:double .
+:Measurement_0129 :timestamp "2026-09-20T18:00:00" .
+:Measurement_0130 a :Measurement .
+:Measurement_0130 skos:prefLabel "Вимірювання №130" .
+:Measurement_0130 :consumptionValue "101.1"^^xsd:double .
+:Measurement_0130 :voltage "211.9"^^xsd:double .
+:Measurement_0130 :timestamp "2026-09-21T18:00:00" .
+:Measurement_0131 a :Measurement .
+:Measurement_0131 skos:prefLabel "Вимірювання №131" .
+:Measurement_0131 :consumptionValue "203.8"^^xsd:double .
+:Measurement_0131 :voltage "210.2"^^xsd:double .
+:Measurement_0131 :timestamp "2026-09-22T18:00:00" .
+:Measurement_0132 a :Measurement .
+:Measurement_0132 skos:prefLabel "Вимірювання №132" .
+:Measurement_0132 :consumptionValue "255.6"^^xsd:double .
+:Measurement_0132 :voltage "234.7"^^xsd:double .
+:Measurement_0132 :timestamp "2026-09-23T18:00:00" .
+:Measurement_0133 a :Measurement .
+:Measurement_0133 skos:prefLabel "Вимірювання №133" .
+:Measurement_0133 :consumptionValue "262.1"^^xsd:double .
+:Measurement_0133 :voltage "212.0"^^xsd:double .
+:Measurement_0133 :timestamp "2026-09-24T18:00:00" .
+:Measurement_0134 a :Measurement .
+:Measurement_0134 skos:prefLabel "Вимірювання №134" .
+:Measurement_0134 :consumptionValue "199.4"^^xsd:double .
+:Measurement_0134 :voltage "233.0"^^xsd:double .
+:Measurement_0134 :timestamp "2026-09-25T12:00:00" .
+:Measurement_0135 a :Measurement .
+:Measurement_0135 skos:prefLabel "Вимірювання №135" .
+:Measurement_0135 :consumptionValue "290.3"^^xsd:double .
+:Measurement_0135 :voltage "225.1"^^xsd:double .
+:Measurement_0135 :timestamp "2026-09-26T12:00:00" .
+:Measurement_0136 a :Measurement .
+:Measurement_0136 skos:prefLabel "Вимірювання №136" .
+:Measurement_0136 :consumptionValue "39.6"^^xsd:double .
+:Measurement_0136 :voltage "225.5"^^xsd:double .
+:Measurement_0136 :timestamp "2026-09-27T08:00:00" .
+:Measurement_0137 a :Measurement .
+:Measurement_0137 skos:prefLabel "Вимірювання №137" .
+:Measurement_0137 :consumptionValue "93.6"^^xsd:double .
+:Measurement_0137 :voltage "213.6"^^xsd:double .
+:Measurement_0137 :timestamp "2026-09-28T12:00:00" .
+:Measurement_0138 a :Measurement .
+:Measurement_0138 skos:prefLabel "Вимірювання №138" .
+:Measurement_0138 :consumptionValue "244.1"^^xsd:double .
+:Measurement_0138 :voltage "224.1"^^xsd:double .
+:Measurement_0138 :timestamp "2026-09-29T18:00:00" .
+:Measurement_0139 a :Measurement .
+:Measurement_0139 skos:prefLabel "Вимірювання №139" .
+:Measurement_0139 :consumptionValue "299.2"^^xsd:double .
+:Measurement_0139 :voltage "232.8"^^xsd:double .
+:Measurement_0139 :timestamp "2026-09-30T08:00:00" .
+:Measurement_0140 a :Measurement .
+:Measurement_0140 skos:prefLabel "Вимірювання №140" .
+:Measurement_0140 :consumptionValue "194.2"^^xsd:double .
+:Measurement_0140 :voltage "215.2"^^xsd:double .
+:Measurement_0140 :timestamp "2026-09-11T12:00:00" .
+:Measurement_0141 a :Measurement .
+:Measurement_0141 skos:prefLabel "Вимірювання №141" .
+:Measurement_0141 :consumptionValue "6.5"^^xsd:double .
+:Measurement_0141 :voltage "211.1"^^xsd:double .
+:Measurement_0141 :timestamp "2026-09-12T08:00:00" .
+:Measurement_0142 a :Measurement .
+:Measurement_0142 skos:prefLabel "Вимірювання №142" .
+:Measurement_0142 :consumptionValue "103.2"^^xsd:double .
+:Measurement_0142 :voltage "227.6"^^xsd:double .
+:Measurement_0142 :timestamp "2026-09-13T08:00:00" .
+:Measurement_0143 a :Measurement .
+:Measurement_0143 skos:prefLabel "Вимірювання №143" .
+:Measurement_0143 :consumptionValue "68.7"^^xsd:double .
+:Measurement_0143 :voltage "205.0"^^xsd:double .
+:Measurement_0143 :timestamp "2026-09-14T08:00:00" .
+:Measurement_0144 a :Measurement .
+:Measurement_0144 skos:prefLabel "Вимірювання №144" .
+:Measurement_0144 :consumptionValue "89.4"^^xsd:double .
+:Measurement_0144 :voltage "228.4"^^xsd:double .
+:Measurement_0144 :timestamp "2026-09-15T18:00:00" .
+:Measurement_0145 a :Measurement .
+:Measurement_0145 skos:prefLabel "Вимірювання №145" .
+:Measurement_0145 :consumptionValue "231.5"^^xsd:double .
+:Measurement_0145 :voltage "230.1"^^xsd:double .
+:Measurement_0145 :timestamp "2026-09-16T18:00:00" .
+:Measurement_0146 a :Measurement .
+:Measurement_0146 skos:prefLabel "Вимірювання №146" .
+:Measurement_0146 :consumptionValue "12.3"^^xsd:double .
+:Measurement_0146 :voltage "212.1"^^xsd:double .
+:Measurement_0146 :timestamp "2026-09-17T18:00:00" .
+:Measurement_0147 a :Measurement .
+:Measurement_0147 skos:prefLabel "Вимірювання №147" .
+:Measurement_0147 :consumptionValue "40.2"^^xsd:double .
+:Measurement_0147 :voltage "213.6"^^xsd:double .
+:Measurement_0147 :timestamp "2026-09-18T08:00:00" .
+:Measurement_0148 a :Measurement .
+:Measurement_0148 skos:prefLabel "Вимірювання №148" .
+:Measurement_0148 :consumptionValue "55.1"^^xsd:double .
+:Measurement_0148 :voltage "224.9"^^xsd:double .
+:Measurement_0148 :timestamp "2026-09-19T18:00:00" .
+:Measurement_0149 a :Measurement .
+:Measurement_0149 skos:prefLabel "Вимірювання №149" .
+:Measurement_0149 :consumptionValue "242.9"^^xsd:double .
+:Measurement_0149 :voltage "206.0"^^xsd:double .
+:Measurement_0149 :timestamp "2026-09-20T12:00:00" .
+:Measurement_0150 a :Measurement .
+:Measurement_0150 skos:prefLabel "Вимірювання №150" .
+:Measurement_0150 :consumptionValue "14.1"^^xsd:double .
+:Measurement_0150 :voltage "213.1"^^xsd:double .
+:Measurement_0150 :timestamp "2026-09-21T18:00:00" .
+:Measurement_0151 a :Measurement .
+:Measurement_0151 skos:prefLabel "Вимірювання №151" .
+:Measurement_0151 :consumptionValue "72.0"^^xsd:double .
+:Measurement_0151 :voltage "216.0"^^xsd:double .
+:Measurement_0151 :timestamp "2026-09-22T12:00:00" .
+:Measurement_0152 a :Measurement .
+:Measurement_0152 skos:prefLabel "Вимірювання №152" .
+:Measurement_0152 :consumptionValue "226.0"^^xsd:double .
+:Measurement_0152 :voltage "228.2"^^xsd:double .
+:Measurement_0152 :timestamp "2026-09-23T08:00:00" .
+:Measurement_0153 a :Measurement .
+:Measurement_0153 skos:prefLabel "Вимірювання №153" .
+:Measurement_0153 :consumptionValue "160.7"^^xsd:double .
+:Measurement_0153 :voltage "211.1"^^xsd:double .
+:Measurement_0153 :timestamp "2026-09-24T12:00:00" .
+:Measurement_0154 a :Measurement .
+:Measurement_0154 skos:prefLabel "Вимірювання №154" .
+:Measurement_0154 :consumptionValue "271.3"^^xsd:double .
+:Measurement_0154 :voltage "207.0"^^xsd:double .
+:Measurement_0154 :timestamp "2026-09-25T18:00:00" .
+:Measurement_0155 a :Measurement .
+:Measurement_0155 skos:prefLabel "Вимірювання №155" .
+:Measurement_0155 :consumptionValue "284.2"^^xsd:double .
+:Measurement_0155 :voltage "235.4"^^xsd:double .
+:Measurement_0155 :timestamp "2026-09-26T12:00:00" .
+:Measurement_0156 a :Measurement .
+:Measurement_0156 skos:prefLabel "Вимірювання №156" .
+:Measurement_0156 :consumptionValue "231.1"^^xsd:double .
+:Measurement_0156 :voltage "228.0"^^xsd:double .
+:Measurement_0156 :timestamp "2026-09-27T18:00:00" .
+:Measurement_0157 a :Measurement .
+:Measurement_0157 skos:prefLabel "Вимірювання №157" .
+:Measurement_0157 :consumptionValue "158.7"^^xsd:double .
+:Measurement_0157 :voltage "234.8"^^xsd:double .
+:Measurement_0157 :timestamp "2026-09-28T08:00:00" .
+:Measurement_0158 a :Measurement .
+:Measurement_0158 skos:prefLabel "Вимірювання №158" .
+:Measurement_0158 :consumptionValue "240.6"^^xsd:double .
+:Measurement_0158 :voltage "205.0"^^xsd:double .
+:Measurement_0158 :timestamp "2026-09-29T12:00:00" .
+:Measurement_0159 a :Measurement .
+:Measurement_0159 skos:prefLabel "Вимірювання №159" .
+:Measurement_0159 :consumptionValue "16.6"^^xsd:double .
+:Measurement_0159 :voltage "217.3"^^xsd:double .
+:Measurement_0159 :timestamp "2026-09-30T12:00:00" .
+:Measurement_0160 a :Measurement .
+:Measurement_0160 skos:prefLabel "Вимірювання №160" .
+:Measurement_0160 :consumptionValue "166.8"^^xsd:double .
+:Measurement_0160 :voltage "203.7"^^xsd:double .
+:Measurement_0160 :timestamp "2026-09-11T18:00:00" .
+:Measurement_0161 a :Measurement .
+:Measurement_0161 skos:prefLabel "Вимірювання №161" .
+:Measurement_0161 :consumptionValue "255.5"^^xsd:double .
+:Measurement_0161 :voltage "210.3"^^xsd:double .
+:Measurement_0161 :timestamp "2026-09-12T08:00:00" .
+:Measurement_0162 a :Measurement .
+:Measurement_0162 skos:prefLabel "Вимірювання №162" .
+:Measurement_0162 :consumptionValue "82.6"^^xsd:double .
+:Measurement_0162 :voltage "232.6"^^xsd:double .
+:Measurement_0162 :timestamp "2026-09-13T08:00:00" .
+:Measurement_0163 a :Measurement .
+:Measurement_0163 skos:prefLabel "Вимірювання №163" .
+:Measurement_0163 :consumptionValue "249.5"^^xsd:double .
+:Measurement_0163 :voltage "203.3"^^xsd:double .
+:Measurement_0163 :timestamp "2026-09-14T08:00:00" .
+:Measurement_0164 a :Measurement .
+:Measurement_0164 skos:prefLabel "Вимірювання №164" .
+:Measurement_0164 :consumptionValue "245.2"^^xsd:double .
+:Measurement_0164 :voltage "231.8"^^xsd:double .
+:Measurement_0164 :timestamp "2026-09-15T08:00:00" .
+:Measurement_0165 a :Measurement .
+:Measurement_0165 skos:prefLabel "Вимірювання №165" .
+:Measurement_0165 :consumptionValue "125.1"^^xsd:double .
+:Measurement_0165 :voltage "214.3"^^xsd:double .
+:Measurement_0165 :timestamp "2026-09-16T12:00:00" .
+:Measurement_0166 a :Measurement .
+:Measurement_0166 skos:prefLabel "Вимірювання №166" .
+:Measurement_0166 :consumptionValue "71.5"^^xsd:double .
+:Measurement_0166 :voltage "235.8"^^xsd:double .
+:Measurement_0166 :timestamp "2026-09-17T12:00:00" .
+:Measurement_0167 a :Measurement .
+:Measurement_0167 skos:prefLabel "Вимірювання №167" .
+:Measurement_0167 :consumptionValue "68.1"^^xsd:double .
+:Measurement_0167 :voltage "211.5"^^xsd:double .
+:Measurement_0167 :timestamp "2026-09-18T08:00:00" .
+:Measurement_0168 a :Measurement .
+:Measurement_0168 skos:prefLabel "Вимірювання №168" .
+:Measurement_0168 :consumptionValue "251.9"^^xsd:double .
+:Measurement_0168 :voltage "223.4"^^xsd:double .
+:Measurement_0168 :timestamp "2026-09-19T08:00:00" .
+:Measurement_0169 a :Measurement .
+:Measurement_0169 skos:prefLabel "Вимірювання №169" .
+:Measurement_0169 :consumptionValue "42.1"^^xsd:double .
+:Measurement_0169 :voltage "210.3"^^xsd:double .
+:Measurement_0169 :timestamp "2026-09-20T12:00:00" .
+:Measurement_0170 a :Measurement .
+:Measurement_0170 skos:prefLabel "Вимірювання №170" .
+:Measurement_0170 :consumptionValue "209.1"^^xsd:double .
+:Measurement_0170 :voltage "205.0"^^xsd:double .
+:Measurement_0170 :timestamp "2026-09-21T18:00:00" .
+:Measurement_0171 a :Measurement .
+:Measurement_0171 skos:prefLabel "Вимірювання №171" .
+:Measurement_0171 :consumptionValue "141.3"^^xsd:double .
+:Measurement_0171 :voltage "222.2"^^xsd:double .
+:Measurement_0171 :timestamp "2026-09-22T08:00:00" .
+:Measurement_0172 a :Measurement .
+:Measurement_0172 skos:prefLabel "Вимірювання №172" .
+:Measurement_0172 :consumptionValue "6.7"^^xsd:double .
+:Measurement_0172 :voltage "207.8"^^xsd:double .
+:Measurement_0172 :timestamp "2026-09-23T08:00:00" .
+:Measurement_0173 a :Measurement .
+:Measurement_0173 skos:prefLabel "Вимірювання №173" .
+:Measurement_0173 :consumptionValue "165.1"^^xsd:double .
+:Measurement_0173 :voltage "226.2"^^xsd:double .
+:Measurement_0173 :timestamp "2026-09-24T18:00:00" .
+:Measurement_0174 a :Measurement .
+:Measurement_0174 skos:prefLabel "Вимірювання №174" .
+:Measurement_0174 :consumptionValue "127.6"^^xsd:double .
+:Measurement_0174 :voltage "227.9"^^xsd:double .
+:Measurement_0174 :timestamp "2026-09-25T08:00:00" .
+:Measurement_0175 a :Measurement .
+:Measurement_0175 skos:prefLabel "Вимірювання №175" .
+:Measurement_0175 :consumptionValue "91.0"^^xsd:double .
+:Measurement_0175 :voltage "201.7"^^xsd:double .
+:Measurement_0175 :timestamp "2026-09-26T12:00:00" .
+:Measurement_0176 a :Measurement .
+:Measurement_0176 skos:prefLabel "Вимірювання №176" .
+:Measurement_0176 :consumptionValue "192.0"^^xsd:double .
+:Measurement_0176 :voltage "222.4"^^xsd:double .
+:Measurement_0176 :timestamp "2026-09-27T08:00:00" .
+:Measurement_0177 a :Measurement .
+:Measurement_0177 skos:prefLabel "Вимірювання №177" .
+:Measurement_0177 :consumptionValue "34.1"^^xsd:double .
+:Measurement_0177 :voltage "232.6"^^xsd:double .
+:Measurement_0177 :timestamp "2026-09-28T18:00:00" .
+:Measurement_0178 a :Measurement .
+:Measurement_0178 skos:prefLabel "Вимірювання №178" .
+:Measurement_0178 :consumptionValue "161.3"^^xsd:double .
+:Measurement_0178 :voltage "222.8"^^xsd:double .
+:Measurement_0178 :timestamp "2026-09-29T18:00:00" .
+:Measurement_0179 a :Measurement .
+:Measurement_0179 skos:prefLabel "Вимірювання №179" .
+:Measurement_0179 :consumptionValue "73.3"^^xsd:double .
+:Measurement_0179 :voltage "205.2"^^xsd:double .
+:Measurement_0179 :timestamp "2026-09-30T12:00:00" .
+:Measurement_0180 a :Measurement .
+:Measurement_0180 skos:prefLabel "Вимірювання №180" .
+:Measurement_0180 :consumptionValue "1.5"^^xsd:double .
+:Measurement_0180 :voltage "212.7"^^xsd:double .
+:Measurement_0180 :timestamp "2026-09-11T18:00:00" .
+:Measurement_0181 a :Measurement .
+:Measurement_0181 skos:prefLabel "Вимірювання №181" .
+:Measurement_0181 :consumptionValue "125.6"^^xsd:double .
+:Measurement_0181 :voltage "223.9"^^xsd:double .
+:Measurement_0181 :timestamp "2026-09-12T08:00:00" .
+:Measurement_0182 a :Measurement .
+:Measurement_0182 skos:prefLabel "Вимірювання №182" .
+:Measurement_0182 :consumptionValue "157.5"^^xsd:double .
+:Measurement_0182 :voltage "213.0"^^xsd:double .
+:Measurement_0182 :timestamp "2026-09-13T18:00:00" .
+:Measurement_0183 a :Measurement .
+:Measurement_0183 skos:prefLabel "Вимірювання №183" .
+:Measurement_0183 :consumptionValue "163.7"^^xsd:double .
+:Measurement_0183 :voltage "228.3"^^xsd:double .
+:Measurement_0183 :timestamp "2026-09-14T18:00:00" .
+:Measurement_0184 a :Measurement .
+:Measurement_0184 skos:prefLabel "Вимірювання №184" .
+:Measurement_0184 :consumptionValue "166.7"^^xsd:double .
+:Measurement_0184 :voltage "214.1"^^xsd:double .
+:Measurement_0184 :timestamp "2026-09-15T12:00:00" .
+:Measurement_0185 a :Measurement .
+:Measurement_0185 skos:prefLabel "Вимірювання №185" .
+:Measurement_0185 :consumptionValue "14.0"^^xsd:double .
+:Measurement_0185 :voltage "213.9"^^xsd:double .
+:Measurement_0185 :timestamp "2026-09-16T12:00:00" .
+:Measurement_0186 a :Measurement .
+:Measurement_0186 skos:prefLabel "Вимірювання №186" .
+:Measurement_0186 :consumptionValue "76.8"^^xsd:double .
+:Measurement_0186 :voltage "200.6"^^xsd:double .
+:Measurement_0186 :timestamp "2026-09-17T08:00:00" .
+:Measurement_0187 a :Measurement .
+:Measurement_0187 skos:prefLabel "Вимірювання №187" .
+:Measurement_0187 :consumptionValue "104.1"^^xsd:double .
+:Measurement_0187 :voltage "226.4"^^xsd:double .
+:Measurement_0187 :timestamp "2026-09-18T18:00:00" .
+:Measurement_0188 a :Measurement .
+:Measurement_0188 skos:prefLabel "Вимірювання №188" .
+:Measurement_0188 :consumptionValue "32.0"^^xsd:double .
+:Measurement_0188 :voltage "220.9"^^xsd:double .
+:Measurement_0188 :timestamp "2026-09-19T12:00:00" .
+:Measurement_0189 a :Measurement .
+:Measurement_0189 skos:prefLabel "Вимірювання №189" .
+:Measurement_0189 :consumptionValue "40.9"^^xsd:double .
+:Measurement_0189 :voltage "212.7"^^xsd:double .
+:Measurement_0189 :timestamp "2026-09-20T12:00:00" .
+:Measurement_0190 a :Measurement .
+:Measurement_0190 skos:prefLabel "Вимірювання №190" .
+:Measurement_0190 :consumptionValue "244.2"^^xsd:double .
+:Measurement_0190 :voltage "206.3"^^xsd:double .
+:Measurement_0190 :timestamp "2026-09-21T18:00:00" .
+:Measurement_0191 a :Measurement .
+:Measurement_0191 skos:prefLabel "Вимірювання №191" .
+:Measurement_0191 :consumptionValue "139.9"^^xsd:double .
+:Measurement_0191 :voltage "225.0"^^xsd:double .
+:Measurement_0191 :timestamp "2026-09-22T18:00:00" .
+:Measurement_0192 a :Measurement .
+:Measurement_0192 skos:prefLabel "Вимірювання №192" .
+:Measurement_0192 :consumptionValue "55.5"^^xsd:double .
+:Measurement_0192 :voltage "204.9"^^xsd:double .
+:Measurement_0192 :timestamp "2026-09-23T18:00:00" .
+:Measurement_0193 a :Measurement .
+:Measurement_0193 skos:prefLabel "Вимірювання №193" .
+:Measurement_0193 :consumptionValue "233.1"^^xsd:double .
+:Measurement_0193 :voltage "216.5"^^xsd:double .
+:Measurement_0193 :timestamp "2026-09-24T12:00:00" .
+:Measurement_0194 a :Measurement .
+:Measurement_0194 skos:prefLabel "Вимірювання №194" .
+:Measurement_0194 :consumptionValue "61.3"^^xsd:double .
+:Measurement_0194 :voltage "228.5"^^xsd:double .
+:Measurement_0194 :timestamp "2026-09-25T08:00:00" .
+:Measurement_0195 a :Measurement .
+:Measurement_0195 skos:prefLabel "Вимірювання №195" .
+:Measurement_0195 :consumptionValue "95.4"^^xsd:double .
+:Measurement_0195 :voltage "211.2"^^xsd:double .
+:Measurement_0195 :timestamp "2026-09-26T12:00:00" .
+:Measurement_0196 a :Measurement .
+:Measurement_0196 skos:prefLabel "Вимірювання №196" .
+:Measurement_0196 :consumptionValue "296.7"^^xsd:double .
+:Measurement_0196 :voltage "219.5"^^xsd:double .
+:Measurement_0196 :timestamp "2026-09-27T12:00:00" .
+:Measurement_0197 a :Measurement .
+:Measurement_0197 skos:prefLabel "Вимірювання №197" .
+:Measurement_0197 :consumptionValue "11.9"^^xsd:double .
+:Measurement_0197 :voltage "223.3"^^xsd:double .
+:Measurement_0197 :timestamp "2026-09-28T12:00:00" .
+:Measurement_0198 a :Measurement .
+:Measurement_0198 skos:prefLabel "Вимірювання №198" .
+:Measurement_0198 :consumptionValue "107.7"^^xsd:double .
+:Measurement_0198 :voltage "228.1"^^xsd:double .
+:Measurement_0198 :timestamp "2026-09-29T18:00:00" .
+:Measurement_0199 a :Measurement .
+:Measurement_0199 skos:prefLabel "Вимірювання №199" .
+:Measurement_0199 :consumptionValue "100.2"^^xsd:double .
+:Measurement_0199 :voltage "204.5"^^xsd:double .
+:Measurement_0199 :timestamp "2026-09-30T12:00:00" .
+:Measurement_0200 a :Measurement .
+:Measurement_0200 skos:prefLabel "Вимірювання №200" .
+:Measurement_0200 :consumptionValue "131.6"^^xsd:double .
+:Measurement_0200 :voltage "214.4"^^xsd:double .
+:Measurement_0200 :timestamp "2026-09-11T12:00:00" .
+:ForecastModel_1 a :ForecastModel .
+:ForecastModel_1 skos:prefLabel "Модель LSTM №1" .
+:ForecastModel_1 :modelType "LSTM" .
+:ForecastModel_1 :accuracy "92.0"^^xsd:double .
+:ForecastModel_2 a :ForecastModel .
+:ForecastModel_2 skos:prefLabel "Модель GRU №2" .
+:ForecastModel_2 :modelType "GRU" .
+:ForecastModel_2 :accuracy "81.1"^^xsd:double .
+:ForecastModel_3 a :ForecastModel .
+:ForecastModel_3 skos:prefLabel "Модель VAR №3" .
+:ForecastModel_3 :modelType "VAR" .
+:ForecastModel_3 :accuracy "80.2"^^xsd:double .
+:ForecastModel_4 a :ForecastModel .
+:ForecastModel_4 skos:prefLabel "Модель ARIMA №4" .
+:ForecastModel_4 :modelType "ARIMA" .
+:ForecastModel_4 :accuracy "79.5"^^xsd:double .
+:ForecastModel_5 a :ForecastModel .
+:ForecastModel_5 skos:prefLabel "Модель LSTM №5" .
+:ForecastModel_5 :modelType "LSTM" .
+:ForecastModel_5 :accuracy "85.1"^^xsd:double .
+:ForecastModel_6 a :ForecastModel .
+:ForecastModel_6 skos:prefLabel "Модель GRU №6" .
+:ForecastModel_6 :modelType "GRU" .
+:ForecastModel_6 :accuracy "79.1"^^xsd:double .
+:ForecastModel_7 a :ForecastModel .
+:ForecastModel_7 skos:prefLabel "Модель VAR №7" .
+:ForecastModel_7 :modelType "VAR" .
+:ForecastModel_7 :accuracy "85.4"^^xsd:double .
+:ForecastModel_8 a :ForecastModel .
+:ForecastModel_8 skos:prefLabel "Модель LSTM №8" .
+:ForecastModel_8 :modelType "LSTM" .
+:ForecastModel_8 :accuracy "81.9"^^xsd:double .
+:Forecast_001 a :Forecast .
+:Forecast_001 skos:prefLabel "Прогноз №1" .
+:Forecast_001 :errorPercentage "13.7"^^xsd:double .
+:Forecast_001 :forecastPeriod "доба" .
+:Forecast_002 a :Forecast .
+:Forecast_002 skos:prefLabel "Прогноз №2" .
+:Forecast_002 :errorPercentage "10.2"^^xsd:double .
+:Forecast_002 :forecastPeriod "тиждень" .
+:Forecast_003 a :Forecast .
+:Forecast_003 skos:prefLabel "Прогноз №3" .
+:Forecast_003 :errorPercentage "11.4"^^xsd:double .
+:Forecast_003 :forecastPeriod "доба" .
+:Forecast_004 a :Forecast .
+:Forecast_004 skos:prefLabel "Прогноз №4" .
+:Forecast_004 :errorPercentage "8.0"^^xsd:double .
+:Forecast_004 :forecastPeriod "доба" .
+:Forecast_005 a :Forecast .
+:Forecast_005 skos:prefLabel "Прогноз №5" .
+:Forecast_005 :errorPercentage "3.8"^^xsd:double .
+:Forecast_005 :forecastPeriod "доба" .
+:Forecast_006 a :Forecast .
+:Forecast_006 skos:prefLabel "Прогноз №6" .
+:Forecast_006 :errorPercentage "13.2"^^xsd:double .
+:Forecast_006 :forecastPeriod "доба" .
+:Forecast_007 a :Forecast .
+:Forecast_007 skos:prefLabel "Прогноз №7" .
+:Forecast_007 :errorPercentage "12.7"^^xsd:double .
+:Forecast_007 :forecastPeriod "доба" .
+:Forecast_008 a :Forecast .
+:Forecast_008 skos:prefLabel "Прогноз №8" .
+:Forecast_008 :errorPercentage "9.6"^^xsd:double .
+:Forecast_008 :forecastPeriod "тиждень" .
+:Forecast_009 a :Forecast .
+:Forecast_009 skos:prefLabel "Прогноз №9" .
+:Forecast_009 :errorPercentage "5.6"^^xsd:double .
+:Forecast_009 :forecastPeriod "доба" .
+:Forecast_010 a :Forecast .
+:Forecast_010 skos:prefLabel "Прогноз №10" .
+:Forecast_010 :errorPercentage "13.3"^^xsd:double .
+:Forecast_010 :forecastPeriod "доба" .
+:Forecast_011 a :Forecast .
+:Forecast_011 skos:prefLabel "Прогноз №11" .
+:Forecast_011 :errorPercentage "9.5"^^xsd:double .
+:Forecast_011 :forecastPeriod "тиждень" .
+:Forecast_012 a :Forecast .
+:Forecast_012 skos:prefLabel "Прогноз №12" .
+:Forecast_012 :errorPercentage "12.4"^^xsd:double .
+:Forecast_012 :forecastPeriod "доба" .
+:Forecast_013 a :Forecast .
+:Forecast_013 skos:prefLabel "Прогноз №13" .
+:Forecast_013 :errorPercentage "11.3"^^xsd:double .
+:Forecast_013 :forecastPeriod "тиждень" .
+:Forecast_014 a :Forecast .
+:Forecast_014 skos:prefLabel "Прогноз №14" .
+:Forecast_014 :errorPercentage "8.9"^^xsd:double .
+:Forecast_014 :forecastPeriod "доба" .
+:Forecast_015 a :Forecast .
+:Forecast_015 skos:prefLabel "Прогноз №15" .
+:Forecast_015 :errorPercentage "8.5"^^xsd:double .
+:Forecast_015 :forecastPeriod "тиждень" .
+:Forecast_016 a :Forecast .
+:Forecast_016 skos:prefLabel "Прогноз №16" .
+:Forecast_016 :errorPercentage "11.7"^^xsd:double .
+:Forecast_016 :forecastPeriod "тиждень" .
+:Forecast_017 a :Forecast .
+:Forecast_017 skos:prefLabel "Прогноз №17" .
+:Forecast_017 :errorPercentage "2.9"^^xsd:double .
+:Forecast_017 :forecastPeriod "доба" .
+:Forecast_018 a :Forecast .
+:Forecast_018 skos:prefLabel "Прогноз №18" .
+:Forecast_018 :errorPercentage "7.0"^^xsd:double .
+:Forecast_018 :forecastPeriod "тиждень" .
+:Forecast_019 a :Forecast .
+:Forecast_019 skos:prefLabel "Прогноз №19" .
+:Forecast_019 :errorPercentage "9.3"^^xsd:double .
+:Forecast_019 :forecastPeriod "тиждень" .
+:Forecast_020 a :Forecast .
+:Forecast_020 skos:prefLabel "Прогноз №20" .
+:Forecast_020 :errorPercentage "13.9"^^xsd:double .
+:Forecast_020 :forecastPeriod "тиждень" .
+:Forecast_021 a :Forecast .
+:Forecast_021 skos:prefLabel "Прогноз №21" .
+:Forecast_021 :errorPercentage "11.1"^^xsd:double .
+:Forecast_021 :forecastPeriod "доба" .
+:Forecast_022 a :Forecast .
+:Forecast_022 skos:prefLabel "Прогноз №22" .
+:Forecast_022 :errorPercentage "7.6"^^xsd:double .
+:Forecast_022 :forecastPeriod "тиждень" .
+:Forecast_023 a :Forecast .
+:Forecast_023 skos:prefLabel "Прогноз №23" .
+:Forecast_023 :errorPercentage "3.7"^^xsd:double .
+:Forecast_023 :forecastPeriod "доба" .
+:Forecast_024 a :Forecast .
+:Forecast_024 skos:prefLabel "Прогноз №24" .
+:Forecast_024 :errorPercentage "12.4"^^xsd:double .
+:Forecast_024 :forecastPeriod "тиждень" .
+:Forecast_025 a :Forecast .
+:Forecast_025 skos:prefLabel "Прогноз №25" .
+:Forecast_025 :errorPercentage "12.8"^^xsd:double .
+:Forecast_025 :forecastPeriod "тиждень" .
+:Forecast_026 a :Forecast .
+:Forecast_026 skos:prefLabel "Прогноз №26" .
+:Forecast_026 :errorPercentage "11.2"^^xsd:double .
+:Forecast_026 :forecastPeriod "тиждень" .
+:Forecast_027 a :Forecast .
+:Forecast_027 skos:prefLabel "Прогноз №27" .
+:Forecast_027 :errorPercentage "12.5"^^xsd:double .
+:Forecast_027 :forecastPeriod "тиждень" .
+:Forecast_028 a :Forecast .
+:Forecast_028 skos:prefLabel "Прогноз №28" .
+:Forecast_028 :errorPercentage "13.3"^^xsd:double .
+:Forecast_028 :forecastPeriod "тиждень" .
+:Forecast_029 a :Forecast .
+:Forecast_029 skos:prefLabel "Прогноз №29" .
+:Forecast_029 :errorPercentage "9.0"^^xsd:double .
+:Forecast_029 :forecastPeriod "доба" .
+:Forecast_030 a :Forecast .
+:Forecast_030 skos:prefLabel "Прогноз №30" .
+:Forecast_030 :errorPercentage "7.9"^^xsd:double .
+:Forecast_030 :forecastPeriod "тиждень" .
+:Forecast_031 a :Forecast .
+:Forecast_031 skos:prefLabel "Прогноз №31" .
+:Forecast_031 :errorPercentage "2.1"^^xsd:double .
+:Forecast_031 :forecastPeriod "доба" .
+:Forecast_032 a :Forecast .
+:Forecast_032 skos:prefLabel "Прогноз №32" .
+:Forecast_032 :errorPercentage "12.6"^^xsd:double .
+:Forecast_032 :forecastPeriod "тиждень" .
+:Forecast_033 a :Forecast .
+:Forecast_033 skos:prefLabel "Прогноз №33" .
+:Forecast_033 :errorPercentage "2.5"^^xsd:double .
+:Forecast_033 :forecastPeriod "доба" .
+:Forecast_034 a :Forecast .
+:Forecast_034 skos:prefLabel "Прогноз №34" .
+:Forecast_034 :errorPercentage "8.6"^^xsd:double .
+:Forecast_034 :forecastPeriod "доба" .
+:Forecast_035 a :Forecast .
+:Forecast_035 skos:prefLabel "Прогноз №35" .
+:Forecast_035 :errorPercentage "7.4"^^xsd:double .
+:Forecast_035 :forecastPeriod "тиждень" .
+:Forecast_036 a :Forecast .
+:Forecast_036 skos:prefLabel "Прогноз №36" .
+:Forecast_036 :errorPercentage "13.7"^^xsd:double .
+:Forecast_036 :forecastPeriod "тиждень" .
+:Forecast_037 a :Forecast .
+:Forecast_037 skos:prefLabel "Прогноз №37" .
+:Forecast_037 :errorPercentage "13.8"^^xsd:double .
+:Forecast_037 :forecastPeriod "тиждень" .
+:Forecast_038 a :Forecast .
+:Forecast_038 skos:prefLabel "Прогноз №38" .
+:Forecast_038 :errorPercentage "9.2"^^xsd:double .
+:Forecast_038 :forecastPeriod "тиждень" .
+:Forecast_039 a :Forecast .
+:Forecast_039 skos:prefLabel "Прогноз №39" .
+:Forecast_039 :errorPercentage "2.5"^^xsd:double .
+:Forecast_039 :forecastPeriod "тиждень" .
+:Forecast_040 a :Forecast .
+:Forecast_040 skos:prefLabel "Прогноз №40" .
+:Forecast_040 :errorPercentage "7.5"^^xsd:double .
+:Forecast_040 :forecastPeriod "доба" .
+:Forecast_041 a :Forecast .
+:Forecast_041 skos:prefLabel "Прогноз №41" .
+:Forecast_041 :errorPercentage "5.8"^^xsd:double .
+:Forecast_041 :forecastPeriod "тиждень" .
+:Forecast_042 a :Forecast .
+:Forecast_042 skos:prefLabel "Прогноз №42" .
+:Forecast_042 :errorPercentage "6.0"^^xsd:double .
+:Forecast_042 :forecastPeriod "тиждень" .
+:Forecast_043 a :Forecast .
+:Forecast_043 skos:prefLabel "Прогноз №43" .
+:Forecast_043 :errorPercentage "11.8"^^xsd:double .
+:Forecast_043 :forecastPeriod "тиждень" .
+:Forecast_044 a :Forecast .
+:Forecast_044 skos:prefLabel "Прогноз №44" .
+:Forecast_044 :errorPercentage "3.3"^^xsd:double .
+:Forecast_044 :forecastPeriod "тиждень" .
+:Forecast_045 a :Forecast .
+:Forecast_045 skos:prefLabel "Прогноз №45" .
+:Forecast_045 :errorPercentage "12.8"^^xsd:double .
+:Forecast_045 :forecastPeriod "доба" .
+:Forecast_046 a :Forecast .
+:Forecast_046 skos:prefLabel "Прогноз №46" .
+:Forecast_046 :errorPercentage "13.6"^^xsd:double .
+:Forecast_046 :forecastPeriod "доба" .
+:Forecast_047 a :Forecast .
+:Forecast_047 skos:prefLabel "Прогноз №47" .
+:Forecast_047 :errorPercentage "7.8"^^xsd:double .
+:Forecast_047 :forecastPeriod "тиждень" .
+:Forecast_048 a :Forecast .
+:Forecast_048 skos:prefLabel "Прогноз №48" .
+:Forecast_048 :errorPercentage "10.2"^^xsd:double .
+:Forecast_048 :forecastPeriod "доба" .
+:Forecast_049 a :Forecast .
+:Forecast_049 skos:prefLabel "Прогноз №49" .
+:Forecast_049 :errorPercentage "2.2"^^xsd:double .
+:Forecast_049 :forecastPeriod "тиждень" .
+:Forecast_050 a :Forecast .
+:Forecast_050 skos:prefLabel "Прогноз №50" .
+:Forecast_050 :errorPercentage "7.0"^^xsd:double .
+:Forecast_050 :forecastPeriod "доба" .
+:Forecast_051 a :Forecast .
+:Forecast_051 skos:prefLabel "Прогноз №51" .
+:Forecast_051 :errorPercentage "11.3"^^xsd:double .
+:Forecast_051 :forecastPeriod "тиждень" .
+:Forecast_052 a :Forecast .
+:Forecast_052 skos:prefLabel "Прогноз №52" .
+:Forecast_052 :errorPercentage "3.7"^^xsd:double .
+:Forecast_052 :forecastPeriod "доба" .
+:Forecast_053 a :Forecast .
+:Forecast_053 skos:prefLabel "Прогноз №53" .
+:Forecast_053 :errorPercentage "7.7"^^xsd:double .
+:Forecast_053 :forecastPeriod "тиждень" .
+:Forecast_054 a :Forecast .
+:Forecast_054 skos:prefLabel "Прогноз №54" .
+:Forecast_054 :errorPercentage "7.5"^^xsd:double .
+:Forecast_054 :forecastPeriod "тиждень" .
+:Forecast_055 a :Forecast .
+:Forecast_055 skos:prefLabel "Прогноз №55" .
+:Forecast_055 :errorPercentage "11.3"^^xsd:double .
+:Forecast_055 :forecastPeriod "тиждень" .
+:Forecast_056 a :Forecast .
+:Forecast_056 skos:prefLabel "Прогноз №56" .
+:Forecast_056 :errorPercentage "13.5"^^xsd:double .
+:Forecast_056 :forecastPeriod "тиждень" .
+:Forecast_057 a :Forecast .
+:Forecast_057 skos:prefLabel "Прогноз №57" .
+:Forecast_057 :errorPercentage "13.3"^^xsd:double .
+:Forecast_057 :forecastPeriod "тиждень" .
+:Forecast_058 a :Forecast .
+:Forecast_058 skos:prefLabel "Прогноз №58" .
+:Forecast_058 :errorPercentage "4.5"^^xsd:double .
+:Forecast_058 :forecastPeriod "тиждень" .
+:Forecast_059 a :Forecast .
+:Forecast_059 skos:prefLabel "Прогноз №59" .
+:Forecast_059 :errorPercentage "6.2"^^xsd:double .
+:Forecast_059 :forecastPeriod "тиждень" .
+:Forecast_060 a :Forecast .
+:Forecast_060 skos:prefLabel "Прогноз №60" .
+:Forecast_060 :errorPercentage "8.9"^^xsd:double .
+:Forecast_060 :forecastPeriod "тиждень" .
+:Substation_1 :upstreamOf :Substation_7 .
+:Substation_1 :upstreamOf :Substation_13 .
+:Substation_7 :upstreamOf :Substation_19 .
+:Substation_19 :upstreamOf :Substation_25 .
+:Substation_2 :upstreamOf :Substation_8 .
+:Substation_8 :upstreamOf :Substation_14 .
+:Substation_8 :upstreamOf :Substation_20 .
+:Substation_20 :upstreamOf :Substation_26 .
+:Substation_3 :upstreamOf :Substation_9 .
+:Substation_3 :upstreamOf :Substation_15 .
+:Substation_9 :upstreamOf :Substation_21 .
+:Substation_21 :upstreamOf :Substation_27 .
+:Substation_4 :upstreamOf :Substation_10 .
+:Substation_10 :upstreamOf :Substation_16 .
+:Substation_10 :upstreamOf :Substation_22 .
+:Substation_16 :upstreamOf :Substation_28 .
+:Substation_5 :upstreamOf :Substation_11 .
+:Substation_5 :upstreamOf :Substation_17 .
+:Substation_17 :upstreamOf :Substation_23 .
+:Substation_23 :upstreamOf :Substation_29 .
+:Substation_6 :upstreamOf :Substation_12 .
+:Substation_6 :upstreamOf :Substation_18 .
+:Substation_18 :upstreamOf :Substation_24 .
+:Substation_18 :upstreamOf :Substation_30 .
+:Substation_1 :managedByDispatcher :Dispatcher_1 .
+:Substation_2 :managedByDispatcher :Dispatcher_2 .
+:Substation_3 :managedByDispatcher :Dispatcher_3 .
+:Substation_4 :managedByDispatcher :Dispatcher_4 .
+:Substation_5 :managedByDispatcher :Dispatcher_5 .
+:Substation_6 :managedByDispatcher :Dispatcher_6 .
+:Substation_7 :managedByDispatcher :Dispatcher_7 .
+:Substation_8 :managedByDispatcher :Dispatcher_8 .
+:Substation_10 :managedByDispatcher :Dispatcher_10 .
+:Substation_11 :managedByDispatcher :Dispatcher_1 .
+:Substation_12 :managedByDispatcher :Dispatcher_2 .
+:Substation_13 :managedByDispatcher :Dispatcher_3 .
+:Substation_14 :managedByDispatcher :Dispatcher_4 .
+:Substation_15 :managedByDispatcher :Dispatcher_5 .
+:Substation_16 :managedByDispatcher :Dispatcher_6 .
+:Substation_17 :managedByDispatcher :Dispatcher_7 .
+:Substation_18 :managedByDispatcher :Dispatcher_8 .
+:Substation_19 :managedByDispatcher :Dispatcher_9 .
+:Substation_20 :managedByDispatcher :Dispatcher_10 .
+:Substation_21 :managedByDispatcher :Dispatcher_1 .
+:Substation_22 :managedByDispatcher :Dispatcher_2 .
+:Substation_23 :managedByDispatcher :Dispatcher_3 .
+:Substation_24 :managedByDispatcher :Dispatcher_4 .
+:Substation_25 :managedByDispatcher :Dispatcher_5 .
+:Substation_26 :managedByDispatcher :Dispatcher_6 .
+:Substation_28 :managedByDispatcher :Dispatcher_8 .
+:Substation_29 :managedByDispatcher :Dispatcher_9 .
+:Substation_30 :managedByDispatcher :Dispatcher_10 .
+:Consumer_0001 :connectedToSubstation :Substation_5 .
+:Consumer_0002 :connectedToSubstation :Substation_13 .
+:Consumer_0003 :connectedToSubstation :Substation_4 .
+:Consumer_0004 :connectedToSubstation :Substation_24 .
+:Consumer_0005 :connectedToSubstation :Substation_17 .
+:Consumer_0006 :connectedToSubstation :Substation_20 .
+:Consumer_0007 :connectedToSubstation :Substation_8 .
+:Consumer_0008 :connectedToSubstation :Substation_5 .
+:Consumer_0009 :connectedToSubstation :Substation_25 .
+:Consumer_0010 :connectedToSubstation :Substation_8 .
+:Consumer_0011 :connectedToSubstation :Substation_23 .
+:Consumer_0012 :connectedToSubstation :Substation_28 .
+:Consumer_0013 :connectedToSubstation :Substation_16 .
+:Consumer_0014 :connectedToSubstation :Substation_8 .
+:Consumer_0015 :connectedToSubstation :Substation_12 .
+:Consumer_0016 :connectedToSubstation :Substation_21 .
+:Consumer_0017 :connectedToSubstation :Substation_4 .
+:Consumer_0018 :connectedToSubstation :Substation_9 .
+:Consumer_0019 :connectedToSubstation :Substation_28 .
+:Consumer_0020 :connectedToSubstation :Substation_3 .
+:Consumer_0021 :connectedToSubstation :Substation_29 .
+:Consumer_0022 :connectedToSubstation :Substation_26 .
+:Consumer_0023 :connectedToSubstation :Substation_16 .
+:Consumer_0024 :connectedToSubstation :Substation_18 .
+:Consumer_0025 :connectedToSubstation :Substation_30 .
+:Consumer_0026 :connectedToSubstation :Substation_3 .
+:Consumer_0027 :connectedToSubstation :Substation_29 .
+:Consumer_0028 :connectedToSubstation :Substation_22 .
+:Consumer_0029 :connectedToSubstation :Substation_23 .
+:Consumer_0030 :connectedToSubstation :Substation_30 .
+:Consumer_0031 :connectedToSubstation :Substation_4 .
+:Consumer_0032 :connectedToSubstation :Substation_29 .
+:Consumer_0033 :connectedToSubstation :Substation_18 .
+:Consumer_0034 :connectedToSubstation :Substation_27 .
+:Consumer_0035 :connectedToSubstation :Substation_29 .
+:Consumer_0036 :connectedToSubstation :Substation_23 .
+:Consumer_0037 :connectedToSubstation :Substation_9 .
+:Consumer_0038 :connectedToSubstation :Substation_11 .
+:Consumer_0039 :connectedToSubstation :Substation_14 .
+:Consumer_0040 :connectedToSubstation :Substation_23 .
+:Consumer_0041 :connectedToSubstation :Substation_14 .
+:Consumer_0042 :connectedToSubstation :Substation_26 .
+:Consumer_0043 :connectedToSubstation :Substation_12 .
+:Consumer_0044 :connectedToSubstation :Substation_30 .
+:Consumer_0045 :connectedToSubstation :Substation_1 .
+:Consumer_0046 :connectedToSubstation :Substation_28 .
+:Consumer_0047 :connectedToSubstation :Substation_2 .
+:Consumer_0048 :connectedToSubstation :Substation_27 .
+:Consumer_0049 :connectedToSubstation :Substation_28 .
+:Consumer_0050 :connectedToSubstation :Substation_27 .
+:Consumer_0051 :connectedToSubstation :Substation_9 .
+:Consumer_0052 :connectedToSubstation :Substation_17 .
+:Consumer_0053 :connectedToSubstation :Substation_14 .
+:Consumer_0054 :connectedToSubstation :Substation_3 .
+:Consumer_0055 :connectedToSubstation :Substation_10 .
+:Consumer_0056 :connectedToSubstation :Substation_18 .
+:Consumer_0057 :connectedToSubstation :Substation_29 .
+:Consumer_0058 :connectedToSubstation :Substation_10 .
+:Consumer_0059 :connectedToSubstation :Substation_15 .
+:Consumer_0060 :connectedToSubstation :Substation_26 .
+:Consumer_0061 :connectedToSubstation :Substation_27 .
+:Consumer_0062 :connectedToSubstation :Substation_2 .
+:Consumer_0063 :connectedToSubstation :Substation_29 .
+:Consumer_0064 :connectedToSubstation :Substation_8 .
+:Consumer_0065 :connectedToSubstation :Substation_8 .
+:Consumer_0066 :connectedToSubstation :Substation_8 .
+:Consumer_0067 :connectedToSubstation :Substation_20 .
+:Consumer_0068 :connectedToSubstation :Substation_29 .
+:Consumer_0069 :connectedToSubstation :Substation_24 .
+:Consumer_0070 :connectedToSubstation :Substation_17 .
+:Consumer_0071 :connectedToSubstation :Substation_8 .
+:Consumer_0072 :connectedToSubstation :Substation_8 .
+:Consumer_0073 :connectedToSubstation :Substation_11 .
+:Consumer_0074 :connectedToSubstation :Substation_25 .
+:Consumer_0075 :connectedToSubstation :Substation_1 .
+:Consumer_0076 :connectedToSubstation :Substation_24 .
+:Consumer_0077 :connectedToSubstation :Substation_14 .
+:Consumer_0078 :connectedToSubstation :Substation_26 .
+:Consumer_0079 :connectedToSubstation :Substation_18 .
+:Consumer_0080 :connectedToSubstation :Substation_14 .
+:Consumer_0081 :connectedToSubstation :Substation_7 .
+:Consumer_0082 :connectedToSubstation :Substation_27 .
+:Consumer_0083 :connectedToSubstation :Substation_2 .
+:Consumer_0084 :connectedToSubstation :Substation_8 .
+:Consumer_0085 :connectedToSubstation :Substation_22 .
+:Consumer_0086 :connectedToSubstation :Substation_6 .
+:Consumer_0087 :connectedToSubstation :Substation_6 .
+:Consumer_0088 :connectedToSubstation :Substation_30 .
+:Consumer_0089 :connectedToSubstation :Substation_27 .
+:Consumer_0090 :connectedToSubstation :Substation_20 .
+:Consumer_0091 :connectedToSubstation :Substation_14 .
+:Consumer_0092 :connectedToSubstation :Substation_14 .
+:Consumer_0093 :connectedToSubstation :Substation_14 .
+:Consumer_0094 :connectedToSubstation :Substation_30 .
+:Consumer_0095 :connectedToSubstation :Substation_28 .
+:Consumer_0096 :connectedToSubstation :Substation_15 .
+:Consumer_0097 :connectedToSubstation :Substation_11 .
+:Consumer_0098 :connectedToSubstation :Substation_29 .
+:Consumer_0099 :connectedToSubstation :Substation_7 .
+:Consumer_0100 :connectedToSubstation :Substation_23 .
+:Consumer_0101 :connectedToSubstation :Substation_8 .
+:Consumer_0102 :connectedToSubstation :Substation_18 .
+:Consumer_0103 :connectedToSubstation :Substation_23 .
+:Consumer_0104 :connectedToSubstation :Substation_11 .
+:Consumer_0105 :connectedToSubstation :Substation_24 .
+:Consumer_0106 :connectedToSubstation :Substation_4 .
+:Consumer_0107 :connectedToSubstation :Substation_18 .
+:Consumer_0108 :connectedToSubstation :Substation_5 .
+:Consumer_0109 :connectedToSubstation :Substation_16 .
+:Consumer_0110 :connectedToSubstation :Substation_28 .
+:Consumer_0111 :connectedToSubstation :Substation_21 .
+:Consumer_0112 :connectedToSubstation :Substation_8 .
+:Consumer_0113 :connectedToSubstation :Substation_8 .
+:Consumer_0114 :connectedToSubstation :Substation_14 .
+:Consumer_0115 :connectedToSubstation :Substation_7 .
+:Consumer_0116 :connectedToSubstation :Substation_18 .
+:Consumer_0117 :connectedToSubstation :Substation_2 .
+:Consumer_0118 :connectedToSubstation :Substation_8 .
+:Consumer_0119 :connectedToSubstation :Substation_18 .
+:Consumer_0120 :connectedToSubstation :Substation_6 .
+:Consumer_0121 :connectedToSubstation :Substation_15 .
+:Consumer_0122 :connectedToSubstation :Substation_15 .
+:Consumer_0123 :connectedToSubstation :Substation_1 .
+:Consumer_0124 :connectedToSubstation :Substation_1 .
+:Consumer_0125 :connectedToSubstation :Substation_21 .
+:Consumer_0126 :connectedToSubstation :Substation_27 .
+:Consumer_0127 :connectedToSubstation :Substation_22 .
+:Consumer_0128 :connectedToSubstation :Substation_13 .
+:Consumer_0129 :connectedToSubstation :Substation_11 .
+:Consumer_0130 :connectedToSubstation :Substation_1 .
+:Consumer_0131 :connectedToSubstation :Substation_12 .
+:Consumer_0132 :connectedToSubstation :Substation_18 .
+:Consumer_0133 :connectedToSubstation :Substation_21 .
+:Consumer_0134 :connectedToSubstation :Substation_18 .
+:Consumer_0135 :connectedToSubstation :Substation_4 .
+:Consumer_0136 :connectedToSubstation :Substation_9 .
+:Consumer_0137 :connectedToSubstation :Substation_5 .
+:Consumer_0138 :connectedToSubstation :Substation_9 .
+:Consumer_0139 :connectedToSubstation :Substation_10 .
+:Consumer_0140 :connectedToSubstation :Substation_15 .
+:Consumer_0141 :connectedToSubstation :Substation_30 .
+:Consumer_0142 :connectedToSubstation :Substation_8 .
+:Consumer_0143 :connectedToSubstation :Substation_26 .
+:Consumer_0144 :connectedToSubstation :Substation_2 .
+:Consumer_0145 :connectedToSubstation :Substation_15 .
+:Consumer_0146 :connectedToSubstation :Substation_21 .
+:Consumer_0147 :connectedToSubstation :Substation_23 .
+:Consumer_0148 :connectedToSubstation :Substation_11 .
+:Consumer_0149 :connectedToSubstation :Substation_3 .
+:Consumer_0150 :connectedToSubstation :Substation_14 .
+:Consumer_0151 :connectedToSubstation :Substation_23 .
+:Consumer_0152 :connectedToSubstation :Substation_12 .
+:Consumer_0153 :connectedToSubstation :Substation_6 .
+:Consumer_0154 :connectedToSubstation :Substation_8 .
+:Consumer_0155 :connectedToSubstation :Substation_15 .
+:Consumer_0156 :connectedToSubstation :Substation_22 .
+:Consumer_0157 :connectedToSubstation :Substation_10 .
+:Consumer_0158 :connectedToSubstation :Substation_7 .
+:Consumer_0159 :connectedToSubstation :Substation_19 .
+:Consumer_0160 :connectedToSubstation :Substation_19 .
+:Consumer_0001 :hasMeter :Meter_AMI10076 .
+:Consumer_0001 :hasMeter :Meter_AMI10101 .
+:Consumer_0002 :hasMeter :Meter_AMI10160 .
+:Consumer_0002 :hasMeter :Meter_AMI10203 .
+:Consumer_0003 :hasMeter :Meter_AMI10282 .
+:Consumer_0003 :hasMeter :Meter_AMI10336 .
+:Consumer_0004 :hasMeter :Meter_AMI10380 .
+:Consumer_0004 :hasMeter :Meter_AMI10455 .
+:Consumer_0005 :hasMeter :Meter_AMI10543 .
+:Consumer_0005 :hasMeter :Meter_AMI10574 .
+:Consumer_0006 :hasMeter :Meter_AMI10626 .
+:Consumer_0006 :hasMeter :Meter_AMI10683 .
+:Consumer_0007 :hasMeter :Meter_AMI10766 .
+:Consumer_0007 :hasMeter :Meter_AMI10839 .
+:Consumer_0008 :hasMeter :Meter_AMI10934 .
+:Consumer_0008 :hasMeter :Meter_AMI10978 .
+:Consumer_0009 :hasMeter :Meter_AMI11014 .
+:Consumer_0009 :hasMeter :Meter_AMI11110 .
+:Consumer_0010 :hasMeter :Meter_AMI11149 .
+:Consumer_0010 :hasMeter :Meter_AMI11162 .
+:Consumer_0011 :hasMeter :Meter_AMI11253 .
+:Consumer_0012 :hasMeter :Meter_AMI11306 .
+:Consumer_0013 :hasMeter :Meter_AMI11344 .
+:Consumer_0014 :hasMeter :Meter_AMI11415 .
+:Consumer_0015 :hasMeter :Meter_AMI11480 .
+:Consumer_0016 :hasMeter :Meter_AMI11503 .
+:Consumer_0017 :hasMeter :Meter_AMI11545 .
+:Consumer_0018 :hasMeter :Meter_AMI11615 .
+:Consumer_0019 :hasMeter :Meter_AMI11696 .
+:Consumer_0020 :hasMeter :Meter_AMI11737 .
+:Consumer_0021 :hasMeter :Meter_AMI11755 .
+:Consumer_0022 :hasMeter :Meter_AMI11824 .
+:Consumer_0023 :hasMeter :Meter_AMI11854 .
+:Consumer_0024 :hasMeter :Meter_AMI11872 .
+:Consumer_0025 :hasMeter :Meter_AMI11950 .
+:Consumer_0026 :hasMeter :Meter_AMI12037 .
+:Consumer_0027 :hasMeter :Meter_AMI12120 .
+:Consumer_0028 :hasMeter :Meter_AMI12205 .
+:Consumer_0029 :hasMeter :Meter_AMI12256 .
+:Consumer_0030 :hasMeter :Meter_AMI12276 .
+:Consumer_0031 :hasMeter :Meter_AMI12296 .
+:Consumer_0032 :hasMeter :Meter_AMI12315 .
+:Consumer_0033 :hasMeter :Meter_AMI12364 .
+:Consumer_0034 :hasMeter :Meter_AMI12445 .
+:Consumer_0035 :hasMeter :Meter_AMI12469 .
+:Consumer_0036 :hasMeter :Meter_AMI12523 .
+:Consumer_0037 :hasMeter :Meter_AMI12540 .
+:Consumer_0038 :hasMeter :Meter_AMI12567 .
+:Consumer_0039 :hasMeter :Meter_AMI12649 .
+:Consumer_0040 :hasMeter :Meter_AMI12679 .
+:Consumer_0041 :hasMeter :Meter_AMI12706 .
+:Consumer_0042 :hasMeter :Meter_AMI12722 .
+:Consumer_0043 :hasMeter :Meter_AMI12804 .
+:Consumer_0044 :hasMeter :Meter_AMI12845 .
+:Consumer_0045 :hasMeter :Meter_AMI12878 .
+:Consumer_0046 :hasMeter :Meter_AMI12920 .
+:Consumer_0047 :hasMeter :Meter_AMI12991 .
+:Consumer_0048 :hasMeter :Meter_AMI13031 .
+:Consumer_0049 :hasMeter :Meter_AMI13050 .
+:Consumer_0050 :hasMeter :Meter_AMI13129 .
+:Consumer_0051 :hasMeter :Meter_AMI13144 .
+:Consumer_0052 :hasMeter :Meter_AMI13169 .
+:Consumer_0053 :hasMeter :Meter_AMI13180 .
+:Consumer_0054 :hasMeter :Meter_AMI13276 .
+:Consumer_0055 :hasMeter :Meter_AMI13351 .
+:Consumer_0056 :hasMeter :Meter_AMI13378 .
+:Consumer_0057 :hasMeter :Meter_AMI13411 .
+:Consumer_0058 :hasMeter :Meter_AMI13458 .
+:Consumer_0059 :hasMeter :Meter_AMI13525 .
+:Consumer_0060 :hasMeter :Meter_AMI13557 .
+:Consumer_0061 :hasMeter :Meter_AMI13598 .
+:Consumer_0062 :hasMeter :Meter_AMI13640 .
+:Consumer_0063 :hasMeter :Meter_AMI13731 .
+:Consumer_0064 :hasMeter :Meter_AMI13760 .
+:Consumer_0065 :hasMeter :Meter_AMI13793 .
+:Consumer_0066 :hasMeter :Meter_AMI13819 .
+:Consumer_0067 :hasMeter :Meter_AMI13870 .
+:Consumer_0068 :hasMeter :Meter_AMI13945 .
+:Consumer_0069 :hasMeter :Meter_AMI14016 .
+:Consumer_0070 :hasMeter :Meter_AMI14089 .
+:Consumer_0071 :hasMeter :Meter_AMI14134 .
+:Consumer_0072 :hasMeter :Meter_AMI14194 .
+:Consumer_0073 :hasMeter :Meter_AMI14274 .
+:Consumer_0074 :hasMeter :Meter_AMI14359 .
+:Consumer_0075 :hasMeter :Meter_AMI14415 .
+:Consumer_0076 :hasMeter :Meter_AMI14495 .
+:Consumer_0077 :hasMeter :Meter_AMI14568 .
+:Consumer_0078 :hasMeter :Meter_AMI14630 .
+:Consumer_0079 :hasMeter :Meter_AMI14644 .
+:Consumer_0080 :hasMeter :Meter_AMI14672 .
+:Consumer_0081 :hasMeter :Meter_AMI14741 .
+:Consumer_0082 :hasMeter :Meter_AMI14805 .
+:Consumer_0083 :hasMeter :Meter_AMI14860 .
+:Consumer_0084 :hasMeter :Meter_AMI14896 .
+:Consumer_0085 :hasMeter :Meter_AMI14921 .
+:Consumer_0086 :hasMeter :Meter_AMI15009 .
+:Consumer_0087 :hasMeter :Meter_AMI15059 .
+:Consumer_0088 :hasMeter :Meter_AMI15118 .
+:Consumer_0089 :hasMeter :Meter_AMI15209 .
+:Consumer_0090 :hasMeter :Meter_AMI15235 .
+:Consumer_0091 :hasMeter :Meter_AMI15330 .
+:Consumer_0092 :hasMeter :Meter_AMI15403 .
+:Consumer_0093 :hasMeter :Meter_AMI15436 .
+:Consumer_0094 :hasMeter :Meter_AMI15515 .
+:Consumer_0095 :hasMeter :Meter_AMI15557 .
+:Consumer_0096 :hasMeter :Meter_AMI15640 .
+:Consumer_0097 :hasMeter :Meter_AMI15674 .
+:Consumer_0098 :hasMeter :Meter_AMI15761 .
+:Consumer_0099 :hasMeter :Meter_AMI15782 .
+:Consumer_0100 :hasMeter :Meter_AMI15853 .
+:Consumer_0101 :hasMeter :Meter_AMI15915 .
+:Consumer_0102 :hasMeter :Meter_AMI15993 .
+:Consumer_0103 :hasMeter :Meter_AMI16062 .
+:Consumer_0104 :hasMeter :Meter_AMI16088 .
+:Consumer_0105 :hasMeter :Meter_AMI16160 .
+:Consumer_0106 :hasMeter :Meter_AMI16195 .
+:Consumer_0107 :hasMeter :Meter_AMI16222 .
+:Consumer_0108 :hasMeter :Meter_AMI16314 .
+:Consumer_0109 :hasMeter :Meter_AMI16386 .
+:Consumer_0110 :hasMeter :Meter_AMI16458 .
+:Consumer_0111 :hasMeter :Meter_AMI16475 .
+:Consumer_0112 :hasMeter :Meter_AMI16501 .
+:Consumer_0113 :hasMeter :Meter_AMI16578 .
+:Consumer_0114 :hasMeter :Meter_AMI16628 .
+:Consumer_0115 :hasMeter :Meter_AMI16719 .
+:Consumer_0116 :hasMeter :Meter_AMI16739 .
+:Consumer_0117 :hasMeter :Meter_AMI16779 .
+:Consumer_0118 :hasMeter :Meter_AMI16823 .
+:Consumer_0119 :hasMeter :Meter_AMI16862 .
+:Consumer_0120 :hasMeter :Meter_AMI16912 .
+:Consumer_0121 :hasMeter :Meter_AMI16961 .
+:Consumer_0122 :hasMeter :Meter_AMI16982 .
+:Consumer_0123 :hasMeter :Meter_AMI17004 .
+:Consumer_0124 :hasMeter :Meter_AMI17101 .
+:Consumer_0125 :hasMeter :Meter_AMI17168 .
+:Consumer_0126 :hasMeter :Meter_AMI17241 .
+:Consumer_0127 :hasMeter :Meter_AMI17265 .
+:Consumer_0128 :hasMeter :Meter_AMI17346 .
+:Consumer_0129 :hasMeter :Meter_AMI17371 .
+:Consumer_0130 :hasMeter :Meter_AMI17466 .
+:Consumer_0131 :hasMeter :Meter_AMI17556 .
+:Consumer_0132 :hasMeter :Meter_AMI17583 .
+:Consumer_0133 :hasMeter :Meter_AMI17671 .
+:Consumer_0134 :hasMeter :Meter_AMI17734 .
+:Consumer_0135 :hasMeter :Meter_AMI17827 .
+:Consumer_0136 :hasMeter :Meter_AMI17891 .
+:Consumer_0137 :hasMeter :Meter_AMI17951 .
+:Consumer_0138 :hasMeter :Meter_AMI18015 .
+:Consumer_0139 :hasMeter :Meter_AMI18064 .
+:Consumer_0140 :hasMeter :Meter_AMI18143 .
+:Consumer_0141 :hasMeter :Meter_AMI18195 .
+:Consumer_0142 :hasMeter :Meter_AMI18258 .
+:Consumer_0143 :hasMeter :Meter_AMI18317 .
+:Consumer_0144 :hasMeter :Meter_AMI18344 .
+:Consumer_0145 :hasMeter :Meter_AMI18367 .
+:Consumer_0146 :hasMeter :Meter_AMI18397 .
+:Consumer_0147 :hasMeter :Meter_AMI18458 .
+:Consumer_0148 :hasMeter :Meter_AMI18549 .
+:Consumer_0149 :hasMeter :Meter_AMI18590 .
+:Consumer_0150 :hasMeter :Meter_AMI18613 .
+:Consumer_0151 :hasMeter :Meter_AMI18662 .
+:Consumer_0152 :hasMeter :Meter_AMI18728 .
+:Consumer_0153 :hasMeter :Meter_AMI18760 .
+:Consumer_0154 :hasMeter :Meter_AMI18834 .
+:Consumer_0155 :hasMeter :Meter_AMI18877 .
+:Consumer_0156 :hasMeter :Meter_AMI18957 .
+:Consumer_0157 :hasMeter :Meter_AMI19049 .
+:Consumer_0158 :hasMeter :Meter_AMI19109 .
+:Consumer_0159 :hasMeter :Meter_AMI19157 .
+:Consumer_0160 :hasMeter :Meter_AMI19174 .
+:Measurement_0001 :measuredByMeter :Meter_AMI10455 .
+:Measurement_0002 :measuredByMeter :Meter_AMI10934 .
+:Measurement_0003 :measuredByMeter :Meter_AMI11306 .
+:Measurement_0004 :measuredByMeter :Meter_AMI11696 .
+:Measurement_0005 :measuredByMeter :Meter_AMI12037 .
+:Measurement_0006 :measuredByMeter :Meter_AMI12364 .
+:Measurement_0007 :measuredByMeter :Meter_AMI12679 .
+:Measurement_0008 :measuredByMeter :Meter_AMI12991 .
+:Measurement_0009 :measuredByMeter :Meter_AMI13276 .
+:Measurement_0010 :measuredByMeter :Meter_AMI13598 .
+:Measurement_0011 :measuredByMeter :Meter_AMI13945 .
+:Measurement_0012 :measuredByMeter :Meter_AMI14415 .
+:Measurement_0013 :measuredByMeter :Meter_AMI14805 .
+:Measurement_0014 :measuredByMeter :Meter_AMI15209 .
+:Measurement_0015 :measuredByMeter :Meter_AMI15640 .
+:Measurement_0016 :measuredByMeter :Meter_AMI16062 .
+:Measurement_0017 :measuredByMeter :Meter_AMI16458 .
+:Measurement_0018 :measuredByMeter :Meter_AMI16779 .
+:Measurement_0019 :measuredByMeter :Meter_AMI17101 .
+:Measurement_0020 :measuredByMeter :Meter_AMI17556 .
+:Measurement_0021 :measuredByMeter :Meter_AMI18015 .
+:Measurement_0022 :measuredByMeter :Meter_AMI18367 .
+:Measurement_0023 :measuredByMeter :Meter_AMI18728 .
+:Measurement_0024 :measuredByMeter :Meter_AMI19157 .
+:Measurement_0025 :measuredByMeter :Meter_AMI10336 .
+:Measurement_0026 :measuredByMeter :Meter_AMI10766 .
+:Measurement_0027 :measuredByMeter :Meter_AMI11162 .
+:Measurement_0028 :measuredByMeter :Meter_AMI11545 .
+:Measurement_0029 :measuredByMeter :Meter_AMI11872 .
+:Measurement_0030 :measuredByMeter :Meter_AMI12296 .
+:Measurement_0031 :measuredByMeter :Meter_AMI12567 .
+:Measurement_0032 :measuredByMeter :Meter_AMI12878 .
+:Measurement_0033 :measuredByMeter :Meter_AMI13169 .
+:Measurement_0034 :measuredByMeter :Meter_AMI13525 .
+:Measurement_0035 :measuredByMeter :Meter_AMI13819 .
+:Measurement_0036 :measuredByMeter :Meter_AMI14274 .
+:Measurement_0037 :measuredByMeter :Meter_AMI14672 .
+:Measurement_0038 :measuredByMeter :Meter_AMI15059 .
+:Measurement_0039 :measuredByMeter :Meter_AMI15515 .
+:Measurement_0040 :measuredByMeter :Meter_AMI15915 .
+:Measurement_0041 :measuredByMeter :Meter_AMI16314 .
+:Measurement_0042 :measuredByMeter :Meter_AMI16719 .
+:Measurement_0043 :measuredByMeter :Meter_AMI16982 .
+:Measurement_0044 :measuredByMeter :Meter_AMI17371 .
+:Measurement_0045 :measuredByMeter :Meter_AMI17891 .
+:Measurement_0046 :measuredByMeter :Meter_AMI18317 .
+:Measurement_0047 :measuredByMeter :Meter_AMI18613 .
+:Measurement_0048 :measuredByMeter :Meter_AMI19049 .
+:Measurement_0049 :measuredByMeter :Meter_AMI10203 .
+:Measurement_0050 :measuredByMeter :Meter_AMI10626 .
+:Measurement_0051 :measuredByMeter :Meter_AMI11110 .
+:Measurement_0052 :measuredByMeter :Meter_AMI11480 .
+:Measurement_0053 :measuredByMeter :Meter_AMI11824 .
+:Measurement_0054 :measuredByMeter :Meter_AMI12256 .
+:Measurement_0055 :measuredByMeter :Meter_AMI12523 .
+:Measurement_0056 :measuredByMeter :Meter_AMI12804 .
+:Measurement_0057 :measuredByMeter :Meter_AMI13129 .
+:Measurement_0058 :measuredByMeter :Meter_AMI13411 .
+:Measurement_0059 :measuredByMeter :Meter_AMI13760 .
+:Measurement_0060 :measuredByMeter :Meter_AMI14134 .
+:Measurement_0061 :measuredByMeter :Meter_AMI14630 .
+:Measurement_0062 :measuredByMeter :Meter_AMI14921 .
+:Measurement_0063 :measuredByMeter :Meter_AMI15403 .
+:Measurement_0064 :measuredByMeter :Meter_AMI15782 .
+:Measurement_0065 :measuredByMeter :Meter_AMI16195 .
+:Measurement_0066 :measuredByMeter :Meter_AMI16578 .
+:Measurement_0067 :measuredByMeter :Meter_AMI16912 .
+:Measurement_0068 :measuredByMeter :Meter_AMI17265 .
+:Measurement_0069 :measuredByMeter :Meter_AMI17734 .
+:Measurement_0070 :measuredByMeter :Meter_AMI18195 .
+:Measurement_0071 :measuredByMeter :Meter_AMI18549 .
+:Measurement_0072 :measuredByMeter :Meter_AMI18877 .
+:Measurement_0073 :measuredByMeter :Meter_AMI10101 .
+:Measurement_0074 :measuredByMeter :Meter_AMI10543 .
+:Measurement_0075 :measuredByMeter :Meter_AMI10978 .
+:Measurement_0076 :measuredByMeter :Meter_AMI11344 .
+:Measurement_0077 :measuredByMeter :Meter_AMI11737 .
+:Measurement_0078 :measuredByMeter :Meter_AMI12120 .
+:Measurement_0079 :measuredByMeter :Meter_AMI12445 .
+:Measurement_0080 :measuredByMeter :Meter_AMI12706 .
+:Measurement_0081 :measuredByMeter :Meter_AMI13031 .
+:Measurement_0082 :measuredByMeter :Meter_AMI13351 .
+:Measurement_0083 :measuredByMeter :Meter_AMI13640 .
+:Measurement_0084 :measuredByMeter :Meter_AMI14016 .
+:Measurement_0085 :measuredByMeter :Meter_AMI14495 .
+:Measurement_0086 :measuredByMeter :Meter_AMI14860 .
+:Measurement_0087 :measuredByMeter :Meter_AMI15235 .
+:Measurement_0088 :measuredByMeter :Meter_AMI15674 .
+:Measurement_0089 :measuredByMeter :Meter_AMI16088 .
+:Measurement_0090 :measuredByMeter :Meter_AMI16475 .
+:Measurement_0091 :measuredByMeter :Meter_AMI16823 .
+:Measurement_0092 :measuredByMeter :Meter_AMI17168 .
+:Measurement_0093 :measuredByMeter :Meter_AMI17583 .
+:Measurement_0094 :measuredByMeter :Meter_AMI18064 .
+:Measurement_0095 :measuredByMeter :Meter_AMI18397 .
+:Measurement_0096 :measuredByMeter :Meter_AMI18760 .
+:Measurement_0097 :measuredByMeter :Meter_AMI19174 .
+:Measurement_0098 :measuredByMeter :Meter_AMI10380 .
+:Measurement_0099 :measuredByMeter :Meter_AMI10839 .
+:Measurement_0100 :measuredByMeter :Meter_AMI11253 .
+:Measurement_0101 :measuredByMeter :Meter_AMI11615 .
+:Measurement_0102 :measuredByMeter :Meter_AMI11950 .
+:Measurement_0103 :measuredByMeter :Meter_AMI12315 .
+:Measurement_0104 :measuredByMeter :Meter_AMI12649 .
+:Measurement_0105 :measuredByMeter :Meter_AMI12920 .
+:Measurement_0106 :measuredByMeter :Meter_AMI13180 .
+:Measurement_0107 :measuredByMeter :Meter_AMI13557 .
+:Measurement_0108 :measuredByMeter :Meter_AMI13870 .
+:Measurement_0109 :measuredByMeter :Meter_AMI14359 .
+:Measurement_0110 :measuredByMeter :Meter_AMI14741 .
+:Measurement_0111 :measuredByMeter :Meter_AMI15118 .
+:Measurement_0112 :measuredByMeter :Meter_AMI15557 .
+:Measurement_0113 :measuredByMeter :Meter_AMI15993 .
+:Measurement_0114 :measuredByMeter :Meter_AMI16386 .
+:Measurement_0115 :measuredByMeter :Meter_AMI16739 .
+:Measurement_0116 :measuredByMeter :Meter_AMI17004 .
+:Measurement_0117 :measuredByMeter :Meter_AMI17466 .
+:Measurement_0118 :measuredByMeter :Meter_AMI17951 .
+:Measurement_0119 :measuredByMeter :Meter_AMI18344 .
+:Measurement_0120 :measuredByMeter :Meter_AMI18662 .
+:Measurement_0121 :measuredByMeter :Meter_AMI19109 .
+:Measurement_0122 :measuredByMeter :Meter_AMI10282 .
+:Measurement_0123 :measuredByMeter :Meter_AMI10683 .
+:Measurement_0124 :measuredByMeter :Meter_AMI11149 .
+:Measurement_0125 :measuredByMeter :Meter_AMI11503 .
+:Measurement_0126 :measuredByMeter :Meter_AMI11854 .
+:Measurement_0127 :measuredByMeter :Meter_AMI12276 .
+:Measurement_0128 :measuredByMeter :Meter_AMI12540 .
+:Measurement_0129 :measuredByMeter :Meter_AMI12845 .
+:Measurement_0130 :measuredByMeter :Meter_AMI13144 .
+:Measurement_0131 :measuredByMeter :Meter_AMI13458 .
+:Measurement_0132 :measuredByMeter :Meter_AMI13793 .
+:Measurement_0133 :measuredByMeter :Meter_AMI14194 .
+:Measurement_0134 :measuredByMeter :Meter_AMI14644 .
+:Measurement_0135 :measuredByMeter :Meter_AMI15009 .
+:Measurement_0136 :measuredByMeter :Meter_AMI15436 .
+:Measurement_0137 :measuredByMeter :Meter_AMI15853 .
+:Measurement_0138 :measuredByMeter :Meter_AMI16222 .
+:Measurement_0139 :measuredByMeter :Meter_AMI16628 .
+:Measurement_0140 :measuredByMeter :Meter_AMI16961 .
+:Measurement_0141 :measuredByMeter :Meter_AMI17346 .
+:Measurement_0142 :measuredByMeter :Meter_AMI17827 .
+:Measurement_0143 :measuredByMeter :Meter_AMI18258 .
+:Measurement_0144 :measuredByMeter :Meter_AMI18590 .
+:Measurement_0145 :measuredByMeter :Meter_AMI18957 .
+:Measurement_0146 :measuredByMeter :Meter_AMI10160 .
+:Measurement_0147 :measuredByMeter :Meter_AMI10574 .
+:Measurement_0148 :measuredByMeter :Meter_AMI11014 .
+:Measurement_0149 :measuredByMeter :Meter_AMI11415 .
+:Measurement_0150 :measuredByMeter :Meter_AMI11755 .
+:Measurement_0151 :measuredByMeter :Meter_AMI12205 .
+:Measurement_0152 :measuredByMeter :Meter_AMI12469 .
+:Measurement_0153 :measuredByMeter :Meter_AMI12722 .
+:Measurement_0154 :measuredByMeter :Meter_AMI13050 .
+:Measurement_0155 :measuredByMeter :Meter_AMI13378 .
+:Measurement_0156 :measuredByMeter :Meter_AMI13731 .
+:Measurement_0157 :measuredByMeter :Meter_AMI14089 .
+:Measurement_0158 :measuredByMeter :Meter_AMI14568 .
+:Measurement_0159 :measuredByMeter :Meter_AMI14896 .
+:Measurement_0160 :measuredByMeter :Meter_AMI15330 .
+:Measurement_0161 :measuredByMeter :Meter_AMI15761 .
+:Measurement_0162 :measuredByMeter :Meter_AMI16160 .
+:Measurement_0163 :measuredByMeter :Meter_AMI16501 .
+:Measurement_0164 :measuredByMeter :Meter_AMI16862 .
+:Measurement_0165 :measuredByMeter :Meter_AMI17241 .
+:Measurement_0166 :measuredByMeter :Meter_AMI17671 .
+:Measurement_0167 :measuredByMeter :Meter_AMI18143 .
+:Measurement_0168 :measuredByMeter :Meter_AMI18458 .
+:Measurement_0169 :measuredByMeter :Meter_AMI18834 .
+:Measurement_0170 :measuredByMeter :Meter_AMI10076 .
+:Measurement_0171 :measuredByMeter :Meter_AMI10455 .
+:Measurement_0172 :measuredByMeter :Meter_AMI10934 .
+:Measurement_0173 :measuredByMeter :Meter_AMI11306 .
+:Measurement_0174 :measuredByMeter :Meter_AMI11696 .
+:Measurement_0175 :measuredByMeter :Meter_AMI12037 .
+:Measurement_0176 :measuredByMeter :Meter_AMI12364 .
+:Measurement_0177 :measuredByMeter :Meter_AMI12679 .
+:Measurement_0178 :measuredByMeter :Meter_AMI12991 .
+:Measurement_0179 :measuredByMeter :Meter_AMI13276 .
+:Measurement_0180 :measuredByMeter :Meter_AMI13598 .
+:Measurement_0181 :measuredByMeter :Meter_AMI13945 .
+:Measurement_0182 :measuredByMeter :Meter_AMI14415 .
+:Measurement_0183 :measuredByMeter :Meter_AMI14805 .
+:Measurement_0184 :measuredByMeter :Meter_AMI15209 .
+:Measurement_0185 :measuredByMeter :Meter_AMI15640 .
+:Measurement_0186 :measuredByMeter :Meter_AMI16062 .
+:Measurement_0187 :measuredByMeter :Meter_AMI16458 .
+:Measurement_0188 :measuredByMeter :Meter_AMI16779 .
+:Measurement_0189 :measuredByMeter :Meter_AMI17101 .
+:Measurement_0190 :measuredByMeter :Meter_AMI17556 .
+:Measurement_0191 :measuredByMeter :Meter_AMI18015 .
+:Measurement_0192 :measuredByMeter :Meter_AMI18367 .
+:Measurement_0193 :measuredByMeter :Meter_AMI18728 .
+:Measurement_0194 :measuredByMeter :Meter_AMI19157 .
+:Measurement_0195 :measuredByMeter :Meter_AMI10336 .
+:Measurement_0196 :measuredByMeter :Meter_AMI10766 .
+:Measurement_0197 :measuredByMeter :Meter_AMI11162 .
+:Measurement_0198 :measuredByMeter :Meter_AMI11545 .
+:Measurement_0199 :measuredByMeter :Meter_AMI11872 .
+:Measurement_0200 :measuredByMeter :Meter_AMI12296 .
+:WeatherCondition_20260912 :influencesMeasurement :Measurement_0001 .
+:WeatherCondition_20260913 :influencesMeasurement :Measurement_0002 .
+:WeatherCondition_20260914 :influencesMeasurement :Measurement_0003 .
+:WeatherCondition_20260915 :influencesMeasurement :Measurement_0004 .
+:WeatherCondition_20260916 :influencesMeasurement :Measurement_0005 .
+:WeatherCondition_20260917 :influencesMeasurement :Measurement_0006 .
+:WeatherCondition_20260918 :influencesMeasurement :Measurement_0007 .
+:WeatherCondition_20260919 :influencesMeasurement :Measurement_0008 .
+:WeatherCondition_20260920 :influencesMeasurement :Measurement_0009 .
+:WeatherCondition_20260921 :influencesMeasurement :Measurement_0010 .
+:WeatherCondition_20260922 :influencesMeasurement :Measurement_0011 .
+:WeatherCondition_20260923 :influencesMeasurement :Measurement_0012 .
+:WeatherCondition_20260924 :influencesMeasurement :Measurement_0013 .
+:WeatherCondition_20260925 :influencesMeasurement :Measurement_0014 .
+:WeatherCondition_20260926 :influencesMeasurement :Measurement_0015 .
+:WeatherCondition_20260927 :influencesMeasurement :Measurement_0016 .
+:WeatherCondition_20260928 :influencesMeasurement :Measurement_0017 .
+:WeatherCondition_20260929 :influencesMeasurement :Measurement_0018 .
+:WeatherCondition_20260930 :influencesMeasurement :Measurement_0019 .
+:WeatherCondition_20260911 :influencesMeasurement :Measurement_0020 .
+:WeatherCondition_20260912 :influencesMeasurement :Measurement_0021 .
+:WeatherCondition_20260913 :influencesMeasurement :Measurement_0022 .
+:WeatherCondition_20260914 :influencesMeasurement :Measurement_0023 .
+:WeatherCondition_20260915 :influencesMeasurement :Measurement_0024 .
+:WeatherCondition_20260916 :influencesMeasurement :Measurement_0025 .
+:WeatherCondition_20260917 :influencesMeasurement :Measurement_0026 .
+:WeatherCondition_20260918 :influencesMeasurement :Measurement_0027 .
+:WeatherCondition_20260919 :influencesMeasurement :Measurement_0028 .
+:WeatherCondition_20260920 :influencesMeasurement :Measurement_0029 .
+:WeatherCondition_20260921 :influencesMeasurement :Measurement_0030 .
+:WeatherCondition_20260922 :influencesMeasurement :Measurement_0031 .
+:WeatherCondition_20260923 :influencesMeasurement :Measurement_0032 .
+:WeatherCondition_20260924 :influencesMeasurement :Measurement_0033 .
+:WeatherCondition_20260925 :influencesMeasurement :Measurement_0034 .
+:WeatherCondition_20260926 :influencesMeasurement :Measurement_0035 .
+:WeatherCondition_20260927 :influencesMeasurement :Measurement_0036 .
+:WeatherCondition_20260928 :influencesMeasurement :Measurement_0037 .
+:WeatherCondition_20260929 :influencesMeasurement :Measurement_0038 .
+:WeatherCondition_20260930 :influencesMeasurement :Measurement_0039 .
+:WeatherCondition_20260911 :influencesMeasurement :Measurement_0040 .
+:WeatherCondition_20260912 :influencesMeasurement :Measurement_0041 .
+:WeatherCondition_20260913 :influencesMeasurement :Measurement_0042 .
+:WeatherCondition_20260914 :influencesMeasurement :Measurement_0043 .
+:WeatherCondition_20260915 :influencesMeasurement :Measurement_0044 .
+:WeatherCondition_20260916 :influencesMeasurement :Measurement_0045 .
+:WeatherCondition_20260917 :influencesMeasurement :Measurement_0046 .
+:WeatherCondition_20260918 :influencesMeasurement :Measurement_0047 .
+:WeatherCondition_20260919 :influencesMeasurement :Measurement_0048 .
+:WeatherCondition_20260920 :influencesMeasurement :Measurement_0049 .
+:WeatherCondition_20260921 :influencesMeasurement :Measurement_0050 .
+:WeatherCondition_20260922 :influencesMeasurement :Measurement_0051 .
+:WeatherCondition_20260923 :influencesMeasurement :Measurement_0052 .
+:WeatherCondition_20260924 :influencesMeasurement :Measurement_0053 .
+:WeatherCondition_20260925 :influencesMeasurement :Measurement_0054 .
+:WeatherCondition_20260926 :influencesMeasurement :Measurement_0055 .
+:WeatherCondition_20260927 :influencesMeasurement :Measurement_0056 .
+:WeatherCondition_20260928 :influencesMeasurement :Measurement_0057 .
+:WeatherCondition_20260929 :influencesMeasurement :Measurement_0058 .
+:WeatherCondition_20260930 :influencesMeasurement :Measurement_0059 .
+:WeatherCondition_20260911 :influencesMeasurement :Measurement_0060 .
+:WeatherCondition_20260912 :influencesMeasurement :Measurement_0061 .
+:WeatherCondition_20260913 :influencesMeasurement :Measurement_0062 .
+:WeatherCondition_20260914 :influencesMeasurement :Measurement_0063 .
+:WeatherCondition_20260915 :influencesMeasurement :Measurement_0064 .
+:WeatherCondition_20260916 :influencesMeasurement :Measurement_0065 .
+:WeatherCondition_20260917 :influencesMeasurement :Measurement_0066 .
+:WeatherCondition_20260918 :influencesMeasurement :Measurement_0067 .
+:WeatherCondition_20260919 :influencesMeasurement :Measurement_0068 .
+:WeatherCondition_20260920 :influencesMeasurement :Measurement_0069 .
+:WeatherCondition_20260921 :influencesMeasurement :Measurement_0070 .
+:WeatherCondition_20260922 :influencesMeasurement :Measurement_0071 .
+:WeatherCondition_20260923 :influencesMeasurement :Measurement_0072 .
+:WeatherCondition_20260924 :influencesMeasurement :Measurement_0073 .
+:WeatherCondition_20260925 :influencesMeasurement :Measurement_0074 .
+:WeatherCondition_20260926 :influencesMeasurement :Measurement_0075 .
+:WeatherCondition_20260927 :influencesMeasurement :Measurement_0076 .
+:WeatherCondition_20260928 :influencesMeasurement :Measurement_0077 .
+:WeatherCondition_20260929 :influencesMeasurement :Measurement_0078 .
+:WeatherCondition_20260930 :influencesMeasurement :Measurement_0079 .
+:WeatherCondition_20260911 :influencesMeasurement :Measurement_0080 .
+:WeatherCondition_20260912 :influencesMeasurement :Measurement_0081 .
+:WeatherCondition_20260913 :influencesMeasurement :Measurement_0082 .
+:WeatherCondition_20260914 :influencesMeasurement :Measurement_0083 .
+:WeatherCondition_20260915 :influencesMeasurement :Measurement_0084 .
+:WeatherCondition_20260916 :influencesMeasurement :Measurement_0085 .
+:WeatherCondition_20260917 :influencesMeasurement :Measurement_0086 .
+:WeatherCondition_20260918 :influencesMeasurement :Measurement_0087 .
+:WeatherCondition_20260919 :influencesMeasurement :Measurement_0088 .
+:WeatherCondition_20260920 :influencesMeasurement :Measurement_0089 .
+:WeatherCondition_20260921 :influencesMeasurement :Measurement_0090 .
+:WeatherCondition_20260922 :influencesMeasurement :Measurement_0091 .
+:WeatherCondition_20260923 :influencesMeasurement :Measurement_0092 .
+:WeatherCondition_20260924 :influencesMeasurement :Measurement_0093 .
+:WeatherCondition_20260925 :influencesMeasurement :Measurement_0094 .
+:WeatherCondition_20260926 :influencesMeasurement :Measurement_0095 .
+:WeatherCondition_20260927 :influencesMeasurement :Measurement_0096 .
+:WeatherCondition_20260928 :influencesMeasurement :Measurement_0097 .
+:WeatherCondition_20260929 :influencesMeasurement :Measurement_0098 .
+:WeatherCondition_20260930 :influencesMeasurement :Measurement_0099 .
+:WeatherCondition_20260911 :influencesMeasurement :Measurement_0100 .
+:WeatherCondition_20260912 :influencesMeasurement :Measurement_0101 .
+:WeatherCondition_20260913 :influencesMeasurement :Measurement_0102 .
+:WeatherCondition_20260914 :influencesMeasurement :Measurement_0103 .
+:WeatherCondition_20260915 :influencesMeasurement :Measurement_0104 .
+:WeatherCondition_20260916 :influencesMeasurement :Measurement_0105 .
+:WeatherCondition_20260917 :influencesMeasurement :Measurement_0106 .
+:WeatherCondition_20260918 :influencesMeasurement :Measurement_0107 .
+:WeatherCondition_20260919 :influencesMeasurement :Measurement_0108 .
+:WeatherCondition_20260920 :influencesMeasurement :Measurement_0109 .
+:WeatherCondition_20260921 :influencesMeasurement :Measurement_0110 .
+:WeatherCondition_20260922 :influencesMeasurement :Measurement_0111 .
+:WeatherCondition_20260923 :influencesMeasurement :Measurement_0112 .
+:WeatherCondition_20260924 :influencesMeasurement :Measurement_0113 .
+:WeatherCondition_20260925 :influencesMeasurement :Measurement_0114 .
+:WeatherCondition_20260926 :influencesMeasurement :Measurement_0115 .
+:WeatherCondition_20260927 :influencesMeasurement :Measurement_0116 .
+:WeatherCondition_20260928 :influencesMeasurement :Measurement_0117 .
+:WeatherCondition_20260929 :influencesMeasurement :Measurement_0118 .
+:WeatherCondition_20260930 :influencesMeasurement :Measurement_0119 .
+:WeatherCondition_20260911 :influencesMeasurement :Measurement_0120 .
+:WeatherCondition_20260912 :influencesMeasurement :Measurement_0121 .
+:WeatherCondition_20260913 :influencesMeasurement :Measurement_0122 .
+:WeatherCondition_20260914 :influencesMeasurement :Measurement_0123 .
+:WeatherCondition_20260915 :influencesMeasurement :Measurement_0124 .
+:WeatherCondition_20260916 :influencesMeasurement :Measurement_0125 .
+:WeatherCondition_20260917 :influencesMeasurement :Measurement_0126 .
+:WeatherCondition_20260918 :influencesMeasurement :Measurement_0127 .
+:WeatherCondition_20260919 :influencesMeasurement :Measurement_0128 .
+:WeatherCondition_20260920 :influencesMeasurement :Measurement_0129 .
+:WeatherCondition_20260921 :influencesMeasurement :Measurement_0130 .
+:WeatherCondition_20260922 :influencesMeasurement :Measurement_0131 .
+:WeatherCondition_20260923 :influencesMeasurement :Measurement_0132 .
+:WeatherCondition_20260924 :influencesMeasurement :Measurement_0133 .
+:WeatherCondition_20260925 :influencesMeasurement :Measurement_0134 .
+:WeatherCondition_20260926 :influencesMeasurement :Measurement_0135 .
+:WeatherCondition_20260927 :influencesMeasurement :Measurement_0136 .
+:WeatherCondition_20260928 :influencesMeasurement :Measurement_0137 .
+:WeatherCondition_20260929 :influencesMeasurement :Measurement_0138 .
+:WeatherCondition_20260930 :influencesMeasurement :Measurement_0139 .
+:WeatherCondition_20260911 :influencesMeasurement :Measurement_0140 .
+:WeatherCondition_20260912 :influencesMeasurement :Measurement_0141 .
+:WeatherCondition_20260913 :influencesMeasurement :Measurement_0142 .
+:WeatherCondition_20260914 :influencesMeasurement :Measurement_0143 .
+:WeatherCondition_20260915 :influencesMeasurement :Measurement_0144 .
+:WeatherCondition_20260916 :influencesMeasurement :Measurement_0145 .
+:WeatherCondition_20260917 :influencesMeasurement :Measurement_0146 .
+:WeatherCondition_20260918 :influencesMeasurement :Measurement_0147 .
+:WeatherCondition_20260919 :influencesMeasurement :Measurement_0148 .
+:WeatherCondition_20260920 :influencesMeasurement :Measurement_0149 .
+:WeatherCondition_20260921 :influencesMeasurement :Measurement_0150 .
+:WeatherCondition_20260922 :influencesMeasurement :Measurement_0151 .
+:WeatherCondition_20260923 :influencesMeasurement :Measurement_0152 .
+:WeatherCondition_20260924 :influencesMeasurement :Measurement_0153 .
+:WeatherCondition_20260925 :influencesMeasurement :Measurement_0154 .
+:WeatherCondition_20260926 :influencesMeasurement :Measurement_0155 .
+:WeatherCondition_20260927 :influencesMeasurement :Measurement_0156 .
+:WeatherCondition_20260928 :influencesMeasurement :Measurement_0157 .
+:WeatherCondition_20260929 :influencesMeasurement :Measurement_0158 .
+:WeatherCondition_20260930 :influencesMeasurement :Measurement_0159 .
+:WeatherCondition_20260911 :influencesMeasurement :Measurement_0160 .
+:WeatherCondition_20260912 :influencesMeasurement :Measurement_0161 .
+:WeatherCondition_20260913 :influencesMeasurement :Measurement_0162 .
+:WeatherCondition_20260914 :influencesMeasurement :Measurement_0163 .
+:WeatherCondition_20260915 :influencesMeasurement :Measurement_0164 .
+:WeatherCondition_20260916 :influencesMeasurement :Measurement_0165 .
+:WeatherCondition_20260917 :influencesMeasurement :Measurement_0166 .
+:WeatherCondition_20260918 :influencesMeasurement :Measurement_0167 .
+:WeatherCondition_20260919 :influencesMeasurement :Measurement_0168 .
+:WeatherCondition_20260920 :influencesMeasurement :Measurement_0169 .
+:WeatherCondition_20260921 :influencesMeasurement :Measurement_0170 .
+:WeatherCondition_20260922 :influencesMeasurement :Measurement_0171 .
+:WeatherCondition_20260923 :influencesMeasurement :Measurement_0172 .
+:WeatherCondition_20260924 :influencesMeasurement :Measurement_0173 .
+:WeatherCondition_20260925 :influencesMeasurement :Measurement_0174 .
+:WeatherCondition_20260926 :influencesMeasurement :Measurement_0175 .
+:WeatherCondition_20260927 :influencesMeasurement :Measurement_0176 .
+:WeatherCondition_20260928 :influencesMeasurement :Measurement_0177 .
+:WeatherCondition_20260929 :influencesMeasurement :Measurement_0178 .
+:WeatherCondition_20260930 :influencesMeasurement :Measurement_0179 .
+:WeatherCondition_20260911 :influencesMeasurement :Measurement_0180 .
+:WeatherCondition_20260912 :influencesMeasurement :Measurement_0181 .
+:WeatherCondition_20260913 :influencesMeasurement :Measurement_0182 .
+:WeatherCondition_20260914 :influencesMeasurement :Measurement_0183 .
+:WeatherCondition_20260915 :influencesMeasurement :Measurement_0184 .
+:WeatherCondition_20260916 :influencesMeasurement :Measurement_0185 .
+:WeatherCondition_20260917 :influencesMeasurement :Measurement_0186 .
+:WeatherCondition_20260918 :influencesMeasurement :Measurement_0187 .
+:WeatherCondition_20260919 :influencesMeasurement :Measurement_0188 .
+:WeatherCondition_20260920 :influencesMeasurement :Measurement_0189 .
+:WeatherCondition_20260921 :influencesMeasurement :Measurement_0190 .
+:WeatherCondition_20260922 :influencesMeasurement :Measurement_0191 .
+:WeatherCondition_20260923 :influencesMeasurement :Measurement_0192 .
+:WeatherCondition_20260924 :influencesMeasurement :Measurement_0193 .
+:WeatherCondition_20260925 :influencesMeasurement :Measurement_0194 .
+:WeatherCondition_20260926 :influencesMeasurement :Measurement_0195 .
+:WeatherCondition_20260927 :influencesMeasurement :Measurement_0196 .
+:WeatherCondition_20260928 :influencesMeasurement :Measurement_0197 .
+:WeatherCondition_20260929 :influencesMeasurement :Measurement_0198 .
+:WeatherCondition_20260930 :influencesMeasurement :Measurement_0199 .
+:WeatherCondition_20260911 :influencesMeasurement :Measurement_0200 .
+:ForecastModel_1 :trainedOnMeasurement :Measurement_0021 .
+:ForecastModel_1 :trainedOnMeasurement :Measurement_0022 .
+:ForecastModel_1 :trainedOnMeasurement :Measurement_0047 .
+:ForecastModel_1 :trainedOnMeasurement :Measurement_0048 .
+:ForecastModel_1 :trainedOnMeasurement :Measurement_0069 .
+:ForecastModel_1 :trainedOnMeasurement :Measurement_0087 .
+:ForecastModel_1 :trainedOnMeasurement :Measurement_0095 .
+:ForecastModel_1 :trainedOnMeasurement :Measurement_0099 .
+:ForecastModel_1 :trainedOnMeasurement :Measurement_0109 .
+:ForecastModel_1 :trainedOnMeasurement :Measurement_0111 .
+:ForecastModel_1 :trainedOnMeasurement :Measurement_0128 .
+:ForecastModel_1 :trainedOnMeasurement :Measurement_0133 .
+:ForecastModel_1 :trainedOnMeasurement :Measurement_0155 .
+:ForecastModel_1 :trainedOnMeasurement :Measurement_0178 .
+:ForecastModel_1 :trainedOnMeasurement :Measurement_0187 .
+:ForecastModel_2 :trainedOnMeasurement :Measurement_0011 .
+:ForecastModel_2 :trainedOnMeasurement :Measurement_0021 .
+:ForecastModel_2 :trainedOnMeasurement :Measurement_0043 .
+:ForecastModel_2 :trainedOnMeasurement :Measurement_0076 .
+:ForecastModel_2 :trainedOnMeasurement :Measurement_0079 .
+:ForecastModel_2 :trainedOnMeasurement :Measurement_0084 .
+:ForecastModel_2 :trainedOnMeasurement :Measurement_0090 .
+:ForecastModel_2 :trainedOnMeasurement :Measurement_0110 .
+:ForecastModel_2 :trainedOnMeasurement :Measurement_0114 .
+:ForecastModel_2 :trainedOnMeasurement :Measurement_0115 .
+:ForecastModel_2 :trainedOnMeasurement :Measurement_0155 .
+:ForecastModel_2 :trainedOnMeasurement :Measurement_0170 .
+:ForecastModel_2 :trainedOnMeasurement :Measurement_0177 .
+:ForecastModel_2 :trainedOnMeasurement :Measurement_0184 .
+:ForecastModel_2 :trainedOnMeasurement :Measurement_0187 .
+:ForecastModel_3 :trainedOnMeasurement :Measurement_0008 .
+:ForecastModel_3 :trainedOnMeasurement :Measurement_0009 .
+:ForecastModel_3 :trainedOnMeasurement :Measurement_0015 .
+:ForecastModel_3 :trainedOnMeasurement :Measurement_0020 .
+:ForecastModel_3 :trainedOnMeasurement :Measurement_0037 .
+:ForecastModel_3 :trainedOnMeasurement :Measurement_0041 .
+:ForecastModel_3 :trainedOnMeasurement :Measurement_0094 .
+:ForecastModel_3 :trainedOnMeasurement :Measurement_0104 .
+:ForecastModel_3 :trainedOnMeasurement :Measurement_0113 .
+:ForecastModel_3 :trainedOnMeasurement :Measurement_0132 .
+:ForecastModel_3 :trainedOnMeasurement :Measurement_0156 .
+:ForecastModel_3 :trainedOnMeasurement :Measurement_0164 .
+:ForecastModel_3 :trainedOnMeasurement :Measurement_0172 .
+:ForecastModel_3 :trainedOnMeasurement :Measurement_0174 .
+:ForecastModel_3 :trainedOnMeasurement :Measurement_0192 .
+:ForecastModel_4 :trainedOnMeasurement :Measurement_0009 .
+:ForecastModel_4 :trainedOnMeasurement :Measurement_0020 .
+:ForecastModel_4 :trainedOnMeasurement :Measurement_0040 .
+:ForecastModel_4 :trainedOnMeasurement :Measurement_0093 .
+:ForecastModel_4 :trainedOnMeasurement :Measurement_0094 .
+:ForecastModel_4 :trainedOnMeasurement :Measurement_0095 .
+:ForecastModel_4 :trainedOnMeasurement :Measurement_0096 .
+:ForecastModel_4 :trainedOnMeasurement :Measurement_0099 .
+:ForecastModel_4 :trainedOnMeasurement :Measurement_0114 .
+:ForecastModel_4 :trainedOnMeasurement :Measurement_0116 .
+:ForecastModel_4 :trainedOnMeasurement :Measurement_0146 .
+:ForecastModel_4 :trainedOnMeasurement :Measurement_0155 .
+:ForecastModel_4 :trainedOnMeasurement :Measurement_0166 .
+:ForecastModel_4 :trainedOnMeasurement :Measurement_0174 .
+:ForecastModel_4 :trainedOnMeasurement :Measurement_0196 .
+:ForecastModel_5 :trainedOnMeasurement :Measurement_0007 .
+:ForecastModel_5 :trainedOnMeasurement :Measurement_0030 .
+:ForecastModel_5 :trainedOnMeasurement :Measurement_0031 .
+:ForecastModel_5 :trainedOnMeasurement :Measurement_0048 .
+:ForecastModel_5 :trainedOnMeasurement :Measurement_0064 .
+:ForecastModel_5 :trainedOnMeasurement :Measurement_0068 .
+:ForecastModel_5 :trainedOnMeasurement :Measurement_0072 .
+:ForecastModel_5 :trainedOnMeasurement :Measurement_0081 .
+:ForecastModel_5 :trainedOnMeasurement :Measurement_0100 .
+:ForecastModel_5 :trainedOnMeasurement :Measurement_0102 .
+:ForecastModel_5 :trainedOnMeasurement :Measurement_0128 .
+:ForecastModel_5 :trainedOnMeasurement :Measurement_0133 .
+:ForecastModel_5 :trainedOnMeasurement :Measurement_0144 .
+:ForecastModel_5 :trainedOnMeasurement :Measurement_0167 .
+:ForecastModel_5 :trainedOnMeasurement :Measurement_0189 .
+:ForecastModel_6 :trainedOnMeasurement :Measurement_0019 .
+:ForecastModel_6 :trainedOnMeasurement :Measurement_0023 .
+:ForecastModel_6 :trainedOnMeasurement :Measurement_0032 .
+:ForecastModel_6 :trainedOnMeasurement :Measurement_0035 .
+:ForecastModel_6 :trainedOnMeasurement :Measurement_0045 .
+:ForecastModel_6 :trainedOnMeasurement :Measurement_0052 .
+:ForecastModel_6 :trainedOnMeasurement :Measurement_0074 .
+:ForecastModel_6 :trainedOnMeasurement :Measurement_0082 .
+:ForecastModel_6 :trainedOnMeasurement :Measurement_0114 .
+:ForecastModel_6 :trainedOnMeasurement :Measurement_0116 .
+:ForecastModel_6 :trainedOnMeasurement :Measurement_0126 .
+:ForecastModel_6 :trainedOnMeasurement :Measurement_0157 .
+:ForecastModel_6 :trainedOnMeasurement :Measurement_0175 .
+:ForecastModel_6 :trainedOnMeasurement :Measurement_0178 .
+:ForecastModel_6 :trainedOnMeasurement :Measurement_0183 .
+:ForecastModel_7 :trainedOnMeasurement :Measurement_0032 .
+:ForecastModel_7 :trainedOnMeasurement :Measurement_0036 .
+:ForecastModel_7 :trainedOnMeasurement :Measurement_0041 .
+:ForecastModel_7 :trainedOnMeasurement :Measurement_0045 .
+:ForecastModel_7 :trainedOnMeasurement :Measurement_0052 .
+:ForecastModel_7 :trainedOnMeasurement :Measurement_0058 .
+:ForecastModel_7 :trainedOnMeasurement :Measurement_0061 .
+:ForecastModel_7 :trainedOnMeasurement :Measurement_0075 .
+:ForecastModel_7 :trainedOnMeasurement :Measurement_0077 .
+:ForecastModel_7 :trainedOnMeasurement :Measurement_0093 .
+:ForecastModel_7 :trainedOnMeasurement :Measurement_0131 .
+:ForecastModel_7 :trainedOnMeasurement :Measurement_0164 .
+:ForecastModel_7 :trainedOnMeasurement :Measurement_0180 .
+:ForecastModel_7 :trainedOnMeasurement :Measurement_0182 .
+:ForecastModel_7 :trainedOnMeasurement :Measurement_0183 .
+:ForecastModel_8 :trainedOnMeasurement :Measurement_0017 .
+:ForecastModel_8 :trainedOnMeasurement :Measurement_0023 .
+:ForecastModel_8 :trainedOnMeasurement :Measurement_0034 .
+:ForecastModel_8 :trainedOnMeasurement :Measurement_0080 .
+:ForecastModel_8 :trainedOnMeasurement :Measurement_0095 .
+:ForecastModel_8 :trainedOnMeasurement :Measurement_0102 .
+:ForecastModel_8 :trainedOnMeasurement :Measurement_0106 .
+:ForecastModel_8 :trainedOnMeasurement :Measurement_0120 .
+:ForecastModel_8 :trainedOnMeasurement :Measurement_0123 .
+:ForecastModel_8 :trainedOnMeasurement :Measurement_0135 .
+:ForecastModel_8 :trainedOnMeasurement :Measurement_0142 .
+:ForecastModel_8 :trainedOnMeasurement :Measurement_0147 .
+:ForecastModel_8 :trainedOnMeasurement :Measurement_0157 .
+:ForecastModel_8 :trainedOnMeasurement :Measurement_0184 .
+:ForecastModel_8 :trainedOnMeasurement :Measurement_0185 .
+:WeatherCondition_20260928 :influencesModel :ForecastModel_1 .
+:WeatherCondition_20260920 :influencesModel :ForecastModel_1 .
+:WeatherCondition_20260922 :influencesModel :ForecastModel_2 .
+:WeatherCondition_20260924 :influencesModel :ForecastModel_2 .
+:WeatherCondition_20260915 :influencesModel :ForecastModel_3 .
+:WeatherCondition_20260913 :influencesModel :ForecastModel_3 .
+:WeatherCondition_20260929 :influencesModel :ForecastModel_4 .
+:WeatherCondition_20260915 :influencesModel :ForecastModel_4 .
+:WeatherCondition_20260919 :influencesModel :ForecastModel_5 .
+:WeatherCondition_20260925 :influencesModel :ForecastModel_5 .
+:WeatherCondition_20260922 :influencesModel :ForecastModel_6 .
+:WeatherCondition_20260913 :influencesModel :ForecastModel_6 .
+:WeatherCondition_20260926 :influencesModel :ForecastModel_7 .
+:WeatherCondition_20260911 :influencesModel :ForecastModel_7 .
+:WeatherCondition_20260924 :influencesModel :ForecastModel_8 .
+:WeatherCondition_20260929 :influencesModel :ForecastModel_8 .
+:Forecast_001 :generatedByModel :ForecastModel_2 .
+:Forecast_002 :generatedByModel :ForecastModel_8 .
+:Forecast_003 :generatedByModel :ForecastModel_3 .
+:Forecast_004 :generatedByModel :ForecastModel_3 .
+:Forecast_005 :generatedByModel :ForecastModel_2 .
+:Forecast_006 :generatedByModel :ForecastModel_3 .
+:Forecast_007 :generatedByModel :ForecastModel_6 .
+:Forecast_008 :generatedByModel :ForecastModel_5 .
+:Forecast_009 :generatedByModel :ForecastModel_3 .
+:Forecast_010 :generatedByModel :ForecastModel_3 .
+:Forecast_011 :generatedByModel :ForecastModel_3 .
+:Forecast_012 :generatedByModel :ForecastModel_1 .
+:Forecast_013 :generatedByModel :ForecastModel_1 .
+:Forecast_014 :generatedByModel :ForecastModel_4 .
+:Forecast_015 :generatedByModel :ForecastModel_8 .
+:Forecast_016 :generatedByModel :ForecastModel_8 .
+:Forecast_017 :generatedByModel :ForecastModel_5 .
+:Forecast_018 :generatedByModel :ForecastModel_3 .
+:Forecast_019 :generatedByModel :ForecastModel_4 .
+:Forecast_020 :generatedByModel :ForecastModel_6 .
+:Forecast_021 :generatedByModel :ForecastModel_7 .
+:Forecast_022 :generatedByModel :ForecastModel_6 .
+:Forecast_023 :generatedByModel :ForecastModel_8 .
+:Forecast_024 :generatedByModel :ForecastModel_5 .
+:Forecast_025 :generatedByModel :ForecastModel_4 .
+:Forecast_026 :generatedByModel :ForecastModel_6 .
+:Forecast_027 :generatedByModel :ForecastModel_8 .
+:Forecast_028 :generatedByModel :ForecastModel_1 .
+:Forecast_029 :generatedByModel :ForecastModel_4 .
+:Forecast_030 :generatedByModel :ForecastModel_1 .
+:Forecast_031 :generatedByModel :ForecastModel_5 .
+:Forecast_032 :generatedByModel :ForecastModel_7 .
+:Forecast_033 :generatedByModel :ForecastModel_7 .
+:Forecast_034 :generatedByModel :ForecastModel_4 .
+:Forecast_035 :generatedByModel :ForecastModel_7 .
+:Forecast_036 :generatedByModel :ForecastModel_2 .
+:Forecast_037 :generatedByModel :ForecastModel_6 .
+:Forecast_038 :generatedByModel :ForecastModel_3 .
+:Forecast_039 :generatedByModel :ForecastModel_1 .
+:Forecast_040 :generatedByModel :ForecastModel_8 .
+:Forecast_041 :generatedByModel :ForecastModel_6 .
+:Forecast_042 :generatedByModel :ForecastModel_5 .
+:Forecast_043 :generatedByModel :ForecastModel_5 .
+:Forecast_044 :generatedByModel :ForecastModel_6 .
+:Forecast_045 :generatedByModel :ForecastModel_5 .
+:Forecast_046 :generatedByModel :ForecastModel_8 .
+:Forecast_047 :generatedByModel :ForecastModel_1 .
+:Forecast_048 :generatedByModel :ForecastModel_3 .
+:Forecast_049 :generatedByModel :ForecastModel_2 .
+:Forecast_050 :generatedByModel :ForecastModel_7 .
+:Forecast_051 :generatedByModel :ForecastModel_7 .
+:Forecast_052 :generatedByModel :ForecastModel_1 .
+:Forecast_053 :generatedByModel :ForecastModel_6 .
+:Forecast_054 :generatedByModel :ForecastModel_6 .
+:Forecast_055 :generatedByModel :ForecastModel_6 .
+:Forecast_056 :generatedByModel :ForecastModel_8 .
+:Forecast_057 :generatedByModel :ForecastModel_5 .
+:Forecast_058 :generatedByModel :ForecastModel_5 .
+:Forecast_059 :generatedByModel :ForecastModel_6 .
+:Forecast_060 :generatedByModel :ForecastModel_5 .
+:Forecast_001 :forecastForSubstation :Substation_5 .
+:Forecast_002 :forecastForSubstation :Substation_16 .
+:Forecast_003 :forecastForSubstation :Substation_29 .
+:Forecast_004 :forecastForSubstation :Substation_15 .
+:Forecast_005 :forecastForSubstation :Substation_18 .
+:Forecast_006 :forecastForSubstation :Substation_12 .
+:Forecast_007 :forecastForSubstation :Substation_18 .
+:Forecast_008 :forecastForSubstation :Substation_7 .
+:Forecast_009 :forecastForSubstation :Substation_22 .
+:Forecast_010 :forecastForSubstation :Substation_20 .
+:Forecast_011 :forecastForSubstation :Substation_23 .
+:Forecast_012 :forecastForSubstation :Substation_29 .
+:Forecast_013 :forecastForSubstation :Substation_22 .
+:Forecast_014 :forecastForSubstation :Substation_26 .
+:Forecast_015 :forecastForSubstation :Substation_22 .
+:Forecast_016 :forecastForSubstation :Substation_8 .
+:Forecast_017 :forecastForSubstation :Substation_16 .
+:Forecast_018 :forecastForSubstation :Substation_16 .
+:Forecast_019 :forecastForSubstation :Substation_12 .
+:Forecast_020 :forecastForSubstation :Substation_25 .
+:Forecast_021 :forecastForSubstation :Substation_5 .
+:Forecast_022 :forecastForSubstation :Substation_8 .
+:Forecast_023 :forecastForSubstation :Substation_8 .
+:Forecast_024 :forecastForSubstation :Substation_14 .
+:Forecast_025 :forecastForSubstation :Substation_30 .
+:Forecast_026 :forecastForSubstation :Substation_7 .
+:Forecast_027 :forecastForSubstation :Substation_17 .
+:Forecast_028 :forecastForSubstation :Substation_3 .
+:Forecast_029 :forecastForSubstation :Substation_7 .
+:Forecast_030 :forecastForSubstation :Substation_11 .
+:Forecast_031 :forecastForSubstation :Substation_19 .
+:Forecast_032 :forecastForSubstation :Substation_5 .
+:Forecast_033 :forecastForSubstation :Substation_13 .
+:Forecast_034 :forecastForSubstation :Substation_13 .
+:Forecast_035 :forecastForSubstation :Substation_18 .
+:Forecast_036 :forecastForSubstation :Substation_5 .
+:Forecast_037 :forecastForSubstation :Substation_28 .
+:Forecast_038 :forecastForSubstation :Substation_7 .
+:Forecast_039 :forecastForSubstation :Substation_2 .
+:Forecast_040 :forecastForSubstation :Substation_18 .
+:Forecast_041 :forecastForSubstation :Substation_21 .
+:Forecast_042 :forecastForSubstation :Substation_20 .
+:Forecast_043 :forecastForSubstation :Substation_17 .
+:Forecast_044 :forecastForSubstation :Substation_23 .
+:Forecast_045 :forecastForSubstation :Substation_28 .
+:Forecast_046 :forecastForSubstation :Substation_10 .
+:Forecast_047 :forecastForSubstation :Substation_20 .
+:Forecast_048 :forecastForSubstation :Substation_29 .
+:Forecast_049 :forecastForSubstation :Substation_7 .
+:Forecast_050 :forecastForSubstation :Substation_5 .
+:Forecast_051 :forecastForSubstation :Substation_18 .
+:Forecast_052 :forecastForSubstation :Substation_24 .
+:Forecast_053 :forecastForSubstation :Substation_23 .
+:Forecast_054 :forecastForSubstation :Substation_6 .
+:Forecast_055 :forecastForSubstation :Substation_23 .
+:Forecast_056 :forecastForSubstation :Substation_7 .
+:Forecast_057 :forecastForSubstation :Substation_8 .
+:Forecast_058 :forecastForSubstation :Substation_24 .
+:Forecast_059 :forecastForSubstation :Substation_17 .
+:Forecast_060 :forecastForSubstation :Substation_4 .
+:Dispatcher_5 :usesForecast :Forecast_001 .
+:Dispatcher_6 :usesForecast :Forecast_002 .
+:Dispatcher_9 :usesForecast :Forecast_003 .
+:Dispatcher_5 :usesForecast :Forecast_004 .
+:Dispatcher_8 :usesForecast :Forecast_005 .
+:Dispatcher_2 :usesForecast :Forecast_006 .
+:Dispatcher_8 :usesForecast :Forecast_007 .
+:Dispatcher_7 :usesForecast :Forecast_008 .
+:Dispatcher_2 :usesForecast :Forecast_009 .
+:Dispatcher_10 :usesForecast :Forecast_010 .
+:Dispatcher_3 :usesForecast :Forecast_011 .
+:Dispatcher_9 :usesForecast :Forecast_012 .
+:Dispatcher_2 :usesForecast :Forecast_013 .
+:Dispatcher_6 :usesForecast :Forecast_014 .
+:Dispatcher_2 :usesForecast :Forecast_015 .
+:Dispatcher_8 :usesForecast :Forecast_016 .
+:Dispatcher_6 :usesForecast :Forecast_017 .
+:Dispatcher_6 :usesForecast :Forecast_018 .
+:Dispatcher_2 :usesForecast :Forecast_019 .
+:Dispatcher_5 :usesForecast :Forecast_020 .
+:Dispatcher_5 :usesForecast :Forecast_021 .
+:Dispatcher_8 :usesForecast :Forecast_022 .
+:Dispatcher_8 :usesForecast :Forecast_023 .
+:Dispatcher_4 :usesForecast :Forecast_024 .
+:Dispatcher_10 :usesForecast :Forecast_025 .
+:Dispatcher_7 :usesForecast :Forecast_026 .
+:Dispatcher_7 :usesForecast :Forecast_027 .
+:Dispatcher_3 :usesForecast :Forecast_028 .
+:Dispatcher_7 :usesForecast :Forecast_029 .
+:Dispatcher_1 :usesForecast :Forecast_030 .
+:Dispatcher_9 :usesForecast :Forecast_031 .
+:Dispatcher_5 :usesForecast :Forecast_032 .
+:Dispatcher_3 :usesForecast :Forecast_033 .
+:Dispatcher_3 :usesForecast :Forecast_034 .
+:Dispatcher_8 :usesForecast :Forecast_035 .
+:Dispatcher_5 :usesForecast :Forecast_036 .
+:Dispatcher_8 :usesForecast :Forecast_037 .
+:Dispatcher_7 :usesForecast :Forecast_038 .
+:Dispatcher_2 :usesForecast :Forecast_039 .
+:Dispatcher_8 :usesForecast :Forecast_040 .
+:Dispatcher_1 :usesForecast :Forecast_041 .
+:Dispatcher_10 :usesForecast :Forecast_042 .
+:Dispatcher_7 :usesForecast :Forecast_043 .
+:Dispatcher_3 :usesForecast :Forecast_044 .
+:Dispatcher_8 :usesForecast :Forecast_045 .
+:Dispatcher_10 :usesForecast :Forecast_046 .
+:Dispatcher_10 :usesForecast :Forecast_047 .
+:Dispatcher_9 :usesForecast :Forecast_048 .
+:Dispatcher_7 :usesForecast :Forecast_049 .
+:Dispatcher_5 :usesForecast :Forecast_050 .
+:Dispatcher_8 :usesForecast :Forecast_051 .
+:Dispatcher_4 :usesForecast :Forecast_052 .
+:Dispatcher_3 :usesForecast :Forecast_053 .
+:Dispatcher_6 :usesForecast :Forecast_054 .
+:Dispatcher_3 :usesForecast :Forecast_055 .
+:Dispatcher_7 :usesForecast :Forecast_056 .
+:Dispatcher_8 :usesForecast :Forecast_057 .
+:Dispatcher_4 :usesForecast :Forecast_058 .
+:Dispatcher_7 :usesForecast :Forecast_059 .
+:Dispatcher_4 :usesForecast :Forecast_060 .

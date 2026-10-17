@@ -1,0 +1,203 @@
+{
+ "B1": {
+  "rows": 5,
+  "cypher_vs_sparql_equal": true,
+  "result": [
+   {
+    "substation": "Substation_13",
+    "ratio": 0.9435,
+    "dispatcher": "Dispatcher_3"
+   },
+   {
+    "substation": "Substation_18",
+    "ratio": 0.9533,
+    "dispatcher": "Dispatcher_8"
+   },
+   {
+    "substation": "Substation_20",
+    "ratio": 0.8642,
+    "dispatcher": "Dispatcher_10"
+   },
+   {
+    "substation": "Substation_24",
+    "ratio": 0.8803,
+    "dispatcher": "Dispatcher_4"
+   },
+   {
+    "substation": "Substation_9",
+    "ratio": 0.8519,
+    "dispatcher": null
+   }
+  ]
+ },
+ "B2": {
+  "rows": 6,
+  "cypher_vs_sparql_equal": true,
+  "result": [
+   {
+    "region": "Івано-Франківська область",
+    "substations": 5,
+    "capacity": 2830,
+    "load": 1858.2
+   },
+   {
+    "region": "Волинська область",
+    "substations": 5,
+    "capacity": 6700,
+    "load": 4145.3
+   },
+   {
+    "region": "Закарпатська область",
+    "substations": 5,
+    "capacity": 4900,
+    "load": 2899.5
+   },
+   {
+    "region": "Львівська область",
+    "substations": 5,
+    "capacity": 3280,
+    "load": 1787.6
+   },
+   {
+    "region": "Рівненська область",
+    "substations": 5,
+    "capacity": 2430,
+    "load": 1834.7
+   },
+   {
+    "region": "Тернопільська область",
+    "substations": 5,
+    "capacity": 3050,
+    "load": 1847.1
+   }
+  ]
+ },
+ "B3": {
+  "rows": 12,
+  "cypher_vs_sparql_equal": true,
+  "result": [
+   {
+    "meter": "Meter_AMI11149",
+    "consumer": "Consumer_0010",
+    "substation": "Substation_8"
+   },
+   {
+    "meter": "Meter_AMI11253",
+    "consumer": "Consumer_0011",
+    "substation": "Substation_23"
+   },
+   {
+    "meter": "Meter_AMI11306",
+    "consumer": "Consumer_0012",
+    "substation": "Substation_28"
+   },
+   {
+    "meter": "Meter_AMI11503",
+    "consumer": "Consumer_0016",
+    "substation": "Substation_21"
+   },
+   {
+    "meter": "Meter_AMI12037",
+    "consumer": "Consumer_0026",
+    "substation": "Substation_3"
+   },
+   {
+    "meter": "Meter_AMI12276",
+    "consumer": "Consumer_0030",
+    "substation": "Substation_30"
+   },
+   {
+    "meter": "Meter_AMI12649",
+    "consumer": "Consumer_0039",
+    "substation": "Substation_14"
+   },
+   {
+    "meter": "Meter_AMI12706",
+    "consumer": "Consumer_0041",
+    "substation": "Substation_14"
+   },
+   {
+    "meter": "Meter_AMI14568",
+    "consumer": "Consumer_0077",
+    "substation": "Substation_14"
+   },
+   {
+    "meter": "Meter_AMI17346",
+    "consumer": "Consumer_0128",
+    "substation": "Substation_13"
+   },
+   {
+    "meter": "Meter_AMI18258",
+    "consumer": "Consumer_0142",
+    "substation": "Substation_8"
+   },
+   {
+    "meter": "Meter_AMI18397",
+    "consumer": "Consumer_0146",
+    "substation": "Substation_21"
+   }
+  ]
+ },
+ "B4": {
+  "rows": 5,
+  "cypher_vs_sparql_equal": true,
+  "result": [
+   {
+    "substation": "Substation_1",
+    "consumers": 5
+   },
+   {
+    "substation": "Substation_13",
+    "consumers": 2
+   },
+   {
+    "substation": "Substation_19",
+    "consumers": 2
+   },
+   {
+    "substation": "Substation_25",
+    "consumers": 2
+   },
+   {
+    "substation": "Substation_7",
+    "consumers": 4
+   }
+  ]
+ },
+ "B5": {
+  "rows": 6,
+  "cypher_vs_sparql_equal": true,
+  "result": [
+   {
+    "model": "ForecastModel_1",
+    "forecasts": 7,
+    "dispatchers": 6
+   },
+   {
+    "model": "ForecastModel_3",
+    "forecasts": 9,
+    "dispatchers": 7
+   },
+   {
+    "model": "ForecastModel_4",
+    "forecasts": 5,
+    "dispatchers": 5
+   },
+   {
+    "model": "ForecastModel_5",
+    "forecasts": 10,
+    "dispatchers": 6
+   },
+   {
+    "model": "ForecastModel_6",
+    "forecasts": 11,
+    "dispatchers": 6
+   },
+   {
+    "model": "ForecastModel_8",
+    "forecasts": 8,
+    "dispatchers": 5
+   }
+  ]
+ }
+}

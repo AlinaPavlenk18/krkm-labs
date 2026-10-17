@@ -1,0 +1,5 @@
+# B2 · Агрегація: кількість, потужність і навантаження підстанцій за регіонами (GraphDB)
+PREFIX : <http://www.semanticweb.org/energy-forecasting#>
+SELECT ?region (COUNT(?s) AS ?substations) (SUM(?c) AS ?capacity) (SUM(?l) AS ?load) WHERE {
+  ?s a :Substation ; :region ?region ; :nominalCapacity ?c ; :currentLoad ?l .
+} GROUP BY ?region ORDER BY ?region

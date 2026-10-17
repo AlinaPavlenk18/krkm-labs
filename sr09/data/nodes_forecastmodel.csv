@@ -1,0 +1,9 @@
+id,name,modelType,accuracy
+ForecastModel_1,Модель LSTM №1,LSTM,92.0
+ForecastModel_2,Модель GRU №2,GRU,81.1
+ForecastModel_3,Модель VAR №3,VAR,80.2
+ForecastModel_4,Модель ARIMA №4,ARIMA,79.5
+ForecastModel_5,Модель LSTM №5,LSTM,85.1
+ForecastModel_6,Модель GRU №6,GRU,79.1
+ForecastModel_7,Модель VAR №7,VAR,85.4
+ForecastModel_8,Модель LSTM №8,LSTM,81.9

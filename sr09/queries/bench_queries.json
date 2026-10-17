@@ -1,0 +1,62 @@
+[
+ {
+  "id": "B1",
+  "title": "Фільтр + OPTIONAL: перевантажені підстанції (≥ 85 %) і диспетчер",
+  "kind": "фільтр за виразом, необов'язковий зв'язок",
+  "cypher": "MATCH (s:Substation) WHERE s.currentLoad >= 0.85 * s.nominalCapacity OPTIONAL MATCH (d:Dispatcher)-[:MANAGES]->(s) RETURN s.id AS substation, s.currentLoad / s.nominalCapacity AS ratio, d.id AS dispatcher ORDER BY substation",
+  "sparql": "PREFIX : <http://www.semanticweb.org/energy-forecasting#>\nSELECT ?substation ?ratio ?dispatcher WHERE {\n  ?s a :Substation ; :currentLoad ?l ; :nominalCapacity ?c .\n  FILTER (?l >= 0.85 * ?c)\n  OPTIONAL { ?s :managedByDispatcher ?d . BIND (STRAFTER(STR(?d), \"#\") AS ?dispatcher) }\n  BIND (?l / ?c AS ?ratio)\n  BIND (STRAFTER(STR(?s), \"#\") AS ?substation)\n} ORDER BY ?substation",
+  "key": [
+   "substation",
+   "ratio",
+   "dispatcher"
+  ]
+ },
+ {
+  "id": "B2",
+  "title": "Агрегація: кількість, потужність і навантаження підстанцій за регіонами",
+  "kind": "GROUP BY / агрегати",
+  "cypher": "MATCH (s:Substation)-[:LOCATED_IN]->(r:Region) RETURN r.name AS region, count(s) AS substations, sum(s.nominalCapacity) AS capacity, sum(s.currentLoad) AS load ORDER BY region",
+  "sparql": "PREFIX : <http://www.semanticweb.org/energy-forecasting#>\nSELECT ?region (COUNT(?s) AS ?substations) (SUM(?c) AS ?capacity) (SUM(?l) AS ?load) WHERE {\n  ?s a :Substation ; :region ?region ; :nominalCapacity ?c ; :currentLoad ?l .\n} GROUP BY ?region ORDER BY ?region",
+  "key": [
+   "region",
+   "substations",
+   "capacity",
+   "load"
+  ]
+ },
+ {
+  "id": "B3",
+  "title": "З'єднання (2 зв'язки): несправні лічильники, власник і підстанція",
+  "kind": "шаблон з 2 переходами + фільтр за значенням",
+  "cypher": "MATCH (c:Consumer)-[:HAS_METER]->(m:Meter {status: 'несправний'}) MATCH (c)-[:CONNECTED_TO]->(s:Substation) RETURN m.id AS meter, c.id AS consumer, s.id AS substation ORDER BY meter",
+  "sparql": "PREFIX : <http://www.semanticweb.org/energy-forecasting#>\nSELECT ?meter ?consumer ?substation WHERE {\n  ?c :hasMeter ?m ; :connectedToSubstation ?s .\n  ?m :meterStatus \"несправний\" .\n  BIND (STRAFTER(STR(?m), \"#\") AS ?meter)\n  BIND (STRAFTER(STR(?c), \"#\") AS ?consumer)\n  BIND (STRAFTER(STR(?s), \"#\") AS ?substation)\n} ORDER BY ?meter",
+  "key": [
+   "meter",
+   "consumer",
+   "substation"
+  ]
+ },
+ {
+  "id": "B4",
+  "title": "Транзитивний обхід: зона впливу аварії на кореневій ПС №1 і споживачі в ній",
+  "kind": "шлях змінної довжини / property path",
+  "cypher": "MATCH (root:Substation {id: 'Substation_1'}) OPTIONAL MATCH (root)-[:FEEDS*1..10]->(d:Substation) WITH root, collect(DISTINCT d) AS down UNWIND [root] + down AS s OPTIONAL MATCH (c:Consumer)-[:CONNECTED_TO]->(s) RETURN s.id AS substation, count(c) AS consumers ORDER BY substation",
+  "sparql": "PREFIX : <http://www.semanticweb.org/energy-forecasting#>\nSELECT ?substation (COUNT(?c) AS ?consumers) WHERE {\n  :Substation_1 :upstreamOf* ?s .\n  OPTIONAL { ?c :connectedToSubstation ?s }\n  BIND (STRAFTER(STR(?s), \"#\") AS ?substation)\n} GROUP BY ?substation ORDER BY ?substation",
+  "key": [
+   "substation",
+   "consumers"
+  ]
+ },
+ {
+  "id": "B5",
+  "title": "Ланцюг глибини 4: прогнози, скомпрометовані несправними лічильниками",
+  "kind": "довгий шаблон (4 переходи) + DISTINCT-агрегати",
+  "cypher": "MATCH (m:Meter {status: 'несправний'})-[:RECORDED]->(x:Measurement)<-[:TRAINED_ON]-(fm:ForecastModel)-[:GENERATED]->(f:Forecast)<-[:USES_FORECAST]-(d:Dispatcher) RETURN fm.id AS model, count(DISTINCT f) AS forecasts, count(DISTINCT d) AS dispatchers ORDER BY model",
+  "sparql": "PREFIX : <http://www.semanticweb.org/energy-forecasting#>\nSELECT ?model (COUNT(DISTINCT ?f) AS ?forecasts) (COUNT(DISTINCT ?d) AS ?dispatchers) WHERE {\n  ?m :meterStatus \"несправний\" .\n  ?x :measuredByMeter ?m .\n  ?fm :trainedOnMeasurement ?x .\n  ?f :generatedByModel ?fm .\n  ?d :usesForecast ?f .\n  BIND (STRAFTER(STR(?fm), \"#\") AS ?model)\n} GROUP BY ?model ORDER BY ?model",
+  "key": [
+   "model",
+   "forecasts",
+   "dispatchers"
+  ]
+ }
+]

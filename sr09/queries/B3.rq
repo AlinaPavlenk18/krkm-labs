@@ -1,0 +1,9 @@
+# B3 · З'єднання (2 зв'язки): несправні лічильники, власник і підстанція (GraphDB)
+PREFIX : <http://www.semanticweb.org/energy-forecasting#>
+SELECT ?meter ?consumer ?substation WHERE {
+  ?c :hasMeter ?m ; :connectedToSubstation ?s .
+  ?m :meterStatus "несправний" .
+  BIND (STRAFTER(STR(?m), "#") AS ?meter)
+  BIND (STRAFTER(STR(?c), "#") AS ?consumer)
+  BIND (STRAFTER(STR(?s), "#") AS ?substation)
+} ORDER BY ?meter

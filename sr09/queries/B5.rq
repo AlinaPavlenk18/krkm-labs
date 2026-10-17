@@ -1,0 +1,10 @@
+# B5 · Ланцюг глибини 4: прогнози, скомпрометовані несправними лічильниками (GraphDB)
+PREFIX : <http://www.semanticweb.org/energy-forecasting#>
+SELECT ?model (COUNT(DISTINCT ?f) AS ?forecasts) (COUNT(DISTINCT ?d) AS ?dispatchers) WHERE {
+  ?m :meterStatus "несправний" .
+  ?x :measuredByMeter ?m .
+  ?fm :trainedOnMeasurement ?x .
+  ?f :generatedByModel ?fm .
+  ?d :usesForecast ?f .
+  BIND (STRAFTER(STR(?fm), "#") AS ?model)
+} GROUP BY ?model ORDER BY ?model

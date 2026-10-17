@@ -1,0 +1,7 @@
+{
+ "engine": "neo4j",
+ "nodes": 664,
+ "relationships": 1128,
+ "schema_s": 5.79,
+ "load_s": 4.7
+}

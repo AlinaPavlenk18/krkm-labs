@@ -1,0 +1,6 @@
+{
+ "engine": "graphdb",
+ "triples": 4120,
+ "clear_s": 3.85,
+ "load_s": 2.32
+}

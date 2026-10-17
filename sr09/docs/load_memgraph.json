@@ -1,0 +1,7 @@
+{
+ "engine": "memgraph",
+ "nodes": 664,
+ "relationships": 1128,
+ "schema_s": 0.03,
+ "load_s": 0.15
+}
