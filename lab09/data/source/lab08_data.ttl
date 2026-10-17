@@ -1,0 +1,177 @@
+@prefix : <http://www.semanticweb.org/energy-forecasting#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Consumer_1002 a :ResidentialConsumer ;
+    :address "м. Львів, вул. Шевченка, 45, кв. 12" ;
+    :connectedToSubstation :Substation_12 ;
+    :consumerCategory "побутовий" ;
+    :contractLimit "10.0"^^xsd:double ;
+    :hasMeter :Meter_AMI10452 ;
+    skos:prefLabel "Споживач №1002 (побутовий)"@uk .
+
+:Consumer_3310 a :CommercialConsumer ;
+    :address "м. Львів, просп. Свободи, 28" ;
+    :connectedToSubstation :Substation_5 ;
+    :consumerCategory "комерційний" ;
+    :contractLimit "120.0"^^xsd:double ;
+    :hasMeter :Meter_AMI77410 ;
+    skos:prefLabel "Споживач №3310 (комерційний)"@uk .
+
+:Consumer_4521 a :IndustrialConsumer ;
+    :address "м. Львів, вул. Промислова, 12" ;
+    :connectedToSubstation :Substation_7 ;
+    :consumerCategory "промисловий" ;
+    :contractLimit "450.0"^^xsd:double ;
+    :hasMeter :Meter_AMI99231 ;
+    skos:prefLabel "Споживач №4521 (промисловий)"@uk .
+
+:Substation_9 a :Substation ;
+    :currentLoad "120.0"^^xsd:double ;
+    :nominalCapacity "400.0"^^xsd:double ;
+    :region "Закарпатська область" ;
+    skos:prefLabel "Підстанція №9"@uk .
+
+:WeatherCondition_20260110 a :WeatherCondition ;
+    :cloudCover "суцільна" ;
+    :influencesMeasurement :Measurement_003 ;
+    :influencesModel :ForecastModel_LSTM2 ;
+    :temperature "-12.0"^^xsd:double ;
+    skos:prefLabel "Погода 10.01.2026"@uk .
+
+:WeatherCondition_20260924 a :WeatherCondition ;
+    :cloudCover "ясно" ;
+    :influencesMeasurement :Measurement_001 ;
+    :influencesModel :ForecastModel_LSTM1 ;
+    :temperature "-5.0"^^xsd:double ;
+    skos:prefLabel "Погода 24.09.2026"@uk .
+
+:WeatherCondition_20260925 a :WeatherCondition ;
+    :cloudCover "мінлива" ;
+    :influencesMeasurement :Measurement_002 ;
+    :influencesModel :ForecastModel_VAR1 ;
+    :temperature "-3.0"^^xsd:double ;
+    skos:prefLabel "Погода 25.09.2026"@uk .
+
+:Dispatcher_1 a :Dispatcher ;
+    :qualification "старший" ;
+    :shift "ранкова" ;
+    :usesForecast :Forecast_20260924 ;
+    skos:prefLabel "Диспетчер №1 (старший)"@uk .
+
+:Dispatcher_2 a :Dispatcher ;
+    :qualification "молодший" ;
+    :shift "вечірня" ;
+    :usesForecast :Forecast_20260925 ;
+    skos:prefLabel "Диспетчер №2 (молодший)"@uk .
+
+:Dispatcher_3 a :Dispatcher ;
+    :qualification "старший" ;
+    :shift "нічна" ;
+    :usesForecast :Forecast_20260110 ;
+    skos:prefLabel "Диспетчер №3 (старший)"@uk .
+
+:Forecast_20260110 a :Forecast ;
+    :errorPercentage "11.0"^^xsd:double ;
+    :forecastPeriod "доба" ;
+    :generatedByModel :ForecastModel_LSTM2 ;
+    :predictedConsumption "2480.0"^^xsd:double ;
+    skos:prefLabel "Прогноз на 10.01.2026"@uk .
+
+:Forecast_20260924 a :Forecast ;
+    :errorPercentage "4.0"^^xsd:double ;
+    :forecastPeriod "доба" ;
+    :generatedByModel :ForecastModel_LSTM1 ;
+    :predictedConsumption "1250.0"^^xsd:double ;
+    skos:prefLabel "Прогноз на 24.09.2026"@uk .
+
+:Forecast_20260925 a :Forecast ;
+    :errorPercentage "7.5"^^xsd:double ;
+    :forecastPeriod "доба" ;
+    :generatedByModel :ForecastModel_VAR1 ;
+    :predictedConsumption "210.0"^^xsd:double ;
+    skos:prefLabel "Прогноз на 25.09.2026"@uk .
+
+:Substation_7 a :Substation ;
+    :currentLoad "870.0"^^xsd:double ;
+    :managedByDispatcher :Dispatcher_1 ;
+    :nominalCapacity "1000.0"^^xsd:double ;
+    :region "Львівська область" ;
+    :upstreamOf :Substation_5 ;
+    skos:prefLabel "Підстанція №7"@uk .
+
+:ForecastModel_LSTM1 a :MachineLearningModel ;
+    :accuracy "92.0"^^xsd:double ;
+    :modelType "LSTM" ;
+    :trainedOnMeasurement :Measurement_001 ;
+    :trainingDate "2026-01-15"^^xsd:date ;
+    skos:prefLabel "Модель LSTM №1"@uk .
+
+:ForecastModel_LSTM2 a :MachineLearningModel ;
+    :accuracy "78.0"^^xsd:double ;
+    :modelType "LSTM" ;
+    :trainedOnMeasurement :Measurement_003 ;
+    :trainingDate "2025-06-20"^^xsd:date ;
+    skos:prefLabel "Модель LSTM №2 (застаріла)"@uk .
+
+:ForecastModel_VAR1 a :StatisticalModel ;
+    :accuracy "84.5"^^xsd:double ;
+    :modelType "VAR" ;
+    :trainedOnMeasurement :Measurement_002 ;
+    :trainingDate "2025-11-01"^^xsd:date ;
+    skos:prefLabel "Модель VAR №1"@uk .
+
+:Measurement_001 a :Measurement ;
+    :consumptionValue "52.4"^^xsd:double ;
+    :measuredByMeter :Meter_AMI99231 ;
+    :timestamp "2026-09-24T08:00:00"^^xsd:dateTime ;
+    :voltage "231.0"^^xsd:double ;
+    skos:prefLabel "Вимірювання №001"@uk .
+
+:Measurement_002 a :Measurement ;
+    :consumptionValue "8.1"^^xsd:double ;
+    :measuredByMeter :Meter_AMI10452 ;
+    :timestamp "2026-09-25T08:00:00"^^xsd:dateTime ;
+    :voltage "228.5"^^xsd:double ;
+    skos:prefLabel "Вимірювання №002"@uk .
+
+:Measurement_003 a :Measurement ;
+    :consumptionValue "95.6"^^xsd:double ;
+    :measuredByMeter :Meter_AMI77410 ;
+    :timestamp "2026-01-10T08:00:00"^^xsd:dateTime ;
+    :voltage "233.0"^^xsd:double ;
+    skos:prefLabel "Вимірювання №003"@uk .
+
+:Meter_AMI10452 a :Meter ;
+    :meterStatus "активний" ;
+    :meterType "однофазний" ;
+    :readingInterval 60 ;
+    skos:prefLabel "Лічильник AMI-10452"@uk .
+
+:Meter_AMI77410 a :Meter ;
+    :meterStatus "несправний" ;
+    :meterType "трифазний" ;
+    :readingInterval 30 ;
+    skos:prefLabel "Лічильник AMI-77410"@uk .
+
+:Meter_AMI99231 a :Meter ;
+    :meterStatus "активний" ;
+    :meterType "трифазний" ;
+    :readingInterval 30 ;
+    skos:prefLabel "Лічильник AMI-99231"@uk .
+
+:Substation_12 a :Substation ;
+    :currentLoad "90.0"^^xsd:double ;
+    :managedByDispatcher :Dispatcher_2 ;
+    :nominalCapacity "250.0"^^xsd:double ;
+    :region "Львівська область" ;
+    skos:prefLabel "Підстанція №12"@uk .
+
+:Substation_5 a :Substation ;
+    :currentLoad "468.0"^^xsd:double ;
+    :managedByDispatcher :Dispatcher_3 ;
+    :nominalCapacity "500.0"^^xsd:double ;
+    :region "Волинська область" ;
+    :upstreamOf :Substation_12 ;
+    skos:prefLabel "Підстанція №5"@uk .
+

@@ -1,0 +1,25 @@
+id,claim,type,source,verification_level,status,comment
+C01,Граф після імпорту містить 190 вузлів і 314 зв'язків,факт,scripts/triples_to_lpg.py; scripts/verify_kuzu.py,V2,verified,Neo4j: запит 5.1 → 190 / 314 (рис. 6)
+C02,Повторний LOAD CSV із MERGE не змінює кількість вузлів і зв'язків (ідемпотентність),правило,Neo4j Cypher Manual: MERGE; scripts/run_import.py,V2,verified,Neo4j: після повторного імпорту 190 / 314 (рис. 6)
+C03,Унікальне обмеження відхиляє CREATE вузла з наявним id з кодом Neo.ClientError.Schema.ConstraintValidationFailed,факт,https://neo4j.com/docs/cypher-manual/current/constraints/,V2,verified,"Neo4j: Neo.ClientError.Schema.ConstraintValidationFailed, «Node(181) already exists with label `Substation` and property `id` = 'Substation_7'» (рис. 7)"
+C04,Обмеження існування й типу властивості доступні лише в Enterprise Edition,факт,https://neo4j.com/docs/cypher-manual/current/constraints/,V1,verified,тому винесено в необов'язковий 01b_constraints_enterprise.cypher
+C05,"GDS PageRank за замовчуванням: dampingFactor 0.85, maxIterations 20, tolerance 1e-7, без нормалізації",факт,https://neo4j.com/docs/graph-data-science/current/algorithms/page-rank/,V1,verified,ці параметри відтворено в scripts/expected_gds.py
+C06,Вбудована роль reader дозволяє лише читання даних (крім бази system),факт,https://neo4j.com/docs/operations-manual/current/authentication-authorization/built-in-roles/,V1,verified,використано для t2c_reader
+C07,Створення користувачів і призначення ролей потребує Enterprise Edition (Neo4j Desktop),факт,Neo4j Operations Manual (RBAC),V1,pending,сторінка built-in roles прямо цього не вказує; перевірити виконанням 07_t2c_reader.cypher
+C08,"Перевантажені (≥ 85 %) підстанції: №5 93,6 %, №4 90 %, №7 87 %, №11 86 %",факт,queries/q02; docs/expected_results.json,V3,verified,"Neo4j (Q2) + Kùzu + ручна перевірка ПС №5, №7 за data.ttl"
+C09,"Аварія на ПС №1 зачіпає 10 підстанцій до глибини 3 і 35 споживачів (5191,5 кВт)",факт,queries/q09,V3,verified,Neo4j (Q9) + Kùzu; ланцюг 7→5→12 перевірено вручну (M2)
+C10,"Прогноз з найбільшою похибкою (12,3 %) згенеровано LSTM №2 (точність 78 %)",факт,queries/q05,V2,verified,"Neo4j (Q5): Forecast_20261004_2, 12.3 %, LSTM2, середня похибка 11.23"
+C11,Дані несправних лічильників скомпрометували 9 прогнозів трьох моделей,факт,queries/q10,V3,verified,Neo4j (Q10) + Kùzu + ручна перевірка ланцюга AMI-77410 (M3)
+C12,Індекс на Measurement.timestamp замінює NodeByLabelScan на NodeIndexSeekByRange,правило,Neo4j Cypher Manual: Planning and tuning,V2,verified,Neo4j PROFILE: NodeByLabelScan (48 рядків) → NodeIndexSeekByRange; db accesses 184 → 53
+C13,Переписування з WITH зменшує проміжні рядки запиту B з 36 до 18,гіпотеза,розрахунок за rels_manages/uses_forecast,V2,verified,"Neo4j PROFILE: проміжних рядків 36 → 18, db accesses 415 → 248"
+C14,Найвищий PageRank (UNDIRECTED) мають моделі GRU1 і LSTM3,факт,docs/expected_gds.json,V2,verified,"GDS: GRU1 3.2789, LSTM3 2.8169; порядок топ-10 збігся з розрахунком у Python"
+C15,Ненапрямлений PageRank виявляє каскадно критичні підстанції,гіпотеза,LLM (пропозиція),V3,rejected,"ПС №1 (найбільший каскадний вплив, Q9) не в топ-10: PageRank міряє зв'язність, не критичність"
+C16,"Louvain виділяє ≥ 3 змістовні спільноти, що відповідають зонам диспетчерів",факт,docs/expected_gds.json,V2,verified,"GDS: 12 спільнот, модулярність 0.6204; 5 із 10 найбільших — зони диспетчерів №1–№5"
+C17,Спільнота Louvain підказує диспетчера №5 як відповідального за ПС №9,гіпотеза,docs/gds_report.md,V2,rejected,"GDS: диспетчер №5 у спільноті 170 разом із ПС №2, №3; ПС №9 до неї не входить — гіпотезу відхилено"
+C18,5 питань ЛР8 дають однакові результати у SPARQL і Cypher,факт,scripts/compare_sparql_cypher.py,V2,verified,rdflib+owlrl vs Kùzu; без RDFS-виведення S4 дає 0 рядків
+C19,Text-to-Cypher із схемою в підказці: 15/15 коректних (Opus-агент),факт,tests/t2c.jsonl (R1),V4,verified,Kùzu; підтвердити t2c_eval.py --engine neo4j
+C20,Text-to-Cypher із схемою: 15/15 для меншої моделі Haiku,факт,tests/t2c.jsonl (R2),V4,verified,"автоматично 14/15; T14 — дефект Kùzu, перевірено вручну"
+C21,Підказка без схеми достатня для text-to-Cypher,гіпотеза,абляція R3,V4,rejected,"R3: 5/15 (33 %), 9 запитів з вигаданими мітками/властивостями"
+C22,"Neo4j не повідомляє помилкою про неіснуючу властивість, а повертає null",правило,Neo4j Cypher Manual,V1,pending,перевірити: MATCH (s:Substation) RETURN s.capacity LIMIT 1
+C23,GQL стандартизовано як ISO/IEC 39075:2024,факт,ISO/IEC 39075:2024,V1,verified,згадано в порівнянні SPARQL/Cypher
+C24,Синтетичні індивіди (159 з 190 вузлів; ще 6 вузлів Region виведено з рядкових значень) не є реальними об'єктами енергомережі,правило,scripts/generate_triples.py (seed=42),V2,verified,позначено source=synthetic:gen_v1(seed=42) на кожному вузлі й зв'язку

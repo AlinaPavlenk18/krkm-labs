@@ -1,0 +1,790 @@
+[
+ {
+  "id": "S1",
+  "cq": "KQ2, KQ8",
+  "title": "Перевантажені підстанції (≥ 85 %) і диспетчер",
+  "sparql": "PREFIX :     <http://www.semanticweb.org/energy-forecasting#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nSELECT ?name ?load ?capacity (ROUND(100 * ?load / ?capacity) AS ?percent) ?dispatcher\nWHERE {\n  ?s a :Substation ;\n     skos:prefLabel ?name ;\n     :currentLoad ?load ;\n     :nominalCapacity ?capacity ;\n     :managedByDispatcher ?dispatcher .\n  FILTER (?load / ?capacity >= 0.85)\n}\nORDER BY DESC(?percent)",
+  "cypher": "MATCH (d:Dispatcher)-[:MANAGES]->(s:Substation)\nWHERE s.currentLoad / s.nominalCapacity >= 0.85\nRETURN s.name AS name, s.currentLoad AS load, s.nominalCapacity AS capacity,\n       round(100.0 * s.currentLoad / s.nominalCapacity) AS percent, d.id AS dispatcher\nORDER BY percent DESC",
+  "sparql_rows": 4,
+  "cypher_rows": 4,
+  "keys_match": true,
+  "sparql_lines": 10,
+  "cypher_lines": 5,
+  "sparql_chars": 419,
+  "cypher_chars": 281,
+  "sparql_ms": 18.07,
+  "cypher_ms": 3.02,
+  "sparql_result": [
+   {
+    "name": "Підстанція №5",
+    "load": 468.0,
+    "capacity": 500.0,
+    "percent": 94.0,
+    "dispatcher": "Dispatcher_3"
+   },
+   {
+    "name": "Підстанція №4",
+    "load": 450.0,
+    "capacity": 500.0,
+    "percent": 90.0,
+    "dispatcher": "Dispatcher_6"
+   },
+   {
+    "name": "Підстанція №7",
+    "load": 870.0,
+    "capacity": 1000.0,
+    "percent": 87.0,
+    "dispatcher": "Dispatcher_1"
+   },
+   {
+    "name": "Підстанція №11",
+    "load": 301.0,
+    "capacity": 350.0,
+    "percent": 86.0,
+    "dispatcher": "Dispatcher_2"
+   }
+  ],
+  "cypher_result": [
+   {
+    "name": "Підстанція №5",
+    "load": 468.0,
+    "capacity": 500.0,
+    "percent": 94.0,
+    "dispatcher": "Dispatcher_3"
+   },
+   {
+    "name": "Підстанція №4",
+    "load": 450.0,
+    "capacity": 500.0,
+    "percent": 90.0,
+    "dispatcher": "Dispatcher_6"
+   },
+   {
+    "name": "Підстанція №7",
+    "load": 870.0,
+    "capacity": 1000.0,
+    "percent": 87.0,
+    "dispatcher": "Dispatcher_1"
+   },
+   {
+    "name": "Підстанція №11",
+    "load": 301.0,
+    "capacity": 350.0,
+    "percent": 86.0,
+    "dispatcher": "Dispatcher_2"
+   }
+  ]
+ },
+ {
+  "id": "S2",
+  "cq": "KQ8",
+  "title": "Підстанції з необов'язковим диспетчером (OPTIONAL)",
+  "sparql": "PREFIX :     <http://www.semanticweb.org/energy-forecasting#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nSELECT ?name ?region ?dispatcher ?shift\nWHERE {\n  ?s a :Substation ;\n     skos:prefLabel ?name ;\n     :region ?region .\n  OPTIONAL { ?s :managedByDispatcher ?dispatcher .\n             ?dispatcher :shift ?shift . }\n}\nORDER BY ?name",
+  "cypher": "MATCH (s:Substation)-[:LOCATED_IN]->(r:Region)\nOPTIONAL MATCH (d:Dispatcher)-[:MANAGES]->(s)\nRETURN s.name AS name, r.name AS region, d.id AS dispatcher, d.shift AS shift\nORDER BY name",
+  "sparql_rows": 12,
+  "cypher_rows": 12,
+  "keys_match": true,
+  "sparql_lines": 9,
+  "cypher_lines": 4,
+  "sparql_chars": 344,
+  "cypher_chars": 184,
+  "sparql_ms": 17.06,
+  "cypher_ms": 3.25,
+  "sparql_result": [
+   {
+    "name": "Підстанція №1",
+    "region": "Львівська область",
+    "dispatcher": "Dispatcher_4",
+    "shift": "ранкова"
+   },
+   {
+    "name": "Підстанція №10",
+    "region": "Львівська область",
+    "dispatcher": "Dispatcher_4",
+    "shift": "ранкова"
+   },
+   {
+    "name": "Підстанція №11",
+    "region": "Рівненська область",
+    "dispatcher": "Dispatcher_2",
+    "shift": "вечірня"
+   },
+   {
+    "name": "Підстанція №12",
+    "region": "Львівська область",
+    "dispatcher": "Dispatcher_2",
+    "shift": "вечірня"
+   },
+   {
+    "name": "Підстанція №2",
+    "region": "Волинська область",
+    "dispatcher": "Dispatcher_5",
+    "shift": "вечірня"
+   },
+   {
+    "name": "Підстанція №3",
+    "region": "Рівненська область",
+    "dispatcher": "Dispatcher_5",
+    "shift": "вечірня"
+   },
+   {
+    "name": "Підстанція №4",
+    "region": "Тернопільська область",
+    "dispatcher": "Dispatcher_6",
+    "shift": "нічна"
+   },
+   {
+    "name": "Підстанція №5",
+    "region": "Волинська область",
+    "dispatcher": "Dispatcher_3",
+    "shift": "нічна"
+   },
+   {
+    "name": "Підстанція №6",
+    "region": "Івано-Франківська область",
+    "dispatcher": "Dispatcher_6",
+    "shift": "нічна"
+   },
+   {
+    "name": "Підстанція №7",
+    "region": "Львівська область",
+    "dispatcher": "Dispatcher_1",
+    "shift": "ранкова"
+   },
+   {
+    "name": "Підстанція №8",
+    "region": "Закарпатська область",
+    "dispatcher": "Dispatcher_5",
+    "shift": "вечірня"
+   },
+   {
+    "name": "Підстанція №9",
+    "region": "Закарпатська область",
+    "dispatcher": null,
+    "shift": null
+   }
+  ],
+  "cypher_result": [
+   {
+    "name": "Підстанція №1",
+    "region": "Львівська область",
+    "dispatcher": "Dispatcher_4",
+    "shift": "ранкова"
+   },
+   {
+    "name": "Підстанція №10",
+    "region": "Львівська область",
+    "dispatcher": "Dispatcher_4",
+    "shift": "ранкова"
+   },
+   {
+    "name": "Підстанція №11",
+    "region": "Рівненська область",
+    "dispatcher": "Dispatcher_2",
+    "shift": "вечірня"
+   },
+   {
+    "name": "Підстанція №12",
+    "region": "Львівська область",
+    "dispatcher": "Dispatcher_2",
+    "shift": "вечірня"
+   },
+   {
+    "name": "Підстанція №2",
+    "region": "Волинська область",
+    "dispatcher": "Dispatcher_5",
+    "shift": "вечірня"
+   },
+   {
+    "name": "Підстанція №3",
+    "region": "Рівненська область",
+    "dispatcher": "Dispatcher_5",
+    "shift": "вечірня"
+   },
+   {
+    "name": "Підстанція №4",
+    "region": "Тернопільська область",
+    "dispatcher": "Dispatcher_6",
+    "shift": "нічна"
+   },
+   {
+    "name": "Підстанція №5",
+    "region": "Волинська область",
+    "dispatcher": "Dispatcher_3",
+    "shift": "нічна"
+   },
+   {
+    "name": "Підстанція №6",
+    "region": "Івано-Франківська область",
+    "dispatcher": "Dispatcher_6",
+    "shift": "нічна"
+   },
+   {
+    "name": "Підстанція №7",
+    "region": "Львівська область",
+    "dispatcher": "Dispatcher_1",
+    "shift": "ранкова"
+   },
+   {
+    "name": "Підстанція №8",
+    "region": "Закарпатська область",
+    "dispatcher": "Dispatcher_5",
+    "shift": "вечірня"
+   },
+   {
+    "name": "Підстанція №9",
+    "region": "Закарпатська область",
+    "dispatcher": null,
+    "shift": null
+   }
+  ]
+ },
+ {
+  "id": "S3",
+  "cq": "KQ3",
+  "title": "Навантаження за регіонами (GROUP BY)",
+  "sparql": "PREFIX : <http://www.semanticweb.org/energy-forecasting#>\nSELECT ?region (COUNT(?s) AS ?substations)\n       (SUM(?capacity) AS ?totalCapacity) (SUM(?load) AS ?totalLoad)\nWHERE {\n  ?s a :Substation ; :region ?region ;\n     :nominalCapacity ?capacity ; :currentLoad ?load .\n}\nGROUP BY ?region\nORDER BY DESC(?totalCapacity)",
+  "cypher": "MATCH (s:Substation)-[:LOCATED_IN]->(r:Region)\nRETURN r.name AS region, count(s) AS substations,\n       sum(s.nominalCapacity) AS totalCapacity, sum(s.currentLoad) AS totalLoad\nORDER BY totalCapacity DESC",
+  "sparql_rows": 6,
+  "cypher_rows": 6,
+  "keys_match": true,
+  "sparql_lines": 8,
+  "cypher_lines": 4,
+  "sparql_chars": 320,
+  "cypher_chars": 204,
+  "sparql_ms": 20.31,
+  "cypher_ms": 3.5,
+  "sparql_result": [
+   {
+    "region": "Львівська область",
+    "substations": 4.0,
+    "totalCapacity": 4950.0,
+    "totalLoad": 3590.0
+   },
+   {
+    "region": "Волинська область",
+    "substations": 2.0,
+    "totalCapacity": 1300.0,
+    "totalLoad": 980.0
+   },
+   {
+    "region": "Рівненська область",
+    "substations": 2.0,
+    "totalCapacity": 950.0,
+    "totalLoad": 703.0
+   },
+   {
+    "region": "Закарпатська область",
+    "substations": 2.0,
+    "totalCapacity": 700.0,
+    "totalLoad": 261.0
+   },
+   {
+    "region": "Тернопільська область",
+    "substations": 1.0,
+    "totalCapacity": 500.0,
+    "totalLoad": 450.0
+   },
+   {
+    "region": "Івано-Франківська область",
+    "substations": 1.0,
+    "totalCapacity": 400.0,
+    "totalLoad": 236.0
+   }
+  ],
+  "cypher_result": [
+   {
+    "region": "Львівська область",
+    "substations": 4.0,
+    "totalCapacity": 4950.0,
+    "totalLoad": 3590.0
+   },
+   {
+    "region": "Волинська область",
+    "substations": 2.0,
+    "totalCapacity": 1300.0,
+    "totalLoad": 980.0
+   },
+   {
+    "region": "Рівненська область",
+    "substations": 2.0,
+    "totalCapacity": 950.0,
+    "totalLoad": 703.0
+   },
+   {
+    "region": "Закарпатська область",
+    "substations": 2.0,
+    "totalCapacity": 700.0,
+    "totalLoad": 261.0
+   },
+   {
+    "region": "Тернопільська область",
+    "substations": 1.0,
+    "totalCapacity": 500.0,
+    "totalLoad": 450.0
+   },
+   {
+    "region": "Івано-Франківська область",
+    "substations": 1.0,
+    "totalCapacity": 400.0,
+    "totalLoad": 236.0
+   }
+  ]
+ },
+ {
+  "id": "S4",
+  "cq": "KQ1",
+  "title": "Усі споживачі (у SPARQL — через виведення підкласів)",
+  "sparql": "PREFIX :     <http://www.semanticweb.org/energy-forecasting#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nSELECT ?name ?category ?limit\nWHERE {\n  ?c a :Consumer ;\n     skos:prefLabel ?name ;\n     :consumerCategory ?category ;\n     :contractLimit ?limit .\n}\nORDER BY ?name",
+  "cypher": "MATCH (c:Consumer)\nRETURN c.name AS name, c.category AS category, c.contractLimit AS limit\nORDER BY name",
+  "sparql_rows": 41,
+  "cypher_rows": 41,
+  "keys_match": true,
+  "sparql_lines": 8,
+  "cypher_lines": 3,
+  "sparql_chars": 279,
+  "cypher_chars": 104,
+  "sparql_ms": 9.7,
+  "cypher_ms": 1.26,
+  "sparql_result": [
+   {
+    "name": "Споживач №1002 (побутовий)",
+    "category": "побутовий",
+    "limit": 10.0
+   },
+   {
+    "name": "Споживач №3310 (комерційний)",
+    "category": "комерційний",
+    "limit": 120.0
+   },
+   {
+    "name": "Споживач №4521 (промисловий)",
+    "category": "промисловий",
+    "limit": 450.0
+   },
+   {
+    "name": "Споживач №5001 (побутовий)",
+    "category": "побутовий",
+    "limit": 6.6
+   },
+   {
+    "name": "Споживач №5002 (побутовий)",
+    "category": "побутовий",
+    "limit": 6.0
+   },
+   {
+    "name": "Споживач №5003 (побутовий)",
+    "category": "побутовий",
+    "limit": 12.3
+   },
+   {
+    "name": "Споживач №5004 (побутовий)",
+    "category": "побутовий",
+    "limit": 10.5
+   },
+   {
+    "name": "Споживач №5005 (комерційний)",
+    "category": "комерційний",
+    "limit": 70.8
+   },
+   {
+    "name": "Споживач №5006 (комерційний)",
+    "category": "комерційний",
+    "limit": 163.7
+   },
+   {
+    "name": "Споживач №5007 (комерційний)",
+    "category": "комерційний",
+    "limit": 100.8
+   },
+   {
+    "name": "Споживач №5008 (побутовий)",
+    "category": "побутовий",
+    "limit": 8.7
+   },
+   {
+    "name": "Споживач №5009 (комерційний)",
+    "category": "комерційний",
+    "limit": 189.9
+   },
+   {
+    "name": "Споживач №5010 (комерційний)",
+    "category": "комерційний",
+    "limit": 67.4
+   },
+   {
+    "name": "Споживач №5011 (промисловий)",
+    "category": "промисловий",
+    "limit": 496.6
+   },
+   {
+    "name": "Споживач №5012 (комерційний)",
+    "category": "комерційний",
+    "limit": 149.5
+   },
+   {
+    "name": "Споживач №5013 (промисловий)",
+    "category": "промисловий",
+    "limit": 510.8
+   },
+   {
+    "name": "Споживач №5014 (побутовий)",
+    "category": "побутовий",
+    "limit": 8.1
+   },
+   {
+    "name": "Споживач №5015 (побутовий)",
+    "category": "побутовий",
+    "limit": 9.6
+   },
+   {
+    "name": "Споживач №5016 (побутовий)",
+    "category": "побутовий",
+    "limit": 10.6
+   },
+   {
+    "name": "Споживач №5017 (комерційний)",
+    "category": "комерційний",
+    "limit": 183.7
+   },
+   {
+    "name": "Споживач №5018 (побутовий)",
+    "category": "побутовий",
+    "limit": 10.1
+   },
+   {
+    "name": "Споживач №5019 (промисловий)",
+    "category": "промисловий",
+    "limit": 349.3
+   },
+   {
+    "name": "Споживач №5020 (побутовий)",
+    "category": "побутовий",
+    "limit": 11.0
+   },
+   {
+    "name": "Споживач №5021 (комерційний)",
+    "category": "комерційний",
+    "limit": 124.7
+   },
+   {
+    "name": "Споживач №5022 (побутовий)",
+    "category": "побутовий",
+    "limit": 12.2
+   },
+   {
+    "name": "Споживач №5023 (промисловий)",
+    "category": "промисловий",
+    "limit": 749.6
+   },
+   {
+    "name": "Споживач №5024 (побутовий)",
+    "category": "побутовий",
+    "limit": 6.6
+   },
+   {
+    "name": "Споживач №5025 (побутовий)",
+    "category": "побутовий",
+    "limit": 12.6
+   },
+   {
+    "name": "Споживач №5026 (побутовий)",
+    "category": "побутовий",
+    "limit": 8.0
+   },
+   {
+    "name": "Споживач №5027 (промисловий)",
+    "category": "промисловий",
+    "limit": 349.3
+   },
+   {
+    "name": "Споживач №5028 (комерційний)",
+    "category": "комерційний",
+    "limit": 135.8
+   },
+   {
+    "name": "Споживач №5029 (побутовий)",
+    "category": "побутовий",
+    "limit": 13.8
+   },
+   {
+    "name": "Споживач №5030 (побутовий)",
+    "category": "побутовий",
+    "limit": 13.8
+   },
+   {
+    "name": "Споживач №5031 (комерційний)",
+    "category": "комерційний",
+    "limit": 196.5
+   },
+   {
+    "name": "Споживач №5032 (побутовий)",
+    "category": "побутовий",
+    "limit": 11.6
+   },
+   {
+    "name": "Споживач №5033 (побутовий)",
+    "category": "побутовий",
+    "limit": 13.7
+   },
+   {
+    "name": "Споживач №5034 (побутовий)",
+    "category": "побутовий",
+    "limit": 11.9
+   },
+   {
+    "name": "Споживач №5035 (побутовий)",
+    "category": "побутовий",
+    "limit": 11.5
+   },
+   {
+    "name": "Споживач №5036 (побутовий)",
+    "category": "побутовий",
+    "limit": 6.2
+   },
+   {
+    "name": "Споживач №5037 (побутовий)",
+    "category": "побутовий",
+    "limit": 10.9
+   },
+   {
+    "name": "Споживач №5038 (промисловий)",
+    "category": "промисловий",
+    "limit": 1500.0
+   }
+  ],
+  "cypher_result": [
+   {
+    "name": "Споживач №1002 (побутовий)",
+    "category": "побутовий",
+    "limit": 10.0
+   },
+   {
+    "name": "Споживач №3310 (комерційний)",
+    "category": "комерційний",
+    "limit": 120.0
+   },
+   {
+    "name": "Споживач №4521 (промисловий)",
+    "category": "промисловий",
+    "limit": 450.0
+   },
+   {
+    "name": "Споживач №5001 (побутовий)",
+    "category": "побутовий",
+    "limit": 6.6
+   },
+   {
+    "name": "Споживач №5002 (побутовий)",
+    "category": "побутовий",
+    "limit": 6.0
+   },
+   {
+    "name": "Споживач №5003 (побутовий)",
+    "category": "побутовий",
+    "limit": 12.3
+   },
+   {
+    "name": "Споживач №5004 (побутовий)",
+    "category": "побутовий",
+    "limit": 10.5
+   },
+   {
+    "name": "Споживач №5005 (комерційний)",
+    "category": "комерційний",
+    "limit": 70.8
+   },
+   {
+    "name": "Споживач №5006 (комерційний)",
+    "category": "комерційний",
+    "limit": 163.7
+   },
+   {
+    "name": "Споживач №5007 (комерційний)",
+    "category": "комерційний",
+    "limit": 100.8
+   },
+   {
+    "name": "Споживач №5008 (побутовий)",
+    "category": "побутовий",
+    "limit": 8.7
+   },
+   {
+    "name": "Споживач №5009 (комерційний)",
+    "category": "комерційний",
+    "limit": 189.9
+   },
+   {
+    "name": "Споживач №5010 (комерційний)",
+    "category": "комерційний",
+    "limit": 67.4
+   },
+   {
+    "name": "Споживач №5011 (промисловий)",
+    "category": "промисловий",
+    "limit": 496.6
+   },
+   {
+    "name": "Споживач №5012 (комерційний)",
+    "category": "комерційний",
+    "limit": 149.5
+   },
+   {
+    "name": "Споживач №5013 (промисловий)",
+    "category": "промисловий",
+    "limit": 510.8
+   },
+   {
+    "name": "Споживач №5014 (побутовий)",
+    "category": "побутовий",
+    "limit": 8.1
+   },
+   {
+    "name": "Споживач №5015 (побутовий)",
+    "category": "побутовий",
+    "limit": 9.6
+   },
+   {
+    "name": "Споживач №5016 (побутовий)",
+    "category": "побутовий",
+    "limit": 10.6
+   },
+   {
+    "name": "Споживач №5017 (комерційний)",
+    "category": "комерційний",
+    "limit": 183.7
+   },
+   {
+    "name": "Споживач №5018 (побутовий)",
+    "category": "побутовий",
+    "limit": 10.1
+   },
+   {
+    "name": "Споживач №5019 (промисловий)",
+    "category": "промисловий",
+    "limit": 349.3
+   },
+   {
+    "name": "Споживач №5020 (побутовий)",
+    "category": "побутовий",
+    "limit": 11.0
+   },
+   {
+    "name": "Споживач №5021 (комерційний)",
+    "category": "комерційний",
+    "limit": 124.7
+   },
+   {
+    "name": "Споживач №5022 (побутовий)",
+    "category": "побутовий",
+    "limit": 12.2
+   },
+   {
+    "name": "Споживач №5023 (промисловий)",
+    "category": "промисловий",
+    "limit": 749.6
+   },
+   {
+    "name": "Споживач №5024 (побутовий)",
+    "category": "побутовий",
+    "limit": 6.6
+   },
+   {
+    "name": "Споживач №5025 (побутовий)",
+    "category": "побутовий",
+    "limit": 12.6
+   },
+   {
+    "name": "Споживач №5026 (побутовий)",
+    "category": "побутовий",
+    "limit": 8.0
+   },
+   {
+    "name": "Споживач №5027 (промисловий)",
+    "category": "промисловий",
+    "limit": 349.3
+   },
+   {
+    "name": "Споживач №5028 (комерційний)",
+    "category": "комерційний",
+    "limit": 135.8
+   },
+   {
+    "name": "Споживач №5029 (побутовий)",
+    "category": "побутовий",
+    "limit": 13.8
+   },
+   {
+    "name": "Споживач №5030 (побутовий)",
+    "category": "побутовий",
+    "limit": 13.8
+   },
+   {
+    "name": "Споживач №5031 (комерційний)",
+    "category": "комерційний",
+    "limit": 196.5
+   },
+   {
+    "name": "Споживач №5032 (побутовий)",
+    "category": "побутовий",
+    "limit": 11.6
+   },
+   {
+    "name": "Споживач №5033 (побутовий)",
+    "category": "побутовий",
+    "limit": 13.7
+   },
+   {
+    "name": "Споживач №5034 (побутовий)",
+    "category": "побутовий",
+    "limit": 11.9
+   },
+   {
+    "name": "Споживач №5035 (побутовий)",
+    "category": "побутовий",
+    "limit": 11.5
+   },
+   {
+    "name": "Споживач №5036 (побутовий)",
+    "category": "побутовий",
+    "limit": 6.2
+   },
+   {
+    "name": "Споживач №5037 (побутовий)",
+    "category": "побутовий",
+    "limit": 10.9
+   },
+   {
+    "name": "Споживач №5038 (промисловий)",
+    "category": "промисловий",
+    "limit": 1500.0
+   }
+  ]
+ },
+ {
+  "id": "S5",
+  "cq": "KQ8",
+  "title": "ASK: чи є підстанція без диспетчера?",
+  "sparql": "PREFIX : <http://www.semanticweb.org/energy-forecasting#>\nASK {\n  ?s a :Substation .\n  FILTER NOT EXISTS { ?s :managedByDispatcher ?d }\n}",
+  "cypher": "RETURN EXISTS { MATCH (s:Substation) WHERE NOT EXISTS { MATCH (:Dispatcher)-[:MANAGES]->(s) } } AS answer",
+  "sparql_rows": 1,
+  "cypher_rows": 1,
+  "keys_match": true,
+  "sparql_lines": 4,
+  "cypher_lines": 1,
+  "sparql_chars": 137,
+  "cypher_chars": 105,
+  "sparql_ms": 6.88,
+  "cypher_ms": 1.78,
+  "sparql_result": [
+   {
+    "answer": true
+   }
+  ],
+  "cypher_result": [
+   {
+    "answer": true
+   }
+  ]
+ }
+]

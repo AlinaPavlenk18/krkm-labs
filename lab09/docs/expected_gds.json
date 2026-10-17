@@ -1,0 +1,361 @@
+{
+ "pagerank_iterations": 20,
+ "pagerank_top10": [
+  {
+   "rank": 1,
+   "id": "ForecastModel_GRU1",
+   "label": "ForecastModel",
+   "name": "Модель GRU №1",
+   "score": 3.3032,
+   "degree": 14
+  },
+  {
+   "rank": 2,
+   "id": "ForecastModel_LSTM3",
+   "label": "ForecastModel",
+   "name": "Модель LSTM №3",
+   "score": 2.8377,
+   "degree": 12
+  },
+  {
+   "rank": 3,
+   "id": "Substation_5",
+   "label": "Substation",
+   "name": "Підстанція №5",
+   "score": 2.675,
+   "degree": 10
+  },
+  {
+   "rank": 4,
+   "id": "Substation_7",
+   "label": "Substation",
+   "name": "Підстанція №7",
+   "score": 2.5816,
+   "degree": 10
+  },
+  {
+   "rank": 5,
+   "id": "Substation_4",
+   "label": "Substation",
+   "name": "Підстанція №4",
+   "score": 2.5712,
+   "degree": 9
+  },
+  {
+   "rank": 6,
+   "id": "Substation_2",
+   "label": "Substation",
+   "name": "Підстанція №2",
+   "score": 2.5552,
+   "degree": 10
+  },
+  {
+   "rank": 7,
+   "id": "ForecastModel_LSTM2",
+   "label": "ForecastModel",
+   "name": "Модель LSTM №2 (застаріла)",
+   "score": 2.5425,
+   "degree": 10
+  },
+  {
+   "rank": 8,
+   "id": "ForecastModel_LSTM1",
+   "label": "ForecastModel",
+   "name": "Модель LSTM №1",
+   "score": 2.5171,
+   "degree": 10
+  },
+  {
+   "rank": 9,
+   "id": "ForecastModel_VAR1",
+   "label": "ForecastModel",
+   "name": "Модель VAR №1",
+   "score": 2.4525,
+   "degree": 10
+  },
+  {
+   "rank": 10,
+   "id": "Substation_3",
+   "label": "Substation",
+   "name": "Підстанція №3",
+   "score": 2.4023,
+   "degree": 9
+  }
+ ],
+ "pagerank_avg_by_label": {
+  "ForecastModel": 2.65,
+  "Substation": 2.28,
+  "WeatherCondition": 1.611,
+  "Dispatcher": 1.232,
+  "Measurement": 0.83,
+  "Forecast": 0.793,
+  "Meter": 0.724,
+  "Consumer": 0.685,
+  "Region": 0.607
+ },
+ "louvain_communities": 10,
+ "louvain_modularity": 0.6154,
+ "communities": [
+  {
+   "community": 0,
+   "size": 31,
+   "labels": {
+    "Consumer": 7,
+    "Measurement": 6,
+    "Meter": 6,
+    "Substation": 4,
+    "Forecast": 4,
+    "WeatherCondition": 1,
+    "Region": 1,
+    "ForecastModel": 1,
+    "Dispatcher": 1
+   },
+   "substations": [
+    "Substation_2",
+    "Substation_3",
+    "Substation_8",
+    "Substation_9"
+   ],
+   "topByPageRank": [
+    "Substation_2",
+    "Substation_3",
+    "ForecastModel_ARIMA1"
+   ],
+   "regions": [
+    "Region_Zakarpattia"
+   ],
+   "dispatchers": [
+    "Dispatcher_5"
+   ],
+   "models": [
+    "ForecastModel_ARIMA1"
+   ]
+  },
+  {
+   "community": 1,
+   "size": 27,
+   "labels": {
+    "Forecast": 6,
+    "Meter": 5,
+    "Consumer": 4,
+    "Measurement": 4,
+    "Substation": 3,
+    "Dispatcher": 2,
+    "WeatherCondition": 1,
+    "Region": 1,
+    "ForecastModel": 1
+   },
+   "substations": [
+    "Substation_1",
+    "Substation_7",
+    "Substation_10"
+   ],
+   "topByPageRank": [
+    "Substation_7",
+    "ForecastModel_LSTM1",
+    "Substation_10"
+   ],
+   "regions": [
+    "Region_Lviv"
+   ],
+   "dispatchers": [
+    "Dispatcher_1",
+    "Dispatcher_4"
+   ],
+   "models": [
+    "ForecastModel_LSTM1"
+   ]
+  },
+  {
+   "community": 2,
+   "size": 27,
+   "labels": {
+    "Measurement": 7,
+    "Consumer": 6,
+    "Meter": 6,
+    "WeatherCondition": 2,
+    "Forecast": 2,
+    "Region": 1,
+    "ForecastModel": 1,
+    "Substation": 1,
+    "Dispatcher": 1
+   },
+   "substations": [
+    "Substation_5"
+   ],
+   "topByPageRank": [
+    "Substation_5",
+    "ForecastModel_LSTM2",
+    "WeatherCondition_20260112"
+   ],
+   "regions": [
+    "Region_Volyn"
+   ],
+   "dispatchers": [
+    "Dispatcher_3"
+   ],
+   "models": [
+    "ForecastModel_LSTM2"
+   ]
+  },
+  {
+   "community": 3,
+   "size": 18,
+   "labels": {
+    "Measurement": 7,
+    "Meter": 4,
+    "ForecastModel": 3,
+    "WeatherCondition": 2,
+    "Consumer": 2
+   },
+   "substations": [],
+   "topByPageRank": [
+    "ForecastModel_GRU1",
+    "ForecastModel_LSTM3",
+    "ForecastModel_VAR1"
+   ],
+   "regions": [],
+   "dispatchers": [],
+   "models": [
+    "ForecastModel_GRU1",
+    "ForecastModel_LSTM3",
+    "ForecastModel_VAR1"
+   ]
+  },
+  {
+   "community": 4,
+   "size": 17,
+   "labels": {
+    "Measurement": 6,
+    "Meter": 5,
+    "Consumer": 5,
+    "WeatherCondition": 1
+   },
+   "substations": [],
+   "topByPageRank": [
+    "WeatherCondition_20260929",
+    "Meter_AMI49003",
+    "Measurement_014"
+   ],
+   "regions": [],
+   "dispatchers": [],
+   "models": []
+  },
+  {
+   "community": 5,
+   "size": 16,
+   "labels": {
+    "Meter": 5,
+    "Measurement": 5,
+    "Consumer": 5,
+    "WeatherCondition": 1
+   },
+   "substations": [],
+   "topByPageRank": [
+    "WeatherCondition_20260927",
+    "Measurement_033",
+    "Measurement_026"
+   ],
+   "regions": [],
+   "dispatchers": [],
+   "models": []
+  },
+  {
+   "community": 6,
+   "size": 15,
+   "labels": {
+    "Measurement": 6,
+    "Meter": 4,
+    "Consumer": 4,
+    "WeatherCondition": 1
+   },
+   "substations": [],
+   "topByPageRank": [
+    "WeatherCondition_20260930",
+    "Meter_AMI38856",
+    "Measurement_036"
+   ],
+   "regions": [],
+   "dispatchers": [],
+   "models": []
+  },
+  {
+   "community": 7,
+   "size": 15,
+   "labels": {
+    "Consumer": 3,
+    "Meter": 3,
+    "Measurement": 2,
+    "Substation": 2,
+    "Forecast": 2,
+    "Region": 2,
+    "Dispatcher": 1
+   },
+   "substations": [
+    "Substation_4",
+    "Substation_6"
+   ],
+   "topByPageRank": [
+    "Substation_4",
+    "Substation_6",
+    "Dispatcher_6"
+   ],
+   "regions": [
+    "Region_IvanoFrankivsk",
+    "Region_Ternopil"
+   ],
+   "dispatchers": [
+    "Dispatcher_6"
+   ],
+   "models": []
+  },
+  {
+   "community": 8,
+   "size": 13,
+   "labels": {
+    "Forecast": 4,
+    "Meter": 2,
+    "Consumer": 2,
+    "Substation": 2,
+    "Dispatcher": 1,
+    "Region": 1,
+    "Measurement": 1
+   },
+   "substations": [
+    "Substation_11",
+    "Substation_12"
+   ],
+   "topByPageRank": [
+    "Substation_12",
+    "Substation_11",
+    "Dispatcher_2"
+   ],
+   "regions": [
+    "Region_Rivne"
+   ],
+   "dispatchers": [
+    "Dispatcher_2"
+   ],
+   "models": []
+  },
+  {
+   "community": 9,
+   "size": 11,
+   "labels": {
+    "Measurement": 4,
+    "Meter": 3,
+    "Consumer": 3,
+    "WeatherCondition": 1
+   },
+   "substations": [],
+   "topByPageRank": [
+    "WeatherCondition_20260926",
+    "Measurement_032",
+    "Meter_AMI76143"
+   ],
+   "regions": [],
+   "dispatchers": [],
+   "models": []
+  }
+ ]
+}

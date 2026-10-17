@@ -1,0 +1,33 @@
+@prefix :    <http://www.semanticweb.org/energy-forecasting#> .
+@prefix sh:  <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex:  <http://www.semanticweb.org/energy-forecasting/shapes#> .
+
+ex:ConsumerShape a sh:NodeShape ;
+    sh:targetClass :Consumer ;
+    sh:property [ sh:path :hasMeter ; sh:minCount 1 ; sh:class :Meter ;
+                  sh:message "Споживач повинен мати щонайменше один лічильник (Meter)." ] ;
+    sh:property [ sh:path :consumerCategory ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ;
+                  sh:message "Потрібна рівно одна категорія споживача (xsd:string)." ] ;
+    sh:property [ sh:path :contractLimit ; sh:datatype xsd:double ; sh:minExclusive 0 ;
+                  sh:message "Договірний ліміт має бути додатним числом (xsd:double)." ] .
+
+ex:SubstationShape a sh:NodeShape ;
+    sh:targetClass :Substation ;
+    sh:property [ sh:path :nominalCapacity ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:double ; sh:minExclusive 0 ;
+                  sh:message "Номінальна потужність обов'язкова, одна, додатна (xsd:double)." ] ;
+    sh:property [ sh:path :currentLoad ; sh:minCount 1 ; sh:datatype xsd:double ; sh:minInclusive 0 ;
+                  sh:message "Поточне навантаження обов'язкове і не може бути від'ємним." ] ;
+    sh:property [ sh:path :region ; sh:minCount 1 ; sh:datatype xsd:string ;
+                  sh:message "Підстанція повинна мати регіон." ] ;
+    sh:property [ sh:path :managedByDispatcher ; sh:maxCount 1 ; sh:class :Dispatcher ;
+                  sh:message "Підстанцією керує не більше одного диспетчера (Dispatcher)." ] .
+
+ex:ForecastShape a sh:NodeShape ;
+    sh:targetClass :Forecast ;
+    sh:property [ sh:path :generatedByModel ; sh:minCount 1 ; sh:maxCount 1 ; sh:class :ForecastModel ;
+                  sh:message "Прогноз має бути згенерований рівно однією моделлю." ] ;
+    sh:property [ sh:path :errorPercentage ; sh:datatype xsd:double ; sh:minInclusive 0 ; sh:maxInclusive 100 ;
+                  sh:message "Похибка прогнозу має бути в межах 0–100 %." ] ;
+    sh:property [ sh:path :predictedConsumption ; sh:minCount 1 ; sh:datatype xsd:double ;
+                  sh:message "Прогнозоване споживання обов'язкове." ] .

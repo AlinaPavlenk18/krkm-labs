@@ -1,0 +1,544 @@
+{
+ "_counts": {
+  "nodes": 190,
+  "relationships": 314
+ },
+ "q00_manual_check_subgraph#M1": [
+  {
+   "substation": "Substation_5",
+   "loadPct": 93.6,
+   "dispatcher": "Dispatcher_3"
+  },
+  {
+   "substation": "Substation_7",
+   "loadPct": 87.0,
+   "dispatcher": "Dispatcher_1"
+  }
+ ],
+ "q00_manual_check_subgraph#M2": [
+  {
+   "depth": 0,
+   "substation": "Substation_7",
+   "consumers": [
+    "Consumer_4521"
+   ],
+   "contractLimitKW": 450.0
+  },
+  {
+   "depth": 1,
+   "substation": "Substation_5",
+   "consumers": [
+    "Consumer_3310"
+   ],
+   "contractLimitKW": 120.0
+  },
+  {
+   "depth": 2,
+   "substation": "Substation_12",
+   "consumers": [
+    "Consumer_1002"
+   ],
+   "contractLimitKW": 10.0
+  }
+ ],
+ "q00_manual_check_subgraph#M3": [
+  {
+   "meter": "Meter_AMI77410",
+   "measurement": "Measurement_003",
+   "model": "ForecastModel_LSTM2",
+   "forecast": "Forecast_20260110",
+   "error": 11.0,
+   "dispatcher": "Dispatcher_3"
+  }
+ ],
+ "q01_consumers_of_substation": [
+  {
+   "consumer": "Consumer_4521",
+   "category": "промисловий",
+   "contractLimit": 450.0,
+   "meters": [
+    "Meter_AMI99231",
+    "Meter_AMI81841"
+   ]
+  },
+  {
+   "consumer": "Consumer_5021",
+   "category": "комерційний",
+   "contractLimit": 124.7,
+   "meters": [
+    "Meter_AMI55149"
+   ]
+  },
+  {
+   "consumer": "Consumer_5010",
+   "category": "комерційний",
+   "contractLimit": 67.4,
+   "meters": [
+    "Meter_AMI36309"
+   ]
+  },
+  {
+   "consumer": "Consumer_5032",
+   "category": "побутовий",
+   "contractLimit": 11.6,
+   "meters": [
+    "Meter_AMI69457"
+   ]
+  }
+ ],
+ "q02_overloaded_substations": [
+  {
+   "substation": "Substation_5",
+   "load": 468.0,
+   "capacity": 500.0,
+   "loadPct": 93.6,
+   "dispatcher": "Dispatcher_3"
+  },
+  {
+   "substation": "Substation_4",
+   "load": 450.0,
+   "capacity": 500.0,
+   "loadPct": 90.0,
+   "dispatcher": "Dispatcher_6"
+  },
+  {
+   "substation": "Substation_7",
+   "load": 870.0,
+   "capacity": 1000.0,
+   "loadPct": 87.0,
+   "dispatcher": "Dispatcher_1"
+  },
+  {
+   "substation": "Substation_11",
+   "load": 301.0,
+   "capacity": 350.0,
+   "loadPct": 86.0,
+   "dispatcher": "Dispatcher_2"
+  }
+ ],
+ "q03_load_by_region": [
+  {
+   "region": "Львівська область",
+   "substations": 4,
+   "totalCapacity": 4950.0,
+   "totalLoad": 3590.0,
+   "loadPct": 72.5
+  },
+  {
+   "region": "Волинська область",
+   "substations": 2,
+   "totalCapacity": 1300.0,
+   "totalLoad": 980.0,
+   "loadPct": 75.4
+  },
+  {
+   "region": "Рівненська область",
+   "substations": 2,
+   "totalCapacity": 950.0,
+   "totalLoad": 703.0,
+   "loadPct": 74.0
+  },
+  {
+   "region": "Закарпатська область",
+   "substations": 2,
+   "totalCapacity": 700.0,
+   "totalLoad": 261.0,
+   "loadPct": 37.3
+  },
+  {
+   "region": "Тернопільська область",
+   "substations": 1,
+   "totalCapacity": 500.0,
+   "totalLoad": 450.0,
+   "loadPct": 90.0
+  },
+  {
+   "region": "Івано-Франківська область",
+   "substations": 1,
+   "totalCapacity": 400.0,
+   "totalLoad": 236.0,
+   "loadPct": 59.0
+  }
+ ],
+ "q04_faulty_meters": [
+  {
+   "meter": "Meter_AMI26032",
+   "consumer": "Consumer_5004",
+   "category": "побутовий",
+   "substation": "Substation_6",
+   "lastVoltage": 209.0,
+   "lastTimestamp": "2026-09-29T08:00:00"
+  },
+  {
+   "meter": "Meter_AMI27192",
+   "consumer": "Consumer_5005",
+   "category": "комерційний",
+   "substation": "Substation_8",
+   "lastVoltage": 197.6,
+   "lastTimestamp": "2026-09-30T08:00:00"
+  },
+  {
+   "meter": "Meter_AMI66829",
+   "consumer": "Consumer_5030",
+   "category": "побутовий",
+   "substation": "Substation_12",
+   "lastVoltage": 205.3,
+   "lastTimestamp": "2026-09-27T18:00:00"
+  },
+  {
+   "meter": "Meter_AMI71354",
+   "consumer": "Consumer_5034",
+   "category": "побутовий",
+   "substation": "Substation_2",
+   "lastVoltage": 204.6,
+   "lastTimestamp": "2026-01-11T18:00:00"
+  },
+  {
+   "meter": "Meter_AMI77410",
+   "consumer": "Consumer_3310",
+   "category": "комерційний",
+   "substation": "Substation_5",
+   "lastVoltage": 233.0,
+   "lastTimestamp": "2026-01-10T08:00:00"
+  }
+ ],
+ "q05_worst_forecast": [
+  {
+   "forecast": "Forecast_20261004_2",
+   "error": 12.3,
+   "model": "ForecastModel_LSTM2",
+   "type": "LSTM",
+   "accuracy": 78.0,
+   "trainingDate": "2025-06-20",
+   "modelForecasts": 3,
+   "modelAvgError": 11.23
+  }
+ ],
+ "q06_weather_for_model": [
+  {
+   "weather": "WeatherCondition_20260111",
+   "temperature": -15.5,
+   "cloudCover": "суцільна",
+   "measurements": 2,
+   "avgConfidence": 0.83
+  },
+  {
+   "weather": "WeatherCondition_20260110",
+   "temperature": -12.0,
+   "cloudCover": "суцільна",
+   "measurements": 1,
+   "avgConfidence": 1.0
+  },
+  {
+   "weather": "WeatherCondition_20260112",
+   "temperature": -9.0,
+   "cloudCover": "мінлива",
+   "measurements": 2,
+   "avgConfidence": 0.73
+  }
+ ],
+ "q07_dispatchers_forecasts": [
+  {
+   "dispatcher": "Dispatcher_1",
+   "shift": "ранкова",
+   "managed": [
+    "Substation_7"
+   ],
+   "forecastsUsed": 2,
+   "forecastTargets": [
+    "Substation_7"
+   ]
+  },
+  {
+   "dispatcher": "Dispatcher_2",
+   "shift": "вечірня",
+   "managed": [
+    "Substation_11",
+    "Substation_12"
+   ],
+   "forecastsUsed": 4,
+   "forecastTargets": [
+    "Substation_11",
+    "Substation_12"
+   ]
+  },
+  {
+   "dispatcher": "Dispatcher_3",
+   "shift": "нічна",
+   "managed": [
+    "Substation_5"
+   ],
+   "forecastsUsed": 2,
+   "forecastTargets": [
+    "Substation_5"
+   ]
+  },
+  {
+   "dispatcher": "Dispatcher_4",
+   "shift": "ранкова",
+   "managed": [
+    "Substation_1",
+    "Substation_10"
+   ],
+   "forecastsUsed": 4,
+   "forecastTargets": [
+    "Substation_10",
+    "Substation_1"
+   ]
+  },
+  {
+   "dispatcher": "Dispatcher_5",
+   "shift": "вечірня",
+   "managed": [
+    "Substation_2",
+    "Substation_3",
+    "Substation_8"
+   ],
+   "forecastsUsed": 4,
+   "forecastTargets": [
+    "Substation_2",
+    "Substation_8",
+    "Substation_3"
+   ]
+  },
+  {
+   "dispatcher": "Dispatcher_6",
+   "shift": "нічна",
+   "managed": [
+    "Substation_4",
+    "Substation_6"
+   ],
+   "forecastsUsed": 2,
+   "forecastTargets": [
+    "Substation_6",
+    "Substation_4"
+   ]
+  }
+ ],
+ "q08_shortest_path": [
+  {
+   "dispatcher": "Dispatcher_3",
+   "hops": 3,
+   "path": [
+    "Meter_AMI77410",
+    "Consumer_3310",
+    "Substation_5",
+    "Dispatcher_3"
+   ],
+   "relTypes": [
+    "HAS_METER",
+    "CONNECTED_TO",
+    "MANAGES"
+   ]
+  },
+  {
+   "dispatcher": "Dispatcher_1",
+   "hops": 4,
+   "path": [
+    "Meter_AMI77410",
+    "Consumer_3310",
+    "Substation_5",
+    "Substation_7",
+    "Dispatcher_1"
+   ],
+   "relTypes": [
+    "HAS_METER",
+    "CONNECTED_TO",
+    "FEEDS",
+    "MANAGES"
+   ]
+  },
+  {
+   "dispatcher": "Dispatcher_2",
+   "hops": 4,
+   "path": [
+    "Meter_AMI77410",
+    "Consumer_3310",
+    "Substation_5",
+    "Substation_12",
+    "Dispatcher_2"
+   ],
+   "relTypes": [
+    "HAS_METER",
+    "CONNECTED_TO",
+    "FEEDS",
+    "MANAGES"
+   ]
+  },
+  {
+   "dispatcher": "Dispatcher_4",
+   "hops": 5,
+   "path": [
+    "Meter_AMI77410",
+    "Consumer_3310",
+    "Substation_5",
+    "Substation_7",
+    "Substation_1",
+    "Dispatcher_4"
+   ],
+   "relTypes": [
+    "HAS_METER",
+    "CONNECTED_TO",
+    "FEEDS",
+    "FEEDS",
+    "MANAGES"
+   ]
+  },
+  {
+   "dispatcher": "Dispatcher_5",
+   "hops": 6,
+   "path": [
+    "Meter_AMI77410",
+    "Consumer_3310",
+    "Substation_5",
+    "Substation_7",
+    "Substation_1",
+    "Substation_2",
+    "Dispatcher_5"
+   ],
+   "relTypes": [
+    "HAS_METER",
+    "CONNECTED_TO",
+    "FEEDS",
+    "FEEDS",
+    "FEEDS",
+    "MANAGES"
+   ]
+  },
+  {
+   "dispatcher": "Dispatcher_6",
+   "hops": 7,
+   "path": [
+    "Meter_AMI77410",
+    "Consumer_3310",
+    "Substation_5",
+    "Substation_7",
+    "Substation_1",
+    "Substation_10",
+    "Substation_4",
+    "Dispatcher_6"
+   ],
+   "relTypes": [
+    "HAS_METER",
+    "CONNECTED_TO",
+    "FEEDS",
+    "FEEDS",
+    "FEEDS",
+    "FEEDS",
+    "MANAGES"
+   ]
+  }
+ ],
+ "q09_impact_substation_outage": [
+  {
+   "depth": 0,
+   "substation": "Substation_1",
+   "dispatcher": "Dispatcher_4",
+   "consumers": 1,
+   "contractLimitKW": 1500.0
+  },
+  {
+   "depth": 1,
+   "substation": "Substation_10",
+   "dispatcher": "Dispatcher_4",
+   "consumers": 3,
+   "contractLimitKW": 483.2
+  },
+  {
+   "depth": 1,
+   "substation": "Substation_2",
+   "dispatcher": "Dispatcher_5",
+   "consumers": 4,
+   "contractLimitKW": 917.6
+  },
+  {
+   "depth": 1,
+   "substation": "Substation_7",
+   "dispatcher": "Dispatcher_1",
+   "consumers": 4,
+   "contractLimitKW": 653.7
+  },
+  {
+   "depth": 2,
+   "substation": "Substation_3",
+   "dispatcher": "Dispatcher_5",
+   "consumers": 4,
+   "contractLimitKW": 534.9
+  },
+  {
+   "depth": 2,
+   "substation": "Substation_4",
+   "dispatcher": "Dispatcher_6",
+   "consumers": 4,
+   "contractLimitKW": 39.2
+  },
+  {
+   "depth": 2,
+   "substation": "Substation_5",
+   "dispatcher": "Dispatcher_3",
+   "consumers": 4,
+   "contractLimitKW": 517.4
+  },
+  {
+   "depth": 3,
+   "substation": "Substation_11",
+   "dispatcher": "Dispatcher_2",
+   "consumers": 3,
+   "contractLimitKW": 124.7
+  },
+  {
+   "depth": 3,
+   "substation": "Substation_12",
+   "dispatcher": "Dispatcher_2",
+   "consumers": 4,
+   "contractLimitKW": 381.8
+  },
+  {
+   "depth": 3,
+   "substation": "Substation_6",
+   "dispatcher": "Dispatcher_6",
+   "consumers": 4,
+   "contractLimitKW": 39.0
+  }
+ ],
+ "q10_impact_faulty_meters": [
+  {
+   "model": "ForecastModel_GRU1",
+   "faultyMeters": [
+    "Meter_AMI27192",
+    "Meter_AMI66829"
+   ],
+   "badMeasurements": 2,
+   "affectedForecasts": 4,
+   "dispatchersToNotify": [
+    "Dispatcher_5",
+    "Dispatcher_3",
+    "Dispatcher_6",
+    "Dispatcher_4"
+   ]
+  },
+  {
+   "model": "ForecastModel_ARIMA1",
+   "faultyMeters": [
+    "Meter_AMI27192"
+   ],
+   "badMeasurements": 1,
+   "affectedForecasts": 2,
+   "dispatchersToNotify": [
+    "Dispatcher_5"
+   ]
+  },
+  {
+   "model": "ForecastModel_LSTM2",
+   "faultyMeters": [
+    "Meter_AMI77410"
+   ],
+   "badMeasurements": 1,
+   "affectedForecasts": 3,
+   "dispatchersToNotify": [
+    "Dispatcher_2",
+    "Dispatcher_3"
+   ]
+  }
+ ]
+}

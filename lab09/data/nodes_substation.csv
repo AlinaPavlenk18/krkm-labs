@@ -1,0 +1,13 @@
+id,name,nominalCapacity,currentLoad,source
+Substation_1,Підстанція №1,2500.0,1850.0,synthetic:gen_v1(seed=42)
+Substation_10,Підстанція №10,1200.0,780.0,synthetic:gen_v1(seed=42)
+Substation_11,Підстанція №11,350.0,301.0,synthetic:gen_v1(seed=42)
+Substation_12,Підстанція №12,250.0,90.0,lab08:data.ttl
+Substation_2,Підстанція №2,800.0,512.0,synthetic:gen_v1(seed=42)
+Substation_3,Підстанція №3,600.0,402.0,synthetic:gen_v1(seed=42)
+Substation_4,Підстанція №4,500.0,450.0,synthetic:gen_v1(seed=42)
+Substation_5,Підстанція №5,500.0,468.0,lab08:data.ttl
+Substation_6,Підстанція №6,400.0,236.0,synthetic:gen_v1(seed=42)
+Substation_7,Підстанція №7,1000.0,870.0,lab08:data.ttl
+Substation_8,Підстанція №8,300.0,141.0,synthetic:gen_v1(seed=42)
+Substation_9,Підстанція №9,400.0,120.0,lab08:data.ttl

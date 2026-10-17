@@ -1,0 +1,26 @@
+digraph G {
+graph [rankdir=LR, splines=true, nodesep=0.6, ranksep=1.0, pad=0.3, fontname="DejaVu Sans", label="Графова схема (LPG) ЛР9 · на всіх зв'язках: source, confidence, validFrom · (UNIQUE) унікальне обмеження, (idx) індекс", labelloc=b, fontsize=12];
+node [shape=plain, fontname="DejaVu Sans", fontsize=11];
+edge [fontname="DejaVu Sans", fontsize=10, color="#444444", arrowsize=0.8];
+Consumer [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#dae8fc" STYLE="ROUNDED"><TR><TD><B>:Consumer</B></TD></TR><HR/><TR><TD ALIGN="LEFT">id (UNIQUE)</TD></TR><TR><TD ALIGN="LEFT">category</TD></TR><TR><TD ALIGN="LEFT">contractLimit</TD></TR><TR><TD ALIGN="LEFT">+ :Residential | :Commercial | :Industrial</TD></TR></TABLE>>];
+Meter [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#dae8fc" STYLE="ROUNDED"><TR><TD><B>:Meter</B></TD></TR><HR/><TR><TD ALIGN="LEFT">id (UNIQUE)</TD></TR><TR><TD ALIGN="LEFT">status (idx)</TD></TR><TR><TD ALIGN="LEFT">meterType</TD></TR><TR><TD ALIGN="LEFT">readingInterval</TD></TR></TABLE>>];
+Measurement [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#d5e8d4" STYLE="ROUNDED"><TR><TD><B>:Measurement</B></TD></TR><HR/><TR><TD ALIGN="LEFT">id (UNIQUE)</TD></TR><TR><TD ALIGN="LEFT">timestamp (idx)</TD></TR><TR><TD ALIGN="LEFT">consumptionValue</TD></TR><TR><TD ALIGN="LEFT">voltage</TD></TR></TABLE>>];
+WeatherCondition [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#d5e8d4" STYLE="ROUNDED"><TR><TD><B>:WeatherCondition</B></TD></TR><HR/><TR><TD ALIGN="LEFT">id (UNIQUE)</TD></TR><TR><TD ALIGN="LEFT">temperature</TD></TR><TR><TD ALIGN="LEFT">cloudCover</TD></TR></TABLE>>];
+ForecastModel [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#ffe6cc" STYLE="ROUNDED"><TR><TD><B>:ForecastModel</B></TD></TR><HR/><TR><TD ALIGN="LEFT">id (UNIQUE)</TD></TR><TR><TD ALIGN="LEFT">modelType</TD></TR><TR><TD ALIGN="LEFT">accuracy</TD></TR><TR><TD ALIGN="LEFT">trainingDate</TD></TR><TR><TD ALIGN="LEFT">+ :MLModel | :StatisticalModel</TD></TR></TABLE>>];
+Forecast [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#ffe6cc" STYLE="ROUNDED"><TR><TD><B>:Forecast</B></TD></TR><HR/><TR><TD ALIGN="LEFT">id (UNIQUE)</TD></TR><TR><TD ALIGN="LEFT">errorPercentage (idx)</TD></TR><TR><TD ALIGN="LEFT">predictedConsumption</TD></TR><TR><TD ALIGN="LEFT">forecastPeriod</TD></TR></TABLE>>];
+Dispatcher [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#e1d5e7" STYLE="ROUNDED"><TR><TD><B>:Dispatcher</B></TD></TR><HR/><TR><TD ALIGN="LEFT">id (UNIQUE)</TD></TR><TR><TD ALIGN="LEFT">qualification</TD></TR><TR><TD ALIGN="LEFT">shift</TD></TR></TABLE>>];
+Substation [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#f8cecc" STYLE="ROUNDED"><TR><TD><B>:Substation</B></TD></TR><HR/><TR><TD ALIGN="LEFT">id (UNIQUE)</TD></TR><TR><TD ALIGN="LEFT">nominalCapacity</TD></TR><TR><TD ALIGN="LEFT">currentLoad</TD></TR><TR><TD ALIGN="LEFT">pagerank, community (GDS)</TD></TR></TABLE>>];
+Region [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#f8cecc" STYLE="ROUNDED"><TR><TD><B>:Region</B></TD></TR><HR/><TR><TD ALIGN="LEFT">id (UNIQUE)</TD></TR><TR><TD ALIGN="LEFT">name</TD></TR></TABLE>>];
+Consumer -> Meter [label="HAS_METER"];
+Consumer -> Substation [label="CONNECTED_TO"];
+Meter -> Measurement [label="RECORDED"];
+WeatherCondition -> Measurement [label="INFLUENCES"];
+WeatherCondition -> ForecastModel [label="AFFECTS_MODEL"];
+ForecastModel -> Measurement [label="TRAINED_ON"];
+ForecastModel -> Forecast [label="GENERATED"];
+Dispatcher -> Forecast [label="USES_FORECAST"];
+Dispatcher -> Substation [label="MANAGES"];
+Substation -> Substation [label="FEEDS"];
+Substation -> Region [label="LOCATED_IN"];
+Forecast -> Substation [label="FORECAST_FOR"];
+}

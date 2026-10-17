@@ -1,0 +1,29 @@
+[
+ {
+  "run": "R1: v1 (схема) · Opus-агент",
+  "auto_correct": 15,
+  "after_review": 15,
+  "n": 15,
+  "blocked_by_guard": 0,
+  "gen_sec_per_q": 1.81,
+  "exec_ms_median": 6.9
+ },
+ {
+  "run": "R2: v1 (схема) · Haiku-агент",
+  "auto_correct": 14,
+  "after_review": 15,
+  "n": 15,
+  "blocked_by_guard": 0,
+  "gen_sec_per_q": 1.61,
+  "exec_ms_median": 10.7
+ },
+ {
+  "run": "R3: v0 (без схеми) · Opus-агент",
+  "auto_correct": 5,
+  "after_review": 6,
+  "n": 15,
+  "blocked_by_guard": 9,
+  "gen_sec_per_q": 1.19,
+  "exec_ms_median": 34.7
+ }
+]

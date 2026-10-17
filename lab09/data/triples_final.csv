@@ -1,0 +1,1207 @@
+subject,predicate,object,object_type,datatype,lang,source,confidence,valid_from
+Consumer_1002,address,"м. Львів, вул. Шевченка, 45, кв. 12",literal,string,,lab08:data.ttl,,
+Consumer_1002,connectedToSubstation,Substation_12,iri,,,lab08:data.ttl,1.0,2026-09-24
+Consumer_1002,consumerCategory,побутовий,literal,string,,lab08:data.ttl,,
+Consumer_1002,contractLimit,10.0,literal,double,,lab08:data.ttl,,
+Consumer_1002,hasMeter,Meter_AMI10452,iri,,,lab08:data.ttl,1.0,2026-09-24
+Consumer_1002,rdf:type,ResidentialConsumer,iri,,,lab08:data.ttl,,
+Consumer_1002,skos:prefLabel,Споживач №1002 (побутовий),literal,,uk,lab08:data.ttl,,
+Consumer_3310,address,"м. Львів, просп. Свободи, 28",literal,string,,lab08:data.ttl,,
+Consumer_3310,connectedToSubstation,Substation_5,iri,,,lab08:data.ttl,1.0,2026-09-24
+Consumer_3310,consumerCategory,комерційний,literal,string,,lab08:data.ttl,,
+Consumer_3310,contractLimit,120.0,literal,double,,lab08:data.ttl,,
+Consumer_3310,hasMeter,Meter_AMI77410,iri,,,lab08:data.ttl,1.0,2026-09-24
+Consumer_3310,rdf:type,CommercialConsumer,iri,,,lab08:data.ttl,,
+Consumer_3310,skos:prefLabel,Споживач №3310 (комерційний),literal,,uk,lab08:data.ttl,,
+Consumer_4521,address,"м. Львів, вул. Промислова, 12",literal,string,,lab08:data.ttl,,
+Consumer_4521,connectedToSubstation,Substation_7,iri,,,lab08:data.ttl,1.0,2026-09-24
+Consumer_4521,consumerCategory,промисловий,literal,string,,lab08:data.ttl,,
+Consumer_4521,contractLimit,450.0,literal,double,,lab08:data.ttl,,
+Consumer_4521,hasMeter,Meter_AMI99231,iri,,,lab08:data.ttl,1.0,2026-09-24
+Consumer_4521,rdf:type,IndustrialConsumer,iri,,,lab08:data.ttl,,
+Consumer_4521,skos:prefLabel,Споживач №4521 (промисловий),literal,,uk,lab08:data.ttl,,
+Dispatcher_1,qualification,старший,literal,string,,lab08:data.ttl,,
+Dispatcher_1,shift,ранкова,literal,string,,lab08:data.ttl,,
+Dispatcher_1,usesForecast,Forecast_20260924,iri,,,lab08:data.ttl,1.0,2026-09-24
+Dispatcher_1,rdf:type,Dispatcher,iri,,,lab08:data.ttl,,
+Dispatcher_1,skos:prefLabel,Диспетчер №1 (старший),literal,,uk,lab08:data.ttl,,
+Dispatcher_2,qualification,молодший,literal,string,,lab08:data.ttl,,
+Dispatcher_2,shift,вечірня,literal,string,,lab08:data.ttl,,
+Dispatcher_2,usesForecast,Forecast_20260925,iri,,,lab08:data.ttl,1.0,2026-09-24
+Dispatcher_2,rdf:type,Dispatcher,iri,,,lab08:data.ttl,,
+Dispatcher_2,skos:prefLabel,Диспетчер №2 (молодший),literal,,uk,lab08:data.ttl,,
+Dispatcher_3,qualification,старший,literal,string,,lab08:data.ttl,,
+Dispatcher_3,shift,нічна,literal,string,,lab08:data.ttl,,
+Dispatcher_3,usesForecast,Forecast_20260110,iri,,,lab08:data.ttl,1.0,2026-09-24
+Dispatcher_3,rdf:type,Dispatcher,iri,,,lab08:data.ttl,,
+Dispatcher_3,skos:prefLabel,Диспетчер №3 (старший),literal,,uk,lab08:data.ttl,,
+ForecastModel_LSTM1,accuracy,92.0,literal,double,,lab08:data.ttl,,
+ForecastModel_LSTM1,modelType,LSTM,literal,string,,lab08:data.ttl,,
+ForecastModel_LSTM1,trainedOnMeasurement,Measurement_001,iri,,,lab08:data.ttl,1.0,2026-09-24
+ForecastModel_LSTM1,trainingDate,2026-01-15,literal,date,,lab08:data.ttl,,
+ForecastModel_LSTM1,rdf:type,MachineLearningModel,iri,,,lab08:data.ttl,,
+ForecastModel_LSTM1,skos:prefLabel,Модель LSTM №1,literal,,uk,lab08:data.ttl,,
+ForecastModel_LSTM2,accuracy,78.0,literal,double,,lab08:data.ttl,,
+ForecastModel_LSTM2,modelType,LSTM,literal,string,,lab08:data.ttl,,
+ForecastModel_LSTM2,trainedOnMeasurement,Measurement_003,iri,,,lab08:data.ttl,1.0,2026-09-24
+ForecastModel_LSTM2,trainingDate,2025-06-20,literal,date,,lab08:data.ttl,,
+ForecastModel_LSTM2,rdf:type,MachineLearningModel,iri,,,lab08:data.ttl,,
+ForecastModel_LSTM2,skos:prefLabel,Модель LSTM №2 (застаріла),literal,,uk,lab08:data.ttl,,
+ForecastModel_VAR1,accuracy,84.5,literal,double,,lab08:data.ttl,,
+ForecastModel_VAR1,modelType,VAR,literal,string,,lab08:data.ttl,,
+ForecastModel_VAR1,trainedOnMeasurement,Measurement_002,iri,,,lab08:data.ttl,1.0,2026-09-24
+ForecastModel_VAR1,trainingDate,2025-11-01,literal,date,,lab08:data.ttl,,
+ForecastModel_VAR1,rdf:type,StatisticalModel,iri,,,lab08:data.ttl,,
+ForecastModel_VAR1,skos:prefLabel,Модель VAR №1,literal,,uk,lab08:data.ttl,,
+Forecast_20260110,errorPercentage,11.0,literal,double,,lab08:data.ttl,,
+Forecast_20260110,forecastPeriod,доба,literal,string,,lab08:data.ttl,,
+Forecast_20260110,generatedByModel,ForecastModel_LSTM2,iri,,,lab08:data.ttl,1.0,2026-09-24
+Forecast_20260110,predictedConsumption,2480.0,literal,double,,lab08:data.ttl,,
+Forecast_20260110,rdf:type,Forecast,iri,,,lab08:data.ttl,,
+Forecast_20260110,skos:prefLabel,Прогноз на 10.01.2026,literal,,uk,lab08:data.ttl,,
+Forecast_20260924,errorPercentage,4.0,literal,double,,lab08:data.ttl,,
+Forecast_20260924,forecastPeriod,доба,literal,string,,lab08:data.ttl,,
+Forecast_20260924,generatedByModel,ForecastModel_LSTM1,iri,,,lab08:data.ttl,1.0,2026-09-24
+Forecast_20260924,predictedConsumption,1250.0,literal,double,,lab08:data.ttl,,
+Forecast_20260924,rdf:type,Forecast,iri,,,lab08:data.ttl,,
+Forecast_20260924,skos:prefLabel,Прогноз на 24.09.2026,literal,,uk,lab08:data.ttl,,
+Forecast_20260925,errorPercentage,7.5,literal,double,,lab08:data.ttl,,
+Forecast_20260925,forecastPeriod,доба,literal,string,,lab08:data.ttl,,
+Forecast_20260925,generatedByModel,ForecastModel_VAR1,iri,,,lab08:data.ttl,1.0,2026-09-24
+Forecast_20260925,predictedConsumption,210.0,literal,double,,lab08:data.ttl,,
+Forecast_20260925,rdf:type,Forecast,iri,,,lab08:data.ttl,,
+Forecast_20260925,skos:prefLabel,Прогноз на 25.09.2026,literal,,uk,lab08:data.ttl,,
+Measurement_001,consumptionValue,52.4,literal,double,,lab08:data.ttl,,
+Measurement_001,measuredByMeter,Meter_AMI99231,iri,,,lab08:data.ttl,1.0,2026-09-24
+Measurement_001,timestamp,2026-09-24T08:00:00,literal,dateTime,,lab08:data.ttl,,
+Measurement_001,voltage,231.0,literal,double,,lab08:data.ttl,,
+Measurement_001,rdf:type,Measurement,iri,,,lab08:data.ttl,,
+Measurement_001,skos:prefLabel,Вимірювання №001,literal,,uk,lab08:data.ttl,,
+Measurement_002,consumptionValue,8.1,literal,double,,lab08:data.ttl,,
+Measurement_002,measuredByMeter,Meter_AMI10452,iri,,,lab08:data.ttl,1.0,2026-09-24
+Measurement_002,timestamp,2026-09-25T08:00:00,literal,dateTime,,lab08:data.ttl,,
+Measurement_002,voltage,228.5,literal,double,,lab08:data.ttl,,
+Measurement_002,rdf:type,Measurement,iri,,,lab08:data.ttl,,
+Measurement_002,skos:prefLabel,Вимірювання №002,literal,,uk,lab08:data.ttl,,
+Measurement_003,consumptionValue,95.6,literal,double,,lab08:data.ttl,,
+Measurement_003,measuredByMeter,Meter_AMI77410,iri,,,lab08:data.ttl,1.0,2026-09-24
+Measurement_003,timestamp,2026-01-10T08:00:00,literal,dateTime,,lab08:data.ttl,,
+Measurement_003,voltage,233.0,literal,double,,lab08:data.ttl,,
+Measurement_003,rdf:type,Measurement,iri,,,lab08:data.ttl,,
+Measurement_003,skos:prefLabel,Вимірювання №003,literal,,uk,lab08:data.ttl,,
+Meter_AMI10452,meterStatus,активний,literal,string,,lab08:data.ttl,,
+Meter_AMI10452,meterType,однофазний,literal,string,,lab08:data.ttl,,
+Meter_AMI10452,readingInterval,60,literal,integer,,lab08:data.ttl,,
+Meter_AMI10452,rdf:type,Meter,iri,,,lab08:data.ttl,,
+Meter_AMI10452,skos:prefLabel,Лічильник AMI-10452,literal,,uk,lab08:data.ttl,,
+Meter_AMI77410,meterStatus,несправний,literal,string,,lab08:data.ttl,,
+Meter_AMI77410,meterType,трифазний,literal,string,,lab08:data.ttl,,
+Meter_AMI77410,readingInterval,30,literal,integer,,lab08:data.ttl,,
+Meter_AMI77410,rdf:type,Meter,iri,,,lab08:data.ttl,,
+Meter_AMI77410,skos:prefLabel,Лічильник AMI-77410,literal,,uk,lab08:data.ttl,,
+Meter_AMI99231,meterStatus,активний,literal,string,,lab08:data.ttl,,
+Meter_AMI99231,meterType,трифазний,literal,string,,lab08:data.ttl,,
+Meter_AMI99231,readingInterval,30,literal,integer,,lab08:data.ttl,,
+Meter_AMI99231,rdf:type,Meter,iri,,,lab08:data.ttl,,
+Meter_AMI99231,skos:prefLabel,Лічильник AMI-99231,literal,,uk,lab08:data.ttl,,
+Substation_12,currentLoad,90.0,literal,double,,lab08:data.ttl,,
+Substation_12,managedByDispatcher,Dispatcher_2,iri,,,lab08:data.ttl,1.0,2026-09-24
+Substation_12,nominalCapacity,250.0,literal,double,,lab08:data.ttl,,
+Substation_12,region,Львівська область,literal,string,,lab08:data.ttl,,
+Substation_12,rdf:type,Substation,iri,,,lab08:data.ttl,,
+Substation_12,skos:prefLabel,Підстанція №12,literal,,uk,lab08:data.ttl,,
+Substation_5,currentLoad,468.0,literal,double,,lab08:data.ttl,,
+Substation_5,managedByDispatcher,Dispatcher_3,iri,,,lab08:data.ttl,1.0,2026-09-24
+Substation_5,nominalCapacity,500.0,literal,double,,lab08:data.ttl,,
+Substation_5,region,Волинська область,literal,string,,lab08:data.ttl,,
+Substation_5,upstreamOf,Substation_12,iri,,,lab08:data.ttl,1.0,2026-09-24
+Substation_5,rdf:type,Substation,iri,,,lab08:data.ttl,,
+Substation_5,skos:prefLabel,Підстанція №5,literal,,uk,lab08:data.ttl,,
+Substation_7,currentLoad,870.0,literal,double,,lab08:data.ttl,,
+Substation_7,managedByDispatcher,Dispatcher_1,iri,,,lab08:data.ttl,1.0,2026-09-24
+Substation_7,nominalCapacity,1000.0,literal,double,,lab08:data.ttl,,
+Substation_7,region,Львівська область,literal,string,,lab08:data.ttl,,
+Substation_7,upstreamOf,Substation_5,iri,,,lab08:data.ttl,1.0,2026-09-24
+Substation_7,rdf:type,Substation,iri,,,lab08:data.ttl,,
+Substation_7,skos:prefLabel,Підстанція №7,literal,,uk,lab08:data.ttl,,
+Substation_9,currentLoad,120.0,literal,double,,lab08:data.ttl,,
+Substation_9,nominalCapacity,400.0,literal,double,,lab08:data.ttl,,
+Substation_9,region,Закарпатська область,literal,string,,lab08:data.ttl,,
+Substation_9,rdf:type,Substation,iri,,,lab08:data.ttl,,
+Substation_9,skos:prefLabel,Підстанція №9,literal,,uk,lab08:data.ttl,,
+WeatherCondition_20260110,cloudCover,суцільна,literal,string,,lab08:data.ttl,,
+WeatherCondition_20260110,influencesMeasurement,Measurement_003,iri,,,lab08:data.ttl,1.0,2026-09-24
+WeatherCondition_20260110,influencesModel,ForecastModel_LSTM2,iri,,,lab08:data.ttl,1.0,2026-09-24
+WeatherCondition_20260110,temperature,-12.0,literal,double,,lab08:data.ttl,,
+WeatherCondition_20260110,rdf:type,WeatherCondition,iri,,,lab08:data.ttl,,
+WeatherCondition_20260110,skos:prefLabel,Погода 10.01.2026,literal,,uk,lab08:data.ttl,,
+WeatherCondition_20260924,cloudCover,ясно,literal,string,,lab08:data.ttl,,
+WeatherCondition_20260924,influencesMeasurement,Measurement_001,iri,,,lab08:data.ttl,1.0,2026-09-24
+WeatherCondition_20260924,influencesModel,ForecastModel_LSTM1,iri,,,lab08:data.ttl,1.0,2026-09-24
+WeatherCondition_20260924,temperature,-5.0,literal,double,,lab08:data.ttl,,
+WeatherCondition_20260924,rdf:type,WeatherCondition,iri,,,lab08:data.ttl,,
+WeatherCondition_20260924,skos:prefLabel,Погода 24.09.2026,literal,,uk,lab08:data.ttl,,
+WeatherCondition_20260925,cloudCover,мінлива,literal,string,,lab08:data.ttl,,
+WeatherCondition_20260925,influencesMeasurement,Measurement_002,iri,,,lab08:data.ttl,1.0,2026-09-24
+WeatherCondition_20260925,influencesModel,ForecastModel_VAR1,iri,,,lab08:data.ttl,1.0,2026-09-24
+WeatherCondition_20260925,temperature,-3.0,literal,double,,lab08:data.ttl,,
+WeatherCondition_20260925,rdf:type,WeatherCondition,iri,,,lab08:data.ttl,,
+WeatherCondition_20260925,skos:prefLabel,Погода 25.09.2026,literal,,uk,lab08:data.ttl,,
+Substation_1,rdf:type,Substation,iri,,,synthetic:gen_v1(seed=42),,
+Substation_1,skos:prefLabel,Підстанція №1,literal,,uk,synthetic:gen_v1(seed=42),,
+Substation_1,region,Львівська область,literal,string,,synthetic:gen_v1(seed=42),,
+Substation_1,nominalCapacity,2500.0,literal,double,,synthetic:gen_v1(seed=42),,
+Substation_1,currentLoad,1850.0,literal,double,,synthetic:gen_v1(seed=42),,
+Substation_2,rdf:type,Substation,iri,,,synthetic:gen_v1(seed=42),,
+Substation_2,skos:prefLabel,Підстанція №2,literal,,uk,synthetic:gen_v1(seed=42),,
+Substation_2,region,Волинська область,literal,string,,synthetic:gen_v1(seed=42),,
+Substation_2,nominalCapacity,800.0,literal,double,,synthetic:gen_v1(seed=42),,
+Substation_2,currentLoad,512.0,literal,double,,synthetic:gen_v1(seed=42),,
+Substation_3,rdf:type,Substation,iri,,,synthetic:gen_v1(seed=42),,
+Substation_3,skos:prefLabel,Підстанція №3,literal,,uk,synthetic:gen_v1(seed=42),,
+Substation_3,region,Рівненська область,literal,string,,synthetic:gen_v1(seed=42),,
+Substation_3,nominalCapacity,600.0,literal,double,,synthetic:gen_v1(seed=42),,
+Substation_3,currentLoad,402.0,literal,double,,synthetic:gen_v1(seed=42),,
+Substation_4,rdf:type,Substation,iri,,,synthetic:gen_v1(seed=42),,
+Substation_4,skos:prefLabel,Підстанція №4,literal,,uk,synthetic:gen_v1(seed=42),,
+Substation_4,region,Тернопільська область,literal,string,,synthetic:gen_v1(seed=42),,
+Substation_4,nominalCapacity,500.0,literal,double,,synthetic:gen_v1(seed=42),,
+Substation_4,currentLoad,450.0,literal,double,,synthetic:gen_v1(seed=42),,
+Substation_6,rdf:type,Substation,iri,,,synthetic:gen_v1(seed=42),,
+Substation_6,skos:prefLabel,Підстанція №6,literal,,uk,synthetic:gen_v1(seed=42),,
+Substation_6,region,Івано-Франківська область,literal,string,,synthetic:gen_v1(seed=42),,
+Substation_6,nominalCapacity,400.0,literal,double,,synthetic:gen_v1(seed=42),,
+Substation_6,currentLoad,236.0,literal,double,,synthetic:gen_v1(seed=42),,
+Substation_8,rdf:type,Substation,iri,,,synthetic:gen_v1(seed=42),,
+Substation_8,skos:prefLabel,Підстанція №8,literal,,uk,synthetic:gen_v1(seed=42),,
+Substation_8,region,Закарпатська область,literal,string,,synthetic:gen_v1(seed=42),,
+Substation_8,nominalCapacity,300.0,literal,double,,synthetic:gen_v1(seed=42),,
+Substation_8,currentLoad,141.0,literal,double,,synthetic:gen_v1(seed=42),,
+Substation_10,rdf:type,Substation,iri,,,synthetic:gen_v1(seed=42),,
+Substation_10,skos:prefLabel,Підстанція №10,literal,,uk,synthetic:gen_v1(seed=42),,
+Substation_10,region,Львівська область,literal,string,,synthetic:gen_v1(seed=42),,
+Substation_10,nominalCapacity,1200.0,literal,double,,synthetic:gen_v1(seed=42),,
+Substation_10,currentLoad,780.0,literal,double,,synthetic:gen_v1(seed=42),,
+Substation_11,rdf:type,Substation,iri,,,synthetic:gen_v1(seed=42),,
+Substation_11,skos:prefLabel,Підстанція №11,literal,,uk,synthetic:gen_v1(seed=42),,
+Substation_11,region,Рівненська область,literal,string,,synthetic:gen_v1(seed=42),,
+Substation_11,nominalCapacity,350.0,literal,double,,synthetic:gen_v1(seed=42),,
+Substation_11,currentLoad,301.0,literal,double,,synthetic:gen_v1(seed=42),,
+Substation_1,upstreamOf,Substation_7,iri,,,synthetic:gen_v1(seed=42),1.0,2019-05-01
+Substation_1,upstreamOf,Substation_10,iri,,,synthetic:gen_v1(seed=42),1.0,2019-05-01
+Substation_1,upstreamOf,Substation_2,iri,,,synthetic:gen_v1(seed=42),1.0,2020-03-15
+Substation_10,upstreamOf,Substation_4,iri,,,synthetic:gen_v1(seed=42),1.0,2021-07-01
+Substation_4,upstreamOf,Substation_6,iri,,,synthetic:gen_v1(seed=42),1.0,2021-07-01
+Substation_2,upstreamOf,Substation_3,iri,,,synthetic:gen_v1(seed=42),1.0,2020-03-15
+Substation_3,upstreamOf,Substation_11,iri,,,synthetic:gen_v1(seed=42),1.0,2022-10-10
+Substation_9,upstreamOf,Substation_8,iri,,,synthetic:gen_v1(seed=42),1.0,2023-02-01
+Dispatcher_4,rdf:type,Dispatcher,iri,,,synthetic:gen_v1(seed=42),,
+Dispatcher_4,skos:prefLabel,Диспетчер №4 (старший),literal,,uk,synthetic:gen_v1(seed=42),,
+Dispatcher_4,qualification,старший,literal,string,,synthetic:gen_v1(seed=42),,
+Dispatcher_4,shift,ранкова,literal,string,,synthetic:gen_v1(seed=42),,
+Dispatcher_5,rdf:type,Dispatcher,iri,,,synthetic:gen_v1(seed=42),,
+Dispatcher_5,skos:prefLabel,Диспетчер №5 (провідний),literal,,uk,synthetic:gen_v1(seed=42),,
+Dispatcher_5,qualification,провідний,literal,string,,synthetic:gen_v1(seed=42),,
+Dispatcher_5,shift,вечірня,literal,string,,synthetic:gen_v1(seed=42),,
+Dispatcher_6,rdf:type,Dispatcher,iri,,,synthetic:gen_v1(seed=42),,
+Dispatcher_6,skos:prefLabel,Диспетчер №6 (молодший),literal,,uk,synthetic:gen_v1(seed=42),,
+Dispatcher_6,qualification,молодший,literal,string,,synthetic:gen_v1(seed=42),,
+Dispatcher_6,shift,нічна,literal,string,,synthetic:gen_v1(seed=42),,
+Substation_1,managedByDispatcher,Dispatcher_4,iri,,,synthetic:gen_v1(seed=42),1.0,2025-01-01
+Substation_10,managedByDispatcher,Dispatcher_4,iri,,,synthetic:gen_v1(seed=42),1.0,2025-01-01
+Substation_2,managedByDispatcher,Dispatcher_5,iri,,,synthetic:gen_v1(seed=42),1.0,2025-03-01
+Substation_3,managedByDispatcher,Dispatcher_5,iri,,,synthetic:gen_v1(seed=42),1.0,2025-03-01
+Substation_8,managedByDispatcher,Dispatcher_5,iri,,,synthetic:gen_v1(seed=42),1.0,2025-06-01
+Substation_4,managedByDispatcher,Dispatcher_6,iri,,,synthetic:gen_v1(seed=42),1.0,2025-09-01
+Substation_6,managedByDispatcher,Dispatcher_6,iri,,,synthetic:gen_v1(seed=42),1.0,2025-09-01
+Substation_11,managedByDispatcher,Dispatcher_2,iri,,,synthetic:gen_v1(seed=42),1.0,2026-02-01
+Consumer_5001,rdf:type,ResidentialConsumer,iri,,,synthetic:gen_v1(seed=42),,
+Consumer_5001,skos:prefLabel,Споживач №5001 (побутовий),literal,,uk,synthetic:gen_v1(seed=42),,
+Consumer_5001,consumerCategory,побутовий,literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5001,contractLimit,6.6,literal,double,,synthetic:gen_v1(seed=42),,
+Consumer_5001,address,"м. Луцьк, вул. Наукова, 14",literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5001,connectedToSubstation,Substation_2,iri,,,synthetic:gen_v1(seed=42),1.0,2016-07-01
+Consumer_5002,rdf:type,ResidentialConsumer,iri,,,synthetic:gen_v1(seed=42),,
+Consumer_5002,skos:prefLabel,Споживач №5002 (побутовий),literal,,uk,synthetic:gen_v1(seed=42),,
+Consumer_5002,consumerCategory,побутовий,literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5002,contractLimit,6.0,literal,double,,synthetic:gen_v1(seed=42),,
+Consumer_5002,address,"м. Рівне, вул. Наукова, 78",literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5002,connectedToSubstation,Substation_3,iri,,,synthetic:gen_v1(seed=42),1.0,2019-01-01
+Consumer_5003,rdf:type,ResidentialConsumer,iri,,,synthetic:gen_v1(seed=42),,
+Consumer_5003,skos:prefLabel,Споживач №5003 (побутовий),literal,,uk,synthetic:gen_v1(seed=42),,
+Consumer_5003,consumerCategory,побутовий,literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5003,contractLimit,12.3,literal,double,,synthetic:gen_v1(seed=42),,
+Consumer_5003,address,"м. Тернопіль, вул. Соборна, 16",literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5003,connectedToSubstation,Substation_4,iri,,,synthetic:gen_v1(seed=42),1.0,2021-02-01
+Consumer_5004,rdf:type,ResidentialConsumer,iri,,,synthetic:gen_v1(seed=42),,
+Consumer_5004,skos:prefLabel,Споживач №5004 (побутовий),literal,,uk,synthetic:gen_v1(seed=42),,
+Consumer_5004,consumerCategory,побутовий,literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5004,contractLimit,10.5,literal,double,,synthetic:gen_v1(seed=42),,
+Consumer_5004,address,"м. Івано-Франківськ, вул. Привокзальна, 80",literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5004,connectedToSubstation,Substation_6,iri,,,synthetic:gen_v1(seed=42),1.0,2020-10-01
+Consumer_5005,rdf:type,CommercialConsumer,iri,,,synthetic:gen_v1(seed=42),,
+Consumer_5005,skos:prefLabel,Споживач №5005 (комерційний),literal,,uk,synthetic:gen_v1(seed=42),,
+Consumer_5005,consumerCategory,комерційний,literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5005,contractLimit,70.8,literal,double,,synthetic:gen_v1(seed=42),,
+Consumer_5005,address,"м. Ужгород, вул. Січових Стрільців, 6",literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5005,connectedToSubstation,Substation_8,iri,,,synthetic:gen_v1(seed=42),1.0,2025-04-01
+Consumer_5006,rdf:type,CommercialConsumer,iri,,,synthetic:gen_v1(seed=42),,
+Consumer_5006,skos:prefLabel,Споживач №5006 (комерційний),literal,,uk,synthetic:gen_v1(seed=42),,
+Consumer_5006,consumerCategory,комерційний,literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5006,contractLimit,163.7,literal,double,,synthetic:gen_v1(seed=42),,
+Consumer_5006,address,"м. Львів, вул. Січових Стрільців, 110",literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5006,connectedToSubstation,Substation_10,iri,,,synthetic:gen_v1(seed=42),1.0,2018-02-01
+Consumer_5007,rdf:type,CommercialConsumer,iri,,,synthetic:gen_v1(seed=42),,
+Consumer_5007,skos:prefLabel,Споживач №5007 (комерційний),literal,,uk,synthetic:gen_v1(seed=42),,
+Consumer_5007,consumerCategory,комерційний,literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5007,contractLimit,100.8,literal,double,,synthetic:gen_v1(seed=42),,
+Consumer_5007,address,"м. Рівне, вул. Городоцька, 82",literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5007,connectedToSubstation,Substation_11,iri,,,synthetic:gen_v1(seed=42),1.0,2020-03-01
+Consumer_5008,rdf:type,ResidentialConsumer,iri,,,synthetic:gen_v1(seed=42),,
+Consumer_5008,skos:prefLabel,Споживач №5008 (побутовий),literal,,uk,synthetic:gen_v1(seed=42),,
+Consumer_5008,consumerCategory,побутовий,literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5008,contractLimit,8.7,literal,double,,synthetic:gen_v1(seed=42),,
+Consumer_5008,address,"м. Львів, вул. Франка, 86",literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5008,connectedToSubstation,Substation_12,iri,,,synthetic:gen_v1(seed=42),1.0,2019-12-01
+Consumer_5009,rdf:type,CommercialConsumer,iri,,,synthetic:gen_v1(seed=42),,
+Consumer_5009,skos:prefLabel,Споживач №5009 (комерційний),literal,,uk,synthetic:gen_v1(seed=42),,
+Consumer_5009,consumerCategory,комерційний,literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5009,contractLimit,189.9,literal,double,,synthetic:gen_v1(seed=42),,
+Consumer_5009,address,"м. Луцьк, вул. Привокзальна, 10",literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5009,connectedToSubstation,Substation_5,iri,,,synthetic:gen_v1(seed=42),1.0,2024-11-01
+Consumer_5010,rdf:type,CommercialConsumer,iri,,,synthetic:gen_v1(seed=42),,
+Consumer_5010,skos:prefLabel,Споживач №5010 (комерційний),literal,,uk,synthetic:gen_v1(seed=42),,
+Consumer_5010,consumerCategory,комерційний,literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5010,contractLimit,67.4,literal,double,,synthetic:gen_v1(seed=42),,
+Consumer_5010,address,"м. Львів, вул. Садова, 32",literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5010,connectedToSubstation,Substation_7,iri,,,synthetic:gen_v1(seed=42),1.0,2017-08-01
+Consumer_5011,rdf:type,IndustrialConsumer,iri,,,synthetic:gen_v1(seed=42),,
+Consumer_5011,skos:prefLabel,Споживач №5011 (промисловий),literal,,uk,synthetic:gen_v1(seed=42),,
+Consumer_5011,consumerCategory,промисловий,literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5011,contractLimit,496.6,literal,double,,synthetic:gen_v1(seed=42),,
+Consumer_5011,address,"м. Ужгород, вул. Привокзальна, 89",literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5011,connectedToSubstation,Substation_9,iri,,,synthetic:gen_v1(seed=42),1.0,2023-04-01
+Consumer_5012,rdf:type,CommercialConsumer,iri,,,synthetic:gen_v1(seed=42),,
+Consumer_5012,skos:prefLabel,Споживач №5012 (комерційний),literal,,uk,synthetic:gen_v1(seed=42),,
+Consumer_5012,consumerCategory,комерційний,literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5012,contractLimit,149.5,literal,double,,synthetic:gen_v1(seed=42),,
+Consumer_5012,address,"м. Луцьк, вул. Незалежності, 30",literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5012,connectedToSubstation,Substation_2,iri,,,synthetic:gen_v1(seed=42),1.0,2015-06-01
+Consumer_5013,rdf:type,IndustrialConsumer,iri,,,synthetic:gen_v1(seed=42),,
+Consumer_5013,skos:prefLabel,Споживач №5013 (промисловий),literal,,uk,synthetic:gen_v1(seed=42),,
+Consumer_5013,consumerCategory,промисловий,literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5013,contractLimit,510.8,literal,double,,synthetic:gen_v1(seed=42),,
+Consumer_5013,address,"м. Рівне, вул. Січових Стрільців, 28",literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5013,connectedToSubstation,Substation_3,iri,,,synthetic:gen_v1(seed=42),1.0,2024-12-01
+Consumer_5014,rdf:type,ResidentialConsumer,iri,,,synthetic:gen_v1(seed=42),,
+Consumer_5014,skos:prefLabel,Споживач №5014 (побутовий),literal,,uk,synthetic:gen_v1(seed=42),,
+Consumer_5014,consumerCategory,побутовий,literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5014,contractLimit,8.1,literal,double,,synthetic:gen_v1(seed=42),,
+Consumer_5014,address,"м. Тернопіль, вул. Привокзальна, 64",literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5014,connectedToSubstation,Substation_4,iri,,,synthetic:gen_v1(seed=42),1.0,2021-11-01
+Consumer_5015,rdf:type,ResidentialConsumer,iri,,,synthetic:gen_v1(seed=42),,
+Consumer_5015,skos:prefLabel,Споживач №5015 (побутовий),literal,,uk,synthetic:gen_v1(seed=42),,
+Consumer_5015,consumerCategory,побутовий,literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5015,contractLimit,9.6,literal,double,,synthetic:gen_v1(seed=42),,
+Consumer_5015,address,"м. Івано-Франківськ, вул. Лесі Українки, 18",literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5015,connectedToSubstation,Substation_6,iri,,,synthetic:gen_v1(seed=42),1.0,2018-12-01
+Consumer_5016,rdf:type,ResidentialConsumer,iri,,,synthetic:gen_v1(seed=42),,
+Consumer_5016,skos:prefLabel,Споживач №5016 (побутовий),literal,,uk,synthetic:gen_v1(seed=42),,
+Consumer_5016,consumerCategory,побутовий,literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5016,contractLimit,10.6,literal,double,,synthetic:gen_v1(seed=42),,
+Consumer_5016,address,"м. Ужгород, вул. Лесі Українки, 96",literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5016,connectedToSubstation,Substation_8,iri,,,synthetic:gen_v1(seed=42),1.0,2024-07-01
+Consumer_5017,rdf:type,CommercialConsumer,iri,,,synthetic:gen_v1(seed=42),,
+Consumer_5017,skos:prefLabel,Споживач №5017 (комерційний),literal,,uk,synthetic:gen_v1(seed=42),,
+Consumer_5017,consumerCategory,комерційний,literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5017,contractLimit,183.7,literal,double,,synthetic:gen_v1(seed=42),,
+Consumer_5017,address,"м. Львів, вул. Зелена, 47",literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5017,connectedToSubstation,Substation_10,iri,,,synthetic:gen_v1(seed=42),1.0,2018-03-01
+Consumer_5018,rdf:type,ResidentialConsumer,iri,,,synthetic:gen_v1(seed=42),,
+Consumer_5018,skos:prefLabel,Споживач №5018 (побутовий),literal,,uk,synthetic:gen_v1(seed=42),,
+Consumer_5018,consumerCategory,побутовий,literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5018,contractLimit,10.1,literal,double,,synthetic:gen_v1(seed=42),,
+Consumer_5018,address,"м. Рівне, вул. Січових Стрільців, 97",literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5018,connectedToSubstation,Substation_11,iri,,,synthetic:gen_v1(seed=42),1.0,2015-02-01
+Consumer_5019,rdf:type,IndustrialConsumer,iri,,,synthetic:gen_v1(seed=42),,
+Consumer_5019,skos:prefLabel,Споживач №5019 (промисловий),literal,,uk,synthetic:gen_v1(seed=42),,
+Consumer_5019,consumerCategory,промисловий,literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5019,contractLimit,349.3,literal,double,,synthetic:gen_v1(seed=42),,
+Consumer_5019,address,"м. Львів, вул. Грушевського, 102",literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5019,connectedToSubstation,Substation_12,iri,,,synthetic:gen_v1(seed=42),1.0,2025-07-01
+Consumer_5020,rdf:type,ResidentialConsumer,iri,,,synthetic:gen_v1(seed=42),,
+Consumer_5020,skos:prefLabel,Споживач №5020 (побутовий),literal,,uk,synthetic:gen_v1(seed=42),,
+Consumer_5020,consumerCategory,побутовий,literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5020,contractLimit,11.0,literal,double,,synthetic:gen_v1(seed=42),,
+Consumer_5020,address,"м. Луцьк, вул. Зелена, 49",literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5020,connectedToSubstation,Substation_5,iri,,,synthetic:gen_v1(seed=42),1.0,2024-08-01
+Consumer_5021,rdf:type,CommercialConsumer,iri,,,synthetic:gen_v1(seed=42),,
+Consumer_5021,skos:prefLabel,Споживач №5021 (комерційний),literal,,uk,synthetic:gen_v1(seed=42),,
+Consumer_5021,consumerCategory,комерційний,literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5021,contractLimit,124.7,literal,double,,synthetic:gen_v1(seed=42),,
+Consumer_5021,address,"м. Львів, вул. Соборна, 111",literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5021,connectedToSubstation,Substation_7,iri,,,synthetic:gen_v1(seed=42),1.0,2015-11-01
+Consumer_5022,rdf:type,ResidentialConsumer,iri,,,synthetic:gen_v1(seed=42),,
+Consumer_5022,skos:prefLabel,Споживач №5022 (побутовий),literal,,uk,synthetic:gen_v1(seed=42),,
+Consumer_5022,consumerCategory,побутовий,literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5022,contractLimit,12.2,literal,double,,synthetic:gen_v1(seed=42),,
+Consumer_5022,address,"м. Ужгород, вул. Привокзальна, 114",literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5022,connectedToSubstation,Substation_9,iri,,,synthetic:gen_v1(seed=42),1.0,2023-05-01
+Consumer_5023,rdf:type,IndustrialConsumer,iri,,,synthetic:gen_v1(seed=42),,
+Consumer_5023,skos:prefLabel,Споживач №5023 (промисловий),literal,,uk,synthetic:gen_v1(seed=42),,
+Consumer_5023,consumerCategory,промисловий,literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5023,contractLimit,749.6,literal,double,,synthetic:gen_v1(seed=42),,
+Consumer_5023,address,"м. Луцьк, вул. Наукова, 15",literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5023,connectedToSubstation,Substation_2,iri,,,synthetic:gen_v1(seed=42),1.0,2019-07-01
+Consumer_5024,rdf:type,ResidentialConsumer,iri,,,synthetic:gen_v1(seed=42),,
+Consumer_5024,skos:prefLabel,Споживач №5024 (побутовий),literal,,uk,synthetic:gen_v1(seed=42),,
+Consumer_5024,consumerCategory,побутовий,literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5024,contractLimit,6.6,literal,double,,synthetic:gen_v1(seed=42),,
+Consumer_5024,address,"м. Рівне, вул. Незалежності, 93",literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5024,connectedToSubstation,Substation_3,iri,,,synthetic:gen_v1(seed=42),1.0,2019-09-01
+Consumer_5025,rdf:type,ResidentialConsumer,iri,,,synthetic:gen_v1(seed=42),,
+Consumer_5025,skos:prefLabel,Споживач №5025 (побутовий),literal,,uk,synthetic:gen_v1(seed=42),,
+Consumer_5025,consumerCategory,побутовий,literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5025,contractLimit,12.6,literal,double,,synthetic:gen_v1(seed=42),,
+Consumer_5025,address,"м. Тернопіль, вул. Соборна, 117",literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5025,connectedToSubstation,Substation_4,iri,,,synthetic:gen_v1(seed=42),1.0,2016-11-01
+Consumer_5026,rdf:type,ResidentialConsumer,iri,,,synthetic:gen_v1(seed=42),,
+Consumer_5026,skos:prefLabel,Споживач №5026 (побутовий),literal,,uk,synthetic:gen_v1(seed=42),,
+Consumer_5026,consumerCategory,побутовий,literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5026,contractLimit,8.0,literal,double,,synthetic:gen_v1(seed=42),,
+Consumer_5026,address,"м. Івано-Франківськ, вул. Привокзальна, 65",literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5026,connectedToSubstation,Substation_6,iri,,,synthetic:gen_v1(seed=42),1.0,2024-04-01
+Consumer_5027,rdf:type,IndustrialConsumer,iri,,,synthetic:gen_v1(seed=42),,
+Consumer_5027,skos:prefLabel,Споживач №5027 (промисловий),literal,,uk,synthetic:gen_v1(seed=42),,
+Consumer_5027,consumerCategory,промисловий,literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5027,contractLimit,349.3,literal,double,,synthetic:gen_v1(seed=42),,
+Consumer_5027,address,"м. Ужгород, вул. Грушевського, 70",literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5027,connectedToSubstation,Substation_8,iri,,,synthetic:gen_v1(seed=42),1.0,2023-01-01
+Consumer_5028,rdf:type,CommercialConsumer,iri,,,synthetic:gen_v1(seed=42),,
+Consumer_5028,skos:prefLabel,Споживач №5028 (комерційний),literal,,uk,synthetic:gen_v1(seed=42),,
+Consumer_5028,consumerCategory,комерційний,literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5028,contractLimit,135.8,literal,double,,synthetic:gen_v1(seed=42),,
+Consumer_5028,address,"м. Львів, вул. Городоцька, 3",literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5028,connectedToSubstation,Substation_10,iri,,,synthetic:gen_v1(seed=42),1.0,2016-06-01
+Consumer_5029,rdf:type,ResidentialConsumer,iri,,,synthetic:gen_v1(seed=42),,
+Consumer_5029,skos:prefLabel,Споживач №5029 (побутовий),literal,,uk,synthetic:gen_v1(seed=42),,
+Consumer_5029,consumerCategory,побутовий,literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5029,contractLimit,13.8,literal,double,,synthetic:gen_v1(seed=42),,
+Consumer_5029,address,"м. Рівне, вул. Лесі Українки, 31",literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5029,connectedToSubstation,Substation_11,iri,,,synthetic:gen_v1(seed=42),1.0,2015-04-01
+Consumer_5030,rdf:type,ResidentialConsumer,iri,,,synthetic:gen_v1(seed=42),,
+Consumer_5030,skos:prefLabel,Споживач №5030 (побутовий),literal,,uk,synthetic:gen_v1(seed=42),,
+Consumer_5030,consumerCategory,побутовий,literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5030,contractLimit,13.8,literal,double,,synthetic:gen_v1(seed=42),,
+Consumer_5030,address,"м. Львів, вул. Січових Стрільців, 11",literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5030,connectedToSubstation,Substation_12,iri,,,synthetic:gen_v1(seed=42),1.0,2022-02-01
+Consumer_5031,rdf:type,CommercialConsumer,iri,,,synthetic:gen_v1(seed=42),,
+Consumer_5031,skos:prefLabel,Споживач №5031 (комерційний),literal,,uk,synthetic:gen_v1(seed=42),,
+Consumer_5031,consumerCategory,комерційний,literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5031,contractLimit,196.5,literal,double,,synthetic:gen_v1(seed=42),,
+Consumer_5031,address,"м. Луцьк, вул. Соборна, 99",literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5031,connectedToSubstation,Substation_5,iri,,,synthetic:gen_v1(seed=42),1.0,2017-03-01
+Consumer_5032,rdf:type,ResidentialConsumer,iri,,,synthetic:gen_v1(seed=42),,
+Consumer_5032,skos:prefLabel,Споживач №5032 (побутовий),literal,,uk,synthetic:gen_v1(seed=42),,
+Consumer_5032,consumerCategory,побутовий,literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5032,contractLimit,11.6,literal,double,,synthetic:gen_v1(seed=42),,
+Consumer_5032,address,"м. Львів, вул. Соборна, 22",literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5032,connectedToSubstation,Substation_7,iri,,,synthetic:gen_v1(seed=42),1.0,2019-09-01
+Consumer_5033,rdf:type,ResidentialConsumer,iri,,,synthetic:gen_v1(seed=42),,
+Consumer_5033,skos:prefLabel,Споживач №5033 (побутовий),literal,,uk,synthetic:gen_v1(seed=42),,
+Consumer_5033,consumerCategory,побутовий,literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5033,contractLimit,13.7,literal,double,,synthetic:gen_v1(seed=42),,
+Consumer_5033,address,"м. Ужгород, вул. Зелена, 28",literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5033,connectedToSubstation,Substation_9,iri,,,synthetic:gen_v1(seed=42),1.0,2023-12-01
+Consumer_5034,rdf:type,ResidentialConsumer,iri,,,synthetic:gen_v1(seed=42),,
+Consumer_5034,skos:prefLabel,Споживач №5034 (побутовий),literal,,uk,synthetic:gen_v1(seed=42),,
+Consumer_5034,consumerCategory,побутовий,literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5034,contractLimit,11.9,literal,double,,synthetic:gen_v1(seed=42),,
+Consumer_5034,address,"м. Луцьк, вул. Садова, 40",literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5034,connectedToSubstation,Substation_2,iri,,,synthetic:gen_v1(seed=42),1.0,2021-11-01
+Consumer_5035,rdf:type,ResidentialConsumer,iri,,,synthetic:gen_v1(seed=42),,
+Consumer_5035,skos:prefLabel,Споживач №5035 (побутовий),literal,,uk,synthetic:gen_v1(seed=42),,
+Consumer_5035,consumerCategory,побутовий,literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5035,contractLimit,11.5,literal,double,,synthetic:gen_v1(seed=42),,
+Consumer_5035,address,"м. Рівне, вул. Городоцька, 116",literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5035,connectedToSubstation,Substation_3,iri,,,synthetic:gen_v1(seed=42),1.0,2023-08-01
+Consumer_5036,rdf:type,ResidentialConsumer,iri,,,synthetic:gen_v1(seed=42),,
+Consumer_5036,skos:prefLabel,Споживач №5036 (побутовий),literal,,uk,synthetic:gen_v1(seed=42),,
+Consumer_5036,consumerCategory,побутовий,literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5036,contractLimit,6.2,literal,double,,synthetic:gen_v1(seed=42),,
+Consumer_5036,address,"м. Тернопіль, вул. Франка, 9",literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5036,connectedToSubstation,Substation_4,iri,,,synthetic:gen_v1(seed=42),1.0,2020-01-01
+Consumer_5037,rdf:type,ResidentialConsumer,iri,,,synthetic:gen_v1(seed=42),,
+Consumer_5037,skos:prefLabel,Споживач №5037 (побутовий),literal,,uk,synthetic:gen_v1(seed=42),,
+Consumer_5037,consumerCategory,побутовий,literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5037,contractLimit,10.9,literal,double,,synthetic:gen_v1(seed=42),,
+Consumer_5037,address,"м. Івано-Франківськ, вул. Франка, 76",literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5037,connectedToSubstation,Substation_6,iri,,,synthetic:gen_v1(seed=42),1.0,2018-01-01
+Consumer_5038,rdf:type,IndustrialConsumer,iri,,,synthetic:gen_v1(seed=42),,
+Consumer_5038,skos:prefLabel,Споживач №5038 (промисловий),literal,,uk,synthetic:gen_v1(seed=42),,
+Consumer_5038,consumerCategory,промисловий,literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5038,contractLimit,1500.0,literal,double,,synthetic:gen_v1(seed=42),,
+Consumer_5038,address,"м. Львів, вул. Промислова, 2",literal,string,,synthetic:gen_v1(seed=42),,
+Consumer_5038,connectedToSubstation,Substation_1,iri,,,synthetic:gen_v1(seed=42),1.0,2018-01-01
+Meter_AMI20916,rdf:type,Meter,iri,,,synthetic:gen_v1(seed=42),,
+Meter_AMI20916,skos:prefLabel,Лічильник AMI-20916,literal,,uk,synthetic:gen_v1(seed=42),,
+Meter_AMI20916,meterStatus,активний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI20916,meterType,однофазний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI20916,readingInterval,60,literal,integer,,synthetic:gen_v1(seed=42),,
+Consumer_5001,hasMeter,Meter_AMI20916,iri,,,synthetic:gen_v1(seed=42),1.0,2020-09-15
+Meter_AMI22890,rdf:type,Meter,iri,,,synthetic:gen_v1(seed=42),,
+Meter_AMI22890,skos:prefLabel,Лічильник AMI-22890,literal,,uk,synthetic:gen_v1(seed=42),,
+Meter_AMI22890,meterStatus,активний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI22890,meterType,однофазний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI22890,readingInterval,60,literal,integer,,synthetic:gen_v1(seed=42),,
+Consumer_5002,hasMeter,Meter_AMI22890,iri,,,synthetic:gen_v1(seed=42),1.0,2020-03-15
+Meter_AMI24755,rdf:type,Meter,iri,,,synthetic:gen_v1(seed=42),,
+Meter_AMI24755,skos:prefLabel,Лічильник AMI-24755,literal,,uk,synthetic:gen_v1(seed=42),,
+Meter_AMI24755,meterStatus,активний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI24755,meterType,однофазний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI24755,readingInterval,60,literal,integer,,synthetic:gen_v1(seed=42),,
+Consumer_5003,hasMeter,Meter_AMI24755,iri,,,synthetic:gen_v1(seed=42),1.0,2021-03-15
+Meter_AMI26032,rdf:type,Meter,iri,,,synthetic:gen_v1(seed=42),,
+Meter_AMI26032,skos:prefLabel,Лічильник AMI-26032,literal,,uk,synthetic:gen_v1(seed=42),,
+Meter_AMI26032,meterStatus,несправний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI26032,meterType,однофазний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI26032,readingInterval,60,literal,integer,,synthetic:gen_v1(seed=42),,
+Consumer_5004,hasMeter,Meter_AMI26032,iri,,,synthetic:gen_v1(seed=42),1.0,2020-08-15
+Meter_AMI27192,rdf:type,Meter,iri,,,synthetic:gen_v1(seed=42),,
+Meter_AMI27192,skos:prefLabel,Лічильник AMI-27192,literal,,uk,synthetic:gen_v1(seed=42),,
+Meter_AMI27192,meterStatus,несправний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI27192,meterType,трифазний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI27192,readingInterval,15,literal,integer,,synthetic:gen_v1(seed=42),,
+Consumer_5005,hasMeter,Meter_AMI27192,iri,,,synthetic:gen_v1(seed=42),1.0,2025-08-15
+Meter_AMI29583,rdf:type,Meter,iri,,,synthetic:gen_v1(seed=42),,
+Meter_AMI29583,skos:prefLabel,Лічильник AMI-29583,literal,,uk,synthetic:gen_v1(seed=42),,
+Meter_AMI29583,meterStatus,активний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI29583,meterType,трифазний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI29583,readingInterval,15,literal,integer,,synthetic:gen_v1(seed=42),,
+Consumer_5006,hasMeter,Meter_AMI29583,iri,,,synthetic:gen_v1(seed=42),1.0,2020-01-15
+Meter_AMI32391,rdf:type,Meter,iri,,,synthetic:gen_v1(seed=42),,
+Meter_AMI32391,skos:prefLabel,Лічильник AMI-32391,literal,,uk,synthetic:gen_v1(seed=42),,
+Meter_AMI32391,meterStatus,активний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI32391,meterType,трифазний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI32391,readingInterval,15,literal,integer,,synthetic:gen_v1(seed=42),,
+Consumer_5007,hasMeter,Meter_AMI32391,iri,,,synthetic:gen_v1(seed=42),1.0,2020-02-15
+Meter_AMI33496,rdf:type,Meter,iri,,,synthetic:gen_v1(seed=42),,
+Meter_AMI33496,skos:prefLabel,Лічильник AMI-33496,literal,,uk,synthetic:gen_v1(seed=42),,
+Meter_AMI33496,meterStatus,активний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI33496,meterType,однофазний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI33496,readingInterval,60,literal,integer,,synthetic:gen_v1(seed=42),,
+Consumer_5008,hasMeter,Meter_AMI33496,iri,,,synthetic:gen_v1(seed=42),1.0,2020-03-15
+Meter_AMI35297,rdf:type,Meter,iri,,,synthetic:gen_v1(seed=42),,
+Meter_AMI35297,skos:prefLabel,Лічильник AMI-35297,literal,,uk,synthetic:gen_v1(seed=42),,
+Meter_AMI35297,meterStatus,активний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI35297,meterType,трифазний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI35297,readingInterval,30,literal,integer,,synthetic:gen_v1(seed=42),,
+Consumer_5009,hasMeter,Meter_AMI35297,iri,,,synthetic:gen_v1(seed=42),1.0,2024-08-15
+Meter_AMI36309,rdf:type,Meter,iri,,,synthetic:gen_v1(seed=42),,
+Meter_AMI36309,skos:prefLabel,Лічильник AMI-36309,literal,,uk,synthetic:gen_v1(seed=42),,
+Meter_AMI36309,meterStatus,активний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI36309,meterType,трифазний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI36309,readingInterval,30,literal,integer,,synthetic:gen_v1(seed=42),,
+Consumer_5010,hasMeter,Meter_AMI36309,iri,,,synthetic:gen_v1(seed=42),1.0,2020-01-15
+Meter_AMI37120,rdf:type,Meter,iri,,,synthetic:gen_v1(seed=42),,
+Meter_AMI37120,skos:prefLabel,Лічильник AMI-37120,literal,,uk,synthetic:gen_v1(seed=42),,
+Meter_AMI37120,meterStatus,активний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI37120,meterType,трифазний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI37120,readingInterval,30,literal,integer,,synthetic:gen_v1(seed=42),,
+Consumer_5011,hasMeter,Meter_AMI37120,iri,,,synthetic:gen_v1(seed=42),1.0,2023-01-15
+Meter_AMI38856,rdf:type,Meter,iri,,,synthetic:gen_v1(seed=42),,
+Meter_AMI38856,skos:prefLabel,Лічильник AMI-38856,literal,,uk,synthetic:gen_v1(seed=42),,
+Meter_AMI38856,meterStatus,активний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI38856,meterType,трифазний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI38856,readingInterval,30,literal,integer,,synthetic:gen_v1(seed=42),,
+Consumer_5012,hasMeter,Meter_AMI38856,iri,,,synthetic:gen_v1(seed=42),1.0,2020-08-15
+Meter_AMI40161,rdf:type,Meter,iri,,,synthetic:gen_v1(seed=42),,
+Meter_AMI40161,skos:prefLabel,Лічильник AMI-40161,literal,,uk,synthetic:gen_v1(seed=42),,
+Meter_AMI40161,meterStatus,активний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI40161,meterType,трифазний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI40161,readingInterval,30,literal,integer,,synthetic:gen_v1(seed=42),,
+Consumer_5013,hasMeter,Meter_AMI40161,iri,,,synthetic:gen_v1(seed=42),1.0,2024-12-15
+Meter_AMI42574,rdf:type,Meter,iri,,,synthetic:gen_v1(seed=42),,
+Meter_AMI42574,skos:prefLabel,Лічильник AMI-42574,literal,,uk,synthetic:gen_v1(seed=42),,
+Meter_AMI42574,meterStatus,активний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI42574,meterType,однофазний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI42574,readingInterval,60,literal,integer,,synthetic:gen_v1(seed=42),,
+Consumer_5014,hasMeter,Meter_AMI42574,iri,,,synthetic:gen_v1(seed=42),1.0,2021-11-15
+Meter_AMI44704,rdf:type,Meter,iri,,,synthetic:gen_v1(seed=42),,
+Meter_AMI44704,skos:prefLabel,Лічильник AMI-44704,literal,,uk,synthetic:gen_v1(seed=42),,
+Meter_AMI44704,meterStatus,активний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI44704,meterType,однофазний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI44704,readingInterval,60,literal,integer,,synthetic:gen_v1(seed=42),,
+Consumer_5015,hasMeter,Meter_AMI44704,iri,,,synthetic:gen_v1(seed=42),1.0,2020-03-15
+Meter_AMI45618,rdf:type,Meter,iri,,,synthetic:gen_v1(seed=42),,
+Meter_AMI45618,skos:prefLabel,Лічильник AMI-45618,literal,,uk,synthetic:gen_v1(seed=42),,
+Meter_AMI45618,meterStatus,активний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI45618,meterType,однофазний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI45618,readingInterval,60,literal,integer,,synthetic:gen_v1(seed=42),,
+Consumer_5016,hasMeter,Meter_AMI45618,iri,,,synthetic:gen_v1(seed=42),1.0,2024-05-15
+Meter_AMI46646,rdf:type,Meter,iri,,,synthetic:gen_v1(seed=42),,
+Meter_AMI46646,skos:prefLabel,Лічильник AMI-46646,literal,,uk,synthetic:gen_v1(seed=42),,
+Meter_AMI46646,meterStatus,на повірці,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI46646,meterType,трифазний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI46646,readingInterval,15,literal,integer,,synthetic:gen_v1(seed=42),,
+Consumer_5017,hasMeter,Meter_AMI46646,iri,,,synthetic:gen_v1(seed=42),1.0,2020-10-15
+Meter_AMI49003,rdf:type,Meter,iri,,,synthetic:gen_v1(seed=42),,
+Meter_AMI49003,skos:prefLabel,Лічильник AMI-49003,literal,,uk,synthetic:gen_v1(seed=42),,
+Meter_AMI49003,meterStatus,активний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI49003,meterType,однофазний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI49003,readingInterval,60,literal,integer,,synthetic:gen_v1(seed=42),,
+Consumer_5018,hasMeter,Meter_AMI49003,iri,,,synthetic:gen_v1(seed=42),1.0,2020-01-15
+Meter_AMI50424,rdf:type,Meter,iri,,,synthetic:gen_v1(seed=42),,
+Meter_AMI50424,skos:prefLabel,Лічильник AMI-50424,literal,,uk,synthetic:gen_v1(seed=42),,
+Meter_AMI50424,meterStatus,активний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI50424,meterType,трифазний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI50424,readingInterval,15,literal,integer,,synthetic:gen_v1(seed=42),,
+Consumer_5019,hasMeter,Meter_AMI50424,iri,,,synthetic:gen_v1(seed=42),1.0,2025-01-15
+Meter_AMI52953,rdf:type,Meter,iri,,,synthetic:gen_v1(seed=42),,
+Meter_AMI52953,skos:prefLabel,Лічильник AMI-52953,literal,,uk,synthetic:gen_v1(seed=42),,
+Meter_AMI52953,meterStatus,активний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI52953,meterType,однофазний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI52953,readingInterval,60,literal,integer,,synthetic:gen_v1(seed=42),,
+Consumer_5020,hasMeter,Meter_AMI52953,iri,,,synthetic:gen_v1(seed=42),1.0,2024-08-15
+Meter_AMI55149,rdf:type,Meter,iri,,,synthetic:gen_v1(seed=42),,
+Meter_AMI55149,skos:prefLabel,Лічильник AMI-55149,literal,,uk,synthetic:gen_v1(seed=42),,
+Meter_AMI55149,meterStatus,активний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI55149,meterType,трифазний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI55149,readingInterval,15,literal,integer,,synthetic:gen_v1(seed=42),,
+Consumer_5021,hasMeter,Meter_AMI55149,iri,,,synthetic:gen_v1(seed=42),1.0,2020-01-15
+Meter_AMI57366,rdf:type,Meter,iri,,,synthetic:gen_v1(seed=42),,
+Meter_AMI57366,skos:prefLabel,Лічильник AMI-57366,literal,,uk,synthetic:gen_v1(seed=42),,
+Meter_AMI57366,meterStatus,активний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI57366,meterType,однофазний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI57366,readingInterval,60,literal,integer,,synthetic:gen_v1(seed=42),,
+Consumer_5022,hasMeter,Meter_AMI57366,iri,,,synthetic:gen_v1(seed=42),1.0,2023-02-15
+Meter_AMI58264,rdf:type,Meter,iri,,,synthetic:gen_v1(seed=42),,
+Meter_AMI58264,skos:prefLabel,Лічильник AMI-58264,literal,,uk,synthetic:gen_v1(seed=42),,
+Meter_AMI58264,meterStatus,активний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI58264,meterType,трифазний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI58264,readingInterval,15,literal,integer,,synthetic:gen_v1(seed=42),,
+Consumer_5023,hasMeter,Meter_AMI58264,iri,,,synthetic:gen_v1(seed=42),1.0,2020-10-15
+Meter_AMI58679,rdf:type,Meter,iri,,,synthetic:gen_v1(seed=42),,
+Meter_AMI58679,skos:prefLabel,Лічильник AMI-58679,literal,,uk,synthetic:gen_v1(seed=42),,
+Meter_AMI58679,meterStatus,активний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI58679,meterType,однофазний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI58679,readingInterval,60,literal,integer,,synthetic:gen_v1(seed=42),,
+Consumer_5024,hasMeter,Meter_AMI58679,iri,,,synthetic:gen_v1(seed=42),1.0,2020-11-15
+Meter_AMI59779,rdf:type,Meter,iri,,,synthetic:gen_v1(seed=42),,
+Meter_AMI59779,skos:prefLabel,Лічильник AMI-59779,literal,,uk,synthetic:gen_v1(seed=42),,
+Meter_AMI59779,meterStatus,активний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI59779,meterType,однофазний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI59779,readingInterval,60,literal,integer,,synthetic:gen_v1(seed=42),,
+Consumer_5025,hasMeter,Meter_AMI59779,iri,,,synthetic:gen_v1(seed=42),1.0,2020-07-15
+Meter_AMI60407,rdf:type,Meter,iri,,,synthetic:gen_v1(seed=42),,
+Meter_AMI60407,skos:prefLabel,Лічильник AMI-60407,literal,,uk,synthetic:gen_v1(seed=42),,
+Meter_AMI60407,meterStatus,активний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI60407,meterType,однофазний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI60407,readingInterval,60,literal,integer,,synthetic:gen_v1(seed=42),,
+Consumer_5026,hasMeter,Meter_AMI60407,iri,,,synthetic:gen_v1(seed=42),1.0,2024-10-15
+Meter_AMI61552,rdf:type,Meter,iri,,,synthetic:gen_v1(seed=42),,
+Meter_AMI61552,skos:prefLabel,Лічильник AMI-61552,literal,,uk,synthetic:gen_v1(seed=42),,
+Meter_AMI61552,meterStatus,активний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI61552,meterType,трифазний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI61552,readingInterval,15,literal,integer,,synthetic:gen_v1(seed=42),,
+Consumer_5027,hasMeter,Meter_AMI61552,iri,,,synthetic:gen_v1(seed=42),1.0,2023-10-15
+Meter_AMI62024,rdf:type,Meter,iri,,,synthetic:gen_v1(seed=42),,
+Meter_AMI62024,skos:prefLabel,Лічильник AMI-62024,literal,,uk,synthetic:gen_v1(seed=42),,
+Meter_AMI62024,meterStatus,активний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI62024,meterType,трифазний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI62024,readingInterval,30,literal,integer,,synthetic:gen_v1(seed=42),,
+Consumer_5028,hasMeter,Meter_AMI62024,iri,,,synthetic:gen_v1(seed=42),1.0,2020-11-15
+Meter_AMI64551,rdf:type,Meter,iri,,,synthetic:gen_v1(seed=42),,
+Meter_AMI64551,skos:prefLabel,Лічильник AMI-64551,literal,,uk,synthetic:gen_v1(seed=42),,
+Meter_AMI64551,meterStatus,активний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI64551,meterType,однофазний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI64551,readingInterval,60,literal,integer,,synthetic:gen_v1(seed=42),,
+Consumer_5029,hasMeter,Meter_AMI64551,iri,,,synthetic:gen_v1(seed=42),1.0,2020-10-15
+Meter_AMI66829,rdf:type,Meter,iri,,,synthetic:gen_v1(seed=42),,
+Meter_AMI66829,skos:prefLabel,Лічильник AMI-66829,literal,,uk,synthetic:gen_v1(seed=42),,
+Meter_AMI66829,meterStatus,несправний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI66829,meterType,однофазний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI66829,readingInterval,60,literal,integer,,synthetic:gen_v1(seed=42),,
+Consumer_5030,hasMeter,Meter_AMI66829,iri,,,synthetic:gen_v1(seed=42),1.0,2022-06-15
+Meter_AMI68034,rdf:type,Meter,iri,,,synthetic:gen_v1(seed=42),,
+Meter_AMI68034,skos:prefLabel,Лічильник AMI-68034,literal,,uk,synthetic:gen_v1(seed=42),,
+Meter_AMI68034,meterStatus,активний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI68034,meterType,трифазний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI68034,readingInterval,15,literal,integer,,synthetic:gen_v1(seed=42),,
+Consumer_5031,hasMeter,Meter_AMI68034,iri,,,synthetic:gen_v1(seed=42),1.0,2020-11-15
+Meter_AMI69457,rdf:type,Meter,iri,,,synthetic:gen_v1(seed=42),,
+Meter_AMI69457,skos:prefLabel,Лічильник AMI-69457,literal,,uk,synthetic:gen_v1(seed=42),,
+Meter_AMI69457,meterStatus,активний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI69457,meterType,однофазний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI69457,readingInterval,60,literal,integer,,synthetic:gen_v1(seed=42),,
+Consumer_5032,hasMeter,Meter_AMI69457,iri,,,synthetic:gen_v1(seed=42),1.0,2020-04-15
+Meter_AMI70681,rdf:type,Meter,iri,,,synthetic:gen_v1(seed=42),,
+Meter_AMI70681,skos:prefLabel,Лічильник AMI-70681,literal,,uk,synthetic:gen_v1(seed=42),,
+Meter_AMI70681,meterStatus,активний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI70681,meterType,однофазний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI70681,readingInterval,60,literal,integer,,synthetic:gen_v1(seed=42),,
+Consumer_5033,hasMeter,Meter_AMI70681,iri,,,synthetic:gen_v1(seed=42),1.0,2023-07-15
+Meter_AMI71354,rdf:type,Meter,iri,,,synthetic:gen_v1(seed=42),,
+Meter_AMI71354,skos:prefLabel,Лічильник AMI-71354,literal,,uk,synthetic:gen_v1(seed=42),,
+Meter_AMI71354,meterStatus,несправний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI71354,meterType,однофазний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI71354,readingInterval,60,literal,integer,,synthetic:gen_v1(seed=42),,
+Consumer_5034,hasMeter,Meter_AMI71354,iri,,,synthetic:gen_v1(seed=42),1.0,2021-11-15
+Meter_AMI74134,rdf:type,Meter,iri,,,synthetic:gen_v1(seed=42),,
+Meter_AMI74134,skos:prefLabel,Лічильник AMI-74134,literal,,uk,synthetic:gen_v1(seed=42),,
+Meter_AMI74134,meterStatus,активний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI74134,meterType,однофазний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI74134,readingInterval,60,literal,integer,,synthetic:gen_v1(seed=42),,
+Consumer_5035,hasMeter,Meter_AMI74134,iri,,,synthetic:gen_v1(seed=42),1.0,2023-05-15
+Meter_AMI76143,rdf:type,Meter,iri,,,synthetic:gen_v1(seed=42),,
+Meter_AMI76143,skos:prefLabel,Лічильник AMI-76143,literal,,uk,synthetic:gen_v1(seed=42),,
+Meter_AMI76143,meterStatus,активний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI76143,meterType,однофазний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI76143,readingInterval,60,literal,integer,,synthetic:gen_v1(seed=42),,
+Consumer_5036,hasMeter,Meter_AMI76143,iri,,,synthetic:gen_v1(seed=42),1.0,2020-06-15
+Meter_AMI76577,rdf:type,Meter,iri,,,synthetic:gen_v1(seed=42),,
+Meter_AMI76577,skos:prefLabel,Лічильник AMI-76577,literal,,uk,synthetic:gen_v1(seed=42),,
+Meter_AMI76577,meterStatus,на повірці,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI76577,meterType,однофазний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI76577,readingInterval,60,literal,integer,,synthetic:gen_v1(seed=42),,
+Consumer_5037,hasMeter,Meter_AMI76577,iri,,,synthetic:gen_v1(seed=42),1.0,2020-01-15
+Meter_AMI78591,rdf:type,Meter,iri,,,synthetic:gen_v1(seed=42),,
+Meter_AMI78591,skos:prefLabel,Лічильник AMI-78591,literal,,uk,synthetic:gen_v1(seed=42),,
+Meter_AMI78591,meterStatus,активний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI78591,meterType,трифазний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI78591,readingInterval,15,literal,integer,,synthetic:gen_v1(seed=42),,
+Consumer_5038,hasMeter,Meter_AMI78591,iri,,,synthetic:gen_v1(seed=42),1.0,2020-02-15
+Meter_AMI80930,rdf:type,Meter,iri,,,synthetic:gen_v1(seed=42),,
+Meter_AMI80930,skos:prefLabel,Лічильник AMI-80930,literal,,uk,synthetic:gen_v1(seed=42),,
+Meter_AMI80930,meterStatus,активний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI80930,meterType,трифазний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI80930,readingInterval,15,literal,integer,,synthetic:gen_v1(seed=42),,
+Consumer_5038,hasMeter,Meter_AMI80930,iri,,,synthetic:gen_v1(seed=42),1.0,2020-09-15
+Meter_AMI81841,rdf:type,Meter,iri,,,synthetic:gen_v1(seed=42),,
+Meter_AMI81841,skos:prefLabel,Лічильник AMI-81841 (резервний),literal,,uk,synthetic:gen_v1(seed=42),,
+Meter_AMI81841,meterStatus,активний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI81841,meterType,трифазний,literal,string,,synthetic:gen_v1(seed=42),,
+Meter_AMI81841,readingInterval,15,literal,integer,,synthetic:gen_v1(seed=42),,
+Consumer_4521,hasMeter,Meter_AMI81841,iri,,,synthetic:gen_v1(seed=42),1.0,2024-04-15
+WeatherCondition_20260926,rdf:type,WeatherCondition,iri,,,synthetic:gen_v1(seed=42),,
+WeatherCondition_20260926,skos:prefLabel,Погода 26.09.2026,literal,,uk,synthetic:gen_v1(seed=42),,
+WeatherCondition_20260926,temperature,4.0,literal,double,,synthetic:gen_v1(seed=42),,
+WeatherCondition_20260926,cloudCover,ясно,literal,string,,synthetic:gen_v1(seed=42),,
+WeatherCondition_20260927,rdf:type,WeatherCondition,iri,,,synthetic:gen_v1(seed=42),,
+WeatherCondition_20260927,skos:prefLabel,Погода 27.09.2026,literal,,uk,synthetic:gen_v1(seed=42),,
+WeatherCondition_20260927,temperature,1.5,literal,double,,synthetic:gen_v1(seed=42),,
+WeatherCondition_20260927,cloudCover,мінлива,literal,string,,synthetic:gen_v1(seed=42),,
+WeatherCondition_20260928,rdf:type,WeatherCondition,iri,,,synthetic:gen_v1(seed=42),,
+WeatherCondition_20260928,skos:prefLabel,Погода 28.09.2026,literal,,uk,synthetic:gen_v1(seed=42),,
+WeatherCondition_20260928,temperature,-1.0,literal,double,,synthetic:gen_v1(seed=42),,
+WeatherCondition_20260928,cloudCover,суцільна,literal,string,,synthetic:gen_v1(seed=42),,
+WeatherCondition_20260929,rdf:type,WeatherCondition,iri,,,synthetic:gen_v1(seed=42),,
+WeatherCondition_20260929,skos:prefLabel,Погода 29.09.2026,literal,,uk,synthetic:gen_v1(seed=42),,
+WeatherCondition_20260929,temperature,2.0,literal,double,,synthetic:gen_v1(seed=42),,
+WeatherCondition_20260929,cloudCover,мінлива,literal,string,,synthetic:gen_v1(seed=42),,
+WeatherCondition_20260930,rdf:type,WeatherCondition,iri,,,synthetic:gen_v1(seed=42),,
+WeatherCondition_20260930,skos:prefLabel,Погода 30.09.2026,literal,,uk,synthetic:gen_v1(seed=42),,
+WeatherCondition_20260930,temperature,6.5,literal,double,,synthetic:gen_v1(seed=42),,
+WeatherCondition_20260930,cloudCover,ясно,literal,string,,synthetic:gen_v1(seed=42),,
+WeatherCondition_20260111,rdf:type,WeatherCondition,iri,,,synthetic:gen_v1(seed=42),,
+WeatherCondition_20260111,skos:prefLabel,Погода 11.01.2026,literal,,uk,synthetic:gen_v1(seed=42),,
+WeatherCondition_20260111,temperature,-15.5,literal,double,,synthetic:gen_v1(seed=42),,
+WeatherCondition_20260111,cloudCover,суцільна,literal,string,,synthetic:gen_v1(seed=42),,
+WeatherCondition_20260112,rdf:type,WeatherCondition,iri,,,synthetic:gen_v1(seed=42),,
+WeatherCondition_20260112,skos:prefLabel,Погода 12.01.2026,literal,,uk,synthetic:gen_v1(seed=42),,
+WeatherCondition_20260112,temperature,-9.0,literal,double,,synthetic:gen_v1(seed=42),,
+WeatherCondition_20260112,cloudCover,мінлива,literal,string,,synthetic:gen_v1(seed=42),,
+Measurement_004,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_004,skos:prefLabel,Вимірювання №004,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_004,consumptionValue,5.0,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_004,voltage,234.9,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_004,timestamp,2026-09-26T08:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_004,measuredByMeter,Meter_AMI20916,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-26
+WeatherCondition_20260926,influencesMeasurement,Measurement_004,iri,,,synthetic:gen_v1(seed=42),0.91,2026-09-26
+Measurement_005,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_005,skos:prefLabel,Вимірювання №005,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_005,consumptionValue,5.6,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_005,voltage,221.7,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_005,timestamp,2026-09-27T18:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_005,measuredByMeter,Meter_AMI22890,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-27
+WeatherCondition_20260927,influencesMeasurement,Measurement_005,iri,,,synthetic:gen_v1(seed=42),0.81,2026-09-27
+Measurement_006,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_006,skos:prefLabel,Вимірювання №006,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_006,consumptionValue,8.9,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_006,voltage,230.1,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_006,timestamp,2026-09-28T08:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_006,measuredByMeter,Meter_AMI24755,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-28
+WeatherCondition_20260928,influencesMeasurement,Measurement_006,iri,,,synthetic:gen_v1(seed=42),0.83,2026-09-28
+Measurement_007,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_007,skos:prefLabel,Вимірювання №007,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_007,consumptionValue,6.6,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_007,voltage,209.0,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_007,timestamp,2026-09-29T08:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_007,measuredByMeter,Meter_AMI26032,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-29
+WeatherCondition_20260929,influencesMeasurement,Measurement_007,iri,,,synthetic:gen_v1(seed=42),0.93,2026-09-29
+Measurement_008,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_008,skos:prefLabel,Вимірювання №008,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_008,consumptionValue,28.8,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_008,voltage,197.6,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_008,timestamp,2026-09-30T08:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_008,measuredByMeter,Meter_AMI27192,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-30
+WeatherCondition_20260930,influencesMeasurement,Measurement_008,iri,,,synthetic:gen_v1(seed=42),0.86,2026-09-30
+Measurement_009,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_009,skos:prefLabel,Вимірювання №009,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_009,consumptionValue,29.6,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_009,voltage,223.8,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_009,timestamp,2026-01-11T12:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_009,measuredByMeter,Meter_AMI29583,iri,,,synthetic:gen_v1(seed=42),1.0,2026-01-11
+WeatherCondition_20260111,influencesMeasurement,Measurement_009,iri,,,synthetic:gen_v1(seed=42),0.85,2026-01-11
+Measurement_010,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_010,skos:prefLabel,Вимірювання №010,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_010,consumptionValue,31.3,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_010,voltage,229.8,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_010,timestamp,2026-01-12T18:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_010,measuredByMeter,Meter_AMI32391,iri,,,synthetic:gen_v1(seed=42),1.0,2026-01-12
+WeatherCondition_20260112,influencesMeasurement,Measurement_010,iri,,,synthetic:gen_v1(seed=42),0.78,2026-01-12
+Measurement_011,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_011,skos:prefLabel,Вимірювання №011,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_011,consumptionValue,5.0,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_011,voltage,234.4,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_011,timestamp,2026-09-26T08:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_011,measuredByMeter,Meter_AMI33496,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-26
+WeatherCondition_20260926,influencesMeasurement,Measurement_011,iri,,,synthetic:gen_v1(seed=42),0.63,2026-09-26
+Measurement_012,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_012,skos:prefLabel,Вимірювання №012,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_012,consumptionValue,39.2,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_012,voltage,223.7,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_012,timestamp,2026-09-27T08:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_012,measuredByMeter,Meter_AMI35297,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-27
+WeatherCondition_20260927,influencesMeasurement,Measurement_012,iri,,,synthetic:gen_v1(seed=42),0.72,2026-09-27
+Measurement_013,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_013,skos:prefLabel,Вимірювання №013,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_013,consumptionValue,28.7,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_013,voltage,235.7,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_013,timestamp,2026-09-28T12:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_013,measuredByMeter,Meter_AMI36309,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-28
+WeatherCondition_20260928,influencesMeasurement,Measurement_013,iri,,,synthetic:gen_v1(seed=42),0.86,2026-09-28
+Measurement_014,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_014,skos:prefLabel,Вимірювання №014,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_014,consumptionValue,197.4,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_014,voltage,226.3,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_014,timestamp,2026-09-29T08:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_014,measuredByMeter,Meter_AMI37120,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-29
+WeatherCondition_20260929,influencesMeasurement,Measurement_014,iri,,,synthetic:gen_v1(seed=42),0.64,2026-09-29
+Measurement_015,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_015,skos:prefLabel,Вимірювання №015,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_015,consumptionValue,58.0,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_015,voltage,230.7,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_015,timestamp,2026-09-30T12:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_015,measuredByMeter,Meter_AMI38856,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-30
+WeatherCondition_20260930,influencesMeasurement,Measurement_015,iri,,,synthetic:gen_v1(seed=42),0.79,2026-09-30
+Measurement_016,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_016,skos:prefLabel,Вимірювання №016,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_016,consumptionValue,243.2,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_016,voltage,228.9,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_016,timestamp,2026-01-11T12:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_016,measuredByMeter,Meter_AMI40161,iri,,,synthetic:gen_v1(seed=42),1.0,2026-01-11
+WeatherCondition_20260111,influencesMeasurement,Measurement_016,iri,,,synthetic:gen_v1(seed=42),0.75,2026-01-11
+Measurement_017,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_017,skos:prefLabel,Вимірювання №017,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_017,consumptionValue,3.8,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_017,voltage,225.2,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_017,timestamp,2026-01-12T08:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_017,measuredByMeter,Meter_AMI42574,iri,,,synthetic:gen_v1(seed=42),1.0,2026-01-12
+WeatherCondition_20260112,influencesMeasurement,Measurement_017,iri,,,synthetic:gen_v1(seed=42),0.91,2026-01-12
+Measurement_018,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_018,skos:prefLabel,Вимірювання №018,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_018,consumptionValue,4.7,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_018,voltage,223.2,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_018,timestamp,2026-09-26T08:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_018,measuredByMeter,Meter_AMI44704,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-26
+WeatherCondition_20260926,influencesMeasurement,Measurement_018,iri,,,synthetic:gen_v1(seed=42),0.72,2026-09-26
+Measurement_019,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_019,skos:prefLabel,Вимірювання №019,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_019,consumptionValue,6.6,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_019,voltage,233.9,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_019,timestamp,2026-09-27T12:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_019,measuredByMeter,Meter_AMI45618,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-27
+WeatherCondition_20260927,influencesMeasurement,Measurement_019,iri,,,synthetic:gen_v1(seed=42),0.92,2026-09-27
+Measurement_020,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_020,skos:prefLabel,Вимірювання №020,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_020,consumptionValue,32.5,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_020,voltage,198.3,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_020,timestamp,2026-09-28T12:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_020,measuredByMeter,Meter_AMI46646,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-28
+WeatherCondition_20260928,influencesMeasurement,Measurement_020,iri,,,synthetic:gen_v1(seed=42),0.91,2026-09-28
+Measurement_021,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_021,skos:prefLabel,Вимірювання №021,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_021,consumptionValue,3.7,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_021,voltage,231.5,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_021,timestamp,2026-09-29T18:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_021,measuredByMeter,Meter_AMI49003,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-29
+WeatherCondition_20260929,influencesMeasurement,Measurement_021,iri,,,synthetic:gen_v1(seed=42),0.87,2026-09-29
+Measurement_022,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_022,skos:prefLabel,Вимірювання №022,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_022,consumptionValue,174.7,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_022,voltage,230.4,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_022,timestamp,2026-09-30T12:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_022,measuredByMeter,Meter_AMI50424,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-30
+WeatherCondition_20260930,influencesMeasurement,Measurement_022,iri,,,synthetic:gen_v1(seed=42),0.69,2026-09-30
+Measurement_023,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_023,skos:prefLabel,Вимірювання №023,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_023,consumptionValue,7.9,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_023,voltage,220.8,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_023,timestamp,2026-01-11T08:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_023,measuredByMeter,Meter_AMI52953,iri,,,synthetic:gen_v1(seed=42),1.0,2026-01-11
+WeatherCondition_20260111,influencesMeasurement,Measurement_023,iri,,,synthetic:gen_v1(seed=42),0.90,2026-01-11
+Measurement_024,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_024,skos:prefLabel,Вимірювання №024,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_024,consumptionValue,32.0,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_024,voltage,232.9,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_024,timestamp,2026-01-12T21:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_024,measuredByMeter,Meter_AMI55149,iri,,,synthetic:gen_v1(seed=42),1.0,2026-01-12
+WeatherCondition_20260112,influencesMeasurement,Measurement_024,iri,,,synthetic:gen_v1(seed=42),0.72,2026-01-12
+Measurement_025,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_025,skos:prefLabel,Вимірювання №025,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_025,consumptionValue,8.0,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_025,voltage,233.8,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_025,timestamp,2026-09-26T12:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_025,measuredByMeter,Meter_AMI57366,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-26
+WeatherCondition_20260926,influencesMeasurement,Measurement_025,iri,,,synthetic:gen_v1(seed=42),0.61,2026-09-26
+Measurement_026,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_026,skos:prefLabel,Вимірювання №026,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_026,consumptionValue,139.3,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_026,voltage,224.6,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_026,timestamp,2026-09-27T08:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_026,measuredByMeter,Meter_AMI58264,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-27
+WeatherCondition_20260927,influencesMeasurement,Measurement_026,iri,,,synthetic:gen_v1(seed=42),0.94,2026-09-27
+Measurement_027,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_027,skos:prefLabel,Вимірювання №027,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_027,consumptionValue,5.1,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_027,voltage,229.9,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_027,timestamp,2026-09-28T21:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_027,measuredByMeter,Meter_AMI58679,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-28
+WeatherCondition_20260928,influencesMeasurement,Measurement_027,iri,,,synthetic:gen_v1(seed=42),0.84,2026-09-28
+Measurement_028,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_028,skos:prefLabel,Вимірювання №028,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_028,consumptionValue,8.2,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_028,voltage,224.6,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_028,timestamp,2026-09-29T08:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_028,measuredByMeter,Meter_AMI59779,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-29
+WeatherCondition_20260929,influencesMeasurement,Measurement_028,iri,,,synthetic:gen_v1(seed=42),0.64,2026-09-29
+Measurement_029,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_029,skos:prefLabel,Вимірювання №029,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_029,consumptionValue,8.8,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_029,voltage,222.0,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_029,timestamp,2026-09-30T18:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_029,measuredByMeter,Meter_AMI60407,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-30
+WeatherCondition_20260930,influencesMeasurement,Measurement_029,iri,,,synthetic:gen_v1(seed=42),0.61,2026-09-30
+Measurement_030,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_030,skos:prefLabel,Вимірювання №030,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_030,consumptionValue,204.6,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_030,voltage,224.9,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_030,timestamp,2026-01-11T18:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_030,measuredByMeter,Meter_AMI61552,iri,,,synthetic:gen_v1(seed=42),1.0,2026-01-11
+WeatherCondition_20260111,influencesMeasurement,Measurement_030,iri,,,synthetic:gen_v1(seed=42),0.75,2026-01-11
+Measurement_031,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_031,skos:prefLabel,Вимірювання №031,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_031,consumptionValue,59.4,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_031,voltage,221.0,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_031,timestamp,2026-01-12T12:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_031,measuredByMeter,Meter_AMI62024,iri,,,synthetic:gen_v1(seed=42),1.0,2026-01-12
+WeatherCondition_20260112,influencesMeasurement,Measurement_031,iri,,,synthetic:gen_v1(seed=42),0.69,2026-01-12
+Measurement_032,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_032,skos:prefLabel,Вимірювання №032,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_032,consumptionValue,7.4,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_032,voltage,219.0,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_032,timestamp,2026-09-26T12:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_032,measuredByMeter,Meter_AMI64551,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-26
+WeatherCondition_20260926,influencesMeasurement,Measurement_032,iri,,,synthetic:gen_v1(seed=42),0.73,2026-09-26
+Measurement_033,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_033,skos:prefLabel,Вимірювання №033,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_033,consumptionValue,4.0,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_033,voltage,205.3,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_033,timestamp,2026-09-27T18:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_033,measuredByMeter,Meter_AMI66829,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-27
+WeatherCondition_20260927,influencesMeasurement,Measurement_033,iri,,,synthetic:gen_v1(seed=42),0.82,2026-09-27
+Measurement_034,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_034,skos:prefLabel,Вимірювання №034,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_034,consumptionValue,47.9,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_034,voltage,221.1,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_034,timestamp,2026-09-28T18:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_034,measuredByMeter,Meter_AMI68034,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-28
+WeatherCondition_20260928,influencesMeasurement,Measurement_034,iri,,,synthetic:gen_v1(seed=42),0.78,2026-09-28
+Measurement_035,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_035,skos:prefLabel,Вимірювання №035,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_035,consumptionValue,7.2,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_035,voltage,224.5,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_035,timestamp,2026-09-29T18:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_035,measuredByMeter,Meter_AMI69457,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-29
+WeatherCondition_20260929,influencesMeasurement,Measurement_035,iri,,,synthetic:gen_v1(seed=42),0.79,2026-09-29
+Measurement_036,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_036,skos:prefLabel,Вимірювання №036,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_036,consumptionValue,4.6,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_036,voltage,230.3,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_036,timestamp,2026-09-30T21:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_036,measuredByMeter,Meter_AMI70681,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-30
+WeatherCondition_20260930,influencesMeasurement,Measurement_036,iri,,,synthetic:gen_v1(seed=42),0.84,2026-09-30
+Measurement_037,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_037,skos:prefLabel,Вимірювання №037,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_037,consumptionValue,8.5,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_037,voltage,204.6,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_037,timestamp,2026-01-11T18:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_037,measuredByMeter,Meter_AMI71354,iri,,,synthetic:gen_v1(seed=42),1.0,2026-01-11
+WeatherCondition_20260111,influencesMeasurement,Measurement_037,iri,,,synthetic:gen_v1(seed=42),0.74,2026-01-11
+Measurement_038,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_038,skos:prefLabel,Вимірювання №038,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_038,consumptionValue,8.1,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_038,voltage,224.2,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_038,timestamp,2026-01-12T12:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_038,measuredByMeter,Meter_AMI74134,iri,,,synthetic:gen_v1(seed=42),1.0,2026-01-12
+WeatherCondition_20260112,influencesMeasurement,Measurement_038,iri,,,synthetic:gen_v1(seed=42),0.75,2026-01-12
+Measurement_039,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_039,skos:prefLabel,Вимірювання №039,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_039,consumptionValue,6.7,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_039,voltage,230.1,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_039,timestamp,2026-09-26T21:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_039,measuredByMeter,Meter_AMI76143,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-26
+WeatherCondition_20260926,influencesMeasurement,Measurement_039,iri,,,synthetic:gen_v1(seed=42),0.75,2026-09-26
+Measurement_040,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_040,skos:prefLabel,Вимірювання №040,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_040,consumptionValue,7.2,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_040,voltage,203.2,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_040,timestamp,2026-09-27T12:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_040,measuredByMeter,Meter_AMI76577,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-27
+WeatherCondition_20260927,influencesMeasurement,Measurement_040,iri,,,synthetic:gen_v1(seed=42),0.83,2026-09-27
+Measurement_041,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_041,skos:prefLabel,Вимірювання №041,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_041,consumptionValue,154.0,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_041,voltage,230.3,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_041,timestamp,2026-09-28T18:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_041,measuredByMeter,Meter_AMI78591,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-28
+WeatherCondition_20260928,influencesMeasurement,Measurement_041,iri,,,synthetic:gen_v1(seed=42),0.63,2026-09-28
+Measurement_042,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_042,skos:prefLabel,Вимірювання №042,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_042,consumptionValue,262.2,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_042,voltage,223.0,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_042,timestamp,2026-09-29T18:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_042,measuredByMeter,Meter_AMI80930,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-29
+WeatherCondition_20260929,influencesMeasurement,Measurement_042,iri,,,synthetic:gen_v1(seed=42),0.68,2026-09-29
+Measurement_043,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_043,skos:prefLabel,Вимірювання №043,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_043,consumptionValue,140.3,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_043,voltage,219.4,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_043,timestamp,2026-09-30T12:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_043,measuredByMeter,Meter_AMI81841,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-30
+WeatherCondition_20260930,influencesMeasurement,Measurement_043,iri,,,synthetic:gen_v1(seed=42),0.94,2026-09-30
+Measurement_044,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_044,skos:prefLabel,Вимірювання №044,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_044,consumptionValue,6.9,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_044,voltage,232.1,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_044,timestamp,2026-01-11T21:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_044,measuredByMeter,Meter_AMI20916,iri,,,synthetic:gen_v1(seed=42),1.0,2026-01-11
+WeatherCondition_20260111,influencesMeasurement,Measurement_044,iri,,,synthetic:gen_v1(seed=42),0.75,2026-01-11
+Measurement_045,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_045,skos:prefLabel,Вимірювання №045,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_045,consumptionValue,46.7,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_045,voltage,222.3,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_045,timestamp,2026-01-12T21:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_045,measuredByMeter,Meter_AMI29583,iri,,,synthetic:gen_v1(seed=42),1.0,2026-01-12
+WeatherCondition_20260112,influencesMeasurement,Measurement_045,iri,,,synthetic:gen_v1(seed=42),0.77,2026-01-12
+Measurement_046,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_046,skos:prefLabel,Вимірювання №046,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_046,consumptionValue,32.8,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_046,voltage,230.2,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_046,timestamp,2026-09-26T08:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_046,measuredByMeter,Meter_AMI38856,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-26
+WeatherCondition_20260926,influencesMeasurement,Measurement_046,iri,,,synthetic:gen_v1(seed=42),0.91,2026-09-26
+Measurement_047,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_047,skos:prefLabel,Вимірювання №047,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_047,consumptionValue,8.2,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_047,voltage,234.1,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_047,timestamp,2026-09-27T21:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_047,measuredByMeter,Meter_AMI49003,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-27
+WeatherCondition_20260927,influencesMeasurement,Measurement_047,iri,,,synthetic:gen_v1(seed=42),0.68,2026-09-27
+Measurement_048,rdf:type,Measurement,iri,,,synthetic:gen_v1(seed=42),,
+Measurement_048,skos:prefLabel,Вимірювання №048,literal,,uk,synthetic:gen_v1(seed=42),,
+Measurement_048,consumptionValue,7.9,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_048,voltage,230.8,literal,double,,synthetic:gen_v1(seed=42),,
+Measurement_048,timestamp,2026-09-28T21:00:00,literal,dateTime,,synthetic:gen_v1(seed=42),,
+Measurement_048,measuredByMeter,Meter_AMI58679,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-28
+WeatherCondition_20260928,influencesMeasurement,Measurement_048,iri,,,synthetic:gen_v1(seed=42),0.62,2026-09-28
+ForecastModel_LSTM3,rdf:type,MachineLearningModel,iri,,,synthetic:gen_v1(seed=42),,
+ForecastModel_LSTM3,skos:prefLabel,Модель LSTM №3,literal,,uk,synthetic:gen_v1(seed=42),,
+ForecastModel_LSTM3,modelType,LSTM,literal,string,,synthetic:gen_v1(seed=42),,
+ForecastModel_LSTM3,accuracy,89.0,literal,double,,synthetic:gen_v1(seed=42),,
+ForecastModel_LSTM3,trainingDate,2026-08-30,literal,date,,synthetic:gen_v1(seed=42),,
+ForecastModel_ARIMA1,rdf:type,StatisticalModel,iri,,,synthetic:gen_v1(seed=42),,
+ForecastModel_ARIMA1,skos:prefLabel,Модель ARIMA №1,literal,,uk,synthetic:gen_v1(seed=42),,
+ForecastModel_ARIMA1,modelType,ARIMA,literal,string,,synthetic:gen_v1(seed=42),,
+ForecastModel_ARIMA1,accuracy,81.0,literal,double,,synthetic:gen_v1(seed=42),,
+ForecastModel_ARIMA1,trainingDate,2026-02-10,literal,date,,synthetic:gen_v1(seed=42),,
+ForecastModel_GRU1,rdf:type,MachineLearningModel,iri,,,synthetic:gen_v1(seed=42),,
+ForecastModel_GRU1,skos:prefLabel,Модель GRU №1,literal,,uk,synthetic:gen_v1(seed=42),,
+ForecastModel_GRU1,modelType,GRU,literal,string,,synthetic:gen_v1(seed=42),,
+ForecastModel_GRU1,accuracy,90.5,literal,double,,synthetic:gen_v1(seed=42),,
+ForecastModel_GRU1,trainingDate,2026-09-01,literal,date,,synthetic:gen_v1(seed=42),,
+ForecastModel_LSTM1,trainedOnMeasurement,Measurement_013,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-30
+ForecastModel_LSTM1,trainedOnMeasurement,Measurement_014,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-30
+ForecastModel_LSTM1,trainedOnMeasurement,Measurement_025,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-30
+ForecastModel_LSTM1,trainedOnMeasurement,Measurement_032,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-30
+ForecastModel_LSTM1,trainedOnMeasurement,Measurement_043,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-30
+ForecastModel_VAR1,trainedOnMeasurement,Measurement_018,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-30
+ForecastModel_VAR1,trainedOnMeasurement,Measurement_041,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-30
+ForecastModel_VAR1,trainedOnMeasurement,Measurement_042,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-30
+ForecastModel_VAR1,trainedOnMeasurement,Measurement_048,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-30
+ForecastModel_LSTM2,trainedOnMeasurement,Measurement_023,iri,,,synthetic:gen_v1(seed=42),1.0,2025-06-20
+ForecastModel_LSTM2,trainedOnMeasurement,Measurement_031,iri,,,synthetic:gen_v1(seed=42),1.0,2025-06-20
+ForecastModel_LSTM2,trainedOnMeasurement,Measurement_044,iri,,,synthetic:gen_v1(seed=42),1.0,2025-06-20
+ForecastModel_LSTM2,trainedOnMeasurement,Measurement_045,iri,,,synthetic:gen_v1(seed=42),1.0,2025-06-20
+ForecastModel_LSTM3,trainedOnMeasurement,Measurement_025,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-30
+ForecastModel_LSTM3,trainedOnMeasurement,Measurement_026,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-30
+ForecastModel_LSTM3,trainedOnMeasurement,Measurement_027,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-30
+ForecastModel_LSTM3,trainedOnMeasurement,Measurement_032,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-30
+ForecastModel_LSTM3,trainedOnMeasurement,Measurement_036,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-30
+ForecastModel_LSTM3,trainedOnMeasurement,Measurement_046,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-30
+ForecastModel_LSTM3,trainedOnMeasurement,Measurement_048,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-30
+ForecastModel_ARIMA1,trainedOnMeasurement,Measurement_008,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-30
+ForecastModel_ARIMA1,trainedOnMeasurement,Measurement_017,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-30
+ForecastModel_ARIMA1,trainedOnMeasurement,Measurement_023,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-30
+ForecastModel_ARIMA1,trainedOnMeasurement,Measurement_025,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-30
+ForecastModel_ARIMA1,trainedOnMeasurement,Measurement_028,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-30
+ForecastModel_ARIMA1,trainedOnMeasurement,Measurement_031,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-30
+ForecastModel_GRU1,trainedOnMeasurement,Measurement_006,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-30
+ForecastModel_GRU1,trainedOnMeasurement,Measurement_008,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-30
+ForecastModel_GRU1,trainedOnMeasurement,Measurement_018,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-30
+ForecastModel_GRU1,trainedOnMeasurement,Measurement_027,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-30
+ForecastModel_GRU1,trainedOnMeasurement,Measurement_033,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-30
+ForecastModel_GRU1,trainedOnMeasurement,Measurement_040,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-30
+ForecastModel_GRU1,trainedOnMeasurement,Measurement_042,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-30
+ForecastModel_GRU1,trainedOnMeasurement,Measurement_048,iri,,,synthetic:gen_v1(seed=42),1.0,2026-09-30
+WeatherCondition_20260926,influencesModel,ForecastModel_LSTM3,iri,,,synthetic:gen_v1(seed=42),0.62,2026-09-30
+WeatherCondition_20260928,influencesModel,ForecastModel_GRU1,iri,,,synthetic:gen_v1(seed=42),0.76,2026-09-30
+WeatherCondition_20260929,influencesModel,ForecastModel_LSTM3,iri,,,synthetic:gen_v1(seed=42),0.76,2026-09-30
+WeatherCondition_20260111,influencesModel,ForecastModel_ARIMA1,iri,,,synthetic:gen_v1(seed=42),0.57,2026-09-30
+WeatherCondition_20260112,influencesModel,ForecastModel_LSTM2,iri,,,synthetic:gen_v1(seed=42),0.67,2026-09-30
+WeatherCondition_20260930,influencesModel,ForecastModel_GRU1,iri,,,synthetic:gen_v1(seed=42),0.71,2026-09-30
+WeatherCondition_20260927,influencesModel,ForecastModel_VAR1,iri,,,synthetic:gen_v1(seed=42),0.67,2026-09-30
+Forecast_20260924,forecastForSubstation,Substation_7,iri,,,synthetic:gen_v1(seed=42),0.95,2026-09-24
+Forecast_20260925,forecastForSubstation,Substation_12,iri,,,synthetic:gen_v1(seed=42),0.95,2026-09-25
+Forecast_20260110,forecastForSubstation,Substation_5,iri,,,synthetic:gen_v1(seed=42),0.95,2026-01-10
+Forecast_20261001_1,rdf:type,Forecast,iri,,,synthetic:gen_v1(seed=42),,
+Forecast_20261001_1,skos:prefLabel,Прогноз на 01.10.2026 (ПС №1),literal,,uk,synthetic:gen_v1(seed=42),,
+Forecast_20261001_1,forecastPeriod,доба,literal,string,,synthetic:gen_v1(seed=42),,
+Forecast_20261001_1,errorPercentage,3.2,literal,double,,synthetic:gen_v1(seed=42),,
+Forecast_20261001_1,predictedConsumption,656.7,literal,double,,synthetic:gen_v1(seed=42),,
+Forecast_20261001_1,generatedByModel,ForecastModel_GRU1,iri,,,synthetic:gen_v1(seed=42),1.0,2026-10-01
+Forecast_20261001_1,forecastForSubstation,Substation_1,iri,,,synthetic:gen_v1(seed=42),0.95,2026-10-01
+Dispatcher_4,usesForecast,Forecast_20261001_1,iri,,,synthetic:gen_v1(seed=42),1.0,2026-10-01
+Forecast_20261001_2,rdf:type,Forecast,iri,,,synthetic:gen_v1(seed=42),,
+Forecast_20261001_2,skos:prefLabel,Прогноз на 01.10.2026 (ПС №10),literal,,uk,synthetic:gen_v1(seed=42),,
+Forecast_20261001_2,forecastPeriod,доба,literal,string,,synthetic:gen_v1(seed=42),,
+Forecast_20261001_2,errorPercentage,4.1,literal,double,,synthetic:gen_v1(seed=42),,
+Forecast_20261001_2,predictedConsumption,1179.4,literal,double,,synthetic:gen_v1(seed=42),,
+Forecast_20261001_2,generatedByModel,ForecastModel_LSTM3,iri,,,synthetic:gen_v1(seed=42),1.0,2026-10-01
+Forecast_20261001_2,forecastForSubstation,Substation_10,iri,,,synthetic:gen_v1(seed=42),0.95,2026-10-01
+Dispatcher_4,usesForecast,Forecast_20261001_2,iri,,,synthetic:gen_v1(seed=42),1.0,2026-10-01
+Forecast_20261002_1,rdf:type,Forecast,iri,,,synthetic:gen_v1(seed=42),,
+Forecast_20261002_1,skos:prefLabel,Прогноз на 02.10.2026 (ПС №7),literal,,uk,synthetic:gen_v1(seed=42),,
+Forecast_20261002_1,forecastPeriod,доба,literal,string,,synthetic:gen_v1(seed=42),,
+Forecast_20261002_1,errorPercentage,5.0,literal,double,,synthetic:gen_v1(seed=42),,
+Forecast_20261002_1,predictedConsumption,2366.9,literal,double,,synthetic:gen_v1(seed=42),,
+Forecast_20261002_1,generatedByModel,ForecastModel_LSTM1,iri,,,synthetic:gen_v1(seed=42),1.0,2026-10-02
+Forecast_20261002_1,forecastForSubstation,Substation_7,iri,,,synthetic:gen_v1(seed=42),0.95,2026-10-02
+Dispatcher_1,usesForecast,Forecast_20261002_1,iri,,,synthetic:gen_v1(seed=42),1.0,2026-10-02
+Forecast_20261002_2,rdf:type,Forecast,iri,,,synthetic:gen_v1(seed=42),,
+Forecast_20261002_2,skos:prefLabel,Прогноз на 02.10.2026 (ПС №2),literal,,uk,synthetic:gen_v1(seed=42),,
+Forecast_20261002_2,forecastPeriod,доба,literal,string,,synthetic:gen_v1(seed=42),,
+Forecast_20261002_2,errorPercentage,6.8,literal,double,,synthetic:gen_v1(seed=42),,
+Forecast_20261002_2,predictedConsumption,1581.0,literal,double,,synthetic:gen_v1(seed=42),,
+Forecast_20261002_2,generatedByModel,ForecastModel_VAR1,iri,,,synthetic:gen_v1(seed=42),1.0,2026-10-02
+Forecast_20261002_2,forecastForSubstation,Substation_2,iri,,,synthetic:gen_v1(seed=42),0.95,2026-10-02
+Dispatcher_5,usesForecast,Forecast_20261002_2,iri,,,synthetic:gen_v1(seed=42),1.0,2026-10-02
+Forecast_20261003_1,rdf:type,Forecast,iri,,,synthetic:gen_v1(seed=42),,
+Forecast_20261003_1,skos:prefLabel,Прогноз на 03.10.2026 (ПС №3),literal,,uk,synthetic:gen_v1(seed=42),,
+Forecast_20261003_1,forecastPeriod,тиждень,literal,string,,synthetic:gen_v1(seed=42),,
+Forecast_20261003_1,errorPercentage,8.9,literal,double,,synthetic:gen_v1(seed=42),,
+Forecast_20261003_1,predictedConsumption,1854.0,literal,double,,synthetic:gen_v1(seed=42),,
+Forecast_20261003_1,generatedByModel,ForecastModel_ARIMA1,iri,,,synthetic:gen_v1(seed=42),1.0,2026-10-03
+Forecast_20261003_1,forecastForSubstation,Substation_3,iri,,,synthetic:gen_v1(seed=42),0.95,2026-10-03
+Dispatcher_5,usesForecast,Forecast_20261003_1,iri,,,synthetic:gen_v1(seed=42),1.0,2026-10-03
+Forecast_20261003_2,rdf:type,Forecast,iri,,,synthetic:gen_v1(seed=42),,
+Forecast_20261003_2,skos:prefLabel,Прогноз на 03.10.2026 (ПС №4),literal,,uk,synthetic:gen_v1(seed=42),,
+Forecast_20261003_2,forecastPeriod,доба,literal,string,,synthetic:gen_v1(seed=42),,
+Forecast_20261003_2,errorPercentage,2.9,literal,double,,synthetic:gen_v1(seed=42),,
+Forecast_20261003_2,predictedConsumption,2249.0,literal,double,,synthetic:gen_v1(seed=42),,
+Forecast_20261003_2,generatedByModel,ForecastModel_GRU1,iri,,,synthetic:gen_v1(seed=42),1.0,2026-10-03
+Forecast_20261003_2,forecastForSubstation,Substation_4,iri,,,synthetic:gen_v1(seed=42),0.95,2026-10-03
+Dispatcher_6,usesForecast,Forecast_20261003_2,iri,,,synthetic:gen_v1(seed=42),1.0,2026-10-03
+Forecast_20261004_1,rdf:type,Forecast,iri,,,synthetic:gen_v1(seed=42),,
+Forecast_20261004_1,skos:prefLabel,Прогноз на 04.10.2026 (ПС №6),literal,,uk,synthetic:gen_v1(seed=42),,
+Forecast_20261004_1,forecastPeriod,доба,literal,string,,synthetic:gen_v1(seed=42),,
+Forecast_20261004_1,errorPercentage,4.7,literal,double,,synthetic:gen_v1(seed=42),,
+Forecast_20261004_1,predictedConsumption,2025.7,literal,double,,synthetic:gen_v1(seed=42),,
+Forecast_20261004_1,generatedByModel,ForecastModel_LSTM3,iri,,,synthetic:gen_v1(seed=42),1.0,2026-10-04
+Forecast_20261004_1,forecastForSubstation,Substation_6,iri,,,synthetic:gen_v1(seed=42),0.95,2026-10-04
+Dispatcher_6,usesForecast,Forecast_20261004_1,iri,,,synthetic:gen_v1(seed=42),1.0,2026-10-04
+Forecast_20261004_2,rdf:type,Forecast,iri,,,synthetic:gen_v1(seed=42),,
+Forecast_20261004_2,skos:prefLabel,Прогноз на 04.10.2026 (ПС №11),literal,,uk,synthetic:gen_v1(seed=42),,
+Forecast_20261004_2,forecastPeriod,доба,literal,string,,synthetic:gen_v1(seed=42),,
+Forecast_20261004_2,errorPercentage,12.3,literal,double,,synthetic:gen_v1(seed=42),,
+Forecast_20261004_2,predictedConsumption,1081.9,literal,double,,synthetic:gen_v1(seed=42),,
+Forecast_20261004_2,generatedByModel,ForecastModel_LSTM2,iri,,,synthetic:gen_v1(seed=42),1.0,2026-10-04
+Forecast_20261004_2,forecastForSubstation,Substation_11,iri,,,synthetic:gen_v1(seed=42),0.95,2026-10-04
+Dispatcher_2,usesForecast,Forecast_20261004_2,iri,,,synthetic:gen_v1(seed=42),1.0,2026-10-04
+Forecast_20261005_1,rdf:type,Forecast,iri,,,synthetic:gen_v1(seed=42),,
+Forecast_20261005_1,skos:prefLabel,Прогноз на 05.10.2026 (ПС №8),literal,,uk,synthetic:gen_v1(seed=42),,
+Forecast_20261005_1,forecastPeriod,тиждень,literal,string,,synthetic:gen_v1(seed=42),,
+Forecast_20261005_1,errorPercentage,9.6,literal,double,,synthetic:gen_v1(seed=42),,
+Forecast_20261005_1,predictedConsumption,164.4,literal,double,,synthetic:gen_v1(seed=42),,
+Forecast_20261005_1,generatedByModel,ForecastModel_ARIMA1,iri,,,synthetic:gen_v1(seed=42),1.0,2026-10-05
+Forecast_20261005_1,forecastForSubstation,Substation_8,iri,,,synthetic:gen_v1(seed=42),0.95,2026-10-05
+Dispatcher_5,usesForecast,Forecast_20261005_1,iri,,,synthetic:gen_v1(seed=42),1.0,2026-10-05
+Forecast_20261005_2,rdf:type,Forecast,iri,,,synthetic:gen_v1(seed=42),,
+Forecast_20261005_2,skos:prefLabel,Прогноз на 05.10.2026 (ПС №5),literal,,uk,synthetic:gen_v1(seed=42),,
+Forecast_20261005_2,forecastPeriod,доба,literal,string,,synthetic:gen_v1(seed=42),,
+Forecast_20261005_2,errorPercentage,3.5,literal,double,,synthetic:gen_v1(seed=42),,
+Forecast_20261005_2,predictedConsumption,1011.8,literal,double,,synthetic:gen_v1(seed=42),,
+Forecast_20261005_2,generatedByModel,ForecastModel_GRU1,iri,,,synthetic:gen_v1(seed=42),1.0,2026-10-05
+Forecast_20261005_2,forecastForSubstation,Substation_5,iri,,,synthetic:gen_v1(seed=42),0.95,2026-10-05
+Dispatcher_3,usesForecast,Forecast_20261005_2,iri,,,synthetic:gen_v1(seed=42),1.0,2026-10-05
+Forecast_20261006_1,rdf:type,Forecast,iri,,,synthetic:gen_v1(seed=42),,
+Forecast_20261006_1,skos:prefLabel,Прогноз на 06.10.2026 (ПС №12),literal,,uk,synthetic:gen_v1(seed=42),,
+Forecast_20261006_1,forecastPeriod,доба,literal,string,,synthetic:gen_v1(seed=42),,
+Forecast_20261006_1,errorPercentage,10.4,literal,double,,synthetic:gen_v1(seed=42),,
+Forecast_20261006_1,predictedConsumption,1996.0,literal,double,,synthetic:gen_v1(seed=42),,
+Forecast_20261006_1,generatedByModel,ForecastModel_LSTM2,iri,,,synthetic:gen_v1(seed=42),1.0,2026-10-06
+Forecast_20261006_1,forecastForSubstation,Substation_12,iri,,,synthetic:gen_v1(seed=42),0.95,2026-10-06
+Dispatcher_2,usesForecast,Forecast_20261006_1,iri,,,synthetic:gen_v1(seed=42),1.0,2026-10-06
+Forecast_20261006_2,rdf:type,Forecast,iri,,,synthetic:gen_v1(seed=42),,
+Forecast_20261006_2,skos:prefLabel,Прогноз на 06.10.2026 (ПС №11),literal,,uk,synthetic:gen_v1(seed=42),,
+Forecast_20261006_2,forecastPeriod,тиждень,literal,string,,synthetic:gen_v1(seed=42),,
+Forecast_20261006_2,errorPercentage,7.2,literal,double,,synthetic:gen_v1(seed=42),,
+Forecast_20261006_2,predictedConsumption,2240.9,literal,double,,synthetic:gen_v1(seed=42),,
+Forecast_20261006_2,generatedByModel,ForecastModel_VAR1,iri,,,synthetic:gen_v1(seed=42),1.0,2026-10-06
+Forecast_20261006_2,forecastForSubstation,Substation_11,iri,,,synthetic:gen_v1(seed=42),0.95,2026-10-06
+Dispatcher_2,usesForecast,Forecast_20261006_2,iri,,,synthetic:gen_v1(seed=42),1.0,2026-10-06
+Forecast_20261007_1,rdf:type,Forecast,iri,,,synthetic:gen_v1(seed=42),,
+Forecast_20261007_1,skos:prefLabel,Прогноз на 07.10.2026 (ПС №1),literal,,uk,synthetic:gen_v1(seed=42),,
+Forecast_20261007_1,forecastPeriod,тиждень,literal,string,,synthetic:gen_v1(seed=42),,
+Forecast_20261007_1,errorPercentage,3.9,literal,double,,synthetic:gen_v1(seed=42),,
+Forecast_20261007_1,predictedConsumption,2485.9,literal,double,,synthetic:gen_v1(seed=42),,
+Forecast_20261007_1,generatedByModel,ForecastModel_LSTM3,iri,,,synthetic:gen_v1(seed=42),1.0,2026-10-07
+Forecast_20261007_1,forecastForSubstation,Substation_1,iri,,,synthetic:gen_v1(seed=42),0.95,2026-10-07
+Dispatcher_4,usesForecast,Forecast_20261007_1,iri,,,synthetic:gen_v1(seed=42),1.0,2026-10-07
+Forecast_20261007_2,rdf:type,Forecast,iri,,,synthetic:gen_v1(seed=42),,
+Forecast_20261007_2,skos:prefLabel,Прогноз на 07.10.2026 (ПС №10),literal,,uk,synthetic:gen_v1(seed=42),,
+Forecast_20261007_2,forecastPeriod,доба,literal,string,,synthetic:gen_v1(seed=42),,
+Forecast_20261007_2,errorPercentage,4.4,literal,double,,synthetic:gen_v1(seed=42),,
+Forecast_20261007_2,predictedConsumption,1176.6,literal,double,,synthetic:gen_v1(seed=42),,
+Forecast_20261007_2,generatedByModel,ForecastModel_LSTM1,iri,,,synthetic:gen_v1(seed=42),1.0,2026-10-07
+Forecast_20261007_2,forecastForSubstation,Substation_10,iri,,,synthetic:gen_v1(seed=42),0.95,2026-10-07
+Dispatcher_4,usesForecast,Forecast_20261007_2,iri,,,synthetic:gen_v1(seed=42),1.0,2026-10-07
+Forecast_20261008_1,rdf:type,Forecast,iri,,,synthetic:gen_v1(seed=42),,
+Forecast_20261008_1,skos:prefLabel,Прогноз на 08.10.2026 (ПС №2),literal,,uk,synthetic:gen_v1(seed=42),,
+Forecast_20261008_1,forecastPeriod,доба,literal,string,,synthetic:gen_v1(seed=42),,
+Forecast_20261008_1,errorPercentage,3.1,literal,double,,synthetic:gen_v1(seed=42),,
+Forecast_20261008_1,predictedConsumption,1981.4,literal,double,,synthetic:gen_v1(seed=42),,
+Forecast_20261008_1,generatedByModel,ForecastModel_GRU1,iri,,,synthetic:gen_v1(seed=42),1.0,2026-10-08
+Forecast_20261008_1,forecastForSubstation,Substation_2,iri,,,synthetic:gen_v1(seed=42),0.95,2026-10-08
+Dispatcher_5,usesForecast,Forecast_20261008_1,iri,,,synthetic:gen_v1(seed=42),1.0,2026-10-08

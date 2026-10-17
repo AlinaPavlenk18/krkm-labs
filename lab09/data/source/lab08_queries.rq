@@ -1,0 +1,64 @@
+# ===== Запит 1 (SELECT + FILTER): перевантажені підстанції (KQ2, KQ8) =====
+PREFIX :     <http://www.semanticweb.org/energy-forecasting#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT ?name ?load ?capacity (ROUND(100 * ?load / ?capacity) AS ?percent) ?dispatcher
+WHERE {
+  ?s a :Substation ;
+     skos:prefLabel ?name ;
+     :currentLoad ?load ;
+     :nominalCapacity ?capacity ;
+     :managedByDispatcher ?dispatcher .
+  FILTER (?load / ?capacity >= 0.85)
+}
+ORDER BY DESC(?percent)
+
+# ===== Запит 2 (SELECT + OPTIONAL): підстанції з необов'язковим диспетчером (KQ8) =====
+PREFIX :     <http://www.semanticweb.org/energy-forecasting#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT ?name ?region ?dispatcher ?shift
+WHERE {
+  ?s a :Substation ;
+     skos:prefLabel ?name ;
+     :region ?region .
+  OPTIONAL { ?s :managedByDispatcher ?dispatcher .
+             ?dispatcher :shift ?shift . }
+}
+ORDER BY ?name
+
+# ===== Запит 3 (SELECT + GROUP BY, COUNT, SUM): навантаження по регіонах (KQ3) =====
+PREFIX : <http://www.semanticweb.org/energy-forecasting#>
+SELECT ?region (COUNT(?s) AS ?substations)
+       (SUM(?capacity) AS ?totalCapacity) (SUM(?load) AS ?totalLoad)
+WHERE {
+  ?s a :Substation ; :region ?region ;
+     :nominalCapacity ?capacity ; :currentLoad ?load .
+}
+GROUP BY ?region
+ORDER BY DESC(?totalCapacity)
+
+# ===== Запит 4 (SELECT, залежить від виведення): усі споживачі за класом :Consumer (KQ1) =====
+PREFIX :     <http://www.semanticweb.org/energy-forecasting#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT ?name ?category ?limit
+WHERE {
+  ?c a :Consumer ;
+     skos:prefLabel ?name ;
+     :consumerCategory ?category ;
+     :contractLimit ?limit .
+}
+ORDER BY ?name
+
+# ===== Запит 5 (ASK): чи існує підстанція без призначеного диспетчера? =====
+PREFIX : <http://www.semanticweb.org/energy-forecasting#>
+ASK {
+  ?s a :Substation .
+  FILTER NOT EXISTS { ?s :managedByDispatcher ?d }
+}
+
+# ===== Запит 6 (CONSTRUCT): похідний зв'язок «диспетчер відповідає за споживача» (KQ1, KQ8) =====
+PREFIX :     <http://www.semanticweb.org/energy-forecasting#>
+CONSTRUCT { ?d :responsibleForConsumer ?c . }
+WHERE {
+  ?s :managedByDispatcher ?d .
+  ?c :connectedToSubstation ?s .
+}

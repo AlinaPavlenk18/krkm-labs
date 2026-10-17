@@ -1,0 +1,101 @@
+{
+ "T01": {
+  "cypher": "MATCH (c:Consumer) RETURN c.category AS category, count(*) AS n ORDER BY n DESC",
+  "key": [
+   "category",
+   "n"
+  ]
+ },
+ "T02": {
+  "cypher": "MATCH (s:Substation)-[:LOCATED_IN]->(:Region {name: 'Рівненська область'}) RETURN s.id AS substation, round(100.0 * s.currentLoad / s.nominalCapacity, 1) AS loadPct",
+  "key": [
+   "substation"
+  ]
+ },
+ "T03": {
+  "cypher": "MATCH (c:Consumer)-[:HAS_METER]->(m:Meter {status: 'несправний'}) MATCH (c)-[:CONNECTED_TO]->(s:Substation) RETURN m.id AS meter, s.id AS substation",
+  "key": [
+   "meter",
+   "substation"
+  ]
+ },
+ "T04": {
+  "cypher": "MATCH (fm:ForecastModel)-[:GENERATED]->(f:Forecast) RETURN fm.id AS model, count(f) AS n ORDER BY n DESC LIMIT 1",
+  "key": [
+   "model",
+   "n"
+  ]
+ },
+ "T05": {
+  "cypher": "MATCH (:Dispatcher {id: 'Dispatcher_5'})-[:USES_FORECAST]->(f:Forecast)-[:FORECAST_FOR]->(s:Substation) RETURN f.id AS forecast, s.id AS substation",
+  "key": [
+   "forecast",
+   "substation"
+  ]
+ },
+ "T06": {
+  "cypher": "MATCH (:Substation {id: 'Substation_1'})-[:FEEDS*1..10]->(s:Substation) RETURN DISTINCT s.id AS substation",
+  "key": [
+   "substation"
+  ]
+ },
+ "T07": {
+  "cypher": "MATCH (fm:ForecastModel)-[:GENERATED]->(f:Forecast) RETURN fm.modelType AS modelType, avg(f.errorPercentage) AS avgError",
+  "key": [
+   "modelType",
+   "avgError"
+  ]
+ },
+ "T08": {
+  "cypher": "MATCH (c:Consumer)-[:CONNECTED_TO]->(s:Substation) WHERE s.currentLoad >= 0.85 * s.nominalCapacity RETURN c.id AS consumer, s.id AS substation",
+  "key": [
+   "consumer",
+   "substation"
+  ]
+ },
+ "T09": {
+  "cypher": "MATCH (c:Consumer {id: 'Consumer_1002'}), (d:Dispatcher {id: 'Dispatcher_4'}) MATCH p = shortestPath((c)-[*..15]-(d)) RETURN length(p) AS hops",
+  "key": [
+   "hops"
+  ]
+ },
+ "T10": {
+  "cypher": "MATCH (w:WeatherCondition)-[:AFFECTS_MODEL]->(fm:ForecastModel) WHERE w.temperature < -10 RETURN DISTINCT fm.id AS model",
+  "key": [
+   "model"
+  ]
+ },
+ "T11": {
+  "cypher": "MATCH (s:Substation) WHERE NOT EXISTS { MATCH (:Forecast)-[:FORECAST_FOR]->(s) } RETURN s.id AS substation",
+  "key": [
+   "substation"
+  ]
+ },
+ "T12": {
+  "cypher": "MATCH (c:Consumer)-[:HAS_METER]->(m:Meter), (c)-[:CONNECTED_TO]->(:Substation)-[:LOCATED_IN]->(r:Region) RETURN r.name AS region, round(1.0 * sum(CASE WHEN m.status = 'несправний' THEN 1 ELSE 0 END) / count(m), 3) AS share",
+  "key": [
+   "region",
+   "share"
+  ]
+ },
+ "T13": {
+  "cypher": "MATCH (x:Measurement) WHERE x.timestamp >= localdatetime('2026-09-28T00:00:00') AND x.timestamp < localdatetime('2026-09-29T00:00:00') RETURN x.id AS measurement",
+  "key": [
+   "measurement"
+  ]
+ },
+ "T14": {
+  "cypher": "MATCH (d:Dispatcher)-[:MANAGES]->(:Substation)-[:FEEDS*0..10]->(s:Substation)<-[:CONNECTED_TO]-(c:Consumer) WITH DISTINCT d, c RETURN d.id AS dispatcher, sum(c.contractLimit) AS totalLimit",
+  "key": [
+   "dispatcher",
+   "totalLimit"
+  ]
+ },
+ "T15": {
+  "cypher": "MATCH (d:Dispatcher)-[:MANAGES]->(:Substation)<-[:CONNECTED_TO]-(c:Consumer) RETURN d.id AS dispatcher, count(DISTINCT c) AS consumers ORDER BY consumers DESC LIMIT 1",
+  "key": [
+   "dispatcher",
+   "consumers"
+  ]
+ }
+}
