@@ -1,0 +1,30 @@
+{"qid": "q01", "en": "substation overload threshold 85 %", "uk_para": "З якого відсотка завантаження підстанція вважається перевантаженою?"}
+{"qid": "q02", "en": "LSTM No. 2 accuracy 78 %", "uk_para": "Наскільки точна друга рекурентна модель LSTM?"}
+{"qid": "q03", "en": "AMI-77410 voltage 233 V", "uk_para": "Яку напругу показав несправний лічильник споживача №3310?"}
+{"qid": "q04", "en": "Louvain community modularity", "uk_para": "Наскільки чітко граф розпадається на спільноти за алгоритмом Лувена?"}
+{"qid": "q05", "en": "EN 50160 allowed voltage deviation", "uk_para": "У яких межах європейський стандарт якості дозволяє коливатися напрузі в мережі?"}
+{"qid": "q06", "en": "heating degree day HDD", "uk_para": "Як рахують показник потреби в опаленні за різницею температур?"}
+{"qid": "q07", "en": "ConstraintValidationFailed Substation_7", "uk_para": "Яку помилку повертає Neo4j, коли намагаються вдруге створити вже наявну підстанцію?"}
+{"qid": "q08", "en": "MERGE import idempotency", "uk_para": "Чому повторне завантаження CSV у граф не створює дублікатів?"}
+{"qid": "q09", "en": "Memgraph median query time ms", "uk_para": "Наскільки швидко виконувала запити найшвидша графова база в порівнянні сховищ?"}
+{"qid": "q10", "en": "RDF-star reification of relationship properties", "uk_para": "Як у RDF довелося б зберігати властивості самих зв'язків?"}
+{"qid": "q11", "en": "reading interval of three-phase meters", "uk_para": "Як часто трифазні лічильники передають показники?"}
+{"qid": "q14", "en": "What should a dispatcher do when a substation load exceeds 95 percent of its rating?", "uk_para": "Які дії потрібні, коли підстанція працює майже на межі своєї потужності, понад 95 %?"}
+{"qid": "q15", "en": "Why does the outdated recurrent model forecast autumn poorly?", "uk_para": "Через що стара нейромережева модель помиляється в осінніх прогнозах?"}
+{"qid": "q16", "en": "How does the system prevent an external user from seeing restricted documents in search results?", "uk_para": "Яким чином пошук приховує конфіденційні документи від сторонніх людей?"}
+{"qid": "q17", "en": "When does a forecasting model need to be retrained?", "uk_para": "За яких умов модель прогнозування ставлять у чергу на повторне навчання?"}
+{"qid": "q18", "en": "Which graph query language standard was approved by ISO?", "uk_para": "Як називається міжнародний стандарт мови запитів для графових баз?"}
+{"qid": "q19", "en": "Why are readings from a broken meter dangerous for model training?", "uk_para": "Що станеться, якщо модель навчити на даних лічильника, який вийшов з ладу?"}
+{"qid": "q20", "en": "How many consumers will lose power if the main substation goes down?", "uk_para": "Скільки абонентів зачепить відмова магістральної підстанції?"}
+{"qid": "q21", "en": "Why did PageRank not identify the most critical substation in the network?", "uk_para": "Чому алгоритм ранжування вузлів не виділив підстанцію, від якої залежить уся мережа?"}
+{"qid": "q22", "en": "How should a forecast be evaluated when actual consumption is close to zero?", "uk_para": "Яку метрику похибки брати, якщо фактичне споживання дуже мале?"}
+{"qid": "q23", "en": "Where should passwords and tokens be stored so they do not end up in the code?", "uk_para": "Як правильно зберігати секретні ключі доступу до баз даних?"}
+{"qid": "q24", "en": "Which model in the network is the newest and when was it trained?", "uk_para": "Яку модель прогнозування навчили останньою?"}
+{"qid": "q33", "en": "Who is responsible for the most overloaded substation and which shift do they work?", "uk_para": "Який диспетчер керує підстанцією з найбільшим завантаженням і коли він чергує?"}
+{"qid": "q34", "en": "Which model produced the forecast with the largest error and what data was it trained on?", "uk_para": "Чий прогноз помилився найбільше і на яких вимірюваннях навчали цю модель?"}
+{"qid": "q35", "en": "Which dispatcher must be warned about the failure of meter AMI-77410 and why?", "uk_para": "Кого з диспетчерів слід повідомити про зламаний лічильник AMI-77410 і з якої причини?"}
+{"qid": "q36", "en": "Can load be shifted to substation No. 4 during an outage of the main substation?", "uk_para": "Чи можна під час аварії на головній підстанції передати частину навантаження на четверту підстанцію?"}
+{"qid": "q37", "en": "Which models forecast for substation No. 1 and what is their accuracy?", "uk_para": "Які моделі складають прогнози для першої підстанції і наскільки вони точні?"}
+{"qid": "q38", "en": "Which statistical models exist in the network and which substations do they forecast for?", "uk_para": "Які класичні, не нейромережеві, моделі прогнозування працюють у мережі і для яких підстанцій?"}
+{"qid": "q42", "en": "How many forecasts were compromised by bad data and which model should be retrained first?", "uk_para": "Скільки прогнозів зіпсували некоректні вимірювання і яку модель перенавчати насамперед?"}
+{"qid": "q43", "en": "Why do some Louvain communities group around individual weather days and how can this be used?", "uk_para": "Чому частина кластерів графа збирається навколо окремих днів погоди і яка з цього користь?"}
