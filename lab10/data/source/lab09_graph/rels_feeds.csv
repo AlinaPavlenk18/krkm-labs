@@ -1,0 +1,11 @@
+start,end,source,confidence,validFrom
+Substation_1,Substation_10,synthetic:gen_v1(seed=42),1.0,2019-05-01
+Substation_1,Substation_2,synthetic:gen_v1(seed=42),1.0,2020-03-15
+Substation_1,Substation_7,synthetic:gen_v1(seed=42),1.0,2019-05-01
+Substation_10,Substation_4,synthetic:gen_v1(seed=42),1.0,2021-07-01
+Substation_2,Substation_3,synthetic:gen_v1(seed=42),1.0,2020-03-15
+Substation_3,Substation_11,synthetic:gen_v1(seed=42),1.0,2022-10-10
+Substation_4,Substation_6,synthetic:gen_v1(seed=42),1.0,2021-07-01
+Substation_5,Substation_12,lab08:data.ttl,1.0,2026-09-24
+Substation_7,Substation_5,lab08:data.ttl,1.0,2026-09-24
+Substation_9,Substation_8,synthetic:gen_v1(seed=42),1.0,2023-02-01

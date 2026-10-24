@@ -1,0 +1,28 @@
+id,claim,type,source,verification_level,status,comment
+C01,"Корпус містить 31 документ і 341 фрагмент з метаданими doc_id, title, section, type, date, sensitivity, source_url",факт,scripts/r1_build_corpus.py; results/r1_corpus_stats.json,V2,verified,запуск на ПК: 31 / 341
+C02,Кожен фрагмент має позначку sensitivity; 49 фрагментів мають рівень restricted,факт,data/corpus.jsonl; results/r1_corpus_stats.json,V2,verified,restricted — gen03 і kb15
+C03,"Правило R6 прибирає паролі з коду в README (3 спрацювання), значення замінено на [REDACTED]",факт,src/clean.py; data/corpus.jsonl,V2,verified,перевірено пошуком NEO4J_PASSWORD у corpus.jsonl
+C04,Згенеровані реєстри відтворюються детерміновано з даних графа ЛР9,правило,scripts/generate_docs.py,V2,verified,повторний запуск дає ті самі файли
+C05,Вимірювання всіх п'яти несправних лічильників потрапили в навчальні вибірки моделей,гіпотеза,чернетка kb15 (LLM),V2,rejected,"gen02: лише 3 лічильники (AMI-77410, AMI-27192, AMI-66829); текст kb15 виправлено"
+C06,"FAISS IndexHNSW не підтримує remove_ids, тому видалення реалізовано надгробками й compact()",факт,"faiss 1.15.1, перевірка в коді",V2,verified,«remove_ids not implemented for this type of index»
+C07,IDSelector у SearchParametersHNSW фільтрує кандидатів під час обходу графа (pre-filter),правило,results/r4_hybrid.json,V2,verified,"4 тести: 0 порушень фільтра в pre-filter (без фільтра — 3, 0, 2, 1)"
+C08,multilingual-e5 потребує префіксів «query: » і «passage: »,факт,https://huggingface.co/intfloat/multilingual-e5-small,V1,pending,картку моделі не вдалося відкрити із середовища LLM; звірити вручну
+C09,paraphrase-multilingual-MiniLM-L12-v2 обрізає вхід до 128 токенів,факт,results/r3_embeddings.json,V2,verified,max_seq_length = 128; обрізано 157 з 516 фрагментів (e5-small — 7)
+C10,RRF з k = 60 — стандартне значення з оригінальної статті,факт,"Cormack, Clarke, Büttcher. SIGIR 2009",V1,verified,
+C11,Структурна стратегія chunking дає найкращий recall@5 серед 4 стратегій,гіпотеза,results/r2_chunking.json,V4,rejected,"найкраща hierarchical (0,650) проти structural (0,625); різниця — один доказ на 10 запитах"
+C12,Багатомовна e5-small краща за paraphrase-multilingual-MiniLM за recall@5,гіпотеза,results/r3_embeddings.json; results/r5_eval.json,V4,verified,"0,550 проти 0,475 (20 запитів); 0,601 проти 0,490 (43 запити)"
+C13,Англомовна all-MiniLM-L6-v2 суттєво гірша на українському корпусі,гіпотеза,results/r3_embeddings.json,V4,verified,"recall@5 0,062 (uk 0,083, en 0,0) проти 0,550 у e5-small"
+C14,"Upsert/delete на 5 документах: новий текст знаходиться, старий не повертається, також після compact()",факт,results/r3_upsert.json,V2,verified,"5/5 OK; надгробків 6,6 %; compact 11 мс"
+C15,Гібридний пошук (RRF) дає вищий recall@5 за BM25 і dense окремо,гіпотеза,results/r5_eval.json,V4,verified,"0,638 проти 0,624 і 0,601; у середньому, але лише в 1 запиті з 43 hybrid строго кращий за обидва"
+C16,Reranker cross-encoder підвищує якість порівняно з hybrid без reranker,гіпотеза,results/r5_eval.json,V4,verified,"recall@5 0,638→0,700; MRR 0,775→0,793; nDCG@10 0,652→0,697; ціна — p50 1,6 с"
+C17,Post-filter скорочує топ-5 порівняно з pre-filter,гіпотеза,results/r4_hybrid.json,V2,rejected,на 4 тестах post-filter теж повернув по 5 результатів (серед 30 кандидатів вистачило дозволених)
+C18,Перша версія золотого набору від LLM містить усі релевантні докази,гіпотеза,llm_log/gold_candidates_v1_raw.jsonl,V3,rejected,пулінг BM25: додано 22 пропущені докази (v2)
+C19,Правило збігу «≥ 70 % слів доказу як множини» не дає хибних збігів,гіпотеза,src/metrics.py v1,V2,rejected,хибний збіг фрагмента про диспетчера №6 з доказом про диспетчера №3
+C20,"Результати BM25 відтворюються незалежним запуском: hierarchical recall@5 0,624, MRR 0,642; structural recall@5 0,618, MRR 0,752",факт,results/r5_eval.json; повторний розрахунок у середовищі LLM,V4,verified,значення на ПК і в Linux-середовищі збіглися до 3-го знака
+C21,"Незалежна розмітка двох людей без письмового критерію дає κ ≥ 0,6",гіпотеза,eval/kappa_pool_round1.csv; results/kappa.json,V3,rejected,"раунд 1: κ(A, B) = 0,585 (помірна); частина міток суперечила тексту"
+C22,Поріг найкращого балу reranker відсікає запити без відповіді,гіпотеза,results/r5_eval.json,V4,rejected,"утримано лише 3/7; бали частини запитів з відповіддю (q25 −1,77, q26 −2,54) нижчі за бали запитів без відповіді (q44 0,70)"
+C23,Стандарт EN 50160 допускає повільні відхилення напруги ±10 % від 230 В,факт,EN 50160:2010,V1,pending,перевірити за текстом стандарту або ДСТУ EN 50160
+C24,Синтетичні документи (gen01–gen07) і факти статей про мережу не описують реальних об'єктів,правило,docs/corpus_card.md,V2,verified,задекларовано в картці корпусу
+C25,"efSearch = 64 дає recall HNSW 1,0 відносно точного перебору (топ-10) для всіх трьох моделей",факт,results/r3_embeddings.json,V2,verified,"efSearch = 16: 0,93–0,99"
+C26,"Reranker домінує в затримці запиту: p50 1,6 с, p95 4,9 с на CPU проти 0,03 мс пошуку HNSW",факт,results/r5_eval.json; results/r3_embeddings.json,V2,verified,переранжування 30 батьківських секцій до 400 слів
+C27,"Письмовий критерій релевантності підвищує узгодженість розмітників до κ ≥ 0,8",гіпотеза,eval/kappa_pool.csv; results/kappa.json,V3,verified,"раунд 2: κ(A, B) = 0,907, κ(A, LLM) = 0,780, κ(B, LLM) = 0,804; раунд 2 не повністю незалежний (критерій обговорено на прикладах раунду 1)"

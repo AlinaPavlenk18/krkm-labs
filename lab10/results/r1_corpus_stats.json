@@ -1,0 +1,334 @@
+{
+  "documents": 31,
+  "fragments": 339,
+  "words_total": 21016,
+  "words_per_fragment": {
+    "mean": 62.0,
+    "min": 9,
+    "max": 239
+  },
+  "by_origin": {
+    "kb_article": 15,
+    "generated": 7,
+    "project": 9
+  },
+  "docs_by_type": {
+    "glossary": 1,
+    "kb_article": 7,
+    "regulation": 1,
+    "policy": 2,
+    "procedure": 2,
+    "faq": 1,
+    "incident_log": 1,
+    "register": 5,
+    "model_card": 1,
+    "forecast_log": 1,
+    "project_doc": 8,
+    "report": 1
+  },
+  "docs_by_sensitivity": {
+    "public": 16,
+    "internal": 13,
+    "restricted": 2
+  },
+  "fragments_by_sensitivity": {
+    "public": 173,
+    "internal": 117,
+    "restricted": 49
+  },
+  "fragments_upgraded_to_restricted": [],
+  "cleaning_rules": {
+    "R10_dup_paragraphs": 11,
+    "R11_empty_sections": 7,
+    "R1_front_matter": 22,
+    "R2_html": 3,
+    "R4_table_rows": 181,
+    "R4_table_rules": 24,
+    "R5_code_fences": 58,
+    "R6_secrets": 3,
+    "R7_title_page_lines": 14,
+    "R8_figure_stubs": 8,
+    "R9_normalized_lines": 285
+  },
+  "per_document": [
+    {
+      "doc_id": "kb01",
+      "title": "Глосарій предметної області «Прогнозування енергоспоживання»",
+      "type": "glossary",
+      "sensitivity": "public",
+      "date": "2026-10-20",
+      "sections": 26,
+      "fragments": 20
+    },
+    {
+      "doc_id": "kb02",
+      "title": "Методи прогнозування електричного навантаження",
+      "type": "kb_article",
+      "sensitivity": "public",
+      "date": "2026-10-20",
+      "sections": 11,
+      "fragments": 10
+    },
+    {
+      "doc_id": "kb03",
+      "title": "Метрики якості прогнозу навантаження",
+      "type": "kb_article",
+      "sensitivity": "public",
+      "date": "2026-10-20",
+      "sections": 11,
+      "fragments": 10
+    },
+    {
+      "doc_id": "kb04",
+      "title": "Вплив погоди на енергоспоживання",
+      "type": "kb_article",
+      "sensitivity": "public",
+      "date": "2026-10-21",
+      "sections": 11,
+      "fragments": 10
+    },
+    {
+      "doc_id": "kb05",
+      "title": "Інтелектуальні лічильники AMI та якість вимірювань",
+      "type": "kb_article",
+      "sensitivity": "public",
+      "date": "2026-10-21",
+      "sections": 10,
+      "fragments": 9
+    },
+    {
+      "doc_id": "kb06",
+      "title": "Регламент дій диспетчера при перевантаженні підстанції",
+      "type": "regulation",
+      "sensitivity": "internal",
+      "date": "2026-09-15",
+      "sections": 10,
+      "fragments": 9
+    },
+    {
+      "doc_id": "kb07",
+      "title": "Політика якості даних для навчання моделей прогнозування",
+      "type": "policy",
+      "sensitivity": "internal",
+      "date": "2026-10-01",
+      "sections": 10,
+      "fragments": 9
+    },
+    {
+      "doc_id": "kb08",
+      "title": "Порядок перенавчання моделей прогнозування",
+      "type": "procedure",
+      "sensitivity": "internal",
+      "date": "2026-10-05",
+      "sections": 9,
+      "fragments": 8
+    },
+    {
+      "doc_id": "kb09",
+      "title": "Онтологія предметної області та її перенесення в граф знань",
+      "type": "kb_article",
+      "sensitivity": "public",
+      "date": "2026-10-12",
+      "sections": 11,
+      "fragments": 9
+    },
+    {
+      "doc_id": "kb10",
+      "title": "Класифікація конфіденційності та правила доступу до бази знань",
+      "type": "policy",
+      "sensitivity": "internal",
+      "date": "2026-10-10",
+      "sections": 9,
+      "fragments": 7
+    },
+    {
+      "doc_id": "kb11",
+      "title": "Часті питання диспетчерів",
+      "type": "faq",
+      "sensitivity": "public",
+      "date": "2026-10-18",
+      "sections": 11,
+      "fragments": 8
+    },
+    {
+      "doc_id": "kb12",
+      "title": "Топологія живлення та каскадні аварії",
+      "type": "kb_article",
+      "sensitivity": "internal",
+      "date": "2026-10-14",
+      "sections": 9,
+      "fragments": 8
+    },
+    {
+      "doc_id": "kb13",
+      "title": "Архітектура Domain Knowledge Hub",
+      "type": "kb_article",
+      "sensitivity": "public",
+      "date": "2026-10-22",
+      "sections": 9,
+      "fragments": 8
+    },
+    {
+      "doc_id": "kb14",
+      "title": "Інструкція з обробки несправностей лічильників",
+      "type": "procedure",
+      "sensitivity": "internal",
+      "date": "2026-09-28",
+      "sections": 9,
+      "fragments": 7
+    },
+    {
+      "doc_id": "kb15",
+      "title": "Журнал інцидентів диспетчерської служби (вересень — жовтень 2026)",
+      "type": "incident_log",
+      "sensitivity": "restricted",
+      "date": "2026-10-19",
+      "sections": 9,
+      "fragments": 8
+    },
+    {
+      "doc_id": "gen01",
+      "title": "Паспорти підстанцій мережі",
+      "type": "register",
+      "sensitivity": "internal",
+      "date": "2026-10-15",
+      "sections": 13,
+      "fragments": 12
+    },
+    {
+      "doc_id": "gen02",
+      "title": "Картки моделей прогнозування",
+      "type": "model_card",
+      "sensitivity": "internal",
+      "date": "2026-10-15",
+      "sections": 7,
+      "fragments": 6
+    },
+    {
+      "doc_id": "gen03",
+      "title": "Реєстр споживачів",
+      "type": "register",
+      "sensitivity": "restricted",
+      "date": "2026-10-15",
+      "sections": 42,
+      "fragments": 41
+    },
+    {
+      "doc_id": "gen04",
+      "title": "Реєстр лічильників AMI",
+      "type": "register",
+      "sensitivity": "internal",
+      "date": "2026-10-15",
+      "sections": 4,
+      "fragments": 8
+    },
+    {
+      "doc_id": "gen05",
+      "title": "Журнал прогнозів",
+      "type": "forecast_log",
+      "sensitivity": "internal",
+      "date": "2026-10-15",
+      "sections": 19,
+      "fragments": 18
+    },
+    {
+      "doc_id": "gen06",
+      "title": "Довідник погодних умов навчальних періодів",
+      "type": "register",
+      "sensitivity": "public",
+      "date": "2026-10-15",
+      "sections": 11,
+      "fragments": 6
+    },
+    {
+      "doc_id": "gen07",
+      "title": "Зони відповідальності диспетчерів",
+      "type": "register",
+      "sensitivity": "internal",
+      "date": "2026-10-15",
+      "sections": 7,
+      "fragments": 5
+    },
+    {
+      "doc_id": "prj01",
+      "title": "ЛР9: README репозиторію графової бази знань",
+      "type": "project_doc",
+      "sensitivity": "public",
+      "date": "2026-10-17",
+      "sections": 5,
+      "fragments": 5
+    },
+    {
+      "doc_id": "prj02",
+      "title": "ЛР9: відображення компетентнісних питань на шаблони шляхів",
+      "type": "project_doc",
+      "sensitivity": "public",
+      "date": "2026-10-17",
+      "sections": 5,
+      "fragments": 6
+    },
+    {
+      "doc_id": "prj03",
+      "title": "ЛР9: запити Cypher, результати та інтерпретація",
+      "type": "project_doc",
+      "sensitivity": "internal",
+      "date": "2026-10-17",
+      "sections": 12,
+      "fragments": 14
+    },
+    {
+      "doc_id": "prj04",
+      "title": "ЛР9: аналіз графа PageRank і Louvain",
+      "type": "project_doc",
+      "sensitivity": "public",
+      "date": "2026-10-17",
+      "sections": 7,
+      "fragments": 9
+    },
+    {
+      "doc_id": "prj05",
+      "title": "ЛР9: порівняння SPARQL і Cypher",
+      "type": "project_doc",
+      "sensitivity": "public",
+      "date": "2026-10-17",
+      "sections": 8,
+      "fragments": 12
+    },
+    {
+      "doc_id": "prj06",
+      "title": "ЛР9: журнал взаємодії з LLM",
+      "type": "project_doc",
+      "sensitivity": "internal",
+      "date": "2026-10-17",
+      "sections": 2,
+      "fragments": 6
+    },
+    {
+      "doc_id": "prj07",
+      "title": "СР9: README бенчмарку графових баз",
+      "type": "project_doc",
+      "sensitivity": "public",
+      "date": "2026-10-21",
+      "sections": 7,
+      "fragments": 4
+    },
+    {
+      "doc_id": "prj08",
+      "title": "СР9: результати бенчмарку Neo4j, Memgraph, GraphDB",
+      "type": "project_doc",
+      "sensitivity": "public",
+      "date": "2026-10-21",
+      "sections": 1,
+      "fragments": 1
+    },
+    {
+      "doc_id": "prj09",
+      "title": "Звіт ЛР9 «Графова база знань у Neo4j»",
+      "type": "report",
+      "sensitivity": "public",
+      "date": "2026-10-18",
+      "sections": 33,
+      "fragments": 46
+    }
+  ]
+}

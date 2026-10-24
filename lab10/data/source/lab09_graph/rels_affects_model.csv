@@ -1,0 +1,11 @@
+start,end,source,confidence,validFrom
+WeatherCondition_20260110,ForecastModel_LSTM2,lab08:data.ttl,1.0,2026-09-24
+WeatherCondition_20260111,ForecastModel_ARIMA1,synthetic:gen_v1(seed=42),0.57,2026-09-30
+WeatherCondition_20260112,ForecastModel_LSTM2,synthetic:gen_v1(seed=42),0.67,2026-09-30
+WeatherCondition_20260924,ForecastModel_LSTM1,lab08:data.ttl,1.0,2026-09-24
+WeatherCondition_20260925,ForecastModel_VAR1,lab08:data.ttl,1.0,2026-09-24
+WeatherCondition_20260926,ForecastModel_LSTM3,synthetic:gen_v1(seed=42),0.62,2026-09-30
+WeatherCondition_20260927,ForecastModel_VAR1,synthetic:gen_v1(seed=42),0.67,2026-09-30
+WeatherCondition_20260928,ForecastModel_GRU1,synthetic:gen_v1(seed=42),0.76,2026-09-30
+WeatherCondition_20260929,ForecastModel_LSTM3,synthetic:gen_v1(seed=42),0.76,2026-09-30
+WeatherCondition_20260930,ForecastModel_GRU1,synthetic:gen_v1(seed=42),0.71,2026-09-30

@@ -1,0 +1,807 @@
+{
+  "model": "e5-small",
+  "reranker": "mmarco",
+  "strategy": "hierarchical",
+  "stub": false,
+  "rrf_k": 60,
+  "candidates": 30,
+  "runs": {
+    "bm25": {
+      "recall@5": 0.624,
+      "recall@10": 0.657,
+      "mrr": 0.6422,
+      "ndcg@10": 0.58,
+      "n_queries": 43
+    },
+    "dense": {
+      "recall@5": 0.6008,
+      "recall@10": 0.7422,
+      "mrr": 0.7452,
+      "ndcg@10": 0.6315,
+      "n_queries": 43
+    },
+    "hybrid": {
+      "recall@5": 0.6376,
+      "recall@10": 0.7422,
+      "mrr": 0.7755,
+      "ndcg@10": 0.6522,
+      "n_queries": 43
+    },
+    "hybrid_rerank": {
+      "recall@5": 0.6996,
+      "recall@10": 0.8043,
+      "mrr": 0.7933,
+      "ndcg@10": 0.6968,
+      "n_queries": 43
+    }
+  },
+  "ranks": {
+    "q01": {
+      "bm25": 1,
+      "dense": 1,
+      "hybrid": 1,
+      "hybrid_rerank": 1
+    },
+    "q02": {
+      "bm25": 2,
+      "dense": 1,
+      "hybrid": 1,
+      "hybrid_rerank": 1
+    },
+    "q03": {
+      "bm25": 1,
+      "dense": 1,
+      "hybrid": 1,
+      "hybrid_rerank": 3
+    },
+    "q04": {
+      "bm25": 1,
+      "dense": 1,
+      "hybrid": 1,
+      "hybrid_rerank": 1
+    },
+    "q05": {
+      "bm25": 1,
+      "dense": 1,
+      "hybrid": 1,
+      "hybrid_rerank": 1
+    },
+    "q06": {
+      "bm25": 1,
+      "dense": 1,
+      "hybrid": 1,
+      "hybrid_rerank": 1
+    },
+    "q07": {
+      "bm25": 1,
+      "dense": 6,
+      "hybrid": 1,
+      "hybrid_rerank": 1
+    },
+    "q08": {
+      "bm25": 1,
+      "dense": 1,
+      "hybrid": 1,
+      "hybrid_rerank": 1
+    },
+    "q09": {
+      "bm25": 1,
+      "dense": 2,
+      "hybrid": 1,
+      "hybrid_rerank": 1
+    },
+    "q10": {
+      "bm25": 1,
+      "dense": 1,
+      "hybrid": 1,
+      "hybrid_rerank": 1
+    },
+    "q11": {
+      "bm25": 2,
+      "dense": 1,
+      "hybrid": 1,
+      "hybrid_rerank": 1
+    },
+    "q12": {
+      "bm25": 1,
+      "dense": 1,
+      "hybrid": 1,
+      "hybrid_rerank": 1
+    },
+    "q13": {
+      "bm25": 2,
+      "dense": 1,
+      "hybrid": 1,
+      "hybrid_rerank": 1
+    },
+    "q14": {
+      "bm25": 2,
+      "dense": 1,
+      "hybrid": 1,
+      "hybrid_rerank": 1
+    },
+    "q15": {
+      "bm25": 1,
+      "dense": 1,
+      "hybrid": 2,
+      "hybrid_rerank": 1
+    },
+    "q16": {
+      "bm25": 2,
+      "dense": 1,
+      "hybrid": 1,
+      "hybrid_rerank": 1
+    },
+    "q17": {
+      "bm25": null,
+      "dense": 1,
+      "hybrid": 3,
+      "hybrid_rerank": 1
+    },
+    "q18": {
+      "bm25": 1,
+      "dense": 3,
+      "hybrid": 1,
+      "hybrid_rerank": 3
+    },
+    "q19": {
+      "bm25": 3,
+      "dense": 2,
+      "hybrid": 2,
+      "hybrid_rerank": 1
+    },
+    "q20": {
+      "bm25": 6,
+      "dense": 1,
+      "hybrid": 1,
+      "hybrid_rerank": 7
+    },
+    "q21": {
+      "bm25": 1,
+      "dense": 1,
+      "hybrid": 1,
+      "hybrid_rerank": 1
+    },
+    "q22": {
+      "bm25": null,
+      "dense": 9,
+      "hybrid": 9,
+      "hybrid_rerank": 1
+    },
+    "q23": {
+      "bm25": 1,
+      "dense": 1,
+      "hybrid": 1,
+      "hybrid_rerank": 1
+    },
+    "q24": {
+      "bm25": 3,
+      "dense": 10,
+      "hybrid": 6,
+      "hybrid_rerank": 1
+    },
+    "q25": {
+      "bm25": 4,
+      "dense": 2,
+      "hybrid": 1,
+      "hybrid_rerank": 5
+    },
+    "q26": {
+      "bm25": 1,
+      "dense": 4,
+      "hybrid": 1,
+      "hybrid_rerank": 1
+    },
+    "q27": {
+      "bm25": 1,
+      "dense": 1,
+      "hybrid": 1,
+      "hybrid_rerank": 1
+    },
+    "q28": {
+      "bm25": 1,
+      "dense": 1,
+      "hybrid": 1,
+      "hybrid_rerank": 1
+    },
+    "q29": {
+      "bm25": null,
+      "dense": null,
+      "hybrid": null,
+      "hybrid_rerank": 8
+    },
+    "q30": {
+      "bm25": null,
+      "dense": null,
+      "hybrid": null,
+      "hybrid_rerank": null
+    },
+    "q31": {
+      "bm25": null,
+      "dense": 8,
+      "hybrid": null,
+      "hybrid_rerank": 2
+    },
+    "q32": {
+      "bm25": 1,
+      "dense": 1,
+      "hybrid": 1,
+      "hybrid_rerank": 1
+    },
+    "q33": {
+      "bm25": 3,
+      "dense": 1,
+      "hybrid": 3,
+      "hybrid_rerank": 7
+    },
+    "q34": {
+      "bm25": 2,
+      "dense": 1,
+      "hybrid": 1,
+      "hybrid_rerank": 2
+    },
+    "q35": {
+      "bm25": 2,
+      "dense": 1,
+      "hybrid": 1,
+      "hybrid_rerank": 1
+    },
+    "q36": {
+      "bm25": 1,
+      "dense": 1,
+      "hybrid": 1,
+      "hybrid_rerank": 1
+    },
+    "q37": {
+      "bm25": null,
+      "dense": 3,
+      "hybrid": 5,
+      "hybrid_rerank": 2
+    },
+    "q38": {
+      "bm25": 5,
+      "dense": 8,
+      "hybrid": 5,
+      "hybrid_rerank": 3
+    },
+    "q39": {
+      "bm25": null,
+      "dense": null,
+      "hybrid": null,
+      "hybrid_rerank": null
+    },
+    "q40": {
+      "bm25": 1,
+      "dense": 1,
+      "hybrid": 1,
+      "hybrid_rerank": 1
+    },
+    "q41": {
+      "bm25": 1,
+      "dense": 1,
+      "hybrid": 1,
+      "hybrid_rerank": 1
+    },
+    "q42": {
+      "bm25": 2,
+      "dense": 1,
+      "hybrid": 1,
+      "hybrid_rerank": 1
+    },
+    "q43": {
+      "bm25": 1,
+      "dense": 1,
+      "hybrid": 1,
+      "hybrid_rerank": 1
+    }
+  },
+  "rerank_changed_top5_set": 42,
+  "rerank_changed_top5_order": 43,
+  "n_answerable": 43,
+  "rerank_example": {
+    "qid": "q31",
+    "query": "retraining triggers forecasting model error",
+    "hybrid_top5": [
+      "prj03#par005",
+      "kb03#par002",
+      "prj03#par010",
+      "prj03#par006",
+      "kb03#par003"
+    ],
+    "rerank_top5": [
+      "prj03#par005",
+      "kb08#par001",
+      "prj03#par010",
+      "prj02#par001",
+      "prj04#par004"
+    ],
+    "first_rel_hybrid": null,
+    "first_rel_rerank": 2
+  },
+  "filter_tests": [
+    {
+      "qid": "q35",
+      "query": "Якого диспетчера треба попередити про несправність лічильника AMI-77410 і чому?",
+      "filter": "роль «зовнішній користувач»: лише public",
+      "repr": "Filters(types=None, max_sensitivity=public, date_from=None, date_to=None)",
+      "no_filter": [
+        {
+          "id": "prj09#par018",
+          "type": "report",
+          "sens": "public",
+          "date": "2026-10-18"
+        },
+        {
+          "id": "kb15#par002",
+          "type": "incident_log",
+          "sens": "restricted",
+          "date": "2026-10-19"
+        },
+        {
+          "id": "prj03#par008",
+          "type": "project_doc",
+          "sens": "internal",
+          "date": "2026-10-17"
+        },
+        {
+          "id": "kb15#par007",
+          "type": "incident_log",
+          "sens": "restricted",
+          "date": "2026-10-19"
+        },
+        {
+          "id": "kb05#par005",
+          "type": "kb_article",
+          "sens": "public",
+          "date": "2026-10-21"
+        }
+      ],
+      "pre_filter": [
+        {
+          "id": "prj09#par018",
+          "type": "report",
+          "sens": "public",
+          "date": "2026-10-18"
+        },
+        {
+          "id": "kb05#par005",
+          "type": "kb_article",
+          "sens": "public",
+          "date": "2026-10-21"
+        },
+        {
+          "id": "prj09#par014",
+          "type": "report",
+          "sens": "public",
+          "date": "2026-10-18"
+        },
+        {
+          "id": "prj09#par020",
+          "type": "report",
+          "sens": "public",
+          "date": "2026-10-18"
+        },
+        {
+          "id": "prj09#par019",
+          "type": "report",
+          "sens": "public",
+          "date": "2026-10-18"
+        }
+      ],
+      "post_filter": [
+        {
+          "id": "prj09#par018",
+          "type": "report",
+          "sens": "public",
+          "date": "2026-10-18"
+        },
+        {
+          "id": "kb05#par005",
+          "type": "kb_article",
+          "sens": "public",
+          "date": "2026-10-21"
+        },
+        {
+          "id": "prj09#par014",
+          "type": "report",
+          "sens": "public",
+          "date": "2026-10-18"
+        },
+        {
+          "id": "prj09#par020",
+          "type": "report",
+          "sens": "public",
+          "date": "2026-10-18"
+        },
+        {
+          "id": "prj09#par019",
+          "type": "report",
+          "sens": "public",
+          "date": "2026-10-18"
+        }
+      ],
+      "violations_pre": 0,
+      "violations_no_filter": 3,
+      "n_pre": 5,
+      "n_post": 5,
+      "first_rel_pre": 1
+    },
+    {
+      "qid": "q39",
+      "query": "Який споживач на підстанції без диспетчера має найбільший договірний ліміт і яка його адреса?",
+      "filter": "роль «аналітик»: public + internal (без restricted)",
+      "repr": "Filters(types=None, max_sensitivity=internal, date_from=None, date_to=None)",
+      "no_filter": [
+        {
+          "id": "prj03#par001",
+          "type": "project_doc",
+          "sens": "internal",
+          "date": "2026-10-17"
+        },
+        {
+          "id": "prj09#par019",
+          "type": "report",
+          "sens": "public",
+          "date": "2026-10-18"
+        },
+        {
+          "id": "prj09#par011",
+          "type": "report",
+          "sens": "public",
+          "date": "2026-10-18"
+        },
+        {
+          "id": "gen01#par007",
+          "type": "register",
+          "sens": "internal",
+          "date": "2026-10-15"
+        },
+        {
+          "id": "gen01#par010",
+          "type": "register",
+          "sens": "internal",
+          "date": "2026-10-15"
+        }
+      ],
+      "pre_filter": [
+        {
+          "id": "prj03#par001",
+          "type": "project_doc",
+          "sens": "internal",
+          "date": "2026-10-17"
+        },
+        {
+          "id": "prj09#par019",
+          "type": "report",
+          "sens": "public",
+          "date": "2026-10-18"
+        },
+        {
+          "id": "prj09#par011",
+          "type": "report",
+          "sens": "public",
+          "date": "2026-10-18"
+        },
+        {
+          "id": "kb12#par003",
+          "type": "kb_article",
+          "sens": "internal",
+          "date": "2026-10-14"
+        },
+        {
+          "id": "gen01#par007",
+          "type": "register",
+          "sens": "internal",
+          "date": "2026-10-15"
+        }
+      ],
+      "post_filter": [
+        {
+          "id": "prj03#par001",
+          "type": "project_doc",
+          "sens": "internal",
+          "date": "2026-10-17"
+        },
+        {
+          "id": "prj09#par019",
+          "type": "report",
+          "sens": "public",
+          "date": "2026-10-18"
+        },
+        {
+          "id": "prj09#par011",
+          "type": "report",
+          "sens": "public",
+          "date": "2026-10-18"
+        },
+        {
+          "id": "gen01#par007",
+          "type": "register",
+          "sens": "internal",
+          "date": "2026-10-15"
+        },
+        {
+          "id": "gen01#par010",
+          "type": "register",
+          "sens": "internal",
+          "date": "2026-10-15"
+        }
+      ],
+      "violations_pre": 0,
+      "violations_no_filter": 0,
+      "n_pre": 5,
+      "n_post": 5,
+      "first_rel_pre": null
+    },
+    {
+      "qid": "q14",
+      "query": "Що має зробити диспетчер, коли навантаження підстанції перевищило 95 відсотків номіналу?",
+      "filter": "лише нормативні документи (regulation, procedure, policy)",
+      "repr": "Filters(types={'regulation', 'procedure', 'policy'}, max_sensitivity=None, date_from=None, date_to=None)",
+      "no_filter": [
+        {
+          "id": "kb06#par002",
+          "type": "regulation",
+          "sens": "internal",
+          "date": "2026-09-15"
+        },
+        {
+          "id": "kb01#par005",
+          "type": "glossary",
+          "sens": "public",
+          "date": "2026-10-20"
+        },
+        {
+          "id": "prj03#par002",
+          "type": "project_doc",
+          "sens": "internal",
+          "date": "2026-10-17"
+        },
+        {
+          "id": "kb06#par004",
+          "type": "regulation",
+          "sens": "internal",
+          "date": "2026-09-15"
+        },
+        {
+          "id": "kb06#par006",
+          "type": "regulation",
+          "sens": "internal",
+          "date": "2026-09-15"
+        }
+      ],
+      "pre_filter": [
+        {
+          "id": "kb06#par002",
+          "type": "regulation",
+          "sens": "internal",
+          "date": "2026-09-15"
+        },
+        {
+          "id": "kb06#par004",
+          "type": "regulation",
+          "sens": "internal",
+          "date": "2026-09-15"
+        },
+        {
+          "id": "kb06#par006",
+          "type": "regulation",
+          "sens": "internal",
+          "date": "2026-09-15"
+        },
+        {
+          "id": "kb06#par000",
+          "type": "regulation",
+          "sens": "internal",
+          "date": "2026-09-15"
+        },
+        {
+          "id": "kb06#par007",
+          "type": "regulation",
+          "sens": "internal",
+          "date": "2026-09-15"
+        }
+      ],
+      "post_filter": [
+        {
+          "id": "kb06#par002",
+          "type": "regulation",
+          "sens": "internal",
+          "date": "2026-09-15"
+        },
+        {
+          "id": "kb06#par004",
+          "type": "regulation",
+          "sens": "internal",
+          "date": "2026-09-15"
+        },
+        {
+          "id": "kb06#par006",
+          "type": "regulation",
+          "sens": "internal",
+          "date": "2026-09-15"
+        },
+        {
+          "id": "kb06#par000",
+          "type": "regulation",
+          "sens": "internal",
+          "date": "2026-09-15"
+        },
+        {
+          "id": "kb06#par003",
+          "type": "regulation",
+          "sens": "internal",
+          "date": "2026-09-15"
+        }
+      ],
+      "violations_pre": 0,
+      "violations_no_filter": 2,
+      "n_pre": 5,
+      "n_post": 5,
+      "first_rel_pre": 1
+    },
+    {
+      "qid": "q19",
+      "query": "Чим небезпечні показники зламаного лічильника для навчання моделей?",
+      "filter": "лише документи від 2026-10-15",
+      "repr": "Filters(types=None, max_sensitivity=None, date_from=2026-10-15, date_to=None)",
+      "no_filter": [
+        {
+          "id": "kb05#par007",
+          "type": "kb_article",
+          "sens": "public",
+          "date": "2026-10-21"
+        },
+        {
+          "id": "kb05#par006",
+          "type": "kb_article",
+          "sens": "public",
+          "date": "2026-10-21"
+        },
+        {
+          "id": "gen02#par002",
+          "type": "model_card",
+          "sens": "internal",
+          "date": "2026-10-15"
+        },
+        {
+          "id": "kb15#par007",
+          "type": "incident_log",
+          "sens": "restricted",
+          "date": "2026-10-19"
+        },
+        {
+          "id": "kb08#par001",
+          "type": "procedure",
+          "sens": "internal",
+          "date": "2026-10-05"
+        }
+      ],
+      "pre_filter": [
+        {
+          "id": "kb05#par007",
+          "type": "kb_article",
+          "sens": "public",
+          "date": "2026-10-21"
+        },
+        {
+          "id": "kb05#par006",
+          "type": "kb_article",
+          "sens": "public",
+          "date": "2026-10-21"
+        },
+        {
+          "id": "gen02#par002",
+          "type": "model_card",
+          "sens": "internal",
+          "date": "2026-10-15"
+        },
+        {
+          "id": "gen02#par006",
+          "type": "model_card",
+          "sens": "internal",
+          "date": "2026-10-15"
+        },
+        {
+          "id": "kb15#par007",
+          "type": "incident_log",
+          "sens": "restricted",
+          "date": "2026-10-19"
+        }
+      ],
+      "post_filter": [
+        {
+          "id": "kb05#par007",
+          "type": "kb_article",
+          "sens": "public",
+          "date": "2026-10-21"
+        },
+        {
+          "id": "kb05#par006",
+          "type": "kb_article",
+          "sens": "public",
+          "date": "2026-10-21"
+        },
+        {
+          "id": "gen02#par002",
+          "type": "model_card",
+          "sens": "internal",
+          "date": "2026-10-15"
+        },
+        {
+          "id": "kb15#par007",
+          "type": "incident_log",
+          "sens": "restricted",
+          "date": "2026-10-19"
+        },
+        {
+          "id": "gen02#par005",
+          "type": "model_card",
+          "sens": "internal",
+          "date": "2026-10-15"
+        }
+      ],
+      "violations_pre": 0,
+      "violations_no_filter": 1,
+      "n_pre": 5,
+      "n_post": 5,
+      "first_rel_pre": 1
+    }
+  ],
+  "wins": [
+    {
+      "qid": "q25",
+      "query": "Який день у навчальних даних був найморознішим?",
+      "qtype": "paraphrase",
+      "lang": "uk",
+      "bm25": 4,
+      "dense": 2,
+      "hybrid": 1,
+      "hybrid_rerank": 5
+    },
+    {
+      "qid": "q22",
+      "query": "Як оцінювати прогноз, коли фактичне споживання майже нульове?",
+      "qtype": "paraphrase",
+      "lang": "uk",
+      "bm25": null,
+      "dense": 9,
+      "hybrid": 9,
+      "hybrid_rerank": 1
+    }
+  ],
+  "losses": [
+    {
+      "qid": "q31",
+      "query": "retraining triggers forecasting model error",
+      "qtype": "keyword",
+      "lang": "en",
+      "bm25": null,
+      "dense": 8,
+      "hybrid": null,
+      "hybrid_rerank": 2
+    },
+    {
+      "qid": "q24",
+      "query": "Яка модель у мережі найсвіжіша і коли її навчили?",
+      "qtype": "paraphrase",
+      "lang": "uk",
+      "bm25": 3,
+      "dense": 10,
+      "hybrid": 6,
+      "hybrid_rerank": 1
+    },
+    {
+      "qid": "q37",
+      "query": "Які моделі прогнозують для підстанції №1 і яка в них точність?",
+      "qtype": "multihop",
+      "lang": "uk",
+      "bm25": null,
+      "dense": 3,
+      "hybrid": 5,
+      "hybrid_rerank": 2
+    }
+  ],
+  "n_wins": 2,
+  "n_losses": 6
+}

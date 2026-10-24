@@ -1,0 +1,22 @@
+{
+  "env": {
+    "python": "3.14.3",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 197 Stepping 2, GenuineIntel",
+    "torch": "2.14.1+cpu",
+    "sentence_transformers": "5.7.0",
+    "faiss": "1.15.1",
+    "rank_bm25": "?",
+    "numpy": "2.5.4",
+    "transformers": "5.20.2"
+  },
+  "step_seconds": {
+    "r1": 1.8,
+    "gold": 0.1,
+    "r2": 160.2,
+    "r3": 222.2,
+    "upsert": 12.9,
+    "r4": 224.0,
+    "r5": 235.6
+  }
+}

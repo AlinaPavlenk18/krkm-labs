@@ -1,0 +1,173 @@
+{
+  "model": "e5-small",
+  "strategy": "structural",
+  "stub": false,
+  "size_before": 341,
+  "ops": [
+    {
+      "op": "upsert",
+      "doc_id": "kb08",
+      "query": "Скільки діб нова версія моделі працює паралельно зі старою?",
+      "removed_vectors": 8,
+      "added_vectors": 8,
+      "ms": 130.6,
+      "index_size": 341,
+      "before": {
+        "new_in_top5": false,
+        "old_in_top5": true,
+        "docs": [
+          "kb08",
+          "kb08",
+          "kb08",
+          "kb08",
+          "gen02"
+        ]
+      },
+      "after": {
+        "new_in_top5": true,
+        "old_in_top5": false,
+        "docs": [
+          "kb08",
+          "kb08",
+          "kb08",
+          "kb08",
+          "gen02"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "op": "upsert",
+      "doc_id": "kb06",
+      "query": "Хто відповідає за підстанцію №9?",
+      "removed_vectors": 9,
+      "added_vectors": 9,
+      "ms": 209.1,
+      "index_size": 341,
+      "before": {
+        "new_in_top5": false,
+        "old_in_top5": true,
+        "docs": [
+          "gen01",
+          "kb06",
+          "kb11",
+          "kb15",
+          "prj09"
+        ]
+      },
+      "after": {
+        "new_in_top5": true,
+        "old_in_top5": false,
+        "docs": [
+          "gen01",
+          "kb11",
+          "kb06",
+          "kb15",
+          "prj09"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "op": "upsert",
+      "doc_id": "gen02",
+      "query": "Яка точність моделі LSTM №2 після перенавчання?",
+      "removed_vectors": 6,
+      "added_vectors": 6,
+      "ms": 147.8,
+      "index_size": 341,
+      "before": {
+        "new_in_top5": false,
+        "old_in_top5": true,
+        "docs": [
+          "kb08",
+          "gen02",
+          "kb15",
+          "kb04",
+          "kb02"
+        ]
+      },
+      "after": {
+        "new_in_top5": true,
+        "old_in_top5": false,
+        "docs": [
+          "kb08",
+          "gen02",
+          "kb15",
+          "kb04",
+          "kb02"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "op": "delete",
+      "doc_id": "prj08",
+      "query": "Результати бенчмарку Memgraph медіана p90",
+      "removed_vectors": 1,
+      "added_vectors": 0,
+      "ms": 0.0,
+      "index_size": 340,
+      "before": {
+        "new_in_top5": false,
+        "old_in_top5": true,
+        "docs": [
+          "prj08",
+          "prj07",
+          "prj07",
+          "prj07",
+          "prj04"
+        ]
+      },
+      "after": {
+        "new_in_top5": false,
+        "old_in_top5": false,
+        "docs": [
+          "prj07",
+          "prj07",
+          "prj07",
+          "prj04",
+          "prj04"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "op": "upsert",
+      "doc_id": "kb16",
+      "query": "Коли диспетчер перевіряє прогноз на вечірній пік узимку?",
+      "removed_vectors": 0,
+      "added_vectors": 1,
+      "ms": 15.1,
+      "index_size": 341,
+      "before": {
+        "new_in_top5": false,
+        "old_in_top5": false,
+        "docs": [
+          "gen07",
+          "gen07",
+          "gen07",
+          "gen07",
+          "kb06"
+        ]
+      },
+      "after": {
+        "new_in_top5": true,
+        "old_in_top5": false,
+        "docs": [
+          "kb16",
+          "gen07",
+          "gen07",
+          "gen07",
+          "gen07"
+        ]
+      },
+      "passed": true
+    }
+  ],
+  "tombstone_ratio_before_compact": 0.0658,
+  "compact_ms": 11.0,
+  "size_after_compact": 341,
+  "after_compact_all_passed": true,
+  "all_passed": true
+}

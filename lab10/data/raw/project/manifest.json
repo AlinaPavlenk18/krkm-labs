@@ -1,0 +1,20 @@
+[
+  {"doc_id": "prj01", "file": "lab09_README.md", "title": "ЛР9: README репозиторію графової бази знань", "type": "project_doc", "date": "2026-10-17", "sensitivity": "public",
+   "source_url": "https://github.com/AlinaPavlenk18/krkm-labs/blob/main/lab09/README.md", "license": "CC BY 4.0 (Павленко А. С.)", "origin": "project (власна робота, ЛР9)"},
+  {"doc_id": "prj02", "file": "lab09_cq_mapping.md", "title": "ЛР9: відображення компетентнісних питань на шаблони шляхів", "type": "project_doc", "date": "2026-10-17", "sensitivity": "public",
+   "source_url": "https://github.com/AlinaPavlenk18/krkm-labs/blob/main/lab09/docs/cq_mapping.md", "license": "CC BY 4.0 (Павленко А. С.)", "origin": "project (власна робота, ЛР9)"},
+  {"doc_id": "prj03", "file": "lab09_cypher_results.md", "title": "ЛР9: запити Cypher, результати та інтерпретація", "type": "project_doc", "date": "2026-10-17", "sensitivity": "internal",
+   "source_url": "https://github.com/AlinaPavlenk18/krkm-labs/blob/main/lab09/docs/cypher_results.md", "license": "CC BY 4.0 (Павленко А. С.)", "origin": "project (власна робота, ЛР9)"},
+  {"doc_id": "prj04", "file": "lab09_gds_report.md", "title": "ЛР9: аналіз графа PageRank і Louvain", "type": "project_doc", "date": "2026-10-17", "sensitivity": "public",
+   "source_url": "https://github.com/AlinaPavlenk18/krkm-labs/blob/main/lab09/docs/gds_report.md", "license": "CC BY 4.0 (Павленко А. С.)", "origin": "project (власна робота, ЛР9)"},
+  {"doc_id": "prj05", "file": "lab09_sparql_vs_cypher.md", "title": "ЛР9: порівняння SPARQL і Cypher", "type": "project_doc", "date": "2026-10-17", "sensitivity": "public",
+   "source_url": "https://github.com/AlinaPavlenk18/krkm-labs/blob/main/lab09/docs/sparql_vs_cypher.md", "license": "CC BY 4.0 (Павленко А. С.)", "origin": "project (власна робота, ЛР9)"},
+  {"doc_id": "prj06", "file": "lab09_llm_log.md", "title": "ЛР9: журнал взаємодії з LLM", "type": "project_doc", "date": "2026-10-17", "sensitivity": "internal",
+   "source_url": "https://github.com/AlinaPavlenk18/krkm-labs/blob/main/lab09/llm_log/README.md", "license": "CC BY 4.0 (Павленко А. С.)", "origin": "project (власна робота, ЛР9)"},
+  {"doc_id": "prj07", "file": "sr09_README.md", "title": "СР9: README бенчмарку графових баз", "type": "project_doc", "date": "2026-10-21", "sensitivity": "public",
+   "source_url": "https://github.com/AlinaPavlenk18/krkm-labs/blob/main/sr09/README.md", "license": "CC BY 4.0 (Павленко А. С.)", "origin": "project (власна робота, СР9)"},
+  {"doc_id": "prj08", "file": "sr09_bench_results.md", "title": "СР9: результати бенчмарку Neo4j, Memgraph, GraphDB", "type": "project_doc", "date": "2026-10-21", "sensitivity": "public",
+   "source_url": "https://github.com/AlinaPavlenk18/krkm-labs/blob/main/sr09/docs/bench_results.md", "license": "CC BY 4.0 (Павленко А. С.)", "origin": "project (власна робота, СР9)"},
+  {"doc_id": "prj09", "file": "lab09_report.docx", "title": "Звіт ЛР9 «Графова база знань у Neo4j»", "type": "report", "date": "2026-10-18", "sensitivity": "public",
+   "source_url": "https://github.com/AlinaPavlenk18/krkm-labs/blob/main/lab10/data/raw/project/lab09_report.docx", "license": "CC BY 4.0 (Павленко А. С.)", "origin": "project (власна робота, звіт ЛР9)"}
+]

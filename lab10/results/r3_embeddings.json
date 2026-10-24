@@ -1,0 +1,592 @@
+{
+  "strategy": "hierarchical",
+  "stub": false,
+  "queries": [
+    "q01",
+    "q03",
+    "q05",
+    "q11",
+    "q14",
+    "q15",
+    "q17",
+    "q20",
+    "q21",
+    "q24",
+    "q26",
+    "q28",
+    "q29",
+    "q30",
+    "q31",
+    "q32",
+    "q34",
+    "q36",
+    "q38",
+    "q42"
+  ],
+  "rows": [
+    {
+      "model": "e5-small",
+      "hf_name": "intfloat/multilingual-e5-small",
+      "note": "багатомовна, 384 вим., до 512 токенів",
+      "dim": 384,
+      "max_seq_length": 512,
+      "truncated_units": 7,
+      "n_units": 516,
+      "load_seconds": 8.85,
+      "encode_corpus_seconds": 24.03,
+      "hnsw_build_seconds": 0.0707,
+      "M": 32,
+      "efConstruction": 200,
+      "efSearch": 64,
+      "recall@5": 0.55,
+      "mrr": 0.73,
+      "ndcg@10": 0.5897,
+      "by_lang": {
+        "uk": {
+          "n": 15,
+          "recall@5": 0.6,
+          "mrr": 0.832
+        },
+        "en": {
+          "n": 5,
+          "recall@5": 0.4,
+          "mrr": 0.425
+        }
+      },
+      "latency_ms_p50": 73.36,
+      "latency_ms_p95": 83.26,
+      "ann": {
+        "16": {
+          "ann_recall@10": 0.95,
+          "search_only_ms": 0.029
+        },
+        "64": {
+          "ann_recall@10": 1.0,
+          "search_only_ms": 0.031
+        },
+        "128": {
+          "ann_recall@10": 1.0,
+          "search_only_ms": 0.04
+        }
+      },
+      "per_query": {
+        "q01": {
+          "recall@5": 0.6666666666666666,
+          "recall@10": 1.0,
+          "mrr": 1.0,
+          "ndcg@10": 0.9410605993303518,
+          "first_rel_rank": 1
+        },
+        "q03": {
+          "recall@5": 0.6666666666666666,
+          "recall@10": 0.6666666666666666,
+          "mrr": 1.0,
+          "ndcg@10": 0.6012610260559063,
+          "first_rel_rank": 1
+        },
+        "q05": {
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "mrr": 1.0,
+          "ndcg@10": 1.0,
+          "first_rel_rank": 1
+        },
+        "q11": {
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "mrr": 1.0,
+          "ndcg@10": 1.0,
+          "first_rel_rank": 1
+        },
+        "q14": {
+          "recall@5": 0.6666666666666666,
+          "recall@10": 0.6666666666666666,
+          "mrr": 1.0,
+          "ndcg@10": 0.6012610260559063,
+          "first_rel_rank": 1
+        },
+        "q15": {
+          "recall@5": 0.75,
+          "recall@10": 0.75,
+          "mrr": 1.0,
+          "ndcg@10": 0.7780158492147935,
+          "first_rel_rank": 1
+        },
+        "q17": {
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "mrr": 1.0,
+          "ndcg@10": 0.7601875334318685,
+          "first_rel_rank": 1
+        },
+        "q20": {
+          "recall@5": 0.3333333333333333,
+          "recall@10": 0.6666666666666666,
+          "mrr": 1.0,
+          "ndcg@10": 0.6105456988825855,
+          "first_rel_rank": 1
+        },
+        "q21": {
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "mrr": 1.0,
+          "ndcg@10": 1.0,
+          "first_rel_rank": 1
+        },
+        "q24": {
+          "recall@5": 0.0,
+          "recall@10": 0.5,
+          "mrr": 0.1,
+          "ndcg@10": 0.10987173866025332,
+          "first_rel_rank": 10
+        },
+        "q26": {
+          "recall@5": 0.5,
+          "recall@10": 0.5,
+          "mrr": 0.25,
+          "ndcg@10": 0.16369747519436975,
+          "first_rel_rank": 4
+        },
+        "q28": {
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "mrr": 1.0,
+          "ndcg@10": 1.0,
+          "first_rel_rank": 1
+        },
+        "q29": {
+          "recall@5": 0.0,
+          "recall@10": 0.0,
+          "mrr": 0.0,
+          "ndcg@10": 0.0,
+          "first_rel_rank": null
+        },
+        "q30": {
+          "recall@5": 0.0,
+          "recall@10": 0.0,
+          "mrr": 0.0,
+          "ndcg@10": 0.0,
+          "first_rel_rank": null
+        },
+        "q31": {
+          "recall@5": 0.0,
+          "recall@10": 1.0,
+          "mrr": 0.125,
+          "ndcg@10": 0.23981246656813146,
+          "first_rel_rank": 8
+        },
+        "q32": {
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "mrr": 1.0,
+          "ndcg@10": 0.9072278740982787,
+          "first_rel_rank": 1
+        },
+        "q34": {
+          "recall@5": 0.3333333333333333,
+          "recall@10": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg@10": 0.44357108262036243,
+          "first_rel_rank": 1
+        },
+        "q36": {
+          "recall@5": 0.75,
+          "recall@10": 1.0,
+          "mrr": 1.0,
+          "ndcg@10": 0.9754478858155876,
+          "first_rel_rank": 1
+        },
+        "q38": {
+          "recall@5": 0.0,
+          "recall@10": 0.5,
+          "mrr": 0.125,
+          "ndcg@10": 0.19342640361727081,
+          "first_rel_rank": 8
+        },
+        "q42": {
+          "recall@5": 0.3333333333333333,
+          "recall@10": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg@10": 0.46927872602275644,
+          "first_rel_rank": 1
+        }
+      }
+    },
+    {
+      "model": "ml-minilm",
+      "hf_name": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "note": "багатомовна, 384 вим., до 128 токенів",
+      "dim": 384,
+      "max_seq_length": 128,
+      "truncated_units": 157,
+      "n_units": 516,
+      "load_seconds": 142.81,
+      "encode_corpus_seconds": 5.17,
+      "hnsw_build_seconds": 0.0246,
+      "M": 32,
+      "efConstruction": 200,
+      "efSearch": 64,
+      "recall@5": 0.475,
+      "mrr": 0.625,
+      "ndcg@10": 0.5009,
+      "by_lang": {
+        "uk": {
+          "n": 15,
+          "recall@5": 0.511,
+          "mrr": 0.633
+        },
+        "en": {
+          "n": 5,
+          "recall@5": 0.367,
+          "mrr": 0.6
+        }
+      },
+      "latency_ms_p50": 14.33,
+      "latency_ms_p95": 16.99,
+      "ann": {
+        "16": {
+          "ann_recall@10": 0.99,
+          "search_only_ms": 0.015
+        },
+        "64": {
+          "ann_recall@10": 1.0,
+          "search_only_ms": 0.008
+        },
+        "128": {
+          "ann_recall@10": 1.0,
+          "search_only_ms": 0.011
+        }
+      },
+      "per_query": {
+        "q01": {
+          "recall@5": 0.6666666666666666,
+          "recall@10": 0.6666666666666666,
+          "mrr": 1.0,
+          "ndcg@10": 0.8403030283801005,
+          "first_rel_rank": 1
+        },
+        "q03": {
+          "recall@5": 0.3333333333333333,
+          "recall@10": 0.3333333333333333,
+          "mrr": 0.3333333333333333,
+          "ndcg@10": 0.13291299131469791,
+          "first_rel_rank": 3
+        },
+        "q05": {
+          "recall@5": 0.0,
+          "recall@10": 0.0,
+          "mrr": 0.0,
+          "ndcg@10": 0.0,
+          "first_rel_rank": null
+        },
+        "q11": {
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "mrr": 1.0,
+          "ndcg@10": 0.8821211986607034,
+          "first_rel_rank": 1
+        },
+        "q14": {
+          "recall@5": 0.6666666666666666,
+          "recall@10": 1.0,
+          "mrr": 1.0,
+          "ndcg@10": 0.7613042148525074,
+          "first_rel_rank": 1
+        },
+        "q15": {
+          "recall@5": 0.75,
+          "recall@10": 1.0,
+          "mrr": 0.5,
+          "ndcg@10": 0.6242163935020466,
+          "first_rel_rank": 2
+        },
+        "q17": {
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "mrr": 1.0,
+          "ndcg@10": 0.7601875334318685,
+          "first_rel_rank": 1
+        },
+        "q20": {
+          "recall@5": 0.3333333333333333,
+          "recall@10": 0.6666666666666666,
+          "mrr": 0.3333333333333333,
+          "ndcg@10": 0.37590633587120725,
+          "first_rel_rank": 3
+        },
+        "q21": {
+          "recall@5": 0.6666666666666666,
+          "recall@10": 0.6666666666666666,
+          "mrr": 1.0,
+          "ndcg@10": 0.6993694869720469,
+          "first_rel_rank": 1
+        },
+        "q24": {
+          "recall@5": 0.0,
+          "recall@10": 0.0,
+          "mrr": 0.0,
+          "ndcg@10": 0.0,
+          "first_rel_rank": null
+        },
+        "q26": {
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "mrr": 1.0,
+          "ndcg@10": 0.9072278740982787,
+          "first_rel_rank": 1
+        },
+        "q28": {
+          "recall@5": 0.0,
+          "recall@10": 0.0,
+          "mrr": 0.0,
+          "ndcg@10": 0.0,
+          "first_rel_rank": null
+        },
+        "q29": {
+          "recall@5": 0.3333333333333333,
+          "recall@10": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg@10": 0.46927872602275644,
+          "first_rel_rank": 1
+        },
+        "q30": {
+          "recall@5": 0.0,
+          "recall@10": 0.0,
+          "mrr": 0.0,
+          "ndcg@10": 0.0,
+          "first_rel_rank": null
+        },
+        "q31": {
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "mrr": 1.0,
+          "ndcg@10": 0.7601875334318685,
+          "first_rel_rank": 1
+        },
+        "q32": {
+          "recall@5": 0.5,
+          "recall@10": 1.0,
+          "mrr": 1.0,
+          "ndcg@10": 0.8955796649110442,
+          "first_rel_rank": 1
+        },
+        "q34": {
+          "recall@5": 0.16666666666666666,
+          "recall@10": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg@10": 0.4207383627887965,
+          "first_rel_rank": 1
+        },
+        "q36": {
+          "recall@5": 0.75,
+          "recall@10": 1.0,
+          "mrr": 1.0,
+          "ndcg@10": 0.9459016272623626,
+          "first_rel_rank": 1
+        },
+        "q38": {
+          "recall@5": 0.0,
+          "recall@10": 0.0,
+          "mrr": 0.0,
+          "ndcg@10": 0.0,
+          "first_rel_rank": null
+        },
+        "q42": {
+          "recall@5": 0.3333333333333333,
+          "recall@10": 1.0,
+          "mrr": 0.3333333333333333,
+          "ndcg@10": 0.5430667908374095,
+          "first_rel_rank": 3
+        }
+      }
+    },
+    {
+      "model": "en-minilm",
+      "hf_name": "sentence-transformers/all-MiniLM-L6-v2",
+      "note": "англомовна (контроль мови), 384 вим., до 256 токенів",
+      "dim": 384,
+      "max_seq_length": 256,
+      "truncated_units": 248,
+      "n_units": 516,
+      "load_seconds": 16.85,
+      "encode_corpus_seconds": 5.65,
+      "hnsw_build_seconds": 0.0192,
+      "M": 32,
+      "efConstruction": 200,
+      "efSearch": 64,
+      "recall@5": 0.0625,
+      "mrr": 0.0833,
+      "ndcg@10": 0.0521,
+      "by_lang": {
+        "uk": {
+          "n": 15,
+          "recall@5": 0.083,
+          "mrr": 0.111
+        },
+        "en": {
+          "n": 5,
+          "recall@5": 0.0,
+          "mrr": 0.0
+        }
+      },
+      "latency_ms_p50": 6.68,
+      "latency_ms_p95": 8.77,
+      "ann": {
+        "16": {
+          "ann_recall@10": 0.93,
+          "search_only_ms": 0.032
+        },
+        "64": {
+          "ann_recall@10": 1.0,
+          "search_only_ms": 0.024
+        },
+        "128": {
+          "ann_recall@10": 1.0,
+          "search_only_ms": 0.045
+        }
+      },
+      "per_query": {
+        "q01": {
+          "recall@5": 0.3333333333333333,
+          "recall@10": 0.3333333333333333,
+          "mrr": 0.25,
+          "ndcg@10": 0.13755548414400529,
+          "first_rel_rank": 4
+        },
+        "q03": {
+          "recall@5": 0.0,
+          "recall@10": 0.0,
+          "mrr": 0.0,
+          "ndcg@10": 0.0,
+          "first_rel_rank": null
+        },
+        "q05": {
+          "recall@5": 0.0,
+          "recall@10": 0.0,
+          "mrr": 0.0,
+          "ndcg@10": 0.0,
+          "first_rel_rank": null
+        },
+        "q11": {
+          "recall@5": 0.0,
+          "recall@10": 0.3333333333333333,
+          "mrr": 0.16666666666666666,
+          "ndcg@10": 0.1137704181007881,
+          "first_rel_rank": 6
+        },
+        "q14": {
+          "recall@5": 0.0,
+          "recall@10": 0.0,
+          "mrr": 0.0,
+          "ndcg@10": 0.0,
+          "first_rel_rank": null
+        },
+        "q15": {
+          "recall@5": 0.0,
+          "recall@10": 0.0,
+          "mrr": 0.0,
+          "ndcg@10": 0.0,
+          "first_rel_rank": null
+        },
+        "q17": {
+          "recall@5": 0.0,
+          "recall@10": 0.0,
+          "mrr": 0.0,
+          "ndcg@10": 0.0,
+          "first_rel_rank": null
+        },
+        "q20": {
+          "recall@5": 0.0,
+          "recall@10": 0.0,
+          "mrr": 0.0,
+          "ndcg@10": 0.0,
+          "first_rel_rank": null
+        },
+        "q21": {
+          "recall@5": 0.6666666666666666,
+          "recall@10": 0.6666666666666666,
+          "mrr": 1.0,
+          "ndcg@10": 0.5316519652587917,
+          "first_rel_rank": 1
+        },
+        "q24": {
+          "recall@5": 0.0,
+          "recall@10": 0.0,
+          "mrr": 0.0,
+          "ndcg@10": 0.0,
+          "first_rel_rank": null
+        },
+        "q26": {
+          "recall@5": 0.0,
+          "recall@10": 0.0,
+          "mrr": 0.0,
+          "ndcg@10": 0.0,
+          "first_rel_rank": null
+        },
+        "q28": {
+          "recall@5": 0.0,
+          "recall@10": 0.0,
+          "mrr": 0.0,
+          "ndcg@10": 0.0,
+          "first_rel_rank": null
+        },
+        "q29": {
+          "recall@5": 0.0,
+          "recall@10": 0.0,
+          "mrr": 0.0,
+          "ndcg@10": 0.0,
+          "first_rel_rank": null
+        },
+        "q30": {
+          "recall@5": 0.0,
+          "recall@10": 0.0,
+          "mrr": 0.0,
+          "ndcg@10": 0.0,
+          "first_rel_rank": null
+        },
+        "q31": {
+          "recall@5": 0.0,
+          "recall@10": 0.0,
+          "mrr": 0.0,
+          "ndcg@10": 0.0,
+          "first_rel_rank": null
+        },
+        "q32": {
+          "recall@5": 0.0,
+          "recall@10": 0.0,
+          "mrr": 0.0,
+          "ndcg@10": 0.0,
+          "first_rel_rank": null
+        },
+        "q34": {
+          "recall@5": 0.0,
+          "recall@10": 0.0,
+          "mrr": 0.0,
+          "ndcg@10": 0.0,
+          "first_rel_rank": null
+        },
+        "q36": {
+          "recall@5": 0.25,
+          "recall@10": 0.5,
+          "mrr": 0.25,
+          "ndcg@10": 0.2594674364423203,
+          "first_rel_rank": 4
+        },
+        "q38": {
+          "recall@5": 0.0,
+          "recall@10": 0.0,
+          "mrr": 0.0,
+          "ndcg@10": 0.0,
+          "first_rel_rank": null
+        },
+        "q42": {
+          "recall@5": 0.0,
+          "recall@10": 0.0,
+          "mrr": 0.0,
+          "ndcg@10": 0.0,
+          "first_rel_rank": null
+        }
+      }
+    }
+  ]
+}
