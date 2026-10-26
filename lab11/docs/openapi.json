@@ -1,0 +1,335 @@
+{
+ "openapi": "3.1.0",
+ "info": {
+  "title": "Domain Knowledge Hub — чат-бот (ЛР11)",
+  "description": "RAG + граф знань для прогнозування енергоспоживання. Відповіді лише з джерел, з цитатами [id].",
+  "version": "1.0.0"
+ },
+ "paths": {
+  "/health": {
+   "get": {
+    "summary": "Health",
+    "operationId": "health_health_get",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {}
+       }
+      }
+     }
+    }
+   }
+  },
+  "/ask": {
+   "post": {
+    "summary": "Ask",
+    "operationId": "ask_ask_post",
+    "parameters": [
+     {
+      "name": "x-api-key",
+      "in": "header",
+      "required": false,
+      "schema": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "title": "X-Api-Key"
+      }
+     }
+    ],
+    "requestBody": {
+     "required": true,
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/AskRequest"
+       }
+      }
+     }
+    },
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/AskResponse"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/sources/{source_id}": {
+   "get": {
+    "summary": "Source",
+    "operationId": "source_sources__source_id__get",
+    "parameters": [
+     {
+      "name": "source_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Source Id"
+      }
+     },
+     {
+      "name": "x-api-key",
+      "in": "header",
+      "required": false,
+      "schema": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "title": "X-Api-Key"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {}
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ },
+ "components": {
+  "schemas": {
+   "AskRequest": {
+    "properties": {
+     "question": {
+      "type": "string",
+      "maxLength": 500,
+      "minLength": 3,
+      "title": "Question",
+      "description": "Питання українською"
+     },
+     "mode": {
+      "type": "string",
+      "enum": [
+       "text",
+       "text+graph"
+      ],
+      "title": "Mode",
+      "default": "text"
+     },
+     "top_k": {
+      "type": "integer",
+      "maximum": 10.0,
+      "minimum": 1.0,
+      "title": "Top K",
+      "default": 5
+     }
+    },
+    "additionalProperties": false,
+    "type": "object",
+    "required": [
+     "question"
+    ],
+    "title": "AskRequest"
+   },
+   "AskResponse": {
+    "properties": {
+     "request_id": {
+      "type": "string",
+      "title": "Request Id"
+     },
+     "role": {
+      "type": "string",
+      "title": "Role"
+     },
+     "mode": {
+      "type": "string",
+      "title": "Mode"
+     },
+     "answer": {
+      "type": "string",
+      "title": "Answer"
+     },
+     "citations": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Citations"
+     },
+     "invalid_citations": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Invalid Citations"
+     },
+     "abstained": {
+      "type": "boolean",
+      "title": "Abstained"
+     },
+     "sources": {
+      "items": {
+       "$ref": "#/components/schemas/Source"
+      },
+      "type": "array",
+      "title": "Sources"
+     },
+     "graph_facts": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Graph Facts"
+     },
+     "tokens": {
+      "additionalProperties": true,
+      "type": "object",
+      "title": "Tokens"
+     },
+     "latency_ms": {
+      "additionalProperties": true,
+      "type": "object",
+      "title": "Latency Ms"
+     }
+    },
+    "type": "object",
+    "required": [
+     "request_id",
+     "role",
+     "mode",
+     "answer",
+     "citations",
+     "invalid_citations",
+     "abstained",
+     "sources",
+     "graph_facts",
+     "tokens",
+     "latency_ms"
+    ],
+    "title": "AskResponse"
+   },
+   "HTTPValidationError": {
+    "properties": {
+     "detail": {
+      "items": {
+       "$ref": "#/components/schemas/ValidationError"
+      },
+      "type": "array",
+      "title": "Detail"
+     }
+    },
+    "type": "object",
+    "title": "HTTPValidationError"
+   },
+   "Source": {
+    "properties": {
+     "id": {
+      "type": "string",
+      "title": "Id"
+     },
+     "title": {
+      "type": "string",
+      "title": "Title"
+     },
+     "section": {
+      "type": "string",
+      "title": "Section"
+     },
+     "date": {
+      "type": "string",
+      "title": "Date"
+     },
+     "sensitivity": {
+      "type": "string",
+      "title": "Sensitivity"
+     }
+    },
+    "type": "object",
+    "required": [
+     "id",
+     "title",
+     "section",
+     "date",
+     "sensitivity"
+    ],
+    "title": "Source"
+   },
+   "ValidationError": {
+    "properties": {
+     "loc": {
+      "items": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "integer"
+        }
+       ]
+      },
+      "type": "array",
+      "title": "Location"
+     },
+     "msg": {
+      "type": "string",
+      "title": "Message"
+     },
+     "type": {
+      "type": "string",
+      "title": "Error Type"
+     },
+     "input": {
+      "title": "Input"
+     },
+     "ctx": {
+      "type": "object",
+      "title": "Context"
+     }
+    },
+    "type": "object",
+    "required": [
+     "loc",
+     "msg",
+     "type"
+    ],
+    "title": "ValidationError"
+   }
+  }
+ }
+}

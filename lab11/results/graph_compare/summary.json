@@ -1,0 +1,29 @@
+{
+  "text": {
+    "n": 12,
+    "correct": 0.583,
+    "key_recall": 0.583,
+    "graph_cited": 0,
+    "explainable": null,
+    "linking": null,
+    "citation_validity": 1,
+    "abstained": 4,
+    "tokens_prompt_avg": 5046.7,
+    "latency_ms_p50": 78623.1,
+    "graph_ms_avg": 0.0
+  },
+  "text+graph": {
+    "n": 12,
+    "correct": 0.833,
+    "key_recall": 0.833,
+    "graph_cited": 0.333,
+    "explainable": 0.333,
+    "linking": 1,
+    "citation_validity": 1,
+    "abstained": 2,
+    "tokens_prompt_avg": 7153.2,
+    "latency_ms_p50": 98000.2,
+    "graph_ms_avg": 890.4
+  },
+  "backend": "neo4j"
+}

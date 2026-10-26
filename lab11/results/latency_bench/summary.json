@@ -1,0 +1,19 @@
+{
+  "model": "qwen2.5:7b",
+  "n_per_config": 10,
+  "top_k=5": {
+    "llm_p50_s": 94.5,
+    "llm_p95_s": 156.2,
+    "total_p50_s": 95.8,
+    "total_p95_s": 157.9,
+    "completion_tokens_mean": 74.6
+  },
+  "top_k=3": {
+    "llm_p50_s": 46.8,
+    "llm_p95_s": 100.2,
+    "total_p50_s": 48.3,
+    "total_p95_s": 102.3,
+    "completion_tokens_mean": 86.8
+  },
+  "paired_ratio_total_k3_over_k5_median": 0.666
+}

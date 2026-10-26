@@ -1,0 +1,27 @@
+{
+ "file": "judge_review_v2.csv",
+ "supported": {
+  "n": 28,
+  "agreement": 1.0,
+  "kappa": 1.0,
+  "confusion": {
+   "judge1_human1": 26,
+   "judge1_human0": 0,
+   "judge0_human1": 0,
+   "judge0_human0": 2
+  },
+  "disagreements": []
+ },
+ "cited_ok": {
+  "n": 28,
+  "agreement": 1.0,
+  "kappa": 1.0,
+  "confusion": {
+   "judge1_human1": 19,
+   "judge1_human0": 0,
+   "judge0_human1": 0,
+   "judge0_human0": 9
+  },
+  "disagreements": []
+ }
+}

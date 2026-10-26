@@ -1,0 +1,13 @@
+start,end,source,confidence,validFrom
+Substation_1,Region_Lviv,synthetic:gen_v1(seed=42),1.0,
+Substation_10,Region_Lviv,synthetic:gen_v1(seed=42),1.0,
+Substation_11,Region_Rivne,synthetic:gen_v1(seed=42),1.0,
+Substation_12,Region_Lviv,lab08:data.ttl,1.0,
+Substation_2,Region_Volyn,synthetic:gen_v1(seed=42),1.0,
+Substation_3,Region_Rivne,synthetic:gen_v1(seed=42),1.0,
+Substation_4,Region_Ternopil,synthetic:gen_v1(seed=42),1.0,
+Substation_5,Region_Volyn,lab08:data.ttl,1.0,
+Substation_6,Region_IvanoFrankivsk,synthetic:gen_v1(seed=42),1.0,
+Substation_7,Region_Lviv,lab08:data.ttl,1.0,
+Substation_8,Region_Zakarpattia,synthetic:gen_v1(seed=42),1.0,
+Substation_9,Region_Zakarpattia,lab08:data.ttl,1.0,

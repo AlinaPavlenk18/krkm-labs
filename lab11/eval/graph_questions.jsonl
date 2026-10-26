@@ -1,0 +1,12 @@
+{"id": "g01", "question": "Які підстанції напряму живить підстанція №1?", "seed": "Substation_1", "expected": ["Substation_10", "Substation_2", "Substation_7"], "kind": "1 крок"}
+{"id": "g02", "question": "Від якої підстанції живиться підстанція №10?", "seed": "Substation_10", "expected": ["Substation_1"], "kind": "1 крок"}
+{"id": "g03", "question": "Які підстанції постраждають через дві ланки живлення, якщо відключити підстанцію №1?", "seed": "Substation_1", "expected": ["Substation_3", "Substation_4", "Substation_5"], "kind": "2 кроки"}
+{"id": "g04", "question": "Якими підстанціями керує диспетчер №1?", "seed": "Dispatcher_1", "expected": ["Substation_7"], "kind": "1 крок"}
+{"id": "g05", "question": "Який диспетчер керує підстанцією №7?", "seed": "Substation_7", "expected": ["Dispatcher_1"], "kind": "1 крок"}
+{"id": "g06", "question": "До якої підстанції підключено споживача №3310?", "seed": "Consumer_3310", "expected": ["Substation_5"], "kind": "1 крок"}
+{"id": "g07", "question": "Які споживачі підключені до підстанції №5?", "seed": "Substation_5", "expected": ["Consumer_3310", "Consumer_5009", "Consumer_5020", "Consumer_5031"], "kind": "1 крок"}
+{"id": "g08", "question": "Яка модель склала прогноз на 24.09.2026 і для якої підстанції?", "seed": "Forecast_20260924", "expected": ["ForecastModel_LSTM1", "Substation_7"], "kind": "1 крок, 2 зв'язки"}
+{"id": "g09", "question": "Які погодні умови впливали на модель LSTM №2?", "seed": "ForecastModel_LSTM2", "expected": ["WeatherCondition_20260110", "WeatherCondition_20260112"], "kind": "1 крок"}
+{"id": "g10", "question": "Який лічильник встановлено у споживача №1002?", "seed": "Consumer_1002", "expected": ["Meter_AMI10452"], "kind": "1 крок"}
+{"id": "g11", "question": "Яких споживачів обслуговують підстанції, якими керує диспетчер №1?", "seed": "Dispatcher_1", "expected": ["Consumer_4521", "Consumer_5010", "Consumer_5021", "Consumer_5032"], "kind": "2 кроки"}
+{"id": "g12", "question": "Хто з диспетчерів керує підстанцією №9?", "seed": "Substation_9", "expected": ["NONE"], "kind": "1 крок (немає)"}
