@@ -1,0 +1,36 @@
+digraph star {
+  graph [rankdir=LR, fontname="DejaVu Sans", nodesep=0.35, ranksep=0.9, dpi=150];
+  node  [shape=plain, fontname="DejaVu Sans", fontsize=10];
+  edge  [arrowhead=none, color="#555555", fontname="DejaVu Sans", fontsize=9, fontcolor="#52514e"];
+  fact [label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="3" bgcolor="#FFF2CC">
+    <tr><td bgcolor="#F4B183"><b>fact_forecast</b></td></tr>
+    <tr><td align="left">зерно: модель × підстанція × цільова дата × горизонт</td></tr>
+    <tr><td align="left">target_date_key FK · issue_date_key FK</td></tr>
+    <tr><td align="left">horizon_key FK · model_key FK</td></tr>
+    <tr><td align="left">class_key FK · substation_key FK</td></tr>
+    <tr><td align="left">forecast_kwh, actual_kwh (A)</td></tr>
+    <tr><td align="left">error_kwh, abs_error_kwh (A)</td></tr>
+    <tr><td align="left">ape_pct (NA) · mtd_abs_error_kwh (SA)</td></tr></table>>];
+  d [label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="3" bgcolor="#DEEBF7">
+    <tr><td bgcolor="#9DC3E6"><b>dim_date (рольовий)</b></td></tr>
+    <tr><td align="left">date_key PK</td></tr><tr><td align="left">рік → квартал → місяць → тиждень → день</td></tr>
+    <tr><td align="left">is_weekend</td></tr></table>>];
+  h [label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="3" bgcolor="#DEEBF7">
+    <tr><td bgcolor="#9DC3E6"><b>dim_horizon</b></td></tr>
+    <tr><td align="left">horizon_key PK</td></tr><tr><td align="left">тип прогнозу → горизонт (1 / 7 діб)</td></tr></table>>];
+  k [label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="3" bgcolor="#E2F0D9">
+    <tr><td bgcolor="#A9D18E"><b>dim_model_class (таксономія ЛР4)</b></td></tr>
+    <tr><td align="left">class_key PK · class_iri UNIQUE</td></tr>
+    <tr><td align="left">формалізовані моделі → ForecastModel →</td></tr>
+    <tr><td align="left">StatisticalModel / MachineLearningModel</td></tr></table>>];
+  m [label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="3" bgcolor="#DEEBF7">
+    <tr><td bgcolor="#9DC3E6"><b>dim_model (SCD 2)</b></td></tr>
+    <tr><td align="left">model_key PK · model_id · version</td></tr>
+    <tr><td align="left">training_date · accuracy_pct</td></tr>
+    <tr><td align="left">valid_from · valid_to · is_current</td></tr></table>>];
+  s [label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="3" bgcolor="#DEEBF7">
+    <tr><td bgcolor="#9DC3E6"><b>dim_substation (SCD 1)</b></td></tr>
+    <tr><td align="left">substation_key PK</td></tr><tr><td align="left">область → підстанція</td></tr></table>>];
+  d -> fact [label="цільова дата"]; d -> fact [label="дата складання"]; h -> fact;
+  fact -> k; fact -> m; fact -> s;
+}

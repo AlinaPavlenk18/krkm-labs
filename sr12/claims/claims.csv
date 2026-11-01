@@ -1,0 +1,9 @@
+id,claim,type,source,verification_level,status,comment
+S01,Зерно оголошують першим: воно визначає допустимі виміри й міри,правило,"Kimball Group, Four-Step Dimensional Design Process",V1,verified,4 кроки Kimball
+S02,WAPE — неадитивна міра; її рахують із адитивних складових Σ|e| / Σ факт,правило,"Kimball Group, Additive, Semi-Additive, Non-Additive Facts",V1,verified,"q1, q2, q4"
+S03,DDL фінальної схеми виконується; «сиріт» 0; дата складання = цільова − горизонт; версія чинна на дату складання,факт,scripts/build.py,V2,verified,2 232 рядки; 0 / 0 / 0
+S04,5 запитів відповідають на 5 бізнес-питань,факт,docs/queries_results.md,V2,verified,q1–q5 виконано на ПК
+S05,"mtd_abs_error_kwh — напівадитивна: на кінець місяця дорівнює Σ abs_error за місяць, а сума за датами не має змісту",гіпотеза,sql/queries/q5_semiadditive_mtd.sql,V3,verified,"89,63 = 89,63; хибна сума 1 592,23"
+S06,Перенавчання LSTM №1 зменшило WAPE,гіпотеза,sql/queries/q3_scd2_retraining.sql,V4,verified,"5,95 → 3,40 % (1 доба); дані синтетичні — перевіряє схему, а не модель"
+S07,Схема qwen2.5:7b придатна як фінальна,гіпотеза,llm_log/qwen_schema_raw.md; docs/llm_review.md,V2,rejected,"3 недоліки: зерно, ключі, адитивність"
+S08,DuckDB дозволяє додати FOREIGN KEY через ALTER TABLE,факт,scripts/check_llm_ddl.py,V2,rejected,NotImplementedException: No support for adding FOREIGN_KEY constraints with ALTER TABLE
