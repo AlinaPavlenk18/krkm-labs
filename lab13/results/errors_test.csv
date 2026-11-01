@@ -1,0 +1,673 @@
+﻿method;error;doc_id;kind;type;id_or_head;tail
+A · правила;fn;gen01;E;REGION;Region_IvanoFrankivsk;
+A · правила;fn;gen01;R;FORECASTS_FOR;ForecastModel_ARIMA1;Substation_3
+A · правила;fn;gen01;R;FORECASTS_FOR;ForecastModel_ARIMA1;Substation_8
+A · правила;fn;gen01;R;FORECASTS_FOR;ForecastModel_GRU1;Substation_1
+A · правила;fn;gen01;R;FORECASTS_FOR;ForecastModel_GRU1;Substation_2
+A · правила;fn;gen01;R;FORECASTS_FOR;ForecastModel_GRU1;Substation_4
+A · правила;fn;gen01;R;FORECASTS_FOR;ForecastModel_GRU1;Substation_5
+A · правила;fn;gen01;R;FORECASTS_FOR;ForecastModel_LSTM1;Substation_10
+A · правила;fn;gen01;R;FORECASTS_FOR;ForecastModel_LSTM1;Substation_7
+A · правила;fn;gen01;R;FORECASTS_FOR;ForecastModel_LSTM2;Substation_11
+A · правила;fn;gen01;R;FORECASTS_FOR;ForecastModel_LSTM2;Substation_12
+A · правила;fn;gen01;R;FORECASTS_FOR;ForecastModel_LSTM2;Substation_5
+A · правила;fn;gen01;R;FORECASTS_FOR;ForecastModel_LSTM3;Substation_1
+A · правила;fn;gen01;R;FORECASTS_FOR;ForecastModel_LSTM3;Substation_10
+A · правила;fn;gen01;R;FORECASTS_FOR;ForecastModel_LSTM3;Substation_6
+A · правила;fn;gen01;R;FORECASTS_FOR;ForecastModel_VAR1;Substation_11
+A · правила;fn;gen01;R;FORECASTS_FOR;ForecastModel_VAR1;Substation_12
+A · правила;fn;gen01;R;FORECASTS_FOR;ForecastModel_VAR1;Substation_2
+A · правила;fn;gen01;R;LOCATED_IN;Substation_1;Region_Lviv
+A · правила;fn;gen01;R;LOCATED_IN;Substation_10;Region_Lviv
+A · правила;fn;gen01;R;LOCATED_IN;Substation_11;Region_Rivne
+A · правила;fn;gen01;R;LOCATED_IN;Substation_12;Region_Lviv
+A · правила;fn;gen01;R;LOCATED_IN;Substation_2;Region_Volyn
+A · правила;fn;gen01;R;LOCATED_IN;Substation_3;Region_Rivne
+A · правила;fn;gen01;R;LOCATED_IN;Substation_4;Region_Ternopil
+A · правила;fn;gen01;R;LOCATED_IN;Substation_5;Region_Volyn
+A · правила;fn;gen01;R;LOCATED_IN;Substation_6;Region_IvanoFrankivsk
+A · правила;fn;gen01;R;LOCATED_IN;Substation_7;Region_Lviv
+A · правила;fn;gen01;R;LOCATED_IN;Substation_8;Region_Zakarpattia
+A · правила;fn;gen01;R;LOCATED_IN;Substation_9;Region_Zakarpattia
+A · правила;fn;gen01;R;MANAGES;Dispatcher_1;Substation_7
+A · правила;fn;gen01;R;MANAGES;Dispatcher_2;Substation_11
+A · правила;fn;gen01;R;MANAGES;Dispatcher_2;Substation_12
+A · правила;fn;gen01;R;MANAGES;Dispatcher_3;Substation_5
+A · правила;fn;gen01;R;MANAGES;Dispatcher_4;Substation_1
+A · правила;fn;gen01;R;MANAGES;Dispatcher_4;Substation_10
+A · правила;fn;gen01;R;MANAGES;Dispatcher_5;Substation_2
+A · правила;fn;gen01;R;MANAGES;Dispatcher_5;Substation_3
+A · правила;fn;gen01;R;MANAGES;Dispatcher_5;Substation_8
+A · правила;fn;gen01;R;MANAGES;Dispatcher_6;Substation_4
+A · правила;fn;gen01;R;MANAGES;Dispatcher_6;Substation_6
+A · правила;fn;gen03;E;REGION;Region_IvanoFrankivsk;
+A · правила;fn;gen03;R;CONNECTED_TO;Consumer_1002;Substation_12
+A · правила;fn;gen03;R;CONNECTED_TO;Consumer_3310;Substation_5
+A · правила;fn;gen03;R;CONNECTED_TO;Consumer_4521;Substation_7
+A · правила;fn;gen03;R;CONNECTED_TO;Consumer_5001;Substation_2
+A · правила;fn;gen03;R;CONNECTED_TO;Consumer_5002;Substation_3
+A · правила;fn;gen03;R;CONNECTED_TO;Consumer_5003;Substation_4
+A · правила;fn;gen03;R;CONNECTED_TO;Consumer_5004;Substation_6
+A · правила;fn;gen03;R;CONNECTED_TO;Consumer_5005;Substation_8
+A · правила;fn;gen03;R;CONNECTED_TO;Consumer_5006;Substation_10
+A · правила;fn;gen03;R;CONNECTED_TO;Consumer_5007;Substation_11
+A · правила;fn;gen03;R;CONNECTED_TO;Consumer_5008;Substation_12
+A · правила;fn;gen03;R;CONNECTED_TO;Consumer_5009;Substation_5
+A · правила;fn;gen03;R;CONNECTED_TO;Consumer_5010;Substation_7
+A · правила;fn;gen03;R;CONNECTED_TO;Consumer_5011;Substation_9
+A · правила;fn;gen03;R;CONNECTED_TO;Consumer_5012;Substation_2
+A · правила;fn;gen03;R;CONNECTED_TO;Consumer_5013;Substation_3
+A · правила;fn;gen03;R;CONNECTED_TO;Consumer_5014;Substation_4
+A · правила;fn;gen03;R;CONNECTED_TO;Consumer_5015;Substation_6
+A · правила;fn;gen03;R;CONNECTED_TO;Consumer_5016;Substation_8
+A · правила;fn;gen03;R;CONNECTED_TO;Consumer_5017;Substation_10
+A · правила;fn;gen03;R;CONNECTED_TO;Consumer_5018;Substation_11
+A · правила;fn;gen03;R;CONNECTED_TO;Consumer_5019;Substation_12
+A · правила;fn;gen03;R;CONNECTED_TO;Consumer_5020;Substation_5
+A · правила;fn;gen03;R;CONNECTED_TO;Consumer_5021;Substation_7
+A · правила;fn;gen03;R;CONNECTED_TO;Consumer_5022;Substation_9
+A · правила;fn;gen03;R;CONNECTED_TO;Consumer_5023;Substation_2
+A · правила;fn;gen03;R;CONNECTED_TO;Consumer_5024;Substation_3
+A · правила;fn;gen03;R;CONNECTED_TO;Consumer_5025;Substation_4
+A · правила;fn;gen03;R;CONNECTED_TO;Consumer_5026;Substation_6
+A · правила;fn;gen03;R;CONNECTED_TO;Consumer_5027;Substation_8
+A · правила;fn;gen03;R;CONNECTED_TO;Consumer_5028;Substation_10
+A · правила;fn;gen03;R;CONNECTED_TO;Consumer_5029;Substation_11
+A · правила;fn;gen03;R;CONNECTED_TO;Consumer_5030;Substation_12
+A · правила;fn;gen03;R;CONNECTED_TO;Consumer_5031;Substation_5
+A · правила;fn;gen03;R;CONNECTED_TO;Consumer_5032;Substation_7
+A · правила;fn;gen03;R;CONNECTED_TO;Consumer_5033;Substation_9
+A · правила;fn;gen03;R;CONNECTED_TO;Consumer_5034;Substation_2
+A · правила;fn;gen03;R;CONNECTED_TO;Consumer_5035;Substation_3
+A · правила;fn;gen03;R;CONNECTED_TO;Consumer_5036;Substation_4
+A · правила;fn;gen03;R;CONNECTED_TO;Consumer_5037;Substation_6
+A · правила;fn;gen03;R;CONNECTED_TO;Consumer_5038;Substation_1
+A · правила;fn;gen03;R;HAS_METER;Consumer_1002;Meter_AMI10452
+A · правила;fn;gen03;R;HAS_METER;Consumer_3310;Meter_AMI77410
+A · правила;fn;gen03;R;HAS_METER;Consumer_4521;Meter_AMI81841
+A · правила;fn;gen03;R;HAS_METER;Consumer_4521;Meter_AMI99231
+A · правила;fn;gen03;R;HAS_METER;Consumer_5001;Meter_AMI20916
+A · правила;fn;gen03;R;HAS_METER;Consumer_5002;Meter_AMI22890
+A · правила;fn;gen03;R;HAS_METER;Consumer_5003;Meter_AMI24755
+A · правила;fn;gen03;R;HAS_METER;Consumer_5004;Meter_AMI26032
+A · правила;fn;gen03;R;HAS_METER;Consumer_5005;Meter_AMI27192
+A · правила;fn;gen03;R;HAS_METER;Consumer_5006;Meter_AMI29583
+A · правила;fn;gen03;R;HAS_METER;Consumer_5007;Meter_AMI32391
+A · правила;fn;gen03;R;HAS_METER;Consumer_5008;Meter_AMI33496
+A · правила;fn;gen03;R;HAS_METER;Consumer_5009;Meter_AMI35297
+A · правила;fn;gen03;R;HAS_METER;Consumer_5010;Meter_AMI36309
+A · правила;fn;gen03;R;HAS_METER;Consumer_5011;Meter_AMI37120
+A · правила;fn;gen03;R;HAS_METER;Consumer_5012;Meter_AMI38856
+A · правила;fn;gen03;R;HAS_METER;Consumer_5013;Meter_AMI40161
+A · правила;fn;gen03;R;HAS_METER;Consumer_5014;Meter_AMI42574
+A · правила;fn;gen03;R;HAS_METER;Consumer_5015;Meter_AMI44704
+A · правила;fn;gen03;R;HAS_METER;Consumer_5016;Meter_AMI45618
+A · правила;fn;gen03;R;HAS_METER;Consumer_5017;Meter_AMI46646
+A · правила;fn;gen03;R;HAS_METER;Consumer_5018;Meter_AMI49003
+A · правила;fn;gen03;R;HAS_METER;Consumer_5019;Meter_AMI50424
+A · правила;fn;gen03;R;HAS_METER;Consumer_5020;Meter_AMI52953
+A · правила;fn;gen03;R;HAS_METER;Consumer_5021;Meter_AMI55149
+A · правила;fn;gen03;R;HAS_METER;Consumer_5022;Meter_AMI57366
+A · правила;fn;gen03;R;HAS_METER;Consumer_5023;Meter_AMI58264
+A · правила;fn;gen03;R;HAS_METER;Consumer_5024;Meter_AMI58679
+A · правила;fn;gen03;R;HAS_METER;Consumer_5025;Meter_AMI59779
+A · правила;fn;gen03;R;HAS_METER;Consumer_5026;Meter_AMI60407
+A · правила;fn;gen03;R;HAS_METER;Consumer_5027;Meter_AMI61552
+A · правила;fn;gen03;R;HAS_METER;Consumer_5028;Meter_AMI62024
+A · правила;fn;gen03;R;HAS_METER;Consumer_5029;Meter_AMI64551
+A · правила;fn;gen03;R;HAS_METER;Consumer_5030;Meter_AMI66829
+A · правила;fn;gen03;R;HAS_METER;Consumer_5031;Meter_AMI68034
+A · правила;fn;gen03;R;HAS_METER;Consumer_5032;Meter_AMI69457
+A · правила;fn;gen03;R;HAS_METER;Consumer_5033;Meter_AMI70681
+A · правила;fn;gen03;R;HAS_METER;Consumer_5034;Meter_AMI71354
+A · правила;fn;gen03;R;HAS_METER;Consumer_5035;Meter_AMI74134
+A · правила;fn;gen03;R;HAS_METER;Consumer_5036;Meter_AMI76143
+A · правила;fn;gen03;R;HAS_METER;Consumer_5037;Meter_AMI76577
+A · правила;fn;gen03;R;HAS_METER;Consumer_5038;Meter_AMI78591
+A · правила;fn;gen03;R;HAS_METER;Consumer_5038;Meter_AMI80930
+A · правила;fn;gen04;R;CONNECTED_TO;Consumer_1002;Substation_12
+A · правила;fn;gen04;R;CONNECTED_TO;Consumer_3310;Substation_5
+A · правила;fn;gen04;R;CONNECTED_TO;Consumer_4521;Substation_7
+A · правила;fn;gen04;R;CONNECTED_TO;Consumer_5001;Substation_2
+A · правила;fn;gen04;R;CONNECTED_TO;Consumer_5002;Substation_3
+A · правила;fn;gen04;R;CONNECTED_TO;Consumer_5003;Substation_4
+A · правила;fn;gen04;R;CONNECTED_TO;Consumer_5004;Substation_6
+A · правила;fn;gen04;R;CONNECTED_TO;Consumer_5005;Substation_8
+A · правила;fn;gen04;R;CONNECTED_TO;Consumer_5006;Substation_10
+A · правила;fn;gen04;R;CONNECTED_TO;Consumer_5007;Substation_11
+A · правила;fn;gen04;R;CONNECTED_TO;Consumer_5008;Substation_12
+A · правила;fn;gen04;R;CONNECTED_TO;Consumer_5009;Substation_5
+A · правила;fn;gen04;R;CONNECTED_TO;Consumer_5010;Substation_7
+A · правила;fn;gen04;R;CONNECTED_TO;Consumer_5011;Substation_9
+A · правила;fn;gen04;R;CONNECTED_TO;Consumer_5012;Substation_2
+A · правила;fn;gen04;R;CONNECTED_TO;Consumer_5013;Substation_3
+A · правила;fn;gen04;R;CONNECTED_TO;Consumer_5014;Substation_4
+A · правила;fn;gen04;R;CONNECTED_TO;Consumer_5015;Substation_6
+A · правила;fn;gen04;R;CONNECTED_TO;Consumer_5016;Substation_8
+A · правила;fn;gen04;R;CONNECTED_TO;Consumer_5017;Substation_10
+A · правила;fn;gen04;R;CONNECTED_TO;Consumer_5018;Substation_11
+A · правила;fn;gen04;R;CONNECTED_TO;Consumer_5019;Substation_12
+A · правила;fn;gen04;R;CONNECTED_TO;Consumer_5020;Substation_5
+A · правила;fn;gen04;R;CONNECTED_TO;Consumer_5021;Substation_7
+A · правила;fn;gen04;R;CONNECTED_TO;Consumer_5022;Substation_9
+A · правила;fn;gen04;R;CONNECTED_TO;Consumer_5023;Substation_2
+A · правила;fn;gen04;R;CONNECTED_TO;Consumer_5024;Substation_3
+A · правила;fn;gen04;R;CONNECTED_TO;Consumer_5025;Substation_4
+A · правила;fn;gen04;R;CONNECTED_TO;Consumer_5026;Substation_6
+A · правила;fn;gen04;R;CONNECTED_TO;Consumer_5027;Substation_8
+A · правила;fn;gen04;R;CONNECTED_TO;Consumer_5028;Substation_10
+A · правила;fn;gen04;R;CONNECTED_TO;Consumer_5029;Substation_11
+A · правила;fn;gen04;R;CONNECTED_TO;Consumer_5030;Substation_12
+A · правила;fn;gen04;R;CONNECTED_TO;Consumer_5031;Substation_5
+A · правила;fn;gen04;R;CONNECTED_TO;Consumer_5032;Substation_7
+A · правила;fn;gen04;R;CONNECTED_TO;Consumer_5033;Substation_9
+A · правила;fn;gen04;R;CONNECTED_TO;Consumer_5034;Substation_2
+A · правила;fn;gen04;R;CONNECTED_TO;Consumer_5035;Substation_3
+A · правила;fn;gen04;R;CONNECTED_TO;Consumer_5036;Substation_4
+A · правила;fn;gen04;R;CONNECTED_TO;Consumer_5037;Substation_6
+A · правила;fn;gen04;R;CONNECTED_TO;Consumer_5038;Substation_1
+A · правила;fn;gen04;R;HAS_METER;Consumer_1002;Meter_AMI10452
+A · правила;fn;gen04;R;HAS_METER;Consumer_3310;Meter_AMI77410
+A · правила;fn;gen04;R;HAS_METER;Consumer_4521;Meter_AMI81841
+A · правила;fn;gen04;R;HAS_METER;Consumer_4521;Meter_AMI99231
+A · правила;fn;gen04;R;HAS_METER;Consumer_5001;Meter_AMI20916
+A · правила;fn;gen04;R;HAS_METER;Consumer_5002;Meter_AMI22890
+A · правила;fn;gen04;R;HAS_METER;Consumer_5003;Meter_AMI24755
+A · правила;fn;gen04;R;HAS_METER;Consumer_5004;Meter_AMI26032
+A · правила;fn;gen04;R;HAS_METER;Consumer_5005;Meter_AMI27192
+A · правила;fn;gen04;R;HAS_METER;Consumer_5006;Meter_AMI29583
+A · правила;fn;gen04;R;HAS_METER;Consumer_5007;Meter_AMI32391
+A · правила;fn;gen04;R;HAS_METER;Consumer_5008;Meter_AMI33496
+A · правила;fn;gen04;R;HAS_METER;Consumer_5009;Meter_AMI35297
+A · правила;fn;gen04;R;HAS_METER;Consumer_5010;Meter_AMI36309
+A · правила;fn;gen04;R;HAS_METER;Consumer_5011;Meter_AMI37120
+A · правила;fn;gen04;R;HAS_METER;Consumer_5012;Meter_AMI38856
+A · правила;fn;gen04;R;HAS_METER;Consumer_5013;Meter_AMI40161
+A · правила;fn;gen04;R;HAS_METER;Consumer_5014;Meter_AMI42574
+A · правила;fn;gen04;R;HAS_METER;Consumer_5015;Meter_AMI44704
+A · правила;fn;gen04;R;HAS_METER;Consumer_5016;Meter_AMI45618
+A · правила;fn;gen04;R;HAS_METER;Consumer_5017;Meter_AMI46646
+A · правила;fn;gen04;R;HAS_METER;Consumer_5018;Meter_AMI49003
+A · правила;fn;gen04;R;HAS_METER;Consumer_5019;Meter_AMI50424
+A · правила;fn;gen04;R;HAS_METER;Consumer_5020;Meter_AMI52953
+A · правила;fn;gen04;R;HAS_METER;Consumer_5021;Meter_AMI55149
+A · правила;fn;gen04;R;HAS_METER;Consumer_5022;Meter_AMI57366
+A · правила;fn;gen04;R;HAS_METER;Consumer_5023;Meter_AMI58264
+A · правила;fn;gen04;R;HAS_METER;Consumer_5024;Meter_AMI58679
+A · правила;fn;gen04;R;HAS_METER;Consumer_5025;Meter_AMI59779
+A · правила;fn;gen04;R;HAS_METER;Consumer_5026;Meter_AMI60407
+A · правила;fn;gen04;R;HAS_METER;Consumer_5027;Meter_AMI61552
+A · правила;fn;gen04;R;HAS_METER;Consumer_5028;Meter_AMI62024
+A · правила;fn;gen04;R;HAS_METER;Consumer_5029;Meter_AMI64551
+A · правила;fn;gen04;R;HAS_METER;Consumer_5030;Meter_AMI66829
+A · правила;fn;gen04;R;HAS_METER;Consumer_5031;Meter_AMI68034
+A · правила;fn;gen04;R;HAS_METER;Consumer_5032;Meter_AMI69457
+A · правила;fn;gen04;R;HAS_METER;Consumer_5033;Meter_AMI70681
+A · правила;fn;gen04;R;HAS_METER;Consumer_5034;Meter_AMI71354
+A · правила;fn;gen04;R;HAS_METER;Consumer_5035;Meter_AMI74134
+A · правила;fn;gen04;R;HAS_METER;Consumer_5036;Meter_AMI76143
+A · правила;fn;gen04;R;HAS_METER;Consumer_5037;Meter_AMI76577
+A · правила;fn;gen04;R;HAS_METER;Consumer_5038;Meter_AMI78591
+A · правила;fn;gen04;R;HAS_METER;Consumer_5038;Meter_AMI80930
+A · правила;fn;kb14;R;CONNECTED_TO;Consumer_3310;Substation_5
+A · правила;fn;kb15;R;CONNECTED_TO;Consumer_3310;Substation_5
+A · правила;fn;kb15;R;CONNECTED_TO;Consumer_5009;Substation_5
+A · правила;fn;kb15;R;CONNECTED_TO;Consumer_5011;Substation_9
+A · правила;fn;kb15;R;CONNECTED_TO;Consumer_5031;Substation_5
+A · правила;fn;kb15;R;FEEDS;Substation_1;Substation_10
+A · правила;fn;kb15;R;FEEDS;Substation_10;Substation_4
+A · правила;fn;kb15;R;FEEDS;Substation_2;Substation_3
+A · правила;fn;kb15;R;FEEDS;Substation_3;Substation_11
+A · правила;fn;kb15;R;FEEDS;Substation_4;Substation_6
+A · правила;fn;kb15;R;FEEDS;Substation_5;Substation_12
+A · правила;fn;kb15;R;FEEDS;Substation_7;Substation_5
+A · правила;fn;kb15;R;FORECASTS_FOR;ForecastModel_LSTM2;Substation_11
+A · правила;fn;kb15;R;MANAGES;Dispatcher_2;Substation_11
+A · правила;fn;kb15;R;MANAGES;Dispatcher_3;Substation_5
+A · правила;fn;kb15;R;MANAGES;Dispatcher_6;Substation_4
+A · правила;fn;prj10;R;CONNECTED_TO;Consumer_5019;Substation_12
+Б · LLM;fp;gen01;R;INSTANCE_OF;ForecastModel_ARIMA1;ARIMA
+Б · LLM;fp;gen01;R;INSTANCE_OF;ForecastModel_GRU1;GRU
+Б · LLM;fp;gen05;E;METHOD;ARIMA;
+Б · LLM;fp;gen05;E;METHOD;GRU;
+Б · LLM;fp;gen05;E;METHOD;LSTM;
+Б · LLM;fp;gen05;E;METHOD;VAR;
+Б · LLM;fp;gen05;R;INSTANCE_OF;ForecastModel_ARIMA1;ARIMA
+Б · LLM;fp;gen05;R;INSTANCE_OF;ForecastModel_GRU1;GRU
+Б · LLM;fp;gen05;R;INSTANCE_OF;ForecastModel_LSTM1;LSTM
+Б · LLM;fp;gen05;R;INSTANCE_OF;ForecastModel_LSTM2;LSTM
+Б · LLM;fp;gen05;R;INSTANCE_OF;ForecastModel_LSTM3;LSTM
+Б · LLM;fp;gen05;R;INSTANCE_OF;ForecastModel_VAR1;VAR
+Б · LLM;fp;gen05;R;MANAGES;Dispatcher_3;Substation_5
+Б · LLM;fp;gen05;R;MANAGES;Dispatcher_4;Substation_1
+Б · LLM;fp;gen05;R;MANAGES;Dispatcher_5;Substation_2
+Б · LLM;fp;gen05;R;MANAGES;Dispatcher_5;Substation_8
+Б · LLM;fp;gen06;E;METHOD;ARIMA;
+Б · LLM;fp;gen06;E;METHOD;GRU;
+Б · LLM;fp;gen06;E;METHOD;LSTM;
+Б · LLM;fp;gen06;E;METHOD;VAR;
+Б · LLM;fp;kb03;E;METHOD;LSTM;
+Б · LLM;fp;kb03;R;INSTANCE_OF;ForecastModel_LSTM2;LSTM
+Б · LLM;fp;kb04;E;METHOD;LSTM;
+Б · LLM;fp;kb04;E;METRIC;MAE;
+Б · LLM;fp;kb04;E;SUBSTATION;Substation_2;
+Б · LLM;fp;kb08;R;INSTANCE_OF;ForecastModel_LSTM2;LSTM
+Б · LLM;fp;kb09;E;REGION;Region_Lviv;
+Б · LLM;fp;kb11;R;INSTANCE_OF;ForecastModel_LSTM2;LSTM
+Б · LLM;fp;kb15;R;FEEDS;Substation_1;Substation_7
+Б · LLM;fp;kb15;R;FEEDS;Substation_12;Substation_7
+Б · LLM;fp;kb15;R;FORECASTS_FOR;ForecastModel_ARIMA1;Substation_1
+Б · LLM;fp;kb15;R;FORECASTS_FOR;ForecastModel_GRU1;Substation_1
+Б · LLM;fp;kb15;R;FORECASTS_FOR;ForecastModel_LSTM2;Substation_1
+Б · LLM;fp;kb15;R;INSTANCE_OF;ForecastModel_ARIMA1;ARIMA
+Б · LLM;fp;kb15;R;INSTANCE_OF;ForecastModel_GRU1;GRU
+Б · LLM;fp;kb15;R;INSTANCE_OF;ForecastModel_LSTM2;LSTM
+Б · LLM;fp;kb15;R;MANAGES;Dispatcher_5;Substation_9
+Б · LLM;fp;prj11;E;SUBSTATION;Substation_1;
+Б · LLM;fn;gen01;E;MODEL;ForecastModel_LSTM2;
+Б · LLM;fn;gen01;R;FEEDS;Substation_10;Substation_4
+Б · LLM;fn;gen01;R;FEEDS;Substation_2;Substation_3
+Б · LLM;fn;gen01;R;FEEDS;Substation_3;Substation_11
+Б · LLM;fn;gen01;R;FEEDS;Substation_4;Substation_6
+Б · LLM;fn;gen01;R;FEEDS;Substation_5;Substation_12
+Б · LLM;fn;gen01;R;FEEDS;Substation_7;Substation_5
+Б · LLM;fn;gen01;R;FEEDS;Substation_9;Substation_8
+Б · LLM;fn;gen01;R;FORECASTS_FOR;ForecastModel_GRU1;Substation_2
+Б · LLM;fn;gen01;R;FORECASTS_FOR;ForecastModel_GRU1;Substation_5
+Б · LLM;fn;gen01;R;FORECASTS_FOR;ForecastModel_LSTM1;Substation_10
+Б · LLM;fn;gen01;R;FORECASTS_FOR;ForecastModel_LSTM2;Substation_11
+Б · LLM;fn;gen01;R;FORECASTS_FOR;ForecastModel_LSTM2;Substation_12
+Б · LLM;fn;gen01;R;FORECASTS_FOR;ForecastModel_LSTM2;Substation_5
+Б · LLM;fn;gen01;R;FORECASTS_FOR;ForecastModel_LSTM3;Substation_1
+Б · LLM;fn;gen01;R;FORECASTS_FOR;ForecastModel_LSTM3;Substation_10
+Б · LLM;fn;gen01;R;FORECASTS_FOR;ForecastModel_LSTM3;Substation_6
+Б · LLM;fn;gen01;R;FORECASTS_FOR;ForecastModel_VAR1;Substation_11
+Б · LLM;fn;gen01;R;FORECASTS_FOR;ForecastModel_VAR1;Substation_12
+Б · LLM;fn;gen01;R;LOCATED_IN;Substation_2;Region_Volyn
+Б · LLM;fn;gen01;R;MANAGES;Dispatcher_2;Substation_12
+Б · LLM;fn;gen01;R;MANAGES;Dispatcher_6;Substation_6
+Б · LLM;fn;gen03;E;METER;Meter_AMI10452;
+Б · LLM;fn;gen03;E;METER;Meter_AMI20916;
+Б · LLM;fn;gen03;E;METER;Meter_AMI22890;
+Б · LLM;fn;gen03;E;METER;Meter_AMI24755;
+Б · LLM;fn;gen03;E;METER;Meter_AMI26032;
+Б · LLM;fn;gen03;E;METER;Meter_AMI27192;
+Б · LLM;fn;gen03;E;METER;Meter_AMI29583;
+Б · LLM;fn;gen03;E;METER;Meter_AMI32391;
+Б · LLM;fn;gen03;E;METER;Meter_AMI33496;
+Б · LLM;fn;gen03;E;METER;Meter_AMI35297;
+Б · LLM;fn;gen03;E;METER;Meter_AMI36309;
+Б · LLM;fn;gen03;E;METER;Meter_AMI37120;
+Б · LLM;fn;gen03;E;METER;Meter_AMI38856;
+Б · LLM;fn;gen03;E;METER;Meter_AMI40161;
+Б · LLM;fn;gen03;E;METER;Meter_AMI42574;
+Б · LLM;fn;gen03;E;METER;Meter_AMI44704;
+Б · LLM;fn;gen03;E;METER;Meter_AMI45618;
+Б · LLM;fn;gen03;E;METER;Meter_AMI46646;
+Б · LLM;fn;gen03;E;METER;Meter_AMI49003;
+Б · LLM;fn;gen03;E;METER;Meter_AMI50424;
+Б · LLM;fn;gen03;E;METER;Meter_AMI52953;
+Б · LLM;fn;gen03;E;METER;Meter_AMI55149;
+Б · LLM;fn;gen03;E;METER;Meter_AMI57366;
+Б · LLM;fn;gen03;E;METER;Meter_AMI58264;
+Б · LLM;fn;gen03;E;METER;Meter_AMI58679;
+Б · LLM;fn;gen03;E;METER;Meter_AMI59779;
+Б · LLM;fn;gen03;E;METER;Meter_AMI60407;
+Б · LLM;fn;gen03;E;METER;Meter_AMI61552;
+Б · LLM;fn;gen03;E;METER;Meter_AMI62024;
+Б · LLM;fn;gen03;E;METER;Meter_AMI64551;
+Б · LLM;fn;gen03;E;METER;Meter_AMI66829;
+Б · LLM;fn;gen03;E;METER;Meter_AMI68034;
+Б · LLM;fn;gen03;E;METER;Meter_AMI69457;
+Б · LLM;fn;gen03;E;METER;Meter_AMI70681;
+Б · LLM;fn;gen03;E;METER;Meter_AMI71354;
+Б · LLM;fn;gen03;E;METER;Meter_AMI74134;
+Б · LLM;fn;gen03;E;METER;Meter_AMI76143;
+Б · LLM;fn;gen03;E;METER;Meter_AMI76577;
+Б · LLM;fn;gen03;E;METER;Meter_AMI77410;
+Б · LLM;fn;gen03;E;METER;Meter_AMI78591;
+Б · LLM;fn;gen03;E;METER;Meter_AMI80930;
+Б · LLM;fn;gen03;E;METER;Meter_AMI81841;
+Б · LLM;fn;gen03;E;METER;Meter_AMI99231;
+Б · LLM;fn;gen03;E;REGION;Region_IvanoFrankivsk;
+Б · LLM;fn;gen03;E;REGION;Region_Lviv;
+Б · LLM;fn;gen03;E;REGION;Region_Rivne;
+Б · LLM;fn;gen03;E;REGION;Region_Ternopil;
+Б · LLM;fn;gen03;E;REGION;Region_Volyn;
+Б · LLM;fn;gen03;E;REGION;Region_Zakarpattia;
+Б · LLM;fn;gen03;R;CONNECTED_TO;Consumer_5021;Substation_7
+Б · LLM;fn;gen03;R;HAS_METER;Consumer_4521;Meter_AMI99231
+Б · LLM;fn;gen03;R;HAS_METER;Consumer_5003;Meter_AMI24755
+Б · LLM;fn;gen03;R;HAS_METER;Consumer_5004;Meter_AMI26032
+Б · LLM;fn;gen03;R;HAS_METER;Consumer_5005;Meter_AMI27192
+Б · LLM;fn;gen03;R;HAS_METER;Consumer_5006;Meter_AMI29583
+Б · LLM;fn;gen03;R;HAS_METER;Consumer_5007;Meter_AMI32391
+Б · LLM;fn;gen03;R;HAS_METER;Consumer_5008;Meter_AMI33496
+Б · LLM;fn;gen03;R;HAS_METER;Consumer_5009;Meter_AMI35297
+Б · LLM;fn;gen03;R;HAS_METER;Consumer_5010;Meter_AMI36309
+Б · LLM;fn;gen03;R;HAS_METER;Consumer_5011;Meter_AMI37120
+Б · LLM;fn;gen03;R;HAS_METER;Consumer_5012;Meter_AMI38856
+Б · LLM;fn;gen03;R;HAS_METER;Consumer_5013;Meter_AMI40161
+Б · LLM;fn;gen03;R;HAS_METER;Consumer_5014;Meter_AMI42574
+Б · LLM;fn;gen03;R;HAS_METER;Consumer_5015;Meter_AMI44704
+Б · LLM;fn;gen03;R;HAS_METER;Consumer_5016;Meter_AMI45618
+Б · LLM;fn;gen03;R;HAS_METER;Consumer_5017;Meter_AMI46646
+Б · LLM;fn;gen03;R;HAS_METER;Consumer_5018;Meter_AMI49003
+Б · LLM;fn;gen03;R;HAS_METER;Consumer_5019;Meter_AMI50424
+Б · LLM;fn;gen03;R;HAS_METER;Consumer_5020;Meter_AMI52953
+Б · LLM;fn;gen03;R;HAS_METER;Consumer_5021;Meter_AMI55149
+Б · LLM;fn;gen03;R;HAS_METER;Consumer_5022;Meter_AMI57366
+Б · LLM;fn;gen03;R;HAS_METER;Consumer_5023;Meter_AMI58264
+Б · LLM;fn;gen03;R;HAS_METER;Consumer_5024;Meter_AMI58679
+Б · LLM;fn;gen03;R;HAS_METER;Consumer_5025;Meter_AMI59779
+Б · LLM;fn;gen03;R;HAS_METER;Consumer_5026;Meter_AMI60407
+Б · LLM;fn;gen03;R;HAS_METER;Consumer_5027;Meter_AMI61552
+Б · LLM;fn;gen03;R;HAS_METER;Consumer_5028;Meter_AMI62024
+Б · LLM;fn;gen03;R;HAS_METER;Consumer_5029;Meter_AMI64551
+Б · LLM;fn;gen03;R;HAS_METER;Consumer_5030;Meter_AMI66829
+Б · LLM;fn;gen03;R;HAS_METER;Consumer_5031;Meter_AMI68034
+Б · LLM;fn;gen03;R;HAS_METER;Consumer_5032;Meter_AMI69457
+Б · LLM;fn;gen03;R;HAS_METER;Consumer_5033;Meter_AMI70681
+Б · LLM;fn;gen03;R;HAS_METER;Consumer_5034;Meter_AMI71354
+Б · LLM;fn;gen03;R;HAS_METER;Consumer_5035;Meter_AMI74134
+Б · LLM;fn;gen03;R;HAS_METER;Consumer_5036;Meter_AMI76143
+Б · LLM;fn;gen03;R;HAS_METER;Consumer_5037;Meter_AMI76577
+Б · LLM;fn;gen03;R;HAS_METER;Consumer_5038;Meter_AMI78591
+Б · LLM;fn;gen03;R;HAS_METER;Consumer_5038;Meter_AMI80930
+Б · LLM;fn;gen03;R;LOCATED_IN;Substation_1;Region_Lviv
+Б · LLM;fn;gen03;R;LOCATED_IN;Substation_10;Region_Lviv
+Б · LLM;fn;gen03;R;LOCATED_IN;Substation_11;Region_Rivne
+Б · LLM;fn;gen03;R;LOCATED_IN;Substation_12;Region_Lviv
+Б · LLM;fn;gen03;R;LOCATED_IN;Substation_2;Region_Volyn
+Б · LLM;fn;gen03;R;LOCATED_IN;Substation_3;Region_Rivne
+Б · LLM;fn;gen03;R;LOCATED_IN;Substation_4;Region_Ternopil
+Б · LLM;fn;gen03;R;LOCATED_IN;Substation_5;Region_Volyn
+Б · LLM;fn;gen03;R;LOCATED_IN;Substation_6;Region_IvanoFrankivsk
+Б · LLM;fn;gen03;R;LOCATED_IN;Substation_7;Region_Lviv
+Б · LLM;fn;gen03;R;LOCATED_IN;Substation_8;Region_Zakarpattia
+Б · LLM;fn;gen03;R;LOCATED_IN;Substation_9;Region_Zakarpattia
+Б · LLM;fn;gen04;E;CONSUMER;Consumer_5038;
+Б · LLM;fn;gen04;R;CONNECTED_TO;Consumer_1002;Substation_12
+Б · LLM;fn;gen04;R;CONNECTED_TO;Consumer_3310;Substation_5
+Б · LLM;fn;gen04;R;CONNECTED_TO;Consumer_4521;Substation_7
+Б · LLM;fn;gen04;R;CONNECTED_TO;Consumer_5001;Substation_2
+Б · LLM;fn;gen04;R;CONNECTED_TO;Consumer_5002;Substation_3
+Б · LLM;fn;gen04;R;CONNECTED_TO;Consumer_5003;Substation_4
+Б · LLM;fn;gen04;R;CONNECTED_TO;Consumer_5004;Substation_6
+Б · LLM;fn;gen04;R;CONNECTED_TO;Consumer_5005;Substation_8
+Б · LLM;fn;gen04;R;CONNECTED_TO;Consumer_5006;Substation_10
+Б · LLM;fn;gen04;R;CONNECTED_TO;Consumer_5007;Substation_11
+Б · LLM;fn;gen04;R;CONNECTED_TO;Consumer_5008;Substation_12
+Б · LLM;fn;gen04;R;CONNECTED_TO;Consumer_5009;Substation_5
+Б · LLM;fn;gen04;R;CONNECTED_TO;Consumer_5010;Substation_7
+Б · LLM;fn;gen04;R;CONNECTED_TO;Consumer_5011;Substation_9
+Б · LLM;fn;gen04;R;CONNECTED_TO;Consumer_5012;Substation_2
+Б · LLM;fn;gen04;R;CONNECTED_TO;Consumer_5013;Substation_3
+Б · LLM;fn;gen04;R;CONNECTED_TO;Consumer_5014;Substation_4
+Б · LLM;fn;gen04;R;CONNECTED_TO;Consumer_5015;Substation_6
+Б · LLM;fn;gen04;R;CONNECTED_TO;Consumer_5016;Substation_8
+Б · LLM;fn;gen04;R;CONNECTED_TO;Consumer_5017;Substation_10
+Б · LLM;fn;gen04;R;CONNECTED_TO;Consumer_5018;Substation_11
+Б · LLM;fn;gen04;R;CONNECTED_TO;Consumer_5019;Substation_12
+Б · LLM;fn;gen04;R;CONNECTED_TO;Consumer_5020;Substation_5
+Б · LLM;fn;gen04;R;CONNECTED_TO;Consumer_5021;Substation_7
+Б · LLM;fn;gen04;R;CONNECTED_TO;Consumer_5022;Substation_9
+Б · LLM;fn;gen04;R;CONNECTED_TO;Consumer_5023;Substation_2
+Б · LLM;fn;gen04;R;CONNECTED_TO;Consumer_5024;Substation_3
+Б · LLM;fn;gen04;R;CONNECTED_TO;Consumer_5025;Substation_4
+Б · LLM;fn;gen04;R;CONNECTED_TO;Consumer_5026;Substation_6
+Б · LLM;fn;gen04;R;CONNECTED_TO;Consumer_5027;Substation_8
+Б · LLM;fn;gen04;R;CONNECTED_TO;Consumer_5028;Substation_10
+Б · LLM;fn;gen04;R;CONNECTED_TO;Consumer_5029;Substation_11
+Б · LLM;fn;gen04;R;CONNECTED_TO;Consumer_5030;Substation_12
+Б · LLM;fn;gen04;R;CONNECTED_TO;Consumer_5031;Substation_5
+Б · LLM;fn;gen04;R;CONNECTED_TO;Consumer_5032;Substation_7
+Б · LLM;fn;gen04;R;CONNECTED_TO;Consumer_5033;Substation_9
+Б · LLM;fn;gen04;R;CONNECTED_TO;Consumer_5034;Substation_2
+Б · LLM;fn;gen04;R;CONNECTED_TO;Consumer_5035;Substation_3
+Б · LLM;fn;gen04;R;CONNECTED_TO;Consumer_5036;Substation_4
+Б · LLM;fn;gen04;R;CONNECTED_TO;Consumer_5037;Substation_6
+Б · LLM;fn;gen04;R;CONNECTED_TO;Consumer_5038;Substation_1
+Б · LLM;fn;gen04;R;HAS_METER;Consumer_1002;Meter_AMI10452
+Б · LLM;fn;gen04;R;HAS_METER;Consumer_3310;Meter_AMI77410
+Б · LLM;fn;gen04;R;HAS_METER;Consumer_4521;Meter_AMI81841
+Б · LLM;fn;gen04;R;HAS_METER;Consumer_4521;Meter_AMI99231
+Б · LLM;fn;gen04;R;HAS_METER;Consumer_5001;Meter_AMI20916
+Б · LLM;fn;gen04;R;HAS_METER;Consumer_5002;Meter_AMI22890
+Б · LLM;fn;gen04;R;HAS_METER;Consumer_5003;Meter_AMI24755
+Б · LLM;fn;gen04;R;HAS_METER;Consumer_5004;Meter_AMI26032
+Б · LLM;fn;gen04;R;HAS_METER;Consumer_5005;Meter_AMI27192
+Б · LLM;fn;gen04;R;HAS_METER;Consumer_5006;Meter_AMI29583
+Б · LLM;fn;gen04;R;HAS_METER;Consumer_5007;Meter_AMI32391
+Б · LLM;fn;gen04;R;HAS_METER;Consumer_5008;Meter_AMI33496
+Б · LLM;fn;gen04;R;HAS_METER;Consumer_5009;Meter_AMI35297
+Б · LLM;fn;gen04;R;HAS_METER;Consumer_5010;Meter_AMI36309
+Б · LLM;fn;gen04;R;HAS_METER;Consumer_5011;Meter_AMI37120
+Б · LLM;fn;gen04;R;HAS_METER;Consumer_5012;Meter_AMI38856
+Б · LLM;fn;gen04;R;HAS_METER;Consumer_5013;Meter_AMI40161
+Б · LLM;fn;gen04;R;HAS_METER;Consumer_5014;Meter_AMI42574
+Б · LLM;fn;gen04;R;HAS_METER;Consumer_5015;Meter_AMI44704
+Б · LLM;fn;gen04;R;HAS_METER;Consumer_5016;Meter_AMI45618
+Б · LLM;fn;gen04;R;HAS_METER;Consumer_5017;Meter_AMI46646
+Б · LLM;fn;gen04;R;HAS_METER;Consumer_5018;Meter_AMI49003
+Б · LLM;fn;gen04;R;HAS_METER;Consumer_5019;Meter_AMI50424
+Б · LLM;fn;gen04;R;HAS_METER;Consumer_5020;Meter_AMI52953
+Б · LLM;fn;gen04;R;HAS_METER;Consumer_5021;Meter_AMI55149
+Б · LLM;fn;gen04;R;HAS_METER;Consumer_5022;Meter_AMI57366
+Б · LLM;fn;gen04;R;HAS_METER;Consumer_5023;Meter_AMI58264
+Б · LLM;fn;gen04;R;HAS_METER;Consumer_5024;Meter_AMI58679
+Б · LLM;fn;gen04;R;HAS_METER;Consumer_5025;Meter_AMI59779
+Б · LLM;fn;gen04;R;HAS_METER;Consumer_5026;Meter_AMI60407
+Б · LLM;fn;gen04;R;HAS_METER;Consumer_5027;Meter_AMI61552
+Б · LLM;fn;gen04;R;HAS_METER;Consumer_5028;Meter_AMI62024
+Б · LLM;fn;gen04;R;HAS_METER;Consumer_5029;Meter_AMI64551
+Б · LLM;fn;gen04;R;HAS_METER;Consumer_5030;Meter_AMI66829
+Б · LLM;fn;gen04;R;HAS_METER;Consumer_5031;Meter_AMI68034
+Б · LLM;fn;gen04;R;HAS_METER;Consumer_5032;Meter_AMI69457
+Б · LLM;fn;gen04;R;HAS_METER;Consumer_5033;Meter_AMI70681
+Б · LLM;fn;gen04;R;HAS_METER;Consumer_5034;Meter_AMI71354
+Б · LLM;fn;gen04;R;HAS_METER;Consumer_5035;Meter_AMI74134
+Б · LLM;fn;gen04;R;HAS_METER;Consumer_5036;Meter_AMI76143
+Б · LLM;fn;gen04;R;HAS_METER;Consumer_5037;Meter_AMI76577
+Б · LLM;fn;gen04;R;HAS_METER;Consumer_5038;Meter_AMI78591
+Б · LLM;fn;gen04;R;HAS_METER;Consumer_5038;Meter_AMI80930
+Б · LLM;fn;gen06;E;MODEL;ForecastModel_ARIMA1;
+Б · LLM;fn;gen06;E;MODEL;ForecastModel_GRU1;
+Б · LLM;fn;gen06;E;MODEL;ForecastModel_LSTM1;
+Б · LLM;fn;gen06;E;MODEL;ForecastModel_LSTM2;
+Б · LLM;fn;gen06;E;MODEL;ForecastModel_LSTM3;
+Б · LLM;fn;gen06;E;MODEL;ForecastModel_VAR1;
+Б · LLM;fn;kb01;E;WEATHER_FACTOR;CDD;
+Б · LLM;fn;kb01;E;WEATHER_FACTOR;HDD;
+Б · LLM;fn;kb01;E;WEATHER_FACTOR;TEMPERATURE;
+Б · LLM;fn;kb03;E;METRIC;MAE;
+Б · LLM;fn;kb03;E;METRIC;MAPE;
+Б · LLM;fn;kb03;E;METRIC;PINBALL;
+Б · LLM;fn;kb03;E;METRIC;RMSE;
+Б · LLM;fn;kb03;E;METRIC;sMAPE;
+Б · LLM;fn;kb04;E;WEATHER_FACTOR;CDD;
+Б · LLM;fn;kb04;E;WEATHER_FACTOR;WIND;
+Б · LLM;fn;kb15;R;CONNECTED_TO;Consumer_3310;Substation_5
+Б · LLM;fn;kb15;R;CONNECTED_TO;Consumer_5011;Substation_9
+Б · LLM;fn;kb15;R;FEEDS;Substation_1;Substation_10
+Б · LLM;fn;kb15;R;FEEDS;Substation_10;Substation_4
+Б · LLM;fn;kb15;R;FEEDS;Substation_4;Substation_6
+Б · LLM;fn;kb15;R;FORECASTS_FOR;ForecastModel_LSTM2;Substation_11
+Б · LLM;fn;kb15;R;LOCATED_IN;Substation_9;Region_Zakarpattia
+Б · LLM;fn;kb15;R;MANAGES;Dispatcher_2;Substation_11
+Б · LLM;fn;kb15;R;MANAGES;Dispatcher_3;Substation_5
+Б · LLM;fn;prj10;E;WEATHER_FACTOR;TEMPERATURE;
+Б · LLM;fn;prj10;R;CONNECTED_TO;Consumer_5019;Substation_12
+Б · LLM;fn;prj11;E;METRIC;WAPE;
+Гібрид А+Б;fp;gen01;R;INSTANCE_OF;ForecastModel_ARIMA1;ARIMA
+Гібрид А+Б;fp;gen01;R;INSTANCE_OF;ForecastModel_GRU1;GRU
+Гібрид А+Б;fp;gen05;R;INSTANCE_OF;ForecastModel_ARIMA1;ARIMA
+Гібрид А+Б;fp;gen05;R;INSTANCE_OF;ForecastModel_GRU1;GRU
+Гібрид А+Б;fp;gen05;R;INSTANCE_OF;ForecastModel_LSTM1;LSTM
+Гібрид А+Б;fp;gen05;R;INSTANCE_OF;ForecastModel_LSTM2;LSTM
+Гібрид А+Б;fp;gen05;R;INSTANCE_OF;ForecastModel_LSTM3;LSTM
+Гібрид А+Б;fp;gen05;R;INSTANCE_OF;ForecastModel_VAR1;VAR
+Гібрид А+Б;fp;gen05;R;MANAGES;Dispatcher_3;Substation_5
+Гібрид А+Б;fp;gen05;R;MANAGES;Dispatcher_4;Substation_1
+Гібрид А+Б;fp;gen05;R;MANAGES;Dispatcher_5;Substation_2
+Гібрид А+Б;fp;gen05;R;MANAGES;Dispatcher_5;Substation_8
+Гібрид А+Б;fp;kb03;R;INSTANCE_OF;ForecastModel_LSTM2;LSTM
+Гібрид А+Б;fp;kb08;R;INSTANCE_OF;ForecastModel_LSTM2;LSTM
+Гібрид А+Б;fp;kb11;R;INSTANCE_OF;ForecastModel_LSTM2;LSTM
+Гібрид А+Б;fp;kb15;R;FEEDS;Substation_1;Substation_7
+Гібрид А+Б;fp;kb15;R;FEEDS;Substation_12;Substation_7
+Гібрид А+Б;fp;kb15;R;FORECASTS_FOR;ForecastModel_ARIMA1;Substation_1
+Гібрид А+Б;fp;kb15;R;FORECASTS_FOR;ForecastModel_GRU1;Substation_1
+Гібрид А+Б;fp;kb15;R;FORECASTS_FOR;ForecastModel_LSTM2;Substation_1
+Гібрид А+Б;fp;kb15;R;INSTANCE_OF;ForecastModel_ARIMA1;ARIMA
+Гібрид А+Б;fp;kb15;R;INSTANCE_OF;ForecastModel_GRU1;GRU
+Гібрид А+Б;fp;kb15;R;INSTANCE_OF;ForecastModel_LSTM2;LSTM
+Гібрид А+Б;fp;kb15;R;MANAGES;Dispatcher_5;Substation_9
+Гібрид А+Б;fn;gen01;E;REGION;Region_IvanoFrankivsk;
+Гібрид А+Б;fn;gen01;R;FORECASTS_FOR;ForecastModel_GRU1;Substation_2
+Гібрид А+Б;fn;gen01;R;FORECASTS_FOR;ForecastModel_GRU1;Substation_5
+Гібрид А+Б;fn;gen01;R;FORECASTS_FOR;ForecastModel_LSTM1;Substation_10
+Гібрид А+Б;fn;gen01;R;FORECASTS_FOR;ForecastModel_LSTM2;Substation_11
+Гібрид А+Б;fn;gen01;R;FORECASTS_FOR;ForecastModel_LSTM2;Substation_12
+Гібрид А+Б;fn;gen01;R;FORECASTS_FOR;ForecastModel_LSTM2;Substation_5
+Гібрид А+Б;fn;gen01;R;FORECASTS_FOR;ForecastModel_LSTM3;Substation_1
+Гібрид А+Б;fn;gen01;R;FORECASTS_FOR;ForecastModel_LSTM3;Substation_10
+Гібрид А+Б;fn;gen01;R;FORECASTS_FOR;ForecastModel_LSTM3;Substation_6
+Гібрид А+Б;fn;gen01;R;FORECASTS_FOR;ForecastModel_VAR1;Substation_11
+Гібрид А+Б;fn;gen01;R;FORECASTS_FOR;ForecastModel_VAR1;Substation_12
+Гібрид А+Б;fn;gen01;R;LOCATED_IN;Substation_2;Region_Volyn
+Гібрид А+Б;fn;gen01;R;MANAGES;Dispatcher_2;Substation_12
+Гібрид А+Б;fn;gen01;R;MANAGES;Dispatcher_6;Substation_6
+Гібрид А+Б;fn;gen03;E;REGION;Region_IvanoFrankivsk;
+Гібрид А+Б;fn;gen03;R;CONNECTED_TO;Consumer_5021;Substation_7
+Гібрид А+Б;fn;gen03;R;HAS_METER;Consumer_4521;Meter_AMI99231
+Гібрид А+Б;fn;gen03;R;HAS_METER;Consumer_5003;Meter_AMI24755
+Гібрид А+Б;fn;gen03;R;HAS_METER;Consumer_5004;Meter_AMI26032
+Гібрид А+Б;fn;gen03;R;HAS_METER;Consumer_5005;Meter_AMI27192
+Гібрид А+Б;fn;gen03;R;HAS_METER;Consumer_5006;Meter_AMI29583
+Гібрид А+Б;fn;gen03;R;HAS_METER;Consumer_5007;Meter_AMI32391
+Гібрид А+Б;fn;gen03;R;HAS_METER;Consumer_5008;Meter_AMI33496
+Гібрид А+Б;fn;gen03;R;HAS_METER;Consumer_5009;Meter_AMI35297
+Гібрид А+Б;fn;gen03;R;HAS_METER;Consumer_5010;Meter_AMI36309
+Гібрид А+Б;fn;gen03;R;HAS_METER;Consumer_5011;Meter_AMI37120
+Гібрид А+Б;fn;gen03;R;HAS_METER;Consumer_5012;Meter_AMI38856
+Гібрид А+Б;fn;gen03;R;HAS_METER;Consumer_5013;Meter_AMI40161
+Гібрид А+Б;fn;gen03;R;HAS_METER;Consumer_5014;Meter_AMI42574
+Гібрид А+Б;fn;gen03;R;HAS_METER;Consumer_5015;Meter_AMI44704
+Гібрид А+Б;fn;gen03;R;HAS_METER;Consumer_5016;Meter_AMI45618
+Гібрид А+Б;fn;gen03;R;HAS_METER;Consumer_5017;Meter_AMI46646
+Гібрид А+Б;fn;gen03;R;HAS_METER;Consumer_5018;Meter_AMI49003
+Гібрид А+Б;fn;gen03;R;HAS_METER;Consumer_5019;Meter_AMI50424
+Гібрид А+Б;fn;gen03;R;HAS_METER;Consumer_5020;Meter_AMI52953
+Гібрид А+Б;fn;gen03;R;HAS_METER;Consumer_5021;Meter_AMI55149
+Гібрид А+Б;fn;gen03;R;HAS_METER;Consumer_5022;Meter_AMI57366
+Гібрид А+Б;fn;gen03;R;HAS_METER;Consumer_5023;Meter_AMI58264
+Гібрид А+Б;fn;gen03;R;HAS_METER;Consumer_5024;Meter_AMI58679
+Гібрид А+Б;fn;gen03;R;HAS_METER;Consumer_5025;Meter_AMI59779
+Гібрид А+Б;fn;gen03;R;HAS_METER;Consumer_5026;Meter_AMI60407
+Гібрид А+Б;fn;gen03;R;HAS_METER;Consumer_5027;Meter_AMI61552
+Гібрид А+Б;fn;gen03;R;HAS_METER;Consumer_5028;Meter_AMI62024
+Гібрид А+Б;fn;gen03;R;HAS_METER;Consumer_5029;Meter_AMI64551
+Гібрид А+Б;fn;gen03;R;HAS_METER;Consumer_5030;Meter_AMI66829
+Гібрид А+Б;fn;gen03;R;HAS_METER;Consumer_5031;Meter_AMI68034
+Гібрид А+Б;fn;gen03;R;HAS_METER;Consumer_5032;Meter_AMI69457
+Гібрид А+Б;fn;gen03;R;HAS_METER;Consumer_5033;Meter_AMI70681
+Гібрид А+Б;fn;gen03;R;HAS_METER;Consumer_5034;Meter_AMI71354
+Гібрид А+Б;fn;gen03;R;HAS_METER;Consumer_5035;Meter_AMI74134
+Гібрид А+Б;fn;gen03;R;HAS_METER;Consumer_5036;Meter_AMI76143
+Гібрид А+Б;fn;gen03;R;HAS_METER;Consumer_5037;Meter_AMI76577
+Гібрид А+Б;fn;gen03;R;HAS_METER;Consumer_5038;Meter_AMI78591
+Гібрид А+Б;fn;gen03;R;HAS_METER;Consumer_5038;Meter_AMI80930
+Гібрид А+Б;fn;gen04;R;CONNECTED_TO;Consumer_1002;Substation_12
+Гібрид А+Б;fn;gen04;R;CONNECTED_TO;Consumer_3310;Substation_5
+Гібрид А+Б;fn;gen04;R;CONNECTED_TO;Consumer_4521;Substation_7
+Гібрид А+Б;fn;gen04;R;CONNECTED_TO;Consumer_5001;Substation_2
+Гібрид А+Б;fn;gen04;R;CONNECTED_TO;Consumer_5002;Substation_3
+Гібрид А+Б;fn;gen04;R;CONNECTED_TO;Consumer_5003;Substation_4
+Гібрид А+Б;fn;gen04;R;CONNECTED_TO;Consumer_5004;Substation_6
+Гібрид А+Б;fn;gen04;R;CONNECTED_TO;Consumer_5005;Substation_8
+Гібрид А+Б;fn;gen04;R;CONNECTED_TO;Consumer_5006;Substation_10
+Гібрид А+Б;fn;gen04;R;CONNECTED_TO;Consumer_5007;Substation_11
+Гібрид А+Б;fn;gen04;R;CONNECTED_TO;Consumer_5008;Substation_12
+Гібрид А+Б;fn;gen04;R;CONNECTED_TO;Consumer_5009;Substation_5
+Гібрид А+Б;fn;gen04;R;CONNECTED_TO;Consumer_5010;Substation_7
+Гібрид А+Б;fn;gen04;R;CONNECTED_TO;Consumer_5011;Substation_9
+Гібрид А+Б;fn;gen04;R;CONNECTED_TO;Consumer_5012;Substation_2
+Гібрид А+Б;fn;gen04;R;CONNECTED_TO;Consumer_5013;Substation_3
+Гібрид А+Б;fn;gen04;R;CONNECTED_TO;Consumer_5014;Substation_4
+Гібрид А+Б;fn;gen04;R;CONNECTED_TO;Consumer_5015;Substation_6
+Гібрид А+Б;fn;gen04;R;CONNECTED_TO;Consumer_5016;Substation_8
+Гібрид А+Б;fn;gen04;R;CONNECTED_TO;Consumer_5017;Substation_10
+Гібрид А+Б;fn;gen04;R;CONNECTED_TO;Consumer_5018;Substation_11
+Гібрид А+Б;fn;gen04;R;CONNECTED_TO;Consumer_5019;Substation_12
+Гібрид А+Б;fn;gen04;R;CONNECTED_TO;Consumer_5020;Substation_5
+Гібрид А+Б;fn;gen04;R;CONNECTED_TO;Consumer_5021;Substation_7
+Гібрид А+Б;fn;gen04;R;CONNECTED_TO;Consumer_5022;Substation_9
+Гібрид А+Б;fn;gen04;R;CONNECTED_TO;Consumer_5023;Substation_2
+Гібрид А+Б;fn;gen04;R;CONNECTED_TO;Consumer_5024;Substation_3
+Гібрид А+Б;fn;gen04;R;CONNECTED_TO;Consumer_5025;Substation_4
+Гібрид А+Б;fn;gen04;R;CONNECTED_TO;Consumer_5026;Substation_6
+Гібрид А+Б;fn;gen04;R;CONNECTED_TO;Consumer_5027;Substation_8
+Гібрид А+Б;fn;gen04;R;CONNECTED_TO;Consumer_5028;Substation_10
+Гібрид А+Б;fn;gen04;R;CONNECTED_TO;Consumer_5029;Substation_11
+Гібрид А+Б;fn;gen04;R;CONNECTED_TO;Consumer_5030;Substation_12
+Гібрид А+Б;fn;gen04;R;CONNECTED_TO;Consumer_5031;Substation_5
+Гібрид А+Б;fn;gen04;R;CONNECTED_TO;Consumer_5032;Substation_7
+Гібрид А+Б;fn;gen04;R;CONNECTED_TO;Consumer_5033;Substation_9
+Гібрид А+Б;fn;gen04;R;CONNECTED_TO;Consumer_5034;Substation_2
+Гібрид А+Б;fn;gen04;R;CONNECTED_TO;Consumer_5035;Substation_3
+Гібрид А+Б;fn;gen04;R;CONNECTED_TO;Consumer_5036;Substation_4
+Гібрид А+Б;fn;gen04;R;CONNECTED_TO;Consumer_5037;Substation_6
+Гібрид А+Б;fn;gen04;R;CONNECTED_TO;Consumer_5038;Substation_1
+Гібрид А+Б;fn;gen04;R;HAS_METER;Consumer_1002;Meter_AMI10452
+Гібрид А+Б;fn;gen04;R;HAS_METER;Consumer_3310;Meter_AMI77410
+Гібрид А+Б;fn;gen04;R;HAS_METER;Consumer_4521;Meter_AMI81841
+Гібрид А+Б;fn;gen04;R;HAS_METER;Consumer_4521;Meter_AMI99231
+Гібрид А+Б;fn;gen04;R;HAS_METER;Consumer_5001;Meter_AMI20916
+Гібрид А+Б;fn;gen04;R;HAS_METER;Consumer_5002;Meter_AMI22890
+Гібрид А+Б;fn;gen04;R;HAS_METER;Consumer_5003;Meter_AMI24755
+Гібрид А+Б;fn;gen04;R;HAS_METER;Consumer_5004;Meter_AMI26032
+Гібрид А+Б;fn;gen04;R;HAS_METER;Consumer_5005;Meter_AMI27192
+Гібрид А+Б;fn;gen04;R;HAS_METER;Consumer_5006;Meter_AMI29583
+Гібрид А+Б;fn;gen04;R;HAS_METER;Consumer_5007;Meter_AMI32391
+Гібрид А+Б;fn;gen04;R;HAS_METER;Consumer_5008;Meter_AMI33496
+Гібрид А+Б;fn;gen04;R;HAS_METER;Consumer_5009;Meter_AMI35297
+Гібрид А+Б;fn;gen04;R;HAS_METER;Consumer_5010;Meter_AMI36309
+Гібрид А+Б;fn;gen04;R;HAS_METER;Consumer_5011;Meter_AMI37120
+Гібрид А+Б;fn;gen04;R;HAS_METER;Consumer_5012;Meter_AMI38856
+Гібрид А+Б;fn;gen04;R;HAS_METER;Consumer_5013;Meter_AMI40161
+Гібрид А+Б;fn;gen04;R;HAS_METER;Consumer_5014;Meter_AMI42574
+Гібрид А+Б;fn;gen04;R;HAS_METER;Consumer_5015;Meter_AMI44704
+Гібрид А+Б;fn;gen04;R;HAS_METER;Consumer_5016;Meter_AMI45618
+Гібрид А+Б;fn;gen04;R;HAS_METER;Consumer_5017;Meter_AMI46646
+Гібрид А+Б;fn;gen04;R;HAS_METER;Consumer_5018;Meter_AMI49003
+Гібрид А+Б;fn;gen04;R;HAS_METER;Consumer_5019;Meter_AMI50424
+Гібрид А+Б;fn;gen04;R;HAS_METER;Consumer_5020;Meter_AMI52953
+Гібрид А+Б;fn;gen04;R;HAS_METER;Consumer_5021;Meter_AMI55149
+Гібрид А+Б;fn;gen04;R;HAS_METER;Consumer_5022;Meter_AMI57366
+Гібрид А+Б;fn;gen04;R;HAS_METER;Consumer_5023;Meter_AMI58264
+Гібрид А+Б;fn;gen04;R;HAS_METER;Consumer_5024;Meter_AMI58679
+Гібрид А+Б;fn;gen04;R;HAS_METER;Consumer_5025;Meter_AMI59779
+Гібрид А+Б;fn;gen04;R;HAS_METER;Consumer_5026;Meter_AMI60407
+Гібрид А+Б;fn;gen04;R;HAS_METER;Consumer_5027;Meter_AMI61552
+Гібрид А+Б;fn;gen04;R;HAS_METER;Consumer_5028;Meter_AMI62024
+Гібрид А+Б;fn;gen04;R;HAS_METER;Consumer_5029;Meter_AMI64551
+Гібрид А+Б;fn;gen04;R;HAS_METER;Consumer_5030;Meter_AMI66829
+Гібрид А+Б;fn;gen04;R;HAS_METER;Consumer_5031;Meter_AMI68034
+Гібрид А+Б;fn;gen04;R;HAS_METER;Consumer_5032;Meter_AMI69457
+Гібрид А+Б;fn;gen04;R;HAS_METER;Consumer_5033;Meter_AMI70681
+Гібрид А+Б;fn;gen04;R;HAS_METER;Consumer_5034;Meter_AMI71354
+Гібрид А+Б;fn;gen04;R;HAS_METER;Consumer_5035;Meter_AMI74134
+Гібрид А+Б;fn;gen04;R;HAS_METER;Consumer_5036;Meter_AMI76143
+Гібрид А+Б;fn;gen04;R;HAS_METER;Consumer_5037;Meter_AMI76577
+Гібрид А+Б;fn;gen04;R;HAS_METER;Consumer_5038;Meter_AMI78591
+Гібрид А+Б;fn;gen04;R;HAS_METER;Consumer_5038;Meter_AMI80930
+Гібрид А+Б;fn;kb15;R;CONNECTED_TO;Consumer_3310;Substation_5
+Гібрид А+Б;fn;kb15;R;CONNECTED_TO;Consumer_5011;Substation_9
+Гібрид А+Б;fn;kb15;R;FEEDS;Substation_1;Substation_10
+Гібрид А+Б;fn;kb15;R;FEEDS;Substation_10;Substation_4
+Гібрид А+Б;fn;kb15;R;FEEDS;Substation_4;Substation_6
+Гібрид А+Б;fn;kb15;R;FORECASTS_FOR;ForecastModel_LSTM2;Substation_11
+Гібрид А+Б;fn;kb15;R;MANAGES;Dispatcher_2;Substation_11
+Гібрид А+Б;fn;kb15;R;MANAGES;Dispatcher_3;Substation_5
+Гібрид А+Б;fn;prj10;R;CONNECTED_TO;Consumer_5019;Substation_12

@@ -1,0 +1,805 @@
+{
+  "transactions": 132,
+  "items": 127,
+  "min_pair": 3,
+  "min_conf": 0.6,
+  "rules": [
+    {
+      "X": "Meter_AMI27192",
+      "Y": "Meter_AMI66829",
+      "n": 132,
+      "nx": 5,
+      "ny": 4,
+      "nxy": 3,
+      "support": 0.0227,
+      "confidence": 0.6,
+      "lift": 19.8,
+      "p_perm": 0.001,
+      "mechanism": [],
+      "lift_articles": 36.0,
+      "lift_registers": 16.0,
+      "lift_ci95": [
+        10.48,
+        66.0
+      ],
+      "docs": [
+        "gen02",
+        "gen04",
+        "kb15"
+      ]
+    },
+    {
+      "X": "Meter_AMI66829",
+      "Y": "Meter_AMI27192",
+      "n": 132,
+      "nx": 4,
+      "ny": 5,
+      "nxy": 3,
+      "support": 0.0227,
+      "confidence": 0.75,
+      "lift": 19.8,
+      "p_perm": 0.001,
+      "mechanism": [],
+      "lift_articles": 36.0,
+      "lift_registers": 16.0,
+      "lift_ci95": [
+        8.8,
+        66.0
+      ],
+      "docs": [
+        "gen02",
+        "gen04",
+        "kb15"
+      ]
+    },
+    {
+      "X": "Consumer_3310",
+      "Y": "Meter_AMI77410",
+      "n": 132,
+      "nx": 6,
+      "ny": 7,
+      "nxy": 5,
+      "support": 0.0379,
+      "confidence": 0.833,
+      "lift": 15.71,
+      "p_perm": 0.001,
+      "mechanism": [
+        "HAS_METER"
+      ],
+      "lift_articles": 6.75,
+      "lift_registers": 32.0,
+      "lift_ci95": [
+        8.25,
+        44.0
+      ],
+      "docs": [
+        "gen03",
+        "gen04",
+        "kb05",
+        "kb14",
+        "kb15"
+      ]
+    },
+    {
+      "X": "Meter_AMI77410",
+      "Y": "Consumer_3310",
+      "n": 132,
+      "nx": 7,
+      "ny": 6,
+      "nxy": 5,
+      "support": 0.0379,
+      "confidence": 0.714,
+      "lift": 15.71,
+      "p_perm": 0.001,
+      "mechanism": [
+        "HAS_METER"
+      ],
+      "lift_articles": 6.75,
+      "lift_registers": 32.0,
+      "lift_ci95": [
+        8.8,
+        44.0
+      ],
+      "docs": [
+        "gen03",
+        "gen04",
+        "kb05",
+        "kb14",
+        "kb15"
+      ]
+    },
+    {
+      "X": "GRU",
+      "Y": "LSTM",
+      "n": 132,
+      "nx": 4,
+      "ny": 7,
+      "nxy": 3,
+      "support": 0.0227,
+      "confidence": 0.75,
+      "lift": 14.14,
+      "p_perm": 0.001,
+      "mechanism": [],
+      "lift_articles": 9.0,
+      "lift_registers": null,
+      "lift_ci95": [
+        6.73,
+        44.0
+      ],
+      "docs": [
+        "kb01",
+        "kb02"
+      ]
+    },
+    {
+      "X": "Dispatcher_1",
+      "Y": "ForecastModel_LSTM1",
+      "n": 132,
+      "nx": 4,
+      "ny": 9,
+      "nxy": 3,
+      "support": 0.0227,
+      "confidence": 0.75,
+      "lift": 11.0,
+      "p_perm": 0.002,
+      "mechanism": [],
+      "lift_articles": null,
+      "lift_registers": 10.29,
+      "lift_ci95": [
+        5.28,
+        26.4
+      ],
+      "docs": [
+        "gen01",
+        "gen05"
+      ]
+    },
+    {
+      "X": "Consumer_5011",
+      "Y": "Substation_9",
+      "n": 132,
+      "nx": 3,
+      "ny": 12,
+      "nxy": 3,
+      "support": 0.0227,
+      "confidence": 1.0,
+      "lift": 11.0,
+      "p_perm": 0.001,
+      "mechanism": [
+        "CONNECTED_TO"
+      ],
+      "lift_articles": 6.0,
+      "lift_registers": 16.0,
+      "lift_ci95": [
+        6.95,
+        18.86
+      ],
+      "docs": [
+        "gen03",
+        "gen04",
+        "kb15"
+      ]
+    },
+    {
+      "X": "Region_Zakarpattia",
+      "Y": "Substation_9",
+      "n": 132,
+      "nx": 11,
+      "ny": 12,
+      "nxy": 8,
+      "support": 0.0606,
+      "confidence": 0.727,
+      "lift": 8.0,
+      "p_perm": 0.001,
+      "mechanism": [
+        "LOCATED_IN"
+      ],
+      "lift_articles": 6.0,
+      "lift_registers": 10.0,
+      "lift_ci95": [
+        5.24,
+        14.67
+      ],
+      "docs": [
+        "gen01",
+        "gen03",
+        "kb06",
+        "kb11",
+        "kb15"
+      ]
+    },
+    {
+      "X": "Substation_9",
+      "Y": "Region_Zakarpattia",
+      "n": 132,
+      "nx": 12,
+      "ny": 11,
+      "nxy": 8,
+      "support": 0.0606,
+      "confidence": 0.667,
+      "lift": 8.0,
+      "p_perm": 0.001,
+      "mechanism": [
+        "LOCATED_IN"
+      ],
+      "lift_articles": 6.0,
+      "lift_registers": 10.0,
+      "lift_ci95": [
+        5.0,
+        15.09
+      ],
+      "docs": [
+        "gen01",
+        "gen03",
+        "kb06",
+        "kb11",
+        "kb15"
+      ]
+    },
+    {
+      "X": "Dispatcher_2",
+      "Y": "ForecastModel_VAR1",
+      "n": 132,
+      "nx": 8,
+      "ny": 11,
+      "nxy": 5,
+      "support": 0.0379,
+      "confidence": 0.625,
+      "lift": 7.5,
+      "p_perm": 0.001,
+      "mechanism": [],
+      "lift_articles": 18.0,
+      "lift_registers": 6.1,
+      "lift_ci95": [
+        3.67,
+        14.67
+      ],
+      "docs": [
+        "gen01",
+        "gen05",
+        "kb15"
+      ]
+    },
+    {
+      "X": "Dispatcher_1",
+      "Y": "Substation_7",
+      "n": 132,
+      "nx": 4,
+      "ny": 18,
+      "nxy": 4,
+      "support": 0.0303,
+      "confidence": 1.0,
+      "lift": 7.33,
+      "p_perm": 0.002,
+      "mechanism": [
+        "MANAGES"
+      ],
+      "lift_articles": null,
+      "lift_registers": 8.0,
+      "lift_ci95": [
+        5.08,
+        12.0
+      ],
+      "docs": [
+        "gen01",
+        "gen05",
+        "gen07"
+      ]
+    },
+    {
+      "X": "Consumer_4521",
+      "Y": "Substation_7",
+      "n": 132,
+      "nx": 3,
+      "ny": 18,
+      "nxy": 3,
+      "support": 0.0227,
+      "confidence": 1.0,
+      "lift": 7.33,
+      "p_perm": 0.001,
+      "mechanism": [
+        "CONNECTED_TO"
+      ],
+      "lift_articles": 6.0,
+      "lift_registers": 8.0,
+      "lift_ci95": [
+        4.89,
+        12.0
+      ],
+      "docs": [
+        "gen03",
+        "gen04",
+        "kb12"
+      ]
+    },
+    {
+      "X": "Region_Ternopil",
+      "Y": "Substation_4",
+      "n": 132,
+      "nx": 6,
+      "ny": 19,
+      "nxy": 6,
+      "support": 0.0455,
+      "confidence": 1.0,
+      "lift": 6.95,
+      "p_perm": 0.001,
+      "mechanism": [
+        "LOCATED_IN"
+      ],
+      "lift_articles": 4.5,
+      "lift_registers": 8.73,
+      "lift_ci95": [
+        4.89,
+        12.0
+      ],
+      "docs": [
+        "gen01",
+        "gen03",
+        "kb15"
+      ]
+    },
+    {
+      "X": "Consumer_5038",
+      "Y": "Substation_1",
+      "n": 132,
+      "nx": 4,
+      "ny": 19,
+      "nxy": 4,
+      "support": 0.0303,
+      "confidence": 1.0,
+      "lift": 6.95,
+      "p_perm": 0.001,
+      "mechanism": [
+        "CONNECTED_TO"
+      ],
+      "lift_articles": 4.5,
+      "lift_registers": 8.73,
+      "lift_ci95": [
+        4.89,
+        11.0
+      ],
+      "docs": [
+        "gen03",
+        "gen04",
+        "kb05",
+        "kb15"
+      ]
+    },
+    {
+      "X": "Consumer_1002",
+      "Y": "Substation_12",
+      "n": 132,
+      "nx": 3,
+      "ny": 20,
+      "nxy": 3,
+      "support": 0.0227,
+      "confidence": 1.0,
+      "lift": 6.6,
+      "p_perm": 0.002,
+      "mechanism": [
+        "CONNECTED_TO"
+      ],
+      "lift_articles": 5.14,
+      "lift_registers": 7.38,
+      "lift_ci95": [
+        4.55,
+        10.15
+      ],
+      "docs": [
+        "gen03",
+        "gen04",
+        "kb12"
+      ]
+    },
+    {
+      "X": "Consumer_5019",
+      "Y": "Substation_12",
+      "n": 132,
+      "nx": 3,
+      "ny": 20,
+      "nxy": 3,
+      "support": 0.0227,
+      "confidence": 1.0,
+      "lift": 6.6,
+      "p_perm": 0.01,
+      "mechanism": [
+        "CONNECTED_TO"
+      ],
+      "lift_articles": 5.14,
+      "lift_registers": 7.38,
+      "lift_ci95": [
+        4.55,
+        10.15
+      ],
+      "docs": [
+        "gen03",
+        "gen04",
+        "prj10"
+      ]
+    },
+    {
+      "X": "CLOUD_COVER",
+      "Y": "TEMPERATURE",
+      "n": 132,
+      "nx": 10,
+      "ny": 22,
+      "nxy": 10,
+      "support": 0.0758,
+      "confidence": 1.0,
+      "lift": 6.0,
+      "p_perm": 0.001,
+      "mechanism": [],
+      "lift_articles": null,
+      "lift_registers": 6.0,
+      "lift_ci95": [
+        4.26,
+        10.15
+      ],
+      "docs": [
+        "gen06"
+      ]
+    },
+    {
+      "X": "Region_Rivne",
+      "Y": "Substation_3",
+      "n": 132,
+      "nx": 9,
+      "ny": 15,
+      "nxy": 6,
+      "support": 0.0455,
+      "confidence": 0.667,
+      "lift": 5.87,
+      "p_perm": 0.001,
+      "mechanism": [
+        "LOCATED_IN"
+      ],
+      "lift_articles": null,
+      "lift_registers": 5.82,
+      "lift_ci95": [
+        3.14,
+        10.15
+      ],
+      "docs": [
+        "gen01",
+        "gen03"
+      ]
+    },
+    {
+      "X": "Dispatcher_6",
+      "Y": "Substation_4",
+      "n": 132,
+      "nx": 6,
+      "ny": 19,
+      "nxy": 5,
+      "support": 0.0379,
+      "confidence": 0.833,
+      "lift": 5.79,
+      "p_perm": 0.001,
+      "mechanism": [
+        "MANAGES"
+      ],
+      "lift_articles": 4.5,
+      "lift_registers": 6.98,
+      "lift_ci95": [
+        2.85,
+        10.15
+      ],
+      "docs": [
+        "gen01",
+        "gen05",
+        "gen07",
+        "kb15"
+      ]
+    },
+    {
+      "X": "Meter_AMI27192",
+      "Y": "Substation_8",
+      "n": 132,
+      "nx": 5,
+      "ny": 14,
+      "nxy": 3,
+      "support": 0.0227,
+      "confidence": 0.6,
+      "lift": 5.66,
+      "p_perm": 0.012,
+      "mechanism": [],
+      "lift_articles": null,
+      "lift_registers": 7.2,
+      "lift_ci95": [
+        2.03,
+        12.0
+      ],
+      "docs": [
+        "gen02",
+        "gen03",
+        "gen04"
+      ]
+    },
+    {
+      "X": "Dispatcher_4",
+      "Y": "Substation_10",
+      "n": 132,
+      "nx": 7,
+      "ny": 17,
+      "nxy": 5,
+      "support": 0.0379,
+      "confidence": 0.714,
+      "lift": 5.55,
+      "p_perm": 0.001,
+      "mechanism": [
+        "MANAGES"
+      ],
+      "lift_articles": null,
+      "lift_registers": 5.27,
+      "lift_ci95": [
+        2.75,
+        10.15
+      ],
+      "docs": [
+        "gen01",
+        "gen05",
+        "gen07"
+      ]
+    },
+    {
+      "X": "Dispatcher_3",
+      "Y": "Substation_5",
+      "n": 132,
+      "nx": 6,
+      "ny": 24,
+      "nxy": 6,
+      "support": 0.0455,
+      "confidence": 1.0,
+      "lift": 5.5,
+      "p_perm": 0.001,
+      "mechanism": [
+        "MANAGES"
+      ],
+      "lift_articles": 3.6,
+      "lift_registers": 6.86,
+      "lift_ci95": [
+        4.26,
+        8.8
+      ],
+      "docs": [
+        "gen01",
+        "gen05",
+        "gen07",
+        "kb15"
+      ]
+    },
+    {
+      "X": "Dispatcher_6",
+      "Y": "Substation_6",
+      "n": 132,
+      "nx": 6,
+      "ny": 16,
+      "nxy": 4,
+      "support": 0.0303,
+      "confidence": 0.667,
+      "lift": 5.5,
+      "p_perm": 0.004,
+      "mechanism": [
+        "MANAGES"
+      ],
+      "lift_articles": null,
+      "lift_registers": 6.4,
+      "lift_ci95": [
+        2.57,
+        10.0
+      ],
+      "docs": [
+        "gen01",
+        "gen05",
+        "gen07"
+      ]
+    },
+    {
+      "X": "Consumer_5009",
+      "Y": "Substation_5",
+      "n": 132,
+      "nx": 3,
+      "ny": 24,
+      "nxy": 3,
+      "support": 0.0227,
+      "confidence": 1.0,
+      "lift": 5.5,
+      "p_perm": 0.008,
+      "mechanism": [
+        "CONNECTED_TO"
+      ],
+      "lift_articles": 3.6,
+      "lift_registers": 6.86,
+      "lift_ci95": [
+        4.0,
+        8.25
+      ],
+      "docs": [
+        "gen03",
+        "gen04",
+        "kb15"
+      ]
+    },
+    {
+      "X": "Consumer_5031",
+      "Y": "Substation_5",
+      "n": 132,
+      "nx": 3,
+      "ny": 24,
+      "nxy": 3,
+      "support": 0.0227,
+      "confidence": 1.0,
+      "lift": 5.5,
+      "p_perm": 0.006,
+      "mechanism": [
+        "CONNECTED_TO"
+      ],
+      "lift_articles": 3.6,
+      "lift_registers": 6.86,
+      "lift_ci95": [
+        4.0,
+        8.25
+      ],
+      "docs": [
+        "gen03",
+        "gen04",
+        "kb15"
+      ]
+    },
+    {
+      "X": "Dispatcher_4",
+      "Y": "Substation_1",
+      "n": 132,
+      "nx": 7,
+      "ny": 19,
+      "nxy": 5,
+      "support": 0.0379,
+      "confidence": 0.714,
+      "lift": 4.96,
+      "p_perm": 0.002,
+      "mechanism": [
+        "MANAGES"
+      ],
+      "lift_articles": null,
+      "lift_registers": 6.23,
+      "lift_ci95": [
+        2.44,
+        8.46
+      ],
+      "docs": [
+        "gen01",
+        "gen05",
+        "gen07"
+      ]
+    },
+    {
+      "X": "Dispatcher_2",
+      "Y": "ForecastModel_LSTM2",
+      "n": 132,
+      "nx": 8,
+      "ny": 17,
+      "nxy": 5,
+      "support": 0.0379,
+      "confidence": 0.625,
+      "lift": 4.85,
+      "p_perm": 0.002,
+      "mechanism": [],
+      "lift_articles": 4.5,
+      "lift_registers": 6.1,
+      "lift_ci95": [
+        2.2,
+        8.8
+      ],
+      "docs": [
+        "gen01",
+        "gen05",
+        "kb15"
+      ]
+    },
+    {
+      "X": "Dispatcher_2",
+      "Y": "Substation_11",
+      "n": 132,
+      "nx": 8,
+      "ny": 18,
+      "nxy": 5,
+      "support": 0.0379,
+      "confidence": 0.625,
+      "lift": 4.58,
+      "p_perm": 0.002,
+      "mechanism": [
+        "MANAGES"
+      ],
+      "lift_articles": 5.14,
+      "lift_registers": 4.99,
+      "lift_ci95": [
+        2.2,
+        8.25
+      ],
+      "docs": [
+        "gen01",
+        "gen05",
+        "gen07",
+        "kb15"
+      ]
+    },
+    {
+      "X": "Consumer_3310",
+      "Y": "Substation_5",
+      "n": 132,
+      "nx": 6,
+      "ny": 24,
+      "nxy": 5,
+      "support": 0.0379,
+      "confidence": 0.833,
+      "lift": 4.58,
+      "p_perm": 0.002,
+      "mechanism": [
+        "CONNECTED_TO"
+      ],
+      "lift_articles": 2.7,
+      "lift_registers": 6.86,
+      "lift_ci95": [
+        2.48,
+        7.33
+      ],
+      "docs": [
+        "gen03",
+        "gen04",
+        "kb12",
+        "kb14",
+        "kb15"
+      ]
+    },
+    {
+      "X": "VAR",
+      "Y": "TEMPERATURE",
+      "n": 132,
+      "nx": 4,
+      "ny": 22,
+      "nxy": 3,
+      "support": 0.0227,
+      "confidence": 0.75,
+      "lift": 4.5,
+      "p_perm": 0.019,
+      "mechanism": [],
+      "lift_articles": 4.0,
+      "lift_registers": 6.0,
+      "lift_ci95": [
+        2.1,
+        8.25
+      ],
+      "docs": [
+        "gen02",
+        "kb02",
+        "kb04"
+      ]
+    },
+    {
+      "X": "Meter_AMI77410",
+      "Y": "Substation_5",
+      "n": 132,
+      "nx": 7,
+      "ny": 24,
+      "nxy": 5,
+      "support": 0.0379,
+      "confidence": 0.714,
+      "lift": 3.93,
+      "p_perm": 0.002,
+      "mechanism": [],
+      "lift_articles": 1.8,
+      "lift_registers": 6.86,
+      "lift_ci95": [
+        1.96,
+        6.29
+      ],
+      "docs": [
+        "gen02",
+        "gen03",
+        "gen04",
+        "kb14",
+        "kb15"
+      ]
+    }
+  ]
+}

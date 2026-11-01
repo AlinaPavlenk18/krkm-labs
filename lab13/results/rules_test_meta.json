@@ -1,0 +1,9 @@
+{
+  "split": "test",
+  "docs": 18,
+  "statements": 381,
+  "seconds": 0.55,
+  "seconds_per_doc": 0.031,
+  "version": "rules_v2",
+  "spacy": "3.8.18"
+}

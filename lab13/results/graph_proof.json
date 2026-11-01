@@ -1,0 +1,229 @@
+{
+  "1. Скільки завантажено": [
+    {
+      "entities": 131,
+      "mentions": 420,
+      "relations": 216
+    }
+  ],
+  "2. Відношення за типом і методом витягу": [
+    {
+      "rel": "CONNECTED_TO",
+      "method": "llm",
+      "n": 43,
+      "avg_conf": 0.7
+    },
+    {
+      "rel": "CONNECTED_TO",
+      "method": "rules",
+      "n": 3,
+      "avg_conf": 0.9
+    },
+    {
+      "rel": "CONNECTED_TO",
+      "method": "rules+llm",
+      "n": 1,
+      "avg_conf": 0.95
+    },
+    {
+      "rel": "FEEDS",
+      "method": "llm",
+      "n": 8,
+      "avg_conf": 0.7
+    },
+    {
+      "rel": "FEEDS",
+      "method": "rules",
+      "n": 7,
+      "avg_conf": 0.9
+    },
+    {
+      "rel": "FEEDS",
+      "method": "rules+llm",
+      "n": 13,
+      "avg_conf": 0.95
+    },
+    {
+      "rel": "FORECASTS_FOR",
+      "method": "llm",
+      "n": 9,
+      "avg_conf": 0.7
+    },
+    {
+      "rel": "FORECASTS_FOR",
+      "method": "rules",
+      "n": 5,
+      "avg_conf": 0.9
+    },
+    {
+      "rel": "FORECASTS_FOR",
+      "method": "rules+llm",
+      "n": 36,
+      "avg_conf": 0.95
+    },
+    {
+      "rel": "HAS_METER",
+      "method": "llm",
+      "n": 5,
+      "avg_conf": 0.7
+    },
+    {
+      "rel": "HAS_METER",
+      "method": "rules+llm",
+      "n": 3,
+      "avg_conf": 0.95
+    },
+    {
+      "rel": "INSTANCE_OF",
+      "method": "llm",
+      "n": 18,
+      "avg_conf": 0.7
+    },
+    {
+      "rel": "INSTANCE_OF",
+      "method": "rules",
+      "n": 3,
+      "avg_conf": 0.9
+    },
+    {
+      "rel": "INSTANCE_OF",
+      "method": "rules+llm",
+      "n": 6,
+      "avg_conf": 0.95
+    },
+    {
+      "rel": "LOCATED_IN",
+      "method": "llm",
+      "n": 11,
+      "avg_conf": 0.7
+    },
+    {
+      "rel": "LOCATED_IN",
+      "method": "rules",
+      "n": 13,
+      "avg_conf": 0.9
+    },
+    {
+      "rel": "LOCATED_IN",
+      "method": "rules+llm",
+      "n": 6,
+      "avg_conf": 0.95
+    },
+    {
+      "rel": "MANAGES",
+      "method": "llm",
+      "n": 15,
+      "avg_conf": 0.7
+    },
+    {
+      "rel": "MANAGES",
+      "method": "rules+llm",
+      "n": 11,
+      "avg_conf": 0.95
+    }
+  ],
+  "3. Provenance твердження (доказ)": [
+    {
+      "head": "Substation_1",
+      "tail": "Substation_2",
+      "source": "gen01",
+      "offset": 498,
+      "method": "rules+llm",
+      "model": "spacy-3.8.18 rules_v2 + qwen2.5:7b",
+      "prompt": "extract_v2",
+      "confidence": 0.95,
+      "evidence": "Сама живить підстанції №2, №7, №10."
+    },
+    {
+      "head": "Substation_1",
+      "tail": "Substation_10",
+      "source": "gen01",
+      "offset": 498,
+      "method": "rules+llm",
+      "model": "spacy-3.8.18 rules_v2 + qwen2.5:7b",
+      "prompt": "extract_v2",
+      "confidence": 0.95,
+      "evidence": "Сама живить підстанції №2, №7, №10."
+    },
+    {
+      "head": "Substation_1",
+      "tail": "Substation_7",
+      "source": "gen01",
+      "offset": 498,
+      "method": "rules+llm",
+      "model": "spacy-3.8.18 rules_v2 + qwen2.5:7b",
+      "prompt": "extract_v2",
+      "confidence": 0.95,
+      "evidence": "Сама живить підстанції №2, №7, №10."
+    },
+    {
+      "head": "Substation_2",
+      "tail": "Substation_3",
+      "source": "gen01",
+      "offset": 1022,
+      "method": "rules",
+      "model": "spacy-3.8.18 rules_v2",
+      "prompt": "",
+      "confidence": 0.9,
+      "evidence": "Сама живить підстанції №3."
+    },
+    {
+      "head": "Substation_3",
+      "tail": "Substation_11",
+      "source": "gen01",
+      "offset": 1572,
+      "method": "rules",
+      "model": "spacy-3.8.18 rules_v2",
+      "prompt": "",
+      "confidence": 0.9,
+      "evidence": "Сама живить підстанції №11."
+    },
+    {
+      "head": "Substation_4",
+      "tail": "Substation_6",
+      "source": "gen01",
+      "offset": 2092,
+      "method": "rules",
+      "model": "spacy-3.8.18 rules_v2",
+      "prompt": "",
+      "confidence": 0.9,
+      "evidence": "Сама живить підстанції №6."
+    }
+  ],
+  "4. Entity linking з графом ЛР9": [
+    {
+      "lr9_label": "Meter",
+      "linked": 43
+    },
+    {
+      "lr9_label": "Consumer",
+      "linked": 41
+    },
+    {
+      "lr9_label": "Substation",
+      "linked": 12
+    },
+    {
+      "lr9_label": "Dispatcher",
+      "linked": 6
+    },
+    {
+      "lr9_label": "ForecastModel",
+      "linked": 6
+    },
+    {
+      "lr9_label": "Region",
+      "linked": 6
+    }
+  ],
+  "5. Витягнуте vs граф ЛР9 (FEEDS)": [
+    {
+      "in_lr9": true,
+      "n": 10
+    },
+    {
+      "in_lr9": false,
+      "n": 2
+    }
+  ]
+}

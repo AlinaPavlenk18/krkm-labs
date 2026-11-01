@@ -1,0 +1,14 @@
+id,claim,type,source,verification_level,status,comment
+E01,Правила (A) на test не дають жодного FP,факт,results/eval_test.json,V4,verified,"P = 1.000, FP = 0 на 608 твердженнях test"
+E02,Гібрид A+Б має найвищий F1 на test,факт,results/eval_test.json; docs/extraction_eval.md,V4,verified,0.842 > 0.770 (A) > 0.732 (Б)
+E03,LLM краща за правила на відношеннях у вільному тексті статей,гіпотеза,docs/eval_test_auto.md (articles·RELATIONS),V4,verified,R 0.615 проти 0.346; F1 0.593 проти 0.514; але P лише 0.571
+E04,Узгодженість розмітки достатня (κ ≥ 0.6),факт,results/kappa.json,V4,verified,"κ(A,B) = 0.884 на 40 парах; 4 розбіжності — транзитивні висновки розмітника A"
+E05,Правила налаштовано лише на dev,факт,results/rules_dev_v1_eval.md; llm_log №3,V2,verified,test-формулювання видалено з rules_v2 до запуску на test
+E06,Валідатор v2 не шкодить повноті LLM,гіпотеза,results/llm_test_calls.jsonl; аналіз відхилених тверджень,V4,rejected,"без валідатора R відношень 0.722, з ним 0.392: відкинуто 90 правильних відношень (HAS_METER 41, CONNECTED_TO 32)"
+E07,"Підказка v2 усуває INSTANCE_OF, виведені з назв моделей",гіпотеза,results/errors_test.csv,V4,rejected,14 FP INSTANCE_OF у 6 документах test
+E08,Кожне твердження фінального виходу LLM має дослівну цитату,правило,src/extract_llm.py (validate v2); results/llm_test.jsonl,V1,verified,невідповідні цитати відкидаються; 801 із 1923 сирих (0.417)
+E09,LLM-екстрактор дешевший за правила,гіпотеза,results/llm_test_meta.json; results/rules_test_meta.json,V4,rejected,880.4 с/док проти 0.031 с/док; 25 801 токен/док
+E10,Правило Dispatcher_2 → VAR1 має механізм у графі ЛР9,факт,data/source/rels_uses_forecast.csv; rels_generated.csv,V2,verified,Forecast_20260925 і Forecast_20261006_2 згенеровано VAR1
+E11,Лічильники AMI27192 і AMI66829 пов'язані прямо,гіпотеза,data/source/nodes_meter.csv; rels_recorded.csv; rels_trained_on.csv,V2,rejected,"спільна причина: обидва «несправний», обидва дали вимірювання для GRU1; прямого ребра немає"
+E12,CLOUD_COVER → TEMPERATURE — предметна залежність,гіпотеза,results/patterns.json,V4,rejected,лише в шаблоні gen06; у статтях lift не визначений
+E13,Витягнуті знання завантажено в Neo4j із provenance,факт,results/graph_proof.json,V2,verified,"131 сутність, 420 згадок, 216 відношень; на ребрах doc, offset, method, model, prompt_version, confidence"

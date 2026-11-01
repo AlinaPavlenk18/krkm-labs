@@ -1,0 +1,91 @@
+{
+  "docs": 18,
+  "chunks": 60,
+  "calls": 130,
+  "retried_chunks": 36,
+  "prompt_tokens": 366076,
+  "completion_tokens": 98342,
+  "seconds": 15846.5,
+  "statements_raw": 1923,
+  "unverified": 801,
+  "per_doc": {
+    "gen01": {
+      "seconds": 1938.3,
+      "tokens": 66180
+    },
+    "gen03": {
+      "seconds": 815.1,
+      "tokens": 31837
+    },
+    "gen04": {
+      "seconds": 3185.0,
+      "tokens": 88694
+    },
+    "gen05": {
+      "seconds": 938.8,
+      "tokens": 22511
+    },
+    "gen06": {
+      "seconds": 352.0,
+      "tokens": 18839
+    },
+    "kb01": {
+      "seconds": 1721.4,
+      "tokens": 46313
+    },
+    "kb03": {
+      "seconds": 189.6,
+      "tokens": 16672
+    },
+    "kb04": {
+      "seconds": 167.4,
+      "tokens": 11271
+    },
+    "kb07": {
+      "seconds": 48.0,
+      "tokens": 5255
+    },
+    "kb08": {
+      "seconds": 173.7,
+      "tokens": 11345
+    },
+    "kb09": {
+      "seconds": 1945.0,
+      "tokens": 31260
+    },
+    "kb10": {
+      "seconds": 2085.5,
+      "tokens": 22699
+    },
+    "kb11": {
+      "seconds": 391.6,
+      "tokens": 13652
+    },
+    "kb13": {
+      "seconds": 44.8,
+      "tokens": 5243
+    },
+    "kb14": {
+      "seconds": 253.4,
+      "tokens": 12607
+    },
+    "kb15": {
+      "seconds": 1280.9,
+      "tokens": 33802
+    },
+    "prj10": {
+      "seconds": 142.0,
+      "tokens": 15804
+    },
+    "prj11": {
+      "seconds": 174.1,
+      "tokens": 10434
+    }
+  },
+  "model": "qwen2.5:7b",
+  "prompt": "extract_v2",
+  "split": "test",
+  "seconds_per_doc": 880.4,
+  "tokens_per_doc": 25801,
+  "unverified_share": 0.417
+}

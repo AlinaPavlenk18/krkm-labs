@@ -1,0 +1,37 @@
+{
+  "n": 40,
+  "A_vs_B": {
+    "agreement": 0.9,
+    "kappa": 0.884
+  },
+  "A_vs_gold": {
+    "agreement": 0.9,
+    "kappa": 0.884
+  },
+  "B_vs_gold": {
+    "agreement": 1.0,
+    "kappa": 1.0
+  },
+  "disagreements_A_B": [
+    {
+      "item": "9",
+      "A": "FEEDS(Substation_1→Substation_4)",
+      "B": "NONE"
+    },
+    {
+      "item": "18",
+      "A": "FEEDS(Substation_10→Substation_4)",
+      "B": "NONE"
+    },
+    {
+      "item": "19",
+      "A": "FEEDS(Substation_7→Substation_12)",
+      "B": "NONE"
+    },
+    {
+      "item": "36",
+      "A": "LOCATED_IN(Substation_7→Region_Lviv)",
+      "B": "NONE"
+    }
+  ]
+}

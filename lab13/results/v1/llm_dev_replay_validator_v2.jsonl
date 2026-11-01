@@ -1,0 +1,129 @@
+{"doc_id": "gen02", "method": "llm", "kind": "entity", "type": "MODEL", "canonical": "ForecastModel_ARIMA1", "text": "ARIMA №1", "start": 194}
+{"doc_id": "gen02", "method": "llm", "kind": "entity", "type": "MODEL", "canonical": "ForecastModel_GRU1", "text": "GRU №1", "start": 721}
+{"doc_id": "gen02", "method": "llm", "kind": "entity", "type": "SUBSTATION", "canonical": "Substation_3", "text": "№3", "start": 542}
+{"doc_id": "gen02", "method": "llm", "kind": "entity", "type": "SUBSTATION", "canonical": "Substation_8", "text": "№8", "start": 605}
+{"doc_id": "gen02", "method": "llm", "kind": "entity", "type": "SUBSTATION", "canonical": "Substation_1", "text": "№1", "start": 200}
+{"doc_id": "gen02", "method": "llm", "kind": "entity", "type": "SUBSTATION", "canonical": "Substation_4", "text": "№4", "start": 1197}
+{"doc_id": "gen02", "method": "llm", "kind": "entity", "type": "SUBSTATION", "canonical": "Substation_5", "text": "№5", "start": 1257}
+{"doc_id": "gen02", "method": "llm", "kind": "entity", "type": "SUBSTATION", "canonical": "Substation_2", "text": "№2", "start": 1317}
+{"doc_id": "gen02", "method": "llm", "kind": "relation", "type": "INSTANCE_OF", "head": "ForecastModel_ARIMA1", "tail": "ARIMA", "evidence": "Модель ARIMA №1 — статистична модель типу ARIMA.", "start": 204}
+{"doc_id": "gen02", "method": "llm", "kind": "relation", "type": "INSTANCE_OF", "head": "ForecastModel_GRU1", "tail": "GRU", "evidence": "Модель GRU №1 — нейромережева модель (машинне навчання) типу GRU.", "start": 729}
+{"doc_id": "gen02", "method": "llm", "kind": "relation", "type": "FORECASTS_FOR", "head": "ForecastModel_ARIMA1", "tail": "Substation_3", "evidence": "Згенеровані прогнози (2): 03.10.2026 (ПС №3) для підстанції №3 (тиждень, похибка 8,9 %)", "start": 501}
+{"doc_id": "gen02", "method": "llm", "kind": "relation", "type": "FORECASTS_FOR", "head": "ForecastModel_ARIMA1", "tail": "Substation_8", "evidence": "05.10.2026 (ПС №8) для підстанції №8 (тиждень, похибка 9,6 %)", "start": 590}
+{"doc_id": "gen02", "method": "llm", "kind": "relation", "type": "FORECASTS_FOR", "head": "ForecastModel_GRU1", "tail": "Substation_1", "evidence": "01.10.2026 (ПС №1) для підстанції №1 (доба, похибка 3,2 %)", "start": 1122}
+{"doc_id": "gen02", "method": "llm", "kind": "relation", "type": "FORECASTS_FOR", "head": "ForecastModel_GRU1", "tail": "Substation_4", "evidence": "03.10.2026 (ПС №4) для підстанції №4 (доба, похибка 2,9 %)", "start": 1182}
+{"doc_id": "gen02", "method": "llm", "kind": "relation", "type": "FORECASTS_FOR", "head": "ForecastModel_GRU1", "tail": "Substation_5", "evidence": "05.10.2026 (ПС №5) для підстанції №5 (доба, похибка 3,5 %)", "start": 1242}
+{"doc_id": "gen02", "method": "llm", "kind": "relation", "type": "FORECASTS_FOR", "head": "ForecastModel_GRU1", "tail": "Substation_2", "evidence": "08.10.2026 (ПС №2) для підстанції №2 (доба, похибка 3,1 %)", "start": 1302}
+{"doc_id": "gen02", "method": "llm", "kind": "entity", "type": "SUBSTATION", "canonical": "Substation_7", "text": "№7", "start": 1796}
+{"doc_id": "gen02", "method": "llm", "kind": "entity", "type": "SUBSTATION", "canonical": "Substation_10", "text": "№10", "start": 1893}
+{"doc_id": "gen02", "method": "llm", "kind": "entity", "type": "SUBSTATION", "canonical": "Substation_11", "text": "№11", "start": 2441}
+{"doc_id": "gen02", "method": "llm", "kind": "entity", "type": "SUBSTATION", "canonical": "Substation_12", "text": "№12", "start": 2504}
+{"doc_id": "gen02", "method": "llm", "kind": "entity", "type": "MODEL", "canonical": "ForecastModel_LSTM1", "text": "LSTM №1", "start": 1430}
+{"doc_id": "gen02", "method": "llm", "kind": "entity", "type": "MODEL", "canonical": "ForecastModel_LSTM2", "text": "LSTM №2", "start": 2006}
+{"doc_id": "gen02", "method": "llm", "kind": "entity", "type": "METHOD", "canonical": "LSTM", "text": "LSTM", "start": 1430}
+{"doc_id": "gen02", "method": "llm", "kind": "relation", "type": "INSTANCE_OF", "head": "ForecastModel_LSTM1", "tail": "LSTM", "evidence": "Модель LSTM №1 — нейромережева модель (машинне навчання) типу LSTM.", "start": 1439}
+{"doc_id": "gen02", "method": "llm", "kind": "relation", "type": "INSTANCE_OF", "head": "ForecastModel_LSTM2", "tail": "LSTM", "evidence": "Модель LSTM №2 — нейромережева модель (машинне навчання) типу LSTM.", "start": 2015}
+{"doc_id": "gen02", "method": "llm", "kind": "relation", "type": "FORECASTS_FOR", "head": "ForecastModel_LSTM1", "tail": "Substation_7", "evidence": "Згенеровані прогнози (3): 24.09.2026 для підстанції №7 (доба, похибка 4 %); 02.10.2026 (ПС №7) для підстанції №7 (доба, похибка 5 %); 07.10.2026 (ПС №10) для підстанції №10 (доба, похибка 4,4 %).", "start": 1744}
+{"doc_id": "gen02", "method": "llm", "kind": "relation", "type": "FORECASTS_FOR", "head": "ForecastModel_LSTM2", "tail": "Substation_5", "evidence": "Згенеровані прогнози (3): 10.01.2026 для підстанції №5 (доба, похибка 11 %); 04.10.2026 (ПС №11) для підстанції №11 (доба, похибка 12,3 %); 06.10.2026 (ПС №12) для підстанції №12 (доба, похибка 10,4 %).", "start": 2349}
+{"doc_id": "gen02", "method": "llm", "kind": "relation", "type": "FORECASTS_FOR", "head": "ForecastModel_LSTM1", "tail": "Substation_10", "evidence": "07.10.2026 (ПС №10) для підстанції №10 (доба, похибка 4,4 %)", "start": 1878}
+{"doc_id": "gen02", "method": "llm", "kind": "relation", "type": "FORECASTS_FOR", "head": "ForecastModel_LSTM2", "tail": "Substation_11", "evidence": "04.10.2026 (ПС №11) для підстанції №11 (доба, похибка 12,3 %)", "start": 2426}
+{"doc_id": "gen02", "method": "llm", "kind": "relation", "type": "FORECASTS_FOR", "head": "ForecastModel_LSTM2", "tail": "Substation_12", "evidence": "06.10.2026 (ПС №12) для підстанції №12 (доба, похибка 10,4 %)", "start": 2489}
+{"doc_id": "gen02", "method": "llm", "kind": "entity", "type": "SUBSTATION", "canonical": "Substation_6", "text": "№6", "start": 3038}
+{"doc_id": "gen02", "method": "llm", "kind": "entity", "type": "MODEL", "canonical": "ForecastModel_LSTM3", "text": "LSTM №3", "start": 2622}
+{"doc_id": "gen02", "method": "llm", "kind": "entity", "type": "MODEL", "canonical": "ForecastModel_VAR1", "text": "VAR №1", "start": 3214}
+{"doc_id": "gen02", "method": "llm", "kind": "entity", "type": "METHOD", "canonical": "VAR", "text": "VAR", "start": 3214}
+{"doc_id": "gen02", "method": "llm", "kind": "relation", "type": "INSTANCE_OF", "head": "ForecastModel_LSTM3", "tail": "LSTM", "evidence": "Модель LSTM №3 — нейромережева модель (машинне навчання) типу LSTM.", "start": 2631}
+{"doc_id": "gen02", "method": "llm", "kind": "relation", "type": "INSTANCE_OF", "head": "ForecastModel_VAR1", "tail": "VAR", "evidence": "Модель VAR №1 — статистична модель типу VAR.", "start": 3222}
+{"doc_id": "gen02", "method": "llm", "kind": "relation", "type": "FORECASTS_FOR", "head": "ForecastModel_LSTM3", "tail": "Substation_10", "evidence": "Згенеровані прогнози (3): 01.10.2026 (ПС №10) для підстанції №10 (доба, похибка 4,1 %)", "start": 2935}
+{"doc_id": "gen02", "method": "llm", "kind": "relation", "type": "FORECASTS_FOR", "head": "ForecastModel_VAR1", "tail": "Substation_12", "evidence": "Згенеровані прогнози (3): 25.09.2026 для підстанції №12 (доба, похибка 7,5 %)", "start": 3503}
+{"doc_id": "gen07", "method": "llm", "kind": "entity", "type": "SUBSTATION", "canonical": "Substation_7", "text": "№7", "start": 241}
+{"doc_id": "gen07", "method": "llm", "kind": "entity", "type": "SUBSTATION", "canonical": "Substation_11", "text": "№11", "start": 425}
+{"doc_id": "gen07", "method": "llm", "kind": "entity", "type": "SUBSTATION", "canonical": "Substation_12", "text": "№12", "start": 430}
+{"doc_id": "gen07", "method": "llm", "kind": "entity", "type": "SUBSTATION", "canonical": "Substation_5", "text": "№5", "start": 655}
+{"doc_id": "gen07", "method": "llm", "kind": "entity", "type": "SUBSTATION", "canonical": "Substation_1", "text": "№1", "start": 137}
+{"doc_id": "gen07", "method": "llm", "kind": "entity", "type": "SUBSTATION", "canonical": "Substation_10", "text": "№10", "start": 842}
+{"doc_id": "gen07", "method": "llm", "kind": "entity", "type": "SUBSTATION", "canonical": "Substation_2", "text": "№2", "start": 320}
+{"doc_id": "gen07", "method": "llm", "kind": "entity", "type": "SUBSTATION", "canonical": "Substation_3", "text": "№3", "start": 553}
+{"doc_id": "gen07", "method": "llm", "kind": "entity", "type": "SUBSTATION", "canonical": "Substation_8", "text": "№8", "start": 1086}
+{"doc_id": "gen07", "method": "llm", "kind": "entity", "type": "SUBSTATION", "canonical": "Substation_4", "text": "№4", "start": 734}
+{"doc_id": "gen07", "method": "llm", "kind": "entity", "type": "SUBSTATION", "canonical": "Substation_6", "text": "№6", "start": 1213}
+{"doc_id": "gen07", "method": "llm", "kind": "entity", "type": "DISPATCHER", "canonical": "Dispatcher_1", "text": "Диспетчер №1", "start": 127}
+{"doc_id": "gen07", "method": "llm", "kind": "entity", "type": "DISPATCHER", "canonical": "Dispatcher_2", "text": "Диспетчер №2", "start": 310}
+{"doc_id": "gen07", "method": "llm", "kind": "entity", "type": "DISPATCHER", "canonical": "Dispatcher_3", "text": "Диспетчер №3", "start": 543}
+{"doc_id": "gen07", "method": "llm", "kind": "entity", "type": "DISPATCHER", "canonical": "Dispatcher_4", "text": "Диспетчер №4", "start": 724}
+{"doc_id": "gen07", "method": "llm", "kind": "entity", "type": "DISPATCHER", "canonical": "Dispatcher_5", "text": "Диспетчер №5", "start": 962}
+{"doc_id": "gen07", "method": "llm", "kind": "entity", "type": "DISPATCHER", "canonical": "Dispatcher_6", "text": "Диспетчер №6", "start": 1203}
+{"doc_id": "gen07", "method": "llm", "kind": "relation", "type": "MANAGES", "head": "Dispatcher_1", "tail": "Substation_7", "evidence": "Зона відповідальності: підстанції №7", "start": 207}
+{"doc_id": "gen07", "method": "llm", "kind": "relation", "type": "MANAGES", "head": "Dispatcher_2", "tail": "Substation_11", "evidence": "Зона відповідальності: підстанції №11, №12", "start": 391}
+{"doc_id": "gen07", "method": "llm", "kind": "relation", "type": "MANAGES", "head": "Dispatcher_2", "tail": "Substation_12", "evidence": "Зона відповідальності: підстанції №11, №12", "start": 391}
+{"doc_id": "gen07", "method": "llm", "kind": "relation", "type": "MANAGES", "head": "Dispatcher_3", "tail": "Substation_5", "evidence": "Зона відповідальності: підстанції №5", "start": 621}
+{"doc_id": "gen07", "method": "llm", "kind": "relation", "type": "MANAGES", "head": "Dispatcher_4", "tail": "Substation_1", "evidence": "Зона відповідальності: підстанції №1, №10", "start": 804}
+{"doc_id": "gen07", "method": "llm", "kind": "relation", "type": "MANAGES", "head": "Dispatcher_4", "tail": "Substation_10", "evidence": "Зона відповідальності: підстанції №1, №10", "start": 804}
+{"doc_id": "gen07", "method": "llm", "kind": "relation", "type": "MANAGES", "head": "Dispatcher_5", "tail": "Substation_2", "evidence": "Зона відповідальності: підстанції №2, №3, №8", "start": 1044}
+{"doc_id": "gen07", "method": "llm", "kind": "relation", "type": "MANAGES", "head": "Dispatcher_5", "tail": "Substation_3", "evidence": "Зона відповідальності: підстанції №2, №3, №8", "start": 1044}
+{"doc_id": "gen07", "method": "llm", "kind": "relation", "type": "MANAGES", "head": "Dispatcher_5", "tail": "Substation_8", "evidence": "Зона відповідальності: підстанції №2, №3, №8", "start": 1044}
+{"doc_id": "gen07", "method": "llm", "kind": "relation", "type": "MANAGES", "head": "Dispatcher_6", "tail": "Substation_4", "evidence": "Зона відповідальності: підстанції №4, №6", "start": 1282}
+{"doc_id": "gen07", "method": "llm", "kind": "relation", "type": "MANAGES", "head": "Dispatcher_6", "tail": "Substation_6", "evidence": "Зона відповідальності: підстанції №4, №6", "start": 1282}
+{"doc_id": "kb02", "method": "llm", "kind": "entity", "type": "METHOD", "canonical": "ARIMA", "text": "ARIMA", "start": 1032}
+{"doc_id": "kb02", "method": "llm", "kind": "entity", "type": "MODEL", "canonical": "ForecastModel_ARIMA1", "text": "ARIMA №1", "start": 1338}
+{"doc_id": "kb02", "method": "llm", "kind": "relation", "type": "INSTANCE_OF", "head": "ForecastModel_ARIMA1", "tail": "ARIMA", "evidence": "У мережі працює модель ARIMA №1 (точність 81 %), що прогнозує тижневе споживання для підстанцій №3 і №8.", "start": 1315}
+{"doc_id": "kb02", "method": "llm", "kind": "relation", "type": "FORECASTS_FOR", "head": "ForecastModel_ARIMA1", "tail": "Substation_3", "evidence": "У мережі працює модель ARIMA №1 (точність 81 %), що прогнозує тижневе споживання для підстанцій №3 і №8.", "start": 1315}
+{"doc_id": "kb02", "method": "llm", "kind": "relation", "type": "FORECASTS_FOR", "head": "ForecastModel_ARIMA1", "tail": "Substation_8", "evidence": "У мережі працює модель ARIMA №1 (точність 81 %), що прогнозує тижневе споживання для підстанцій №3 і №8.", "start": 1315}
+{"doc_id": "kb02", "method": "llm", "kind": "entity", "type": "MODEL", "canonical": "ForecastModel_VAR1", "text": "VAR №1", "start": 1652}
+{"doc_id": "kb02", "method": "llm", "kind": "entity", "type": "METHOD", "canonical": "VAR", "text": "VAR", "start": 1424}
+{"doc_id": "kb02", "method": "llm", "kind": "entity", "type": "SUBSTATION", "canonical": "Substation_2", "text": "№2", "start": 1702}
+{"doc_id": "kb02", "method": "llm", "kind": "entity", "type": "SUBSTATION", "canonical": "Substation_11", "text": "№11", "start": 1706}
+{"doc_id": "kb02", "method": "llm", "kind": "entity", "type": "SUBSTATION", "canonical": "Substation_12", "text": "№12", "start": 1712}
+{"doc_id": "kb02", "method": "llm", "kind": "entity", "type": "MODEL", "canonical": "ForecastModel_LSTM1", "text": "моделі LSTM: №1", "start": 2257}
+{"doc_id": "kb02", "method": "llm", "kind": "entity", "type": "MODEL", "canonical": "ForecastModel_LSTM2", "text": "моделі LSTM: №1 (точність 92 %), №2", "start": 2257}
+{"doc_id": "kb02", "method": "llm", "kind": "entity", "type": "MODEL", "canonical": "ForecastModel_LSTM3", "text": "моделі LSTM: №1 (точність 92 %), №2 (78 %, позначена як застаріла) і №3", "start": 2257}
+{"doc_id": "kb02", "method": "llm", "kind": "entity", "type": "METHOD", "canonical": "LSTM", "text": "LSTM", "start": 2031}
+{"doc_id": "kb02", "method": "llm", "kind": "entity", "type": "MODEL", "canonical": "ForecastModel_GRU1", "text": "GRU №1", "start": 2573}
+{"doc_id": "kb02", "method": "llm", "kind": "entity", "type": "METHOD", "canonical": "GRU", "text": "GRU", "start": 2341}
+{"doc_id": "kb02", "method": "llm", "kind": "relation", "type": "FORECASTS_FOR", "head": "ForecastModel_VAR1", "tail": "Substation_2", "evidence": "Модель VAR №1 (точність 84,5 %) прогнозує для підстанцій №2, №11 і №12.", "start": 1645}
+{"doc_id": "kb02", "method": "llm", "kind": "relation", "type": "FORECASTS_FOR", "head": "ForecastModel_VAR1", "tail": "Substation_11", "evidence": "Модель VAR №1 (точність 84,5 %) прогнозує для підстанцій №2, №11 і №12.", "start": 1645}
+{"doc_id": "kb02", "method": "llm", "kind": "relation", "type": "FORECASTS_FOR", "head": "ForecastModel_VAR1", "tail": "Substation_12", "evidence": "Модель VAR №1 (точність 84,5 %) прогнозує для підстанцій №2, №11 і №12.", "start": 1645}
+{"doc_id": "kb02", "method": "llm", "kind": "relation", "type": "INSTANCE_OF", "head": "ForecastModel_LSTM1", "tail": "LSTM", "evidence": "Long Short-Term Memory — рекурентна мережа з механізмом вентилів (вхідний, вихідний, забування), що дозволяє запам'ятовувати довгі залежності без згасання градієнта (Hochreiter, Schmidhuber, 1997). У мережі працюють три моделі LSTM: №1 (точність 92 %), №2 (78 %, позначена як застаріла) і №3 (89 %).", "start": 2037}
+{"doc_id": "kb02", "method": "llm", "kind": "relation", "type": "INSTANCE_OF", "head": "ForecastModel_LSTM2", "tail": "LSTM", "evidence": "Long Short-Term Memory — рекурентна мережа з механізмом вентилів (вхідний, вихідний, забування), що дозволяє запам'ятовувати довгі залежності без згасання градієнта (Hochreiter, Schmidhuber, 1997). У мережі працюють три моделі LSTM: №1 (точність 92 %), №2 (78 %, позначена як застаріла) і №3 (89 %).", "start": 2037}
+{"doc_id": "kb02", "method": "llm", "kind": "relation", "type": "INSTANCE_OF", "head": "ForecastModel_LSTM3", "tail": "LSTM", "evidence": "Long Short-Term Memory — рекурентна мережа з механізмом вентилів (вхідний, вихідний, забування), що дозволяє запам'ятовувати довгі залежності без згасання градієнта (Hochreiter, Schmidhuber, 1997). У мережі працюють три моделі LSTM: №1 (точність 92 %), №2 (78 %, позначена як застаріла) і №3 (89 %).", "start": 2037}
+{"doc_id": "kb02", "method": "llm", "kind": "relation", "type": "INSTANCE_OF", "head": "ForecastModel_GRU1", "tail": "GRU", "evidence": "Gated Recurrent Unit — спрощений варіант рекурентної мережі з двома вентилями (оновлення і скидання), запропонований Cho та ін. у 2014 році. GRU має менше параметрів, ніж LSTM, і навчається швидше за порівнянної якості. Модель GRU №1 (точність 90,5 %) навчена 1 вересня 2026 року і є найновішою в мережі.", "start": 2346}
+{"doc_id": "kb05", "method": "llm", "kind": "entity", "type": "METER", "canonical": "Meter_AMI77410", "text": "AMI-77410", "start": 1604}
+{"doc_id": "kb05", "method": "llm", "kind": "entity", "type": "CONSUMER", "canonical": "Consumer_3310", "text": "комерційного споживача №3310", "start": 1614}
+{"doc_id": "kb05", "method": "llm", "kind": "entity", "type": "MODEL", "canonical": "ForecastModel_GRU1", "text": "GRU №1", "start": 2151}
+{"doc_id": "kb05", "method": "llm", "kind": "relation", "type": "HAS_METER", "head": "Consumer_3310", "tail": "Meter_AMI77410", "evidence": "Лічильник AMI-77410 комерційного споживача №3310", "start": 1594}
+{"doc_id": "kb05", "method": "llm", "kind": "entity", "type": "CONSUMER", "canonical": "Consumer_5038", "text": "промисловий споживач №5038", "start": 2901}
+{"doc_id": "kb05", "method": "llm", "kind": "entity", "type": "SUBSTATION", "canonical": "Substation_1", "text": "№1", "start": 2969}
+{"doc_id": "kb05", "method": "llm", "kind": "relation", "type": "CONNECTED_TO", "head": "Consumer_5038", "tail": "Substation_1", "evidence": "промисловий споживач №5038, підключений до магістральної підстанції №1", "start": 2901}
+{"doc_id": "kb06", "method": "llm", "kind": "entity", "type": "SUBSTATION", "canonical": "Substation_5", "text": "№5", "start": 983}
+{"doc_id": "kb06", "method": "llm", "kind": "entity", "type": "SUBSTATION", "canonical": "Substation_4", "text": "№4", "start": 996}
+{"doc_id": "kb06", "method": "llm", "kind": "entity", "type": "SUBSTATION", "canonical": "Substation_7", "text": "№7", "start": 1007}
+{"doc_id": "kb06", "method": "llm", "kind": "entity", "type": "SUBSTATION", "canonical": "Substation_11", "text": "№11", "start": 1019}
+{"doc_id": "kb06", "method": "llm", "kind": "entity", "type": "SUBSTATION", "canonical": "Substation_1", "text": "магістральній підстанції №1", "start": 1949}
+{"doc_id": "kb06", "method": "llm", "kind": "entity", "type": "SUBSTATION", "canonical": "Substation_9", "text": "Підстанція №9", "start": 2391}
+{"doc_id": "kb06", "method": "llm", "kind": "entity", "type": "REGION", "canonical": "Region_Zakarpattia", "text": "Закарпатській област", "start": 2407}
+{"doc_id": "kb06", "method": "llm", "kind": "relation", "type": "LOCATED_IN", "head": "Substation_9", "tail": "Region_Zakarpattia", "evidence": "Підстанція №9 у Закарпатській області не має призначеного диспетчера.", "start": 2391}
+{"doc_id": "kb06", "method": "llm", "kind": "relation", "type": "FEEDS", "head": "Substation_1", "tail": "Substation_4", "evidence": "аварія на магістральній підстанції №1 зачіпає підстанцію №4 на глибині 2, але №4 уже перевантажена (90 %), тож перерозподілити на неї навантаження не можна.", "start": 1939}
+{"doc_id": "kb12", "method": "llm", "kind": "entity", "type": "SUBSTATION", "canonical": "Substation_1", "text": "№1", "start": 239}
+{"doc_id": "kb12", "method": "llm", "kind": "entity", "type": "SUBSTATION", "canonical": "Substation_10", "text": "№10", "start": 290}
+{"doc_id": "kb12", "method": "llm", "kind": "entity", "type": "SUBSTATION", "canonical": "Substation_2", "text": "№2", "start": 295}
+{"doc_id": "kb12", "method": "llm", "kind": "entity", "type": "SUBSTATION", "canonical": "Substation_7", "text": "№7", "start": 300}
+{"doc_id": "kb12", "method": "llm", "kind": "entity", "type": "SUBSTATION", "canonical": "Substation_4", "text": "№4", "start": 320}
+{"doc_id": "kb12", "method": "llm", "kind": "entity", "type": "SUBSTATION", "canonical": "Substation_6", "text": "№6", "start": 331}
+{"doc_id": "kb12", "method": "llm", "kind": "entity", "type": "SUBSTATION", "canonical": "Substation_3", "text": "№3", "start": 345}
+{"doc_id": "kb12", "method": "llm", "kind": "entity", "type": "SUBSTATION", "canonical": "Substation_11", "text": "№11", "start": 356}
+{"doc_id": "kb12", "method": "llm", "kind": "entity", "type": "SUBSTATION", "canonical": "Substation_5", "text": "№5", "start": 371}
+{"doc_id": "kb12", "method": "llm", "kind": "entity", "type": "SUBSTATION", "canonical": "Substation_12", "text": "№12", "start": 382}
+{"doc_id": "kb12", "method": "llm", "kind": "entity", "type": "SUBSTATION", "canonical": "Substation_9", "text": "№9", "start": 437}
+{"doc_id": "kb12", "method": "llm", "kind": "entity", "type": "SUBSTATION", "canonical": "Substation_8", "text": "№8", "start": 447}
+{"doc_id": "kb12", "method": "llm", "kind": "relation", "type": "LOCATED_IN", "head": "Substation_1", "tail": "Region_Lviv", "evidence": "Магістральна підстанція №1 (Львівська область, 2500 кВт)", "start": 215}
+{"doc_id": "kb12", "method": "llm", "kind": "relation", "type": "FEEDS", "head": "Substation_1", "tail": "Substation_10", "evidence": "Магістральна підстанція №1 (Львівська область, 2500 кВт) живить підстанції №10, №2 і №7.", "start": 215}
+{"doc_id": "kb12", "method": "llm", "kind": "relation", "type": "FEEDS", "head": "Substation_1", "tail": "Substation_2", "evidence": "Магістральна підстанція №1 (Львівська область, 2500 кВт) живить підстанції №10, №2 і №7.", "start": 215}
+{"doc_id": "kb12", "method": "llm", "kind": "relation", "type": "FEEDS", "head": "Substation_1", "tail": "Substation_7", "evidence": "Магістральна підстанція №1 (Львівська область, 2500 кВт) живить підстанції №10, №2 і №7.", "start": 215}
+{"doc_id": "kb12", "method": "llm", "kind": "relation", "type": "FEEDS", "head": "Substation_10", "tail": "Substation_4", "evidence": "Далі №10 живить №4", "start": 304}
+{"doc_id": "kb12", "method": "llm", "kind": "relation", "type": "FEEDS", "head": "Substation_4", "tail": "Substation_6", "evidence": "а №4 — №6", "start": 324}
+{"doc_id": "kb12", "method": "llm", "kind": "relation", "type": "FEEDS", "head": "Substation_2", "tail": "Substation_3", "evidence": "№2 живить №3", "start": 335}
+{"doc_id": "kb12", "method": "llm", "kind": "relation", "type": "FEEDS", "head": "Substation_3", "tail": "Substation_11", "evidence": "а №3 — №11", "start": 349}
+{"doc_id": "kb12", "method": "llm", "kind": "relation", "type": "FEEDS", "head": "Substation_7", "tail": "Substation_5", "evidence": "№7 живить №5", "start": 361}
+{"doc_id": "kb12", "method": "llm", "kind": "relation", "type": "FEEDS", "head": "Substation_5", "tail": "Substation_12", "evidence": "а №5 — №12", "start": 375}
+{"doc_id": "kb12", "method": "llm", "kind": "relation", "type": "FEEDS", "head": "Substation_9", "tail": "Substation_8", "evidence": "Окремий ланцюг утворюють закарпатські підстанції: №9 живить №8.", "start": 387}
+{"doc_id": "kb12", "method": "llm", "kind": "relation", "type": "FEEDS", "head": "Substation_1", "tail": "Substation_4", "evidence": "На глибині 2 від підстанції №1 розташована вже перевантажена підстанція №4 (90 %)", "start": 2007}

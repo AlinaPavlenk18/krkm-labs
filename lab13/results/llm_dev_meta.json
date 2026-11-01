@@ -1,0 +1,43 @@
+{
+  "docs": 6,
+  "chunks": 15,
+  "calls": 31,
+  "retried_chunks": 9,
+  "prompt_tokens": 83851,
+  "completion_tokens": 14963,
+  "seconds": 2052.0,
+  "statements_raw": 353,
+  "unverified": 116,
+  "per_doc": {
+    "gen02": {
+      "seconds": 640.6,
+      "tokens": 21533
+    },
+    "gen07": {
+      "seconds": 339.8,
+      "tokens": 8845
+    },
+    "kb02": {
+      "seconds": 309.1,
+      "tokens": 21629
+    },
+    "kb05": {
+      "seconds": 356.0,
+      "tokens": 20628
+    },
+    "kb06": {
+      "seconds": 223.6,
+      "tokens": 19486
+    },
+    "kb12": {
+      "seconds": 183.0,
+      "tokens": 6693
+    }
+  },
+  "model": "qwen2.5:7b",
+  "prompt": "extract_v2",
+  "split": "dev",
+  "seconds_per_doc": 342.0,
+  "tokens_per_doc": 16469,
+  "unverified_share": 0.329
+}

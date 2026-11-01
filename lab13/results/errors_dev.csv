@@ -1,0 +1,40 @@
+﻿method;error;doc_id;kind;type;id_or_head;tail
+Б · LLM;fp;gen02;E;METRIC;MAPE;
+Б · LLM;fp;kb02;R;INSTANCE_OF;ForecastModel_ARIMA1;ARIMA
+Б · LLM;fp;kb02;R;INSTANCE_OF;ForecastModel_GRU1;GRU
+Б · LLM;fp;kb02;R;INSTANCE_OF;ForecastModel_VAR1;VAR
+Б · LLM;fp;kb05;R;INSTANCE_OF;ForecastModel_GRU1;GRU
+Б · LLM;fp;kb06;R;FEEDS;Substation_1;Substation_4
+Б · LLM;fp;kb12;E;REGION;Region_Zakarpattia;
+Б · LLM;fp;kb12;R;FEEDS;Substation_1;Substation_4
+Б · LLM;fn;gen02;E;METER;Meter_AMI27192;
+Б · LLM;fn;gen02;E;METER;Meter_AMI66829;
+Б · LLM;fn;gen02;E;METER;Meter_AMI77410;
+Б · LLM;fn;gen02;E;METHOD;VAR;
+Б · LLM;fn;gen02;E;WEATHER_FACTOR;TEMPERATURE;
+Б · LLM;fn;kb02;E;METHOD;SARIMA;
+Б · LLM;fn;kb02;E;SUBSTATION;Substation_11;
+Б · LLM;fn;kb02;E;SUBSTATION;Substation_12;
+Б · LLM;fn;kb02;E;SUBSTATION;Substation_2;
+Б · LLM;fn;kb02;E;WEATHER_FACTOR;TEMPERATURE;
+Б · LLM;fn;kb02;R;FORECASTS_FOR;ForecastModel_ARIMA1;Substation_3
+Б · LLM;fn;kb02;R;FORECASTS_FOR;ForecastModel_ARIMA1;Substation_8
+Б · LLM;fn;kb02;R;FORECASTS_FOR;ForecastModel_VAR1;Substation_11
+Б · LLM;fn;kb02;R;FORECASTS_FOR;ForecastModel_VAR1;Substation_12
+Б · LLM;fn;kb02;R;FORECASTS_FOR;ForecastModel_VAR1;Substation_2
+Б · LLM;fn;kb02;R;INSTANCE_OF;ForecastModel_LSTM1;LSTM
+Б · LLM;fn;kb02;R;INSTANCE_OF;ForecastModel_LSTM2;LSTM
+Б · LLM;fn;kb02;R;INSTANCE_OF;ForecastModel_LSTM3;LSTM
+Б · LLM;fn;kb12;E;CONSUMER;Consumer_1002;
+Б · LLM;fn;kb12;E;CONSUMER;Consumer_3310;
+Б · LLM;fn;kb12;E;CONSUMER;Consumer_4521;
+Б · LLM;fn;kb12;E;REGION;Region_Lviv;
+Б · LLM;fn;kb12;R;CONNECTED_TO;Consumer_1002;Substation_12
+Б · LLM;fn;kb12;R;CONNECTED_TO;Consumer_3310;Substation_5
+Б · LLM;fn;kb12;R;CONNECTED_TO;Consumer_4521;Substation_7
+Гібрид А+Б;fp;kb02;R;INSTANCE_OF;ForecastModel_ARIMA1;ARIMA
+Гібрид А+Б;fp;kb02;R;INSTANCE_OF;ForecastModel_GRU1;GRU
+Гібрид А+Б;fp;kb02;R;INSTANCE_OF;ForecastModel_VAR1;VAR
+Гібрид А+Б;fp;kb05;R;INSTANCE_OF;ForecastModel_GRU1;GRU
+Гібрид А+Б;fp;kb06;R;FEEDS;Substation_1;Substation_4
+Гібрид А+Б;fp;kb12;R;FEEDS;Substation_1;Substation_4
