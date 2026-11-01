@@ -1,0 +1,34 @@
+digraph star {
+  graph [rankdir=LR, fontname="DejaVu Sans", nodesep=0.35, ranksep=0.9, dpi=150];
+  node  [shape=plain, fontname="DejaVu Sans", fontsize=10];
+  edge  [arrowhead=none, color="#555555"];
+  fact [label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="3" bgcolor="#FFF2CC">
+    <tr><td bgcolor="#F4B183"><b>fact_consumption</b></td></tr>
+    <tr><td align="left">зерно: лічильник × дата × година</td></tr>
+    <tr><td align="left">date_key FK · hour_key FK</td></tr>
+    <tr><td align="left">consumer_key FK · class_key FK</td></tr>
+    <tr><td align="left">substation_key FK · meter_id (DD)</td></tr>
+    <tr><td align="left">energy_kwh (A) · register_kwh (SA)</td></tr>
+    <tr><td align="left">voltage_v (NA) · temperature_c (NA)</td></tr></table>>];
+  d [label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="3" bgcolor="#DEEBF7">
+    <tr><td bgcolor="#9DC3E6"><b>dim_date</b></td></tr>
+    <tr><td align="left">date_key PK</td></tr><tr><td align="left">рік → квартал → місяць → тиждень → день</td></tr>
+    <tr><td align="left">day_of_week, is_weekend</td></tr></table>>];
+  h [label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="3" bgcolor="#DEEBF7">
+    <tr><td bgcolor="#9DC3E6"><b>dim_hour</b></td></tr>
+    <tr><td align="left">hour_key PK</td></tr><tr><td align="left">частина доби → година; is_peak</td></tr></table>>];
+  k [label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="3" bgcolor="#E2F0D9">
+    <tr><td bgcolor="#A9D18E"><b>dim_consumer_class (таксономія)</b></td></tr>
+    <tr><td align="left">class_key PK · class_iri UNIQUE</td></tr>
+    <tr><td align="left">гілка «Споживач» таксономії ЛР4:</td></tr><tr><td align="left">предм. область → категорія → клас → підклас</td></tr></table>>];
+  c [label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="3" bgcolor="#DEEBF7">
+    <tr><td bgcolor="#9DC3E6"><b>dim_consumer (SCD 2)</b></td></tr>
+    <tr><td align="left">consumer_key PK · consumer_id</td></tr>
+    <tr><td align="left">contract_limit_kw · class_key</td></tr>
+    <tr><td align="left">valid_from · valid_to · is_current</td></tr></table>>];
+  s [label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="3" bgcolor="#DEEBF7">
+    <tr><td bgcolor="#9DC3E6"><b>dim_substation</b></td></tr>
+    <tr><td align="left">substation_key PK</td></tr><tr><td align="left">область → підстанція</td></tr>
+    <tr><td align="left">nominal_capacity_kw</td></tr></table>>];
+  d -> fact; h -> fact; fact -> k; fact -> c; fact -> s;
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "check": "Немає «сиріт»: факт → dim_date",
+    "type": "orphans",
+    "value": 0.0,
+    "passed": true
+  },
+  {
+    "check": "Немає «сиріт»: факт → dim_hour",
+    "type": "orphans",
+    "value": 0.0,
+    "passed": true
+  },
+  {
+    "check": "Немає «сиріт»: факт → dim_consumer",
+    "type": "orphans",
+    "value": 0.0,
+    "passed": true
+  },
+  {
+    "check": "Немає «сиріт»: факт → dim_consumer_class",
+    "type": "orphans",
+    "value": 0.0,
+    "passed": true
+  },
+  {
+    "check": "Немає «сиріт»: факт → dim_substation",
+    "type": "orphans",
+    "value": 0.0,
+    "passed": true
+  },
+  {
+    "check": "Без втрат під час T: рядків факту = рядків staging",
+    "type": "completeness",
+    "value": 0.0,
+    "passed": true
+  },
+  {
+    "check": "NOT NULL: міри й ключі факту",
+    "type": "not_null",
+    "value": 0.0,
+    "passed": true
+  },
+  {
+    "check": "Унікальність зерна (meter_id, date_key, hour_key)",
+    "type": "unique",
+    "value": 0.0,
+    "passed": true
+  },
+  {
+    "check": "Діапазон: energy_kwh ≥ 0",
+    "type": "range",
+    "value": 0.0,
+    "passed": true
+  },
+  {
+    "check": "Діапазон: напруга 207–253 В (230 В ± 10 %)",
+    "type": "range",
+    "value": 0.0,
+    "passed": true
+  },
+  {
+    "check": "Діапазон: температура −40…+40 °C",
+    "type": "range",
+    "value": 0.0,
+    "passed": true
+  },
+  {
+    "check": "Регістр лічильника не спадає в часі",
+    "type": "monotonic",
+    "value": 0.0,
+    "passed": true
+  },
+  {
+    "check": "SCD 2: одна поточна версія на споживача, без перекриттів",
+    "type": "scd2",
+    "value": 0.0,
+    "passed": true
+  },
+  {
+    "check": "Повнота годин, % від очікуваних (попередження, поріг 95 %)",
+    "type": "warn",
+    "value": 97.3,
+    "passed": true
+  }
+]

@@ -1,0 +1,11 @@
+id,name,temperature,cloudCover,source
+WeatherCondition_20260110,Погода 10.01.2026,-12.0,суцільна,lab08:data.ttl
+WeatherCondition_20260111,Погода 11.01.2026,-15.5,суцільна,synthetic:gen_v1(seed=42)
+WeatherCondition_20260112,Погода 12.01.2026,-9.0,мінлива,synthetic:gen_v1(seed=42)
+WeatherCondition_20260924,Погода 24.09.2026,-5.0,ясно,lab08:data.ttl
+WeatherCondition_20260925,Погода 25.09.2026,-3.0,мінлива,lab08:data.ttl
+WeatherCondition_20260926,Погода 26.09.2026,4.0,ясно,synthetic:gen_v1(seed=42)
+WeatherCondition_20260927,Погода 27.09.2026,1.5,мінлива,synthetic:gen_v1(seed=42)
+WeatherCondition_20260928,Погода 28.09.2026,-1.0,суцільна,synthetic:gen_v1(seed=42)
+WeatherCondition_20260929,Погода 29.09.2026,2.0,мінлива,synthetic:gen_v1(seed=42)
+WeatherCondition_20260930,Погода 30.09.2026,6.5,ясно,synthetic:gen_v1(seed=42)

@@ -1,0 +1,109 @@
+version: 1.0.0
+model: "fact_consumption (зерно — лічильник × дата × година)"
+
+# Виміри, за якими дозволено групувати й фільтрувати (назва → SQL-вираз)
+dimensions:
+  class:        k.class_label          # підклас таксономії
+  class_iri:    k.class_iri
+  class_parent: k.parent_label         # клас таксономії
+  region:       s.region_name
+  substation:   s.substation_name
+  consumer:     c.consumer_id
+  date:         d.date
+  month:        d.month_name
+  is_weekend:   d.is_weekend
+  part_of_day:  h.part_of_day
+  hour:         h.hour_key
+  is_peak:      h.is_peak
+
+metrics:
+  - name: total_energy
+    label: Спожита енергія
+    definition: Сума погодинної енергії за всіма показаннями в межах вибраних вимірів.
+    type: simple
+    formula: sum(f.energy_kwh)
+    sql: sum(f.energy_kwh)
+    unit: кВт·год
+    owner: Павленко А. С. (аналітик даних Domain Knowledge Hub)
+    sources: [fact_consumption]
+    constraints: Адитивна за всіма вимірами. Пропущені години несправних лічильників не доповнюються.
+    review_date: 2026-10-31
+    status: approved
+
+  - name: peak_load
+    label: Пікове годинне навантаження
+    definition: Максимум погодинної сумарної енергії групи (кВт·год за 1 год = середня потужність, кВт).
+    type: hourly
+    formula: max(load_kw), де load_kw = sum(f.energy_kwh) за (вимір групи, дата, година)
+    sql: max(load_kw)
+    unit: кВт
+    owner: Павленко А. С. (аналітик даних Domain Knowledge Hub)
+    sources: [fact_consumption, dim_date, dim_hour]
+    constraints: Неадитивна — пік групи не дорівнює сумі піків. Не застосовувати max(energy_kwh) окремого показання.
+    review_date: 2026-10-31
+    status: approved
+
+  - name: avg_load
+    label: Середнє годинне навантаження
+    definition: Середнє погодинної сумарної енергії групи за години, у яких були показання.
+    type: hourly
+    formula: avg(load_kw)
+    sql: avg(load_kw)
+    unit: кВт
+    owner: Павленко А. С. (аналітик даних Domain Knowledge Hub)
+    sources: [fact_consumption, dim_date, dim_hour]
+    constraints: Неадитивна. Години без жодного показання не враховуються.
+    review_date: 2026-10-31
+    status: approved
+
+  - name: load_factor
+    label: Коефіцієнт навантаження
+    definition: Відношення середнього годинного навантаження до пікового.
+    type: hourly
+    formula: avg_load / peak_load
+    sql: avg(load_kw) / max(load_kw)
+    unit: частка (0–1)
+    owner: Павленко А. С. (аналітик даних Domain Knowledge Hub)
+    sources: [fact_consumption]
+    constraints: Неадитивна; обчислюється лише з базових метрик, не усереднюється.
+    review_date: 2026-10-31
+    status: approved
+
+  - name: over_limit_hours
+    label: Години перевищення договірного ліміту
+    definition: Кількість годин, у яких погодинна енергія споживача (сума за його лічильниками) перевищує ліміт версії договору, чинної на дату показання.
+    type: hourly_consumer
+    formula: count(*) FILTER (WHERE load_kw > contract_limit_kw) за (споживач, дата, година)
+    sql: count(*) FILTER (WHERE load_kw > contract_limit_kw)
+    unit: год
+    owner: Павленко А. С. (аналітик даних Domain Knowledge Hub)
+    sources: [fact_consumption, dim_consumer (SCD 2)]
+    constraints: Ліміт береться з версії SCD 2 за consumer_key факту, а не з поточної версії.
+    review_date: 2026-10-31
+    status: approved
+
+  - name: peak_share
+    label: Частка енергії в пікові години
+    definition: Частка енергії, спожитої в пікові години (08–10, 18–21), від усієї енергії групи.
+    type: simple
+    formula: 100 * sum(f.energy_kwh) FILTER (WHERE h.is_peak) / sum(f.energy_kwh)
+    sql: 100 * sum(f.energy_kwh) FILTER (WHERE h.is_peak) / sum(f.energy_kwh)
+    unit: '%'
+    owner: Павленко А. С. (аналітик даних Domain Knowledge Hub)
+    sources: [fact_consumption, dim_hour]
+    constraints: Неадитивна (відношення). Визначення пікових годин — dim_hour.is_peak.
+    review_date: 2026-10-31
+    status: approved
+
+  - name: energy_per_meter_day
+    label: Добова енергія на активний лічильник
+    definition: Спожита енергія, поділена на кількість пар (лічильник, дата) з показаннями.
+    type: simple
+    formula: sum(f.energy_kwh) / count(DISTINCT (f.meter_id, f.date_key))
+    sql: sum(f.energy_kwh) / count(DISTINCT (f.meter_id, f.date_key))
+    unit: кВт·год/добу
+    owner: Павленко А. С. (аналітик даних Domain Knowledge Hub)
+    sources: [fact_consumption]
+    constraints: Нормалізує вибуття несправних лічильників; неадитивна.
+    review_date: 2026-10-31
+    status: draft

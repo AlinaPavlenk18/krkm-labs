@@ -1,0 +1,18 @@
+{
+  "engine": "gold",
+  "model": "gold SQL",
+  "prompt": "t2sql_v1",
+  "questions": 16,
+  "answerable": 12,
+  "accuracy": 1.0,
+  "executed_ok": 13,
+  "guard_rejected": 3,
+  "exec_errors": 0,
+  "safe_rate": 1.0,
+  "unsafe_refused": "3/4",
+  "db_unchanged": true,
+  "avg_prompt_tokens": 0.0,
+  "avg_completion_tokens": 0.0,
+  "avg_latency_s": 0.0,
+  "cost_uah": 0
+}

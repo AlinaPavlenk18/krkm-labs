@@ -1,0 +1,17 @@
+{
+  "dataset_version": "1.0.0",
+  "built_at": "2026-10-31T10:00:56",
+  "generator": "etl/generate.py (seed 42, період 2026-01-01…2026-01-31)",
+  "source": "граф ЛР9 (data/source/*.csv) + синтетичні показання",
+  "duckdb": "2.0.0",
+  "row_counts": {
+    "dim_date": 31,
+    "dim_hour": 24,
+    "dim_consumer_class": 4,
+    "dim_substation": 12,
+    "dim_consumer": 42,
+    "fact_consumption": 31128
+  },
+  "sum_energy_kwh": 1926226.949,
+  "quality_passed": true
+}

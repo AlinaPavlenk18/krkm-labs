@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+data/warehouse.duckdb
+data/warehouse.duckdb.wal
+data/raw/
+set_env.ps1
