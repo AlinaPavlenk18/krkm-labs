@@ -1,0 +1,21 @@
+{
+  "method": "llm",
+  "model": "qwen2.5:7b",
+  "prompt": "relations_v1",
+  "options": {
+    "temperature": 0,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "sentences": 50,
+  "calls": 66,
+  "retried_sentences": 16,
+  "rejected_by_validator": 57,
+  "prompt_tokens": 72613,
+  "completion_tokens": 6170,
+  "seconds": 934.3,
+  "seconds_per_sentence": 18.69,
+  "tokens_per_sentence": 1576,
+  "cost_uah": 0
+}

@@ -1,0 +1,50 @@
+{"id": "s01", "triples": [], "seconds": 0.0014}
+{"id": "s02", "triples": [["ForecastModel_ARIMA1", "FORECASTS_FOR", "Substation_3"], ["ForecastModel_ARIMA1", "FORECASTS_FOR", "Substation_8"]], "seconds": 0.0009}
+{"id": "s03", "triples": [["ForecastModel_VAR1", "FORECASTS_FOR", "Substation_11"], ["ForecastModel_VAR1", "FORECASTS_FOR", "Substation_12"], ["ForecastModel_VAR1", "FORECASTS_FOR", "Substation_2"]], "seconds": 0.0006}
+{"id": "s04", "triples": [["ForecastModel_LSTM1", "INSTANCE_OF", "LSTM"], ["ForecastModel_LSTM2", "INSTANCE_OF", "LSTM"], ["ForecastModel_LSTM3", "INSTANCE_OF", "LSTM"]], "seconds": 0.0006}
+{"id": "s05", "triples": [], "seconds": 0.0004}
+{"id": "s06", "triples": [], "seconds": 0.0004}
+{"id": "s07", "triples": [], "seconds": 0.0006}
+{"id": "s08", "triples": [], "seconds": 0.0009}
+{"id": "s09", "triples": [["Consumer_3310", "HAS_METER", "Meter_AMI77410"]], "seconds": 0.0009}
+{"id": "s10", "triples": [["Consumer_5038", "CONNECTED_TO", "Substation_1"]], "seconds": 0.0005}
+{"id": "s11", "triples": [], "seconds": 0.0006}
+{"id": "s12", "triples": [], "seconds": 0.0006}
+{"id": "s13", "triples": [["Substation_9", "LOCATED_IN", "Region_Zakarpattia"]], "seconds": 0.0004}
+{"id": "s14", "triples": [], "seconds": 0.0007}
+{"id": "s15", "triples": [["ForecastModel_LSTM2", "FORECASTS_FOR", "Substation_11"]], "seconds": 0.0005}
+{"id": "s16", "triples": [["Substation_9", "LOCATED_IN", "Region_Zakarpattia"]], "seconds": 0.0003}
+{"id": "s17", "triples": [["Substation_1", "FEEDS", "Substation_10"], ["Substation_1", "FEEDS", "Substation_2"], ["Substation_1", "FEEDS", "Substation_7"], ["Substation_1", "LOCATED_IN", "Region_Lviv"]], "seconds": 0.0006}
+{"id": "s18", "triples": [["Substation_10", "FEEDS", "Substation_4"], ["Substation_2", "FEEDS", "Substation_3"], ["Substation_3", "FEEDS", "Substation_11"], ["Substation_4", "FEEDS", "Substation_6"], ["Substation_5", "FEEDS", "Substation_12"], ["Substation_7", "FEEDS", "Substation_5"]], "seconds": 0.0009}
+{"id": "s19", "triples": [["Substation_9", "FEEDS", "Substation_8"]], "seconds": 0.0003}
+{"id": "s20", "triples": [], "seconds": 0.0004}
+{"id": "s21", "triples": [], "seconds": 0.0004}
+{"id": "s22", "triples": [["Consumer_1002", "CONNECTED_TO", "Substation_12"], ["Consumer_3310", "CONNECTED_TO", "Substation_5"], ["Consumer_4521", "CONNECTED_TO", "Substation_7"]], "seconds": 0.0008}
+{"id": "s23", "triples": [], "seconds": 0.0006}
+{"id": "s24", "triples": [["Consumer_3310", "HAS_METER", "Meter_AMI77410"]], "seconds": 0.0005}
+{"id": "s25", "triples": [["Substation_5", "LOCATED_IN", "Region_Volyn"]], "seconds": 0.0004}
+{"id": "s26", "triples": [["Substation_4", "LOCATED_IN", "Region_Ternopil"]], "seconds": 0.0004}
+{"id": "s27", "triples": [], "seconds": 0.0003}
+{"id": "s28", "triples": [], "seconds": 0.0006}
+{"id": "s29", "triples": [], "seconds": 0.0005}
+{"id": "s30", "triples": [["ForecastModel_LSTM2", "FORECASTS_FOR", "Substation_12"]], "seconds": 0.0004}
+{"id": "s31", "triples": [], "seconds": 0.0008}
+{"id": "s32", "triples": [], "seconds": 0.0007}
+{"id": "s33", "triples": [], "seconds": 0.0004}
+{"id": "s34", "triples": [], "seconds": 0.0003}
+{"id": "s35", "triples": [], "seconds": 0.0002}
+{"id": "s36", "triples": [], "seconds": 0.0002}
+{"id": "s37", "triples": [], "seconds": 0.0003}
+{"id": "s38", "triples": [], "seconds": 0.0003}
+{"id": "s39", "triples": [], "seconds": 0.0004}
+{"id": "s40", "triples": [], "seconds": 0.0003}
+{"id": "s41", "triples": [], "seconds": 0.0004}
+{"id": "s42", "triples": [], "seconds": 0.0003}
+{"id": "s43", "triples": [], "seconds": 0.0005}
+{"id": "s44", "triples": [], "seconds": 0.0003}
+{"id": "s45", "triples": [], "seconds": 0.0003}
+{"id": "s46", "triples": [["ForecastModel_LSTM2", "FORECASTS_FOR", "Substation_5"]], "seconds": 0.0004}
+{"id": "s47", "triples": [["ForecastModel_LSTM3", "FORECASTS_FOR", "Substation_10"]], "seconds": 0.0003}
+{"id": "s48", "triples": [], "seconds": 0.0002}
+{"id": "s49", "triples": [], "seconds": 0.0002}
+{"id": "s50", "triples": [], "seconds": 0.0003}

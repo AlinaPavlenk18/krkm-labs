@@ -1,0 +1,50 @@
+{"id": "s01", "triples": [], "seconds": 90.65, "attempts": 2}
+{"id": "s02", "triples": [["ForecastModel_ARIMA1", "FORECASTS_FOR", "Substation_3"], ["ForecastModel_ARIMA1", "FORECASTS_FOR", "Substation_8"]], "seconds": 17.99, "attempts": 1}
+{"id": "s03", "triples": [["ForecastModel_VAR1", "FORECASTS_FOR", "Substation_2"]], "seconds": 9.44, "attempts": 1}
+{"id": "s04", "triples": [["ForecastModel_LSTM1", "INSTANCE_OF", "LSTM"], ["ForecastModel_LSTM2", "INSTANCE_OF", "LSTM"], ["ForecastModel_LSTM3", "INSTANCE_OF", "LSTM"]], "seconds": 29.97, "attempts": 1}
+{"id": "s05", "triples": [], "seconds": 3.57, "attempts": 1}
+{"id": "s06", "triples": [["ForecastModel_GRU1", "INSTANCE_OF", "GRU"]], "seconds": 13.5, "attempts": 1}
+{"id": "s07", "triples": [], "seconds": 3.99, "attempts": 1}
+{"id": "s08", "triples": [], "seconds": 4.45, "attempts": 1}
+{"id": "s09", "triples": [], "seconds": 32.71, "attempts": 2}
+{"id": "s10", "triples": [["Consumer_5038", "CONNECTED_TO", "Substation_1"]], "seconds": 38.84, "attempts": 2}
+{"id": "s11", "triples": [], "seconds": 5.18, "attempts": 1}
+{"id": "s12", "triples": [], "seconds": 4.71, "attempts": 1}
+{"id": "s13", "triples": [], "seconds": 3.77, "attempts": 1}
+{"id": "s14", "triples": [], "seconds": 31.23, "attempts": 2}
+{"id": "s15", "triples": [["ForecastModel_LSTM2", "FORECASTS_FOR", "Substation_11"]], "seconds": 8.79, "attempts": 1}
+{"id": "s16", "triples": [["Substation_9", "LOCATED_IN", "Region_Zakarpattia"]], "seconds": 9.06, "attempts": 1}
+{"id": "s17", "triples": [["Substation_1", "FEEDS", "Substation_10"], ["Substation_1", "LOCATED_IN", "Region_Lviv"]], "seconds": 49.6, "attempts": 2}
+{"id": "s18", "triples": [["Substation_10", "FEEDS", "Substation_4"], ["Substation_2", "FEEDS", "Substation_3"], ["Substation_3", "FEEDS", "Substation_11"], ["Substation_4", "FEEDS", "Substation_6"], ["Substation_5", "FEEDS", "Substation_12"], ["Substation_7", "FEEDS", "Substation_5"]], "seconds": 29.42, "attempts": 1}
+{"id": "s19", "triples": [["Substation_9", "FEEDS", "Substation_8"]], "seconds": 7.17, "attempts": 1}
+{"id": "s20", "triples": [], "seconds": 35.92, "attempts": 2}
+{"id": "s21", "triples": [], "seconds": 3.67, "attempts": 1}
+{"id": "s22", "triples": [["Consumer_1002", "CONNECTED_TO", "Substation_12"], ["Consumer_3310", "CONNECTED_TO", "Substation_5"], ["Consumer_4521", "CONNECTED_TO", "Substation_7"]], "seconds": 22.93, "attempts": 1}
+{"id": "s23", "triples": [["Substation_1", "FEEDS", "Substation_4"]], "seconds": 12.89, "attempts": 1}
+{"id": "s24", "triples": [], "seconds": 38.86, "attempts": 2}
+{"id": "s25", "triples": [], "seconds": 3.97, "attempts": 1}
+{"id": "s26", "triples": [], "seconds": 3.61, "attempts": 1}
+{"id": "s27", "triples": [["Substation_10", "FEEDS", "Substation_1"]], "seconds": 27.26, "attempts": 2}
+{"id": "s28", "triples": [["Dispatcher_5", "MANAGES", "Substation_9"]], "seconds": 10.02, "attempts": 1}
+{"id": "s29", "triples": [["ForecastModel_VAR1", "INSTANCE_OF", "VAR"]], "seconds": 23.64, "attempts": 2}
+{"id": "s30", "triples": [["ForecastModel_LSTM2", "FORECASTS_FOR", "Substation_12"]], "seconds": 11.16, "attempts": 1}
+{"id": "s31", "triples": [], "seconds": 69.66, "attempts": 2}
+{"id": "s32", "triples": [["Substation_10", "FEEDS", "Substation_4"], ["Substation_2", "FEEDS", "Substation_3"], ["Substation_3", "FEEDS", "Substation_11"], ["Substation_4", "FEEDS", "Substation_6"], ["Substation_5", "FEEDS", "Substation_12"], ["Substation_7", "FEEDS", "Substation_5"]], "seconds": 34.25, "attempts": 1}
+{"id": "s33", "triples": [], "seconds": 22.46, "attempts": 2}
+{"id": "s34", "triples": [], "seconds": 3.62, "attempts": 1}
+{"id": "s35", "triples": [["Substation_1", "LOCATED_IN", "Region_Lviv"]], "seconds": 10.7, "attempts": 1}
+{"id": "s36", "triples": [["Substation_5", "LOCATED_IN", "Region_Volyn"]], "seconds": 9.18, "attempts": 1}
+{"id": "s37", "triples": [["Substation_9", "LOCATED_IN", "Region_Zakarpattia"]], "seconds": 9.63, "attempts": 1}
+{"id": "s38", "triples": [], "seconds": 41.75, "attempts": 2}
+{"id": "s39", "triples": [], "seconds": 19.31, "attempts": 2}
+{"id": "s40", "triples": [["ForecastModel_ARIMA1", "INSTANCE_OF", "ARIMA"]], "seconds": 8.43, "attempts": 1}
+{"id": "s41", "triples": [["ForecastModel_LSTM2", "INSTANCE_OF", "LSTM"]], "seconds": 9.47, "attempts": 1}
+{"id": "s42", "triples": [["ForecastModel_VAR1", "INSTANCE_OF", "VAR"]], "seconds": 7.72, "attempts": 1}
+{"id": "s43", "triples": [], "seconds": 3.7, "attempts": 1}
+{"id": "s44", "triples": [["Consumer_5004", "CONNECTED_TO", "Substation_6"]], "seconds": 10.51, "attempts": 1}
+{"id": "s45", "triples": [], "seconds": 19.51, "attempts": 2}
+{"id": "s46", "triples": [["ForecastModel_LSTM2", "FORECASTS_FOR", "Substation_5"], ["ForecastModel_LSTM2", "INSTANCE_OF", "LSTM"]], "seconds": 30.94, "attempts": 2}
+{"id": "s47", "triples": [["ForecastModel_LSTM3", "FORECASTS_FOR", "Substation_10"]], "seconds": 25.52, "attempts": 2}
+{"id": "s48", "triples": [], "seconds": 3.07, "attempts": 1}
+{"id": "s49", "triples": [], "seconds": 3.19, "attempts": 1}
+{"id": "s50", "triples": [], "seconds": 3.73, "attempts": 1}

@@ -1,0 +1,11 @@
+{
+  "method": "rules",
+  "version": "rules_v2",
+  "spacy": "3.8.16",
+  "sentences": 50,
+  "seconds": 0.025,
+  "seconds_per_sentence": 0.0005,
+  "load_seconds": 0.08,
+  "tokens": 0,
+  "cost_uah": 0
+}

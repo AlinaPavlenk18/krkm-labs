@@ -1,0 +1,11 @@
+{
+  "method": "spacy",
+  "model": "uk_core_news_sm-3.8.0",
+  "spacy": "3.8.16",
+  "sentences": 50,
+  "seconds": 0.224,
+  "seconds_per_sentence": 0.0045,
+  "load_seconds": 0.93,
+  "tokens": 0,
+  "cost_uah": 0
+}

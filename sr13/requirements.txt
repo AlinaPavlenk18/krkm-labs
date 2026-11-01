@@ -1,0 +1,5 @@
+spacy>=3.8.9
+pymorphy3>=2.0
+pymorphy3-dicts-uk>=2.4
+requests>=2.32
+# модель: python -m spacy download uk_core_news_sm   (перевірено uk_core_news_sm 3.8.0)
