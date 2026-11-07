@@ -1,0 +1,11 @@
+id,claim,type,source,verification_level,status,comment
+S01,Графовий підхід значуще кращий за контентний,гіпотеза,results/sr16_results.json,V4,rejected,"seed 42: nDCG@10 0,101 проти 0,084, але інтервали перекриваються; за 5 повторами 0,084 ± 0,014 проти 0,085 ± 0,007"
+S02,Персоналізовані підходи кращі за популярність,гіпотеза,results/sr16_results.json,V4,verified,"nDCG@10 0,084–0,085 проти 0,053 (5 повторів)"
+S03,Контентний підхід найкращий для нових документів,гіпотеза,results/sr16_results.json (cold_items),V4,rejected,"cold-item recall@10: content 0,006, graph 0,135"
+S04,Уже 1–3 перших перегляди дають персоналізованим підходам перевагу над популярністю,гіпотеза,results/sr16_results.json (cold_users),V4,rejected,"k = 1: popularity 0,102, graph 0,044, content 0,047; k = 3: 0,100 / 0,044 / 0,012"
+S05,"Профіль онбордингу (роль, зона) кращий за перші перегляди",гіпотеза,results/sr16_results.json (cold_users),V4,verified,"graph + профіль nDCG@10 0,188 проти ≤ 0,105"
+S06,"MMR (λ = 0,5) підвищує різноманіття, втрачаючи менше 5 % nDCG@10",гіпотеза,results/sr16_results.json (mmr_graph),V4,verified,"nDCG@10 0,1011 → 0,1001 (−1 %); ILD 0,866 → 0,930; документів у top-10 5,5 → 7,5"
+S07,Популярність концентрує експозицію на кількох розділах,гіпотеза,results/sr16_results.json,V4,verified,"Gini 0,95; середній перцентиль популярності рекомендованого 0,98; coverage 0,064"
+S08,Контентний підхід замикає користувача в кількох документах,гіпотеза,results/sr16_results.json,V4,verified,"2,9 різних документа в top-10 проти 5,5 у графа; ILD 0,74 проти 0,87"
+S09,Embeddings e5 (ЛР16) кращі за TF-IDF,гіпотеза,lab16/results/eval.json; results/sr16_results.json,V4,rejected,"nDCG@10 (5 повторів): e5 0,075 ± 0,020, TF-IDF 0,085 ± 0,007"
+S10,Синтетичний журнал завищує абсолютні значення метрик,гіпотеза,lab16/docs/reco_design.md,V1,pending,без реальних журналів не перевірити

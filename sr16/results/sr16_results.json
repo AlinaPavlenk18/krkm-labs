@@ -1,0 +1,295 @@
+{
+ "seed42": {
+  "seed": 42,
+  "eval_users": 60,
+  "train": 1040,
+  "metrics": {
+   "popularity": {
+    "precision@5": 0.0433,
+    "nDCG@10": 0.0499,
+    "coverage": 0.0641,
+    "novelty": 6.0465,
+    "ILD": 0.8947,
+    "docs_in_top10": 4.4833,
+    "pop_percentile": 0.9776,
+    "gini": 0.9515
+   },
+   "content": {
+    "precision@5": 0.0767,
+    "nDCG@10": 0.0843,
+    "coverage": 0.4306,
+    "novelty": 7.9757,
+    "ILD": 0.7428,
+    "docs_in_top10": 2.8833,
+    "pop_percentile": 0.7528,
+    "gini": 0.7793
+   },
+   "graph": {
+    "precision@5": 0.1,
+    "nDCG@10": 0.1011,
+    "coverage": 0.5196,
+    "novelty": 7.9444,
+    "ILD": 0.8657,
+    "docs_in_top10": 5.5167,
+    "pop_percentile": 0.753,
+    "gini": 0.7791
+   }
+  },
+  "ci95": {
+   "popularity": {
+    "precision@5": [
+     0.02,
+     0.07
+    ],
+    "nDCG@10": [
+     0.0264,
+     0.0772
+    ]
+   },
+   "content": {
+    "precision@5": [
+     0.0467,
+     0.11
+    ],
+    "nDCG@10": [
+     0.0558,
+     0.1165
+    ]
+   },
+   "graph": {
+    "precision@5": [
+     0.0667,
+     0.1367
+    ],
+    "nDCG@10": [
+     0.0704,
+     0.1336
+    ]
+   }
+  },
+  "mmr_graph": {
+   "1.0": {
+    "precision@5": 0.1,
+    "nDCG@10": 0.1011,
+    "coverage": 0.5196,
+    "novelty": 7.9444,
+    "ILD": 0.8657,
+    "docs_in_top10": 5.5167,
+    "pop_percentile": 0.753,
+    "gini": 0.7791
+   },
+   "0.7": {
+    "precision@5": 0.1067,
+    "nDCG@10": 0.098,
+    "coverage": 0.5872,
+    "novelty": 7.9519,
+    "ILD": 0.9025,
+    "docs_in_top10": 6.7667,
+    "pop_percentile": 0.747,
+    "gini": 0.7312
+   },
+   "0.5": {
+    "precision@5": 0.1033,
+    "nDCG@10": 0.1001,
+    "coverage": 0.6157,
+    "novelty": 7.9842,
+    "ILD": 0.9302,
+    "docs_in_top10": 7.5167,
+    "pop_percentile": 0.7396,
+    "gini": 0.7071
+   }
+  },
+  "cold_users": {
+   "0": {
+    "users": 12,
+    "popularity": {
+     "precision@5": 0.0833,
+     "nDCG@10": 0.1053
+    },
+    "content": {
+     "precision@5": 0.0833,
+     "nDCG@10": 0.1053
+    },
+    "graph": {
+     "precision@5": 0.0833,
+     "nDCG@10": 0.1053
+    },
+    "graph+профіль": {
+     "precision@5": 0.1833,
+     "nDCG@10": 0.1875
+    }
+   },
+   "1": {
+    "users": 12,
+    "popularity": {
+     "precision@5": 0.0667,
+     "nDCG@10": 0.1023
+    },
+    "content": {
+     "precision@5": 0.0333,
+     "nDCG@10": 0.0473
+    },
+    "graph": {
+     "precision@5": 0.05,
+     "nDCG@10": 0.0444
+    }
+   },
+   "3": {
+    "users": 12,
+    "popularity": {
+     "precision@5": 0.05,
+     "nDCG@10": 0.1004
+    },
+    "content": {
+     "precision@5": 0.0,
+     "nDCG@10": 0.012
+    },
+    "graph": {
+     "precision@5": 0.0333,
+     "nDCG@10": 0.0437
+    }
+   },
+   "5": {
+    "users": 11,
+    "popularity": {
+     "precision@5": 0.0364,
+     "nDCG@10": 0.0572
+    },
+    "content": {
+     "precision@5": 0.0545,
+     "nDCG@10": 0.0556
+    },
+    "graph": {
+     "precision@5": 0.0182,
+     "nDCG@10": 0.0338
+    }
+   }
+  },
+  "cold_docs": [
+   "prj09",
+   "gen01",
+   "prj03"
+  ],
+  "cold_items": {
+   "popularity": {
+    "pairs": 156,
+    "cold_item_recall@10": 0.0,
+    "cold_share_in_top10": 0.0
+   },
+   "content": {
+    "pairs": 156,
+    "cold_item_recall@10": 0.0064,
+    "cold_share_in_top10": 0.0317
+   },
+   "graph": {
+    "pairs": 156,
+    "cold_item_recall@10": 0.1346,
+    "cold_share_in_top10": 0.225
+   }
+  }
+ },
+ "repeats_mean_sd": {
+  "popularity": {
+   "precision@5": [
+    0.0447,
+    0.0069
+   ],
+   "nDCG@10": [
+    0.0526,
+    0.0092
+   ],
+   "coverage": [
+    0.0655,
+    0.0054
+   ],
+   "novelty": [
+    6.1097,
+    0.0729
+   ],
+   "ILD": [
+    0.8827,
+    0.0111
+   ],
+   "docs_in_top10": [
+    4.57,
+    0.332
+   ],
+   "pop_percentile": [
+    0.9775,
+    0.0005
+   ],
+   "gini": [
+    0.9516,
+    0.0006
+   ]
+  },
+  "content": {
+   "precision@5": [
+    0.074,
+    0.0123
+   ],
+   "nDCG@10": [
+    0.0854,
+    0.0073
+   ],
+   "coverage": [
+    0.4327,
+    0.0331
+   ],
+   "novelty": [
+    7.9397,
+    0.0439
+   ],
+   "ILD": [
+    0.7399,
+    0.0057
+   ],
+   "docs_in_top10": [
+    2.77,
+    0.1127
+   ],
+   "pop_percentile": [
+    0.7569,
+    0.0071
+   ],
+   "gini": [
+    0.7985,
+    0.017
+   ]
+  },
+  "graph": {
+   "precision@5": [
+    0.0787,
+    0.0157
+   ],
+   "nDCG@10": [
+    0.0838,
+    0.0139
+   ],
+   "coverage": [
+    0.5167,
+    0.0162
+   ],
+   "novelty": [
+    7.9477,
+    0.0735
+   ],
+   "ILD": [
+    0.8634,
+    0.0052
+   ],
+   "docs_in_top10": [
+    5.5633,
+    0.065
+   ],
+   "pop_percentile": [
+    0.7483,
+    0.0139
+   ],
+   "gini": [
+    0.7836,
+    0.0124
+   ]
+  }
+ }
+}
