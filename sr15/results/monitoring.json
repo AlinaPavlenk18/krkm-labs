@@ -1,0 +1,19 @@
+{
+ "requests": 68,
+ "input_guard_block_rate": 0.206,
+ "output_guard_hits": 0,
+ "neutralized_instructions": 8,
+ "restricted_returned": 0,
+ "tool_lock_blocks": 3,
+ "rejected_calls_per_request": 0.79,
+ "limit_hits": 3,
+ "verify_retry_rate": 0.059,
+ "abstain_rate": 0.353,
+ "avg_tokens": 3655,
+ "latency_p50_s": 20.5,
+ "latency_p95_s": 71.0,
+ "hitl_pending": 0,
+ "alerts": {
+  "limit_hits": "3 (поріг ≤ 2 % запитів)"
+ }
+}
