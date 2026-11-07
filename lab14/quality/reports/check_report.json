@@ -1,132 +1,154 @@
 {
   "meta": {
-    "name": "after",
+    "name": "defects",
     "store": "data_after\\store",
     "corpus": "data_after\\corpus\\docs.jsonl",
-    "commit": "5f14d27",
-    "ts": "2026-11-07T00:28:48"
+    "commit": "f42a073",
+    "ts": "2026-11-07T11:35:23"
   },
   "results": [
     {
       "id": "SH-LR8",
       "tool": "SHACL",
       "title": "форми ЛР8 (лічильник, категорія, потужність, регіон, модель прогнозу…)",
-      "violations": 0,
+      "violations": 1,
       "waived": 0,
-      "blocking": 0,
-      "status": "PASS",
-      "details": [],
-      "error": null
+      "blocking": 1,
+      "status": "FAIL",
+      "details": [
+        "помилка перевірки: ModuleNotFoundError: No module named 'pyshacl'"
+      ],
+      "error": true
     },
     {
       "id": "SH1",
       "tool": "SHACL",
       "title": "навантаження ≤ номінальна потужність",
-      "violations": 0,
+      "violations": 1,
       "waived": 0,
-      "blocking": 0,
-      "status": "PASS",
-      "details": [],
-      "error": null
+      "blocking": 1,
+      "status": "FAIL",
+      "details": [
+        "помилка перевірки: ModuleNotFoundError: No module named 'pyshacl'"
+      ],
+      "error": true
     },
     {
       "id": "SH2",
       "tool": "SHACL",
       "title": "канонічні назви областей",
-      "violations": 0,
+      "violations": 1,
       "waived": 0,
-      "blocking": 0,
-      "status": "PASS",
-      "details": [],
-      "error": null
+      "blocking": 1,
+      "status": "FAIL",
+      "details": [
+        "помилка перевірки: ModuleNotFoundError: No module named 'pyshacl'"
+      ],
+      "error": true
     },
     {
       "id": "SH3",
       "tool": "SHACL",
       "title": "інтервал зчитування 15/30/60",
-      "violations": 0,
+      "violations": 1,
       "waived": 0,
-      "blocking": 0,
-      "status": "PASS",
-      "details": [],
-      "error": null
+      "blocking": 1,
+      "status": "FAIL",
+      "details": [
+        "помилка перевірки: ModuleNotFoundError: No module named 'pyshacl'"
+      ],
+      "error": true
     },
     {
       "id": "SH4",
       "tool": "SHACL",
       "title": "статус лічильника з довідника",
-      "violations": 0,
+      "violations": 1,
       "waived": 0,
-      "blocking": 0,
-      "status": "PASS",
-      "details": [],
-      "error": null
+      "blocking": 1,
+      "status": "FAIL",
+      "details": [
+        "помилка перевірки: ModuleNotFoundError: No module named 'pyshacl'"
+      ],
+      "error": true
     },
     {
       "id": "SH5",
       "tool": "SHACL",
       "title": "точність моделі 0–100 %",
-      "violations": 0,
+      "violations": 1,
       "waived": 0,
-      "blocking": 0,
-      "status": "PASS",
-      "details": [],
-      "error": null
+      "blocking": 1,
+      "status": "FAIL",
+      "details": [
+        "помилка перевірки: ModuleNotFoundError: No module named 'pyshacl'"
+      ],
+      "error": true
     },
     {
       "id": "SH6",
       "tool": "SHACL",
       "title": "одна дата навчання xsd:date",
-      "violations": 0,
+      "violations": 1,
       "waived": 0,
-      "blocking": 0,
-      "status": "PASS",
-      "details": [],
-      "error": null
+      "blocking": 1,
+      "status": "FAIL",
+      "details": [
+        "помилка перевірки: ModuleNotFoundError: No module named 'pyshacl'"
+      ],
+      "error": true
     },
     {
       "id": "SH7",
       "tool": "SHACL",
       "title": "тип моделі з довідника",
-      "violations": 0,
+      "violations": 1,
       "waived": 0,
-      "blocking": 0,
-      "status": "PASS",
-      "details": [],
-      "error": null
+      "blocking": 1,
+      "status": "FAIL",
+      "details": [
+        "помилка перевірки: ModuleNotFoundError: No module named 'pyshacl'"
+      ],
+      "error": true
     },
     {
       "id": "SH8",
       "tool": "SHACL",
       "title": "одна мітка часу вимірювання",
-      "violations": 0,
+      "violations": 1,
       "waived": 0,
-      "blocking": 0,
-      "status": "PASS",
-      "details": [],
-      "error": null
+      "blocking": 1,
+      "status": "FAIL",
+      "details": [
+        "помилка перевірки: ModuleNotFoundError: No module named 'pyshacl'"
+      ],
+      "error": true
     },
     {
       "id": "SH9",
       "tool": "SHACL",
       "title": "споживання ≥ 0",
-      "violations": 0,
+      "violations": 1,
       "waived": 0,
-      "blocking": 0,
-      "status": "PASS",
-      "details": [],
-      "error": null
+      "blocking": 1,
+      "status": "FAIL",
+      "details": [
+        "помилка перевірки: ModuleNotFoundError: No module named 'pyshacl'"
+      ],
+      "error": true
     },
     {
       "id": "SH10",
       "tool": "SHACL",
       "title": "вимірювання — рівно один лічильник",
-      "violations": 0,
+      "violations": 1,
       "waived": 0,
-      "blocking": 0,
-      "status": "PASS",
-      "details": [],
-      "error": null
+      "blocking": 1,
+      "status": "FAIL",
+      "details": [
+        "помилка перевірки: ModuleNotFoundError: No module named 'pyshacl'"
+      ],
+      "error": true
     },
     {
       "id": "SP1",
@@ -207,11 +229,14 @@
       "id": "PY2",
       "tool": "pytest",
       "title": "посилальна цілісність зв'язків",
-      "violations": 0,
+      "violations": 2,
       "waived": 0,
-      "blocking": 0,
-      "status": "PASS",
-      "details": [],
+      "blocking": 2,
+      "status": "FAIL",
+      "details": [
+        "HAS_METER: Consumer_1002 → Meter_AMI00000 — немає вузла",
+        "HAS_METER: Consumer_1002 → Meter_AMI00000 — немає вузла"
+      ],
       "error": null
     },
     {
@@ -229,11 +254,13 @@
       "id": "PY4",
       "tool": "pytest",
       "title": "немає нерозв'язаних суперечностей значень у корпусі",
-      "violations": 0,
+      "violations": 1,
       "waived": 0,
-      "blocking": 0,
-      "status": "PASS",
-      "details": [],
+      "blocking": 1,
+      "status": "FAIL",
+      "details": [
+        "Louvain.communities: значення 10.0, 12.0, 14.0 без рішення в реєстрі"
+      ],
       "error": null
     },
     {

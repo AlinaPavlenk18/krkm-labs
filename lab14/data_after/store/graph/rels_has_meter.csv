@@ -42,3 +42,5 @@ Consumer_5036,Meter_AMI76143,synthetic:gen_v1(seed=42),1.0,2020-06-15
 Consumer_5037,Meter_AMI76577,synthetic:gen_v1(seed=42),1.0,2020-01-15
 Consumer_5038,Meter_AMI78591,synthetic:gen_v1(seed=42),1.0,2020-02-15
 Consumer_5038,Meter_AMI80930,synthetic:gen_v1(seed=42),1.0,2020-09-15
+Consumer_1002,Meter_AMI00000,lab08:data.ttl,1.0,2026-09-24
+Consumer_1002,Meter_AMI00000,lab08:data.ttl,1.0,2026-09-24
