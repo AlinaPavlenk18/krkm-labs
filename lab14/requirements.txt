@@ -1,0 +1,11 @@
+# ЛР14 ставиться поверх середовища ЛР11 (там уже є sentence-transformers, torch, numpy, requests)
+rdflib>=7.0
+pyshacl>=0.26
+owlrl>=6.0
+rapidfuzz>=3.6
+matplotlib>=3.8
+jsonschema>=4.21
+pytest>=8.0
+numpy>=1.26
+requests>=2.31
+sentence-transformers>=3.0,<6

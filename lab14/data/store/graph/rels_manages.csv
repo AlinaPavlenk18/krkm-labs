@@ -1,0 +1,12 @@
+start,end,source,confidence,validFrom
+Dispatcher_1,Substation_7,lab08:data.ttl,1.0,2026-09-24
+Dispatcher_2,Substation_11,synthetic:gen_v1(seed=42),1.0,2026-02-01
+Dispatcher_2,Substation_12,lab08:data.ttl,1.0,2026-09-24
+Dispatcher_3,Substation_5,lab08:data.ttl,1.0,2026-09-24
+Dispatcher_4,Substation_1,synthetic:gen_v1(seed=42),1.0,2025-01-01
+Dispatcher_4,Substation_10,synthetic:gen_v1(seed=42),1.0,2025-01-01
+Dispatcher_5,Substation_2,synthetic:gen_v1(seed=42),1.0,2025-03-01
+Dispatcher_5,Substation_3,synthetic:gen_v1(seed=42),1.0,2025-03-01
+Dispatcher_5,Substation_8,synthetic:gen_v1(seed=42),1.0,2025-06-01
+Dispatcher_6,Substation_4,synthetic:gen_v1(seed=42),1.0,2025-09-01
+Dispatcher_6,Substation_6,synthetic:gen_v1(seed=42),1.0,2025-09-01

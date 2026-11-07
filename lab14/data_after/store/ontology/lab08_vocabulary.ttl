@@ -1,0 +1,424 @@
+@prefix : <http://www.semanticweb.org/energy-forecasting#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.semanticweb.org/energy-forecasting> a owl:Ontology ;
+    dcterms:created "2026-09-24"^^xsd:date ;
+    dcterms:creator "Павленко А. С., ФЕІ-42" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    dcterms:title "Energy consumption forecasting ontology"@en,
+        "Онтологія предметної області «Прогнозування енергоспоживання»"@uk ;
+    owl:versionIRI <http://www.semanticweb.org/energy-forecasting/1.0.0> ;
+    owl:versionInfo "1.0.0" .
+
+:ManagedSubstation a owl:Class ;
+    rdfs:label "Managed substation"@en,
+        "Керована підстанція"@uk ;
+    rdfs:comment "A substation with an explicitly assigned managing dispatcher (an inferred class)."@en,
+        "Підстанція, для якої явно вказано керівного диспетчера (виведений клас)."@uk ;
+    rdfs:subClassOf :Substation ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty :managedByDispatcher ;
+            owl:someValuesFrom :Dispatcher ] .
+
+:OverloadedSubstation a owl:Class ;
+    rdfs:label "Overloaded substation"@en,
+        "Перевантажена підстанція"@uk ;
+    rdfs:comment "Підстанція з поточним навантаженням ≥ 85% від номінальної потужності (матеріалізується через SPARQL UPDATE)."@uk ;
+    rdfs:subClassOf :Substation .
+
+:ResidentialConsumer a owl:Class ;
+    rdfs:label "Residential consumer"@en,
+        "Побутовий споживач"@uk ;
+    rdfs:comment "A consumer of the residential (household) category."@en,
+        "Споживач побутової категорії (домогосподарство)."@uk ;
+    rdfs:subClassOf :Consumer ;
+    owl:disjointWith :CommercialConsumer,
+        :IndustrialConsumer .
+
+:StatisticalModel a owl:Class ;
+    rdfs:label "Statistical model"@en,
+        "Статистична модель"@uk ;
+    rdfs:comment "A formal statistical forecasting model (e.g. VAR)."@en,
+        "Формалізована статистична модель прогнозування (наприклад, VAR)."@uk ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Vector_autoregression> ;
+    rdfs:subClassOf :ForecastModel ;
+    owl:disjointWith :MachineLearningModel .
+
+:accuracy a owl:DatatypeProperty ;
+    rdfs:label "accuracy"@en,
+        "точність"@uk ;
+    rdfs:domain :ForecastModel ;
+    rdfs:range xsd:double .
+
+:address a owl:DatatypeProperty ;
+    rdfs:label "address"@en,
+        "адреса"@uk ;
+    rdfs:domain :Consumer ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf schema1:address .
+
+:cloudCover a owl:DatatypeProperty ;
+    rdfs:label "cloud cover"@en,
+        "хмарність"@uk ;
+    rdfs:domain :WeatherCondition ;
+    rdfs:range xsd:string .
+
+:connectedToSubstation a owl:ObjectProperty ;
+    rdfs:label "connected to substation"@en,
+        "підключений до підстанції"@uk ;
+    rdfs:domain :Consumer ;
+    rdfs:range :Substation ;
+    owl:inverseOf :servesConsumer .
+
+:consumerCategory a owl:DatatypeProperty ;
+    rdfs:label "consumer category"@en,
+        "категорія споживача"@uk ;
+    rdfs:domain :Consumer ;
+    rdfs:range xsd:string .
+
+:consumptionValue a owl:DatatypeProperty ;
+    rdfs:label "consumption value"@en,
+        "обсяг споживання"@uk ;
+    rdfs:domain :Measurement ;
+    rdfs:range xsd:double .
+
+:contractLimit a owl:DatatypeProperty ;
+    rdfs:label "contract limit"@en,
+        "договірний ліміт"@uk ;
+    rdfs:domain :Consumer ;
+    rdfs:range xsd:double .
+
+:currentLoad a owl:DatatypeProperty ;
+    rdfs:label "current load"@en,
+        "поточне навантаження"@uk ;
+    rdfs:domain :Substation ;
+    rdfs:range xsd:double .
+
+:errorPercentage a owl:DatatypeProperty ;
+    rdfs:label "error percentage"@en,
+        "похибка"@uk ;
+    rdfs:domain :Forecast ;
+    rdfs:range xsd:double .
+
+:forecastPeriod a owl:DatatypeProperty ;
+    rdfs:label "forecast period"@en,
+        "період прогнозу"@uk ;
+    rdfs:domain :Forecast ;
+    rdfs:range xsd:string .
+
+:generatesForecast a owl:ObjectProperty ;
+    rdfs:label "generates forecast"@en,
+        "генерує прогноз"@uk ;
+    rdfs:domain :ForecastModel ;
+    rdfs:range :Forecast ;
+    owl:inverseOf :generatedByModel .
+
+:generatesMeasurement a owl:ObjectProperty ;
+    rdfs:label "generates measurement"@en,
+        "генерує вимірювання"@uk ;
+    rdfs:domain :Meter ;
+    rdfs:range :Measurement ;
+    owl:inverseOf :measuredByMeter .
+
+:influencesMeasurement a owl:ObjectProperty ;
+    rdfs:label "influences measurement"@en,
+        "впливає на вимірювання"@uk ;
+    rdfs:domain :WeatherCondition ;
+    rdfs:range :Measurement .
+
+:influencesModel a owl:ObjectProperty ;
+    rdfs:label "influences model"@en,
+        "впливає на модель"@uk ;
+    rdfs:domain :WeatherCondition ;
+    rdfs:range :ForecastModel .
+
+:managesSubstation a owl:ObjectProperty ;
+    rdfs:label "manages substation"@en,
+        "керує підстанцією"@uk ;
+    rdfs:domain :Dispatcher ;
+    rdfs:range :Substation ;
+    owl:inverseOf :managedByDispatcher .
+
+:meterStatus a owl:DatatypeProperty ;
+    rdfs:label "meter status"@en,
+        "стан лічильника"@uk ;
+    rdfs:domain :Meter ;
+    rdfs:range xsd:string .
+
+:meterType a owl:DatatypeProperty ;
+    rdfs:label "meter type"@en,
+        "тип лічильника"@uk ;
+    rdfs:domain :Meter ;
+    rdfs:range xsd:string .
+
+:modelType a owl:DatatypeProperty ;
+    rdfs:label "model type"@en,
+        "тип моделі"@uk ;
+    rdfs:domain :ForecastModel ;
+    rdfs:range xsd:string .
+
+:nominalCapacity a owl:DatatypeProperty ;
+    rdfs:label "nominal capacity"@en,
+        "номінальна потужність"@uk ;
+    rdfs:domain :Substation ;
+    rdfs:range xsd:double .
+
+:predictedConsumption a owl:DatatypeProperty ;
+    rdfs:label "predicted consumption"@en,
+        "прогнозоване споживання"@uk ;
+    rdfs:domain :Forecast ;
+    rdfs:range xsd:double .
+
+:qualification a owl:DatatypeProperty ;
+    rdfs:label "qualification"@en,
+        "кваліфікація"@uk ;
+    rdfs:domain :Dispatcher ;
+    rdfs:range xsd:string .
+
+:readingInterval a owl:DatatypeProperty ;
+    rdfs:label "reading interval"@en,
+        "інтервал зняття"@uk ;
+    rdfs:domain :Meter ;
+    rdfs:range xsd:integer .
+
+:region a owl:DatatypeProperty ;
+    rdfs:label "region"@en,
+        "регіон"@uk ;
+    rdfs:domain :Substation ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf schema1:addressRegion .
+
+:shift a owl:DatatypeProperty ;
+    rdfs:label "shift"@en,
+        "зміна"@uk ;
+    rdfs:domain :Dispatcher ;
+    rdfs:range xsd:string .
+
+:temperature a owl:DatatypeProperty ;
+    rdfs:label "temperature"@en,
+        "температура"@uk ;
+    rdfs:domain :WeatherCondition ;
+    rdfs:range xsd:double .
+
+:timestamp a owl:DatatypeProperty ;
+    rdfs:label "timestamp"@en,
+        "часова мітка"@uk ;
+    rdfs:domain :Measurement ;
+    rdfs:range xsd:dateTime .
+
+:trainedOnMeasurement a owl:ObjectProperty ;
+    rdfs:label "trained on measurement"@en,
+        "навчена на вимірюванні"@uk ;
+    rdfs:domain :ForecastModel ;
+    rdfs:range :Measurement ;
+    owl:inverseOf :measurementUsedForTraining .
+
+:trainingDate a owl:DatatypeProperty ;
+    rdfs:label "training date"@en,
+        "дата навчання"@uk ;
+    rdfs:domain :ForecastModel ;
+    rdfs:range xsd:date .
+
+:upstreamOf a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:label "upstream of"@en,
+        "живить (вище за ланцюгом)"@uk ;
+    rdfs:domain :Substation ;
+    rdfs:range :Substation ;
+    owl:inverseOf :downstreamOf .
+
+:usesForecast a owl:ObjectProperty ;
+    rdfs:label "uses forecast"@en,
+        "використовує прогноз"@uk ;
+    rdfs:domain :Dispatcher ;
+    rdfs:range :Forecast ;
+    owl:inverseOf :forecastUsedBy .
+
+:voltage a owl:DatatypeProperty ;
+    rdfs:label "voltage"@en,
+        "напруга"@uk ;
+    rdfs:domain :Measurement ;
+    rdfs:range xsd:double .
+
+:IndustrialConsumer a owl:Class ;
+    rdfs:label "Industrial consumer"@en,
+        "Промисловий споживач"@uk ;
+    rdfs:comment "A consumer of the industrial category."@en,
+        "Споживач промислової категорії."@uk ;
+    rdfs:subClassOf :Consumer ;
+    owl:disjointWith :CommercialConsumer .
+
+:MachineLearningModel a owl:Class ;
+    rdfs:label "Machine learning model"@en,
+        "Модель машинного навчання"@uk ;
+    rdfs:comment "A machine-learning-based forecasting model (e.g. LSTM)."@en,
+        "Модель прогнозування на основі машинного навчання (наприклад, LSTM)."@uk ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Long_short-term_memory> ;
+    rdfs:subClassOf :ForecastModel .
+
+:belongsToConsumer a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "belongs to consumer"@en,
+        "належить споживачу"@uk ;
+    rdfs:domain :Meter ;
+    rdfs:range :Consumer .
+
+:downstreamOf a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:label "downstream of"@en,
+        "живиться від"@uk ;
+    rdfs:domain :Substation ;
+    rdfs:range :Substation .
+
+:forecastUsedBy a owl:ObjectProperty ;
+    rdfs:label "used by dispatcher"@en,
+        "використано диспетчером"@uk ;
+    rdfs:domain :Forecast ;
+    rdfs:range :Dispatcher .
+
+:hasMeter a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "has meter"@en,
+        "має лічильник"@uk ;
+    rdfs:domain :Consumer ;
+    rdfs:range :Meter ;
+    owl:inverseOf :belongsToConsumer .
+
+:measurementUsedForTraining a owl:ObjectProperty ;
+    rdfs:label "used for training model"@en,
+        "використано для навчання моделі"@uk ;
+    rdfs:domain :Measurement ;
+    rdfs:range :ForecastModel .
+
+:servesConsumer a owl:ObjectProperty ;
+    rdfs:label "serves consumer"@en,
+        "обслуговує споживача"@uk ;
+    rdfs:domain :Substation ;
+    rdfs:range :Consumer .
+
+:CommercialConsumer a owl:Class ;
+    rdfs:label "Commercial consumer"@en,
+        "Комерційний споживач"@uk ;
+    rdfs:comment "A consumer of the commercial category."@en,
+        "Споживач комерційної категорії."@uk ;
+    rdfs:subClassOf :Consumer .
+
+:generatedByModel a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "generated by model"@en,
+        "згенеровано моделлю"@uk ;
+    rdfs:domain :Forecast ;
+    rdfs:range :ForecastModel ;
+    rdfs:subPropertyOf prov:wasAttributedTo .
+
+:managedByDispatcher a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "managed by dispatcher"@en,
+        "керується диспетчером"@uk ;
+    rdfs:domain :Substation ;
+    rdfs:range :Dispatcher .
+
+:measuredByMeter a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "measured by meter"@en,
+        "виміряно лічильником"@uk ;
+    rdfs:domain :Measurement ;
+    rdfs:range :Meter .
+
+:WeatherCondition a owl:Class ;
+    rdfs:label "Weather condition"@en,
+        "Погодні умови"@uk ;
+    rdfs:comment "An external factor influencing consumption and forecast accuracy."@en,
+        "Зовнішній фактор, що впливає на споживання і точність прогнозу."@uk ;
+    skos:prefLabel "Weather condition"@en,
+        "Погодні умови"@uk .
+
+:Dispatcher a owl:Class ;
+    rdfs:label "Dispatcher"@en,
+        "Диспетчер"@uk ;
+    rdfs:comment "A specialist who uses the forecast to make decisions."@en,
+        "Фахівець, який використовує прогноз для прийняття рішень."@uk ;
+    rdfs:subClassOf foaf:Person ;
+    skos:prefLabel "Dispatcher"@en,
+        "Диспетчер"@uk .
+
+:Forecast a owl:Class ;
+    rdfs:label "Forecast"@en,
+        "Прогноз"@uk ;
+    rdfs:comment "The model's output: expected consumption volume."@en,
+        "Результат роботи моделі: очікуваний обсяг споживання."@uk ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onClass :ForecastModel ;
+            owl:onProperty :generatedByModel ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        prov:Entity ;
+    skos:prefLabel "Forecast"@en,
+        "Прогноз"@uk .
+
+:Measurement a owl:Class ;
+    rdfs:label "Measurement"@en,
+        "Вимірювання"@uk ;
+    rdfs:comment "A single recorded consumption reading at a point in time."@en,
+        "Окремий зафіксований показник споживання в певний момент часу."@uk ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onClass :Meter ;
+            owl:onProperty :measuredByMeter ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        prov:Entity ;
+    skos:prefLabel "Measurement"@en,
+        "Вимірювання"@uk .
+
+:Meter a owl:Class ;
+    rdfs:label "Meter (AMI)"@en,
+        "Лічильник (AMI)"@uk ;
+    rdfs:comment "An electricity metering device that belongs to a consumer."@en,
+        "Прилад обліку електроенергії, що належить споживачу."@uk ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Smart_meter> ;
+    skos:prefLabel "Meter (AMI)"@en,
+        "Лічильник (AMI)"@uk .
+
+:Consumer a owl:Class ;
+    rdfs:label "Consumer"@en,
+        "Споживач"@uk ;
+    rdfs:comment "A grid subscriber whose electricity consumption is recorded."@en,
+        "Абонент енергомережі, для якого фіксується споживання електроенергії."@uk ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onClass :Meter ;
+            owl:onProperty :hasMeter ],
+        foaf:Agent ;
+    skos:prefLabel "Consumer"@en,
+        "Споживач"@uk .
+
+:ForecastModel a owl:Class ;
+    rdfs:label "Forecast model"@en,
+        "Модель прогнозування"@uk ;
+    rdfs:comment "An analytical model that generates a consumption forecast."@en,
+        "Аналітична модель, що генерує прогноз споживання."@uk ;
+    rdfs:subClassOf prov:SoftwareAgent ;
+    skos:prefLabel "Forecast model"@en,
+        "Модель прогнозування"@uk .
+
+:Substation a owl:Class ;
+    rdfs:label "Substation"@en,
+        "Підстанція"@uk ;
+    rdfs:comment "An infrastructure facility that serves consumers."@en,
+        "Інфраструктурний об’єкт, що обслуговує споживачів."@uk ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Electrical_substation> ;
+    rdfs:subClassOf schema1:Place ;
+    skos:definition "Інфраструктурний об’єкт, що обслуговує споживачів."@uk ;
+    skos:prefLabel "Substation"@en,
+        "Підстанція"@uk .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( :Consumer :Meter :Measurement :WeatherCondition :ForecastModel :Forecast :Dispatcher :Substation ) .
+

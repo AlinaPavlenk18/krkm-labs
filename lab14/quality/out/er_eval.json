@@ -1,0 +1,130 @@
+{
+  "n_test": 60,
+  "test_positive": 28,
+  "variants": {
+    "full (рядки+номер+тип+ембедінги)": {
+      "threshold": 0.71,
+      "test": {
+        "tp": 27,
+        "fp": 2,
+        "fn": 1,
+        "precision": 0.931,
+        "recall": 0.9643,
+        "f1": 0.9474,
+        "f05": 0.9375
+      }
+    },
+    "без ембедінгів (рядки+номер+тип)": {
+      "threshold": 0.78,
+      "test": {
+        "tp": 27,
+        "fp": 2,
+        "fn": 1,
+        "precision": 0.931,
+        "recall": 0.9643,
+        "f1": 0.9474,
+        "f05": 0.9375
+      }
+    },
+    "лише рядки": {
+      "threshold": 1.0,
+      "test": {
+        "tp": 28,
+        "fp": 2,
+        "fn": 0,
+        "precision": 0.9333,
+        "recall": 1.0,
+        "f1": 0.9655,
+        "f05": 0.9459
+      }
+    },
+    "лише ембедінги": {
+      "threshold": 0.58,
+      "test": {
+        "tp": 19,
+        "fp": 16,
+        "fn": 9,
+        "precision": 0.5429,
+        "recall": 0.6786,
+        "f1": 0.6032,
+        "f05": 0.5655
+      }
+    }
+  },
+  "errors": [
+    {
+      "pair_id": "P062",
+      "type": "FN (пропущений дублікат)",
+      "a": "LSTM №1 [MODEL, gen01]",
+      "b": "моделі LSTM: №1 (точність 92 %), №2 [MODEL, kb02]",
+      "score": 0.569,
+      "features": {
+        "str": 1.0,
+        "num": 0.0,
+        "emb": 0.5951,
+        "type": 1.0
+      },
+      "comment": ""
+    },
+    {
+      "pair_id": "P074",
+      "type": "FP (хибне злиття)",
+      "a": "закарпатські підстанції [REGION, kb12]",
+      "b": "Закарпатська область [REGION, kb15]",
+      "score": 0.7327,
+      "features": {
+        "str": 1.0,
+        "num": 0.5,
+        "emb": 0.5383,
+        "type": 1.0
+      },
+      "comment": "«закарпатські підстанції» — не згадка регіону (контрприклад схеми ЛР13); ref із витягу хибний"
+    },
+    {
+      "pair_id": "P102",
+      "type": "FP (хибне злиття)",
+      "a": "№4 [SUBSTATION, gen03]",
+      "b": "№4 [SUBSTATION, gen07]",
+      "score": 0.899,
+      "features": {
+        "str": 1.0,
+        "num": 1.0,
+        "emb": 0.4951,
+        "type": 1.0
+      },
+      "comment": "«## Диспетчер №4» (gen07) — диспетчер, не ПС №4; ref із витягу хибний"
+    }
+  ],
+  "label_vs_suggested_disagree": [
+    "P074",
+    "P097",
+    "P099",
+    "P102",
+    "P103"
+  ],
+  "with_llm_judge": {
+    "margin": 0.1,
+    "disputed": 11,
+    "threshold": 0.71,
+    "llm_agrees_with_human": 10,
+    "rule_agrees_with_human": 10,
+    "test_rule": {
+      "tp": 27,
+      "fp": 2,
+      "fn": 1,
+      "precision": 0.931,
+      "recall": 0.9643,
+      "f1": 0.9474,
+      "f05": 0.9375
+    },
+    "test_rule_plus_llm": {
+      "tp": 27,
+      "fp": 2,
+      "fn": 1,
+      "precision": 0.931,
+      "recall": 0.9643,
+      "f1": 0.9474,
+      "f05": 0.9375
+    }
+  }
+}

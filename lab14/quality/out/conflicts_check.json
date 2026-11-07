@@ -1,0 +1,195 @@
+{
+  "checked": 27,
+  "missing": 0,
+  "items": [
+    {
+      "conflict": "K1",
+      "kind": "alternative",
+      "source": "prj04",
+      "section": "ЛР9: аналіз графа PageRank і Louvain",
+      "ok": true
+    },
+    {
+      "conflict": "K1",
+      "kind": "alternative",
+      "source": "prj09",
+      "section": "PageRank і Louvain (GDS)",
+      "ok": true
+    },
+    {
+      "conflict": "K1",
+      "kind": "alternative",
+      "source": "prj04",
+      "section": "3. Louvain — спільноти",
+      "ok": true
+    },
+    {
+      "conflict": "K1",
+      "kind": "fix-anchor",
+      "source": "prj04",
+      "section": "3. Louvain — спільноти",
+      "ok": true
+    },
+    {
+      "conflict": "K2",
+      "kind": "alternative",
+      "source": "prj09",
+      "section": "Збереження результатів у графі",
+      "ok": true
+    },
+    {
+      "conflict": "K2",
+      "kind": "alternative",
+      "source": "prj04",
+      "section": "3. Louvain — спільноти",
+      "ok": true
+    },
+    {
+      "conflict": "K3",
+      "kind": "alternative",
+      "source": "prj04",
+      "section": "ЛР9: аналіз графа PageRank і Louvain",
+      "ok": true
+    },
+    {
+      "conflict": "K3",
+      "kind": "alternative",
+      "source": "prj04",
+      "section": "2. PageRank — топ-10",
+      "ok": true
+    },
+    {
+      "conflict": "K3",
+      "kind": "fix-anchor",
+      "source": "prj04",
+      "section": "2. PageRank — топ-10",
+      "ok": true
+    },
+    {
+      "conflict": "K4",
+      "kind": "alternative",
+      "source": "prj09",
+      "section": "Інтерпретація для предметної області",
+      "ok": true
+    },
+    {
+      "conflict": "K4",
+      "kind": "alternative",
+      "source": "prj04",
+      "section": "4. Інтерпретація для предметної області",
+      "ok": true
+    },
+    {
+      "conflict": "K4",
+      "kind": "fix-anchor",
+      "source": "prj04",
+      "section": "4. Інтерпретація для предметної області",
+      "ok": true
+    },
+    {
+      "conflict": "K5",
+      "kind": "alternative",
+      "source": "prj09",
+      "section": "Інтерпретація для предметної області",
+      "ok": true
+    },
+    {
+      "conflict": "K5",
+      "kind": "alternative",
+      "source": "prj04",
+      "section": "4. Інтерпретація для предметної області",
+      "ok": true
+    },
+    {
+      "conflict": "K5",
+      "kind": "fix-anchor",
+      "source": "prj04",
+      "section": "4. Інтерпретація для предметної області",
+      "ok": true
+    },
+    {
+      "conflict": "K6",
+      "kind": "alternative",
+      "source": "gen02",
+      "section": "Модель VAR №1",
+      "ok": true
+    },
+    {
+      "conflict": "K6",
+      "kind": "alternative",
+      "source": "gen02",
+      "section": "Модель VAR №1",
+      "ok": true
+    },
+    {
+      "conflict": "K6",
+      "kind": "alternative",
+      "source": "gen02",
+      "section": "Модель LSTM №2",
+      "ok": true
+    },
+    {
+      "conflict": "K6",
+      "kind": "alternative",
+      "source": "gen02",
+      "section": "Модель LSTM №2",
+      "ok": true
+    },
+    {
+      "conflict": "K6",
+      "kind": "fix-anchor",
+      "source": "gen02",
+      "section": "Модель VAR №1",
+      "ok": true
+    },
+    {
+      "conflict": "K7",
+      "kind": "alternative",
+      "source": "gen02",
+      "section": "Модель VAR №1",
+      "ok": true
+    },
+    {
+      "conflict": "K7",
+      "kind": "alternative",
+      "source": "kb08",
+      "section": "Тригери перенавчання",
+      "ok": true
+    },
+    {
+      "conflict": "K7",
+      "kind": "fix-anchor",
+      "source": "gen02",
+      "section": "Модель VAR №1",
+      "ok": true
+    },
+    {
+      "conflict": "K8",
+      "kind": "alternative",
+      "source": "ontology",
+      "section": "lab08_vocabulary.ttl",
+      "ok": true
+    },
+    {
+      "conflict": "K8",
+      "kind": "alternative",
+      "source": "kb06",
+      "section": "Виявлення перевантаження",
+      "ok": true
+    },
+    {
+      "conflict": "K8",
+      "kind": "alternative",
+      "source": "prj10",
+      "section": "Q08",
+      "ok": true
+    },
+    {
+      "conflict": "K8",
+      "kind": "fix-anchor",
+      "source": "prj10",
+      "section": "Q08",
+      "ok": true
+    }
+  ]
+}

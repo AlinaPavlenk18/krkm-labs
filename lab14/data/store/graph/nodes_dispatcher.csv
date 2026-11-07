@@ -1,0 +1,7 @@
+id,name,qualification,shift,source
+Dispatcher_1,Диспетчер №1 (старший),старший,ранкова,lab08:data.ttl
+Dispatcher_2,Диспетчер №2 (молодший),молодший,вечірня,lab08:data.ttl
+Dispatcher_3,Диспетчер №3 (старший),старший,нічна,lab08:data.ttl
+Dispatcher_4,Диспетчер №4 (старший),старший,ранкова,synthetic:gen_v1(seed=42)
+Dispatcher_5,Диспетчер №5 (провідний),провідний,вечірня,synthetic:gen_v1(seed=42)
+Dispatcher_6,Диспетчер №6 (молодший),молодший,нічна,synthetic:gen_v1(seed=42)
