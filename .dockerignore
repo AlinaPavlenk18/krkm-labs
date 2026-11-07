@@ -1,0 +1,13 @@
+**/.venv
+**/__pycache__
+**/.pytest_cache
+**/*.pyc
+.git
+**/set_env.ps1
+**/.env
+lab*/logs/trace_*before*.jsonl
+lab11/results/cache
+sr*
+lab09
+lab10
+lab13

@@ -1,0 +1,36 @@
+name: krkm-hub
+services:
+  api:
+    build: {context: .., dockerfile: lab16/Dockerfile}
+    image: krkm-hub:lab16
+    pull_policy: build                
+    environment:
+      GEN_BASE_URL: ${GEN_BASE_URL:-http://host.docker.internal:11434}
+      GEN_MODEL: ${GEN_MODEL:-qwen2.5:7b}
+      AGENT_DEFENSES: "1"
+      AGENT_PROMPT: v3
+      HF_HUB_OFFLINE: "1"
+    extra_hosts: ["host.docker.internal:host-gateway"]
+    ports: ["8000:8000"]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health', timeout=60)"]
+      interval: 20s
+      timeout: 70s
+      retries: 15
+      start_period: 60s
+  ui:
+    image: krkm-hub:lab16
+    pull_policy: never
+    command: ["streamlit", "run", "ui/app.py", "--server.port", "8501", "--server.address", "0.0.0.0"]
+    environment:
+      API_URL: http://api:8000
+    ports: ["8501:8501"]
+    depends_on:
+      api: {condition: service_healthy}
+  ollama:
+    profiles: ["ollama"]
+    image: ollama/ollama:latest
+    ports: ["11434:11434"]
+    volumes: ["ollama:/root/.ollama"]
+volumes:
+  ollama: {}
