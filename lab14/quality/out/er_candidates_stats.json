@@ -1,0 +1,27 @@
+{
+  "records": 610,
+  "text": 496,
+  "graph": 114,
+  "blocks": 60,
+  "pairs_without_blocking": 179304,
+  "candidates": 11185,
+  "reduction": 0.9376,
+  "candidate_positive_share_ref": 0.1675,
+  "ref_src": {
+    "graph": 114,
+    "gold_lab13": 453,
+    "extractor": 43
+  },
+  "by_type": {
+    "SUBSTATION": 160,
+    "CONSUMER": 142,
+    "METER": 137,
+    "MODEL": 57,
+    "DISPATCHER": 28,
+    "REGION": 29,
+    "METHOD": 29,
+    "WEATHER_FACTOR": 20,
+    "METRIC": 8
+  },
+  "seconds": 18.8
+}

@@ -1,0 +1,13 @@
+start,end,source,confidence,validFrom,validFromBasis
+Substation_1,Region_Lviv,synthetic:gen_v1(seed=42),1.0,2026-10-17,дата внесення в граф ЛР9 (transaction time); час чинності невідомий
+Substation_10,Region_Lviv,synthetic:gen_v1(seed=42),1.0,2026-10-17,дата внесення в граф ЛР9 (transaction time); час чинності невідомий
+Substation_11,Region_Rivne,synthetic:gen_v1(seed=42),1.0,2026-10-17,дата внесення в граф ЛР9 (transaction time); час чинності невідомий
+Substation_12,Region_Lviv,lab08:data.ttl,1.0,2026-10-17,дата внесення в граф ЛР9 (transaction time); час чинності невідомий
+Substation_2,Region_Volyn,synthetic:gen_v1(seed=42),1.0,2026-10-17,дата внесення в граф ЛР9 (transaction time); час чинності невідомий
+Substation_3,Region_Rivne,synthetic:gen_v1(seed=42),1.0,2026-10-17,дата внесення в граф ЛР9 (transaction time); час чинності невідомий
+Substation_4,Region_Ternopil,synthetic:gen_v1(seed=42),1.0,2026-10-17,дата внесення в граф ЛР9 (transaction time); час чинності невідомий
+Substation_5,Region_Volyn,lab08:data.ttl,1.0,2026-10-17,дата внесення в граф ЛР9 (transaction time); час чинності невідомий
+Substation_6,Region_IvanoFrankivsk,synthetic:gen_v1(seed=42),1.0,2026-10-17,дата внесення в граф ЛР9 (transaction time); час чинності невідомий
+Substation_7,Region_Lviv,lab08:data.ttl,1.0,2026-10-17,дата внесення в граф ЛР9 (transaction time); час чинності невідомий
+Substation_8,Region_Zakarpattia,synthetic:gen_v1(seed=42),1.0,2026-10-17,дата внесення в граф ЛР9 (transaction time); час чинності невідомий
+Substation_9,Region_Zakarpattia,lab08:data.ttl,1.0,2026-10-17,дата внесення в граф ЛР9 (transaction time); час чинності невідомий

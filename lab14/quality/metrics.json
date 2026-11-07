@@ -1,0 +1,228 @@
+{
+  "version": "baseline-20261107",
+  "tag": "baseline",
+  "created": "2026-11-07T00:25:31",
+  "ref_date": "2026-11-07",
+  "git_commit": "5f14d27",
+  "snapshot_hash": "c73cdf5ee66f3445",
+  "store": "data\\store",
+  "corpus": "data\\corpus\\docs.jsonl",
+  "metrics": [
+    {
+      "id": "completeness_attrs",
+      "dimension": "повнота",
+      "name": "Частка вузлів графа з усіма заповненими атрибутами",
+      "value": 1.0,
+      "threshold": 0.98,
+      "op": ">=",
+      "pass": true,
+      "details": {
+        "nodes": 190,
+        "missing": {}
+      }
+    },
+    {
+      "id": "completeness_links",
+      "dimension": "повнота",
+      "name": "Частка обов'язкових зв'язків, що існують (регіон, диспетчер, лічильник…)",
+      "value": 0.9957,
+      "threshold": 1.0,
+      "op": ">=",
+      "pass": false,
+      "details": {
+        "slots": 233,
+        "missing": [
+          "Substation_9 без MANAGES (вхідний)"
+        ]
+      }
+    },
+    {
+      "id": "consistency_values",
+      "dimension": "узгодженість",
+      "name": "Частка величин корпусу без нерозв'язаних суперечностей (і збіг із графом)",
+      "value": 0.8182,
+      "threshold": 1.0,
+      "op": ">=",
+      "pass": false,
+      "details": {
+        "quantities": 22,
+        "with_variants": [
+          "ForecastModel_GRU1.pagerank",
+          "Louvain.communities",
+          "Louvain.modularity",
+          "Louvain.weather_communities"
+        ],
+        "resolved_in_store": [],
+        "inconsistent": [
+          "ForecastModel_GRU1.pagerank",
+          "Louvain.communities",
+          "Louvain.modularity",
+          "Louvain.weather_communities"
+        ],
+        "variants": {
+          "ForecastModel_GRU1.pagerank": {
+            "3.28": [
+              "prj04"
+            ],
+            "3.3": [
+              "prj04"
+            ]
+          },
+          "Louvain.communities": {
+            "10.0": [
+              "prj04"
+            ],
+            "12.0": [
+              "prj04",
+              "prj06",
+              "prj09"
+            ]
+          },
+          "Louvain.modularity": {
+            "0.615": [
+              "prj04"
+            ],
+            "0.62": [
+              "prj04",
+              "prj06",
+              "prj09"
+            ]
+          },
+          "Louvain.weather_communities": {
+            "4.0": [
+              "prj04"
+            ],
+            "5.0": [
+              "prj09"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "accuracy_expert",
+      "dimension": "точність",
+      "name": "Частка правильних тверджень в експертній вибірці (n = 30)",
+      "value": 1.0,
+      "threshold": 0.95,
+      "op": ">=",
+      "pass": true,
+      "details": {
+        "n": 30,
+        "wrong": []
+      }
+    },
+    {
+      "id": "timeliness_models",
+      "dimension": "актуальність",
+      "name": "Частка моделей, навчених не раніше ніж 12 міс. тому (правило kb08)",
+      "value": 0.6667,
+      "threshold": 1.0,
+      "op": ">=",
+      "pass": false,
+      "details": {
+        "models": 6,
+        "stale": [
+          "ForecastModel_LSTM2 (навчена 2025-06-20, 505 дн.)",
+          "ForecastModel_VAR1 (навчена 2025-11-01, 371 дн.)"
+        ]
+      }
+    },
+    {
+      "id": "uniqueness_sections",
+      "dimension": "унікальність",
+      "name": "Частка секцій корпусу, що мають майже-дублікат в іншому документі",
+      "value": 0.0234,
+      "threshold": 0.02,
+      "op": "<=",
+      "pass": false,
+      "details": {
+        "sections": 342,
+        "dup_sections": 8,
+        "pairs": [
+          [
+            "prj05#5",
+            "prj09#25",
+            0.88
+          ],
+          [
+            "prj03#3",
+            "prj09#13",
+            0.62
+          ],
+          [
+            "prj03#6",
+            "prj09#16",
+            0.6
+          ],
+          [
+            "prj04#1",
+            "prj09#21",
+            0.51
+          ]
+        ]
+      }
+    },
+    {
+      "id": "provenance_records",
+      "dimension": "походження",
+      "name": "Частка записів (вузли, зв'язки, документи) з повним provenance",
+      "value": 0.9776,
+      "threshold": 1.0,
+      "op": ">=",
+      "pass": false,
+      "details": {
+        "records": 535,
+        "missing": {
+          "LOCATED_IN.validFrom": 12
+        }
+      }
+    },
+    {
+      "id": "validity_shacl",
+      "dimension": "валідність",
+      "name": "Кількість порушень SHACL на RDF-трійках сховища",
+      "value": 0,
+      "threshold": 0,
+      "op": "<=",
+      "pass": true,
+      "details": {
+        "conforms": true,
+        "violations": [],
+        "shapes": "lab08_shapes.ttl"
+      }
+    },
+    {
+      "id": "access_labels",
+      "dimension": "доступність",
+      "name": "Частка документів з валідною міткою доступу й непорожнім текстом",
+      "value": 1.0,
+      "threshold": 1.0,
+      "op": ">=",
+      "pass": true,
+      "details": {
+        "docs": 31,
+        "bad": []
+      }
+    },
+    {
+      "id": "access_rag",
+      "dimension": "доступність",
+      "name": "Частка тестів RAG ЛР11 з доказом, доступним ролі analyst",
+      "value": 1.0,
+      "threshold": 1.0,
+      "op": ">=",
+      "pass": true,
+      "details": {
+        "tests": 25,
+        "no_accessible_evidence": []
+      }
+    }
+  ],
+  "rag_indicators": {
+    "queries": 39,
+    "topk_slots": 196,
+    "share_slots_prj09": 0.189,
+    "queries_with_3plus_from_one_doc": 20
+  }
+}

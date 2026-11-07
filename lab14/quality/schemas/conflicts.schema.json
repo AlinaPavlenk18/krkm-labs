@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Реєстр суперечностей ЛР14",
+  "type": "object",
+  "required": ["version", "owner", "decided_at", "conflicts"],
+  "properties": {
+    "decided_at": {"type": "string", "format": "date"},
+    "conflicts": {
+      "type": "array", "minItems": 5,
+      "items": {
+        "type": "object",
+        "required": ["id", "type", "subject", "property", "alternatives", "strategy", "decision", "fix"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^K[0-9]+$"},
+          "strategy": {"type": "string", "pattern": "(довіра|дата|консенсус|рішення власника)"},
+          "alternatives": {
+            "type": "array", "minItems": 2,
+            "items": {"type": "object", "required": ["value", "status", "source", "section", "quote", "provenance"],
+                      "properties": {"status": {"enum": ["preferred", "alternative", "rejected"]}, "quote": {"type": "string", "minLength": 3}}}
+          }
+        }
+      }
+    }
+  }
+}

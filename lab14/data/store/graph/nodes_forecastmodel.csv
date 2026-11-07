@@ -1,0 +1,7 @@
+id,name,subLabel,modelType,accuracy,trainingDate,source
+ForecastModel_ARIMA1,Модель ARIMA №1,StatisticalModel,ARIMA,81.0,2026-02-10,synthetic:gen_v1(seed=42)
+ForecastModel_GRU1,Модель GRU №1,MLModel,GRU,90.5,2026-09-01,synthetic:gen_v1(seed=42)
+ForecastModel_LSTM1,Модель LSTM №1,MLModel,LSTM,92.0,2026-01-15,lab08:data.ttl
+ForecastModel_LSTM2,Модель LSTM №2 (застаріла),MLModel,LSTM,78.0,2025-06-20,lab08:data.ttl
+ForecastModel_LSTM3,Модель LSTM №3,MLModel,LSTM,89.0,2026-08-30,synthetic:gen_v1(seed=42)
+ForecastModel_VAR1,Модель VAR №1,StatisticalModel,VAR,84.5,2025-11-01,lab08:data.ttl

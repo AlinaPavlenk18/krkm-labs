@@ -1,0 +1,25 @@
+{
+  "margin": 0.1,
+  "disputed": 11,
+  "threshold": 0.71,
+  "llm_agrees_with_human": 10,
+  "rule_agrees_with_human": 10,
+  "test_rule": {
+    "tp": 27,
+    "fp": 2,
+    "fn": 1,
+    "precision": 0.931,
+    "recall": 0.9643,
+    "f1": 0.9474,
+    "f05": 0.9375
+  },
+  "test_rule_plus_llm": {
+    "tp": 27,
+    "fp": 2,
+    "fn": 1,
+    "precision": 0.931,
+    "recall": 0.9643,
+    "f1": 0.9474,
+    "f05": 0.9375
+  }
+}

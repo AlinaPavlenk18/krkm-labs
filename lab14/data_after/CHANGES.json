@@ -1,0 +1,99 @@
+{
+  "created": "2026-11-07T00:27:21",
+  "ref_date": "2026-11-07",
+  "base": "data/ (baseline)",
+  "changes": [
+    {
+      "what": "примітка до суперечності",
+      "conflict": "K1",
+      "doc": "prj04",
+      "section": "3. Louvain — спільноти"
+    },
+    {
+      "what": "примітка до суперечності",
+      "conflict": "K3",
+      "doc": "prj04",
+      "section": "2. PageRank — топ-10"
+    },
+    {
+      "what": "примітка до суперечності",
+      "conflict": "K4",
+      "doc": "prj04",
+      "section": "4. Інтерпретація для предметної області"
+    },
+    {
+      "what": "примітка до суперечності",
+      "conflict": "K5",
+      "doc": "prj04",
+      "section": "4. Інтерпретація для предметної області"
+    },
+    {
+      "what": "примітка до суперечності",
+      "conflict": "K6",
+      "doc": "gen02",
+      "section": "Модель VAR №1"
+    },
+    {
+      "what": "примітка до суперечності",
+      "conflict": "K7",
+      "doc": "gen02",
+      "section": "Модель VAR №1"
+    },
+    {
+      "what": "примітка до суперечності",
+      "conflict": "K8",
+      "doc": "prj10",
+      "section": "Q08"
+    },
+    {
+      "what": "злиття секції-дубліката",
+      "op": "merge_section",
+      "kept": "prj03#3 «Q03 · KQ3»",
+      "removed": "prj09#13 «Q3 · KQ3 – навантаження за регіонами»",
+      "containment": 0.62,
+      "ts": "2026-11-07T00:27:20"
+    },
+    {
+      "what": "злиття секції-дубліката",
+      "kept_both": true,
+      "reason": "копія містить доказ тесту RAG",
+      "a": "prj03#6",
+      "b": "prj09#16",
+      "containment": 0.6
+    },
+    {
+      "what": "злиття секції-дубліката",
+      "op": "merge_section",
+      "kept": "prj05#5 «4. Тексти запитів › S3. Навантаження за регіонами (GROUP BY)»",
+      "removed": "prj09#25 «П'ять питань у SPARQL і Cypher»",
+      "containment": 0.88,
+      "ts": "2026-11-07T00:27:20"
+    },
+    {
+      "what": "новий документ kb16",
+      "sections": 9
+    },
+    {
+      "what": "ForecastModel.status / trainingDateFlag",
+      "conflicts": [
+        "K6",
+        "K7"
+      ],
+      "stale": [
+        "ForecastModel_LSTM2",
+        "ForecastModel_VAR1"
+      ]
+    },
+    {
+      "what": "LOCATED_IN.validFrom",
+      "filled": 12,
+      "value": "2026-10-17",
+      "basis": "transaction time"
+    },
+    {
+      "what": "alternatives.ttl",
+      "conflicts": 8,
+      "model_alternatives": 12
+    }
+  ]
+}

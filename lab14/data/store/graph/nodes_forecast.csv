@@ -1,0 +1,19 @@
+id,name,forecastPeriod,errorPercentage,predictedConsumption,source
+Forecast_20260110,Прогноз на 10.01.2026,доба,11.0,2480.0,lab08:data.ttl
+Forecast_20260924,Прогноз на 24.09.2026,доба,4.0,1250.0,lab08:data.ttl
+Forecast_20260925,Прогноз на 25.09.2026,доба,7.5,210.0,lab08:data.ttl
+Forecast_20261001_1,Прогноз на 01.10.2026 (ПС №1),доба,3.2,656.7,synthetic:gen_v1(seed=42)
+Forecast_20261001_2,Прогноз на 01.10.2026 (ПС №10),доба,4.1,1179.4,synthetic:gen_v1(seed=42)
+Forecast_20261002_1,Прогноз на 02.10.2026 (ПС №7),доба,5.0,2366.9,synthetic:gen_v1(seed=42)
+Forecast_20261002_2,Прогноз на 02.10.2026 (ПС №2),доба,6.8,1581.0,synthetic:gen_v1(seed=42)
+Forecast_20261003_1,Прогноз на 03.10.2026 (ПС №3),тиждень,8.9,1854.0,synthetic:gen_v1(seed=42)
+Forecast_20261003_2,Прогноз на 03.10.2026 (ПС №4),доба,2.9,2249.0,synthetic:gen_v1(seed=42)
+Forecast_20261004_1,Прогноз на 04.10.2026 (ПС №6),доба,4.7,2025.7,synthetic:gen_v1(seed=42)
+Forecast_20261004_2,Прогноз на 04.10.2026 (ПС №11),доба,12.3,1081.9,synthetic:gen_v1(seed=42)
+Forecast_20261005_1,Прогноз на 05.10.2026 (ПС №8),тиждень,9.6,164.4,synthetic:gen_v1(seed=42)
+Forecast_20261005_2,Прогноз на 05.10.2026 (ПС №5),доба,3.5,1011.8,synthetic:gen_v1(seed=42)
+Forecast_20261006_1,Прогноз на 06.10.2026 (ПС №12),доба,10.4,1996.0,synthetic:gen_v1(seed=42)
+Forecast_20261006_2,Прогноз на 06.10.2026 (ПС №11),тиждень,7.2,2240.9,synthetic:gen_v1(seed=42)
+Forecast_20261007_1,Прогноз на 07.10.2026 (ПС №1),тиждень,3.9,2485.9,synthetic:gen_v1(seed=42)
+Forecast_20261007_2,Прогноз на 07.10.2026 (ПС №10),доба,4.4,1176.6,synthetic:gen_v1(seed=42)
+Forecast_20261008_1,Прогноз на 08.10.2026 (ПС №2),доба,3.1,1981.4,synthetic:gen_v1(seed=42)
