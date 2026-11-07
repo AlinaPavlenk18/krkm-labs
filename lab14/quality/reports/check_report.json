@@ -1,10 +1,10 @@
 {
   "meta": {
-    "name": "defects",
+    "name": "fixed",
     "store": "data_after\\store",
     "corpus": "data_after\\corpus\\docs.jsonl",
-    "commit": "f42a073",
-    "ts": "2026-11-07T11:35:23"
+    "commit": "889b121",
+    "ts": "2026-11-07T11:46:41"
   },
   "results": [
     {
@@ -229,14 +229,11 @@
       "id": "PY2",
       "tool": "pytest",
       "title": "посилальна цілісність зв'язків",
-      "violations": 2,
+      "violations": 0,
       "waived": 0,
-      "blocking": 2,
-      "status": "FAIL",
-      "details": [
-        "HAS_METER: Consumer_1002 → Meter_AMI00000 — немає вузла",
-        "HAS_METER: Consumer_1002 → Meter_AMI00000 — немає вузла"
-      ],
+      "blocking": 0,
+      "status": "PASS",
+      "details": [],
       "error": null
     },
     {
@@ -254,13 +251,11 @@
       "id": "PY4",
       "tool": "pytest",
       "title": "немає нерозв'язаних суперечностей значень у корпусі",
-      "violations": 1,
+      "violations": 0,
       "waived": 0,
-      "blocking": 1,
-      "status": "FAIL",
-      "details": [
-        "Louvain.communities: значення 10.0, 12.0, 14.0 без рішення в реєстрі"
-      ],
+      "blocking": 0,
+      "status": "PASS",
+      "details": [],
       "error": null
     },
     {

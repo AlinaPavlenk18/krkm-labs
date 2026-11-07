@@ -110,7 +110,7 @@ Substation_12,nominalCapacity,250.0,literal,double,,lab08:data.ttl,,
 Substation_12,region,Львівська область,literal,string,,lab08:data.ttl,,
 Substation_12,rdf:type,Substation,iri,,,lab08:data.ttl,,
 Substation_12,skos:prefLabel,Підстанція №12,literal,,uk,lab08:data.ttl,,
-Substation_5,currentLoad,650.0,literal,double,,lab08:data.ttl,,
+Substation_5,currentLoad,468.0,literal,double,,lab08:data.ttl,,
 Substation_5,managedByDispatcher,Dispatcher_3,iri,,,lab08:data.ttl,1.0,2026-09-24
 Substation_5,nominalCapacity,500.0,literal,double,,lab08:data.ttl,,
 Substation_5,region,Волинська область,literal,string,,lab08:data.ttl,,
