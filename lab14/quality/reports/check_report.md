@@ -1,22 +1,22 @@
 # Звіт перевірок якості — fixed
 
-Сховище: `data_after\store` · корпус: `data_after\corpus\docs.jsonl` · git 889b121 · 2026-11-07T11:46:41
+Сховище: `data_after\store` · корпус: `data_after\corpus\docs.jsonl` · git df506d0 · 2026-11-07T13:39:28
 
-Перевірок: **26** (JSON Schema: 3, SHACL: 11, SPARQL: 5, pytest: 7); порушень: **18**, з них за винятками (waivers): 7, блокувальних: **11**. Результат gate: **FAIL — зміни заблоковано**.
+Перевірок: **26** (JSON Schema: 3, SHACL: 11, SPARQL: 5, pytest: 7); порушень: **7**, з них за винятками (waivers): 7, блокувальних: **0**. Результат gate: **PASS**.
 
 | ID | Інструмент | Правило | Порушень | Виняток | Статус |
 |---|---|---|---|---|---|
-| SH-LR8 | SHACL | форми ЛР8 (лічильник, категорія, потужність, регіон, модель прогнозу…) | 1 | 0 | ❌ FAIL |
-| SH1 | SHACL | навантаження ≤ номінальна потужність | 1 | 0 | ❌ FAIL |
-| SH2 | SHACL | канонічні назви областей | 1 | 0 | ❌ FAIL |
-| SH3 | SHACL | інтервал зчитування 15/30/60 | 1 | 0 | ❌ FAIL |
-| SH4 | SHACL | статус лічильника з довідника | 1 | 0 | ❌ FAIL |
-| SH5 | SHACL | точність моделі 0–100 % | 1 | 0 | ❌ FAIL |
-| SH6 | SHACL | одна дата навчання xsd:date | 1 | 0 | ❌ FAIL |
-| SH7 | SHACL | тип моделі з довідника | 1 | 0 | ❌ FAIL |
-| SH8 | SHACL | одна мітка часу вимірювання | 1 | 0 | ❌ FAIL |
-| SH9 | SHACL | споживання ≥ 0 | 1 | 0 | ❌ FAIL |
-| SH10 | SHACL | вимірювання — рівно один лічильник | 1 | 0 | ❌ FAIL |
+| SH-LR8 | SHACL | форми ЛР8 (лічильник, категорія, потужність, регіон, модель прогнозу…) | 0 | 0 | ✅ PASS |
+| SH1 | SHACL | навантаження ≤ номінальна потужність | 0 | 0 | ✅ PASS |
+| SH2 | SHACL | канонічні назви областей | 0 | 0 | ✅ PASS |
+| SH3 | SHACL | інтервал зчитування 15/30/60 | 0 | 0 | ✅ PASS |
+| SH4 | SHACL | статус лічильника з довідника | 0 | 0 | ✅ PASS |
+| SH5 | SHACL | точність моделі 0–100 % | 0 | 0 | ✅ PASS |
+| SH6 | SHACL | одна дата навчання xsd:date | 0 | 0 | ✅ PASS |
+| SH7 | SHACL | тип моделі з довідника | 0 | 0 | ✅ PASS |
+| SH8 | SHACL | одна мітка часу вимірювання | 0 | 0 | ✅ PASS |
+| SH9 | SHACL | споживання ≥ 0 | 0 | 0 | ✅ PASS |
+| SH10 | SHACL | вимірювання — рівно один лічильник | 0 | 0 | ✅ PASS |
 | SP1 | SPARQL | немає циклів у ланцюгу живлення | 0 | 0 | ✅ PASS |
 | SP2 | SPARQL | кожна підстанція має диспетчера | 1 | 1 | ⚠️ WAIVED |
 | SP3 | SPARQL | дата навчання не раніша за навчальні дані | 6 | 6 | ⚠️ WAIVED |
@@ -34,39 +34,6 @@
 | JS3 | JSON Schema | схема реєстру сутностей | 0 | 0 | ✅ PASS |
 
 ## Порушення
-
-**SH-LR8** (форми ЛР8 (лічильник, категорія, потужність, регіон, модель прогнозу…)):
-- помилка перевірки: ModuleNotFoundError: No module named 'pyshacl'
-
-**SH1** (навантаження ≤ номінальна потужність):
-- помилка перевірки: ModuleNotFoundError: No module named 'pyshacl'
-
-**SH2** (канонічні назви областей):
-- помилка перевірки: ModuleNotFoundError: No module named 'pyshacl'
-
-**SH3** (інтервал зчитування 15/30/60):
-- помилка перевірки: ModuleNotFoundError: No module named 'pyshacl'
-
-**SH4** (статус лічильника з довідника):
-- помилка перевірки: ModuleNotFoundError: No module named 'pyshacl'
-
-**SH5** (точність моделі 0–100 %):
-- помилка перевірки: ModuleNotFoundError: No module named 'pyshacl'
-
-**SH6** (одна дата навчання xsd:date):
-- помилка перевірки: ModuleNotFoundError: No module named 'pyshacl'
-
-**SH7** (тип моделі з довідника):
-- помилка перевірки: ModuleNotFoundError: No module named 'pyshacl'
-
-**SH8** (одна мітка часу вимірювання):
-- помилка перевірки: ModuleNotFoundError: No module named 'pyshacl'
-
-**SH9** (споживання ≥ 0):
-- помилка перевірки: ModuleNotFoundError: No module named 'pyshacl'
-
-**SH10** (вимірювання — рівно один лічильник):
-- помилка перевірки: ModuleNotFoundError: No module named 'pyshacl'
 
 **SP2** (кожна підстанція має диспетчера):
 - Substation_9: немає відповідального диспетчера

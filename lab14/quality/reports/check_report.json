@@ -3,152 +3,130 @@
     "name": "fixed",
     "store": "data_after\\store",
     "corpus": "data_after\\corpus\\docs.jsonl",
-    "commit": "889b121",
-    "ts": "2026-11-07T11:46:41"
+    "commit": "df506d0",
+    "ts": "2026-11-07T13:39:28"
   },
   "results": [
     {
       "id": "SH-LR8",
       "tool": "SHACL",
       "title": "форми ЛР8 (лічильник, категорія, потужність, регіон, модель прогнозу…)",
-      "violations": 1,
+      "violations": 0,
       "waived": 0,
-      "blocking": 1,
-      "status": "FAIL",
-      "details": [
-        "помилка перевірки: ModuleNotFoundError: No module named 'pyshacl'"
-      ],
-      "error": true
+      "blocking": 0,
+      "status": "PASS",
+      "details": [],
+      "error": null
     },
     {
       "id": "SH1",
       "tool": "SHACL",
       "title": "навантаження ≤ номінальна потужність",
-      "violations": 1,
+      "violations": 0,
       "waived": 0,
-      "blocking": 1,
-      "status": "FAIL",
-      "details": [
-        "помилка перевірки: ModuleNotFoundError: No module named 'pyshacl'"
-      ],
-      "error": true
+      "blocking": 0,
+      "status": "PASS",
+      "details": [],
+      "error": null
     },
     {
       "id": "SH2",
       "tool": "SHACL",
       "title": "канонічні назви областей",
-      "violations": 1,
+      "violations": 0,
       "waived": 0,
-      "blocking": 1,
-      "status": "FAIL",
-      "details": [
-        "помилка перевірки: ModuleNotFoundError: No module named 'pyshacl'"
-      ],
-      "error": true
+      "blocking": 0,
+      "status": "PASS",
+      "details": [],
+      "error": null
     },
     {
       "id": "SH3",
       "tool": "SHACL",
       "title": "інтервал зчитування 15/30/60",
-      "violations": 1,
+      "violations": 0,
       "waived": 0,
-      "blocking": 1,
-      "status": "FAIL",
-      "details": [
-        "помилка перевірки: ModuleNotFoundError: No module named 'pyshacl'"
-      ],
-      "error": true
+      "blocking": 0,
+      "status": "PASS",
+      "details": [],
+      "error": null
     },
     {
       "id": "SH4",
       "tool": "SHACL",
       "title": "статус лічильника з довідника",
-      "violations": 1,
+      "violations": 0,
       "waived": 0,
-      "blocking": 1,
-      "status": "FAIL",
-      "details": [
-        "помилка перевірки: ModuleNotFoundError: No module named 'pyshacl'"
-      ],
-      "error": true
+      "blocking": 0,
+      "status": "PASS",
+      "details": [],
+      "error": null
     },
     {
       "id": "SH5",
       "tool": "SHACL",
       "title": "точність моделі 0–100 %",
-      "violations": 1,
+      "violations": 0,
       "waived": 0,
-      "blocking": 1,
-      "status": "FAIL",
-      "details": [
-        "помилка перевірки: ModuleNotFoundError: No module named 'pyshacl'"
-      ],
-      "error": true
+      "blocking": 0,
+      "status": "PASS",
+      "details": [],
+      "error": null
     },
     {
       "id": "SH6",
       "tool": "SHACL",
       "title": "одна дата навчання xsd:date",
-      "violations": 1,
+      "violations": 0,
       "waived": 0,
-      "blocking": 1,
-      "status": "FAIL",
-      "details": [
-        "помилка перевірки: ModuleNotFoundError: No module named 'pyshacl'"
-      ],
-      "error": true
+      "blocking": 0,
+      "status": "PASS",
+      "details": [],
+      "error": null
     },
     {
       "id": "SH7",
       "tool": "SHACL",
       "title": "тип моделі з довідника",
-      "violations": 1,
+      "violations": 0,
       "waived": 0,
-      "blocking": 1,
-      "status": "FAIL",
-      "details": [
-        "помилка перевірки: ModuleNotFoundError: No module named 'pyshacl'"
-      ],
-      "error": true
+      "blocking": 0,
+      "status": "PASS",
+      "details": [],
+      "error": null
     },
     {
       "id": "SH8",
       "tool": "SHACL",
       "title": "одна мітка часу вимірювання",
-      "violations": 1,
+      "violations": 0,
       "waived": 0,
-      "blocking": 1,
-      "status": "FAIL",
-      "details": [
-        "помилка перевірки: ModuleNotFoundError: No module named 'pyshacl'"
-      ],
-      "error": true
+      "blocking": 0,
+      "status": "PASS",
+      "details": [],
+      "error": null
     },
     {
       "id": "SH9",
       "tool": "SHACL",
       "title": "споживання ≥ 0",
-      "violations": 1,
+      "violations": 0,
       "waived": 0,
-      "blocking": 1,
-      "status": "FAIL",
-      "details": [
-        "помилка перевірки: ModuleNotFoundError: No module named 'pyshacl'"
-      ],
-      "error": true
+      "blocking": 0,
+      "status": "PASS",
+      "details": [],
+      "error": null
     },
     {
       "id": "SH10",
       "tool": "SHACL",
       "title": "вимірювання — рівно один лічильник",
-      "violations": 1,
+      "violations": 0,
       "waived": 0,
-      "blocking": 1,
-      "status": "FAIL",
-      "details": [
-        "помилка перевірки: ModuleNotFoundError: No module named 'pyshacl'"
-      ],
-      "error": true
+      "blocking": 0,
+      "status": "PASS",
+      "details": [],
+      "error": null
     },
     {
       "id": "SP1",
