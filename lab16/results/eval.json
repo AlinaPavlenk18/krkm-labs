@@ -1,0 +1,407 @@
+{
+ "seed42": {
+  "seed": 42,
+  "n_users": 72,
+  "n_events": 1730,
+  "n_train": 1040,
+  "n_test": 690,
+  "eval_users": 60,
+  "hybrid_weights": {
+   "graph": 2,
+   "embedding": 0.5,
+   "popularity": 0
+  },
+  "rrf_k": 60,
+  "metrics": {
+   "popularity": {
+    "precision@5": 0.0433,
+    "recall@5": 0.0306,
+    "nDCG@10": 0.0499,
+    "coverage": 0.0641,
+    "novelty": 6.0465
+   },
+   "graph": {
+    "precision@5": 0.1,
+    "recall@5": 0.0616,
+    "nDCG@10": 0.1011,
+    "coverage": 0.5196,
+    "novelty": 7.9444
+   },
+   "embedding": {
+    "precision@5": 0.0733,
+    "recall@5": 0.0416,
+    "nDCG@10": 0.0725,
+    "coverage": 0.306,
+    "novelty": 8.1116
+   },
+   "hybrid": {
+    "precision@5": 0.1033,
+    "recall@5": 0.0629,
+    "nDCG@10": 0.1092,
+    "coverage": 0.452,
+    "novelty": 7.7491
+   }
+  },
+  "ci": {
+   "popularity": {
+    "precision@5": [
+     0.02,
+     0.07
+    ],
+    "recall@5": [
+     0.0134,
+     0.0509
+    ],
+    "nDCG@10": [
+     0.0264,
+     0.0788
+    ]
+   },
+   "graph": {
+    "precision@5": [
+     0.0667,
+     0.1367
+    ],
+    "recall@5": [
+     0.0385,
+     0.0874
+    ],
+    "nDCG@10": [
+     0.0704,
+     0.131
+    ]
+   },
+   "embedding": {
+    "precision@5": [
+     0.04,
+     0.11
+    ],
+    "recall@5": [
+     0.0219,
+     0.0642
+    ],
+    "nDCG@10": [
+     0.0493,
+     0.0982
+    ]
+   },
+   "hybrid": {
+    "precision@5": [
+     0.0667,
+     0.1467
+    ],
+    "recall@5": [
+     0.0392,
+     0.0894
+    ],
+    "nDCG@10": [
+     0.0755,
+     0.147
+    ]
+   }
+  },
+  "validation_top5": [
+   {
+    "nDCG@10": 0.0838,
+    "k": 60,
+    "weights": {
+     "graph": 2,
+     "embedding": 0.5,
+     "popularity": 0
+    }
+   },
+   {
+    "nDCG@10": 0.0832,
+    "k": 10,
+    "weights": {
+     "graph": 2,
+     "embedding": 0.5,
+     "popularity": 0
+    }
+   },
+   {
+    "nDCG@10": 0.079,
+    "k": 60,
+    "weights": {
+     "graph": 1,
+     "embedding": 0.5,
+     "popularity": 0
+    }
+   },
+   {
+    "nDCG@10": 0.079,
+    "k": 60,
+    "weights": {
+     "graph": 2,
+     "embedding": 1,
+     "popularity": 0
+    }
+   },
+   {
+    "nDCG@10": 0.0766,
+    "k": 60,
+    "weights": {
+     "graph": 2,
+     "embedding": 1,
+     "popularity": 0.3
+    }
+   }
+  ],
+  "cold_users": {
+   "popularity": {
+    "precision@5": 0.08333333333333333,
+    "recall@5": 0.049999999999999996,
+    "nDCG@10": 0.1052693787152804,
+    "coverage": 0.03558718861209965,
+    "novelty": 5.850776972777324
+   },
+   "role_popularity": {
+    "precision@5": 0.15,
+    "recall@5": 0.07765151515151515,
+    "nDCG@10": 0.1387655207251041,
+    "coverage": 0.07829181494661921,
+    "novelty": 6.155221393211738
+   },
+   "graph": {
+    "precision@5": 0.18333333333333335,
+    "recall@5": 0.08952020202020201,
+    "nDCG@10": 0.1874919175633405,
+    "coverage": 0.13167259786476868,
+    "novelty": 7.412594660526366
+   },
+   "embedding": {
+    "precision@5": 0.13333333333333333,
+    "recall@5": 0.07800925925925925,
+    "nDCG@10": 0.15575229836370968,
+    "coverage": 0.1708185053380783,
+    "novelty": 7.938173161178154
+   },
+   "hybrid": {
+    "precision@5": 0.18333333333333335,
+    "recall@5": 0.09553872053872053,
+    "nDCG@10": 0.1627247427837058,
+    "coverage": 0.1494661921708185,
+    "novelty": 6.912967738131201
+   }
+  },
+  "n_cold_users": 12,
+  "cold_docs": [
+   "prj09",
+   "gen01",
+   "prj03"
+  ],
+  "cold_items": {
+   "popularity": {
+    "pairs": 156,
+    "cold_item_recall@10": 0.0,
+    "cold_items_in_any_top10": 0
+   },
+   "graph": {
+    "pairs": 156,
+    "cold_item_recall@10": 0.1346,
+    "cold_items_in_any_top10": 9
+   },
+   "embedding": {
+    "pairs": 156,
+    "cold_item_recall@10": 0.0769,
+    "cold_items_in_any_top10": 14
+   },
+   "hybrid": {
+    "pairs": 156,
+    "cold_item_recall@10": 0.1154,
+    "cold_items_in_any_top10": 11
+   }
+  },
+  "example_recs": {
+   "popularity": {
+    "u001": [
+     "kb14#s01",
+     "kb06#s06",
+     "kb08#s02",
+     "kb06#s08",
+     "kb14#s02"
+    ],
+    "u002": [
+     "kb14#s01",
+     "kb06#s08",
+     "kb14#s02",
+     "kb14#s08",
+     "kb07#s03"
+    ],
+    "u003": [
+     "kb14#s01",
+     "kb06#s06",
+     "kb08#s02",
+     "kb06#s00",
+     "kb06#s08"
+    ]
+   },
+   "graph": {
+    "u001": [
+     "kb06#s01",
+     "kb06#s04",
+     "kb01#s09",
+     "kb01#s07",
+     "prj03#s09"
+    ],
+    "u002": [
+     "kb06#s01",
+     "kb07#s01",
+     "prj09#s07",
+     "prj09#s05",
+     "kb06#s03"
+    ],
+    "u003": [
+     "kb06#s03",
+     "kb06#s01",
+     "prj03#s09",
+     "prj09#s27",
+     "prj03#s07"
+    ]
+   },
+   "embedding": {
+    "u001": [
+     "gen02#s02",
+     "gen05#s06",
+     "gen05#s17",
+     "gen05#s10",
+     "gen05#s11"
+    ],
+    "u002": [
+     "kb06#s03",
+     "kb06#s04",
+     "kb06#s05",
+     "kb06#s09",
+     "prj09#s21"
+    ],
+    "u003": [
+     "prj09#s21",
+     "prj09#s18",
+     "prj09#s19",
+     "prj09#s28",
+     "prj09#s12"
+    ]
+   },
+   "hybrid": {
+    "u001": [
+     "gen02#s02",
+     "kb06#s04",
+     "gen05#s06",
+     "kb06#s01",
+     "gen07#s02"
+    ],
+    "u002": [
+     "kb06#s01",
+     "kb06#s03",
+     "kb06#s05",
+     "prj09#s21",
+     "prj09#s18"
+    ],
+    "u003": [
+     "prj09#s21",
+     "kb06#s03",
+     "prj09#s18",
+     "prj03#s09",
+     "prj03#s07"
+    ]
+   }
+  }
+ },
+ "repeats_mean_sd": {
+  "popularity": {
+   "precision@5": [
+    0.0447,
+    0.0069
+   ],
+   "recall@5": [
+    0.0281,
+    0.0069
+   ],
+   "nDCG@10": [
+    0.0526,
+    0.0092
+   ],
+   "coverage": [
+    0.0655,
+    0.0054
+   ],
+   "novelty": [
+    6.1097,
+    0.0729
+   ]
+  },
+  "graph": {
+   "precision@5": [
+    0.0787,
+    0.0157
+   ],
+   "recall@5": [
+    0.0474,
+    0.0108
+   ],
+   "nDCG@10": [
+    0.0838,
+    0.0139
+   ],
+   "coverage": [
+    0.5167,
+    0.0162
+   ],
+   "novelty": [
+    7.9477,
+    0.0735
+   ]
+  },
+  "embedding": {
+   "precision@5": [
+    0.0667,
+    0.0215
+   ],
+   "recall@5": [
+    0.0388,
+    0.0118
+   ],
+   "nDCG@10": [
+    0.0749,
+    0.0202
+   ],
+   "coverage": [
+    0.2968,
+    0.0179
+   ],
+   "novelty": [
+    8.2109,
+    0.0806
+   ]
+  },
+  "hybrid": {
+   "precision@5": [
+    0.0813,
+    0.0228
+   ],
+   "recall@5": [
+    0.0499,
+    0.0122
+   ],
+   "nDCG@10": [
+    0.0873,
+    0.0181
+   ],
+   "coverage": [
+    0.358,
+    0.1447
+   ],
+   "novelty": [
+    7.4845,
+    0.7053
+   ]
+  }
+ },
+ "seeds": [
+  42,
+  43,
+  44,
+  45,
+  46
+ ]
+}

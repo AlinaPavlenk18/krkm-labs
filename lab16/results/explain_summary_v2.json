@@ -1,0 +1,17 @@
+{
+ "recommendations": 50,
+ "with_path": 50,
+ "path_share": 1.0,
+ "avg_path_len": 1.4,
+ "llm_checked": 50,
+ "llm_faithful": 20,
+ "llm_faithful_share": 0.4,
+ "final_faithful_share": 1.0,
+ "model": "qwen2.5:7b",
+ "params": {
+  "temperature": 0,
+  "seed": 42
+ },
+ "prompt": "explain_v2",
+ "mode": "slots"
+}

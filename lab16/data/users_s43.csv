@@ -1,0 +1,73 @@
+user_id,role,group,cold,interests
+u001,dispatcher,Dispatcher_1,0,Substation_7;ForecastModel_LSTM1;Substation_5;C:рівні завантаження;Dispatcher_1;C:перерозподіл;Substation_1;C:похибка прогнозу;C:погода
+u002,dispatcher,Dispatcher_1,0,C:рівні завантаження;ForecastModel_LSTM1;Dispatcher_1;C:перерозподіл;Substation_1;C:ланцюг живлення;Substation_7;C:рівні завантаження;ForecastModel_GRU1
+u003,dispatcher,Dispatcher_1,0,Substation_7;Substation_1;C:перевантаження;ForecastModel_LSTM1;C:рівні завантаження;C:договірний ліміт;C:ланцюг живлення;C:перерозподіл;C:ланцюг живлення;Substation_3
+u004,dispatcher,Dispatcher_1,0,C:договірний ліміт;C:рівні завантаження;Substation_1;C:перевантаження;Dispatcher_1;C:перерозподіл;ForecastModel_LSTM3;ForecastModel_GRU1
+u005,dispatcher,Dispatcher_1,0,C:ланцюг живлення;Substation_1;Substation_5;Substation_7;Dispatcher_1;C:перевантаження;ForecastModel_ARIMA1;ForecastModel_LSTM1
+u006,dispatcher,Dispatcher_1,1,Dispatcher_1;C:ланцюг живлення;C:рівні завантаження;C:перерозподіл;Substation_5;Substation_1;ForecastModel_LSTM1;Dispatcher_1;Region_IF
+u007,dispatcher,Dispatcher_2,0,Substation_11;C:перевантаження;Substation_8;Substation_12;Substation_5;Substation_7;Substation_9;Dispatcher_2;C:договірний ліміт;C:рівні завантаження;C:похибка прогнозу;C:PageRank
+u008,dispatcher,Dispatcher_2,0,C:договірний ліміт;Substation_9;Substation_7;ForecastModel_VAR1;Substation_3;ForecastModel_LSTM2;Substation_5;Substation_2;C:перевантаження;Substation_11;C:ланцюг живлення;ForecastModel_ARIMA1;Region_Lviv;Dispatcher_1
+u009,dispatcher,Dispatcher_2,0,ForecastModel_VAR1;C:перевантаження;Substation_12;Substation_5;Substation_11;C:договірний ліміт;C:ланцюг живлення;C:перерозподіл;Substation_7;C:рівні завантаження;Substation_8;Substation_12;Substation_5
+u010,dispatcher,Dispatcher_2,0,C:перевантаження;ForecastModel_LSTM2;ForecastModel_VAR1;C:ланцюг живлення;Substation_8;Substation_7;C:договірний ліміт;Substation_12;Substation_5;Substation_11;Substation_3;Substation_9;C:суперечності;Region_Ternopil
+u011,dispatcher,Dispatcher_2,0,Substation_2;C:перерозподіл;Substation_9;C:ланцюг живлення;Substation_7;C:рівні завантаження;Substation_11;Substation_3;Substation_12;Substation_5;Substation_8;ForecastModel_ARIMA1;Region_Zakarpattia
+u012,dispatcher,Dispatcher_2,1,C:рівні завантаження;Substation_12;C:перерозподіл;Substation_8;C:договірний ліміт;ForecastModel_LSTM2;C:ланцюг живлення;Dispatcher_2;Substation_9;Substation_3;Substation_5;ForecastModel_VAR1;ForecastModel_ARIMA1;Substation_2;Dispatcher_4;C:несправності
+u013,dispatcher,Dispatcher_3,0,Substation_12;C:рівні завантаження;C:договірний ліміт;ForecastModel_LSTM2;C:перевантаження;ForecastModel_GRU1;Dispatcher_3;Substation_4;C:архітектура
+u014,dispatcher,Dispatcher_3,0,Substation_5;ForecastModel_GRU1;Substation_7;ForecastModel_LSTM2;C:перерозподіл;C:договірний ліміт;C:перевантаження;C:ланцюг живлення;Substation_12;C:доступ;Substation_10
+u015,dispatcher,Dispatcher_3,0,Substation_7;ForecastModel_GRU1;C:перевантаження;Substation_12;C:договірний ліміт;C:перерозподіл;C:рівні завантаження;C:PageRank;Substation_8
+u016,dispatcher,Dispatcher_3,0,ForecastModel_LSTM2;C:перевантаження;C:ланцюг живлення;C:перерозподіл;ForecastModel_GRU1;C:рівні завантаження;Substation_7;C:перенавчання;C:якість даних
+u017,dispatcher,Dispatcher_3,0,C:перевантаження;Substation_5;ForecastModel_GRU1;Substation_12;Substation_7;Dispatcher_3;C:ланцюг живлення;C:перерозподіл;C:рівні завантаження;Substation_9;Substation_1
+u018,dispatcher,Dispatcher_3,1,ForecastModel_GRU1;C:перевантаження;C:ланцюг живлення;C:договірний ліміт;ForecastModel_LSTM2;C:рівні завантаження;C:споживачі;Substation_6
+u019,dispatcher,Dispatcher_4,0,ForecastModel_LSTM1;Substation_1;C:перерозподіл;Substation_3;Substation_8;C:ланцюг живлення;Substation_6;Substation_4;Dispatcher_4;C:перевантаження;Substation_7;Substation_11;Substation_2;ForecastModel_VAR1;Substation_5;Substation_12;Substation_9;C:рівні завантаження;ForecastModel_ARIMA1;ForecastModel_LSTM3;Region_IF;Region_Ternopil
+u020,dispatcher,Dispatcher_4,0,Substation_4;Substation_5;Substation_2;Substation_10;C:рівні завантаження;ForecastModel_LSTM1;ForecastModel_LSTM3;Substation_9;Substation_3;Substation_1;Substation_7;Dispatcher_4;C:ланцюг живлення;ForecastModel_GRU1;ForecastModel_ARIMA1;C:перерозподіл;Substation_8;C:суперечності;Substation_4
+u021,dispatcher,Dispatcher_4,0,ForecastModel_LSTM1;C:договірний ліміт;Substation_2;ForecastModel_LSTM2;Dispatcher_4;Substation_7;Substation_10;Substation_3;ForecastModel_GRU1;C:ланцюг живлення;Substation_12;Substation_11;Substation_8;ForecastModel_VAR1;Substation_5;Substation_6;C:перерозподіл;C:договірний ліміт;ForecastModel_ARIMA1
+u022,dispatcher,Dispatcher_4,0,ForecastModel_GRU1;Substation_4;ForecastModel_VAR1;C:перерозподіл;ForecastModel_LSTM2;Substation_2;ForecastModel_LSTM1;Substation_7;Substation_12;Substation_6;Substation_8;Substation_3;Substation_11;Substation_5;Substation_10;C:рівні завантаження;ForecastModel_LSTM3;ForecastModel_LSTM2;C:прогноз
+u023,dispatcher,Dispatcher_4,0,Substation_10;Substation_4;C:перерозподіл;ForecastModel_GRU1;Substation_1;ForecastModel_VAR1;Substation_7;Substation_9;C:рівні завантаження;C:ланцюг живлення;Substation_8;ForecastModel_LSTM1;Substation_3;C:договірний ліміт;ForecastModel_LSTM3;ForecastModel_LSTM3;C:рівні завантаження
+u024,dispatcher,Dispatcher_4,1,Substation_4;Substation_9;C:ланцюг живлення;ForecastModel_VAR1;Substation_6;Substation_11;C:договірний ліміт;Substation_3;Substation_5;Substation_12;Dispatcher_4;Substation_10;Substation_1;ForecastModel_ARIMA1;C:перевантаження;Substation_7;C:перерозподіл;Substation_2;Dispatcher_1;C:перевантаження
+u025,dispatcher,Dispatcher_5,0,C:ланцюг живлення;Substation_12;Substation_2;Substation_3;C:рівні завантаження;ForecastModel_LSTM2;Substation_5;C:перерозподіл;Substation_4;Substation_6;C:договірний ліміт;C:перевантаження;ForecastModel_LSTM3;Dispatcher_5;Substation_9;Substation_7;Substation_8;Dispatcher_1;C:суперечності
+u026,dispatcher,Dispatcher_5,0,ForecastModel_LSTM2;ForecastModel_LSTM1;Substation_12;Substation_8;C:ланцюг живлення;ForecastModel_LSTM3;Substation_6;Substation_3;C:перерозподіл;Substation_1;ForecastModel_ARIMA1;Substation_9;C:рівні завантаження;Substation_11;Substation_4;ForecastModel_VAR1;C:договірний ліміт;Dispatcher_5;Substation_1;C:погода
+u027,dispatcher,Dispatcher_5,0,Substation_5;Substation_8;Substation_11;C:договірний ліміт;ForecastModel_VAR1;Substation_7;Substation_9;ForecastModel_LSTM3;Substation_1;Dispatcher_5;Substation_12;Substation_3;C:рівні завантаження;C:перерозподіл;C:граф знань;Substation_3
+u028,dispatcher,Dispatcher_5,0,C:перерозподіл;C:перевантаження;Dispatcher_5;C:ланцюг живлення;Substation_7;Substation_2;ForecastModel_VAR1;ForecastModel_LSTM3;Substation_3;Substation_12;ForecastModel_ARIMA1;Substation_4;Substation_8;C:рівні завантаження;Substation_9;Substation_10
+u029,dispatcher,Dispatcher_5,0,Substation_7;ForecastModel_LSTM2;C:перевантаження;C:договірний ліміт;Substation_4;Substation_8;Substation_11;ForecastModel_VAR1;C:ланцюг живлення;Substation_3;ForecastModel_ARIMA1;ForecastModel_GRU1;Substation_6;C:перерозподіл;Dispatcher_5;C:прогноз;Substation_8
+u030,dispatcher,Dispatcher_5,1,Substation_1;C:рівні завантаження;Substation_11;Substation_7;C:договірний ліміт;Substation_5;Substation_6;Substation_8;Substation_4;Dispatcher_5;ForecastModel_LSTM3;Substation_9;Substation_2;C:ланцюг живлення;ForecastModel_LSTM1;C:суперечності;C:лічильники
+u031,dispatcher,Dispatcher_6,0,Substation_4;C:перерозподіл;C:перевантаження;ForecastModel_GRU1;C:договірний ліміт;ForecastModel_LSTM3;Dispatcher_6;Substation_5;ForecastModel_LSTM2;C:рівні завантаження;Substation_10;C:ланцюг живлення;ForecastModel_VAR1;Dispatcher_3
+u032,dispatcher,Dispatcher_6,0,C:перерозподіл;Dispatcher_6;Substation_10;Substation_7;Substation_5;ForecastModel_GRU1;Substation_12;C:договірний ліміт;C:перевантаження;C:PageRank;Substation_9
+u033,dispatcher,Dispatcher_6,0,C:перевантаження;Substation_10;Substation_4;C:перерозподіл;ForecastModel_GRU1;Substation_6;Substation_5;ForecastModel_LSTM2;Substation_12;C:рівні завантаження;C:договірний ліміт;C:несправності;C:доступ
+u034,dispatcher,Dispatcher_6,0,C:договірний ліміт;ForecastModel_GRU1;C:рівні завантаження;Substation_10;C:перерозподіл;Substation_6;Substation_4;Dispatcher_6;ForecastModel_LSTM2;ForecastModel_LSTM3;Substation_7;C:перевантаження;C:перевантаження;ForecastModel_VAR1
+u035,dispatcher,Dispatcher_6,0,C:перевантаження;Substation_7;Substation_10;Substation_12;C:договірний ліміт;Substation_4;Substation_5;ForecastModel_LSTM2;C:ланцюг живлення;Substation_6;C:прогноз
+u036,dispatcher,Dispatcher_6,1,Substation_4;Substation_10;C:рівні завантаження;ForecastModel_GRU1;C:перерозподіл;Substation_5;C:перевантаження;Substation_7;Dispatcher_6;C:ланцюг живлення;ForecastModel_LSTM3;C:онтологія;Dispatcher_5
+u037,analyst,forecasting,0,C:погода;ForecastModel_ARIMA1;ForecastModel_VAR1;ForecastModel_LSTM1;C:прогноз;ForecastModel_GRU1;ForecastModel_LSTM2;ForecastModel_LSTM3;Dispatcher_2;ForecastModel_GRU1
+u038,analyst,forecasting,0,C:похибка прогнозу;ForecastModel_LSTM1;ForecastModel_LSTM2;ForecastModel_LSTM3;ForecastModel_ARIMA1;C:перенавчання;C:перенавчання;Region_IF
+u039,analyst,forecasting,0,C:перенавчання;ForecastModel_LSTM2;ForecastModel_ARIMA1;ForecastModel_LSTM3;ForecastModel_VAR1;ForecastModel_LSTM1;C:погода;C:похибка прогнозу;Substation_5;C:рівні завантаження
+u040,analyst,forecasting,0,ForecastModel_LSTM1;C:перенавчання;ForecastModel_ARIMA1;C:погода;C:прогноз;ForecastModel_LSTM2;ForecastModel_GRU1;ForecastModel_VAR1;ForecastModel_LSTM1;C:якість даних
+u041,analyst,forecasting,0,C:перенавчання;ForecastModel_GRU1;ForecastModel_ARIMA1;ForecastModel_LSTM1;C:прогноз;ForecastModel_VAR1;C:погода;C:онтологія;C:лічильники
+u042,analyst,forecasting,0,C:погода;C:прогноз;ForecastModel_LSTM3;ForecastModel_LSTM1;ForecastModel_VAR1;C:перенавчання;ForecastModel_ARIMA1;C:погода
+u043,analyst,forecasting,1,ForecastModel_LSTM1;C:погода;C:перенавчання;ForecastModel_GRU1;ForecastModel_LSTM2;ForecastModel_VAR1;ForecastModel_ARIMA1;C:прогноз;Substation_2;C:рівні завантаження
+u044,analyst,forecasting,1,C:похибка прогнозу;ForecastModel_LSTM2;C:перенавчання;ForecastModel_ARIMA1;ForecastModel_VAR1;C:прогноз;ForecastModel_LSTM1;ForecastModel_LSTM3;C:прогноз;ForecastModel_VAR1
+u045,analyst,graph,0,C:архітектура;C:PageRank;C:граф знань;C:спільноти;ForecastModel_ARIMA1;Substation_11
+u046,analyst,graph,0,C:PageRank;C:онтологія;C:граф знань;ForecastModel_VAR1;ForecastModel_LSTM2
+u047,analyst,graph,0,C:онтологія;C:спільноти;C:суперечності;C:граф знань;Substation_4;Dispatcher_5
+u048,analyst,graph,0,C:граф знань;C:PageRank;C:спільноти;C:архітектура;Substation_6;ForecastModel_VAR1
+u049,analyst,graph,0,C:онтологія;C:PageRank;C:спільноти;C:граф знань;C:суперечності;C:споживачі
+u050,analyst,graph,0,C:суперечності;C:спільноти;C:PageRank;C:граф знань;C:перерозподіл;Substation_12
+u051,analyst,graph,1,C:спільноти;C:онтологія;C:PageRank;C:суперечності;Region_Ternopil;C:перенавчання
+u052,analyst,quality,0,C:суперечності;C:доступ;C:несправності;Substation_11;Dispatcher_2
+u053,analyst,quality,0,C:доступ;C:несправності;C:лічильники;Region_Volyn;C:граф знань
+u054,analyst,quality,0,C:лічильники;C:несправності;C:суперечності;C:рівні завантаження;Region_Volyn
+u055,analyst,quality,0,C:несправності;C:лічильники;C:суперечності;C:доступ;Region_Rivne;Substation_3
+u056,analyst,quality,0,C:якість даних;C:лічильники;C:несправності;C:суперечності;Region_IF;Substation_4
+u057,analyst,quality,0,C:лічильники;C:якість даних;C:несправності;Region_Lviv;C:граф знань
+u058,analyst,quality,1,C:суперечності;C:несправності;C:доступ;Substation_4;C:рівні завантаження
+u059,engineer,ami,0,C:якість даних;C:погода;C:лічильники;Region_IF;C:граф знань
+u060,engineer,ami,0,C:лічильники;C:несправності;C:споживачі;Substation_8;C:споживачі
+u061,engineer,ami,0,C:якість даних;C:погода;C:лічильники;C:споживачі;Region_Volyn;Dispatcher_6
+u062,engineer,ami,0,C:лічильники;C:погода;C:несправності;Substation_1;Substation_11
+u063,engineer,ami,0,C:якість даних;C:лічильники;C:споживачі;C:несправності;C:якість даних;ForecastModel_LSTM2
+u064,engineer,ami,0,C:споживачі;C:погода;C:лічильники;C:PageRank;C:лічильники
+u065,engineer,ami,0,C:погода;C:якість даних;C:споживачі;ForecastModel_LSTM2;C:погода
+u066,engineer,ami,0,C:лічильники;C:несправності;C:споживачі;Substation_9;Substation_7
+u067,engineer,ami,0,C:якість даних;C:споживачі;C:лічильники;C:перерозподіл;Dispatcher_5
+u068,engineer,ami,0,C:лічильники;C:несправності;C:якість даних;C:рівні завантаження;C:доступ
+u069,engineer,ami,0,C:якість даних;C:лічильники;C:споживачі;C:несправності;C:рівні завантаження
+u070,engineer,ami,0,C:лічильники;C:несправності;C:погода;Substation_9;Region_Ternopil
+u071,engineer,ami,1,C:погода;C:якість даних;C:несправності;C:договірний ліміт;C:PageRank
+u072,engineer,ami,1,C:якість даних;C:несправності;C:погода;C:споживачі;ForecastModel_LSTM2
