@@ -1,0 +1,82 @@
+[
+ {
+  "id": "P-0001",
+  "subject": "ForecastModel_LSTM2",
+  "predicate": "status",
+  "object": "застаріла",
+  "source": "gen02",
+  "quote": "Статус: застаріла, у черзі на перенавчання",
+  "proposed_by": "agent",
+  "proposed_at": "2026-11-07T15:29:22",
+  "kind": "string",
+  "risk": "low",
+  "checks": {
+   "predicate": true,
+   "subject": true,
+   "object": true,
+   "source": true,
+   "shacl": true
+  },
+  "reasons": [],
+  "current_value": [],
+  "status": "approved",
+  "decided_by": "auto (низький ризик)",
+  "decided_at": "2026-11-07T15:29:22"
+ },
+ {
+  "id": "P-0002",
+  "subject": "Substation_9",
+  "predicate": "managedByDispatcher",
+  "object": "Dispatcher_5",
+  "source": "kb06",
+  "quote": "До призначення відповідального всі події на ній обробляє провідний диспетчер",
+  "proposed_by": "agent",
+  "proposed_at": "2026-11-07T15:29:38",
+  "kind": "iri",
+  "risk": "medium",
+  "checks": {
+   "predicate": true,
+   "subject": true,
+   "object": true,
+   "source": true,
+   "shacl": true
+  },
+  "reasons": [
+   "новий зв'язок у графі",
+   "критичний предикат managedByDispatcher"
+  ],
+  "current_value": [],
+  "status": "approved",
+  "decided_by": "Павленко А. С.",
+  "decided_at": "2026-11-07T15:30:16",
+  "decision_reason": ""
+ },
+ {
+  "id": "P-0003",
+  "subject": "Substation_5",
+  "predicate": "currentLoad",
+  "object": "650",
+  "source": "kb06",
+  "quote": "Червоний рівень — 95 % і більше",
+  "proposed_by": "agent",
+  "proposed_at": "2026-11-07T15:29:47",
+  "kind": "double",
+  "risk": "high",
+  "checks": {
+   "predicate": true,
+   "subject": true,
+   "object": true,
+   "source": true,
+   "shacl": false
+  },
+  "reasons": [
+   "SHACL: SH1: поточне навантаження не може перевищувати номінальну потужність."
+  ],
+  "current_value": [
+   "468.0"
+  ],
+  "status": "rejected",
+  "decided_by": "auto (високий ризик)",
+  "decided_at": "2026-11-07T15:29:48"
+ }
+]

@@ -1,0 +1,14 @@
+{
+ "tag": "after_v2",
+ "defenses": true,
+ "model": "qwen2.5:7b",
+ "prompt_version": "v2",
+ "n": 7,
+ "avg_tool_calls": 1.43,
+ "avg_llm_calls": 1.0,
+ "avg_tokens": 1377,
+ "avg_latency_s": 17.0,
+ "cost_usd": 0.0,
+ "blocked_rate": 1.0,
+ "succeeded": []
+}

@@ -1,0 +1,25 @@
+{
+ "tag": "v1",
+ "defenses": true,
+ "model": "qwen2.5:7b",
+ "prompt_version": "v1",
+ "n": 12,
+ "avg_tool_calls": 2.5,
+ "avg_llm_calls": 3.83,
+ "avg_tokens": 4102,
+ "avg_latency_s": 23.5,
+ "cost_usd": 0.0,
+ "success_rate": 0.417,
+ "success_success": "2/6",
+ "success_unknown": "3/3",
+ "success_conflict": "0/3",
+ "failed": [
+  "S1",
+  "S3",
+  "S4",
+  "S6",
+  "C1",
+  "C2",
+  "C3"
+ ]
+}

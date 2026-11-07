@@ -1,0 +1,10 @@
+{"ts": "2026-11-07T15:29:22", "event": "proposed", "id": "P-0001", "fact": {"subject": "ForecastModel_LSTM2", "predicate": "status", "object": "застаріла", "source": "gen02"}, "by": "agent"}
+{"ts": "2026-11-07T15:29:22", "event": "assessed", "id": "P-0001", "risk": "low", "checks": {"predicate": true, "subject": true, "object": true, "source": true, "shacl": true}, "reasons": []}
+{"ts": "2026-11-07T15:29:22", "event": "approved", "id": "P-0001", "by": "auto (низький ризик)"}
+{"ts": "2026-11-07T15:29:38", "event": "proposed", "id": "P-0002", "fact": {"subject": "Substation_9", "predicate": "managedByDispatcher", "object": "Dispatcher_5", "source": "kb06"}, "by": "agent"}
+{"ts": "2026-11-07T15:29:38", "event": "assessed", "id": "P-0002", "risk": "medium", "checks": {"predicate": true, "subject": true, "object": true, "source": true, "shacl": true}, "reasons": ["новий зв'язок у графі", "критичний предикат managedByDispatcher"]}
+{"ts": "2026-11-07T15:29:38", "event": "pending", "id": "P-0002", "by": null}
+{"ts": "2026-11-07T15:29:47", "event": "proposed", "id": "P-0003", "fact": {"subject": "Substation_5", "predicate": "currentLoad", "object": "650", "source": "kb06"}, "by": "agent"}
+{"ts": "2026-11-07T15:29:48", "event": "assessed", "id": "P-0003", "risk": "high", "checks": {"predicate": true, "subject": true, "object": true, "source": true, "shacl": false}, "reasons": ["SHACL: SH1: поточне навантаження не може перевищувати номінальну потужність."]}
+{"ts": "2026-11-07T15:29:48", "event": "rejected", "id": "P-0003", "by": "auto (високий ризик)"}
+{"ts": "2026-11-07T15:30:16", "event": "approved", "id": "P-0002", "by": "Павленко А. С.", "reason": ""}
