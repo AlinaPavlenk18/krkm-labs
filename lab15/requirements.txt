@@ -1,0 +1,8 @@
+# поверх середовища ЛР11 (lab11/requirements.txt: sentence-transformers, faiss-cpu, rank-bm25, numpy, requests, pytest)
+langgraph>=1.0,<2
+mcp>=2,<3
+rdflib>=7
+pyshacl>=0.26
+jsonschema>=4.21
+duckdb>=1.1
+pyyaml>=6
