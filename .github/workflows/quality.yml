@@ -1,0 +1,35 @@
+name: knowledge-quality
+
+on:
+  push:
+    paths: ["lab14/**", ".github/workflows/quality.yml"]
+  pull_request:
+    paths: ["lab14/**"]
+  workflow_dispatch:
+
+jobs:
+  quality-gate:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: lab14
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies (without models and network services)
+        run: pip install rdflib pyshacl owlrl jsonschema pytest matplotlib numpy
+      - name: Gate (SHACL + SPARQL + Python + JSON Schema)
+        run: python quality/gate.py --name "ci-${{ github.sha }}" --ref-date 2026-11-07
+      - name: Run pytest (same rules as individual tests)
+        if: always()
+        env:
+          QUALITY_REF_DATE: "2026-11-07"
+        run: pytest -q quality/tests    
+      - name: Upload report as artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: quality-report
+          path: lab14/quality/reports/

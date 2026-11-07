@@ -1,0 +1,7 @@
+id,name,source
+Region_IvanoFrankivsk,Івано-Франківська область,derived:lab09(region literal)
+Region_Lviv,Львівська область,derived:lab09(region literal)
+Region_Rivne,Рівненська область,derived:lab09(region literal)
+Region_Ternopil,Тернопільська область,derived:lab09(region literal)
+Region_Volyn,Волинська область,derived:lab09(region literal)
+Region_Zakarpattia,Закарпатська область,derived:lab09(region literal)

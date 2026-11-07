@@ -1,0 +1,44 @@
+@prefix :    <http://www.semanticweb.org/energy-forecasting#> .
+@prefix sh:  <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix q:   <http://www.semanticweb.org/energy-forecasting/quality-shapes#> .
+
+# ЛР14, Р4: SHACL-перевірки якості понад форми ЛР8 (lab08_shapes.ttl). Кожна форма має q:checkId для звіту CI.
+
+q:SubstationLoadShape a sh:NodeShape ;
+    q:checkId "SH1" ;
+    sh:targetClass :Substation ;
+    sh:property [ sh:path :currentLoad ; sh:lessThanOrEquals :nominalCapacity ;
+                  sh:message "SH1: поточне навантаження не може перевищувати номінальну потужність." ] ;
+    sh:property [ sh:path :region ; sh:minCount 1 ; sh:maxCount 1 ;
+                  sh:in ( "Львівська область"^^xsd:string "Волинська область"^^xsd:string "Закарпатська область"^^xsd:string "Тернопільська область"^^xsd:string
+                          "Рівненська область"^^xsd:string "Івано-Франківська область"^^xsd:string ) ;
+                  sh:message "SH2: регіон має бути одним із канонічних назв областей (термінологія)." ] .
+
+q:MeterShape a sh:NodeShape ;
+    q:checkId "SH3" ;
+    sh:targetClass :Meter ;
+    sh:property [ sh:path :readingInterval ; sh:minCount 1 ; sh:in ( 15 30 60 ) ;
+                  sh:message "SH3: інтервал зчитування лічильника — 15, 30 або 60 хв." ] ;
+    sh:property [ sh:path :meterStatus ; sh:minCount 1 ; sh:in ( "активний"^^xsd:string "несправний"^^xsd:string "на повірці"^^xsd:string ) ;
+                  sh:message "SH4: статус лічильника — активний / несправний / на повірці." ] .
+
+q:ModelShape a sh:NodeShape ;
+    q:checkId "SH5" ;
+    sh:targetClass :ForecastModel ;
+    sh:property [ sh:path :accuracy ; sh:minCount 1 ; sh:datatype xsd:double ; sh:minInclusive 0 ; sh:maxInclusive 100 ;
+                  sh:message "SH5: точність моделі обов'язкова, 0–100 %." ] ;
+    sh:property [ sh:path :trainingDate ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:date ;
+                  sh:message "SH6: дата навчання обов'язкова, одна, xsd:date." ] ;
+    sh:property [ sh:path :modelType ; sh:minCount 1 ; sh:in ( "LSTM"^^xsd:string "GRU"^^xsd:string "VAR"^^xsd:string "ARIMA"^^xsd:string ) ;
+                  sh:message "SH7: тип моделі — LSTM, GRU, VAR або ARIMA." ] .
+
+q:MeasurementShape a sh:NodeShape ;
+    q:checkId "SH8" ;
+    sh:targetClass :Measurement ;
+    sh:property [ sh:path :timestamp ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:dateTime ;
+                  sh:message "SH8: вимірювання має рівно одну мітку часу xsd:dateTime." ] ;
+    sh:property [ sh:path :consumptionValue ; sh:minCount 1 ; sh:minInclusive 0 ;
+                  sh:message "SH9: споживання обов'язкове й невід'ємне." ] ;
+    sh:property [ sh:path :measuredByMeter ; sh:minCount 1 ; sh:maxCount 1 ;
+                  sh:message "SH10: вимірювання записане рівно одним лічильником." ] .

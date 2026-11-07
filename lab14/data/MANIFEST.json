@@ -1,0 +1,138 @@
+{
+  "snapshot": "baseline",
+  "created": "2026-11-06T23:16:47",
+  "files": {
+    "store/triples.csv": {
+      "from": "lab09/data/triples_final.csv",
+      "sha256_16": "3247ecffdfad6bb4"
+    },
+    "store/ontology/lab08_vocabulary.ttl": {
+      "from": "lab09/data/source/lab08_vocabulary.ttl",
+      "sha256_16": "0d3177f638e5955c"
+    },
+    "store/ontology/lab08_shapes.ttl": {
+      "from": "lab09/data/source/lab08_shapes.ttl",
+      "sha256_16": "466497fb2dd62678"
+    },
+    "corpus/docs.jsonl": {
+      "from": "lab11/data/clean/docs.jsonl",
+      "sha256_16": "c3ffe3acc3fcc4f7"
+    },
+    "lab13/extracted_rules.jsonl": {
+      "from": "lab13/data/extracted.jsonl",
+      "sha256_16": "736748acc17d43f3"
+    },
+    "lab13/extracted_llm_dev.jsonl": {
+      "from": "lab13/results/llm_dev.jsonl",
+      "sha256_16": "7de434d6ad6187a5"
+    },
+    "lab13/extracted_llm_test.jsonl": {
+      "from": "lab13/results/llm_test.jsonl",
+      "sha256_16": "64c5d6d0a2a6f21f"
+    },
+    "lab13/gold.jsonl": {
+      "from": "lab13/data/gold.jsonl",
+      "sha256_16": "d2748445f3208494"
+    },
+    "lab13/docs.jsonl": {
+      "from": "lab13/data/docs.jsonl",
+      "sha256_16": "1af8fce966cf7d26"
+    },
+    "rag_baseline/rag_eval.jsonl": {
+      "from": "lab11/eval/rag_eval.jsonl",
+      "sha256_16": "54405cd5f4c604de"
+    },
+    "rag_baseline/summary.json": {
+      "from": "lab11/results/baseline/summary.json",
+      "sha256_16": "2c581dc9bf0ff489"
+    },
+    "rag_baseline/records.jsonl": {
+      "from": "lab11/results/baseline/records.jsonl",
+      "sha256_16": "467eb77ad26e5278"
+    },
+    "store/graph/nodes_consumer.csv": {
+      "from": "lab11/data/graph/nodes_consumer.csv",
+      "sha256_16": "34b85eb7848bf714"
+    },
+    "store/graph/nodes_dispatcher.csv": {
+      "from": "lab11/data/graph/nodes_dispatcher.csv",
+      "sha256_16": "58952f2041836b6b"
+    },
+    "store/graph/nodes_forecast.csv": {
+      "from": "lab11/data/graph/nodes_forecast.csv",
+      "sha256_16": "9289d55156184d60"
+    },
+    "store/graph/nodes_forecastmodel.csv": {
+      "from": "lab11/data/graph/nodes_forecastmodel.csv",
+      "sha256_16": "5ac958d3b83960f6"
+    },
+    "store/graph/nodes_measurement.csv": {
+      "from": "lab11/data/graph/nodes_measurement.csv",
+      "sha256_16": "d1beb1b12d0a5071"
+    },
+    "store/graph/nodes_meter.csv": {
+      "from": "lab11/data/graph/nodes_meter.csv",
+      "sha256_16": "9e2a9ec5a776e8cc"
+    },
+    "store/graph/nodes_region.csv": {
+      "from": "lab11/data/graph/nodes_region.csv",
+      "sha256_16": "ceafb799133753ad"
+    },
+    "store/graph/nodes_substation.csv": {
+      "from": "lab11/data/graph/nodes_substation.csv",
+      "sha256_16": "31218218dd79b628"
+    },
+    "store/graph/nodes_weathercondition.csv": {
+      "from": "lab11/data/graph/nodes_weathercondition.csv",
+      "sha256_16": "cb432098b0eb5d60"
+    },
+    "store/graph/rels_affects_model.csv": {
+      "from": "lab11/data/graph/rels_affects_model.csv",
+      "sha256_16": "cbd28f7866ed9140"
+    },
+    "store/graph/rels_connected_to.csv": {
+      "from": "lab11/data/graph/rels_connected_to.csv",
+      "sha256_16": "02e6d92058585e82"
+    },
+    "store/graph/rels_feeds.csv": {
+      "from": "lab11/data/graph/rels_feeds.csv",
+      "sha256_16": "b9849efdbbcf72cb"
+    },
+    "store/graph/rels_forecast_for.csv": {
+      "from": "lab11/data/graph/rels_forecast_for.csv",
+      "sha256_16": "d194c72eb3cecaf9"
+    },
+    "store/graph/rels_generated.csv": {
+      "from": "lab11/data/graph/rels_generated.csv",
+      "sha256_16": "02aeb9f812b27aef"
+    },
+    "store/graph/rels_has_meter.csv": {
+      "from": "lab11/data/graph/rels_has_meter.csv",
+      "sha256_16": "e993161868e5b6f2"
+    },
+    "store/graph/rels_influences.csv": {
+      "from": "lab11/data/graph/rels_influences.csv",
+      "sha256_16": "bb2ca250d52cb9ba"
+    },
+    "store/graph/rels_located_in.csv": {
+      "from": "lab11/data/graph/rels_located_in.csv",
+      "sha256_16": "1bdd77b075e39939"
+    },
+    "store/graph/rels_manages.csv": {
+      "from": "lab11/data/graph/rels_manages.csv",
+      "sha256_16": "87660edba0e68f1b"
+    },
+    "store/graph/rels_recorded.csv": {
+      "from": "lab11/data/graph/rels_recorded.csv",
+      "sha256_16": "a2c1dd8e1ba7d6bc"
+    },
+    "store/graph/rels_trained_on.csv": {
+      "from": "lab11/data/graph/rels_trained_on.csv",
+      "sha256_16": "7925320f1ad7df90"
+    },
+    "store/graph/rels_uses_forecast.csv": {
+      "from": "lab11/data/graph/rels_uses_forecast.csv",
+      "sha256_16": "45e792555f8c5f16"
+    }
+  }
+}

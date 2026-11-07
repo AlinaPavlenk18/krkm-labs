@@ -1,0 +1,178 @@
+@prefix : <http://www.semanticweb.org/energy-forecasting#> .
+@prefix q: <http://www.semanticweb.org/energy-forecasting/quality#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+q:decision_K1 a prov:Activity ; q:conflictType "значення (різні джерела)" ; q:strategy "довіра до джерела + дата" ;
+    q:decision "Чинне значення — 12 (фактичний результат GDS у базі, пізніша дата). 10 — розрахункова оцінка до запуску GDS; зберігається як альтернатива з provenance." ; prov:wasAssociatedWith "Павленко А. С. (власниця бази знань)" ;
+    prov:endedAtTime "2026-11-07"^^xsd:date .
+
+q:alt_K1_1 a q:ValueAlternative ; q:aboutSubject "Louvain" ; q:aboutProperty "кількість спільнот у графі ЛР9" ;
+    q:value "12" ; q:status "preferred" ; q:sourceDoc "prj04" ;
+    q:sourceSection "ЛР9: аналіз графа PageRank і Louvain" ; q:quote "Louvain: 12 спільнот, модулярність 0.6204" ; q:provenanceNote "фактичний запуск Neo4j GDS 2.13.7, 17.10.2026" ;
+    prov:wasGeneratedBy q:decision_K1 .
+
+q:alt_K1_2 a q:ValueAlternative ; q:aboutSubject "Louvain" ; q:aboutProperty "кількість спільнот у графі ЛР9" ;
+    q:value "12" ; q:status "preferred" ; q:sourceDoc "prj09" ;
+    q:sourceSection "PageRank і Louvain (GDS)" ; q:quote "Louvain знайшов 12 спільнот з модулярністю 0,620" ; q:provenanceNote "звіт ЛР9, 18.10.2026" ;
+    prov:wasGeneratedBy q:decision_K1 .
+
+q:alt_K1_3 a q:ValueAlternative ; q:aboutSubject "Louvain" ; q:aboutProperty "кількість спільнот у графі ЛР9" ;
+    q:value "10" ; q:status "alternative" ; q:sourceDoc "prj04" ;
+    q:sourceSection "3. Louvain — спільноти" ; q:quote "Знайдено 10 спільнот, модулярність 0.6154" ; q:provenanceNote "попередній розрахунок networkx (scripts/expected_gds.py)" ;
+    prov:wasGeneratedBy q:decision_K1 .
+
+q:decision_K2 a prov:Activity ; q:conflictType "значення (різні джерела)" ; q:strategy "довіра до джерела + дата" ;
+    q:decision "Чинне — 0,6204 (GDS); 0,6154 — альтернатива (розрахунок networkx)." ; prov:wasAssociatedWith "Павленко А. С. (власниця бази знань)" ;
+    prov:endedAtTime "2026-11-07"^^xsd:date .
+
+q:alt_K2_1 a q:ValueAlternative ; q:aboutSubject "Louvain" ; q:aboutProperty "модулярність розбиття" ;
+    q:value "0.6204" ; q:status "preferred" ; q:sourceDoc "prj09" ;
+    q:sourceSection "Збереження результатів у графі" ; q:quote "(12 спільнот, модулярність 0,6204)" ; q:provenanceNote "gds.louvain.write, 17.10.2026" ;
+    prov:wasGeneratedBy q:decision_K2 .
+
+q:alt_K2_2 a q:ValueAlternative ; q:aboutSubject "Louvain" ; q:aboutProperty "модулярність розбиття" ;
+    q:value "0.6154" ; q:status "alternative" ; q:sourceDoc "prj04" ;
+    q:sourceSection "3. Louvain — спільноти" ; q:quote "Знайдено 10 спільнот, модулярність 0.6154" ; q:provenanceNote "попередній розрахунок networkx" ;
+    prov:wasGeneratedBy q:decision_K2 .
+
+q:decision_K3 a prov:Activity ; q:conflictType "значення (різні джерела)" ; q:strategy "довіра до джерела + дата" ;
+    q:decision "Чинне — 3,2789 (GDS); 3,3032 — альтернатива. Порядок топ-10 в обох версіях однаковий." ; prov:wasAssociatedWith "Павленко А. С. (власниця бази знань)" ;
+    prov:endedAtTime "2026-11-07"^^xsd:date .
+
+q:alt_K3_1 a q:ValueAlternative ; q:aboutSubject "ForecastModel_GRU1" ; q:aboutProperty "PageRank" ;
+    q:value "3.2789" ; q:status "preferred" ; q:sourceDoc "prj04" ;
+    q:sourceSection "ЛР9: аналіз графа PageRank і Louvain" ; q:quote "GRU1 3.2789" ; q:provenanceNote "фактичний запуск GDS 17.10.2026" ;
+    prov:wasGeneratedBy q:decision_K3 .
+
+q:alt_K3_2 a q:ValueAlternative ; q:aboutSubject "ForecastModel_GRU1" ; q:aboutProperty "PageRank" ;
+    q:value "3.3032" ; q:status "alternative" ; q:sourceDoc "prj04" ;
+    q:sourceSection "2. PageRank — топ-10" ; q:quote "Модель GRU №1; 14; 3.3032" ; q:provenanceNote "попередній розрахунок за формулою GDS у Python" ;
+    prov:wasGeneratedBy q:decision_K3 .
+
+q:decision_K4 a prov:Activity ; q:conflictType "значення (різні джерела)" ; q:strategy "довіра до джерела + консенсус (prj04 у блоці фактичних результатів теж називає п'ять часових спільнот)" ;
+    q:decision "Чинне — 5; 4 — альтернатива з попереднього розрахунку." ; prov:wasAssociatedWith "Павленко А. С. (власниця бази знань)" ;
+    prov:endedAtTime "2026-11-07"^^xsd:date .
+
+q:alt_K4_1 a q:ValueAlternative ; q:aboutSubject "Louvain" ; q:aboutProperty "кількість спільнот навколо днів погоди" ;
+    q:value "5" ; q:status "preferred" ; q:sourceDoc "prj09" ;
+    q:sourceSection "Інтерпретація для предметної області" ; q:quote "П'ять спільнот групують вимірювання" ; q:provenanceNote "GDS, звіт ЛР9 18.10.2026" ;
+    prov:wasGeneratedBy q:decision_K4 .
+
+q:alt_K4_2 a q:ValueAlternative ; q:aboutSubject "Louvain" ; q:aboutProperty "кількість спільнот навколо днів погоди" ;
+    q:value "4" ; q:status "alternative" ; q:sourceDoc "prj04" ;
+    q:sourceSection "4. Інтерпретація для предметної області" ; q:quote "Ще 4 спільноти групують вимірювання за днями погоди" ; q:provenanceNote "інтерпретація попереднього розрахунку networkx" ;
+    prov:wasGeneratedBy q:decision_K4 .
+
+q:decision_K5 a prov:Activity ; q:conflictType "логічна (твердження і його заперечення)" ; q:strategy "довіра до джерела (фактичний GDS) + рішення власника (C17 відхилено у ЛР9)" ;
+    q:decision "Чинне — ПС №9 не входить у спільноту диспетчера №5; призначення відповідального для ПС №9 — рішення експерта, не кластеризації." ; prov:wasAssociatedWith "Павленко А. С. (власниця бази знань)" ;
+    prov:endedAtTime "2026-11-07"^^xsd:date .
+
+q:alt_K5_1 a q:ValueAlternative ; q:aboutSubject "Substation_9" ; q:aboutProperty "належність до спільноти диспетчера №5" ;
+    q:value "не належить (C17 відхилено)" ; q:status "preferred" ; q:sourceDoc "prj09" ;
+    q:sourceSection "Інтерпретація для предметної області" ; q:quote "ПС №9 опинилася в іншій групі. Твердження C17 відхилено." ; q:provenanceNote "GDS 17.10.2026; claims ЛР9, V2, rejected" ;
+    prov:wasGeneratedBy q:decision_K5 .
+
+q:alt_K5_2 a q:ValueAlternative ; q:aboutSubject "Substation_9" ; q:aboutProperty "належність до спільноти диспетчера №5" ;
+    q:value "належить" ; q:status "rejected" ; q:sourceDoc "prj04" ;
+    q:sourceSection "4. Інтерпретація для предметної області" ; q:quote "Підстанція №9, у якої немає диспетчера, потрапила в спільноту диспетчера №5" ; q:provenanceNote "інтерпретація попереднього розрахунку networkx" ;
+    prov:wasGeneratedBy q:decision_K5 .
+
+q:decision_K6 a prov:Activity ; q:conflictType "часова" ; q:strategy "рішення власника (власник моделей підтверджує, яка з дат хибна); до рішення — обидві версії зберігаються, дата позначається як сумнівна" ;
+    q:decision "Дати навчання не змінюються без первинного джерела. Для 6 моделей у графі додано позначку trainingDateFlag; у CI правило працює як відоме порушення з винятком (waiver) до рішення власника." ; prov:wasAssociatedWith "Павленко А. С. (власниця бази знань)" ;
+    prov:endedAtTime "2026-11-07"^^xsd:date .
+
+q:alt_K6_1 a q:ValueAlternative ; q:aboutSubject "ForecastModel (6 з 6)" ; q:aboutProperty "дата навчання раніша за вимірювання навчальної вибірки" ;
+    q:value "trainingDate VAR №1 = 01.11.2025" ; q:status "alternative" ; q:sourceDoc "gen02" ;
+    q:sourceSection "Модель VAR №1" ; q:quote "Дата навчання 01.11.2025" ; q:provenanceNote "граф ЛР9 (ЛР8 data.ttl / генератор gen_v1)" ;
+    prov:wasGeneratedBy q:decision_K6 .
+
+q:alt_K6_2 a q:ValueAlternative ; q:aboutSubject "ForecastModel (6 з 6)" ; q:aboutProperty "дата навчання раніша за вимірювання навчальної вибірки" ;
+    q:value "навчальна вибірка VAR №1 — 25.09–29.09.2026" ; q:status "alternative" ; q:sourceDoc "gen02" ;
+    q:sourceSection "Модель VAR №1" ; q:quote "з 25.09.2026 по 29.09.2026" ; q:provenanceNote "зв'язки TRAINED_ON графа ЛР9" ;
+    prov:wasGeneratedBy q:decision_K6 .
+
+q:alt_K6_3 a q:ValueAlternative ; q:aboutSubject "ForecastModel (6 з 6)" ; q:aboutProperty "дата навчання раніша за вимірювання навчальної вибірки" ;
+    q:value "trainingDate LSTM №2 = 20.06.2025" ; q:status "alternative" ; q:sourceDoc "gen02" ;
+    q:sourceSection "Модель LSTM №2" ; q:quote "Дата навчання 20.06.2025" ; q:provenanceNote "ЛР8 data.ttl" ;
+    prov:wasGeneratedBy q:decision_K6 .
+
+q:alt_K6_4 a q:ValueAlternative ; q:aboutSubject "ForecastModel (6 з 6)" ; q:aboutProperty "дата навчання раніша за вимірювання навчальної вибірки" ;
+    q:value "навчальна вибірка LSTM №2 — 10.01–12.01.2026" ; q:status "alternative" ; q:sourceDoc "gen02" ;
+    q:sourceSection "Модель LSTM №2" ; q:quote "з 10.01.2026 по 12.01.2026" ; q:provenanceNote "зв'язки TRAINED_ON графа ЛР9" ;
+    prov:wasGeneratedBy q:decision_K6 .
+
+q:decision_K7 a prov:Activity ; q:conflictType "часова (застарілий статус)" ; q:strategy "дата (новіша оцінка за чинним правилом переважає старий статус)" ;
+    q:decision "Чинний статус VAR №1 — «потребує перенавчання» (з 01.11.2026). У графі для всіх моделей додано status за правилом kb08 з provenance; статус LSTM №2 «застаріла» узгоджено." ; prov:wasAssociatedWith "Павленко А. С. (власниця бази знань)" ;
+    prov:endedAtTime "2026-11-07"^^xsd:date .
+
+q:alt_K7_1 a q:ValueAlternative ; q:aboutSubject "ForecastModel_VAR1" ; q:aboutProperty "статус експлуатації" ;
+    q:value "в експлуатації" ; q:status "alternative" ; q:sourceDoc "gen02" ;
+    q:sourceSection "Модель VAR №1" ; q:quote "Статус: в експлуатації." ; q:provenanceNote "картка моделі станом на 15.10.2026" ;
+    prov:wasGeneratedBy q:decision_K7 .
+
+q:alt_K7_2 a q:ValueAlternative ; q:aboutSubject "ForecastModel_VAR1" ; q:aboutProperty "статус експлуатації" ;
+    q:value "потребує перенавчання" ; q:status "preferred" ; q:sourceDoc "kb08" ;
+    q:sourceSection "Тригери перенавчання" ; q:quote "з дати навчання минуло понад 12 місяців" ; q:provenanceNote "правило kb08, застосоване на дату відліку (дата навчання 01.11.2025)" ;
+    prov:wasGeneratedBy q:decision_K7 .
+
+q:decision_K8 a prov:Activity ; q:conflictType "термінологічна (виявлена reasoner'ом)" ; q:strategy "рішення власника терміна (визначення класу задає онтологія ЛР8)" ;
+    q:decision "Клас :OverloadedSubstation — лише за поточним навантаженням. Показник prj10 перейменовано на «пікове перевищення номіналу» (окремий термін, не клас онтології); обидва визначення збережено." ; prov:wasAssociatedWith "Павленко А. С. (власниця бази знань)" ;
+    prov:endedAtTime "2026-11-07"^^xsd:date .
+
+q:alt_K8_1 a q:ValueAlternative ; q:aboutSubject "OverloadedSubstation" ; q:aboutProperty "визначення «перевантажена підстанція»" ;
+    q:value "поточне навантаження ≥ 85 % номіналу → №5, №4, №7, №11" ; q:status "preferred" ; q:sourceDoc "ontology" ;
+    q:sourceSection "lab08_vocabulary.ttl" ; q:quote "Підстанція з поточним навантаженням ≥ 85% від номінальної потужності" ; q:provenanceNote "онтологія ЛР8 (визначення класу)" ;
+    prov:wasGeneratedBy q:decision_K8 .
+
+q:alt_K8_2 a q:ValueAlternative ; q:aboutSubject "OverloadedSubstation" ; q:aboutProperty "визначення «перевантажена підстанція»" ;
+    q:value "поточне навантаження ≥ 85 % номіналу → №5, №4, №7, №11" ; q:status "preferred" ; q:sourceDoc "kb06" ;
+    q:sourceSection "Виявлення перевантаження" ; q:quote "перевантажені чотири підстанції: №5 (93,6 %), №4 (90 %), №7 (87 %) і №11 (86 %)" ; q:provenanceNote "регламент диспетчера" ;
+    prov:wasGeneratedBy q:decision_K8 .
+
+q:alt_K8_3 a q:ValueAlternative ; q:aboutSubject "OverloadedSubstation" ; q:aboutProperty "визначення «перевантажена підстанція»" ;
+    q:value "пікове годинне завантаження ≥ 85 % → №12, №8, №9, №5" ; q:status "alternative" ; q:sourceDoc "prj10" ;
+    q:sourceSection "Q08" ; q:quote "тобто відповідають класу :OverloadedSubstation онтології" ; q:provenanceNote "OLAP ЛР12 (окреме синтетичне сховище, пікові години)" ;
+    prov:wasGeneratedBy q:decision_K8 .
+
+q:alt_K6_ForecastModel_ARIMA1_graph a q:ValueAlternative ; q:aboutSubject :ForecastModel_ARIMA1 ; q:aboutProperty "trainingDate" ;
+    q:value "2026-02-10"^^xsd:date ; q:status "alternative" ; q:sourceDoc "граф ЛР9 (triples)" ;
+    prov:wasGeneratedBy q:decision_K6 .
+q:alt_K6_ForecastModel_ARIMA1_data a q:ValueAlternative ; q:aboutSubject :ForecastModel_ARIMA1 ; q:aboutProperty "trainingDate (нижня межа)" ;
+    q:value "не раніше 2026-09-30" ; q:status "alternative" ;
+    q:sourceDoc "TRAINED_ON + Measurement.timestamp (виведено SPARQL)" ; prov:wasGeneratedBy q:decision_K6 .
+
+q:alt_K6_ForecastModel_GRU1_graph a q:ValueAlternative ; q:aboutSubject :ForecastModel_GRU1 ; q:aboutProperty "trainingDate" ;
+    q:value "2026-09-01"^^xsd:date ; q:status "alternative" ; q:sourceDoc "граф ЛР9 (triples)" ;
+    prov:wasGeneratedBy q:decision_K6 .
+q:alt_K6_ForecastModel_GRU1_data a q:ValueAlternative ; q:aboutSubject :ForecastModel_GRU1 ; q:aboutProperty "trainingDate (нижня межа)" ;
+    q:value "не раніше 2026-09-30" ; q:status "alternative" ;
+    q:sourceDoc "TRAINED_ON + Measurement.timestamp (виведено SPARQL)" ; prov:wasGeneratedBy q:decision_K6 .
+
+q:alt_K6_ForecastModel_LSTM1_graph a q:ValueAlternative ; q:aboutSubject :ForecastModel_LSTM1 ; q:aboutProperty "trainingDate" ;
+    q:value "2026-01-15"^^xsd:date ; q:status "alternative" ; q:sourceDoc "граф ЛР9 (triples)" ;
+    prov:wasGeneratedBy q:decision_K6 .
+q:alt_K6_ForecastModel_LSTM1_data a q:ValueAlternative ; q:aboutSubject :ForecastModel_LSTM1 ; q:aboutProperty "trainingDate (нижня межа)" ;
+    q:value "не раніше 2026-09-30" ; q:status "alternative" ;
+    q:sourceDoc "TRAINED_ON + Measurement.timestamp (виведено SPARQL)" ; prov:wasGeneratedBy q:decision_K6 .
+
+q:alt_K6_ForecastModel_LSTM2_graph a q:ValueAlternative ; q:aboutSubject :ForecastModel_LSTM2 ; q:aboutProperty "trainingDate" ;
+    q:value "2025-06-20"^^xsd:date ; q:status "alternative" ; q:sourceDoc "граф ЛР9 (triples)" ;
+    prov:wasGeneratedBy q:decision_K6 .
+q:alt_K6_ForecastModel_LSTM2_data a q:ValueAlternative ; q:aboutSubject :ForecastModel_LSTM2 ; q:aboutProperty "trainingDate (нижня межа)" ;
+    q:value "не раніше 2026-01-12" ; q:status "alternative" ;
+    q:sourceDoc "TRAINED_ON + Measurement.timestamp (виведено SPARQL)" ; prov:wasGeneratedBy q:decision_K6 .
+
+q:alt_K6_ForecastModel_LSTM3_graph a q:ValueAlternative ; q:aboutSubject :ForecastModel_LSTM3 ; q:aboutProperty "trainingDate" ;
+    q:value "2026-08-30"^^xsd:date ; q:status "alternative" ; q:sourceDoc "граф ЛР9 (triples)" ;
+    prov:wasGeneratedBy q:decision_K6 .
+q:alt_K6_ForecastModel_LSTM3_data a q:ValueAlternative ; q:aboutSubject :ForecastModel_LSTM3 ; q:aboutProperty "trainingDate (нижня межа)" ;
+    q:value "не раніше 2026-09-30" ; q:status "alternative" ;
+    q:sourceDoc "TRAINED_ON + Measurement.timestamp (виведено SPARQL)" ; prov:wasGeneratedBy q:decision_K6 .
+
+q:alt_K6_ForecastModel_VAR1_graph a q:ValueAlternative ; q:aboutSubject :ForecastModel_VAR1 ; q:aboutProperty "trainingDate" ;
+    q:value "2025-11-01"^^xsd:date ; q:status "alternative" ; q:sourceDoc "граф ЛР9 (triples)" ;
+    prov:wasGeneratedBy q:decision_K6 .
+q:alt_K6_ForecastModel_VAR1_data a q:ValueAlternative ; q:aboutSubject :ForecastModel_VAR1 ; q:aboutProperty "trainingDate (нижня межа)" ;
+    q:value "не раніше 2026-09-29" ; q:status "alternative" ;
+    q:sourceDoc "TRAINED_ON + Measurement.timestamp (виведено SPARQL)" ; prov:wasGeneratedBy q:decision_K6 .

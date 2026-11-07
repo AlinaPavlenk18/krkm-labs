@@ -1,0 +1,306 @@
+{
+  "meta": {
+    "name": "fixed",
+    "store": "data_after\\store",
+    "corpus": "data_after\\corpus\\docs.jsonl",
+    "commit": "df506d0",
+    "ts": "2026-11-07T13:39:28"
+  },
+  "results": [
+    {
+      "id": "SH-LR8",
+      "tool": "SHACL",
+      "title": "форми ЛР8 (лічильник, категорія, потужність, регіон, модель прогнозу…)",
+      "violations": 0,
+      "waived": 0,
+      "blocking": 0,
+      "status": "PASS",
+      "details": [],
+      "error": null
+    },
+    {
+      "id": "SH1",
+      "tool": "SHACL",
+      "title": "навантаження ≤ номінальна потужність",
+      "violations": 0,
+      "waived": 0,
+      "blocking": 0,
+      "status": "PASS",
+      "details": [],
+      "error": null
+    },
+    {
+      "id": "SH2",
+      "tool": "SHACL",
+      "title": "канонічні назви областей",
+      "violations": 0,
+      "waived": 0,
+      "blocking": 0,
+      "status": "PASS",
+      "details": [],
+      "error": null
+    },
+    {
+      "id": "SH3",
+      "tool": "SHACL",
+      "title": "інтервал зчитування 15/30/60",
+      "violations": 0,
+      "waived": 0,
+      "blocking": 0,
+      "status": "PASS",
+      "details": [],
+      "error": null
+    },
+    {
+      "id": "SH4",
+      "tool": "SHACL",
+      "title": "статус лічильника з довідника",
+      "violations": 0,
+      "waived": 0,
+      "blocking": 0,
+      "status": "PASS",
+      "details": [],
+      "error": null
+    },
+    {
+      "id": "SH5",
+      "tool": "SHACL",
+      "title": "точність моделі 0–100 %",
+      "violations": 0,
+      "waived": 0,
+      "blocking": 0,
+      "status": "PASS",
+      "details": [],
+      "error": null
+    },
+    {
+      "id": "SH6",
+      "tool": "SHACL",
+      "title": "одна дата навчання xsd:date",
+      "violations": 0,
+      "waived": 0,
+      "blocking": 0,
+      "status": "PASS",
+      "details": [],
+      "error": null
+    },
+    {
+      "id": "SH7",
+      "tool": "SHACL",
+      "title": "тип моделі з довідника",
+      "violations": 0,
+      "waived": 0,
+      "blocking": 0,
+      "status": "PASS",
+      "details": [],
+      "error": null
+    },
+    {
+      "id": "SH8",
+      "tool": "SHACL",
+      "title": "одна мітка часу вимірювання",
+      "violations": 0,
+      "waived": 0,
+      "blocking": 0,
+      "status": "PASS",
+      "details": [],
+      "error": null
+    },
+    {
+      "id": "SH9",
+      "tool": "SHACL",
+      "title": "споживання ≥ 0",
+      "violations": 0,
+      "waived": 0,
+      "blocking": 0,
+      "status": "PASS",
+      "details": [],
+      "error": null
+    },
+    {
+      "id": "SH10",
+      "tool": "SHACL",
+      "title": "вимірювання — рівно один лічильник",
+      "violations": 0,
+      "waived": 0,
+      "blocking": 0,
+      "status": "PASS",
+      "details": [],
+      "error": null
+    },
+    {
+      "id": "SP1",
+      "tool": "SPARQL",
+      "title": "немає циклів у ланцюгу живлення",
+      "violations": 0,
+      "waived": 0,
+      "blocking": 0,
+      "status": "PASS",
+      "details": [],
+      "error": null
+    },
+    {
+      "id": "SP2",
+      "tool": "SPARQL",
+      "title": "кожна підстанція має диспетчера",
+      "violations": 1,
+      "waived": 1,
+      "blocking": 0,
+      "status": "WAIVED",
+      "details": [
+        "Substation_9: немає відповідального диспетчера"
+      ],
+      "error": null
+    },
+    {
+      "id": "SP3",
+      "tool": "SPARQL",
+      "title": "дата навчання не раніша за навчальні дані",
+      "violations": 6,
+      "waived": 6,
+      "blocking": 0,
+      "status": "WAIVED",
+      "details": [
+        "ForecastModel_LSTM1: trainingDate 2026-01-15 раніша за навчальне вимірювання 2026-09-30",
+        "ForecastModel_LSTM2: trainingDate 2025-06-20 раніша за навчальне вимірювання 2026-01-12",
+        "ForecastModel_VAR1: trainingDate 2025-11-01 раніша за навчальне вимірювання 2026-09-29",
+        "ForecastModel_LSTM3: trainingDate 2026-08-30 раніша за навчальне вимірювання 2026-09-30",
+        "ForecastModel_ARIMA1: trainingDate 2026-02-10 раніша за навчальне вимірювання 2026-09-30",
+        "ForecastModel_GRU1: trainingDate 2026-09-01 раніша за навчальне вимірювання 2026-09-30"
+      ],
+      "error": null
+    },
+    {
+      "id": "SP4",
+      "tool": "SPARQL",
+      "title": "прогноз має модель і підстанцію",
+      "violations": 0,
+      "waived": 0,
+      "blocking": 0,
+      "status": "PASS",
+      "details": [],
+      "error": null
+    },
+    {
+      "id": "SP5",
+      "tool": "SPARQL",
+      "title": "немає індивідів у несумісних класах",
+      "violations": 0,
+      "waived": 0,
+      "blocking": 0,
+      "status": "PASS",
+      "details": [],
+      "error": null
+    },
+    {
+      "id": "PY1",
+      "tool": "pytest",
+      "title": "унікальні id вузлів",
+      "violations": 0,
+      "waived": 0,
+      "blocking": 0,
+      "status": "PASS",
+      "details": [],
+      "error": null
+    },
+    {
+      "id": "PY2",
+      "tool": "pytest",
+      "title": "посилальна цілісність зв'язків",
+      "violations": 0,
+      "waived": 0,
+      "blocking": 0,
+      "status": "PASS",
+      "details": [],
+      "error": null
+    },
+    {
+      "id": "PY3",
+      "tool": "pytest",
+      "title": "provenance зв'язків (source, confidence, validFrom)",
+      "violations": 0,
+      "waived": 0,
+      "blocking": 0,
+      "status": "PASS",
+      "details": [],
+      "error": null
+    },
+    {
+      "id": "PY4",
+      "tool": "pytest",
+      "title": "немає нерозв'язаних суперечностей значень у корпусі",
+      "violations": 0,
+      "waived": 0,
+      "blocking": 0,
+      "status": "PASS",
+      "details": [],
+      "error": null
+    },
+    {
+      "id": "PY5",
+      "tool": "pytest",
+      "title": "restricted-тексти й адреси не у файлах якості",
+      "violations": 0,
+      "waived": 0,
+      "blocking": 0,
+      "status": "PASS",
+      "details": [],
+      "error": null
+    },
+    {
+      "id": "PY6",
+      "tool": "pytest",
+      "title": "статус моделі відповідає правилу kb08",
+      "violations": 0,
+      "waived": 0,
+      "blocking": 0,
+      "status": "PASS",
+      "details": [],
+      "error": null
+    },
+    {
+      "id": "PY7",
+      "tool": "pytest",
+      "title": "реєстр сутностей ER без хибних злиттів",
+      "violations": 0,
+      "waived": 0,
+      "blocking": 0,
+      "status": "PASS",
+      "details": [],
+      "error": null
+    },
+    {
+      "id": "JS1",
+      "tool": "JSON Schema",
+      "title": "схема документів корпусу",
+      "violations": 0,
+      "waived": 0,
+      "blocking": 0,
+      "status": "PASS",
+      "details": [],
+      "error": null
+    },
+    {
+      "id": "JS2",
+      "tool": "JSON Schema",
+      "title": "схема реєстру суперечностей",
+      "violations": 0,
+      "waived": 0,
+      "blocking": 0,
+      "status": "PASS",
+      "details": [],
+      "error": null
+    },
+    {
+      "id": "JS3",
+      "tool": "JSON Schema",
+      "title": "схема реєстру сутностей",
+      "violations": 0,
+      "waived": 0,
+      "blocking": 0,
+      "status": "PASS",
+      "details": [],
+      "error": null
+    }
+  ]
+}

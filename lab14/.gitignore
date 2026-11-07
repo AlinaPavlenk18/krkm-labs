@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.venv/
+set_env.ps1
+.pytest_cache/
+quality/out/er_emb.npz

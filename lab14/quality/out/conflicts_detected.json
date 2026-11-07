@@ -1,0 +1,137 @@
+{
+  "ref_date": "2026-11-07",
+  "value": [
+    {
+      "quantity": "ForecastModel_GRU1.pagerank",
+      "variants": {
+        "3.28": [
+          "prj04"
+        ],
+        "3.3": [
+          "prj04"
+        ]
+      }
+    },
+    {
+      "quantity": "Louvain.communities",
+      "variants": {
+        "10.0": [
+          "prj04"
+        ],
+        "12.0": [
+          "prj04",
+          "prj06",
+          "prj09"
+        ]
+      }
+    },
+    {
+      "quantity": "Louvain.modularity",
+      "variants": {
+        "0.615": [
+          "prj04"
+        ],
+        "0.62": [
+          "prj04",
+          "prj06",
+          "prj09"
+        ]
+      }
+    },
+    {
+      "quantity": "Louvain.weather_communities",
+      "variants": {
+        "4.0": [
+          "prj04"
+        ],
+        "5.0": [
+          "prj09"
+        ]
+      }
+    }
+  ],
+  "logical_reasoner": {
+    "owl_nothing": [],
+    "disjoint_violations": [],
+    "inferred_overloaded": [
+      [
+        "Substation_11",
+        86.0
+      ],
+      [
+        "Substation_4",
+        90.0
+      ],
+      [
+        "Substation_5",
+        93.6
+      ],
+      [
+        "Substation_7",
+        87.0
+      ]
+    ],
+    "prj10_claims_overloaded": [
+      "Substation_12",
+      "Substation_8",
+      "Substation_9",
+      "Substation_5"
+    ],
+    "claimed_not_inferred": [
+      "Substation_12",
+      "Substation_8",
+      "Substation_9"
+    ],
+    "inferred_not_claimed": [
+      "Substation_11",
+      "Substation_4",
+      "Substation_7"
+    ]
+  },
+  "temporal_training_date": [
+    {
+      "model": "ForecastModel_ARIMA1",
+      "trainingDate": "2026-02-10",
+      "last_training_measurement": "2026-09-30"
+    },
+    {
+      "model": "ForecastModel_GRU1",
+      "trainingDate": "2026-09-01",
+      "last_training_measurement": "2026-09-30"
+    },
+    {
+      "model": "ForecastModel_LSTM1",
+      "trainingDate": "2026-01-15",
+      "last_training_measurement": "2026-09-30"
+    },
+    {
+      "model": "ForecastModel_LSTM2",
+      "trainingDate": "2025-06-20",
+      "last_training_measurement": "2026-01-12"
+    },
+    {
+      "model": "ForecastModel_LSTM3",
+      "trainingDate": "2026-08-30",
+      "last_training_measurement": "2026-09-30"
+    },
+    {
+      "model": "ForecastModel_VAR1",
+      "trainingDate": "2025-11-01",
+      "last_training_measurement": "2026-09-29"
+    }
+  ],
+  "temporal_stale_status": [
+    {
+      "model": "ForecastModel_VAR1",
+      "age_days": 371,
+      "card_status": "в експлуатації"
+    }
+  ],
+  "registered": {
+    "ForecastModel_GRU1.pagerank": "K3",
+    "Louvain.communities": "K1",
+    "Louvain.modularity": "K2",
+    "Louvain.weather_communities": "K4"
+  },
+  "unregistered_value_conflicts": []
+}
